@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-08-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+        <!-- To add more forms:
+                1. Create a boolean variable in the JS file following the convention is<FormName>Visible;
+                2. Populate the variable with true or false in the setCurrentPageReference method, depending on the input parameter lwcName;
+                3. In this HTML file, create an lwc:elseif tag using the variable that was created and the corresponding LWC form.
+        -->
+        
+        <template lwc:if={isGS6Visible}>
+            <c-s-p-e-n_-g-s6-form
+            work-order-line-item-id={woliId} 
+            ></c-s-p-e-n_-g-s6-form></template>
+        <template lwc:else>
+            <div class="slds-box slds-box_small slds-m-around_x-large slds-align_absolute-center">
+                <p>🚫 You don't have permissions to access this action.</p>
+            </div>
+        </template>
+</template>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPD Design-East</name>
+    <queueMembers>
+        <users>
+            <user>aceia@spenergynetworks.co.uk.spencrm</user>
+            <user>brian.williams@spenergynetworks.co.uk.spencrm</user>
+            <user>caroline.sneddon@spenergynetworks.co.uk.spencrm</user>
+            <user>cfreake@spenergynetworks.co.uk.spencrm</user>
+            <user>colin.ferry@spenergynetworks.co.uk.spencrm</user>
+            <user>craig.beattie@spenergynetworks.co.uk.spencrm</user>
+            <user>gebrey@spenergynetworks.co.uk.spencrm</user>
+            <user>greg.small@spenergynetworks.co.uk.spencrm</user>
+            <user>hthomson@spenergynetworks.co.uk.spencrm</user>
+            <user>jonathan.brady@spenergynetworks.co.uk.spencrm</user>
+            <user>katrina.young@spenergynetworks.co.uk.spencrm</user>
+            <user>lesley.hogg@spenergynetworks.co.uk.spencrm</user>
+            <user>rcole@spenergynetworks.co.uk.spencrm</user>
+            <user>rtravers@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

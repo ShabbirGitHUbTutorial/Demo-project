@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plot</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plots</value>
+    </caseValues>
+    <layouts>
+        <layout>SPEN Plot Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- LCT Details --></label>
+            <section>LCT Details</section>
+        </sections>
+        <sections>
+            <label><!-- Plot Details --></label>
+            <section>Plot Details</section>
+        </sections>
+        <sections>
+            <label><!-- Plot Disturbing Load --></label>
+            <section>Plot Disturbing Load</section>
+        </sections>
+        <sections>
+            <label><!-- Plot Generation Load --></label>
+            <section>Plot Generation Load</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- This record type is for Connections process --></description>
+        <label><!-- SPEN Plot --></label>
+        <name>SPEN_Plot</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please ensure the Heating Type matches the Company ID --></errorMessage>
+        <name>SPEN_HeatingTypeCheckForCompanyId</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure the Heating Type matches the Customer Class --></errorMessage>
+        <name>SPEN_HeatingTypeCheckForCustomerClass</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Max Power with 2 decimal places --></errorMessage>
+        <name>SPEN_MaxPowerValidation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- SPEN_MakePlotsToBeDeleted --></label>
+        <name>SPEN_MakePlotsToBeDeleted</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Local Authority --></label>
+    <name>SPEN_Local_Authority__c</name>
+    <picklistValues>
+        <masterLabel>Argyll &amp; Bute</masterLabel>
+        <translation><!-- Argyll &amp; Bute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceredigion</masterLabel>
+        <translation><!-- Ceredigion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheshire East</masterLabel>
+        <translation><!-- Cheshire East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheshire West and Chester</masterLabel>
+        <translation><!-- Cheshire West and Chester --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Edinburgh</masterLabel>
+        <translation><!-- City of Edinburgh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clackmannanshire</masterLabel>
+        <translation><!-- Clackmannanshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conwy</masterLabel>
+        <translation><!-- Conwy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denbighshire</masterLabel>
+        <translation><!-- Denbighshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dumfries &amp; Galloway</masterLabel>
+        <translation><!-- Dumfries &amp; Galloway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Ayrshire</masterLabel>
+        <translation><!-- East Ayrshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Dunbartonshire</masterLabel>
+        <translation><!-- East Dunbartonshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Lothian</masterLabel>
+        <translation><!-- East Lothian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falkirk</masterLabel>
+        <translation><!-- Falkirk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fife</masterLabel>
+        <translation><!-- Fife --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flintshire</masterLabel>
+        <translation><!-- Flintshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glasgow City</masterLabel>
+        <translation><!-- Glasgow City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gywnedd</masterLabel>
+        <translation><!-- Gywnedd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Halton</masterLabel>
+        <translation><!-- Halton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverclyde</masterLabel>
+        <translation><!-- Inverclyde --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Isle of Anglesey</masterLabel>
+        <translation><!-- Isle of Anglesey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Knowsley</masterLabel>
+        <translation><!-- Knowsley --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liverpool</masterLabel>
+        <translation><!-- Liverpool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midlothian</masterLabel>
+        <translation><!-- Midlothian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Ayrshire</masterLabel>
+        <translation><!-- North Ayrshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Lanarkshire</masterLabel>
+        <translation><!-- North Lanarkshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation><!-- OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Powys</masterLabel>
+        <translation><!-- Powys --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renfrewshire</masterLabel>
+        <translation><!-- Renfrewshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scottish Borders</masterLabel>
+        <translation><!-- Scottish Borders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sefton</masterLabel>
+        <translation><!-- Sefton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shropshire</masterLabel>
+        <translation><!-- Shropshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snowdonia National Park</masterLabel>
+        <translation><!-- Snowdonia National Park --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Ayrshire</masterLabel>
+        <translation><!-- South Ayrshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Lanarkshire</masterLabel>
+        <translation><!-- South Lanarkshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St Helens</masterLabel>
+        <translation><!-- St Helens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trafford</masterLabel>
+        <translation><!-- Trafford --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warrington</masterLabel>
+        <translation><!-- Warrington --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Dunbartonshire</masterLabel>
+        <translation><!-- West Dunbartonshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Lancs</masterLabel>
+        <translation><!-- West Lancs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Lothian</masterLabel>
+        <translation><!-- West Lothian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wirral</masterLabel>
+        <translation><!-- Wirral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrexham</masterLabel>
+        <translation><!-- Wrexham --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

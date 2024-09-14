@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connections_IVR_Operating_Hours</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_IVR__c</columns>
+    <columns>SPEN_IVRMessage__c</columns>
+    <columns>SPEN_Holiday__c</columns>
+    <columns>SPEN_HolidayDateFormula__c</columns>
+    <columns>SPEN_DayofWeek__c</columns>
+    <columns>SPEN_StartTime__c</columns>
+    <columns>SPEN_EndTime__c</columns>
+    <columns>SPEN_CurrentTimeFormula__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Connections</value>
+    </filters>
+    <label>Connections - IVR Operating Hours</label>
+</ListView>

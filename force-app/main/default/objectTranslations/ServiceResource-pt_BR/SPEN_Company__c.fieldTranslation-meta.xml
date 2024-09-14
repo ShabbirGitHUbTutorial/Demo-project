@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Company --></label>
+    <name>SPEN_Company__c</name>
+    <picklistValues>
+        <masterLabel>ABB Ltd</masterLabel>
+        <translation><!-- ABB Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AH Marine Ltd</masterLabel>
+        <translation><!-- AH Marine Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AJ Cable Jointing Ltd</masterLabel>
+        <translation><!-- AJ Cable Jointing Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APTUS UTILITIES LTD</masterLabel>
+        <translation><!-- APTUS UTILITIES LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aardvarc Electrical Engineers</masterLabel>
+        <translation><!-- Aardvarc Electrical Engineers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Active Solutions UK Ltd</masterLabel>
+        <translation><!-- Active Solutions UK Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aggreko UK Ltd</masterLabel>
+        <translation><!-- Aggreko UK Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Altitude Services LTD</masterLabel>
+        <translation><!-- Altitude Services LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amey</masterLabel>
+        <translation><!-- Amey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amey Group Services Ltd</masterLabel>
+        <translation><!-- Amey Group Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amp Utilities Ltd</masterLabel>
+        <translation><!-- Amp Utilities Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arcadis Consulting (UK) Ltd</masterLabel>
+        <translation><!-- Arcadis Consulting (UK) Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ayrshire Roads Alliance</masterLabel>
+        <translation><!-- Ayrshire Roads Alliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEAR Scotland</masterLabel>
+        <translation><!-- BEAR Scotland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BTVC Electrical</masterLabel>
+        <translation><!-- BTVC Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Balfour Beatty Services Power T&amp;D</masterLabel>
+        <translation><!-- Balfour Beatty Services Power T&amp;D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bam Nuttall Ltd</masterLabel>
+        <translation><!-- Bam Nuttall Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bebbington &amp; Wilson Ltd</masterLabel>
+        <translation><!-- Bebbington &amp; Wilson Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belac Ltd</masterLabel>
+        <translation><!-- Belac Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Berrington Power Network Engineering Ltd</masterLabel>
+        <translation><!-- Berrington Power Network Engineering Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bglobal Metering</masterLabel>
+        <translation><!-- Bglobal Metering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bilfinger Industrial Automation Services Ltd</masterLabel>
+        <translation><!-- Bilfinger Industrial Automation Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blyth Utilities Ltd</masterLabel>
+        <translation><!-- Blyth Utilities Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>British Gas Academy</masterLabel>
+        <translation><!-- British Gas Academy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C&amp;C Group</masterLabel>
+        <translation><!-- C&amp;C Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CDM Energy</masterLabel>
+        <translation><!-- CDM Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPR</masterLabel>
+        <translation><!-- CPR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRE8 Building &amp; Maintenance Ltd</masterLabel>
+        <translation><!-- CRE8 Building &amp; Maintenance Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carillion/Telent JV</masterLabel>
+        <translation><!-- Carillion/Telent JV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Castlerock Edinvar</masterLabel>
+        <translation><!-- Castlerock Edinvar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Centregreat Ltd</masterLabel>
+        <translation><!-- Centregreat Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheshire West and Chester Council</masterLabel>
+        <translation><!-- Cheshire West and Chester Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of Edinburgh Council Roads Department</masterLabel>
+        <translation><!-- City of Edinburgh Council Roads Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clarkes Cable Jointing Ltd</masterLabel>
+        <translation><!-- Clarkes Cable Jointing Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clear Channel UK Ltd</masterLabel>
+        <translation><!-- Clear Channel UK Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connors Building &amp; Restoration Ltd</masterLabel>
+        <translation><!-- Connors Building &amp; Restoration Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conwy County Borough Council</masterLabel>
+        <translation><!-- Conwy County Borough Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D &amp; C Jones Co Ltd</masterLabel>
+        <translation><!-- D &amp; C Jones Co Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D&amp;A Systems Limited</masterLabel>
+        <translation><!-- D&amp;A Systems Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCR Jointing</masterLabel>
+        <translation><!-- DCR Jointing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT Hughes Contractors</masterLabel>
+        <translation><!-- DT Hughes Contractors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dawnus Construction</masterLabel>
+        <translation><!-- Dawnus Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deecolighting</masterLabel>
+        <translation><!-- Deecolighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denbighshire County Council</masterLabel>
+        <translation><!-- Denbighshire County Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dutton Contractors Limited</masterLabel>
+        <translation><!-- Dutton Contractors Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dynniq UK Ltd</masterLabel>
+        <translation><!-- Dynniq UK Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E&amp;S Utilities Ltd t/a Powertek</masterLabel>
+        <translation><!-- E&amp;S Utilities Ltd t/a Powertek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDF Energy</masterLabel>
+        <translation><!-- EDF Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EON Energy Solutions</masterLabel>
+        <translation><!-- EON Energy Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Dunbartonshire Council</masterLabel>
+        <translation><!-- East Dunbartonshire Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electric Cable Connections Ltd</masterLabel>
+        <translation><!-- Electric Cable Connections Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical Jointing Services Ltd</masterLabel>
+        <translation><!-- Electrical Jointing Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical Trading Company Ltd</masterLabel>
+        <translation><!-- Electrical Trading Company Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electricity Asset Services</masterLabel>
+        <translation><!-- Electricity Asset Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electricity Solutions Ltd</masterLabel>
+        <translation><!-- Electricity Solutions Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emerald Power Ltd</masterLabel>
+        <translation><!-- Emerald Power Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy Assets</masterLabel>
+        <translation><!-- Energy Assets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energyst Rental Solutions</masterLabel>
+        <translation><!-- Energyst Rental Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falkirk Council</masterLabel>
+        <translation><!-- Falkirk Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faros Engineering Ltd</masterLabel>
+        <translation><!-- Faros Engineering Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fife Council</masterLabel>
+        <translation><!-- Fife Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freedom Network Services</masterLabel>
+        <translation><!-- Freedom Network Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freedom Power Lines</masterLabel>
+        <translation><!-- Freedom Power Lines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Future Electrics Ltd</masterLabel>
+        <translation><!-- Future Electrics Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gaeltec Utilities</masterLabel>
+        <translation><!-- Gaeltec Utilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generator Power Ltd</masterLabel>
+        <translation><!-- Generator Power Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glendale Countryside</masterLabel>
+        <translation><!-- Glendale Countryside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glenelly</masterLabel>
+        <translation><!-- Glenelly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Golden Triangle Generators</masterLabel>
+        <translation><!-- Golden Triangle Generators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gordon Electrical Ltd</masterLabel>
+        <translation><!-- Gordon Electrical Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greenage Utilities Ltd</masterLabel>
+        <translation><!-- Greenage Utilities Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gunning Transmission &amp; Distribution Services Ltd</masterLabel>
+        <translation><!-- Gunning Transmission &amp; Distribution Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gwynedd Council</masterLabel>
+        <translation><!-- Gwynedd Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV Engineers for IQA / CIET</masterLabel>
+        <translation><!-- HV Engineers for IQA / CIET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Halton Borough Council</masterLabel>
+        <translation><!-- Halton Borough Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Highline Electrical Ltd</masterLabel>
+        <translation><!-- Highline Electrical Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBI Group</masterLabel>
+        <translation><!-- IBI Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IMServ Europe LImited</masterLabel>
+        <translation><!-- IMServ Europe LImited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IQA Group</masterLabel>
+        <translation><!-- IQA Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instrument &amp; Control Services Ltd</masterLabel>
+        <translation><!-- Instrument &amp; Control Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverclyde Council-Transportation &amp; Roads Service</masterLabel>
+        <translation><!-- Inverclyde Council-Transportation &amp; Roads Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jones Lighting Ltd</masterLabel>
+        <translation><!-- Jones Lighting Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KN Network Services</masterLabel>
+        <translation><!-- KN Network Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keltbray Distribution and Transmission</masterLabel>
+        <translation><!-- Keltbray Distribution and Transmission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Utilities Solutions Ltd</masterLabel>
+        <translation><!-- Key Utilities Solutions Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kirby Group Engineering Ltd</masterLabel>
+        <translation><!-- Kirby Group Engineering Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lightways Contractors Ltd</masterLabel>
+        <translation><!-- Lightways Contractors Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linbrooke Services</masterLabel>
+        <translation><!-- Linbrooke Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Line Maintenance Contracting</masterLabel>
+        <translation><!-- Line Maintenance Contracting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liverpool Streetscene Services Ltd</masterLabel>
+        <translation><!-- Liverpool Streetscene Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Longcroft Power Engineering Ltd</masterLabel>
+        <translation><!-- Longcroft Power Engineering Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lowri Beck Services</masterLabel>
+        <translation><!-- Lowri Beck Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M F Commissioning Services Ltd</masterLabel>
+        <translation><!-- M F Commissioning Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MORRISON DATA SVS</masterLabel>
+        <translation><!-- MORRISON DATA SVS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Man Coed VM Limited</masterLabel>
+        <translation><!-- Man Coed VM Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Matrix Networks</masterLabel>
+        <translation><!-- Matrix Networks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merseyside Police - TITAN</masterLabel>
+        <translation><!-- Merseyside Police - TITAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midlothian Council</masterLabel>
+        <translation><!-- Midlothian Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mono Consultants Ltd</masterLabel>
+        <translation><!-- Mono Consultants Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morton and Jones Ltd</masterLabel>
+        <translation><!-- Morton and Jones Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motus Traffic</masterLabel>
+        <translation><!-- Motus Traffic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi Utility UK</masterLabel>
+        <translation><!-- Multi Utility UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NG Contracting Ltd</masterLabel>
+        <translation><!-- NG Contracting Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPower</masterLabel>
+        <translation><!-- NPower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Distribution Services Ltd</masterLabel>
+        <translation><!-- Network Distribution Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Plus</masterLabel>
+        <translation><!-- Network Plus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O&apos;Connor Utilities Ltd</masterLabel>
+        <translation><!-- O&apos;Connor Utilities Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTL Electrical Services Ltd</masterLabel>
+        <translation><!-- OTL Electrical Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optimum Technical Services Ltd</masterLabel>
+        <translation><!-- Optimum Technical Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opus</masterLabel>
+        <translation><!-- Opus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oscar Plant</masterLabel>
+        <translation><!-- Oscar Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overlec Ltd</masterLabel>
+        <translation><!-- Overlec Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PH Jones</masterLabel>
+        <translation><!-- PH Jones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PJS ELECTRICAL CONTRACTORS</masterLabel>
+        <translation><!-- PJS ELECTRICAL CONTRACTORS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMK Civil Engineering Ltd</masterLabel>
+        <translation><!-- PMK Civil Engineering Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PN Daly</masterLabel>
+        <translation><!-- PN Daly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phoenix Specialist Solutions</masterLabel>
+        <translation><!-- Phoenix Specialist Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phoenix Utilities Ltd</masterLabel>
+        <translation><!-- Phoenix Utilities Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Polaris Diagnostics &amp; Engineering Ltd</masterLabel>
+        <translation><!-- Polaris Diagnostics &amp; Engineering Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Engineer Partnership LLP</masterLabel>
+        <translation><!-- Power Engineer Partnership LLP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Engineering Partnership</masterLabel>
+        <translation><!-- Power Engineering Partnership --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Installations (UK) Ltd</masterLabel>
+        <translation><!-- Power Installations (UK) Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Lines Pipes and Cables Ltd</masterLabel>
+        <translation><!-- Power Lines Pipes and Cables Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Powys County Council</masterLabel>
+        <translation><!-- Powys County Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive Power Ltd</masterLabel>
+        <translation><!-- Proactive Power Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proarb Ltd</masterLabel>
+        <translation><!-- Proarb Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quartzelec Ltd</masterLabel>
+        <translation><!-- Quartzelec Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renfrewshire Council</masterLabel>
+        <translation><!-- Renfrewshire Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ringway Infrastructure Services</masterLabel>
+        <translation><!-- Ringway Infrastructure Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roadway Lighting Ltd</masterLabel>
+        <translation><!-- Roadway Lighting Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rodgers Electrical Services Ltd</masterLabel>
+        <translation><!-- Rodgers Electrical Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rosebank Engineering Services Ltd</masterLabel>
+        <translation><!-- Rosebank Engineering Services Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMS PLC</masterLabel>
+        <translation><!-- SMS PLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Energy Networks</masterLabel>
+        <translation><!-- SP Energy Networks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSE</masterLabel>
+        <translation><!-- SSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSE Contracting Ltd</masterLabel>
+        <translation><!-- SSE Contracting Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSE Metering Ltd</masterLabel>
+        <translation><!-- SSE Metering Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schneider Electric Limited</masterLabel>
+        <translation><!-- Schneider Electric Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scottish &amp; Southern Energy (Scottish Hydro)</masterLabel>
+        <translation><!-- Scottish &amp; Southern Energy (Scottish Hydro) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scottish Borders Council</masterLabel>
+        <translation><!-- Scottish Borders Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sefton Metropolitan Council.</masterLabel>
+        <translation><!-- Sefton Metropolitan Council. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens Mobility Traffic Solutions</masterLabel>
+        <translation><!-- Siemens Mobility Traffic Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens Operational Services</masterLabel>
+        <translation><!-- Siemens Operational Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens Traffic</masterLabel>
+        <translation><!-- Siemens Traffic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Lanarkshire Council</masterLabel>
+        <translation><!-- South Lanarkshire Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synergy</masterLabel>
+        <translation><!-- Synergy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T &amp; N Gilmartin Contractors Ltd</masterLabel>
+        <translation><!-- T &amp; N Gilmartin Contractors Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TWM TRAFFIC CONTROL SYSTEMS LTD</masterLabel>
+        <translation><!-- TWM TRAFFIC CONTROL SYSTEMS LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tarmac</masterLabel>
+        <translation><!-- Tarmac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology Solutions Ltd</masterLabel>
+        <translation><!-- Technology Solutions Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vital Human Resources Ltd</masterLabel>
+        <translation><!-- Vital Human Resources Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voltcom Group</masterLabel>
+        <translation><!-- Voltcom Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walker&amp;Watts</masterLabel>
+        <translation><!-- Walker&amp;Watts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warrington Borough Council</masterLabel>
+        <translation><!-- Warrington Borough Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Lothian Council</masterLabel>
+        <translation><!-- West Lothian Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Western Power Distribution</masterLabel>
+        <translation><!-- Western Power Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIV Automation UK Limited</masterLabel>
+        <translation><!-- ZIV Automation UK Limited --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

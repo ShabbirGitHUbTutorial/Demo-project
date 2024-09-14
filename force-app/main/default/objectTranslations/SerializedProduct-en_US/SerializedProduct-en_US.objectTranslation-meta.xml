@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Serialised Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Serialised Products</value>
+    </caseValues>
+    <layouts>
+        <layout>CMPS Authorised User Serialised Product Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance Information --></label>
+            <section>Compliance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Information --></label>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Overview --></label>
+            <section>Equipment Overview</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CMPS Competent User Serialised Product Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance Information --></label>
+            <section>Compliance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Information --></label>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Overview --></label>
+            <section>Equipment Overview</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CMPS Compliance User Serialised Product Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance Information --></label>
+            <section>Compliance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Information --></label>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Overview --></label>
+            <section>Equipment Overview</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CMPS OSE User Serialised Product Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance Information --></label>
+            <section>Compliance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Information --></label>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Overview --></label>
+            <section>Equipment Overview</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CMPS Team Leader Serialised Product Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Compliance Information --></label>
+            <section>Compliance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Information --></label>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Overview --></label>
+            <section>Equipment Overview</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Serialised Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Overview --></label>
+            <section>Equipment Overview</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Change Expected Return --></label>
+        <name>Change_Expected_Return</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Book In --></label>
+        <name>SPEN_Book_In</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Status/Location Change --></label>
+        <name>SPEN_Compliance_Stores_Move_Item</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Inspection --></label>
+        <name>SPEN_Inspection</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Issue Item --></label>
+        <name>SPEN_Issue_Item</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Item End of Life --></label>
+        <name>SPEN_Item_End_of_Life</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Item Reactivation --></label>
+        <name>SPEN_Item_Reactivation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Item Search --></label>
+        <name>SPEN_Item_Search</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Book Out --></label>
+        <name>SPEN_Serialised_Product_Book_Out</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Record type for Compliance Stores serialized items. --></description>
+        <label><!-- Compliance Stores --></label>
+        <name>SPEN_Compliance_Stores</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This product requires a &apos;Calibration Due&apos; date to be populated, please enter this and try to save the changes. --></errorMessage>
+        <name>SPEN_VR_Calibration_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This product requires a &apos;Do Not Use After&apos; date to be populated, please enter this and try to save the changes. --></errorMessage>
+        <name>SPEN_VR_Do_Not_Use_After_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Serial Number already in use. --></errorMessage>
+        <name>SPEN_VR_Duplicate_Serial_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This product requires an &apos;Insurance Inspection Due&apos; date to be populated, please enter this and try to save the changes. --></errorMessage>
+        <name>SPEN_VR_Insurance_Inspection_Due_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the equipment is part of a multiset, the Parent Energy Networks ID should be entered and multiset ticked. Please correct the record and attempt to save. --></errorMessage>
+        <name>SPEN_VR_Multiset_Parent_ENID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This product requires a &apos;Replacement Due&apos; date to be populated, please enter this and try to save the changes. --></errorMessage>
+        <name>SPEN_VR_Replacement_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This product requires a &apos;Service Due&apos; date to be populated, please enter this and try to save the changes. --></errorMessage>
+        <name>SPEN_VR_Service_Due_Product</name>
+    </validationRules>
+</CustomObjectTranslation>

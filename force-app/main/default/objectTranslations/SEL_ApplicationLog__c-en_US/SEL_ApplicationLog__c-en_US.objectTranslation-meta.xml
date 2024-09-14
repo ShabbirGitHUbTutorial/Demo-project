@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Application Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Application Logs</value>
+    </caseValues>
+    <layouts>
+        <layout>Application Log Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Stacktrace --></label>
+            <section>Stacktrace</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warning Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Event --></label>
+            <section>Event</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Exception --></label>
+        <name>Exception</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Warning --></label>
+        <name>Warning</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>SPEN_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved with Conditions</masterLabel>
+        <translation><!-- Approved with Conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delayed</masterLabel>
+        <translation><!-- Delayed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feedback Pending</masterLabel>
+        <translation><!-- Feedback Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress-Date Submitted</masterLabel>
+        <translation><!-- In Progress-Date Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Review</masterLabel>
+        <translation><!-- In Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refused</masterLabel>
+        <translation><!-- Refused --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted to Local Authority</masterLabel>
+        <translation><!-- Submitted to Local Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Public Inquiry</masterLabel>
+        <translation><!-- With Public Inquiry --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

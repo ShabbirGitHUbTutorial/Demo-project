@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Proactive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To be used for Incident related surveys where customeres were proactively contacted in prior messaging tasks</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>To be used for Incident related surveys where customeres were proactively contacted in prior messaging tasks</inlineHelpText>
+    <label>Proactive</label>
+    <type>Checkbox</type>
+</CustomField>

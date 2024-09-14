@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RedesignRequestLeadTime__c</fullName>
+    <description>Created as part of ESC-458.</description>
+    <label>Redesign Request Lead Time</label>
+    <summarizedField>SPEN_DesignChange__c.SPEN_LeadTimeDelay__c</summarizedField>
+    <summaryFilterItems>
+        <field>SPEN_DesignChange__c.SPEN_RedesignOrigin__c</field>
+        <operation>equals</operation>
+        <value>Job</value>
+    </summaryFilterItems>
+    <summaryForeignKey>SPEN_DesignChange__c.SPEN_Job__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

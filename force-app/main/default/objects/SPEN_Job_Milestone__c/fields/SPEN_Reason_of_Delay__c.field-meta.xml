@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Reason_of_Delay__c</fullName>
+    <label>Reason of Delay</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Landowner or occupier</fullName>
+                <default>false</default>
+                <label>Landowner or occupier</label>
+            </value>
+            <value>
+                <fullName>Awaiting a PO from the business or project</fullName>
+                <default>false</default>
+                <label>Awaiting a PO from the business or project</label>
+            </value>
+            <value>
+                <fullName>Awaiting a decision from the business or project</fullName>
+                <default>false</default>
+                <label>Awaiting a decision from the business or project</label>
+            </value>
+            <value>
+                <fullName>Awaiting design information from the business or project</fullName>
+                <default>false</default>
+                <label>Awaiting design information from the business or project</label>
+            </value>
+            <value>
+                <fullName>Statutory Body</fullName>
+                <default>false</default>
+                <label>Statutory Body</label>
+            </value>
+            <value>
+                <fullName>3rd Party</fullName>
+                <default>false</default>
+                <label>3rd Party</label>
+            </value>
+            <value>
+                <fullName>Await Completion of the Legal Agreement</fullName>
+                <default>false</default>
+                <label>Await Completion of the Legal Agreement</label>
+            </value>
+            <value>
+                <fullName>Other Consents</fullName>
+                <default>false</default>
+                <label>Other Consents</label>
+            </value>
+            <value>
+                <fullName>Re-issue of Paperwork</fullName>
+                <default>false</default>
+                <label>Re-issue of Paperwork</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

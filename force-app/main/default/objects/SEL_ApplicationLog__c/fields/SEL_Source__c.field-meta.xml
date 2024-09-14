@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEL_Source__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>The class name where the exception occurred.</description>
+    <externalId>false</externalId>
+    <label>Source</label>
+    <length>50</length>
+    <required>true</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

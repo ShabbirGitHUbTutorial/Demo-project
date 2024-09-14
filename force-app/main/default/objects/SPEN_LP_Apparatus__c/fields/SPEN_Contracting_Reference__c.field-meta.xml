@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Contracting_Reference__c</fullName>
+    <description>Used in the referencing on documents generated from Salesforce as the Name field does not allow for apparatus descriptions longer than 80 characters</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used in the referencing on documents generated from Salesforce as the Name field does not allow for apparatus descriptions longer than 80 characters</inlineHelpText>
+    <label>Contracting Reference</label>
+    <length>150</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

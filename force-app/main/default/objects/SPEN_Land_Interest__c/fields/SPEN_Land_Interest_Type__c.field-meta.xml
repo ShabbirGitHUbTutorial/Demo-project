@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Land_Interest_Type__c</fullName>
+    <description>Created as part of ESC-122.</description>
+    <label>Land Right Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Owner</fullName>
+                <color>#A5DD50</color>
+                <default>false</default>
+                <label>Owner</label>
+            </value>
+            <value>
+                <fullName>Occupier</fullName>
+                <color>#73A616</color>
+                <default>false</default>
+                <label>Occupier</label>
+            </value>
+            <value>
+                <fullName>Owner-Occupier</fullName>
+                <color>#5C881A</color>
+                <default>false</default>
+                <label>Owner-Occupier</label>
+            </value>
+            <value>
+                <fullName>Unknown Owner</fullName>
+                <color>#F07B2B</color>
+                <default>false</default>
+                <label>Unknown Owner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

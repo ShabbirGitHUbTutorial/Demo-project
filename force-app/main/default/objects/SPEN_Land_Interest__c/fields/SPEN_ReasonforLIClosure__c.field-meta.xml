@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ReasonforLIClosure__c</fullName>
+    <label>Reason for Land Right Closure</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Withdrawn</fullName>
+                <default>false</default>
+                <label>Customer Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Landowner Refused - General</fullName>
+                <default>false</default>
+                <label>Landowner Refused - General</label>
+            </value>
+            <value>
+                <fullName>Land Owner Refused - Historical Instance</fullName>
+                <default>false</default>
+                <label>Land Owner Refused - Historical Instance</label>
+            </value>
+            <value>
+                <fullName>Land Consent Issue</fullName>
+                <default>false</default>
+                <label>Land Consent Issue</label>
+            </value>
+            <value>
+                <fullName>Business Re-Design</fullName>
+                <default>false</default>
+                <label>Business Re-Design</label>
+            </value>
+            <value>
+                <fullName>Programmed Refresh</fullName>
+                <default>false</default>
+                <label>Programmed Refresh</label>
+            </value>
+            <value>
+                <fullName>Change of Owner</fullName>
+                <default>false</default>
+                <label>Change of Owner</label>
+            </value>
+            <value>
+                <fullName>Raised in Error</fullName>
+                <default>false</default>
+                <label>Raised in Error</label>
+            </value>
+            <value>
+                <fullName>Cancelled - Signed with Agent</fullName>
+                <default>false</default>
+                <label>Cancelled - Signed with Agent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

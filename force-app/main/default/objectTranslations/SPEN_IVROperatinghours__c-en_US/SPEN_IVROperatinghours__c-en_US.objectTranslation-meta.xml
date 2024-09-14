@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IVR Operating hours</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IVR Operating hours</value>
+    </caseValues>
+    <layouts>
+        <layout>Callback Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IVR Operating hours Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Holiday Details - Fill only when relevant --></label>
+            <section>Holiday Details - Fill only when relevant</section>
+        </sections>
+        <sections>
+            <label><!-- Operating Hours - Fill only when relevant --></label>
+            <section>Operating Hours - Fill only when relevant</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Outbound Contact Hours Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SMS Blackout Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VA Blackout Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Outbound Contact Hours --></description>
+        <label><!-- Outbound Contact Hours --></label>
+        <name>Outbound_Contact_Hours</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Callback --></description>
+        <label><!-- Callback --></label>
+        <name>SPEN_Callback</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- IVR Prompt --></description>
+        <label><!-- IVR Prompt --></label>
+        <name>SPEN_IVRPrompt</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SMS Blackout Window --></label>
+        <name>SPEN_SMSBlackoutWindow</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VA Blackout Window --></label>
+        <name>SPEN_VABlackoutWindow</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Restricted Start Date and Restricted End Date can only be populated only if the daily checkbox is not checked. --></errorMessage>
+        <name>SPEN_IsDailyChecked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Start time and End time can be populated only if is daily checkbox is checked. --></errorMessage>
+        <name>SPEN_IsDailyNotChecked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check the Start time and End time. --></errorMessage>
+        <name>SPEN_startEndTimeNotBlankForSMSVA</name>
+    </validationRules>
+</CustomObjectTranslation>

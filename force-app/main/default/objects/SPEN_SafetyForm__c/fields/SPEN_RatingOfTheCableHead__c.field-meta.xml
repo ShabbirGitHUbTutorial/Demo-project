@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RatingOfTheCableHead__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to indicate the rating of the cable head
+Used in Cable head retention forms</description>
+    <label>Rating of the cable head</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>25A</fullName>
+                <default>false</default>
+                <label>25A</label>
+            </value>
+            <value>
+                <fullName>60A</fullName>
+                <default>false</default>
+                <label>60A</label>
+            </value>
+            <value>
+                <fullName>80A</fullName>
+                <default>false</default>
+                <label>80A</label>
+            </value>
+            <value>
+                <fullName>100A</fullName>
+                <default>false</default>
+                <label>100A</label>
+            </value>
+            <value>
+                <fullName>200A</fullName>
+                <default>false</default>
+                <label>200A</label>
+            </value>
+            <value>
+                <fullName>300A (heavy duty)</fullName>
+                <default>false</default>
+                <label>300A (heavy duty)</label>
+            </value>
+            <value>
+                <fullName>400A (heavy duty)</fullName>
+                <default>false</default>
+                <label>400A (heavy duty)</label>
+            </value>
+            <value>
+                <fullName>600A (heavy duty)</fullName>
+                <default>false</default>
+                <label>600A (heavy duty)</label>
+            </value>
+            <value>
+                <fullName>n/a</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>n/a</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

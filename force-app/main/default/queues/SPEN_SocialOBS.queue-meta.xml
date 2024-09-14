@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Social OBS</name>
+    <queueMembers>
+        <users>
+            <user>ajones1@spenergynetworks.co.uk.spencrm</user>
+            <user>bobbie.preston@spenergynetworks.co.uk.spencrm</user>
+            <user>cdey@spenergynetworks.co.uk.spencrm</user>
+            <user>david.orr@spenergynetworks.co.uk.spencrm</user>
+            <user>derek.stevenson@spenergynetworks.co.uk.spencrm</user>
+            <user>esimpson@spenergynetworks.co.uk.spencrm</user>
+            <user>gerry.gilmurray@spenergynetworks.co.uk.spencrm</user>
+            <user>jsinclair@spenergynetworks.co.uk.spencrm</user>
+            <user>m.dobbie@spenergynetworks.co.uk.spencrm</user>
+            <user>nedmunds@spenergynetworks.co.uk.spencrm</user>
+            <user>pclark1@spenergynetworks.co.uk.spencrm</user>
+            <user>sgraham@spenergynetworks.co.uk.spencrm</user>
+            <user>shirley.shanks@spenergynetworks.co.uk.spencrm</user>
+            <user>sdonaldson@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Legal Required --></label>
+    <name>SPEN_TypeofLegalRequired__c</name>
+    <picklistValues>
+        <masterLabel>Easement</masterLabel>
+        <translation><!-- Easement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servitude</masterLabel>
+        <translation><!-- Servitude --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub Station Lease</masterLabel>
+        <translation><!-- Sub Station Lease --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wayleave</masterLabel>
+        <translation><!-- Wayleave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wayleave (TTC)</masterLabel>
+        <translation><!-- Wayleave (TTC) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

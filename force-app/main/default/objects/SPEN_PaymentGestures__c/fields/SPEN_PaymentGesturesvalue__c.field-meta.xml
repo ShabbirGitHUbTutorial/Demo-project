@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PaymentGesturesvalue__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>It holds the payment amount. CRMD-5327</description>
+    <label>Payment/Gestures value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

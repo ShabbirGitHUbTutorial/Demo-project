@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnDemand</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SPEN_OnDemandCompactLayout</compactLayoutAssignment>
+    <description>To be used to upload CSV and send communication</description>
+    <label>OnDemand</label>
+    <picklistValues>
+        <picklist>SPEN_Category__c</picklist>
+        <values>
+            <fullName>3-Hour Comfort Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Call Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped Supply with Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped Supply without Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimated Restoration Time Extended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Restored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Arrival On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Dispatched</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Event__c</picklist>
+        <values>
+            <fullName>On Demand</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

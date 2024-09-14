@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Apllication Push Topic Monitoring" icon-name="standard:collection" >
+        <br/>
+        <div style="width: auto;">
+            <template if:true={data}>
+                <lightning-datatable key-field="id" data={data} columns={columns} hide-checkbox-column="true" show-row-number-column="True"></lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>

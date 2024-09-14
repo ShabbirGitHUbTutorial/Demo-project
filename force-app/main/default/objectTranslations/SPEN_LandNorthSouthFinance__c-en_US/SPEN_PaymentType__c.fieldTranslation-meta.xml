@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Type --></label>
+    <name>SPEN_PaymentType__c</name>
+    <picklistValues>
+        <masterLabel>Cheque Re-issue</masterLabel>
+        <translation><!-- Cheque Re-issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTS</masterLabel>
+        <translation><!-- NTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTS Cheque Re-issue</masterLabel>
+        <translation><!-- NTS Cheque Re-issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTS Estates</masterLabel>
+        <translation><!-- NTS Estates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTS NWA Payment</masterLabel>
+        <translation><!-- NTS NWA Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Self Invoicing</masterLabel>
+        <translation><!-- Non-Self Invoicing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAO</masterLabel>
+        <translation><!-- PAO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PONS Estates</masterLabel>
+        <translation><!-- PONS Estates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PONS Legal</masterLabel>
+        <translation><!-- PONS Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receipting</masterLabel>
+        <translation><!-- Receipting --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_IVRPrompt</fullName>
+    <active>true</active>
+    <label>IVR Prompt</label>
+    <picklistValues>
+        <picklist>SPEN_Purpose__c</picklist>
+        <values>
+            <fullName>Cancelled Pre Arranged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comfort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped Supply Within a Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETR Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended Awaiting Emergency Services to provide access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended Pre-Arranged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flickering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HV Shutdown for Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Fuse Replacements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some on Some off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unconfirmed reports of Fire%2C Vandalism%2C 3rd Party damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XRT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XRT - Some On</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

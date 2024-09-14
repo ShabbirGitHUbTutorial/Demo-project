@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The API Name of the Destination Object for the Dataset Writeback. If you don&apos;t see the Object API Name that you are looking for, click on the &quot;Manage Object API Name Picklist&quot; button, activate the desired Object API Name if it&apos;s been deactivated or add a new Object API Name to the picklist. --></help>
+    <label><!-- Object API Name --></label>
+    <name>DSWB__Writeback_Object_API_Name__c</name>
+    <picklistValues>
+        <masterLabel>DSWB__Dataset_Writeback__c</masterLabel>
+        <translation><!-- DSWB__Dataset_Writeback__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPEN_MetricSnapshot__c</masterLabel>
+        <translation><!-- SPEN_MetricSnapshot__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

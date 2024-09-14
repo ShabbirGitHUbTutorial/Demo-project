@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Delivery Type --></label>
+    <name>SPEN_DeliveryType__c</name>
+    <picklistValues>
+        <masterLabel>Major</masterLabel>
+        <translation><!-- Major --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minor - Non TTC</masterLabel>
+        <translation><!-- Minor - Non TTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minor - TTC</masterLabel>
+        <translation><!-- Minor - TTC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

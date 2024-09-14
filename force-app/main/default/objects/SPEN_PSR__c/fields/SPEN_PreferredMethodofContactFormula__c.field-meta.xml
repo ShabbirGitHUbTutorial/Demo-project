@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PreferredMethodofContactFormula__c</fullName>
+    <description>Preferred Method of Contact from Contact object</description>
+    <externalId>false</externalId>
+    <formula>TEXT(SPEN_Contact__r.SPEN_PreferredMethodofContact__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Preferred Method of Contact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

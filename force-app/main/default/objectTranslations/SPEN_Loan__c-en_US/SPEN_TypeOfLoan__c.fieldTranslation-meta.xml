@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Loan --></label>
+    <name>SPEN_TypeOfLoan__c</name>
+    <picklistValues>
+        <masterLabel>Fan Heater</masterLabel>
+        <translation><!-- Fan Heater --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freezer</masterLabel>
+        <translation><!-- Freezer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fridge</masterLabel>
+        <translation><!-- Fridge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fridge Freezer</masterLabel>
+        <translation><!-- Fridge Freezer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotplate</masterLabel>
+        <translation><!-- Hotplate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microwave</masterLabel>
+        <translation><!-- Microwave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portable Heaters</masterLabel>
+        <translation><!-- Portable Heaters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Washing Machine</masterLabel>
+        <translation><!-- Washing Machine --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

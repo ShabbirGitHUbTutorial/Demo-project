@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What has been done to Resolve? --></label>
+    <name>SPEN_WhathasbeendonetoResolve__c</name>
+    <picklistValues>
+        <masterLabel>Disconnect</masterLabel>
+        <translation><!-- Disconnect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diverted</masterLabel>
+        <translation><!-- Diverted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm. Repair to Modified Spec</masterLabel>
+        <translation><!-- Perm. Repair to Modified Spec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair to Original Spec</masterLabel>
+        <translation><!-- Repair to Original Spec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Temp. Repair to Modified Spec</masterLabel>
+        <translation><!-- Temp. Repair to Modified Spec --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

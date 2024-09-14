@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Department --></label>
+    <name>Department__c</name>
+    <picklistValues>
+        <masterLabel>DCC</masterLabel>
+        <translation><!-- DCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IC</masterLabel>
+        <translation><!-- IC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPD</masterLabel>
+        <translation><!-- SPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM</masterLabel>
+        <translation><!-- SPM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPT</masterLabel>
+        <translation><!-- SPT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

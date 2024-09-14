@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MP Profile --></label>
+    <name>SPEN_MPProfile__c</name>
+    <picklistValues>
+        <masterLabel>Plot</masterLabel>
+        <translation><!-- Plot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Un-Metered Supplier</masterLabel>
+        <translation><!-- Un-Metered Supplier --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

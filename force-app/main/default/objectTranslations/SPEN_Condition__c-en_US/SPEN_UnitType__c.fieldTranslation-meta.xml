@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Unit Type --></label>
+    <name>SPEN_UnitType__c</name>
+    <picklistValues>
+        <masterLabel>% Share in Condition</masterLabel>
+        <translation><!-- % Share in Condition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Differing Measurement</masterLabel>
+        <translation><!-- Differing Measurement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fixed Amount</masterLabel>
+        <translation><!-- Fixed Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Object Measurement</masterLabel>
+        <translation><!-- Object Measurement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

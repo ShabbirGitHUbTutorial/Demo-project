@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>SPEN_JobApprovedSourceEmailNorth</fullName>
+        <description>Job Approved Source Email North</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_CustomerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_JobAssignmentNotificationLandNorth</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_JobApprovedSourceEmailSouth</fullName>
+        <description>Job Approved Source Email South</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_CustomerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_JobAssignmentNotificationLandSouth</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_JobIsLiveToCustomer</fullName>
+        <description>SPEN Job is Live to Customer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_CustomerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_JobIsLiveToCustomerVFTemplate</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_JobIsRejectedToCustomers</fullName>
+        <description>SPEN Job is Rejected to Customers</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_CustomerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_JobRejectedToCustomers</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Job_Creation_Email_to_Customer</fullName>
+        <description>SPEN Job Creation Email to Customer for North</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_CustomerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_Job_Creation_Email_toCustomer</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Job_Creation_Email_to_Customer_for_LV_Claims</fullName>
+        <description>SPEN Job Creation Email to Customer for LV Claims</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_CustomerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_Job_Creation_Email_to_Customer_for_LV_Claims</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Job_Creation_Email_to_Customer_for_South</fullName>
+        <description>SPEN Job Creation Email to Customer for South</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_CustomerEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_Job_Creation_Email_to_Customer_for_South</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Job_is_Approve</fullName>
+        <description>SPEN Job is Approve</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_LandAssistant__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>SPEN_LandOfficer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SPEN_Job_Approve</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Job_is_Live</fullName>
+        <description>SPEN Job is Live</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_JobIsLiveVFTemplate</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Job_is_Rejected</fullName>
+        <description>SPEN Job is Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_Job_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Notification_to_Delivery_Engineer</fullName>
+        <description>SPEN Notification to Delivery Engineer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_DeliveryEngineer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>land.planning@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_Notification_to_Delivery_Engineer</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Notification_to_Queue_members</fullName>
+        <description>SPEN Notification to Queue members</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SPEN_Notification_to_Queue_members</template>
+    </alerts>
+</Workflow>

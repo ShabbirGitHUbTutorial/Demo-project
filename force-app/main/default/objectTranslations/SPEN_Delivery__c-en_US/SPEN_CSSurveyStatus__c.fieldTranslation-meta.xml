@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CS Survey Status --></label>
+    <name>SPEN_CSSurveyStatus__c</name>
+    <picklistValues>
+        <masterLabel>Attempted</masterLabel>
+        <translation><!-- Attempted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Required</masterLabel>
+        <translation><!-- Not Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refused</masterLabel>
+        <translation><!-- Refused --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Successful - Dissatisfaction requiring feedback</masterLabel>
+        <translation><!-- Successful - Dissatisfaction requiring feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Successful - Fully Satisfied</masterLabel>
+        <translation><!-- Successful - Fully Satisfied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Successful - Happy but some issues</masterLabel>
+        <translation><!-- Successful - Happy but some issues --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

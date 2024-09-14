@@ -1,0 +1,148 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 12-28-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+   <lightning-card title="PSRs" icon-name="custom:custom64">
+        <lightning-button label="Remove PSR" onclick={removePSRfromContact} slot="actions"></lightning-button>
+        <div class="slds-m-around_medium" style="overflow-y:scroll">
+            <template if:true={recorddata}> 
+                <lightning-datatable key-field="Id" data={recorddata} columns={cols} data-id="PSR">
+                </lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+    <br/>
+    <lightning-card title="PSR Vulnerabilities Selection" icon-name="custom:custom63">
+        
+        <div class="slds-m-around_medium" style="height:60vh; overflow-y:scroll">
+            <template if:true={psrListDataToShow}>
+                <lightning-datatable key-field="Id" data={psrListDataToShow} columns={psrcols} data-id="vulList">
+                </lightning-datatable>
+            </template>
+        </div>
+        <lightning-button label="Add PSR" onclick={handlePSRAdd} slot="actions"></lightning-button>
+    </lightning-card>
+
+<!-- added by ramesh.c.singh@accenture.com-->  
+   <!-- modal start  added by ramesh.c.singh@accenture.com-->      
+   <template if:true={isShowModel}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <!-- modal header start -->
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hideModalBox}>
+                    <lightning-icon icon-name="utility:close"
+                    alternative-text="close"
+                    variant="inverse"
+                    size="small" ></lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Create PSR</h2>
+            </header>
+            <!-- modal body start -->
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <div class="slds-grid slds-wrap ">
+                    <div class="slds-col slds-size_1-of-1">
+                        *Indicates required field
+                    </div>
+                    <!-- SFAMS-649: logic Start-->
+                    <template if:true={custpassword}>
+                        <div class="slds-col slds-size_1-of-1">
+                            <lightning-input type="text" class="additinalDetailsInfo" label="AdditionalInfo" placeholder="type here..." onchange={handleAdditinalInfoChange} message-when-value-missing=" Please enter a password in the additional info field in order to add this PSR category" required ="true"></lightning-input>
+                            <p class="AdditinalInfoErrorMessage">Please enter a password in the additional info field in order to add this PSR category</p>
+                        </div>
+                    </template>
+                    <!-- SFAMS-649: logic end-->
+                    <div class="slds-col slds-size_1-of-1">
+                        <lightning-combobox
+                        name="Is PSR Details Validated"
+                        label="Is PSR Details Validated"
+                        value={pSRDetailsValidatedValue}
+                        placeholder="Select"
+                        options={pSRDetailsValidatedOptions}
+                        onchange={handlePsrDetailsChange} required="true" class="PsrDetailsValidated"></lightning-combobox>
+                        <p class="PsrDetailsErrorMessage">Please select the value</p>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <lightning-combobox
+                        name="Source of PSR Update"
+                        label="Source of PSR Update"
+                        value={sourceOfPSRValue}
+                        placeholder="Select "
+                        options={sourceOfPSRoptions}
+                        onchange={handleSourceOfPsrChange} required="true" class="SourcePsrUpdate"></lightning-combobox>
+                        <p class="SourcePsrUpdateErrorMessage">Please select the value</p>
+                    </div>
+                     <template if:true={isShowSocialObligationsSource}>
+                     <div class="slds-col slds-size_1-of-1">
+                        <lightning-combobox
+                        name="Social Obligations Source"
+                        label="Social Obligations Source"
+                        value={isShowSocialObligationsValue}
+                        placeholder="Select"
+                        options={isShowSocialObligations}
+                        onchange={handleisShowSocialObligationsChange} required="true" class="isShowSocialObligations"></lightning-combobox>
+                        <p class="isShowSocialObligationsErrorMessage">Please select the value</p>
+                    </div>
+                    <template if:true={showOtherPartnerCorrespondence}>
+                      <div class="slds-col slds-size_1-of-1">
+                        <lightning-input
+                        type="text"
+                        name="Other Partner / Other Correspondence"
+                        label="Other Partner / Other Correspondence"
+                        value={OtherPartner}
+                        onchange={handleOtherPartnerChange}>
+                 </lightning-input>
+                    </div>
+                    </template>
+                    </template>
+
+                    <div class="slds-col slds-size_1-of-1">
+                        <lightning-combobox
+                        name="Is Customer Happy to provide PSR Details"
+                        label="Is Customer Consenting To Share PSR Details"
+                        value={customerHappyValue}
+                        placeholder="Select"
+                        options={customerHappyOptions}
+                        onchange={handleCustomeHappyChange} required="true" class="CustomerHappy"></lightning-combobox>
+                        <p class="CustomerHappyErrorMessage">Please select the value</p>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <template if:true={isShowFirstLangPicklist}>
+                                <lightning-combobox
+                                name="First Language"
+                                label="First Language"
+                                value={value}
+                                placeholder="Select Language"
+                                options={options}
+                                onchange={handleChange} required="true" class="FirstLanguage"></lightning-combobox>
+                        </template>
+                        <p class="FirstLanguageErrorMessage">Please select the value</p>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1">
+                        <template if:true={isShowEffectiveDate}>
+                                <lightning-input type="date" name="Effective To Date"
+                                onblur={getEffectiveDate} label="Effective To Date" required="true" class="EffectiveDate"></lightning-input>
+                        </template>
+                        <p class="EffectiveDateErrorMessage">Please select the value</p>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 buttonClass">
+                        <lightning-button label="Create PSR" onclick={createPSRWithFirstLangOrEffectiveToDate} slot="actions"></lightning-button>
+                    </div>
+                </div>
+            </div>
+            <!-- modal footer start-->
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick={hideModalBox}>Cancel</button>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+<!-- modal end -->
+<!-- added by ramesh.c.singh@accenture.com-->  
+</template>

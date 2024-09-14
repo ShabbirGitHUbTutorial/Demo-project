@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Tracker_Type__c</fullName>
+    <label>Case Tracker Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Case Owner Update</fullName>
+                <default>true</default>
+                <label>Case Owner Update</label>
+            </value>
+            <value>
+                <fullName>Case Status Update</fullName>
+                <default>false</default>
+                <label>Case Status Update</label>
+            </value>
+            <value>
+                <fullName>Case SLA Update</fullName>
+                <default>false</default>
+                <label>Case SLA Update</label>
+            </value>
+            <value>
+                <fullName>Case Routing Outcome Update</fullName>
+                <default>false</default>
+                <label>Case Routing Outcome Update</label>
+            </value>
+            <value>
+                <fullName>3PD Accepted &gt; Closed</fullName>
+                <default>false</default>
+                <label>3PD Accepted &gt; Closed</label>
+            </value>
+            <value>
+                <fullName>Partner Account Update</fullName>
+                <default>false</default>
+                <label>Partner Account Update</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

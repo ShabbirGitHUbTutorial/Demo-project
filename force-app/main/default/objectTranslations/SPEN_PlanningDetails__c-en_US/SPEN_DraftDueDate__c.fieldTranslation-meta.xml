@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Clock Start Date + 2 Months --></help>
+    <label><!-- Draft Due Date --></label>
+    <name>SPEN_DraftDueDate__c</name>
+</CustomFieldTranslation>

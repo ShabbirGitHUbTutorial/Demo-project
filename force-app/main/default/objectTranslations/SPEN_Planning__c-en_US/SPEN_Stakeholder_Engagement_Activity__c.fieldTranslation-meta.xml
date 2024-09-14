@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Stakeholder Engagement Activity --></label>
+    <name>SPEN_Stakeholder_Engagement_Activity__c</name>
+    <picklistValues>
+        <masterLabel>Community Council</masterLabel>
+        <translation><!-- Community Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Individual</masterLabel>
+        <translation><!-- Individual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landowner</masterLabel>
+        <translation><!-- Landowner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Statutory Consultee</masterLabel>
+        <translation><!-- Non-Statutory Consultee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parish Council</masterLabel>
+        <translation><!-- Parish Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Application Consultation Event</masterLabel>
+        <translation><!-- Pre-Application Consultation Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statutory Consultee</masterLabel>
+        <translation><!-- Statutory Consultee --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

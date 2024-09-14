@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CNT Lanarkshire Incident Control</name>
+    <queueMembers>
+        <users>
+            <user>b.webster@spenergynetworks.co.uk.spencrm</user>
+            <user>c.mccowan@spenergynetworks.co.uk.spencrm</user>
+            <user>danderson@spenergynetworks.co.uk.spencrm</user>
+            <user>e.kynoch@spenergynetworks.co.uk.spencrm</user>
+            <user>hugh.ballantyne@spenergynetworks.co.uk.spencrm</user>
+            <user>ian.morrison@spenergynetworks.co.uk.spencrm</user>
+            <user>james.panton@spenergynetworks.co.uk.spencrm</user>
+            <user>j.spence@spenergynetworks.co.uk.spencrm</user>
+            <user>john.tullan@spenergynetworks.co.uk.spencrm</user>
+            <user>jrobinson@spenergynetworks.co.uk.spencrm</user>
+            <user>k.barrett@spenergynetworks.co.uk.spencrm</user>
+            <user>l.neil@spenergynetworks.co.uk.spencrm</user>
+            <user>marriann.mcneill@spenergynetworks.co.uk.spencrm</user>
+            <user>martin.flynn@spenergynetworks.co.uk.spencrm</user>
+            <user>m.hume@spenergynetworks.co.uk.spencrm</user>
+            <user>m.leonard@spenergynetworks.co.uk.spencrm</user>
+            <user>n.beattie@spenergynetworks.co.uk.spencrm</user>
+            <user>s.gansie@spenergynetworks.co.uk.spencrm</user>
+            <user>s.bann@spenergynetworks.co.uk.spencrm</user>
+            <user>stewart.draz@scottishpower.com.spencrm</user>
+            <user>vicky.robertson@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

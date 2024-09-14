@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Applicable only for XML &amp; Container types --></help>
+    <label><!-- XML Namespace --></label>
+    <name>SPEN_XMLNamespace__c</name>
+</CustomFieldTranslation>

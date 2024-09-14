@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Referral_Service_Default_Compact_Layout</fullName>
+    <fields>SPEN_Service__c</fields>
+    <fields>SPEN_PartnerName__c</fields>
+    <fields>SPEN_ServiceStatus__c</fields>
+    <fields>SPEN_Case__c</fields>
+    <label>Referral Service Default Compact Layout</label>
+</CompactLayout>

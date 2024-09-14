@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_DCCIncident_Control</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(ISPICKVAL( Department__c  ,&quot;DCC&quot;),
+ISPICKVAL( Department__c , &quot;Incident Control&quot; )),
+NOT (ISBLANK( SPEN_ResponsibleEmployeeFieldAgent__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Department__c</errorDisplayField>
+    <errorMessage>If Department is DCC/Incident Control, Please clear previous Responsible Employee value by selecting Department as SPD/SPM</errorMessage>
+</ValidationRule>

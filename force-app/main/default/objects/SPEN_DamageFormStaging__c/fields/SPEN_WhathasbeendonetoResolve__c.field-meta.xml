@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_WhathasbeendonetoResolve__c</fullName>
+    <description>CRMD-7691</description>
+    <label>What has been done to Resolve?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+                <label>Disconnect</label>
+            </value>
+            <value>
+                <fullName>Repair to Original Spec</fullName>
+                <default>false</default>
+                <label>Repair to Original Spec</label>
+            </value>
+            <value>
+                <fullName>Temp. Repair to Modified Spec</fullName>
+                <default>false</default>
+                <label>Temp. Repair to Modified Spec</label>
+            </value>
+            <value>
+                <fullName>Perm. Repair to Modified Spec</fullName>
+                <default>false</default>
+                <label>Perm. Repair to Modified Spec</label>
+            </value>
+            <value>
+                <fullName>Diverted</fullName>
+                <default>false</default>
+                <label>Diverted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

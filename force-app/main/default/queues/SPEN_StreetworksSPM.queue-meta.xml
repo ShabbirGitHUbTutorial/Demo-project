@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Streetworks - SPM</name>
+    <queueMembers>
+        <users>
+            <user>amolloy@spenergynetworks.co.uk.spencrm</user>
+            <user>alison.stewart@spenergynetworks.co.uk.spencrm</user>
+            <user>amackinnon@spenergynetworks.co.uk</user>
+            <user>castle@spenergynetworks.co.uk.spencrm</user>
+            <user>kimberley.birkett@spenergynetworks.co.uk.spencrm</user>
+            <user>p.morris@spenergynetworks.co.uk.spencrm</user>
+            <user>r.sides@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_StreetworksCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LV_Claims</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SPEN_JobStatus__c</columns>
+    <columns>SPEN_JobTitle__c</columns>
+    <columns>SPEN_BusinessArea__c</columns>
+    <columns>SPEN_District__c</columns>
+    <columns>SPEN_WorkCategory__c</columns>
+    <columns>SPEN_LocationPostCode__c</columns>
+    <columns>SPEN_ControlNumber__c</columns>
+    <columns>SPEN_Project_CustomerReference__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>SPEN_ProjectManager__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>SPEN_Source__c</field>
+        <operation>equals</operation>
+        <value>Email LV Claims</value>
+    </filters>
+    <filters>
+        <field>SPEN_LicenseArea__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>LV Claims Licence Unassigned</label>
+    <queue>SPEN_NS_LV_Claims</queue>
+</ListView>

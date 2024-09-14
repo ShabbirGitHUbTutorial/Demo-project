@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#6E5A1E</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Access the staging tables populated by the ADQM daily delta sync jobs.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>ADQM Daily Sync</label>
+    <navType>Console</navType>
+    <tabs>SPEN_ContactStaging__c</tabs>
+    <tabs>SPEN_ContactNumberEmailStaging__c</tabs>
+    <tabs>SPEN_PSRStaging__c</tabs>
+    <tabs>SEL_Batch__c</tabs>
+    <tabs>SPEN_Premise__c</tabs>
+    <tabs>SPEN_MPAN__c</tabs>
+    <uiType>Lightning</uiType>
+    <workspaceConfig>
+        <mappings>
+            <tab>SEL_Batch__c</tab>
+        </mappings>
+        <mappings>
+            <tab>SPEN_ContactNumberEmailStaging__c</tab>
+        </mappings>
+        <mappings>
+            <tab>SPEN_ContactStaging__c</tab>
+        </mappings>
+        <mappings>
+            <tab>SPEN_MPAN__c</tab>
+        </mappings>
+        <mappings>
+            <tab>SPEN_PSRStaging__c</tab>
+        </mappings>
+        <mappings>
+            <tab>SPEN_Premise__c</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

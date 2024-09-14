@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PowerOnCallAPIErrorSoaEnvelope</label>
+    <protected>false</protected>
+    <values>
+        <field>SEL_IntegrationSettingId__c</field>
+        <value xsi:type="xsd:string">PowerOnCallByPassAPIErrorStatus</value>
+    </values>
+    <values>
+        <field>SEL_IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>SEL_Order__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>SEL_SourceFieldType__c</field>
+        <value xsi:type="xsd:string">Static</value>
+    </values>
+    <values>
+        <field>SEL_SourceField__c</field>
+        <value xsi:type="xsd:string">soap:Envelope</value>
+    </values>
+    <values>
+        <field>SEL_SourceObject__c</field>
+        <value xsi:type="xsd:string">soap:Envelope</value>
+    </values>
+    <values>
+        <field>SEL_TagretFieldCollectionItem__c</field>
+        <value xsi:type="xsd:string">xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;</value>
+    </values>
+    <values>
+        <field>SEL_TargetFieldLabel__c</field>
+        <value xsi:type="xsd:string">soap:Envelope</value>
+    </values>
+    <values>
+        <field>SEL_TargetFieldType__c</field>
+        <value xsi:type="xsd:string">Container</value>
+    </values>
+    <values>
+        <field>SEL_TargetParentNode__c</field>
+        <value xsi:type="xsd:string">&lt;&lt;ROOT&gt;&gt;</value>
+    </values>
+    <values>
+        <field>SPEN_XMLNamespace__c</field>
+        <value xsi:type="xsd:string">xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:sdif=&quot;SDIF&quot;</value>
+    </values>
+</CustomMetadata>

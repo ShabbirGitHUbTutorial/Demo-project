@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_DefectType__c</fullName>
+    <label>Defect Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cable Depth Not Indicated</fullName>
+                <default>false</default>
+                <label>Cable Depth Not Indicated</label>
+            </value>
+            <value>
+                <fullName>Ground Clearance Not Indicated</fullName>
+                <default>false</default>
+                <label>Ground Clearance Not Indicated</label>
+            </value>
+            <value>
+                <fullName>Missing Form</fullName>
+                <default>false</default>
+                <label>Missing Form</label>
+            </value>
+            <value>
+                <fullName>Missing Photos</fullName>
+                <default>false</default>
+                <label>Missing Photos</label>
+            </value>
+            <value>
+                <fullName>No Description of Third Party Works</fullName>
+                <default>false</default>
+                <label>No Description of Third Party Works</label>
+            </value>
+            <value>
+                <fullName>No Location provided on damage report</fullName>
+                <default>false</default>
+                <label>No Location provided on damage report</label>
+            </value>
+            <value>
+                <fullName>No Name/Tel of Third Party who assessed damage</fullName>
+                <default>false</default>
+                <label>No Name/Tel of Third Party who assessed damage</label>
+            </value>
+            <value>
+                <fullName>No Photographs Available</fullName>
+                <default>false</default>
+                <label>No Photographs Available</label>
+            </value>
+            <value>
+                <fullName>No Photographs on Damage Form</fullName>
+                <default>false</default>
+                <label>No Photographs on Damage Form</label>
+            </value>
+            <value>
+                <fullName>No Repair Detail on Sketch</fullName>
+                <default>false</default>
+                <label>No Repair Detail on Sketch</label>
+            </value>
+            <value>
+                <fullName>Poor Quality Photos</fullName>
+                <default>false</default>
+                <label>Poor Quality Photos</label>
+            </value>
+            <value>
+                <fullName>Third Party Details Insufficient</fullName>
+                <default>false</default>
+                <label>Third Party Details Insufficient</label>
+            </value>
+            <value>
+                <fullName>Unanswered Precautionary Questions</fullName>
+                <default>false</default>
+                <label>Unanswered Precautionary Questions</label>
+            </value>
+            <value>
+                <fullName>Incorrect Location / Coordinates</fullName>
+                <default>false</default>
+                <label>Incorrect Location / Coordinates</label>
+            </value>
+            <value>
+                <fullName>No Coordinates</fullName>
+                <default>false</default>
+                <label>No Coordinates</label>
+            </value>
+            <value>
+                <fullName>Late Coordinates</fullName>
+                <default>false</default>
+                <label>Late Coordinates</label>
+            </value>
+            <value>
+                <fullName>Coordinates in wrong category</fullName>
+                <default>false</default>
+                <label>Coordinates in wrong category</label>
+            </value>
+            <value>
+                <fullName>Coordinates added to job, but works not imminent or taking place</fullName>
+                <default>false</default>
+                <label>Coordinates added to job, but works not imminent or taking place</label>
+            </value>
+            <value>
+                <fullName>Resources incorrectly cancelled</fullName>
+                <default>false</default>
+                <label>Resources incorrectly cancelled</label>
+            </value>
+            <value>
+                <fullName>Duplicate case / request / job reference</fullName>
+                <default>false</default>
+                <label>Duplicate case / request / job reference</label>
+            </value>
+            <value>
+                <fullName>Description of works / TM insufficient</fullName>
+                <default>false</default>
+                <label>Description of works / TM insufficient</label>
+            </value>
+            <value>
+                <fullName>Missing contact information</fullName>
+                <default>false</default>
+                <label>Missing contact information</label>
+            </value>
+            <value>
+                <fullName>No/insufficient reason for early start documented</fullName>
+                <default>false</default>
+                <label>No/insufficient reason for early start documented</label>
+            </value>
+            <value>
+                <fullName>No plan attached</fullName>
+                <default>false</default>
+                <label>No plan attached</label>
+            </value>
+            <value>
+                <fullName>Notice requested but RON not required</fullName>
+                <default>false</default>
+                <label>Notice requested but RON not required</label>
+            </value>
+            <value>
+                <fullName>Incorrect Notice type / Duration of works requested</fullName>
+                <default>false</default>
+                <label>Incorrect Notice type / Duration of works requested</label>
+            </value>
+            <value>
+                <fullName>Contractor issue</fullName>
+                <default>false</default>
+                <label>Contractor issue</label>
+            </value>
+            <value>
+                <fullName>No Permit Condition Check Sheet attached</fullName>
+                <default>false</default>
+                <label>No Permit Condition Check Sheet attached</label>
+            </value>
+            <value>
+                <fullName>Webform / TM does not match permit checklist</fullName>
+                <default>false</default>
+                <label>Webform / TM does not match permit checklist</label>
+            </value>
+            <value>
+                <fullName>Permit Condition Checklist in incorrect format</fullName>
+                <default>false</default>
+                <label>Permit Condition Checklist in incorrect format</label>
+            </value>
+            <value>
+                <fullName>Incorrect Surface type</fullName>
+                <default>false</default>
+                <label>Incorrect Surface type</label>
+            </value>
+            <value>
+                <fullName>Conflicting information</fullName>
+                <default>false</default>
+                <label>Conflicting information</label>
+            </value>
+            <value>
+                <fullName>Insufficient location details</fullName>
+                <default>false</default>
+                <label>Insufficient location details</label>
+            </value>
+            <value>
+                <fullName>Footway closure details not sufficient</fullName>
+                <default>false</default>
+                <label>Footway closure details not sufficient</label>
+            </value>
+            <value>
+                <fullName>Cancelled – Not required</fullName>
+                <default>false</default>
+                <label>Cancelled – Not required</label>
+            </value>
+            <value>
+                <fullName>NCT approval not sought</fullName>
+                <default>false</default>
+                <label>NCT approval not sought</label>
+            </value>
+            <value>
+                <fullName>TM application not sent but TM requested on RON</fullName>
+                <default>false</default>
+                <label>TM application not sent but TM requested on RON</label>
+            </value>
+            <value>
+                <fullName>Working on/near a junction. Recognised from the system that more than one RON is required</fullName>
+                <default>false</default>
+                <label>Working on/near a junction. Recognised from the system that more than one RON is required</label>
+            </value>
+            <value>
+                <fullName>Information not provided at top of email chain</fullName>
+                <default>false</default>
+                <label>Information not provided at top of email chain</label>
+            </value>
+            <value>
+                <fullName>Not all required information provided in email</fullName>
+                <default>false</default>
+                <label>Not all required information provided in email</label>
+            </value>
+            <value>
+                <fullName>Incorrect information provided in email</fullName>
+                <default>false</default>
+                <label>Incorrect information provided in email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

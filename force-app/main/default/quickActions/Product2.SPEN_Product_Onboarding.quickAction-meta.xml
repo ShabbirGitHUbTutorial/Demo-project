@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows a user to onboard a product/serialised product using guided setup.</description>
+    <flowDefinition>SPEN_Compliance_Stores_Product_Onboarding</flowDefinition>
+    <label>Add Serialised Product</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

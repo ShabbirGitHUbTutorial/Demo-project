@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Contract_First_End_Date__c</fullName>
+    <formula>CASE(  SPEN_ConsentType__c , 
+      &apos;Lease&apos;,   ADDMONTHS(SPEN_Contract_Start_Date__c,1188) , 
+      &apos;Close Coupled Lease&apos;, ADDMONTHS(SPEN_Contract_Start_Date__c,2100),
+      &apos;Incorporated Rights&apos;, ADDMONTHS(SPEN_Contract_Start_Date__c,0),
+      &apos;Servitude&apos;, ADDMONTHS(SPEN_Contract_Start_Date__c,480),
+      &apos;Easement&apos;, ADDMONTHS(SPEN_Contract_Start_Date__c,480),
+      &apos;NWL&apos;, ADDMONTHS(SPEN_Contract_Start_Date__c,480),
+      &apos;CPO&apos;, ADDMONTHS(SPEN_Contract_Start_Date__c,0),
+      &apos;DCO&apos;, ADDMONTHS(SPEN_Contract_Start_Date__c,0),
+      ADDMONTHS(SPEN_Contract_Start_Date__c,480)) - 1</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contract First End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Type --></label>
+    <name>SPEN_JobType__c</name>
+    <picklistValues>
+        <masterLabel>APOS 1PH (Cable Head Relocation)</masterLabel>
+        <translation><!-- APOS 1PH (Cable Head Relocation) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APOS 1PH Lateral Mains</masterLabel>
+        <translation><!-- APOS 1PH Lateral Mains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APOS 1PH OH Line</masterLabel>
+        <translation><!-- APOS 1PH OH Line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APOS 1PH UG Cust Excavation</masterLabel>
+        <translation><!-- APOS 1PH UG Cust Excavation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional Load</masterLabel>
+        <translation><!-- Additional Load --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional Load (Sys Ext)</masterLabel>
+        <translation><!-- Additional Load (Sys Ext) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alteration to Point of Connection</masterLabel>
+        <translation><!-- Alteration to Point of Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CNO CONNECTIONS NOT REPORTED I</masterLabel>
+        <translation><!-- CNO CONNECTIONS NOT REPORTED I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cut Out Change</masterLabel>
+        <translation><!-- Cut Out Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnect/Reconnect (Estimate Required)</masterLabel>
+        <translation><!-- Disconnect/Reconnect (Estimate Required) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection</masterLabel>
+        <translation><!-- Disconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Bulk</masterLabel>
+        <translation><!-- Disconnection Bulk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Single</masterLabel>
+        <translation><!-- Disconnection Single --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection UMS - Existing Highway</masterLabel>
+        <translation><!-- Disconnection UMS - Existing Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection UMS - New Highway</masterLabel>
+        <translation><!-- Disconnection UMS - New Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Unmetered Supply - Existing</masterLabel>
+        <translation><!-- Disconnection Unmetered Supply - Existing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Unmetered Supply - New High</masterLabel>
+        <translation><!-- Disconnection Unmetered Supply - New High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diversion(S)</masterLabel>
+        <translation><!-- Diversion(S) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic CONV/REFURB System Ext (Vat)</masterLabel>
+        <translation><!-- Domestic CONV/REFURB System Ext (Vat) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic CONV/REFURB Sytem Ext (Vat)</masterLabel>
+        <translation><!-- Domestic CONV/REFURB Sytem Ext (Vat) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic Conversion / Refurb (VAT)</masterLabel>
+        <translation><!-- Domestic Conversion / Refurb (VAT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earthing</masterLabel>
+        <translation><!-- Earthing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earthing (System Ext)</masterLabel>
+        <translation><!-- Earthing (System Ext) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded Generation</masterLabel>
+        <translation><!-- Embedded Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded Generation - no plots</masterLabel>
+        <translation><!-- Embedded Generation - no plots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Isolator Switch (100 and Over)</masterLabel>
+        <translation><!-- Isolator Switch (100 and Over) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MULTIPLE SUP APPS (UMS) NEW HIWAY - OTH</masterLabel>
+        <translation><!-- MULTIPLE SUP APPS (UMS) NEW HIWAY - OTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi Utility With Plots (Out of Area)</masterLabel>
+        <translation><!-- Multi Utility With Plots (Out of Area) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi Utility with Plots</masterLabel>
+        <translation><!-- Multi Utility with Plots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Sup Apps (UMS) New Highway</masterLabel>
+        <translation><!-- Multiple Sup Apps (UMS) New Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Sup Apps(UMS) New Highway</masterLabel>
+        <translation><!-- Multiple Sup Apps(UMS) New Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Sup Apps(UMS)  Existing Highway</masterLabel>
+        <translation><!-- Multiple Sup Apps(UMS)  Existing Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Supply Applications (Metered)</masterLabel>
+        <translation><!-- Multiple Supply Applications (Metered) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Supply Applications(UMS) Existing</masterLabel>
+        <translation><!-- Multiple Supply Applications(UMS) Existing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW 1PH UG SL CON (INC EXC/REIN-FP BTOP)</masterLabel>
+        <translation><!-- NEW 1PH UG SL CON (INC EXC/REIN-FP BTOP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW 1PH UG SL CON (INC EXC/REIN-ROAD)</masterLabel>
+        <translation><!-- NEW 1PH UG SL CON (INC EXC/REIN-ROAD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW 1PH UG SL CON (INC EXC/REIN-UNMADE)</masterLabel>
+        <translation><!-- NEW 1PH UG SL CON (INC EXC/REIN-UNMADE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW 1PH UG SL CON (NO EXCAV/REIN)</masterLabel>
+        <translation><!-- NEW 1PH UG SL CON (NO EXCAV/REIN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW 3PH UG SL CON (INC EXC/REIN-FP BTOP)</masterLabel>
+        <translation><!-- NEW 3PH UG SL CON (INC EXC/REIN-FP BTOP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW 3PH UG SL CON (INC EXC/REIN-ROAD)</masterLabel>
+        <translation><!-- NEW 3PH UG SL CON (INC EXC/REIN-ROAD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW 3PH UG SL CON (INC EXC/REIN-UNMADE)</masterLabel>
+        <translation><!-- NEW 3PH UG SL CON (INC EXC/REIN-UNMADE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW 3PH UG SL CON (NO EXCAV/REIN)</masterLabel>
+        <translation><!-- NEW 3PH UG SL CON (NO EXCAV/REIN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEW HS2 PROJECT</masterLabel>
+        <translation><!-- NEW HS2 PROJECT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRSWA Diversion  7.5%</masterLabel>
+        <translation><!-- NRSWA Diversion  7.5% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRSWA Diversion 18%</masterLabel>
+        <translation><!-- NRSWA Diversion 18% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New EV Supply</masterLabel>
+        <translation><!-- New EV Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New EV Supply (System Extension)</masterLabel>
+        <translation><!-- New EV Supply (System Extension) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Supply</masterLabel>
+        <translation><!-- New Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Supply (System Extension)</masterLabel>
+        <translation><!-- New Supply (System Extension) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Supply 1PH -UG (1PH JB)</masterLabel>
+        <translation><!-- New Supply 1PH -UG (1PH JB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Supply 1PH OH TO UG</masterLabel>
+        <translation><!-- New Supply 1PH OH TO UG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Temporary Supply</masterLabel>
+        <translation><!-- New Temporary Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Temporary Supply (System Ext)</masterLabel>
+        <translation><!-- New Temporary Supply (System Ext) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Unmetered Supply - Existing Highway</masterLabel>
+        <translation><!-- New Unmetered Supply - Existing Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Unmetered Supply - New Highway</masterLabel>
+        <translation><!-- New Unmetered Supply - New Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHL SL DISCONNECTION</masterLabel>
+        <translation><!-- OHL SL DISCONNECTION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHL SL NEW CONNECTION</masterLabel>
+        <translation><!-- OHL SL NEW CONNECTION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHL SL TRANSFER</masterLabel>
+        <translation><!-- OHL SL TRANSFER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC/DA</masterLabel>
+        <translation><!-- POC/DA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC/DA Demand</masterLabel>
+        <translation><!-- POC/DA Demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC/DA Generation</masterLabel>
+        <translation><!-- POC/DA Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC/DA UMS</masterLabel>
+        <translation><!-- POC/DA UMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL CUT OUT (INC EXC/REIN-FP BTOP)</masterLabel>
+        <translation><!-- SL CUT OUT (INC EXC/REIN-FP BTOP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL CUT OUT (INC EXCAV/REINS - ROAD)</masterLabel>
+        <translation><!-- SL CUT OUT (INC EXCAV/REINS - ROAD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL CUT OUT (INC EXCAV/REINS - UNMADE)</masterLabel>
+        <translation><!-- SL CUT OUT (INC EXCAV/REINS - UNMADE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL CUT OUT - NO EXCAVATION</masterLabel>
+        <translation><!-- SL CUT OUT - NO EXCAVATION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL DISCO (INC EXC/REIN-FP BTOP)</masterLabel>
+        <translation><!-- SL DISCO (INC EXC/REIN-FP BTOP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL DISCO (INC EXC/REIN-UNMADE)</masterLabel>
+        <translation><!-- SL DISCO (INC EXC/REIN-UNMADE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL DISCO (INC EXCAV/REINS - ROAD)</masterLabel>
+        <translation><!-- SL DISCO (INC EXCAV/REINS - ROAD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL Network Replacement</masterLabel>
+        <translation><!-- SL Network Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL Network Replacement + Reinstatement</masterLabel>
+        <translation><!-- SL Network Replacement + Reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL TRANSFER (INC EXC/REIN-FP BTOP)</masterLabel>
+        <translation><!-- SL TRANSFER (INC EXC/REIN-FP BTOP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL TRANSFER (INC EXCAV/REINS - ROAD)</masterLabel>
+        <translation><!-- SL TRANSFER (INC EXCAV/REINS - ROAD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL TRANSFER (INC EXCAV/REINS - UNMADE)</masterLabel>
+        <translation><!-- SL TRANSFER (INC EXCAV/REINS - UNMADE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Connection</masterLabel>
+        <translation><!-- Street Lighting Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Connection + Reinstatem</masterLabel>
+        <translation><!-- Street Lighting Connection + Reinstatem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Cutout Change</masterLabel>
+        <translation><!-- Street Lighting Cutout Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Disconnection</masterLabel>
+        <translation><!-- Street Lighting Disconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Disconnection + Reinstat</masterLabel>
+        <translation><!-- Street Lighting Disconnection + Reinstat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Re-service</masterLabel>
+        <translation><!-- Street Lighting Re-service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Re-service Reinstatement</masterLabel>
+        <translation><!-- Street Lighting Re-service Reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Replacement Differen Day</masterLabel>
+        <translation><!-- Street Lighting Replacement Differen Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Replacement Same Day</masterLabel>
+        <translation><!-- Street Lighting Replacement Same Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Transfer</masterLabel>
+        <translation><!-- Street Lighting Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Transfer + Reinstatement</masterLabel>
+        <translation><!-- Street Lighting Transfer + Reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub Station Stand By</masterLabel>
+        <translation><!-- Sub Station Stand By --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer UMS - Existing Highway</masterLabel>
+        <translation><!-- Transfer UMS - Existing Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer UMS - New Highway</masterLabel>
+        <translation><!-- Transfer UMS - New Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Unmetered Supply - Existing High</masterLabel>
+        <translation><!-- Transfer Unmetered Supply - Existing High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Unmetered Supply - New Highway</masterLabel>
+        <translation><!-- Transfer Unmetered Supply - New Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U/G SL DISCO (NO EXCAV - MULTIPLE)</masterLabel>
+        <translation><!-- U/G SL DISCO (NO EXCAV - MULTIPLE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U/G SL DISCO (NO EXCAV - SINGLE)</masterLabel>
+        <translation><!-- U/G SL DISCO (NO EXCAV - SINGLE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U/G SL TRANSFER (NO EXCAV - MULTIPLE)</masterLabel>
+        <translation><!-- U/G SL TRANSFER (NO EXCAV - MULTIPLE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U/G SL TRANSFER (NO EXCAV - SINGLE)</masterLabel>
+        <translation><!-- U/G SL TRANSFER (NO EXCAV - SINGLE) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

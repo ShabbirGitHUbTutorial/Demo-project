@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ReasonForConsentType__c</fullName>
+    <label>Reason for Consent Type Change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business request (PM)</fullName>
+                <default>false</default>
+                <label>Business request (PM)</label>
+            </value>
+            <value>
+                <fullName>Reduction in Rights compliance</fullName>
+                <default>false</default>
+                <label>Reduction in Rights compliance</label>
+            </value>
+            <value>
+                <fullName>Landowner unwilling to grant DoS / Easement</fullName>
+                <default>false</default>
+                <label>Landowner unwilling to grant DoS / Easement</label>
+            </value>
+            <value>
+                <fullName>Landowner unwilling to grant WL</fullName>
+                <default>false</default>
+                <label>Landowner unwilling to grant WL</label>
+            </value>
+            <value>
+                <fullName>Landowner unwilling to grant voluntary land right</fullName>
+                <default>false</default>
+                <label>Landowner unwilling to grant voluntary land right</label>
+            </value>
+            <value>
+                <fullName>Statutory Land Rights not compliant with programme</fullName>
+                <default>false</default>
+                <label>Statutory Land Rights not compliant with programme</label>
+            </value>
+            <value>
+                <fullName>Landowner has requested a permanent land right</fullName>
+                <default>false</default>
+                <label>Landowner has requested a permanent land right</label>
+            </value>
+            <value>
+                <fullName>Project has requested a permanent land right</fullName>
+                <default>false</default>
+                <label>Project has requested a permanent land right</label>
+            </value>
+            <value>
+                <fullName>Servitude/Easement not completed</fullName>
+                <default>false</default>
+                <label>Servitude/Easement not completed</label>
+            </value>
+            <value>
+                <fullName>Voluntary permanent land right secured</fullName>
+                <default>false</default>
+                <label>Voluntary permanent land right secured</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

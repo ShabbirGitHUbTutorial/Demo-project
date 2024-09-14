@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CS APOS</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>SPEN_CSAPOS</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

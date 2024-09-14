@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>SPEN_AllMsgTaskSharingwithRead</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>AllMsgTaskSharingwithRead</label>
+        <sharedTo>
+            <role>SPEN_DCCAgent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>OnDemand,Incident</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_MessagingTaskSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SPEN_MessagingTaskSharing</label>
+        <sharedTo>
+            <group>SPEN_Integration</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Incident</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_MsgTaskSharingwithReadCT</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share all Messaging Task records with Connection Team Member Hierarchy</description>
+        <label>MsgTaskSharingwithReadCT</label>
+        <sharedTo>
+            <role>SPEN_ConnectionsTeamMember</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Incident</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

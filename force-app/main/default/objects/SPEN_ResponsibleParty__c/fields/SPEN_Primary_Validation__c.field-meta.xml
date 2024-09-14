@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Primary_Validation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>CRMD-6634, Boolean Flag to throw validation when more than 1 primary is checked for Responsible Party. 
+This field is used in Flow to trigger the validation.</description>
+    <label>Primary Validation</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

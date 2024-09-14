@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Transmission Application Fee Rules</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Transmission Application Fee Rules</value>
+    </caseValues>
+    <layouts>
+        <layout>Fixed Application Fee</layout>
+        <sections>
+            <label><!-- Application Fixed Fee Summary --></label>
+            <section>Application Fixed Fee Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Details --></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Variable Application Fee</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Time Writing Details --></label>
+            <section>Time Writing Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Fixed Application Fee --></label>
+        <name>SPEN_FixedApplicationFee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Variable Application Fee --></label>
+        <name>SPEN_VariableApplicationFee</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

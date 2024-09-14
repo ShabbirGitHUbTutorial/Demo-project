@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TypeOfUnmeteredConnection__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the type of unmetered connection
+Used in LV Service Termination Survey forms</description>
+    <label>Type of unmetered connection?</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Street lamp</fullName>
+                <default>false</default>
+                <label>Street lamp</label>
+            </value>
+            <value>
+                <fullName>Feeder/link pillar</fullName>
+                <default>false</default>
+                <label>Feeder/link pillar</label>
+            </value>
+            <value>
+                <fullName>CCTV</fullName>
+                <default>false</default>
+                <label>CCTV</label>
+            </value>
+            <value>
+                <fullName>Traffic lights/signs</fullName>
+                <default>false</default>
+                <label>Traffic lights/signs</label>
+            </value>
+            <value>
+                <fullName>Telephone/broadband cabinet</fullName>
+                <default>false</default>
+                <label>Telephone/broadband cabinet</label>
+            </value>
+            <value>
+                <fullName>Advertising hoarding/bus shelters</fullName>
+                <default>false</default>
+                <label>Advertising hoarding/bus shelters</label>
+            </value>
+            <value>
+                <fullName>Internal substation lighting</fullName>
+                <default>false</default>
+                <label>Internal substation lighting</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Street lighting</fullName>
+                <default>false</default>
+                <label>Street lighting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

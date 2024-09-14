@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Faults-SMS-Proactive</label>
+    <protected>false</protected>
+    <values>
+        <field>SPEN_Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>SPEN_CaseOrigin__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_EmailTemplate__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_Expiryinhours__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_Proactive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>SPEN_SurveyChannel__c</field>
+        <value xsi:type="xsd:string">SMS</value>
+    </values>
+    <values>
+        <field>SPEN_SurveyName__c</field>
+        <value xsi:type="xsd:string">faults_sms_proactive</value>
+    </values>
+    <values>
+        <field>SPEN_Type__c</field>
+        <value xsi:type="xsd:string">Faults</value>
+    </values>
+</CustomMetadata>

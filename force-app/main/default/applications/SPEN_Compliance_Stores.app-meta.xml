@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#669214</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Manage Compliance Stores testing equipment.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Compliance Stores</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Contractor_Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+        <recordType>Contact.SPEN_ContractorContact</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Authorised User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Competent User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Compliance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Operational Safety Engineer</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Transfer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ProductTransfer</pageOrSobjectType>
+        <recordType>ProductTransfer.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Inspection_Item_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SPEN_Inspection_Item__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN CMPS Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Field Service</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Field Service</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Field Service</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_Compliance_Stores_Serialised_Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SerializedProduct</pageOrSobjectType>
+        <recordType>SerializedProduct.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Field Service</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Field Service</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Compliance_Stores_Location_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Location</pageOrSobjectType>
+        <recordType>Location.SPEN_Compliance_Stores</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Field Service</profile>
+    </profileActionOverrides>
+    <setupExperience>all</setupExperience>
+    <tabs>standard-Product2</tabs>
+    <tabs>standard-SerializedProduct</tabs>
+    <tabs>standard-ProductTransfer</tabs>
+    <tabs>standard-Location</tabs>
+    <tabs>SPEN_Inspection__c</tabs>
+    <tabs>standard-OtherUserProfile</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Compliance_Stores_UtilityBar</utilityBar>
+</CustomApplication>

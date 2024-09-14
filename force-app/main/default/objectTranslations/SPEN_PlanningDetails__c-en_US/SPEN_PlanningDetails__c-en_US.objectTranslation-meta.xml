@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Planning Details</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Planning Details</value>
+    </caseValues>
+    <layouts>
+        <layout>Planning Details Layout</layout>
+        <sections>
+            <label><!-- Clock Start --></label>
+            <section>Clock Start</section>
+        </sections>
+        <sections>
+            <label><!-- Cost Sheet --></label>
+            <section>Cost Sheet</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Draft Offer --></label>
+            <section>Draft Offer</section>
+        </sections>
+        <sections>
+            <label><!-- Final Offer --></label>
+            <section>Final Offer</section>
+        </sections>
+        <sections>
+            <label><!-- Options Document --></label>
+            <section>Options Document</section>
+        </sections>
+        <sections>
+            <label><!-- Programme and S-curve --></label>
+            <section>Programme and S-curve</section>
+        </sections>
+        <sections>
+            <label><!-- SRG --></label>
+            <section>SRG</section>
+        </sections>
+        <sections>
+            <label><!-- Scheme Briefing Note --></label>
+            <section>Scheme Briefing Note</section>
+        </sections>
+        <sections>
+            <label><!-- TOCO Circulation --></label>
+            <section>TOCO Circulation</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Planning Details --></label>
+        <name>SPEN_UpdatePlanningDetails</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

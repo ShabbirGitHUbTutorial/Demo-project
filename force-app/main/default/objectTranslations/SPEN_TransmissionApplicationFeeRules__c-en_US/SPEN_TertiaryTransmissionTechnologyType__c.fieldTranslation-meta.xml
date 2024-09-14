@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tertiary Transmission Technology Type --></label>
+    <name>SPEN_TertiaryTransmissionTechnologyType__c</name>
+    <picklistValues>
+        <masterLabel>Battery</masterLabel>
+        <translation><!-- Battery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bio-fuels</masterLabel>
+        <translation><!-- Bio-fuels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCGT</masterLabel>
+        <translation><!-- CCGT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHP</masterLabel>
+        <translation><!-- CHP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand</masterLabel>
+        <translation><!-- Demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EFW</masterLabel>
+        <translation><!-- EFW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas</masterLabel>
+        <translation><!-- Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydro</masterLabel>
+        <translation><!-- Hydro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interconnector</masterLabel>
+        <translation><!-- Interconnector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Plant</masterLabel>
+        <translation><!-- Power Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solar</masterLabel>
+        <translation><!-- Solar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sync Comp</masterLabel>
+        <translation><!-- Sync Comp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tidal</masterLabel>
+        <translation><!-- Tidal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wind</masterLabel>
+        <translation><!-- Wind --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date Initial SBN Received + 7 Calendar days --></help>
+    <label><!-- Initial SBN response target date --></label>
+    <name>SPEN_InitialSBNresponsetargetdate__c</name>
+</CustomFieldTranslation>

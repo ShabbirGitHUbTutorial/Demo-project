@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- The Remote Site URL of the DatasetWriteback_RestAPI Remote Site Settings + /services/data/ + API Version + /wave/query 
+(e.g. https://companyname.my.salesforce.com/services/data/v53.0/wave/query) -->
+    </help>
+    <label><!-- Endpoint --></label>
+    <name>DSWB__Endpoint__c</name>
+</CustomFieldTranslation>

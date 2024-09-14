@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- TTC Target Incentice Failed - Project St --></label>
+    <name>SPEN_TTCTargetIncenticeFailedProjectSt__c</name>
+    <picklistValues>
+        <masterLabel>Arranging a Refund</masterLabel>
+        <translation><!-- Arranging a Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Road Opening Notices</masterLabel>
+        <translation><!-- Awaiting Road Opening Notices --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Not Ready</masterLabel>
+        <translation><!-- Customer Not Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embargo</masterLabel>
+        <translation><!-- Embargo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Issues</masterLabel>
+        <translation><!-- Network Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Give Details)</masterLabel>
+        <translation><!-- Other (Give Details) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redesign = Variation</masterLabel>
+        <translation><!-- Redesign = Variation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shutdown</masterLabel>
+        <translation><!-- Shutdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting on a Schedule Date</masterLabel>
+        <translation><!-- Waiting on a Schedule Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wayleaves &amp; Planning</masterLabel>
+        <translation><!-- Wayleaves &amp; Planning --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

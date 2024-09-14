@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Conga Solution Email Template Layout</layout>
+        <sections>
+            <label><!-- Comment --></label>
+            <section>Comment</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Email Template Details --></label>
+            <section>Email Template Details</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Only one Conga Email Template is allowed per Conga Solution. To make changes, either modify the existing record or delete it and add a new one. --></errorMessage>
+        <name>APXTConga4__CET_Count_Validator</name>
+    </validationRules>
+</CustomObjectTranslation>

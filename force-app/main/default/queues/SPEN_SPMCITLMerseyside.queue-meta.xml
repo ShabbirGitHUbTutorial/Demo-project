@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPM CITL - Merseyside</name>
+    <queueMembers>
+        <users>
+            <user>andrew.corless@spenergynetworks.co.uk.spencrm</user>
+            <user>c.okeefe@spenergynetworks.co.uk.spencrm</user>
+            <user>cmacguiness@spenergynetworks.co.uk.spencrm</user>
+            <user>colin.hughes@spenergynetworks.co.uk.spencrm</user>
+            <user>david.rolfe@spenergynetworks.co.uk.spencrm</user>
+            <user>d.mcluckie@spenergynetworks.co.uk.spencrm</user>
+            <user>j.clifton@spenergynetworks.co.uk.spencrm</user>
+            <user>jthompson@spenergynetworks.co.uk.spencrm</user>
+            <user>jimmy.heritage@spenergynetworks.co.uk.spencrm</user>
+            <user>lking@spenergynetworks.co.uk.spencrm</user>
+            <user>n.burgess@spenergynetworks.co.uk.spencrm</user>
+            <user>paul.thomas@spenergynetworks.co.uk.spencrm</user>
+            <user>rmcelvenny@spenergynetworks.co.uk.spencrm</user>
+            <user>spownall@spenergynetworks.co.uk.spencrm</user>
+            <user>steve.rhodes@spenergynetworks.co.uk.spencrm</user>
+            <user>wayne.sorrel@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

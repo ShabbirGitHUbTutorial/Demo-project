@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RetainedCutOutLocation__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to identify where the retained cut out is currently located
+Used in Cable head retention forms</description>
+    <label>Retained cut out location</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Kilmarnock</fullName>
+                <default>false</default>
+                <label>Kilmarnock</label>
+            </value>
+            <value>
+                <fullName>Bonnybridge</fullName>
+                <default>false</default>
+                <label>Bonnybridge</label>
+            </value>
+            <value>
+                <fullName>Glenrothes</fullName>
+                <default>false</default>
+                <label>Glenrothes</label>
+            </value>
+            <value>
+                <fullName>Edinburgh</fullName>
+                <default>false</default>
+                <label>Edinburgh</label>
+            </value>
+            <value>
+                <fullName>Galashiels</fullName>
+                <default>false</default>
+                <label>Galashiels</label>
+            </value>
+            <value>
+                <fullName>Cambuslang</fullName>
+                <default>false</default>
+                <label>Cambuslang</label>
+            </value>
+            <value>
+                <fullName>Glasgow</fullName>
+                <default>false</default>
+                <label>Glasgow</label>
+            </value>
+            <value>
+                <fullName>Dumfries</fullName>
+                <default>false</default>
+                <label>Dumfries</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Road Category --></label>
+    <name>SPEN_RoadCategory__c</name>
+    <picklistValues>
+        <masterLabel>Cat 0</masterLabel>
+        <translation><!-- Cat 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cat 1</masterLabel>
+        <translation><!-- Cat 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cat 2</masterLabel>
+        <translation><!-- Cat 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cat 3</masterLabel>
+        <translation><!-- Cat 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cat 4</masterLabel>
+        <translation><!-- Cat 4 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

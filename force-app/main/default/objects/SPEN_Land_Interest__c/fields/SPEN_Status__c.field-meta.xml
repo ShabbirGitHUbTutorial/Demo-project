@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Negotiation</fullName>
+                <default>false</default>
+                <label>In Negotiation</label>
+            </value>
+            <value>
+                <fullName>Awaiting Design</fullName>
+                <default>false</default>
+                <label>Awaiting Design</label>
+            </value>
+            <value>
+                <fullName>Land Right Issued</fullName>
+                <default>false</default>
+                <label>Land Right Issued</label>
+            </value>
+            <value>
+                <fullName>Land Right Acquired</fullName>
+                <default>false</default>
+                <label>Land Right Acquired</label>
+            </value>
+            <value>
+                <fullName>Land Right Secured</fullName>
+                <default>false</default>
+                <label>Land Right Secured</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Internal Legal Instruction</fullName>
+                <default>false</default>
+                <label>Internal Legal Instruction</label>
+            </value>
+            <value>
+                <fullName>Draft Documents Issued</fullName>
+                <default>false</default>
+                <label>Draft Documents Issued</label>
+            </value>
+            <value>
+                <fullName>Third Party Consent</fullName>
+                <default>false</default>
+                <label>Third Party Consent</label>
+            </value>
+            <value>
+                <fullName>Draft Documents Agreed</fullName>
+                <default>false</default>
+                <label>Draft Documents Agreed</label>
+            </value>
+            <value>
+                <fullName>Legal Milestones Completed</fullName>
+                <default>false</default>
+                <label>Legal Milestones Completed</label>
+            </value>
+            <value>
+                <fullName>Consent Acquired</fullName>
+                <default>false</default>
+                <label>Consent Acquired</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

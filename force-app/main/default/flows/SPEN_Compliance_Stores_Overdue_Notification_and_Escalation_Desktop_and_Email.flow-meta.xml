@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Action to send the email escalation based on prior information in flow/loops.</description>
+        <name>Send_Email_Escalation</name>
+        <label>Send Email Escalation</label>
+        <locationX>50</locationX>
+        <locationY>2448</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Manager.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>DefaultWorkflowUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Overdue Item Warning</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>escalationCompiledMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>useLineBreaks</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Action to send the email notification based on prior information in flow/loops.</description>
+        <name>Send_Email_Notification</name>
+        <label>Send Email Notification</label>
+        <locationX>182</locationX>
+        <locationY>2232</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Send_Escalation_Email</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>DefaultWorkflowUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Item Return Warning</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>emailCompiledMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>useLineBreaks</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Action to send the desktop notification based on prior information in flow/loops.</description>
+        <name>Send_Overdue_Notification</name>
+        <label>Send Overdue Notification</label>
+        <locationX>182</locationX>
+        <locationY>2124</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <connector>
+            <targetReference>Send_Email_Notification</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <elementReference>Custom_Custom_Notification_Type.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>notificationRecipients</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <stringValue>Item Return Warning</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <elementReference>notificationCompiledMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetPageRef</name>
+            <value>
+                <elementReference>notificationTargetPage</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Adds 1 to the loop counter if this is the first warning iteration, ensuring that loop follows the alternative path on subsequent iterations.</description>
+        <name>Add_1_to_counter</name>
+        <label>Add 1 to counter</label>
+        <locationX>270</locationX>
+        <locationY>1008</locationY>
+        <assignmentItems>
+            <assignToReference>counter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Headers</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds 1 to the loop counter if this is the first escalation iteration, ensuring that loop follows the alternative path on subsequent iterations.</description>
+        <name>Add_1_to_escalationcounter</name>
+        <label>Add 1 to escalationcounter</label>
+        <locationX>270</locationX>
+        <locationY>1524</locationY>
+        <assignmentItems>
+            <assignToReference>escalationcounter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Escalation_Rows</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds first row of text template record details to notification.</description>
+        <name>Add_First_Row</name>
+        <label>Add First Row</label>
+        <locationX>270</locationX>
+        <locationY>1224</locationY>
+        <assignmentItems>
+            <assignToReference>notificationCompiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>notificationRecordDetails</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>emailCompiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>emailRecordDetails</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Item_Overdue</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds other rows of text template record details to notification.</description>
+        <name>Add_Other_Rows</name>
+        <label>Add Other Rows</label>
+        <locationX>534</locationX>
+        <locationY>1008</locationY>
+        <assignmentItems>
+            <assignToReference>notificationCompiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>notificationRecordDetails</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>emailCompiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>emailRecordDetails</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Item_Overdue</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns 0 to the loop counter. Used to ensure the loop follows a certain path on the first iteration and then an alternate path on following iterations.</description>
+        <name>Assign_0_to_counters</name>
+        <label>Assign 0 to counters</label>
+        <locationX>182</locationX>
+        <locationY>684</locationY>
+        <assignmentItems>
+            <assignToReference>counter</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>escalationcounter</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Serialized_Products_for_Notification</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>If overdue, adds escalation details to escalation notification message.</description>
+        <name>Assign_Escalation_Rows</name>
+        <label>Assign Escalation Rows</label>
+        <locationX>270</locationX>
+        <locationY>1632</locationY>
+        <assignmentItems>
+            <assignToReference>escalationCompiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>escalationRecordDetails</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Serialized_Products_for_Notification</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Add the text template headers to the notifcations.</description>
+        <name>Assign_Headers</name>
+        <label>Assign Headers</label>
+        <locationX>270</locationX>
+        <locationY>1116</locationY>
+        <assignmentItems>
+            <assignToReference>notificationCompiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>notificationTableHeader</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>emailCompiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>emailTableHeader</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>escalationCompiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>escalationTableHeader</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_First_Row</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds the user record to the recipients variable for delivering the notification.</description>
+        <name>Assign_Recipient</name>
+        <label>Assign Recipient</label>
+        <locationX>182</locationX>
+        <locationY>1908</locationY>
+        <assignmentItems>
+            <assignToReference>notificationRecipients</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Custom_Custom_Notification_Type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Counts the number of records returned in the previous get records. Used to decide if notifcations should be sent.</description>
+        <name>Assign_Record_Count</name>
+        <label>Assign Record Count</label>
+        <locationX>380</locationX>
+        <locationY>468</locationY>
+        <assignmentItems>
+            <assignToReference>recordCounter</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Get_Serialized_Products_for_Notification</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Records_Found</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks the loop counters to see if this is the first iteration.</description>
+        <name>Check_if_First_Loop</name>
+        <label>Check if First Loop</label>
+        <locationX>402</locationX>
+        <locationY>900</locationY>
+        <defaultConnector>
+            <targetReference>Add_Other_Rows</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>First</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>counter</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_1_to_counter</targetReference>
+            </connector>
+            <label>First</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the record is overdue instead of just upcoming.</description>
+        <name>Is_Item_Overdue</name>
+        <label>Is Item Overdue?</label>
+        <locationX>402</locationX>
+        <locationY>1416</locationY>
+        <defaultConnector>
+            <targetReference>Serialized_Products_for_Notification</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Overdue</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Serialized_Products_for_Notification.SPEN_Expected_Return_Date__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>TODAY</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Serialized_Products_for_Notification.SPEN_Safety_Check_Date__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>TODAY</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Add_1_to_escalationcounter</targetReference>
+            </connector>
+            <label>Yes Overdue</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Decides if any records were returned in the previous Get Records by checking the record count. Used to determine if notifications should be sent.</description>
+        <name>Records_Found</name>
+        <label>Records Found?</label>
+        <locationX>380</locationX>
+        <locationY>576</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordCounter</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_0_to_counters</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks the inspection counter to decide if an escalation needs to be sent.</description>
+        <name>Send_Escalation_Email</name>
+        <label>Send Escalation Email?</label>
+        <locationX>182</locationX>
+        <locationY>2340</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Send</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>escalationcounter</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Manager.Email</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_Escalation</targetReference>
+            </connector>
+            <label>Yes Send</label>
+        </rules>
+    </decisions>
+    <description>Scheduled flow to check active users, find any upcoming or overdue items that they have, and send out notifications and emails to remind users to return the items. If the items found are overdue, an escalation email will also be sent to the manager of the user.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Formula to return today&apos;s date.</description>
+        <name>TODAY</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to return the date three days from now. Used to decide if notifications should be sent.</description>
+        <name>TODAY_PLUS3</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() +3</expression>
+    </formulas>
+    <interviewLabel>Compliance Stores - Overdue Notification and Escalation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Compliance Stores - Overdue Notification and Escalation - Desktop and Email</label>
+    <loops>
+        <description>Loop over serialised products to capture information for desktop notification and email.</description>
+        <name>Serialized_Products_for_Notification</name>
+        <label>Serialized Products for Notification</label>
+        <locationX>182</locationX>
+        <locationY>792</locationY>
+        <collectionReference>Get_Serialized_Products_for_Notification</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_if_First_Loop</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Assign_Recipient</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the custom notification type for sending the notification.</description>
+        <name>Custom_Custom_Notification_Type</name>
+        <label>Custom Custom Notification Type</label>
+        <locationX>182</locationX>
+        <locationY>2016</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_Overdue_Notification</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Overdue_Item_Notification_Desktop_and_Email</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the Compliance Stores record type for serialised products. Used in Get Records to find only Compliance Stores items.</description>
+        <name>Get_Record_Type_for_Complaince_Stores_Serialized_Products</name>
+        <label>Get Record Type for Complaince Stores Serialized Products</label>
+        <locationX>380</locationX>
+        <locationY>252</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Serialized_Products_for_Notification</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SerializedProduct</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Compliance_Stores</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the serialised products that are owned by the user and upcoming/overdue. Used to store details to send desktop notification and email.</description>
+        <name>Get_Serialized_Products_for_Notification</name>
+        <label>Get Serialized Products for Notification</label>
+        <locationX>380</locationX>
+        <locationY>360</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Record_Count</targetReference>
+        </connector>
+        <filterLogic>1 AND ((2 AND 6) OR (3 AND 7)) AND 4 AND 5 AND 8</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Record_Type_for_Complaince_Stores_Serialized_Products.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Expected_Return_Date__c</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>TODAY_PLUS3</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Safety_Check_Date__c</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>TODAY_PLUS3</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>OwnerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Item_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Booked Out</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Expected_Return_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Safety_Check_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SerializedProduct</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Record_Type_for_Complaince_Stores_Serialized_Products</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>User</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2024-02-09</startDate>
+            <startTime>06:50:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Text template to email hold record details. Used in loop to gather details for email.</description>
+        <name>emailRecordDetails</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Item: &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Type__c}&lt;/strong&gt;, &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Category__c}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Energy Networks ID: &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Energy_Networks_ID__c}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Expected Return Date: &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Expected_Return_Date__c}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Safety Check Date: &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Safety_Check_Date__c}&lt;/strong&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Text template to hold email header. Used in loop to display context for email.</description>
+        <name>emailTableHeader</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;The below item(s) are either due for return or overdue:&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Text template to hold escalation record details. Used in loop to gather details for notification.</description>
+        <name>escalationRecordDetails</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Item: &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Type__c}&lt;/strong&gt;, &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Category__c}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Energy Networks ID: &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Energy_Networks_ID__c}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Expected Return Date: &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Expected_Return_Date__c}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Safety Check Date: &lt;strong&gt;{!Serialized_Products_for_Notification.SPEN_Safety_Check_Date__c}&lt;/strong&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Text template to hold escalation header. Used in loop to display context for escalation.</description>
+        <name>escalationTableHeader</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;The below item(s) for your direct report are overdue:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;{!$Record.FirstName} {!$Record.LastName}&lt;/strong&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>notificationRecordDetails</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Serialized_Products_for_Notification.AssetId}
+{!Serialized_Products_for_Notification.AssetId}
+Item: {!Serialized_Products_for_Notification.SPEN_Type__c}, {!Serialized_Products_for_Notification.SPEN_Category__c}
+Expected Return Date: {!Serialized_Products_for_Notification.SPEN_Expected_Return_Date__c}
+Safety Check Date: {!Serialized_Products_for_Notification.SPEN_Safety_Check_Date__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Text template to hold notification header. Used in loop to display context for notification.</description>
+        <name>notificationTableHeader</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The below item(s) are either due for return or overdue:</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Hard coded JSON to direct notifications to a serialised product list view.</description>
+        <name>notificationTargetPage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{    
+    &quot;type&quot;: &quot;standard__objectPage&quot;,
+    &quot;attributes&quot;: {
+        &quot;objectApiName&quot;: &quot;SerializedProduct&quot;,
+        &quot;actionName&quot;: &quot;list&quot;
+    },
+    &quot;state&quot;: {
+        &quot;filterName&quot;: &quot;My_Upcoming_or_Overdue_Items&quot;
+  }
+}</text>
+    </textTemplates>
+    <variables>
+        <description>Loop counter to path the loop correctly after the first iteration.</description>
+        <name>counter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <description>Text variable to hold the compiled email message from the loop.</description>
+        <name>emailCompiledMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Text variable to hold the compiled escalation message from the loop.</description>
+        <name>escalationCompiledMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Loop counter to path the loop correctly after the first iteration as well as decide if an escalation should be sent.</description>
+        <name>escalationcounter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <description>Text variable to hold the compiled desktop notification message from the loop.</description>
+        <name>notificationCompiledMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Text collection variable to hold the recipients of the notifications.</description>
+        <name>notificationRecipients</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Record count to decide if a notification should be sent.</description>
+        <name>recordCounter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>

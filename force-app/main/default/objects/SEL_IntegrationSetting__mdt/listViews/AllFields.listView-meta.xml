@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllFields</fullName>
+    <columns>DeveloperName</columns>
+    <columns>MasterLabel</columns>
+    <columns>SEL_NamedCredentials__c</columns>
+    <columns>SEL_EndpointExtension__c</columns>
+    <columns>SEL_HttpMethod__c</columns>
+    <columns>SEL_Timeout__c</columns>
+    <columns>SEL_IsCompressed__c</columns>
+    <columns>SEL_IsMockingEnabled__c</columns>
+    <columns>SEL_IsActive__c</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>IsProtected</columns>
+    <columns>SEL_ClientCertificate__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Fields</label>
+</ListView>

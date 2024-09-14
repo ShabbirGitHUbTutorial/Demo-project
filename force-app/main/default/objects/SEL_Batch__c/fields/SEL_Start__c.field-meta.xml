@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEL_Start__c</fullName>
+    <label>Start</label>
+    <summarizedField>SEL_BatchStep__c.SEL_Start__c</summarizedField>
+    <summaryForeignKey>SEL_BatchStep__c.SEL_BatchId__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

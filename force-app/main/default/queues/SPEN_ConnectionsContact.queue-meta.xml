@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Connections Contact</name>
+    <queueMembers>
+        <users>
+            <user>a.warnock@spenergynetworks.co.uk.spencrm</user>
+            <user>apollock@spenergynetworks.co.uk.spencrm</user>
+            <user>apaterson@spenergynetworks.co.uk.spencrm</user>
+            <user>abeattie@spenergynetworks.co.uk.spencrm</user>
+            <user>atracey@spenergynetworks.co.uk.spencrm</user>
+            <user>annemarie.kean@spenergynetworks.co.uk.spencrm</user>
+            <user>c.marshall@spenergynetworks.co.uk.spencrm</user>
+            <user>chenney@spenergynetworks.co.uk.spencrm</user>
+            <user>idoyle@spenergynetworks.co.uk.spencrm</user>
+            <user>j.dey@spenergynetworks.co.uk.spencrm</user>
+            <user>rbradley@spenergynetworks.co.uk.spencrm</user>
+            <user>susan.bell@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

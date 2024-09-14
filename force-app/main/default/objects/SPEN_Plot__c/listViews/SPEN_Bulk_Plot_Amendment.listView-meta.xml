@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Bulk_Plot_Amendment</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_CaseRecord__c</columns>
+    <columns>SPEN_MeteringPointProfile__c</columns>
+    <columns>SPEN_MaxPowerkVA__c</columns>
+    <columns>SPEN_Phase__c</columns>
+    <columns>SPEN_FutureEarthType__c</columns>
+    <columns>SPEN_PropertyType__c</columns>
+    <columns>SPEN_IDREQTOBEDISCON__c</columns>
+    <columns>SPEN_Supplier__c</columns>
+    <columns>SPEN_County__c</columns>
+    <columns>SPEN_NoofBedrooms__c</columns>
+    <columns>SPEN_BusinessType__c</columns>
+    <columns>SPEN_HeatingMethod__c</columns>
+    <columns>SPEN_HeatingTypeDescription__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SPEN_Plot__c.SPEN_Plot</value>
+    </filters>
+    <filters>
+        <field>SPEN_CaseRecord__c</field>
+        <operation>equals</operation>
+        <value>00237122</value>
+    </filters>
+    <label>Bulk Plot Amendment</label>
+</ListView>

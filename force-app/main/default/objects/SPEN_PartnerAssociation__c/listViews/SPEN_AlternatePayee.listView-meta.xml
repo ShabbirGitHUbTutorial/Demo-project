@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_AlternatePayee</fullName>
+    <columns>SPEN_LandInterest__c</columns>
+    <columns>NAME</columns>
+    <columns>SPEN_VendorNumber__c</columns>
+    <columns>SPEN_AlternativePayeeProcessed__c</columns>
+    <columns>SPEN_ProcessedDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_AlternativePayeeProcessed__c</field>
+        <operation>equals</operation>
+        <value>No</value>
+    </filters>
+    <filters>
+        <field>SPEN_AssociationType__c</field>
+        <operation>equals</operation>
+        <value>Alternative Payee</value>
+    </filters>
+    <label>Alternative Payee</label>
+    <sharedTo>
+        <group>All_LnP_User</group>
+    </sharedTo>
+</ListView>

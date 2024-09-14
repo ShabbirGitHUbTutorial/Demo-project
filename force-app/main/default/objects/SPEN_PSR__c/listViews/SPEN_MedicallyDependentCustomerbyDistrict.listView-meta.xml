@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MedicallyDependentCustomerbyDistrict</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_SpecificVulnerability__c</columns>
+    <columns>SPEN_Contact__c</columns>
+    <columns>SPEN_CustomerTelephoneFormula__c</columns>
+    <columns>SPEN_Premise__c</columns>
+    <columns>SPEN_ZoneFormula__c</columns>
+    <columns>SPEN_DistrictFormula__c</columns>
+    <columns>SPEN_SendVoiceAlert__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_SpecificVulnerability__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>SPEN_Premise__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SPEN_PSR__c.SPEN_PSR</value>
+    </filters>
+    <filters>
+        <field>SPEN_DistrictFormula__c</field>
+        <operation>equals</operation>
+        <value>Dumfries</value>
+    </filters>
+    <label>Medically Dependent Customer by District</label>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IvrRequiredFieldEventCaseCreation</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;IVR&quot; &amp;&amp;
+ISPICKVAL(SPEN_Event__c, &quot;Case Creation&quot;) &amp;&amp;
+ISBLANK(SPEN_CaseId__c) &amp;&amp; 
+ISBLANK(SPEN_ContactId__c)</errorConditionFormula>
+    <errorMessage>The Case and Contact fields are required if the Event field is set to Case Creation.</errorMessage>
+</ValidationRule>

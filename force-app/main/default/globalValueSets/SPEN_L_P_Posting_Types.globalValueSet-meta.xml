@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>PR - Periodic Posting</fullName>
+        <default>false</default>
+        <label>Periodic Posting</label>
+    </customValue>
+    <customValue>
+        <fullName>PE - Statistical Periodic Posting</fullName>
+        <default>false</default>
+        <label>Statistical Periodic Posting</label>
+    </customValue>
+    <customValue>
+        <fullName>UR - One-Time Posting</fullName>
+        <default>false</default>
+        <label>One-time Posting</label>
+    </customValue>
+    <customValue>
+        <fullName>UE - Statistical One-Time Posting</fullName>
+        <default>false</default>
+        <label>Statistical One-time Posting</label>
+    </customValue>
+    <customValue>
+        <fullName>Periodic Posting 1</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Periodic Posting 1</label>
+    </customValue>
+    <masterLabel>L&amp;P Posting Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

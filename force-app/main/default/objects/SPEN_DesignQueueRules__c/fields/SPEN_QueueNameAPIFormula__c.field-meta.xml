@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_QueueNameAPIFormula__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;CS APOS&apos;), &apos;SPEN_CSAPOS&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;CS Disconnections&apos;),&apos;SPEN_CSDisconnections&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;CS LVSSA&apos;),&apos;SPEN_CSLVSSA&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;CS LVSSB&apos;),&apos;SPEN_CSLVSSB&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;CS Other Works&apos;),&apos;SPEN_CSOtherWorks&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;SPD Design - Major&apos;),&apos;SPEN_SPDDesignMajor&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;SPD Design - East&apos;),&apos;SPEN_SPDDesignEast&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;SPD Design - West&apos;),&apos;SPEN_SPDDesignWest&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;SPM Design - Cheshire&apos;),&apos;SPEN_SPMDesignCheshire&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;SPM Design - Merseyside&apos;),&apos;SPEN_SPMDesignMerseyside&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;SPM Design - Wales&apos;),&apos;SPEN_SPMDesignWales&apos;,
+if(LOWER(SPEN_SFQueueName__c) = LOWER(&apos;SPM Design - 132kV&apos;),&apos;SPEN_SPMDesign132kV&apos;,&apos;&apos;
+))))))))))))</formula>
+    <label>Queue Name API Formula</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

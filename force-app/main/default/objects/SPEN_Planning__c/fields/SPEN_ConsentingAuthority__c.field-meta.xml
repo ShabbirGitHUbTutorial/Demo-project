@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ConsentingAuthority__c</fullName>
+    <label>Consenting Authority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SGECU</fullName>
+                <default>false</default>
+                <label>SGECU</label>
+            </value>
+            <value>
+                <fullName>LPA</fullName>
+                <default>false</default>
+                <label>LPA</label>
+            </value>
+            <value>
+                <fullName>PEDW</fullName>
+                <default>false</default>
+                <label>PEDW</label>
+            </value>
+            <value>
+                <fullName>DESNZ</fullName>
+                <default>false</default>
+                <label>DESNZ</label>
+            </value>
+            <value>
+                <fullName>MS</fullName>
+                <default>false</default>
+                <label>MS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

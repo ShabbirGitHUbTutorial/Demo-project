@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Agent_Validation</fullName>
+    <active>true</active>
+    <description>Prevent Agent to edit the Zone Name Value</description>
+    <errorConditionFormula>AND( $Profile.Name = &apos;SPEN Agent&apos;, PRIORVALUE(Name) &lt;&gt; Name )</errorConditionFormula>
+    <errorMessage>Your profile doesn&apos;t have a permission to edit the Zone Name</errorMessage>
+</ValidationRule>

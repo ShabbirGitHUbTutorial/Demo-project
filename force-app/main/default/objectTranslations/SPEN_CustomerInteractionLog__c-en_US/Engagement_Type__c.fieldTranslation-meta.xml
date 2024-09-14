@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Engagement Type --></label>
+    <name>Engagement_Type__c</name>
+    <picklistValues>
+        <masterLabel>MTM2</masterLabel>
+        <translation><!-- MTM2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM3</masterLabel>
+        <translation><!-- MTM3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM4</masterLabel>
+        <translation><!-- MTM4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM5</masterLabel>
+        <translation><!-- MTM5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM6</masterLabel>
+        <translation><!-- MTM6 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

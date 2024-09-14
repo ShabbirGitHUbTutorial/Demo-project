@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Tracker Type --></label>
+    <name>Case_Tracker_Type__c</name>
+    <picklistValues>
+        <masterLabel>3PD Accepted &gt; Closed</masterLabel>
+        <translation><!-- 3PD Accepted &gt; Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Owner Update</masterLabel>
+        <translation><!-- Case Owner Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Routing Outcome Update</masterLabel>
+        <translation><!-- Case Routing Outcome Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case SLA Update</masterLabel>
+        <translation><!-- Case SLA Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Status Update</masterLabel>
+        <translation><!-- Case Status Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner Account Update</masterLabel>
+        <translation><!-- Partner Account Update --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

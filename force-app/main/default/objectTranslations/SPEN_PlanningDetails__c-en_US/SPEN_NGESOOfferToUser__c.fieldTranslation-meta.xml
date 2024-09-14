@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Clock start date plus 3 calendar months --></help>
+    <label><!-- NGESO offer to user --></label>
+    <name>SPEN_NGESOOfferToUser__c</name>
+</CustomFieldTranslation>

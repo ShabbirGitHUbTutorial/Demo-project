@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_StatutoryLandInterests</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_LandTitle__c</columns>
+    <columns>SPEN_ConsentType__c</columns>
+    <columns>SPEN_LIStatus__c</columns>
+    <columns>SPEN_PreparationStartDate__c</columns>
+    <columns>SPEN_SubmissionDate__c</columns>
+    <columns>SPEN_Compulsory_Consent_Action__c</columns>
+    <columns>SPEN_DecisionDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SPEN_Land_Interest__c.SPEN_Statutory</value>
+    </filters>
+    <label>Statutory Land Rights</label>
+    <sharedTo>
+        <roleAndSubordinates>Land_and_Planning</roleAndSubordinates>
+    </sharedTo>
+</ListView>

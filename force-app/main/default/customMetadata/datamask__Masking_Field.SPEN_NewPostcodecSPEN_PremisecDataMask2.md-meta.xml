@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SPEN_NewPostcode__c</label>
+    <protected>false</protected>
+    <values>
+        <field>datamask__API_Name__c</field>
+        <value xsi:type="xsd:string">SPEN_NewPostcode__c</value>
+    </values>
+    <values>
+        <field>datamask__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Custom_Pattern__c</field>
+        <value xsi:type="xsd:string">%3C %3d</value>
+    </values>
+    <values>
+        <field>datamask__Custom__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Date_Max__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Date_Min__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Field_Length__c</field>
+        <value xsi:type="xsd:double">10.0</value>
+    </values>
+    <values>
+        <field>datamask__Field_Type__c</field>
+        <value xsi:type="xsd:string">Text</value>
+    </values>
+    <values>
+        <field>datamask__Masking_Category__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Masking_Object__c</field>
+        <value xsi:type="xsd:string">SPEN_PremisecDataMask28thAprReviewItems</value>
+    </values>
+    <values>
+        <field>datamask__Masking_Type__c</field>
+        <value xsi:type="xsd:string">Patternize</value>
+    </values>
+    <values>
+        <field>datamask__Pattern_Data__c</field>
+        <value xsi:type="xsd:string">AFM 581,COM 268,BRK 343,QTS 708,CPA 990,EYS 473,NNR 210,ADU 935,EOC 918,ILR 862,PCE 202,VIE 431,KIZ 996,GJQ 811,MYD 320,NKF 512,KVC 107,AOQ 200,ZLY 438,ITI 777,GMI 358,KFS 285,QVI 277,XNG 356,TXA 309,JLC 904,OCL 168,MSY 453,MKQ 454,YEI 732,TXT 383,JJZ 085,XTY 920,CIY 767,YQC 591,ZWO 609,GHZ 406,NJN 523,MUE 737,WCL 154,OPS 890,EHA 148,TXS 660,ZHF 067,MTN 031,TDT 836,MJZ 056,MMF 015,FEG 779,SYZ 298</value>
+    </values>
+    <values>
+        <field>datamask__Range_Max__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Range_Min__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Required__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__Unique__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

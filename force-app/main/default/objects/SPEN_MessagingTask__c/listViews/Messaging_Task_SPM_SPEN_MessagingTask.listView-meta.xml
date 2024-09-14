@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Messaging_Task_SPM_SPEN_MessagingTask</fullName>
+    <columns>SPEN_IncidentId__c</columns>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>SPEN_Event__c</columns>
+    <columns>SPEN_Status__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Queue</filterScope>
+    <label>Messaging Task SPM</label>
+    <queue>Messaging_Task_SPM</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

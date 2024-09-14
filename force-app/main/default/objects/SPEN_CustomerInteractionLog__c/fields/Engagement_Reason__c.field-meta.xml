@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engagement_Reason__c</fullName>
+    <label>Engagement Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Engagement_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Outage Notification</fullName>
+                <default>false</default>
+                <label>Outage Notification</label>
+            </value>
+            <value>
+                <fullName>Notification of Fault</fullName>
+                <default>false</default>
+                <label>Notification of Fault</label>
+            </value>
+            <value>
+                <fullName>Notification of Planned Outage</fullName>
+                <default>false</default>
+                <label>Notification of Planned Outage</label>
+            </value>
+            <value>
+                <fullName>Constraints Notification</fullName>
+                <default>false</default>
+                <label>Constraints Notification</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>MTM5</controllingFieldValue>
+            <valueName>Outage Notification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTM5</controllingFieldValue>
+            <valueName>Notification of Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTM5</controllingFieldValue>
+            <valueName>Notification of Planned Outage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTM5</controllingFieldValue>
+            <valueName>Constraints Notification</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

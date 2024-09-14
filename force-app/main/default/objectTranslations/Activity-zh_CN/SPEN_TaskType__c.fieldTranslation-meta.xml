@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Task Type --></label>
+    <name>SPEN_TaskType__c</name>
+    <picklistValues>
+        <masterLabel>Acceptance Exception Task</masterLabel>
+        <translation><!-- Acceptance Exception Task --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design - Customer Contact Needed</masterLabel>
+        <translation><!-- Design - Customer Contact Needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Enquiry Contact</masterLabel>
+        <translation><!-- Post Enquiry Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post Quote Contact</masterLabel>
+        <translation><!-- Post Quote Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre Survey Close Down Call</masterLabel>
+        <translation><!-- Pre Survey Close Down Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Application Meeting Preparation</masterLabel>
+        <translation><!-- Pre-Application Meeting Preparation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Quote Contact</masterLabel>
+        <translation><!-- Pre-Quote Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPT Follow up meeting</masterLabel>
+        <translation><!-- SPT Follow up meeting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPT Kick off meeting</masterLabel>
+        <translation><!-- SPT Kick off meeting --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

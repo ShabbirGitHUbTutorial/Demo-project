@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Indication Only --></label>
+    <name>SPEN_Indication_Only__c</name>
+    <picklistValues>
+        <masterLabel>Calibrate</masterLabel>
+        <translation><!-- Calibrate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibrate/PAT</masterLabel>
+        <translation><!-- Calibrate/PAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indication Only</masterLabel>
+        <translation><!-- Indication Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indication/PAT</masterLabel>
+        <translation><!-- Indication/PAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCD Test</masterLabel>
+        <translation><!-- RCD Test --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

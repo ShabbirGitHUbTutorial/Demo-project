@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RATOV</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SPEN_RATOV</compactLayoutAssignment>
+    <description>Record type used to identify the RATOV forms</description>
+    <label>RATOV</label>
+    <picklistValues>
+        <picklist>SPEN_AreAnyFurtherWorksRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_AreYouHappyForEnquiryToBeClosed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_AsLeftLVServiceTerminationType__c</picklist>
+        <values>
+            <fullName>Black plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fused neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grey plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal clad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rewireable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CableOrConductorType__c</picklist>
+        <values>
+            <fullName>ABC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bubsar riser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concentric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concentric - CNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concentric - LSOH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concentric - old</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hybrid concentric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead covered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Looped service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PILC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVC looped neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pyro cable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Split concentric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tape armoured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under eaves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undersized PVC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIR cabling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIR%2Fmackenite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire armour</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ConnectedPhase__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not known</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ConnectionMeteredOrUnmetered__c</picklist>
+        <values>
+            <fullName>Metered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CurrentRatingInstalledFuse__c</picklist>
+        <values>
+            <fullName>100A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>315A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wired %28uknown%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CurrentRatingLVServiceTermination__c</picklist>
+        <values>
+            <fullName>100A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300A %28heavy duty%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400A %28heavy duty%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600A %28heavy duty%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80A</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_District__c</picklist>
+        <values>
+            <fullName>SPD - Ayrshire %26 Clyde South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Central %26 Fife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Dumfries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Edinburgh %26 Borders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Glasgow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Lanarkshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Dee Valley%2FMid Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Merseyside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Mid Cheshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - North Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Wirral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Ayrshire %26 Clyde South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Central %26 Fife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Dumfries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Edinburgh %26 Borders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Glasgow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Lanarkshire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_EarthLoopViolation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Earthing__c</picklist>
+        <values>
+            <fullName>PME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ElectricVehicleColumn__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_EvidenceOfLCTInstalledOnSite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HowWasYourExperience__c</picklist>
+        <values>
+            <fullName>Dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very dissatisfied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very satisfied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_IsThereVoltageLeakPresent__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_LVServiceTerminationReplaced__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_LVServiceTerminationSealed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_LVServiceTerminationType__c</picklist>
+        <values>
+            <fullName>Black plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fused neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grey plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal clad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rewireable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_MainReasonForVisit__c</picklist>
+        <values>
+            <fullName>Coincidental inspection while at property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DELOG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fault replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New service connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proactive LV service termination replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proactive inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proactive inspection programme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proactive unlooping replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive LV service termination replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive unlooping replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rising lateral main replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart services driven replacement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_NumberOfPhases__c</picklist>
+        <values>
+            <fullName>Single phase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three phase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two phase</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_PolarityCorrect__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SelectLCTFoundAddress__c</picklist>
+        <values>
+            <fullName>Battery storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EV charger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heat pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar panels</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SmartMeterInstalled__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SmartMeterReady__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SupplyType__c</picklist>
+        <values>
+            <fullName>Internal mains</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mural wiring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OHL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2FG service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_TypeOfEarthingConnection__c</picklist>
+        <values>
+            <fullName>Earthing block</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hepworth clamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jubilee clip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unapproved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_TypeOfIncident__c</picklist>
+        <values>
+            <fullName>Connections Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Earthing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inaccurate Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal mains%2F laterals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loss of supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Neutral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Interruptions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site excavation %2F reinstatement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unloop %2F Shared supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voltage Issues</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_TypeOfUnmeteredConnection__c</picklist>
+        <values>
+            <fullName>Advertising hoarding%2Fbus shelters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feeder%2Flink pillar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal substation lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Street lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Street lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telephone%2Fbroadband cabinet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic lights%2Fsigns</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_VoltageViolation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_VulnerablePerson__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WhichTypeOfCabinet__c</picklist>
+        <values>
+            <fullName>BT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vodaphone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

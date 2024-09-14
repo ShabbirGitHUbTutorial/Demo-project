@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Last Review Outcome --></label>
+    <name>SPEN_LastReviewOutcome__c</name>
+    <picklistValues>
+        <masterLabel>Reviewed, Change Required</masterLabel>
+        <translation><!-- Reviewed, Change Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reviewed, No Change Required</masterLabel>
+        <translation><!-- Reviewed, No Change Required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Resolution_comments_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(SPEN_Status__c , &apos;Completed&apos;) ,ISBLANK(SPEN_Resolution_comments__c))</errorConditionFormula>
+    <errorDisplayField>SPEN_Resolution_comments__c</errorDisplayField>
+    <errorMessage>Resolution Comments are Mandatory while completing Task</errorMessage>
+</ValidationRule>

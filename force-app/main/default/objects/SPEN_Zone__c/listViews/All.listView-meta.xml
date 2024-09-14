@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Parent__c</columns>
+    <columns>SPEN_Type__c</columns>
+    <columns>SPEN_ZoneRegionFormula__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_SPD_SPM__c</field>
+        <operation>equals</operation>
+        <value>SPD</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+    </filters>
+    <label>All</label>
+</ListView>

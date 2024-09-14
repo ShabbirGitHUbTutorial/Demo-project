@@ -1,0 +1,393 @@
+<template>
+  <lightning-card>
+    <div
+      class="slds-card__header slds-border_bottom slds-align_absolute-center"
+    >
+      <lightning-formatted-text
+        class="slds-card__header-title slds-var-p-bottom_x-large slds-wrap"
+        value={questionnaireName}
+        style="font-size: large; text-align: center"
+      ></lightning-formatted-text>
+    </div>
+
+    <template if:false={showEndGreetings}>
+      <template if:false={showContactPref}>
+        <template if:false={showSummaryPage}>
+          <template if:false={showCasenotCreatedInfo}>
+          <template if:false={show3PDFields}>
+            <template if:true={questionLabel}>
+              <lightning-layout class={infoStyle}>
+                <template if:true={infoQuestion}>
+                  <lightning-icon icon-name={infoIcon} variant={infoIconVariant} size="small" class=" slds-var-p-right_small"></lightning-icon>
+                </template>
+                <lightning-formatted-rich-text
+                  title="Question"
+                  class="slds-wrap"
+                  value={questionLabel}
+                >
+                </lightning-formatted-rich-text>
+              </lightning-layout>
+            </template>
+            <template if:true={radioQuestion}>
+              <lightning-layout
+                class="slds-var-m-around_medium slds-var-p-left_large slds-var-p-bottom_large"
+              >
+                <lightning-radio-group
+                data-id="radiobutton"
+                  label="Select option that applies"
+                  options={radioAnswerOptions}
+                  value={value}
+                  type="radio"
+                  onchange={handleSelection}
+                  required={isRadioRequired}
+                  variant="label-hidden"
+                  
+                >
+                </lightning-radio-group>
+              </lightning-layout>
+            </template>
+            <template if:true={checkboxQuestion}>
+              <lightning-layout
+                class="slds-var-m-around_medium slds-var-p-left_large slds-var-p-bottom_large"
+              >
+                <lightning-checkbox-group
+                  title="CheckboxQuestion"
+                  name="CheckboxQuestion"
+                  label="Select option"
+                  options={checkboxAnswerOptions}
+                  value={checkboxValue}
+                  onchange={handleSelection}
+                  required
+                  variant="label-hidden"
+                >
+                </lightning-checkbox-group>
+              </lightning-layout>
+            </template>
+            <div class="slds-grid slds-size_2-of-2 slds-var-m-around_medium">
+              <div class="slds-col slds-size_1-of-2 slds-var-p-around_small">
+                <lightning-textarea
+                  label="Critical Information"
+                  title="Critical Information"
+                  label-visible="true"
+                  onchange={handleCriticalInfo}
+                  value={caseCriticalInfo}
+                  required={isCIDisabled}
+                  max-length="255"
+                  message-when-value-missing="Please enter Critical Information"
+                  message-when-too-long="Limit exceeded. Only 255 characters allowed"
+                >
+                </lightning-textarea>
+              </div>
+              <div class="slds-col slds-size_1-of-2 slds-var-p-around_small">
+                <lightning-textarea
+                  label-visible="true"
+                  label="Remarks"
+                  title="Remarks"
+                  onchange={handleRemarks}
+                  value={caseRemarks}
+                  required={isRemarksReqd}
+                  max-length="255"
+                  message-when-too-long="Limit exceeded. Only 255 characters allowed"
+                >
+                </lightning-textarea>
+              </div>
+            </div>
+            <span slot="footer" class="buttonAllignment">
+              <template if:true={previousQuestion}>
+                <lightning-button
+                  class="slds-card__footer-action slds-var-m-right_medium"
+                  variant="brand"
+                  label="Previous"
+                  onclick={handlePrevoiusQuestion}
+                  slot="actions"
+                >
+                </lightning-button>
+              </template>
+              <lightning-button
+                class="slds-card__footer-action"
+                variant="brand"
+                label={nextFinishLabel}
+                onclick={handleNextQuestion}
+                slot="actions"
+                disabled={isDisabled}
+              >
+              </lightning-button>
+            </span>
+          </template>
+        </template>
+        </template>
+        <template if:true={showSummaryPage}>
+          <lightning-card title="ConfirmMessage">
+            <div
+              class="slds-card__header slds-align_absolute-center"
+            >
+              <lightning-formatted-text
+                class="slds-card__header-title slds-var-p-bottom_x-large"
+                value="Call Summary"
+                style="font-size: large; text-align: center"
+              ></lightning-formatted-text>
+            </div>
+            <p class="slds-var-m-bottom_large">Advise customer of case reference number &amp; offer to send SMS containing details.<br/></p>
+            <lightning-tile label={caseNum}  href={navigateUrl} type="media" class="slds-box slds-var-p-top_small" >
+              <lightning-icon
+                slot="media"
+                icon-name="standard:groups"
+              ></lightning-icon>
+              <p
+                class="slds-truncate slds-var-p-bottom_x-large"
+                title="CaseLink"
+              >
+                Case has been created. Please click on the button below to go to
+                the Case.
+              </p>
+
+              <div class="slds-align_absolute-center slds-var-p-top_small">
+                <lightning-button
+                  label="Open Case"
+                  onclick={navigateToCasePage}
+                ></lightning-button>
+              </div>
+            </lightning-tile>
+          </lightning-card>
+        </template>
+        <template if:false={showSummaryPage}>
+          <template if:false={showEndGreetings}>
+        <template if:true={showCasenotCreatedInfo}>
+          <lightning-card>
+            <div
+              class="slds-card__header slds-align_absolute-center"
+            >
+              <lightning-formatted-text
+                class="slds-card__header-title slds-var-p-bottom_x-large"
+                value="Call Summary"
+                style="font-size: large; text-align: center"
+              ></lightning-formatted-text>
+            </div>
+            <lightning-tile label="VoiceCall"  href={navigateVCUrl} type="media" class="slds-box slds-var-p-top_small" >
+              <lightning-icon
+                slot="media"
+                icon-name="standard:groups"
+              ></lightning-icon>
+              <p
+                class="slds-truncate slds-var-p-bottom_x-large"
+                title="CaseLink"
+              >
+              <b>Case has not been created for this particular scenario.</b>
+              </p>
+              <div class="slds-align_absolute-center slds-var-p-top_small">
+                <lightning-button
+                  label="Close"
+                  onclick={navigateToVoiceCallPage}
+                ></lightning-button>
+              </div>
+            </lightning-tile>
+              
+            
+          </lightning-card>
+        </template>
+      </template>
+        </template>
+        <template if:false={showSummaryPage}>
+          <template if:true={show3PDFields}>
+            <div class="slds-align_absolute-center slds-var-p-top_small">
+              <lightning-formatted-text
+                aria-label="3PD Values"
+                value="We need a few details to send to the PowerOn system. Kindly fill in
+            the details below."
+              >
+              </lightning-formatted-text>
+            </div>
+            <lightning-record-edit-form
+              object-api-name="Case"
+              record-id={newCaseId}
+              onsuccess={handle3PDFields}
+            >
+              <lightning-output-field
+                field-name="CaseNumber"
+              ></lightning-output-field>
+              <lightning-input-field
+                field-name={CaseThirdPartyName}
+              ></lightning-input-field>
+              <lightning-input-field
+                field-name={CaseThirdPartyAddress}
+              ></lightning-input-field>
+              <lightning-input-field
+                field-name={CaseThirdPartyTelephone}
+              ></lightning-input-field>
+              <lightning-input-field
+                field-name={CaseThirdPartyMobile}
+              ></lightning-input-field>
+              <lightning-input-field
+                field-name={CaseThirdPartyCause}
+              ></lightning-input-field>
+              <lightning-input-field
+                field-name={CaseThirdPartyDescription}
+              ></lightning-input-field>
+              <div class="slds-var-m-top_medium">
+                <lightning-button variant="brand" type="submit" label="Done">
+                </lightning-button>
+              </div>
+            </lightning-record-edit-form>
+          </template>
+        </template>
+      </template>
+      <template if:true={contactId}>
+        <template if:true={showContactPref}>
+          <c-s-p-e-n_-common-dynamic-wizard
+            contact-id={contactId}
+            onsendcontact={handlePrefContact}
+          >
+          </c-s-p-e-n_-common-dynamic-wizard>
+        </template>
+      </template>
+    </template>
+
+    <template if:true={showEndGreetings}>
+      <lightning-card>
+        <template if:true={isStepOne}>
+          <lightning-layout class="default-msg">
+            <p>
+              Thank the customer: {contactName}.  Provide the customer 
+              with a recap of the call logged for {contactMailingAddress}
+              </p>
+          </lightning-layout>
+        </template>
+
+        <template if:true={isStepTwo}>
+          <lightning-layout class="default-msg">
+            <div>                
+              <template if:false={spSupply}>
+                <template if:true={noSupplyNet}>
+                  <p>
+                    Advise the customer that:<br/><br/>
+                    •	The information they have provided indicates that electricity supply to their property is affected by a fault on the electricity network which may also be affecting a number of customers in their area<br/><br/>
+                    •	Our engineers often restore supplies by attending the local substation to check and replace fuses, so we expect to have their supply restored <span style="font-weight: bold">{outageETR}</span>
+                  </p>
+                 
+                </template>
+              </template>
+              
+                <template if:true={spSupply}>
+                  <p>Advise the customer that:<br/><br/>
+                    •	The information they have given indicates there is a loss of supply affecting their property only<br/><br/>
+                    • To restore their supply we will require access to their property. Confirm that someone is able to remain in <br/>the property to grant access, by <span style="font-weight: bold">{outageETR}</span>
+                  </p>
+                 
+              </template>
+              <template if:false={noSupplyNet}>                
+                <template if:false={spSupply}>
+                    <p>
+                      Confirm ETA (Next available engineer) and reassure the customer by letting them know a call has been logged.
+                      <br />Advise this customer if the supply is completely lost to contact us back. 
+                      </p>
+                    <p style="font-weight: bold"><br />ETR - {outageETR}<br /></p>
+                </template>
+              </template>
+            </div>
+          </lightning-layout>
+        </template>
+
+        <template if:true={isStepThree}>
+          <lightning-layout  class="default-msg">
+            <p>
+              If customer has raised any concerns that could be resolved through
+              our Power Cut Services (Customer Needs Tracker), offer this
+              service and track though the CNT.<br />
+              <span style="font-weight: bold"><br />Note: </span>If
+              customer has any serious health concerns, advise they should call
+              NHS Direct on 111.
+            </p>
+          </lightning-layout>
+        </template>
+
+        <template if:true={isStepFour}>
+          <lightning-layout class="slds-var-m-around_large slds-box critical-msg">
+            <p>
+              Provide customer with mandatory safety advice.
+              <br />Please unplug appliances where safe to do so and 
+              if you have a gas boiler please turn this off at the mains, 
+              leaving a single light in the on position to indicate when the 
+              power has been restored.
+            </p>
+          </lightning-layout>
+        </template>
+
+        <template if:true={isStepFive}>
+          <lightning-layout class="default-msg">
+            <p>
+              Wrap up the call:<br />
+              •	Confirm that the customer they will get texts / voice alerts (if mobile provided) updates for the duration of the event.
+              <br />•	Provide case/incident reference numbers and ask if they would like to receive a text with the reference number.  
+              <br />•	Ask the customer if there’s anything else they can help with?
+              <br />•	Thank the customer for calling.<br /> 
+              <span style="font-weight: bold"><br />NOTE: </span>Agent to send 
+              SMS to the customer with case reference number. (optional)
+
+            </p>
+          </lightning-layout>
+        </template>
+
+        <span slot="footer" class="buttonAllignment">
+          <template if:true={isEnablePrev}>
+            <lightning-button
+              class="slds-card__footer-action slds-var-m-right_medium"
+              variant="base"
+              label="Back"
+              onclick={handleGreetingPrev}
+            ></lightning-button>
+          </template>
+          <template if:true={isEnableNext}>
+            <lightning-button
+              class="slds-card__footer-action slds-var-m-right_medium"
+              label="Next"
+              variant="brand"
+              onclick={handleGreetingNext}
+            ></lightning-button>
+          </template>
+          <template if:true={isEnableFinish}>
+            <lightning-button
+              class="slds-card__footer-action"
+              label="Finish"
+              variant="brand"
+              onclick={handleGreetingFinish}
+               disabled={isDisabled}
+            ></lightning-button>
+          </template>
+        </span>
+
+        <lightning-progress-indicator
+          current-step={currentStep}
+          type="base"
+          variant="base"
+          class="slds-var-m-around_x-large"
+        >
+          <lightning-progress-step
+            label="Step 1"
+            value="1"
+            onclick={handleOnStepClick}
+          ></lightning-progress-step>
+          <lightning-progress-step
+            label="Step 2"
+            value="2"
+            onclick={handleOnStepClick}
+          ></lightning-progress-step>
+          <lightning-progress-step
+            label="Step 3"
+            value="3"
+            onclick={handleOnStepClick}
+          ></lightning-progress-step>
+          <lightning-progress-step
+            label="Step 4"
+            value="4"
+            onclick={handleOnStepClick}
+          ></lightning-progress-step>
+          <lightning-progress-step
+            label="Step 5"
+            value="5"
+            onclick={handleOnStepClick}
+          ></lightning-progress-step>
+        </lightning-progress-indicator>
+      </lightning-card>
+    </template>
+  </lightning-card>
+</template>

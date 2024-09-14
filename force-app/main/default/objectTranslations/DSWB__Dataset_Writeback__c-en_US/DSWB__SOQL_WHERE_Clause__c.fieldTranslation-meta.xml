@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- SOQL WHERE clause applied when updating the existing records in the &quot;Object API Name&quot; Object. e.g. Amount &gt; 200 --></help>
+    <label><!-- z-SOQL WHERE Clause --></label>
+    <name>DSWB__SOQL_WHERE_Clause__c</name>
+</CustomFieldTranslation>

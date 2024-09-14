@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ParentWorkCategory__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field will relate to the parent work category</description>
+    <label>Parent Work Category</label>
+    <referenceTo>SPEN_WorkCategory__c</referenceTo>
+    <relationshipLabel>Work Categories</relationshipLabel>
+    <relationshipName>Work_Categories</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

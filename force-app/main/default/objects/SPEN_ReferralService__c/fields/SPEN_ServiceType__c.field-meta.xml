@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ServiceType__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  OR(ISPICKVAL(SPEN_Service__c , &apos;Energy Efficiency Advice&apos;),ISPICKVAL(SPEN_Service__c , &apos;Benefits Advice&apos;),
+ISPICKVAL(SPEN_Service__c , &apos;Debt Advice&apos;),ISPICKVAL(SPEN_Service__c , &apos;Best Tariff&apos;)
+) , &apos;Fuel Poverty&apos;, 
+
+IF(OR(ISPICKVAL(SPEN_Service__c , &apos;LCT - Advice&apos;),ISPICKVAL(SPEN_Service__c , &apos;LCT - Personal Plan&apos;),
+ISPICKVAL(SPEN_Service__c , &apos;LCT - Client Journey&apos;)
+) , &apos;Low Carbon Technology&apos;,
+
+
+IF(OR(ISPICKVAL(SPEN_Service__c , &apos;Befriending Service&apos;),ISPICKVAL(SPEN_Service__c , &apos;Friendship &amp; Hot Meals&apos;),
+ISPICKVAL(SPEN_Service__c , &apos;Help for Dementia&apos;),ISPICKVAL(SPEN_Service__c , &apos;Helping Carers&apos;),ISPICKVAL(SPEN_Service__c , &apos;Staying Safe at Home&apos;)
+) , &apos;Wider Social Support&apos;,
+
+IF(OR(ISPICKVAL(SPEN_Service__c , &apos;Low Carbon Technology&apos;),ISPICKVAL(SPEN_Service__c , &apos;Help in a Power Cut&apos;)
+) , &apos;Other&apos;,&apos; &apos;)
+
+
+)
+)
+)</formula>
+    <label>Service Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

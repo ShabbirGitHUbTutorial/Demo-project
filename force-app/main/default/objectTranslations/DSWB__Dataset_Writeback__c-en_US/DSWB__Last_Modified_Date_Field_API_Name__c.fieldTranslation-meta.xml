@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Field API Name of a Date/Time field in the Destination Object for the Dataset Writeback. If specified, this Date/Time field will store the Date/Time of the latest Dataset Writeback that was called and upserted the records in the Destination Object. --></help>
+    <label><!-- z-Last Modified Date Field API Name --></label>
+    <name>DSWB__Last_Modified_Date_Field_API_Name__c</name>
+</CustomFieldTranslation>

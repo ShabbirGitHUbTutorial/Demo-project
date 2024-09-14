@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Damage Form Staging</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Damage Form Staging</value>
+    </caseValues>
+    <layouts>
+        <layout>Damage Form Staging Layout</layout>
+        <sections>
+            <label><!-- 3PD Materials Used --></label>
+            <section>3PD Materials Used</section>
+        </sections>
+        <sections>
+            <label><!-- 3rd Party Sign-Off --></label>
+            <section>3rd Party Sign-Off</section>
+        </sections>
+        <sections>
+            <label><!-- 3rd Party Sign-Off Damage Inspection --></label>
+            <section>3rd Party Sign-Off Damage Inspection</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Emergency Services / Utilities --></label>
+            <section>Emergency Services / Utilities</section>
+        </sections>
+        <sections>
+            <label><!-- Employer Details --></label>
+            <section>Employer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Incident Details --></label>
+            <section>Incident Details</section>
+        </sections>
+        <sections>
+            <label><!-- O/H Damage -  Overhead Damage --></label>
+            <section>O/H Damage -  Overhead Damage</section>
+        </sections>
+        <sections>
+            <label><!-- Person Responsible/Principle Party --></label>
+            <section>Person Responsible/Principle Party</section>
+        </sections>
+        <sections>
+            <label><!-- Principle Party or Homeowner Details --></label>
+            <section>Principle Party or Homeowner Details</section>
+        </sections>
+        <sections>
+            <label><!-- Responsible Person Detail --></label>
+            <section>Responsible Person Detail</section>
+        </sections>
+        <sections>
+            <label><!-- SPEN Sign-Off --></label>
+            <section>SPEN Sign-Off</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- U/G Damage - Underground Cable --></label>
+            <section>U/G Damage - Underground Cable</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

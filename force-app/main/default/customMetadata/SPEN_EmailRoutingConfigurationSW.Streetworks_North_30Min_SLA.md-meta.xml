@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Streetworks North 30Min SLA</label>
+    <protected>false</protected>
+    <values>
+        <field>Matcher_String_2__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Matcher_String__c</field>
+        <value xsi:type="xsd:string">In Progress;Works Closed;Closure;Closing Notice;Site Clear;No ex;No excavation;NOX;close;closed;work closed;Into Progress</value>
+    </values>
+    <values>
+        <field>SPEN_HeaderSubject__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_Priority__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+    <values>
+        <field>SPEN_QueueName__c</field>
+        <value xsi:type="xsd:string">SPEN_North_Additionals_2_Hour_Response</value>
+    </values>
+    <values>
+        <field>SPEN_RoutingOutcome__c</field>
+        <value xsi:type="xsd:string">30 Min SLA North</value>
+    </values>
+    <values>
+        <field>SPEN_ToAddress__c</field>
+        <value xsi:type="xsd:string">Streetworks-Scotland-Additional-Requests@spenergynetworks.co.uk</value>
+    </values>
+</CustomMetadata>

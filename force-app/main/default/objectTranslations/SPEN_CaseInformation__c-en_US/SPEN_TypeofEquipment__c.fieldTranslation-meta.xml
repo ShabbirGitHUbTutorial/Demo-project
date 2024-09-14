@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Equipment --></label>
+    <name>SPEN_TypeofEquipment__c</name>
+    <picklistValues>
+        <masterLabel>BATTERY</masterLabel>
+        <translation><!-- BATTERY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device Class</masterLabel>
+        <translation><!-- Device Class --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device System Ref</masterLabel>
+        <translation><!-- Device System Ref --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENALCT Dataset</masterLabel>
+        <translation><!-- ENALCT Dataset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EVCP_AC</masterLabel>
+        <translation><!-- EVCP_AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EVCP_DC</masterLabel>
+        <translation><!-- EVCP_DC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HP</masterLabel>
+        <translation><!-- HP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maximum demand of proposed equipment</masterLabel>
+        <translation><!-- Maximum demand of proposed equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V2G_INVERTER</masterLabel>
+        <translation><!-- V2G_INVERTER --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

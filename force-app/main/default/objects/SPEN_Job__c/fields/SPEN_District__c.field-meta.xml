@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_District__c</fullName>
+    <label>District</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPEN_LicenseArea__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ayrshire &amp; Clyde South</fullName>
+                <default>false</default>
+                <label>Ayrshire &amp; Clyde South</label>
+            </value>
+            <value>
+                <fullName>Central &amp; Fife</fullName>
+                <default>false</default>
+                <label>Central &amp; Fife</label>
+            </value>
+            <value>
+                <fullName>Dee Valley/ Mid Wales</fullName>
+                <default>false</default>
+                <label>Dee Valley/ Mid Wales</label>
+            </value>
+            <value>
+                <fullName>Dumfries &amp; Galloway</fullName>
+                <default>false</default>
+                <label>Dumfries &amp; Galloway</label>
+            </value>
+            <value>
+                <fullName>Edinburgh &amp; Borders</fullName>
+                <default>false</default>
+                <label>Edinburgh &amp; Borders</label>
+            </value>
+            <value>
+                <fullName>Glasgow &amp; Clyde North</fullName>
+                <default>false</default>
+                <label>Glasgow &amp; Clyde North</label>
+            </value>
+            <value>
+                <fullName>Lanarkshire</fullName>
+                <default>false</default>
+                <label>Lanarkshire</label>
+            </value>
+            <value>
+                <fullName>Merseyside</fullName>
+                <default>false</default>
+                <label>Merseyside</label>
+            </value>
+            <value>
+                <fullName>Mid-Cheshire</fullName>
+                <default>false</default>
+                <label>Mid-Cheshire</label>
+            </value>
+            <value>
+                <fullName>North Wales</fullName>
+                <default>false</default>
+                <label>North Wales</label>
+            </value>
+            <value>
+                <fullName>Wirral</fullName>
+                <default>false</default>
+                <label>Wirral</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Ayrshire &amp; Clyde South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Central &amp; Fife</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Dumfries &amp; Galloway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Edinburgh &amp; Borders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Glasgow &amp; Clyde North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Lanarkshire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Dee Valley/ Mid Wales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Merseyside</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Mid-Cheshire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>North Wales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Wirral</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

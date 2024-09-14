@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Subject__c</columns>
+    <columns>SPEN_CustomerName__c</columns>
+    <columns>SPEN_RelatedCase__c</columns>
+    <columns>Status__c</columns>
+    <columns>SPEN_DateTimeOpened__c</columns>
+    <columns>SPEN_TargetDateForClosure__c</columns>
+    <columns>SPEN_DateTimeClosed__c</columns>
+    <columns>Engagement_Type__c</columns>
+    <columns>Engagement_Reason__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_CustomerName__c</field>
+        <operation>contains</operation>
+        <value>Amrita</value>
+    </filters>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PSR</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PSRs</value>
+    </caseValues>
+    <layouts>
+        <layout>PSR Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- SPEN PSR --></label>
+        <name>SPEN_PSR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a password in the additional info field in order to add this PSR category --></errorMessage>
+        <name>AdditinalInformation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select First Language --></errorMessage>
+        <name>SPEN_FirstLanguageSelection</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select PSR Effective To Date --></errorMessage>
+        <name>SPEN_MandatoryEffectiveToDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Agent can&apos;t modify PSR &amp; Vulnerability Type --></errorMessage>
+        <name>SPEN_PSRVulnerabilityTypeAgentCheck</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- SPEN_SendCommunication --></label>
+        <name>SPEN_SendCommunication</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Voice_Alert --></label>
+        <name>Send_Voice_Alert</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_GS6Form</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <description>Record type used to identify the GS6 forms</description>
+    <label>GS6 Form</label>
+    <picklistValues>
+        <picklist>SPEN_ActionMatrix__c</picklist>
+        <values>
+            <fullName>Action High - Stop and contact Standby TL%2E Work should only continue if appropriate to do so with a risk mitigation action plan in place following discussion between Standby TL and Duty Manager%2E Please reassess in 1 hour%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Action Low - Continue working and reassess in 2 hours%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Action Medium - %EF%BB%BFPause to contact your Standby TL%2E You may be able to continue following discussion with your Standby TL and creating a risk mitigation action plan%2E Please reassess in 1 hour%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_District__c</picklist>
+        <values>
+            <fullName>SPD - Ayrshire %26 Clyde South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Central %26 Fife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Dumfries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Edinburgh %26 Borders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Glasgow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Lanarkshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Dee Valley%2FMid Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Merseyside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Mid Cheshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - North Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Wirral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Ayrshire %26 Clyde South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Central %26 Fife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Dumfries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Edinburgh %26 Borders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Glasgow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Lanarkshire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HoursOfSleepLast24h__c</picklist>
+        <values>
+            <fullName>Between 5-7 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than 5 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than 7 hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HoursOfSleepLast48h__c</picklist>
+        <values>
+            <fullName>12-14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 or more</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than 12</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HowDoYouFeel__c</picklist>
+        <values>
+            <fullName>Active%2C alert or wide awake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhausted and in urgent need of rest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Functioning at a good level%2C able to concentrate but not at peak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Groggy and finding it difficult to concentrate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tired and not fully alert</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HowLongIsYourCommute__c</picklist>
+        <values>
+            <fullName>Between 30 and 60 minutes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Over an hour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under 30 minutes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HowManyPhases__c</picklist>
+        <values>
+            <fullName>Single phase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three phase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two phase</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_LowCarbonTechnologyInstalled__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_NeighbouringPropertiesChecked__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n%2Fa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RatingOfTheCableHead__c</picklist>
+        <values>
+            <fullName>100A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300A %28heavy duty%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400A %28heavy duty%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>600A %28heavy duty%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80A</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RetainedCutOutLocation__c</picklist>
+        <values>
+            <fullName>Bonnybridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambuslang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dumfries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edinburgh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Galashiels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glasgow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glenrothes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kilmarnock</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SelectAnyLCTsFoundAtThisAddress__c</picklist>
+        <values>
+            <fullName>Battery storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EV charger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heat pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28please specify on the next page%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar panels</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SystemVoltage__c</picklist>
+        <values>
+            <fullName>11 kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>132 kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>275 kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33 kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>400 kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>66 kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Voltage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WhatTypeOfCutOutHasBeenRecovered__c</picklist>
+        <values>
+            <fullName>Black plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grey plastic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metal clad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>n%2Fa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WillYouBeDrivingHomeAlone__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

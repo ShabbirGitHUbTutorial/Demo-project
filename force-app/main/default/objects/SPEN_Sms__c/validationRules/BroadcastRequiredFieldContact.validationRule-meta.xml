@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BroadcastRequiredFieldContact</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Broadcast&quot; &amp;&amp;
+ISBLANK(SPEN_ContactId__c) &amp;&amp;  SPEN_CaseId__r.RecordType.DeveloperName != &quot;SPEN_UnplannedBypass&quot;</errorConditionFormula>
+    <errorMessage>The Contact field is required.</errorMessage>
+</ValidationRule>

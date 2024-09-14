@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>3rdCallReceivedHV</label>
+    <protected>false</protected>
+    <values>
+        <field>Applicable_INC_Type__c</field>
+        <value xsi:type="xsd:string">HV_S,HV_N</value>
+    </values>
+    <values>
+        <field>Incident_Status__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_DroppedSupplyWithNotice__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>SPEN_FieldsToBeShown__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_Incident_Type__c</field>
+        <value xsi:type="xsd:string">HV</value>
+    </values>
+    <values>
+        <field>SPEN_MessagingTaskEvent__c</field>
+        <value xsi:type="xsd:string">3rd Call Received</value>
+    </values>
+    <values>
+        <field>SPEN_Outagestate__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

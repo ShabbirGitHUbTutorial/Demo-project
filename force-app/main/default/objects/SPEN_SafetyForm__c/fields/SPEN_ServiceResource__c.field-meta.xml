@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ServiceResource__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field used to store the service resource related to the form</description>
+    <label>Service Resource</label>
+    <referenceTo>ServiceResource</referenceTo>
+    <relationshipLabel>Risk Assessment Forms</relationshipLabel>
+    <relationshipName>Risk_Assessment_Forms_80d</relationshipName>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

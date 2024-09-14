@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Assigns the Safety Check Due date in order to update the created Serialised Product record.</description>
+        <name>Assign_Safety_Check_Due_Date</name>
+        <label>Assign Safety Check Due Date</label>
+        <locationX>50</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>Safety_Check_Confirmed_Date</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.SPEN_Do_Not_Use_After__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Safety_Check_Due_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the Safety Check Due date in order to update the created Serialised Product record.</description>
+        <name>Assign_Safety_Check_Due_Date1</name>
+        <label>Assign Safety Check Due Date</label>
+        <locationX>314</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>Safety_Check_Confirmed_Date</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.SPEN_Service_Due__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Safety_Check_Due_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the Safety Check Due date in order to update the created Serialised Product record.</description>
+        <name>Assign_Safety_Check_Due_Date2</name>
+        <label>Assign Safety Check Due Date</label>
+        <locationX>578</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>Safety_Check_Confirmed_Date</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.SPEN_Replacement_Due__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Safety_Check_Due_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the Safety Check Due date in order to update the created Serialised Product record.</description>
+        <name>Assign_Safety_Check_Due_Date3</name>
+        <label>Assign Safety Check Due Date</label>
+        <locationX>1106</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>Safety_Check_Confirmed_Date</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.SPEN_Insurance_Inspection_Due__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Safety_Check_Due_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the Safety Check Due date in order to update the created Serialised Product record.</description>
+        <name>Assign_Safety_Check_Due_Date4</name>
+        <label>Assign Safety Check Due Date</label>
+        <locationX>1898</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>Safety_Check_Confirmed_Date</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.SPEN_Calibration_Due__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Safety_Check_Due_Date</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks if the Do Not Use After date is earlier than the &apos;Calibration due&apos; date on the Serialised Product record.</description>
+        <name>Do_Not_Use_After_Date_Check</name>
+        <label>Do Not Use After Date Check</label>
+        <locationX>1700</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>Insurance_Inspection_Due_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Calibration Due Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Do_Not_Use_After_Date_Is_Earlier</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Do_Not_Use_After_Calibration_Due_Check_Formula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Calibration_Due_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Insurance_Inspection_Check1</targetReference>
+            </connector>
+            <label>Do Not Use After Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Do Not Use After date is earlier than the Inspection Due date on the Serialised Product record.</description>
+        <name>Insurance_Inspection_Check1</name>
+        <label>Insurance Inspection Due Check</label>
+        <locationX>941</locationX>
+        <locationY>611</locationY>
+        <defaultConnector>
+            <targetReference>Replacement_Date_Check1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Insurance Inspection Due Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Do_Not_Use_After_Date_Is_Earlier1</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Do_Not_Use_After_Insurance_Inspection_Due_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Insurance_Inspection_Due_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Replacement_Date_Check</targetReference>
+            </connector>
+            <label>Do Not Use After Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Calibration Due date is earlier than the Insurance Inspection Due date on the Serialised Product record.</description>
+        <name>Insurance_Inspection_Due_Check</name>
+        <label>Insurance Inspection Due Check</label>
+        <locationX>2459</locationX>
+        <locationY>611</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Replacement_Date_Check1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Insurance Inspection Due Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Calibration_Due_Date_Is_Earlier1</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Calibration_Due_After_Insurance_Inspection_Due_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Insurance_Inspection_Due_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Replacement_Date_Check2</targetReference>
+            </connector>
+            <label>Calibration Due Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Do Not Use After date is earlier than the Replacement Date on the Serialised Product record.</description>
+        <name>Replacement_Date_Check</name>
+        <label>Replacement Date Check</label>
+        <locationX>446</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>Service_Due_Check1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Replacement Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Do_Not_Use_After_Date_Is_Earlier2</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Do_Not_Use_After_Replacement_Date_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Replacement_Date_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Service_Due_Check</targetReference>
+            </connector>
+            <label>Do Not Use After Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Insurance Inspection Due date is earlier than the Replacement Date on the Serialised Product record.</description>
+        <name>Replacement_Date_Check1</name>
+        <label>Replacement Date Check</label>
+        <locationX>1436</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Service_Due_Check1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Replacement Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Insurance_Inspection_Due_Date_Is_Earlier</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Insurance_Inspection_Due_Replacement_Date_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Replacement_Date_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Service_Due_Check2</targetReference>
+            </connector>
+            <label>Insurance Inspection Due Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Calibration Due date is earlier than the Replacement Date on the Serialised Product record.</description>
+        <name>Replacement_Date_Check2</name>
+        <label>Replacement Date Check</label>
+        <locationX>2228</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Service_Due_Check1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Replacement Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Calibration_Due_Date_Is_Earlier</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Calibration_Due_Replacement_Date_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Replacement_Date_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Service_Due_Check3</targetReference>
+            </connector>
+            <label>Calibration Due Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Decision element to check if Serialised Product created is Compliance Stores record type.</description>
+        <name>Serialised_Product_Record_Type_Check</name>
+        <label>Serialised Product Record Type Check</label>
+        <locationX>2327</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>Non Compliance Stores Serialised Product</defaultConnectorLabel>
+        <rules>
+            <name>Compliance_Stores_Serialised_Product</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Compliance_Store_Record_Id.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.RecordTypeId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Do_Not_Use_After_Date_Check</targetReference>
+            </connector>
+            <label>Compliance Stores Serialised Product</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Do Not Use After date is earlier than the Service Due date on the Serialised Product record.</description>
+        <name>Service_Due_Check</name>
+        <label>Service Due Check</label>
+        <locationX>182</locationX>
+        <locationY>827</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Safety_Check_Due_Date1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Service Due Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Do_Not_Use_After_Date_Is_Earlier3</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Do_Not_Use_After_Service_Due_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Service_Due_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Safety_Check_Due_Date</targetReference>
+            </connector>
+            <label>Do Not Use After Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Replacement Date is earlier than the Service Due date on the Serialised Product record.</description>
+        <name>Service_Due_Check1</name>
+        <label>Service Due Check</label>
+        <locationX>710</locationX>
+        <locationY>827</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_Safety_Check_Due_Date1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Service Due Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Replacement_Date_Is_Earlier</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Replacement_Date_Service_Due_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Service_Due_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Safety_Check_Due_Date2</targetReference>
+            </connector>
+            <label>Replacement Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Insurance Inspection Due date is earlier than the Service Due date on the Serialised Product record.</description>
+        <name>Service_Due_Check2</name>
+        <label>Service Due Check</label>
+        <locationX>1238</locationX>
+        <locationY>827</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_Safety_Check_Due_Date1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Service Due Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Insurance_Inspection_Due_Date_Is_Earlier1</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Insurance_Inspection_Due_Service_Due_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Service_Due_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Safety_Check_Due_Date3</targetReference>
+            </connector>
+            <label>Insurance Inspection Due Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the Calibration Due date is earlier than the Service Due date on the Serialised Product record.</description>
+        <name>Service_Due_Check3</name>
+        <label>Service Due Check</label>
+        <locationX>2030</locationX>
+        <locationY>827</locationY>
+        <defaultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Assign_Safety_Check_Due_Date1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Service Due Date Is Earlier</defaultConnectorLabel>
+        <rules>
+            <name>Calibration_Due_Date_Is_Earlier2</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Calibration_Due_Service_Due_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Service_Due_Blank_Check</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Safety_Check_Due_Date4</targetReference>
+            </connector>
+            <label>Calibration Due Date Is Earlier</label>
+        </rules>
+    </decisions>
+    <description>Flow will ensure when any of the Serialised Product safety check dates are updated, the safety check date field is updated. Used for Compliance Stores solution.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Checks if the Calibration Due date is earlier than the Insurance Inspection Due date on the Serialised Product record.</description>
+        <name>Calibration_Due_After_Insurance_Inspection_Due_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Calibration_Due__c} &lt; {!$Record.SPEN_Insurance_Inspection_Due__c} ,  {!$Record.SPEN_Insurance_Inspection_Due__c} = {!$Record.SPEN_Calibration_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Checks if the Calibration Due field is blank.</description>
+        <name>Calibration_Due_Blank_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK({!$Record.SPEN_Calibration_Due__c})</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Calibration Due date is earlier than the Replacement Date.</description>
+        <name>Calibration_Due_Replacement_Date_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ({!$Record.SPEN_Calibration_Due__c} &lt; {!$Record.SPEN_Replacement_Due__c} , {!$Record.SPEN_Calibration_Due__c} = {!$Record.SPEN_Replacement_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Calibration Due date is earlier than the Service Due date.</description>
+        <name>Calibration_Due_Service_Due_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Calibration_Due__c} &lt; {!$Record.SPEN_Service_Due__c} ,  {!$Record.SPEN_Calibration_Due__c} = {!$Record.SPEN_Service_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Checks if the Do Not Use After field is blank.</description>
+        <name>Do_Not_Use_After_Blank_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK({!$Record.SPEN_Do_Not_Use_After__c})</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Do Not Use After date is earlier than the Calibration Due date.</description>
+        <name>Do_Not_Use_After_Calibration_Due_Check_Formula</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Do_Not_Use_After__c} &lt; {!$Record.SPEN_Calibration_Due__c} , {!$Record.SPEN_Do_Not_Use_After__c} = {!$Record.SPEN_Calibration_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Do Not Use After date is earlier than the Insurance Inspection Due date.</description>
+        <name>Do_Not_Use_After_Insurance_Inspection_Due_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Do_Not_Use_After__c} &lt; {!$Record.SPEN_Insurance_Inspection_Due__c} , {!$Record.SPEN_Do_Not_Use_After__c} = {!$Record.SPEN_Insurance_Inspection_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Do Not Use After date is earlier than the Replacement Date.</description>
+        <name>Do_Not_Use_After_Replacement_Date_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Do_Not_Use_After__c} &lt; {!$Record.SPEN_Replacement_Due__c} , {!$Record.SPEN_Do_Not_Use_After__c} =  {!$Record.SPEN_Replacement_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Do Not Use After date is earlier than the Service Due date.</description>
+        <name>Do_Not_Use_After_Service_Due_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Do_Not_Use_After__c} &lt; {!$Record.SPEN_Service_Due__c} , {!$Record.SPEN_Do_Not_Use_After__c} = {!$Record.SPEN_Service_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Checks if the Insurance Inspection Due field is blank.</description>
+        <name>Insurance_Inspection_Due_Blank_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK({!$Record.SPEN_Insurance_Inspection_Due__c})</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Insurance Inspection due date is earlier than the Replacement Date.</description>
+        <name>Insurance_Inspection_Due_Replacement_Date_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Insurance_Inspection_Due__c} &lt; {!$Record.SPEN_Replacement_Due__c} , {!$Record.SPEN_Insurance_Inspection_Due__c} = {!$Record.SPEN_Replacement_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Insurance Inspection Due date is earlier than the Service Due date.</description>
+        <name>Insurance_Inspection_Due_Service_Due_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Insurance_Inspection_Due__c} &lt; {!$Record.SPEN_Service_Due__c} , {!$Record.SPEN_Insurance_Inspection_Due__c} = {!$Record.SPEN_Service_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Checks if the Replacement Date field is blank.</description>
+        <name>Replacement_Date_Blank_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK( {!$Record.SPEN_Replacement_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Formula to check if the Replacement Date is earlier than the Service Due date.</description>
+        <name>Replacement_Date_Service_Due_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>OR ( {!$Record.SPEN_Replacement_Due__c} &lt; {!$Record.SPEN_Service_Due__c} , {!$Record.SPEN_Replacement_Due__c} =  {!$Record.SPEN_Service_Due__c} )</expression>
+    </formulas>
+    <formulas>
+        <description>Checks if the Service Due field is blank.</description>
+        <name>Service_Due_Blank_Check</name>
+        <dataType>Boolean</dataType>
+        <expression>ISBLANK({!$Record.SPEN_Service_Due__c})</expression>
+    </formulas>
+    <interviewLabel>CMPST Serialised Product Updated Safety Check Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CMPST Serialised Product Updated Safety Check Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get records element to find the Compliance Store record Id for Serialised Product object.</description>
+        <name>Get_Compliance_Store_Record_Id</name>
+        <label>Get Compliance Store Record Id</label>
+        <locationX>2327</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Serialised_Product_Record_Type_Check</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SerializedProduct</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Compliance_Stores</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the Serialised Product record with the newly assigned Safety Check Due date.</description>
+        <name>Update_Safety_Check_Due_Date</name>
+        <label>Update Safety Check Due Date</label>
+        <locationX>1700</locationX>
+        <locationY>1379</locationY>
+        <inputAssignments>
+            <field>SPEN_Safety_Check_Date__c</field>
+            <value>
+                <elementReference>Safety_Check_Confirmed_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>2201</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Compliance_Store_Record_Id</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>SPEN_Calibration_Due__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Insurance_Inspection_Due__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Replacement_Due__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Service_Due__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Do_Not_Use_After__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>SerializedProduct</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Stores the earliest date confirmed by the flow for the Safety Check Date field on Product Item record.</description>
+        <name>Safety_Check_Confirmed_Date</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

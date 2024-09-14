@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_VariableCumulativeApplicationFee__c</fullName>
+    <description>rollup summary fields which sum up total cost of time writing</description>
+    <label>Variable Cumulative Application Fee</label>
+    <summarizedField>SPEN_TimeWriting__c.SPEN_TotalCost__c</summarizedField>
+    <summaryForeignKey>SPEN_TimeWriting__c.SPEN_FinancialInformation__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

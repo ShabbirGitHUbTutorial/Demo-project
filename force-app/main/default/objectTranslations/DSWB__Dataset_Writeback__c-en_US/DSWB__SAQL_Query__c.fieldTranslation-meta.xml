@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use this field to create or customize SAQL queries. The query field gives you additional flexibility over queries created by widget wizards or in the chart and table modes of the CRM Analytics explorer. --></help>
+    <label><!-- SAQL Query --></label>
+    <name>DSWB__SAQL_Query__c</name>
+</CustomFieldTranslation>

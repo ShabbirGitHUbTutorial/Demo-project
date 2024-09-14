@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_SFQueueName__c</columns>
+    <columns>SPEN_CustomerClass__c</columns>
+    <columns>SPEN_District__c</columns>
+    <columns>SPEN_JobTypeDescription__c</columns>
+    <columns>SPEN_MinimumLoad__c</columns>
+    <columns>SPEN_MaximumLoad__c</columns>
+    <columns>SPEN_MinimumPlot__c</columns>
+    <columns>SPEN_MaximumPlot__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_SFQueueName__c</field>
+        <operation>contains</operation>
+        <value>132</value>
+    </filters>
+    <label>All</label>
+</ListView>

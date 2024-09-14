@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_VIew</fullName>
+    <columns>MasterLabel</columns>
+    <columns>SPEN_BusinessHours__c</columns>
+    <columns>SPEN_Excavation_Required__c</columns>
+    <columns>SPEN_Notice_Type__c</columns>
+    <columns>Number_of_Days__c</columns>
+    <columns>SPEN_NumberofHours__c</columns>
+    <columns>SPEN_RecordType__c</columns>
+    <columns>SPEN_Sensitivity__c</columns>
+    <columns>SPEN_SPD_SPM__c</columns>
+    <columns>SPEN_ClockStartTime__c</columns>
+    <columns>SPEN_ClockEndTime__c</columns>
+    <columns>SPEN_QueryType__c</columns>
+    <columns>SPEN_SLA__c</columns>
+    <columns>SPEN_WorkItemRouting__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>SPEN VIew</label>
+</ListView>

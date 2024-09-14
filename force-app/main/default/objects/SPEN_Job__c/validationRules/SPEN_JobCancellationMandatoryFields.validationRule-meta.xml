@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_JobCancellationMandatoryFields</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( SPEN_JobStatus__c , &quot;Cancelled&quot;) &amp;&amp;  (ISBLANK( TEXT(SPEN_Cancelledby__c))||ISBLANK( TEXT(  SPEN_CancelledReason__c )))</errorConditionFormula>
+    <errorMessage>Please enter values for Cancelled by and Cancelled Reason to cancel the job.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IvrRequiredFieldEventSupplierInquiry</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;IVR&quot; &amp;&amp;
+ISPICKVAL(SPEN_Event__c, &quot;Supplier Inquiry&quot;) &amp;&amp;
+ISBLANK(SPEN_SupplierName__c) &amp;&amp; 
+ISBLANK(SPEN_SupplierNumber__c)</errorConditionFormula>
+    <errorMessage>The Supplier Name and Supplier Number fields are required if the Event field is set to Supplier Inquiry.</errorMessage>
+</ValidationRule>

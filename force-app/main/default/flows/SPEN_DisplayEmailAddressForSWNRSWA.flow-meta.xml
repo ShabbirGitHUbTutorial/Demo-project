@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <name>Case_Employee_EmailIdAssignment</name>
+        <label>Case Employee EmailIdAssignment</label>
+        <locationX>635</locationX>
+        <locationY>459</locationY>
+        <assignmentItems>
+            <assignToReference>CaseEmployeeDisplayString</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>CaseEmployeeFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_over_Case_Employee</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Person_EmailIdAssignment</name>
+        <label>Person EmailIdAssignment</label>
+        <locationX>950</locationX>
+        <locationY>228</locationY>
+        <assignmentItems>
+            <assignToReference>ResponsiblePartyDisplayString</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>RespPartyPersonFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_over_RP</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Resp_Party_EmailIdAssignment</name>
+        <label>Company EmailIdAssignment</label>
+        <locationX>1085</locationX>
+        <locationY>573</locationY>
+        <assignmentItems>
+            <assignToReference>ResponsiblePartyDisplayString</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>RespPartyCompanyFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Iterate_over_RP</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_All_Variables_to_NULL</name>
+        <label>Set All Variables to NULL</label>
+        <locationX>465</locationX>
+        <locationY>698</locationY>
+        <assignmentItems>
+            <assignToReference>CaseEmployeeDisplayString</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ResponsiblePartyDisplayString</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Query_Case</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_for_Company_Person_RP</name>
+        <label>Check for Company/Person RP</label>
+        <locationX>839</locationX>
+        <locationY>423</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>if_Company</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_over_RP.SPEN_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Company</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Resp_Party_EmailIdAssignment</targetReference>
+            </connector>
+            <label>If Company</label>
+        </rules>
+        <rules>
+            <name>If_Person</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Iterate_over_RP.SPEN_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Person</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Person_EmailIdAssignment</targetReference>
+            </connector>
+            <label>If Person</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_for_Parent_Case</name>
+        <label>Check for Parent Case</label>
+        <locationX>1028</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Parent_Case_Present</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Query_Case.ParentId</leftValueReference>
+                <operator>NotEqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Get_Parent_Case</targetReference>
+            </connector>
+            <label>Parent Case Present</label>
+        </rules>
+        <rules>
+            <name>Parent_Case_Not_Present</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Query_Case.ParentId</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Parent_Case_Missing_screen</targetReference>
+            </connector>
+            <label>Parent Case Not Present</label>
+        </rules>
+    </decisions>
+    <description>This flow is used to display the associated email addresses for parent SW and NRSWA cases</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CaseEmployeeFormula</name>
+        <dataType>String</dataType>
+        <expression>If({!Loop_over_Case_Employee.SPEN_EmployeeEmailAddress__c} = NULL , {!Loop_over_Case_Employee.Employee_Full_Name__c} + &apos;&lt;Br/&gt;&apos;,
+
+{!Loop_over_Case_Employee.Employee_Full_Name__c} + &apos;&lt;b&gt; | &lt;/b&gt;&apos;+ {!Loop_over_Case_Employee.SPEN_EmployeeEmailAddress__c} + &apos;&lt;Br/&gt;&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>NoticeRequestorFormula</name>
+        <dataType>String</dataType>
+        <expression>
+If( AND({!Get_Case_Information.SPEN_NoticeRequestorName__c} &lt;&gt; NULL,{!Get_Case_Information.SPEN_NoticeRequestorEmail__c} &lt;&gt; NULL), 
+({!Get_Case_Information.SPEN_NoticeRequestorName__c} + &apos;&lt;b&gt; | &lt;/b&gt;&apos;+ {!Get_Case_Information.SPEN_NoticeRequestorEmail__c}), 
+If(AND({!Get_Case_Information.SPEN_NoticeRequestorName__c} = NULL,{!Get_Case_Information.SPEN_NoticeRequestorEmail__c} &lt;&gt; NULL),
+{!Get_Case_Information.SPEN_NoticeRequestorEmail__c},
+If(AND({!Get_Case_Information.SPEN_NoticeRequestorName__c} &lt;&gt; NULL,{!Get_Case_Information.SPEN_NoticeRequestorEmail__c} = NULL),
+{!Get_Case_Information.SPEN_NoticeRequestorName__c},&apos;&apos;)
+))</expression>
+    </formulas>
+    <formulas>
+        <name>OriginatorFormula</name>
+        <dataType>String</dataType>
+        <expression>If( AND({!Get_Case_Information.SPEN_WorkRequestorName__c} &lt;&gt; NULL,{!Get_Case_Information.SPEN_WorkRequestorEmail__c} &lt;&gt; NULL), 
+({!Get_Case_Information.SPEN_WorkRequestorName__c} + &apos;&lt;b&gt; | &lt;/b&gt;&apos;+ {!Get_Case_Information.SPEN_WorkRequestorEmail__c}), 
+If(AND({!Get_Case_Information.SPEN_WorkRequestorName__c} = NULL,{!Get_Case_Information.SPEN_WorkRequestorEmail__c} &lt;&gt; NULL),
+{!Get_Case_Information.SPEN_WorkRequestorEmail__c},
+If(AND({!Get_Case_Information.SPEN_WorkRequestorName__c} &lt;&gt; NULL,{!Get_Case_Information.SPEN_WorkRequestorEmail__c} = NULL),
+{!Get_Case_Information.SPEN_WorkRequestorName__c},&apos;&apos;)
+))</expression>
+    </formulas>
+    <formulas>
+        <name>RespPartyCompanyFormula</name>
+        <dataType>String</dataType>
+        <expression>If({!Iterate_over_RP.SPEN_EmailAddress__c}= NULL , {!Iterate_over_RP.SPEN_Company__r.Name} + &apos;&lt;Br/&gt;&apos;,
+{!Iterate_over_RP.SPEN_Company__r.Name} + &apos;&lt;b&gt; | &lt;/b&gt;&apos;+ {!Iterate_over_RP.SPEN_EmailAddress__c} + &apos;&lt;Br/&gt;&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>RespPartyPersonFormula</name>
+        <dataType>String</dataType>
+        <expression>If( AND({!Iterate_over_RP.First_Name__c} &lt;&gt; NULL,{!Iterate_over_RP.Last_Name__c} &lt;&gt; NULL, {!Iterate_over_RP.Email__c} &lt;&gt; NULL), 
+{!Iterate_over_RP.First_Name__c}+ &apos; &apos;+ {!Iterate_over_RP.Last_Name__c}+ &apos;&lt;b&gt; | &lt;/b&gt;&apos; + {!Iterate_over_RP.Email__c} +&apos;&lt;Br/&gt;&apos;, 
+
+If(AND({!Iterate_over_RP.First_Name__c} = NULL,{!Iterate_over_RP.Last_Name__c} &lt;&gt; NULL,{!Iterate_over_RP.Email__c} &lt;&gt; NULL),
+{!Iterate_over_RP.Last_Name__c}+ &apos;&lt;b&gt; | &lt;/b&gt;&apos; + {!Iterate_over_RP.Email__c} +&apos;&lt;Br/&gt;&apos;,
+
+If(AND({!Iterate_over_RP.First_Name__c} &lt;&gt; NULL,{!Iterate_over_RP.Last_Name__c} = NULL, {!Iterate_over_RP.Email__c} &lt;&gt; NULL),
+{!Iterate_over_RP.First_Name__c}+ &apos;&lt;b&gt; | &lt;/b&gt;&apos; + {!Iterate_over_RP.Email__c} + &apos;&lt;Br/&gt;&apos;,
+
+If(AND({!Iterate_over_RP.First_Name__c} &lt;&gt; NULL,{!Iterate_over_RP.Last_Name__c} &lt;&gt; NULL, {!Iterate_over_RP.Email__c} = NULL),
+{!Iterate_over_RP.First_Name__c}+ &apos; &apos;+ {!Iterate_over_RP.Last_Name__c} + &apos;&lt;Br/&gt;&apos;,&apos;&apos;)
+))
+)</expression>
+    </formulas>
+    <interviewLabel>Associated Email Addresses {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Associated Email Addresses</label>
+    <loops>
+        <name>Iterate_over_RP</name>
+        <label>Iterate over RP</label>
+        <locationX>432</locationX>
+        <locationY>321</locationY>
+        <collectionReference>Get_Responsible_Parties</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_for_Company_Person_RP</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Case_Information</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_over_Case_Employee</name>
+        <label>Loop over Case Employee</label>
+        <locationX>425</locationX>
+        <locationY>452</locationY>
+        <collectionReference>Get_Case_Employees</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Case_Employee_EmailIdAssignment</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Email_Address_Screen</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Case_Employees</name>
+        <label>Get Case Employees</label>
+        <locationX>286</locationX>
+        <locationY>437</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_over_Case_Employee</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Parent_Case.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SPEN_CaseEmployee__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Case_Information</name>
+        <label>Get Case Information</label>
+        <locationX>291</locationX>
+        <locationY>307</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Case_Employees</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Parent_Case.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SPEN_CaseInformation__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Parent_Case</name>
+        <label>Get Parent Case</label>
+        <locationX>429</locationX>
+        <locationY>175</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Responsible_Parties</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Query_Case.ParentId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Query_Case</name>
+        <label>Get Query Case</label>
+        <locationX>1181</locationX>
+        <locationY>76</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_for_Parent_Case</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Responsible_Parties</name>
+        <label>Get Responsible Parties</label>
+        <locationX>293</locationX>
+        <locationY>178</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Iterate_over_RP</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Parent_Case.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SPEN_ResponsibleParty__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Email_Address_Screen</name>
+        <label>Email Address Screen</label>
+        <locationX>290</locationX>
+        <locationY>680</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Set_All_Variables_to_NULL</targetReference>
+        </connector>
+        <fields>
+            <name>Header_RespParty</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Responsible Party&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>RespPartyDT</name>
+            <fieldText>&lt;p&gt;{!ResponsiblePartyDisplayString}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Header_Originator</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Originator&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>CaseInfoDT</name>
+            <fieldText>&lt;p&gt;{!OriginatorFormula}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Header_NoticeRequestor</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Notice Requestor&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Query_Case.SPEN_Type__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>StreetWorks</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>NoticeRequestorDT</name>
+            <fieldText>&lt;p&gt;{!NoticeRequestorFormula}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Query_Case.SPEN_Type__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>StreetWorks</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Header_CaseEmployee</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 14px;&quot;&gt;&lt;u&gt;Case Employee&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>CaseEmployeeDT</name>
+            <fieldText>&lt;p&gt;{!CaseEmployeeDisplayString}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Refresh</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Parent_Case_Missing_screen</name>
+        <label>Parent Case Missing screen</label>
+        <locationX>1154</locationX>
+        <locationY>355</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>ParentCaseMissingMessage</name>
+            <fieldText>&lt;p&gt;{!$Label.SPEN_AssociatedEmailIdErrorMsg}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Refresh</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>490</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Get_Query_Case</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>CaseEmployeeDisplayString</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ResponsiblePartyDisplayString</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,14 @@
+<template>
+<lightning-card  title="SharePoint Folder Documents" class="slds-box">
+    <lightning-button variant="brand" label="Fetch" title="Fetch" icon-name="standard:attach" slot="actions" onclick={ShowDocs} class="slds-m-left_x-small"></lightning-button>
+    <a href={url} class="slds-button slds-button_brand slds-m-left_x-small" slot="actions" target="_blank">Open Folder</a>
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}
+                hide-checkbox-column="true">
+        </lightning-datatable>
+    </div>
+</lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_FixedApplicationFee</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_ApplicationStage__c</columns>
+    <columns>SPEN_ApplicationType__c</columns>
+    <columns>SPEN_ContractArea__c</columns>
+    <columns>SPEN_LocationType__c</columns>
+    <columns>SPEN_MAXDemandCapacityMWs__c</columns>
+    <columns>SPEN_MAXSizeMWsCECExport__c</columns>
+    <columns>SPEN_MINDemandCapacityMWs__c</columns>
+    <columns>SPEN_MINSizeMWsCECExport__c</columns>
+    <columns>SPEN_PrimaryTransmissionTechnology__c</columns>
+    <columns>SPEN_SecondaryTransmissionTechnologyType__c</columns>
+    <columns>SPEN_TertiaryTransmissionTechnologyType__c</columns>
+    <columns>SPEN_FixedCumulativeApplicationFee__c</columns>
+    <columns>SPEN_isActive__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SPEN_TransmissionApplicationFeeRules__c.SPEN_FixedApplicationFee</value>
+    </filters>
+    <label>Fixed Application Fee</label>
+</ListView>

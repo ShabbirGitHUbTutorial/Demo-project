@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Signature of 3rd Party --></label>
+    <name>SPEN_Signatureof3rdParty__c</name>
+</CustomFieldTranslation>

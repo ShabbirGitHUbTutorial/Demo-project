@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>schedule</fullName>
+    <active>true</active>
+    <label>schedule</label>
+    <picklistValues>
+        <picklist>SPEN_MessageHeard__c</picklist>
+        <values>
+            <fullName>Listened</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Listened</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Status__c</picklist>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

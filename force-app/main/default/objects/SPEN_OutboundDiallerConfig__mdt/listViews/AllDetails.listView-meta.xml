@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllDetails</fullName>
+    <columns>MasterLabel</columns>
+    <columns>Drop__c</columns>
+    <columns>IsActive__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Retry__c</columns>
+    <columns>RuleName__c</columns>
+    <columns>Type__c</columns>
+    <columns>Campaign__c</columns>
+    <columns>ApplicableCalledInINCType__c</columns>
+    <columns>ApplicableINCStatus__c</columns>
+    <columns>ApplicableINCType__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>AllDetails</label>
+</ListView>

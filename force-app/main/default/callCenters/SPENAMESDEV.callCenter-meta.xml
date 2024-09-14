@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <adapterUrl>https://spenergynetworkscrm--amsdev.sandbox.my.salesforce.com/hvcc/amz/index.html</adapterUrl>
+    <contactCenterChannels>
+        <channel>Voice_448081899362</channel>
+        <contactCenter xsi:nil="true"/>
+    </contactCenterChannels>
+    <customSettings>{&quot;reqTimeout&quot;:&quot;5000&quot;,&quot;reqStandbyUrl&quot;:&quot;https://domain:port/softphone&quot;,&quot;reqCallCenterType&quot;:&quot;SCVOOTBTelephony&quot;,&quot;reqSoftphoneHeight&quot;:&quot;300&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;500&quot;,&quot;reqSalesforceCompatibilityMode&quot;:&quot;Lightning&quot;}</customSettings>
+    <displayName>SPENAMSDEV</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>Internal Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>https://spenergynetworkscrm--amsdev.sandbox.my.salesforce.com/hvcc/amz/index.html</value>
+        </items>
+        <items>
+            <label>Use CTI API</label>
+            <name>reqUseApi</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Softphone Height</label>
+            <name>reqSoftphoneHeight</name>
+            <value>300</value>
+        </items>
+        <items>
+            <label>Softphone Width</label>
+            <name>reqSoftphoneWidth</name>
+            <value>500</value>
+        </items>
+        <items>
+            <label>Salesforce Compatibility Mode</label>
+            <name>reqSalesforceCompatibilityMode</name>
+            <value>Lightning</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Telephony Provider</label>
+            <name>reqTelephonyProvider</name>
+            <value>AMAZON_CONNECT</value>
+        </items>
+        <items>
+            <label>Instance Name</label>
+            <name>reqInstanceName</name>
+            <value>SPENAMESDEV00D2z0000008mVe</value>
+        </items>
+        <items>
+            <label>Relay State</label>
+            <name>reqRelayState</name>
+            <value>https://eu-west-2.console.aws.amazon.com/connect/federate/fbd0d877-a7e3-4598-83b9-ad5a29e946c6</value>
+        </items>
+        <items>
+            <label>Identity URL</label>
+            <name>reqIdentityUrl</name>
+            <value>https://spenergynetworkscrm--amsdev.sandbox.my.salesforce.com/idp/login?app=0spdv000000006T</value>
+        </items>
+        <items>
+            <label>Telephony Integration Certificate</label>
+            <name>reqTelephonyIntegrationCertificate</name>
+            <value>-----BEGIN CERTIFICATE-----
+MIICyTCCAjKgAwIBAgIJMDqhkexEHxvgMA0GCSqGSIb3DQEBBQUAMIGCMQswCQYD
+VQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDVNhbiBGcmFuY2lzY28xFzAV
+BgNVBAoTDnNhbGVzZm9yY2UuY29tMRswGQYDVQQDExJ3d3cuc2FsZXNmb3JjZS5j
+b20xGDAWBgNVBAsTDzAwRFM5MDAwMDAweVd1ZjAeFw0yNDAzMTQwOTIyMDRaFw0y
+NTAzMTQwOTIyMDRaMIGCMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNV
+BAcTDVNhbiBGcmFuY2lzY28xFzAVBgNVBAoTDnNhbGVzZm9yY2UuY29tMRswGQYD
+VQQDExJ3d3cuc2FsZXNmb3JjZS5jb20xGDAWBgNVBAsTDzAwRFM5MDAwMDAweVd1
+ZjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAw5dEW9c3Mw9SIefLdMH6tkgX
+e365pcLQ5ymrEdpPhmpRP4aC+yqRZs1ocapf3lovOyvte346rq1ZXnsZ1CWw7lsH
+SueSIHHmm4VNeFWr/uSna8ZtmpS2DO5WxpvhFjK2/9PLiVAp1LcZ6EJd3GOi/VoO
+pP15aWrkUZPZMKT+gb8CAwEAAaNFMEMwDAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMC
+AvQwJgYDVR0RBB8wHYYbaHR0cDovL2V4YW1wbGUub3JnL3dlYmlkI21lMA0GCSqG
+SIb3DQEBBQUAA4GBAB1FRMpGqWceRyeuqIkSIn4QfYMr4m3np/mD6bweGww3tmJe
+Jacbexy3o9xfjQIQhGm6GTMOJErCoVilXKhMSDtv9KF7L4oMMM0ubTVkKaASxbaE
+gn2TDpDuSG+KPpCsyeNoZmZAI89EDi2AFtCqZ6iwgcu7su2n4CU+LS7+7UQl
+-----END CERTIFICATE-----</value>
+        </items>
+        <items>
+            <label>Region</label>
+            <name>reqRegion</name>
+            <value>eu-west-2</value>
+        </items>
+        <items>
+            <label>Connected App Id</label>
+            <name>reqConnectedAppId</name>
+            <value>06Pdv00000004lB</value>
+        </items>
+        <items>
+            <label>Instance Id</label>
+            <name>reqInstanceId</name>
+            <value>fbd0d877-a7e3-4598-83b9-ad5a29e946c6</value>
+        </items>
+        <items>
+            <label>Instance Service Role</label>
+            <name>reqInstanceServiceRole</name>
+            <value>arn:aws:iam::377172492273:role/aws-service-role/connect.amazonaws.com/AWSServiceRoleForAmazonConnect_yYBmvfiLNC11p9BkXuBT</value>
+        </items>
+        <items>
+            <label>Settings Relay State</label>
+            <name>reqSettingsRelayState</name>
+            <value>https://eu-west-2.console.aws.amazon.com/connect/federate/fbd0d877-a7e3-4598-83b9-ad5a29e946c6</value>
+        </items>
+        <items>
+            <label>Stack Id</label>
+            <name>reqStackId</name>
+            <value>arn:aws:cloudformation:eu-west-2:377172492273:stack/SPENAMESDEV-SCVContactCenterStack/fb0ffa30-9ae5-11ed-905f-06198819e810</value>
+        </items>
+        <items>
+            <label>Instance Recording Role</label>
+            <name>reqInstanceRecordingRole</name>
+            <value>arn:aws:iam::377172492273:role/SPENAMESDEV-ConnectCallRole</value>
+        </items>
+        <items>
+            <label>Telephony Integration Keypair Expiration Date</label>
+            <name>reqTelephonyIntegrationKeyPairExpDate</name>
+            <value>14/03/2025 09:22:02</value>
+        </items>
+        <items>
+            <label>Rest API Connected App Id</label>
+            <name>reqRestApiConnectedAppId</name>
+            <value>06Pdv000000059N</value>
+        </items>
+        <items>
+            <label>Salesforce ApiVersion</label>
+            <name>reqAppApiVersion</name>
+            <value>56.0</value>
+        </items>
+        <items>
+            <label>Trusted Role ARN</label>
+            <name>reqTrustedRoleARN</name>
+            <value>arn:aws:iam::377172492273:role/ProvisioningRole</value>
+        </items>
+        <items>
+            <label>Universal Call Recording Access</label>
+            <name>reqUniversalCallRecordingAccess</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Quick Connect for Omni Flow Transfer Id</label>
+            <name>reqTransferTargetForOmniFlowTransfer</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Long Distance Prefix</label>
+            <name>reqLongDistPrefix</name>
+            <value>+44</value>
+        </items>
+        <items>
+            <label>Quick Connect for Omni Flow Transfer</label>
+            <name>reqTransferTargetForOmniFlowTransferDisplayName</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Voice Extension Flexipage</label>
+            <name>reqVoiceExtensionFlexipage</name>
+            <value xsi:nil="true"/>
+        </items>
+        <items>
+            <label>Presence Sync Status Access</label>
+            <name>reqPresenceStatusSyncAccess</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>Cloud Formation template version</label>
+            <name>reqVersion</name>
+            <value>13.2</value>
+        </items>
+        <label>Service Voice Settings</label>
+        <name>reqHvcc</name>
+    </sections>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/54bf223d-8405-4f3b-a50d-b6e1ba12a746</externalStatus>
+        <servicePresenceStatus>SPEN_Busy</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/f03f1c69-fda3-401f-ac22-9bc69bfd2b5f</externalStatus>
+        <servicePresenceStatus>SPEN_Break</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/82f785be-3abd-45bf-b370-8aec023f3be9</externalStatus>
+        <servicePresenceStatus>SPEN_CCT</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/ba3e39cd-ac6a-4740-931b-e1dd2e9bd54f</externalStatus>
+        <servicePresenceStatus>SPEN_Outbound_Call</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/d2f05952-d3d4-4ebe-94b5-33fe29bfd63f</externalStatus>
+        <servicePresenceStatus>SPEN_Coaching</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/529cd090-831f-43cf-9d7e-c490561bd16f</externalStatus>
+        <servicePresenceStatus>SPEN_Meeting</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/edc89ab6-6adf-4521-940d-73f5c166ffb2</externalStatus>
+        <servicePresenceStatus>SPEN_IC_Consult</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/432f8b59-5282-4188-9b3c-3c701c35b556</externalStatus>
+        <servicePresenceStatus>SPEN_Lunch</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/b40a98ed-88ca-438f-b3d2-25e7a000c666</externalStatus>
+        <servicePresenceStatus>SPEN_Planned_Offline</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <vendorCallCenterStatusMaps>
+        <externalStatus>arn:aws:connect:eu-west-2:377172492273:instance/fbd0d877-a7e3-4598-83b9-ad5a29e946c6/agent-state/ddfbb9c8-dca1-4e9d-8a35-2f9790a005c7</externalStatus>
+        <servicePresenceStatus>SPEN_TM_Consult</servicePresenceStatus>
+    </vendorCallCenterStatusMaps>
+    <version>13.2</version>
+</CallCenter>

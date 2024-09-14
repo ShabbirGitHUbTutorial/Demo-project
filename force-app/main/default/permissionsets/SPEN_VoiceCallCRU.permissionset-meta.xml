@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants tab access to the Voice Call standard object. (CRUD object access is not (yet) supported by Salesforce for this object).</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SPEN_CustomerUpdate__c.SPEN_Campaign__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SPEN_CustomerUpdate__c.SPEN_Impacted_Premise__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SPEN_CustomerUpdate__c.SPEN_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SPEN_CustomerUpdate__c.SPEN_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SPEN: Voice Call - CRU</label>
+    <license>Salesforce</license>
+    <tabSettings>
+        <tab>standard-VoiceCall</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

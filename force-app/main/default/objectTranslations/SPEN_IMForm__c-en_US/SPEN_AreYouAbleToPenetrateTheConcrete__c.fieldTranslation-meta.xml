@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- By using a sharp instrument --></help>
+    <label><!-- Are you able to penetrate the concrete? --></label>
+    <name>SPEN_AreYouAbleToPenetrateTheConcrete__c</name>
+</CustomFieldTranslation>

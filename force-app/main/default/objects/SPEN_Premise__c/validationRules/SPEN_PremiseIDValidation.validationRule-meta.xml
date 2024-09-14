@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PremiseIDValidation</fullName>
+    <active>true</active>
+    <description>Premise ID, Postcode, Name can&apos;t change by Agent,Team Lead, manager.</description>
+    <errorConditionFormula>(ISCHANGED(SPEN_PremiseID__c) ||  ISCHANGED( SPEN_PostCode__c ) ||  ISCHANGED( Name ))  &amp;&amp;  ($Profile.Name  &lt;&gt; &apos;System Administrator&apos;  &amp;&amp;  $Profile.Name  &lt;&gt; &apos;SPEN Integration&apos;)</errorConditionFormula>
+    <errorMessage>You don&apos;t have Sufficient Permission to Change.</errorMessage>
+</ValidationRule>

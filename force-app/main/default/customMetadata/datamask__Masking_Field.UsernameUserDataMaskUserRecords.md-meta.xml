@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Username</label>
+    <protected>false</protected>
+    <values>
+        <field>datamask__API_Name__c</field>
+        <value xsi:type="xsd:string">Username</value>
+    </values>
+    <values>
+        <field>datamask__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Custom_Pattern__c</field>
+        <value xsi:type="xsd:string">%5c-%3d@test.com</value>
+    </values>
+    <values>
+        <field>datamask__Custom__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__Date_Max__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Date_Min__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Field_Length__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>datamask__Field_Type__c</field>
+        <value xsi:type="xsd:string">Email</value>
+    </values>
+    <values>
+        <field>datamask__Masking_Category__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Masking_Object__c</field>
+        <value xsi:type="xsd:string">UserDataMaskUserRecords</value>
+    </values>
+    <values>
+        <field>datamask__Masking_Type__c</field>
+        <value xsi:type="xsd:string">Patternize</value>
+    </values>
+    <values>
+        <field>datamask__Pattern_Data__c</field>
+        <value xsi:type="xsd:string">guzjr-773@test.com,ozedc-240@test.com,bnzxq-826@test.com,pqbsn-585@test.com,keerj-634@test.com,gjjlu-613@test.com,rmvaz-227@test.com,doxur-231@test.com,kyvcz-370@test.com,rqkvq-345@test.com,fkrpy-138@test.com,zotcg-993@test.com,afact-654@test.com,ouzpf-366@test.com,rzcze-498@test.com,tzlxj-688@test.com,hoqjo-664@test.com,ehlgk-982@test.com,fghli-142@test.com,aqfdr-797@test.com,qamrs-447@test.com,xjdmk-282@test.com,jdfpj-928@test.com,vcjqa-737@test.com,fyfzb-592@test.com,zgonx-951@test.com,zqebd-508@test.com,jvbjb-334@test.com,tkjus-105@test.com,oquma-354@test.com,zyyof-143@test.com,krmty-873@test.com,qsiez-964@test.com,tktqj-467@test.com,ecpqe-656@test.com,krzla-914@test.com,rhyaq-510@test.com,fyebh-994@test.com,jsnbz-437@test.com,nqncq-476@test.com,kibxr-756@test.com,adcqh-386@test.com,uzvte-773@test.com,xhxjq-427@test.com,qhgbc-754@test.com,idafs-181@test.com,fqqlt-110@test.com,qognv-555@test.com,cohqu-179@test.com,yphdf-122@test.com</value>
+    </values>
+    <values>
+        <field>datamask__Range_Max__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Range_Min__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Required__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Unique__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This date should correspond with issue of voluntary Land Rights date. --></help>
+    <label><!-- Design Approved for L&amp;P Consenting --></label>
+    <name>SPEN_DesignApprovedLnPConsenting__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Number of minutes, default is 1. This value is used when the &quot;Run Dataset Writeback on Delay Timer&quot; checkbox is checked. --></help>
+    <label><!-- Delay Timer (Minutes) --></label>
+    <name>DSWB__Delay_Timer_Minutes__c</name>
+</CustomFieldTranslation>

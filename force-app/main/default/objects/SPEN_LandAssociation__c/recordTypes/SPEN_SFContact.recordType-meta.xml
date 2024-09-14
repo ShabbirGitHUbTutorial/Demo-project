@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SFContact</fullName>
+    <active>true</active>
+    <description>Salesforce Contacts</description>
+    <label>Contact</label>
+    <picklistValues>
+        <picklist>SPEN_AssociationType__c</picklist>
+        <values>
+            <fullName>3rd Party Landowner%2FOccupier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Occupier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner-Occupier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

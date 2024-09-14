@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Surface Type --></label>
+    <name>SPEN_SurfaceType__c</name>
+    <picklistValues>
+        <masterLabel>Carriageway</masterLabel>
+        <translation><!-- Carriageway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cycleway</masterLabel>
+        <translation><!-- Cycleway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Footpath</masterLabel>
+        <translation><!-- Footpath --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Footway</masterLabel>
+        <translation><!-- Footway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unmade</masterLabel>
+        <translation><!-- Unmade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verge</masterLabel>
+        <translation><!-- Verge --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

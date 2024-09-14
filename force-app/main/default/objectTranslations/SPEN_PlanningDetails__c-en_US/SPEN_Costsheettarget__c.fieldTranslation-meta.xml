@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Clock Start Date plus 28 calendar days --></help>
+    <label><!-- Cost sheet target --></label>
+    <name>SPEN_Costsheettarget__c</name>
+</CustomFieldTranslation>

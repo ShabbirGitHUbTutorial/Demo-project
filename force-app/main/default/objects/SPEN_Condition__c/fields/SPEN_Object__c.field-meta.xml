@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Object__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(SPEN_LandInterest__r.SPEN_Job__r.SPEN_LicenseArea__c),
+&apos;SPD&apos;, CASE( SPEN_LandInterest__r.SPEN_ConsentType__c , &apos;Wayleave&apos;, &apos;8301/R01/G0000001&apos;, &apos;Servitude&apos;, &apos;8301/R01/G0000001&apos;,&apos;Easement&apos;,&apos;8301/R01/G0000001&apos;,&apos;Lease&apos;,SPEN_LandInterest__r.SPEN_RentalObjectNumber__c,&apos;Closed Couple Lease&apos;,SPEN_LandInterest__r.SPEN_RentalObjectNumber__c,&apos;NWL&apos;,&apos;8301/R01/G0000001&apos;,&apos;&apos;),
+&apos;SPT&apos;, CASE( SPEN_LandInterest__r.SPEN_ConsentType__c , &apos;Wayleave&apos;, &apos;8302/R01/G0000001&apos;, &apos;Servitude&apos;, &apos;8302/R01/G0000001&apos;,&apos;Lease&apos;,SPEN_LandInterest__r.SPEN_RentalObjectNumber__c,&apos;Closed Couple Lease&apos;,SPEN_LandInterest__r.SPEN_RentalObjectNumber__c,&apos;NWL&apos;,&apos;8302/R01/G0000001&apos;,&apos;&apos;),
+&apos;SPM&apos;, CASE( SPEN_LandInterest__r.SPEN_ConsentType__c , &apos;Wayleave&apos;, &apos;8303/R01/G0000001&apos;,&apos;Easement&apos;,&apos;8303/R01/G0000001&apos;,&apos;Lease&apos;,SPEN_LandInterest__r.SPEN_RentalObjectNumber__c,&apos;Closed Couple Lease&apos;,SPEN_LandInterest__r.SPEN_RentalObjectNumber__c,&apos;NWL&apos;,&apos;8303/R01/G0000001&apos;,&apos;&apos;),
+&apos;SPM 132&apos;, CASE( SPEN_LandInterest__r.SPEN_ConsentType__c , &apos;Wayleave&apos;, &apos;8303/R01/G0000001&apos;,&apos;Easement&apos;,&apos;8303/R01/G0000001&apos;,&apos;Lease&apos;,SPEN_LandInterest__r.SPEN_RentalObjectNumber__c,&apos;Closed Couple Lease&apos;,SPEN_LandInterest__r.SPEN_RentalObjectNumber__c,&apos;NWL&apos;,&apos;8303/R01/G0000001&apos;,&apos;&apos;),
+&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Object</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

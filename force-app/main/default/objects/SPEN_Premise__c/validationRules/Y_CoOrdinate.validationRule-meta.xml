@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Y_CoOrdinate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(   SPEN_YCoOrdinate__c ),ISNUMBER(  SPEN_YCoOrdinate__c ))</errorConditionFormula>
+    <errorMessage>Only numeric values are allowed for Y Co-Ordinate</errorMessage>
+</ValidationRule>

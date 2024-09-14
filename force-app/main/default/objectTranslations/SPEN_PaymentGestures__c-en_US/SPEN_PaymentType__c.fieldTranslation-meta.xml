@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment/Gesture Type --></label>
+    <name>SPEN_PaymentType__c</name>
+    <picklistValues>
+        <masterLabel>Cards</masterLabel>
+        <translation><!-- Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Service Payment</masterLabel>
+        <translation><!-- Customer Service Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flowers</masterLabel>
+        <translation><!-- Flowers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Food Payment</masterLabel>
+        <translation><!-- Hot Food Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel Payment</masterLabel>
+        <translation><!-- Hotel Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation><!-- Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Land Damage</masterLabel>
+        <translation><!-- Insurance Land Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Just Eat Payment</masterLabel>
+        <translation><!-- Just Eat Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Simply Thank You Vouchers/Gifts</masterLabel>
+        <translation><!-- Simply Thank You Vouchers/Gifts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voucher</masterLabel>
+        <translation><!-- Voucher --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+.buttonAllignment {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.infoStyle {
+  margin-left: 40px;
+  font-size: medium;
+}

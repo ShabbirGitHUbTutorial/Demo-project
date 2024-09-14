@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEL_Object__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <caseSensitive>false</caseSensitive>
+    <description>Object API that is allowed by the Async DML framework.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Object (API Name)</label>
+    <length>50</length>
+    <required>true</required>
+    <securityClassification>Internal</securityClassification>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

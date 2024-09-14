@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TrafficManagement__c</fullName>
+    <description>CRMD-7409</description>
+    <label>Traffic Management</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contraflow</fullName>
+                <default>false</default>
+                <label>Contraflow</label>
+            </value>
+            <value>
+                <fullName>Convoy Working</fullName>
+                <default>false</default>
+                <label>Convoy Working</label>
+            </value>
+            <value>
+                <fullName>Give &amp; Take Traffic Control</fullName>
+                <default>false</default>
+                <label>Give &amp; Take Traffic Control</label>
+            </value>
+            <value>
+                <fullName>Hard Shoulder Closure</fullName>
+                <default>false</default>
+                <label>Hard Shoulder Closure</label>
+            </value>
+            <value>
+                <fullName>Lane Closure</fullName>
+                <default>false</default>
+                <label>Lane Closure</label>
+            </value>
+            <value>
+                <fullName>No Obstruction on C/W or F/W</fullName>
+                <default>false</default>
+                <label>No Obstruction on C/W or F/W</label>
+            </value>
+            <value>
+                <fullName>Portable Traffic Lights (TTLS)</fullName>
+                <default>false</default>
+                <label>Portable Traffic Lights (TTLS)</label>
+            </value>
+            <value>
+                <fullName>Priority System Traffic Control</fullName>
+                <default>false</default>
+                <label>Priority System Traffic Control</label>
+            </value>
+            <value>
+                <fullName>Road Closure</fullName>
+                <default>false</default>
+                <label>Road Closure</label>
+            </value>
+            <value>
+                <fullName>Road Narrowing (Two Way Working)</fullName>
+                <default>false</default>
+                <label>Road Narrowing (Two Way Working)</label>
+            </value>
+            <value>
+                <fullName>Slip Closure</fullName>
+                <default>false</default>
+                <label>Slip Closure</label>
+            </value>
+            <value>
+                <fullName>Stop/Go Boards Traffic Control</fullName>
+                <default>false</default>
+                <label>Stop/Go Boards Traffic Control</label>
+            </value>
+            <value>
+                <fullName>Traffic Management Not Yet Known</fullName>
+                <default>false</default>
+                <label>Traffic Management Not Yet Known</label>
+            </value>
+            <value>
+                <fullName>Give &amp; Take</fullName>
+                <default>false</default>
+                <label>Give &amp; Take</label>
+            </value>
+            <value>
+                <fullName>Multi Way Signals</fullName>
+                <default>false</default>
+                <label>Multi Way Signals</label>
+            </value>
+            <value>
+                <fullName>No C/W Incursion</fullName>
+                <default>false</default>
+                <label>No C/W Incursion</label>
+            </value>
+            <value>
+                <fullName>Priority Working</fullName>
+                <default>false</default>
+                <label>Priority Working</label>
+            </value>
+            <value>
+                <fullName>Some C/W Incursion</fullName>
+                <default>false</default>
+                <label>Some C/W Incursion</label>
+            </value>
+            <value>
+                <fullName>Stop/Go Boards</fullName>
+                <default>false</default>
+                <label>Stop/Go Boards</label>
+            </value>
+            <value>
+                <fullName>Two Way Signals</fullName>
+                <default>false</default>
+                <label>Two Way Signals</label>
+            </value>
+            <value>
+                <fullName>Works Entirely on the Footway</fullName>
+                <default>false</default>
+                <label>Works Entirely on the Footway</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

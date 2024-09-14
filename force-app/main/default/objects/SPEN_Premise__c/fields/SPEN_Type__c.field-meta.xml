@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Type__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Select type from dropdown list.</description>
+    <label>Type</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Domestic</fullName>
+                <default>false</default>
+                <label>Domestic</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Unmetered Supply</fullName>
+                <default>false</default>
+                <label>Unmetered Supply</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Generators- HV/LV</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Generators- HV/LV</label>
+            </value>
+            <value>
+                <fullName>Generators- Renewable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Generators- Renewable</label>
+            </value>
+            <value>
+                <fullName>Generators- Traditional</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Generators- Traditional</label>
+            </value>
+            <value>
+                <fullName>Large Business</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Large Business</label>
+            </value>
+            <value>
+                <fullName>Small Business</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Small Business</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

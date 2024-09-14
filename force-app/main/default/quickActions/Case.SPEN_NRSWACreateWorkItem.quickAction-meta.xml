@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Origin</field>
+        <literalValue>Email</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SPEN_Email_WI_Queue_Routing_Outcome__c</field>
+        <formula>IF((Parent.SPEN_SPDSPMIndicator__c&lt;&gt; &apos;SPD&apos;|| Parent.SPEN_SPDSPMIndicator__c&lt;&gt; &apos;SPM&apos;), &apos;8 Hr SLA North&apos; ,&apos;&apos; )</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SPEN_QueryType__c</field>
+        <literalValue>Internal</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SPEN_Type__c</field>
+        <literalValue>NRSWA</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+    </fieldOverrides>
+    <label>Create WorkItem</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Status</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Subject</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Description</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Case</targetObject>
+    <targetParentField>Parent</targetParentField>
+    <targetRecordType>Case.SPEN_Query</targetRecordType>
+    <type>Create</type>
+</QuickAction>

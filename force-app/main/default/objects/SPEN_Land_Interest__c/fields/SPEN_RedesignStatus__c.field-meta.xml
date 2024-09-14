@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RedesignStatus__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND(NOT(ISNULL(SPEN_RedesignRequestedDate__c)), ISNULL( SPEN_RedesignCompletedDate__c)) ,&quot;Redesign Requested&quot;, IF(AND(NOT(ISNULL(SPEN_RedesignRequestedDate__c)), NOT(ISNULL( SPEN_RedesignCompletedDate__c))), &quot;Redesign Completed&quot;, &quot;&quot;))</formula>
+    <label>Redesign Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

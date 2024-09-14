@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CompletionDateRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL( SPEN_CompletedStatus__c , &quot;Yes&quot;), 
+  ISBLANK( SPEN_CompletionDate__c )
+)</errorConditionFormula>
+    <errorDisplayField>SPEN_CompletionDate__c</errorDisplayField>
+    <errorMessage>Please fill the completion date.</errorMessage>
+</ValidationRule>

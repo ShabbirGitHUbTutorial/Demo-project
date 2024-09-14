@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPD Design-West</name>
+    <queueMembers>
+        <users>
+            <user>angie.sneddon@spenergynetworks.co.uk.spencrm</user>
+            <user>amarshall@spenergynetworks.co.uk.spencrm</user>
+            <user>audrey.mitchell@spenergynetworks.co.uk.spencrm</user>
+            <user>c.currie@spenergynetworks.co.uk.spencrm</user>
+            <user>davedcc.jones@spenergynetworks.co.uk.spencrm</user>
+            <user>david.jones2@spenergynetworks.co.uk.spencrm</user>
+            <user>dbambridge@spenergynetworks.co.uk.spencrm</user>
+            <user>j.banks@spenergynetworks.co.uk.spencrm</user>
+            <user>joanne.mcdermott@spenergynetworks.co.uk.spencrm</user>
+            <user>kqueen@spenergynetworks.co.uk.spencrm</user>
+            <user>kjohnstone@spenergynetworks.co.uk.spencrm</user>
+            <user>laura.lammie@spenergynetworks.co.uk.spencrm</user>
+            <user>lfinlay@spenergynetworks.co.uk.spencrm</user>
+            <user>mstewart@spenergynetworks.co.uk.spencrm</user>
+            <user>mbartlett@spenergynetworks.co.uk.spencrm</user>
+            <user>michele.bradley@spenergynetworks.co.uk.spencrm</user>
+            <user>mharkin@spenergynetworks.co.uk.spencrm</user>
+            <user>paula.grimes@spenergynetworks.co.uk.spencrm</user>
+            <user>peter.mullen@spenergynetworks.co.uk.spencrm</user>
+            <user>smcphillie@spenergynetworks.co.uk</user>
+            <user>s.harvey@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

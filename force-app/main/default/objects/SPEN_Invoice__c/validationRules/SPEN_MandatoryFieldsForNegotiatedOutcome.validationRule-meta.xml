@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MandatoryFieldsForNegotiatedOutcome</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(SPEN_InvoicedOutcome__c, &apos;Negotiated Settlement&apos;),
+OR(ISBLANK(TEXT(SPEN_NegotiatedSettlementReason__c)),
+ISBLANK(SPEN_AgreedSettlementAmount__c)))</errorConditionFormula>
+    <errorMessage>It is mandatory to fill Negotiated Settlement Reason and Agreed Settlement Amount for Negotiated Settlement outcome.</errorMessage>
+</ValidationRule>

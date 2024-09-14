@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Engineering Design</name>
+    <queueMembers>
+        <users>
+            <user>aabdul@spenergynetworks.co.uk.spencrm</user>
+            <user>bojana.djukic@spenergynetworks.co.uk.spencrm</user>
+            <user>cyoung@spenergynetworks.co.uk.spencrm</user>
+            <user>eanya@spenergynetworks.co.uk.spencrm</user>
+            <user>jmillar@spenergynetworks.co.uk.spencrm</user>
+            <user>jmclean@spenergynetworks.co.uk.spencrm</user>
+            <user>tst@spenergynetworks.co.uk.spencrm</user>
+            <user>tflynn@spenergynetworks.co.uk.spencrm</user>
+            <user>thagan@spenergynetworks.co.uk.spencrm</user>
+            <user>william.falconer2@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

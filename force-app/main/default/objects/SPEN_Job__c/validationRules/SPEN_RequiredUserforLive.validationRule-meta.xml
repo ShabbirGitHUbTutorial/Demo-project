@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RequiredUserforLive</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(SPEN_Create_Job_in_Live__c = TRUE ,  ISNEW() ,ISBLANK( SPENEnvironmentalPlanner__c )  , ISBLANK( SPEN_LandAssistant__c ) , ISBLANK( SPEN_LandOfficer__c ) , ISBLANK( SPEN_LandManager__c ) 
+
+
+)</errorConditionFormula>
+    <errorMessage>Please add at least one user in L&amp;P user section</errorMessage>
+</ValidationRule>

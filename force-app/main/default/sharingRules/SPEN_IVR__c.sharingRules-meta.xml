@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>SPEN_ShareIVRRecords</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share IVR Records</label>
+        <sharedTo>
+            <group>SPEN_ManageOperatingHoursandHoliday</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>SPEN_FlowName__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

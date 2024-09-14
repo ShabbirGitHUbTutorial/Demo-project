@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment/Gestures</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment/Gestures</value>
+    </caseValues>
+    <layouts>
+        <layout>CNT Payment/Gestures Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment\Gesture Details --></label>
+            <section>Payment\Gesture Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Complaints Payment/Gestures Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment\Gesture Details --></label>
+            <section>Payment\Gesture Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Satisfaction Payment/Gestures Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment\Gesture Details --></label>
+            <section>Payment\Gesture Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>GE Payment/Gesture Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment\Gesture Details --></label>
+            <section>Payment\Gesture Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>GS Payment/Gesture Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment\Gesture Details --></label>
+            <section>Payment\Gesture Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Neutral Fault Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment\Gesture Details --></label>
+            <section>Payment\Gesture Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Payment/Gestures Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment\Gesture Details --></label>
+            <section>Payment\Gesture Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CNT --></label>
+        <name>CNT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Neutral Fault --></label>
+        <name>Neutral_Fault</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Complaints --></label>
+        <name>SPEN_Complaints</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer Satisfaction --></label>
+        <name>SPEN_CustomerSatisfaction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GS --></label>
+        <name>SPEN_GS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General Enquiries Payment/Gesture --></label>
+        <name>SPEN_GeneralEnquiries</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- LCT Payment Gesture --></label>
+        <name>SPEN_LCTPaymentGesture</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You need to Fill Payment/Gesture Type --></errorMessage>
+        <name>SPEN_PaymentTypeCheck</name>
+    </validationRules>
+</CustomObjectTranslation>

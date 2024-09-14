@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Appliance Service status --></label>
+    <name>SPEN_ApplianceServiceStatus__c</name>
+    <picklistValues>
+        <masterLabel>Asset at workshop</masterLabel>
+        <translation><!-- Asset at workshop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Inspection</masterLabel>
+        <translation><!-- Awaiting Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting for customer to respond</masterLabel>
+        <translation><!-- Awaiting for customer to respond --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer organising</masterLabel>
+        <translation><!-- Customer organising --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Neutral Fault Related</masterLabel>
+        <translation><!-- Non Neutral Fault Related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parts On Order</masterLabel>
+        <translation><!-- Parts On Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repaired Closed</masterLabel>
+        <translation><!-- Repaired Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacement Delivered</masterLabel>
+        <translation><!-- Replacement Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacement Ordered</masterLabel>
+        <translation><!-- Replacement Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Investigation</masterLabel>
+        <translation><!-- Under Investigation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

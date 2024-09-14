@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>SPEN_Type__c</name>
+    <picklistValues>
+        <masterLabel>Connections Delivery</masterLabel>
+        <translation><!-- Connections Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections Quotation</masterLabel>
+        <translation><!-- Connections Quotation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faults</masterLabel>
+        <translation><!-- Faults --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Enquiries</masterLabel>
+        <translation><!-- General Enquiries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned</masterLabel>
+        <translation><!-- Planned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Premise</masterLabel>
+        <translation><!-- Single Premise --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

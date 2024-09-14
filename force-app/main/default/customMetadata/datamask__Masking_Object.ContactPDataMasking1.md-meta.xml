@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Contact</label>
+    <protected>false</protected>
+    <values>
+        <field>datamask__API_Name__c</field>
+        <value xsi:type="xsd:string">Contact</value>
+    </values>
+    <values>
+        <field>datamask__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Batch_Data__c</field>
+        <value xsi:type="xsd:string">{&quot;9000000&quot;:{&quot;r&quot;:9000000,&quot;l&quot;:&quot;0018d00000UMrAXAA1&quot;,&quot;f&quot;:&quot;0018d00000ULwCrAAL&quot;},&quot;8500000&quot;:{&quot;r&quot;:8500000,&quot;l&quot;:&quot;0018d00000ULwCrAAL&quot;,&quot;f&quot;:&quot;0018d00000UL1cTAAT&quot;},&quot;8000000&quot;:{&quot;r&quot;:8000000,&quot;l&quot;:&quot;0018d00000UL1cTAAT&quot;,&quot;f&quot;:&quot;0018d00000UK6g1AAD&quot;},&quot;7500000&quot;:{&quot;r&quot;:7500000,&quot;l&quot;:&quot;0018d00000UK6g1AAD&quot;,&quot;f&quot;:&quot;0018d00000UJCEKAA5&quot;},&quot;7000000&quot;:{&quot;r&quot;:7000000,&quot;l&quot;:&quot;0018d00000UJCEKAA5&quot;,&quot;f&quot;:&quot;0018d00000UIGdkAAH&quot;},&quot;6500000&quot;:{&quot;r&quot;:6500000,&quot;l&quot;:&quot;0018d00000UIGdkAAH&quot;,&quot;f&quot;:&quot;0018d00000UHMSdAAP&quot;},&quot;6000000&quot;:{&quot;r&quot;:6000000,&quot;l&quot;:&quot;0018d00000UHMSdAAP&quot;,&quot;f&quot;:&quot;0018d00000UGQgpAAH&quot;},&quot;5500000&quot;:{&quot;r&quot;:5500000,&quot;l&quot;:&quot;0018d00000UGQgpAAH&quot;,&quot;f&quot;:&quot;0018d00000UFW1BAAX&quot;},&quot;5000000&quot;:{&quot;r&quot;:5000000,&quot;l&quot;:&quot;0018d00000UFW1BAAX&quot;,&quot;f&quot;:&quot;0018d00000UEap7AAD&quot;},&quot;4500000&quot;:{&quot;r&quot;:4500000,&quot;l&quot;:&quot;0018d00000UEap7AAD&quot;,&quot;f&quot;:&quot;0018d00000UDfomAAD&quot;},&quot;4000000&quot;:{&quot;r&quot;:4000000,&quot;l&quot;:&quot;0018d00000UDfomAAD&quot;,&quot;f&quot;:&quot;0018d00000UClH8AAL&quot;},&quot;3500000&quot;:{&quot;r&quot;:3500000,&quot;l&quot;:&quot;0018d00000UClH8AAL&quot;,&quot;f&quot;:&quot;0018d00000UBsFdAAL&quot;},&quot;3000000&quot;:{&quot;r&quot;:3000000,&quot;l&quot;:&quot;0018d00000UBsFdAAL&quot;,&quot;f&quot;:&quot;0018d00000UAypMAAT&quot;},&quot;2500000&quot;:{&quot;r&quot;:2500000,&quot;l&quot;:&quot;0018d00000UAypMAAT&quot;,&quot;f&quot;:&quot;0018d00000UA6QBAA1&quot;},&quot;2000000&quot;:{&quot;r&quot;:2000000,&quot;l&quot;:&quot;0018d00000UA6QBAA1&quot;,&quot;f&quot;:&quot;0018d00000U9CSbAAN&quot;},&quot;1500000&quot;:{&quot;r&quot;:1500000,&quot;l&quot;:&quot;0018d00000U9CSbAAN&quot;,&quot;f&quot;:&quot;0018d00000U8IyhAAF&quot;},&quot;1000000&quot;:{&quot;r&quot;:1000000,&quot;l&quot;:&quot;0018d00000U8IyhAAF&quot;,&quot;f&quot;:&quot;0018d00000S1LU0AAN&quot;},&quot;500000&quot;:{&quot;r&quot;:500000,&quot;l&quot;:&quot;0018d00000S1LU0AAN&quot;,&quot;f&quot;:&quot;0018d00000S0R2cAAF&quot;}}</value>
+    </values>
+    <values>
+        <field>datamask__Custom__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__DataMask_Configuration__c</field>
+        <value xsi:type="xsd:string">DataMasking1</value>
+    </values>
+    <values>
+        <field>datamask__Filter_Enabled__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__Last_Prepped_Date__c</field>
+        <value xsi:type="xsd:date">2023-04-26</value>
+    </values>
+    <values>
+        <field>datamask__Master_Object__c</field>
+        <value xsi:type="xsd:string">AccountId</value>
+    </values>
+    <values>
+        <field>datamask__Number_of_Fields__c</field>
+        <value xsi:type="xsd:double">12.0</value>
+    </values>
+    <values>
+        <field>datamask__Raw_Filter_Data__c</field>
+        <value xsi:type="xsd:string">{&quot;applyconditions&quot;:&quot;custom&quot;,&quot;conditionList&quot;:[]}</value>
+    </values>
+    <values>
+        <field>datamask__Record_Count__c</field>
+        <value xsi:type="xsd:double">9026475.0</value>
+    </values>
+    <values>
+        <field>datamask__Run_In_Poly__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Run_In_Serial__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__Where_Criteria_LT__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Where_Criteria__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

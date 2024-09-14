@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>aborthwick@spenergynetworks.co.uk</contactEmail>
+    <description>Connected App used for website integration</description>
+    <label>Connected App for Portal</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>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</certificate>
+        <consumerKey>3MVG9395hRoMgFO2shyYvKpShhpgHr0A5pfQVAsNCHAgYyd3d9AgmZ_eSrY5s_rN9Yc3hPt3yrDWqwBk3alNS</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>SPEN Integration</profileName>
+</ConnectedApp>

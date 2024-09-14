@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SPD - Ayrshire &amp; Clyde South</fullName>
+        <default>false</default>
+        <label>SPD - Ayrshire &amp; Clyde South</label>
+    </customValue>
+    <customValue>
+        <fullName>SPD - Central &amp; Fife</fullName>
+        <default>false</default>
+        <label>SPD - Central &amp; Fife</label>
+    </customValue>
+    <customValue>
+        <fullName>SPD - Dumfries</fullName>
+        <default>false</default>
+        <label>SPD - Dumfries</label>
+    </customValue>
+    <customValue>
+        <fullName>SPD - Edinburgh &amp; Borders</fullName>
+        <default>false</default>
+        <label>SPD - Edinburgh &amp; Borders</label>
+    </customValue>
+    <customValue>
+        <fullName>SPD - Glasgow</fullName>
+        <default>false</default>
+        <label>SPD - Glasgow</label>
+    </customValue>
+    <customValue>
+        <fullName>SPD - Lanarkshire</fullName>
+        <default>false</default>
+        <label>SPD - Lanarkshire</label>
+    </customValue>
+    <customValue>
+        <fullName>SPM - Mid Cheshire</fullName>
+        <default>false</default>
+        <label>SPM - Mid Cheshire</label>
+    </customValue>
+    <customValue>
+        <fullName>SPM - Dee Valley/Mid Wales</fullName>
+        <default>false</default>
+        <label>SPM - Dee Valley/Mid Wales</label>
+    </customValue>
+    <customValue>
+        <fullName>SPM - Merseyside</fullName>
+        <default>false</default>
+        <label>SPM - Merseyside</label>
+    </customValue>
+    <customValue>
+        <fullName>SPM - North Wales</fullName>
+        <default>false</default>
+        <label>SPM - North Wales</label>
+    </customValue>
+    <customValue>
+        <fullName>SPM - Wirral</fullName>
+        <default>false</default>
+        <label>SPM - Wirral</label>
+    </customValue>
+    <customValue>
+        <fullName>SPT - Ayrshire &amp; Clyde South</fullName>
+        <default>false</default>
+        <label>SPT - Ayrshire &amp; Clyde South</label>
+    </customValue>
+    <customValue>
+        <fullName>SPT - Central &amp; Fife</fullName>
+        <default>false</default>
+        <label>SPT - Central &amp; Fife</label>
+    </customValue>
+    <customValue>
+        <fullName>SPT - Dumfries</fullName>
+        <default>false</default>
+        <label>SPT - Dumfries</label>
+    </customValue>
+    <customValue>
+        <fullName>SPT - Edinburgh &amp; Borders</fullName>
+        <default>false</default>
+        <label>SPT - Edinburgh &amp; Borders</label>
+    </customValue>
+    <customValue>
+        <fullName>SPT - Glasgow</fullName>
+        <default>false</default>
+        <label>SPT - Glasgow</label>
+    </customValue>
+    <customValue>
+        <fullName>SPT - Lanarkshire</fullName>
+        <default>false</default>
+        <label>SPT - Lanarkshire</label>
+    </customValue>
+    <customValue>
+        <fullName>SPM - Deep Valley/Mid Wales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SPM - Deep Valley/Mid Wales</label>
+    </customValue>
+    <customValue>
+        <fullName>SPT – Lanarkshire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SPT – Lanarkshire</label>
+    </customValue>
+    <customValue>
+        <fullName>SPM - Cheshire</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SPM - Cheshire</label>
+    </customValue>
+    <description>Field used to store the district.</description>
+    <masterLabel>District</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

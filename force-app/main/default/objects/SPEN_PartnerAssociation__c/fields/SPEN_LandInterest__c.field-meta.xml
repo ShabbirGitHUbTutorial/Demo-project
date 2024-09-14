@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_LandInterest__c</fullName>
+    <label>Land Right</label>
+    <referenceTo>SPEN_Land_Interest__c</referenceTo>
+    <relationshipLabel>Partner Associations</relationshipLabel>
+    <relationshipName>Partner_Associations</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

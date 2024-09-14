@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of unmetered connection? --></label>
+    <name>SPEN_TypeOfUnmeteredConnection__c</name>
+    <picklistValues>
+        <masterLabel>Advertising hoarding/bus shelters</masterLabel>
+        <translation><!-- Advertising hoarding/bus shelters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV</masterLabel>
+        <translation><!-- CCTV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feeder/link pillar</masterLabel>
+        <translation><!-- Feeder/link pillar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal substation lighting</masterLabel>
+        <translation><!-- Internal substation lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street lamp</masterLabel>
+        <translation><!-- Street lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street lighting</masterLabel>
+        <translation><!-- Street lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone/broadband cabinet</masterLabel>
+        <translation><!-- Telephone/broadband cabinet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic lights/signs</masterLabel>
+        <translation><!-- Traffic lights/signs --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

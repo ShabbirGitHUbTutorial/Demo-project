@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ItemProfile__c</fullName>
+    <description>CRMD-5996 Connection Process</description>
+    <label>Item Profile</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UIT00001</fullName>
+                <default>false</default>
+                <label>Site layout plan</label>
+            </value>
+            <value>
+                <fullName>UIT00002</fullName>
+                <default>false</default>
+                <label>Billing address</label>
+            </value>
+            <value>
+                <fullName>UIT00003</fullName>
+                <default>false</default>
+                <label>Relocation drawing</label>
+            </value>
+            <value>
+                <fullName>UIT00004</fullName>
+                <default>false</default>
+                <label>Internal layout floor plans (flats only)</label>
+            </value>
+            <value>
+                <fullName>UIT00005</fullName>
+                <default>false</default>
+                <label>Load details</label>
+            </value>
+            <value>
+                <fullName>UIT00006</fullName>
+                <default>false</default>
+                <label>Unmetered information</label>
+            </value>
+            <value>
+                <fullName>UIT00007</fullName>
+                <default>false</default>
+                <label>Location plan</label>
+            </value>
+            <value>
+                <fullName>UIT00008</fullName>
+                <default>false</default>
+                <label>Meter Point Administration Number (MPAN)</label>
+            </value>
+            <value>
+                <fullName>UIT00009</fullName>
+                <default>false</default>
+                <label>Site address</label>
+            </value>
+            <value>
+                <fullName>UIT00010</fullName>
+                <default>false</default>
+                <label>Telephone number</label>
+            </value>
+            <value>
+                <fullName>UIT00011</fullName>
+                <default>false</default>
+                <label>Photograph(s)</label>
+            </value>
+            <value>
+                <fullName>UIT00012</fullName>
+                <default>false</default>
+                <label>Embedded generation information</label>
+            </value>
+            <value>
+                <fullName>UIT000012</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Embedded generation information1</label>
+            </value>
+            <value>
+                <fullName>UIT000011</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Photograph(s)1</label>
+            </value>
+            <value>
+                <fullName>UIT000010</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telephone number1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

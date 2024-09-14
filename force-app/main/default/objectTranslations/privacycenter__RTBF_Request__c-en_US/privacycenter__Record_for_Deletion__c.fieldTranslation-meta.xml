@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This value is the Id for the Parent Object from the selected RTBF Policy. --></help>
+    <label><!-- Record for Deletion --></label>
+    <name>privacycenter__Record_for_Deletion__c</name>
+</CustomFieldTranslation>

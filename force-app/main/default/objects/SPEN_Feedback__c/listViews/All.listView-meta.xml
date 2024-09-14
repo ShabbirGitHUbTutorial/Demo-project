@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_CaseReference__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>SPEN_DueDate__c</columns>
+    <columns>SPEN_RAGStatus__c</columns>
+    <columns>SPEN_Rating__c</columns>
+    <columns>SPEN_DesignerName__c</columns>
+    <columns>SPEN_StarRating__c</columns>
+    <columns>SPEN_Status__c</columns>
+    <columns>SPEN_Type__c</columns>
+    <columns>SPEN_AgreedActions__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

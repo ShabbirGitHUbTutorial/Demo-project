@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Outcome Category --></label>
+    <name>SPEN_ResolutionCategory__c</name>
+    <picklistValues>
+        <masterLabel>Already gone to BMCS survey</masterLabel>
+        <translation><!-- Already gone to BMCS survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleared- defect cleared and Asset Condition Category as reported</masterLabel>
+        <translation><!-- Cleared- defect cleared and Asset Condition Category as reported --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint raised</masterLabel>
+        <translation><!-- Complaint raised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint raised prior to R&amp;R feedback, notes added</masterLabel>
+        <translation><!-- Complaint raised prior to R&amp;R feedback, notes added --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact not made - SMS required</masterLabel>
+        <translation><!-- Contact not made - SMS required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact not made - no voicemail left</masterLabel>
+        <translation><!-- Contact not made - no voicemail left --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact not made - voicemail left</masterLabel>
+        <translation><!-- Contact not made - voicemail left --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer does not want to discuss experience/feedback</masterLabel>
+        <translation><!-- Customer does not want to discuss experience/feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer made mistake with score</masterLabel>
+        <translation><!-- Customer made mistake with score --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer satisfied with experience</masterLabel>
+        <translation><!-- Customer satisfied with experience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer still dissatisfied with experience but does not wish to raise a case</masterLabel>
+        <translation><!-- Customer still dissatisfied with experience but does not wish to raise a case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer was not off supply (incorrect contact details)</masterLabel>
+        <translation><!-- Customer was not off supply (incorrect contact details) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disputed - no defect identified that prevents meter installation</masterLabel>
+        <translation><!-- Disputed - no defect identified that prevents meter installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enquiry raised prior to R&amp;R feedback, notes added</masterLabel>
+        <translation><!-- Enquiry raised prior to R&amp;R feedback, notes added --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Enquiry raised</masterLabel>
+        <translation><!-- General Enquiry raised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hold- Cat C</masterLabel>
+        <translation><!-- Hold- Cat C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Land Damage</masterLabel>
+        <translation><!-- Insurance Land Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No response from customer.</masterLabel>
+        <translation><!-- No response from customer. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passed to DCC</masterLabel>
+        <translation><!-- Passed to DCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passed to District</masterLabel>
+        <translation><!-- Passed to District --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RATOC</masterLabel>
+        <translation><!-- RATOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Apology Provided</masterLabel>
+        <translation><!-- Resolved - Apology Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Customer Service Simply Thank You</masterLabel>
+        <translation><!-- Resolved - Customer Service Simply Thank You --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Explanation Provided</masterLabel>
+        <translation><!-- Resolved - Explanation Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Work Completed</masterLabel>
+        <translation><!-- Resolved - Work Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - cancellation</masterLabel>
+        <translation><!-- Resolved - cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - defect cleared but Asset Condition Category less serious than reported</masterLabel>
+        <translation><!-- Resolved - defect cleared but Asset Condition Category less serious than reported --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - goodwill payment</masterLabel>
+        <translation><!-- Resolved - goodwill payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - information sent</masterLabel>
+        <translation><!-- Resolved - information sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - insurance payment</masterLabel>
+        <translation><!-- Resolved - insurance payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - no payment</masterLabel>
+        <translation><!-- Resolved - no payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - wayleave payments made</masterLabel>
+        <translation><!-- Resolved - wayleave payments made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - wayleaves sent</masterLabel>
+        <translation><!-- Resolved - wayleaves sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to resolve</masterLabel>
+        <translation><!-- Unable to resolve --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

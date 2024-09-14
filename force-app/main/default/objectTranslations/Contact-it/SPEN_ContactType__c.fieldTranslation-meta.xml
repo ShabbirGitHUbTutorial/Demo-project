@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contact Type --></label>
+    <name>SPEN_ContactType__c</name>
+    <picklistValues>
+        <masterLabel>CRM</masterLabel>
+        <translation><!-- CRM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connection</masterLabel>
+        <translation><!-- Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Journey</masterLabel>
+        <translation><!-- Journey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land &amp; Planning</masterLabel>
+        <translation><!-- Land &amp; Planning --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

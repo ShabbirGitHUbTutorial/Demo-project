@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Step 4</label>
+    <protected>false</protected>
+    <values>
+        <field>SEL_BatchSize__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>SEL_BatchTemplateId__c</field>
+        <value xsi:type="xsd:string">ADQM_Delta_Sync</value>
+    </values>
+    <values>
+        <field>SEL_Class__c</field>
+        <value xsi:type="xsd:string">SPEN_SyncPSRFlagonContact</value>
+    </values>
+    <values>
+        <field>SEL_IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>SEL_Sequence__c</field>
+        <value xsi:type="xsd:double">40.0</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>SPEN Case Assignment Logic</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Complaints_DCC_Managers</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Complaint</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.IsClosed</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Customer_is_off_supply__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Wayleaves_Land_Planning_Complaints</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Complaint</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.IsClosed</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>Wayleaves/Land &amp; Planning</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Wayleaves_Land_Planning_Complaints</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Complaint</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.IsClosed</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>Wayleaves/Land &amp; Planning</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp;  !(IsClosed) &amp;&amp;  SPEN_ComplaintDay1Date__c &gt;= TODAY()&amp;&amp;  !(SPEN_Route_directly_to_Day2__c) &amp;&amp; SPEN_SPD_SPM__c = &apos;SPD&apos; &amp;&amp;  (Owner:Queue.Id != null)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp;  !(IsClosed) &amp;&amp;  SPEN_ComplaintDay1Date__c &gt;= TODAY() &amp;&amp; !(SPEN_Route_directly_to_Day2__c) &amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos; &amp;&amp; (Owner:Queue.Id != null)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Ayrshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp;  SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Ayrshire&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Central_Fife</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Central &amp; Fife&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Dumfries</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Dumfries&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Edinburgh_Bo</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Edinburgh &amp; Borders&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Glasgow</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Glasgow&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Lanarkshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Lanarkshire&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Licence_Complaints_Day_2</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; !(IsClosed) &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp;  SPEN_Is_License_Complaint_Category__c &amp;&amp;  SPEN_SPD_SPM__c = &apos;SPD&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_Dee_Valley_M</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Dee Valley / Mid Wales&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_Merseyside</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Merseyside&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_Mid_Cheshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Mid Cheshire&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_North_Wales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;North Wales&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_Wirral</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; !(SPEN_Is_License_Complaint_Category__c) &amp;&amp;  SPEN_Complaints_Queue_Responsibility__c = &apos;Wirral&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Licence_Complaints_Day_2</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; !(IsClosed) &amp;&amp; SPEN_Route_directly_to_Day2__c &amp;&amp; SPEN_Is_License_Complaint_Category__c &amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_SPMLicenseComplaints</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; ISNEW() &amp;&amp; !(IsClosed) &amp;&amp; SPEN_Is_License_Complaint_Category__c= TRUE  &amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_SPDLicenseComplaints</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; ISNEW() &amp;&amp; !(IsClosed) &amp;&amp; SPEN_Is_License_Complaint_Category__c= TRUE &amp;&amp; SPEN_SPD_SPM__c = &apos;SPD&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos;  &amp;&amp;  ISNEW() &amp;&amp;  SPEN_SPD_SPM__c = &apos;SPD&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Complaint&apos; &amp;&amp; ISNEW() &amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_GS_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName  = &apos;SPEN_GSCS&apos; &amp;&amp; SPEN_SPD_SPM__c = &apos;SPD&apos; &amp;&amp; !(IsClosed) &amp;&amp;  !ISPICKVAL( SPEN_Category__c , &apos;EGS5 - Investigation of voltage complaints&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_GS5_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName  = &apos;SPEN_GSCS&apos; &amp;&amp; SPEN_SPD_SPM__c = &apos;SPD&apos; &amp;&amp; !(IsClosed) &amp;&amp;  ISPICKVAL( SPEN_Category__c , &apos;EGS5 - Investigation of voltage complaints&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_GS_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName  = &apos;SPEN_GSCS&apos; &amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos; &amp;&amp; !(IsClosed) &amp;&amp;  !ISPICKVAL( SPEN_Category__c , &apos;EGS5 - Investigation of voltage complaints&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_GS5_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName  = &apos;SPEN_GSCS&apos; &amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos; &amp;&amp; !(IsClosed) &amp;&amp;  ISPICKVAL( SPEN_Category__c , &apos;EGS5 - Investigation of voltage complaints&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Referrals</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Referral&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_SPM_DCC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status,&apos;DCC Update Customer&apos;) || ISPICKVAL(Status,&apos;DCC Critical Customer Closedown&apos;) ) &amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_SPD_DCC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status,&apos;DCC Update Customer&apos;) || ISPICKVAL(Status,&apos;DCC Critical Customer Closedown&apos;) ) &amp;&amp; SPEN_SPD_SPM__c = &apos;SPD&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Ayrshire_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Ayrshire&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Central_Fife_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Central &amp; Fife&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Dumfries_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Dumfries&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Edinburgh_Borders_IC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Edinburgh &amp; Borders&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Glasgow_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Glasgow&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Lanarkshire_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Lanarkshire&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Dee_Valley_Mid_Wales_IC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Dee Valley / Mid Wales&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Merseyside_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Merseyside&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Mid_Cheshire_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Mid Cheshire&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_North_Wales_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;North Wales&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CNT_Wirral_Incident_Control</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; (ISPICKVAL(Status , &apos;Created&apos;) ||  ISPICKVAL(Status , &apos;IC Awaiting Delivery&apos;))       &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = false &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Wirral&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_SPD_DCC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; ISPICKVAL(Status , &apos;Ready for Payment&apos;) &amp;&amp; (ISPICKVAL(SPEN_Customer_Need__c , &apos;Hotel Request&apos;) || ISPICKVAL(SPEN_Customer_Need__c, &apos;Hot Meal Delivered&apos;))&amp;&amp; SPEN_SPD_SPM__c = &apos;SPD&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_SPM_DCC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; ISPICKVAL(Status , &apos;Ready for Payment&apos;) &amp;&amp; (ISPICKVAL(SPEN_Customer_Need__c , &apos;Hotel Request&apos;) || ISPICKVAL(SPEN_Customer_Need__c, &apos;Hot Meal Delivered&apos;))&amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_SPD_CNT_Payments</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; ISPICKVAL(Status , &apos;Ready for Payment&apos;) &amp;&amp; ( ISPICKVAL(SPEN_Customer_Need__c, &apos;Hotel Reimbursement&apos;) || ISPICKVAL(SPEN_Customer_Need__c, &apos;Hot Meal Self Service&apos;) || ISPICKVAL(SPEN_Customer_Need__c, &apos;Other&apos;)) &amp;&amp; SPEN_SPD_SPM__c = &apos;SPD&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_SPM_CNT_Payments</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; ISPICKVAL(Status , &apos;Ready for Payment&apos;) &amp;&amp; (ISPICKVAL(SPEN_Customer_Need__c, &apos;Hotel Reimbursement&apos;) || ISPICKVAL(SPEN_Customer_Need__c, &apos;Hot Meal Self Service&apos;) || ISPICKVAL(SPEN_Customer_Need__c, &apos;Other&apos;)) &amp;&amp; SPEN_SPD_SPM__c = &apos;SPM&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CNT&apos; &amp;&amp; SPEN_CNT_IsNeedExcludedFromICRouting__c = true &amp;&amp; IsClosed = false</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Ayrshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Ayrshire&apos; &amp;&amp;  !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Central_Fife</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Central &amp; Fife&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Dumfries</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Dumfries&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Edinburgh_Bo</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Edinburgh &amp; Borders&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Glasgow</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Glasgow&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPD_Complaints_Day_2_Lanarkshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Lanarkshire&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_Dee_Valley_M</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Dee Valley / Mid Wales&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_Merseyside</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Merseyside&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_Mid_Cheshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Mid Cheshire&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_North_Wales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;North Wales&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPM_Complaints_Day_2_Wirral</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_NeutralFaults&apos;) &amp;&amp; SPEN_Complaints_Queue_Responsibility__c = &apos;Wirral&apos; &amp;&amp; !(IsClosed)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_Third_Party_Damage_Cases_SPM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_ThirdPartyDamage&apos; &amp;&amp; SPEN_SPDSPMIndicator__c= &apos;SPM&apos; &amp;&amp; !(IsClosed) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_ThirdPartyDamageCasesSPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_ThirdPartyDamage&apos; &amp;&amp; SPEN_SPDSPMIndicator__c= &apos;SPD&apos; &amp;&amp; !(IsClosed) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_ThirdPartyDamageCasesSPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; !(IsClosed) &amp;&amp;  Parent.SPEN_SPDSPMIndicator__c = &apos;SPD&apos; &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Third Party Damage&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_Third_Party_Damage_Cases_SPM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; !(IsClosed) &amp;&amp; Parent.SPEN_SPDSPMIndicator__c = &apos;SPM&apos; &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Third Party Damage&apos;)&amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_ThirdPartyDamageCasesSPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; ISNEW() &amp;&amp; !(IsClosed) &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Third Party Damage&apos;) &amp;&amp; Owner:Queue.Id = null</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_ThirdPartyDamageCasesSPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_ThirdPartyDamage&apos; &amp;&amp; !(IsClosed) &amp;&amp; ISNEW() &amp;&amp;  (SPEN_SPDSPMIndicator__c&lt;&gt; &apos;SPD&apos;|| SPEN_SPDSPMIndicator__c&lt;&gt; &apos;SPM&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_StreetworksSPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Streetworks&apos; &amp;&amp; SPEN_SPDSPMIndicator__c = &apos;SPD&apos; &amp;&amp; !(IsClosed) &amp;&amp; ISPICKVAL(Origin ,&apos;Web&apos;) &amp;&amp; ParentId = null &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_StreetworksSPM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Streetworks&apos; &amp;&amp; SPEN_SPDSPMIndicator__c = &apos;SPM&apos; &amp;&amp; !(IsClosed) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_StreetworksSPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Streetworks&apos; &amp;&amp; !(IsClosed) &amp;&amp; ISNEW() &amp;&amp;  (SPEN_SPDSPMIndicator__c&lt;&gt; &apos;SPD&apos;|| SPEN_SPDSPMIndicator__c&lt;&gt; &apos;SPM&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_StreetworksSPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; !(IsClosed) &amp;&amp; (Parent.SPEN_SPDSPMIndicator__c = &apos;SPD&apos; || SPEN_SPDSPMIndicator__c = &apos;SPD&apos;) &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;StreetWorks&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_StreetworksSPM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; !(IsClosed) &amp;&amp; (Parent.SPEN_SPDSPMIndicator__c = &apos;SPM&apos; || SPEN_SPDSPMIndicator__c = &apos;SPM&apos;) &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;StreetWorks&apos;)&amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_StreetworksSPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; !(IsClosed) &amp;&amp; ((Parent.SPEN_SPDSPMIndicator__c &lt;&gt; &apos;SPD&apos; || Parent.SPEN_SPDSPMIndicator__c &lt;&gt; &apos;SPM&apos;)||(SPEN_SPDSPMIndicator__c &lt;&gt; &apos;SPD&apos;|| SPEN_SPDSPMIndicator__c &lt;&gt; &apos;SPM&apos;))&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;StreetWorks&apos;) &amp;&amp; ISNEW()&amp;&amp; Owner:Queue.Id = null</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_NRSWASPM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_NRSWA&apos; &amp;&amp; SPEN_SPDSPMIndicator__c = &apos;SPM&apos; &amp;&amp; !(IsClosed)&amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_NRSWASPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_NRSWA&apos; &amp;&amp; SPEN_SPDSPMIndicator__c = &apos;SPD&apos; &amp;&amp; !(IsClosed) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_NRSWASPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_NRSWA&apos; &amp;&amp; !(IsClosed) &amp;&amp; ISNEW() &amp;&amp;  (SPEN_SPDSPMIndicator__c&lt;&gt; &apos;SPD&apos;|| SPEN_SPDSPMIndicator__c&lt;&gt; &apos;SPM&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>NRSWA_SPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; !(IsClosed) &amp;&amp; (Parent.SPEN_SPDSPMIndicator__c = &apos;SPD&apos;  ||  SPEN_SPDSPMIndicator__c = &apos;SPD&apos;) &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;NRSWA&apos;) &amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>NRSWA_SPM</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; !(IsClosed) &amp;&amp; (Parent.SPEN_SPDSPMIndicator__c = &apos;SPM&apos;  ||  SPEN_SPDSPMIndicator__c = &apos;SPM&apos;) &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;NRSWA&apos;)&amp;&amp; ISNEW()</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>NRSWA_SPD</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_Query&apos; &amp;&amp; !(IsClosed) &amp;&amp; ((Parent.SPEN_SPDSPMIndicator__c &lt;&gt; &apos;SPD&apos; || Parent.SPEN_SPDSPMIndicator__c &lt;&gt; &apos;SPM&apos;)||(SPEN_SPDSPMIndicator__c &lt;&gt; &apos;SPD&apos;|| SPEN_SPDSPMIndicator__c &lt;&gt; &apos;SPM&apos;)) &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;NRSWA&apos;) &amp;&amp; ISNEW()&amp;&amp; Owner:Queue.Id = null</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_VIPFaults</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>(RecordType.DeveloperName = &apos;SPEN_UnplannedFault&apos; || RecordType.DeveloperName = &apos;SPEN_UnplannedBypass&apos;) &amp;&amp; TEXT( Contact.SPEN_Priority__c ) =&apos;VIP&apos; &amp;&amp; TEXT(Origin) &lt;&gt; &apos;Web&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_Online_Faults</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_PowerOnCallReference__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Unplanned – Bypass</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Unplanned - Fault</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_CustomerSatisfactionQueue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CustomerSatisfaction&apos; &amp;&amp; ISNEW() &amp;&amp; !(IsClosed) &amp;&amp; ISPICKVAL(SPEN_Category__c, &apos;Faults&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GECustomerSatisfaction</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName = &apos;SPEN_CustomerSatisfaction&apos; &amp;&amp; ISNEW() &amp;&amp; !(IsClosed) &amp;&amp; ISPICKVAL(SPEN_Category__c, &apos;General Enquiries&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_PowerOnCallReference__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDCustomerResolution</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDCustomerResolution</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - LCT</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDCustomerResolution</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 6 OR 7) AND 4 AND 5</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Underground cable</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Plan request</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - PSR update</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Advice</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Planned Interruption</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDLicenceProgrammes</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 10) AND (8 AND 9)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Load checks</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Trees</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Cut out / Cable head</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Earthing enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Internal mains / Laterals</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Unlooping</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - UMS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Service refurbishment</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDGELandPlanning</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Wayleaves/Land &amp; Planning</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDGEComplaints</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 4 OR 5 OR 6 OR 7) AND (2 AND 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Wayleaves/Land &amp; Planning (Faults)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Connections</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Additional loads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Loss of Supply</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Payment Enquiry</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDGECentralFife</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>&quot;GE - Substation- Fencing, Hedges, Trees&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>CENTRAL &amp; FIFE</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDCustomerInsuranceClaims</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Customer/Insurance Claims</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDPlannedOutages</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Planned Interruption</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMCustomerResolution</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMCustomerResolution</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 4) AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - LCT</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Unlooping</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMLicenceSmart</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - DFWEB</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMGELandPlanning</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Wayleaves/Land &amp; Planning</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMGEComplaints</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Additional loads,GE - Connections,GE - Loss of Supply,GE - Payment Enquiry,GE - Wayleaves/Land &amp; Planning (Faults)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMLicenceProgrammes</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Internal mains / Laterals,GE - Street Lighting,&quot;GE - Substation -Graffiti, Litter, Weeds Pests, Vandalism, Needles, Roofs&quot;,GE - UMS</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMCustomerResolution</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 4) AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Advice,GE - Plan request,GE - PSR update,GE - SP Energy Networks Policy / Procedures,GE - Voltage Enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Planned Interruption</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMPlannedOutages</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Planned Interruption</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMGE132</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Trees</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMCustomerInsuranceClaims</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - Customer/Insurance Claims</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDGECentralFife</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7 OR 8) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances,GE - Issues with SP Energy Networks Contractors</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>Central &amp; Fife</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Staff,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines,GE - Renewable energy enquiry,GE - Safety advice,GE - Service refurbishment,GE - Shrouding</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Site excavation &amp; Reinstatement,GE - SP Energy Networks Policy / Procedures,GE - Street furniture defects (pillars etc.),GE - Street Lighting,&quot;GE - Substation- Fencing, Hedges, Trees&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>&quot;GE - Substation -Graffiti, Litter, Weeds Pests, Vandalism, Needles, Roofs&quot;,GE - Unclip/Reclip,GE - Voltage Enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>&quot;GE - Substation- Fencing, Hedges, Trees&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDGEDumfries</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7 OR 8 ) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances,GE - Issues with SP Energy Networks Contractors</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>Dumfries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Staff,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines,GE - Renewable energy enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Safety advice,GE - Service refurbishment,GE - Shrouding,GE - Site excavation &amp; Reinstatement,GE - SP Energy Networks Policy / Procedures,GE - Street furniture defects (pillars etc.)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Street Lighting,&quot;GE - Substation- Fencing, Hedges, Trees&quot;,&quot;GE - Substation -Graffiti, Litter, Weeds Pests, Vandalism, Needles, Roofs&quot;,GE - Unclip/Reclip,GE - Voltage Enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>&quot;GE - Substation- Fencing, Hedges, Trees&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDGEGlasgow</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7 OR 8) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances,GE - Issues with SP Energy Networks Contractors</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>Glasgow &amp; Clyde North</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Staff,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Renewable energy enquiry,GE - Safety advice,GE - Service refurbishment,GE - Shrouding,GE - Site excavation &amp; Reinstatement,GE - SP Energy Networks Policy / Procedures,GE - Street furniture defects (pillars etc.)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Street Lighting,&quot;GE - Substation- Fencing, Hedges, Trees&quot;,&quot;GE - Substation -Graffiti, Litter, Weeds Pests, Vandalism, Needles, Roofs&quot;,GE - Unclip/Reclip,GE - Voltage Enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>&quot;GE - Substation- Fencing, Hedges, Trees&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDGEEdinburghBorders</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7 OR 8) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances,GE - Issues with SP Energy Networks Contractors,GE - Issues with SP Energy Networks Staff</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>Edinburgh &amp; Borders</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Condition of Poles,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines,GE - Renewable energy enquiry,GE - Safety advice</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Service refurbishment,GE - Shrouding,GE - Site excavation &amp; Reinstatement,GE - SP Energy Networks Policy / Procedures,GE - Street furniture defects (pillars etc.)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Street Lighting,&quot;GE - Substation- Fencing, Hedges, Trees&quot;,&quot;GE - Substation -Graffiti, Litter, Weeds Pests, Vandalism, Needles, Roofs&quot;,GE - Unclip/Reclip,GE - Voltage Enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Substation- Fencing,Hedges,Trees</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDGEAyrshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7 OR 8) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances,GE - Issues with SP Energy Networks Contractors</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>Ayrshire &amp; Clyde South</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Staff,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines,GE - Renewable energy enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Safety advice,GE - Service refurbishment,GE - Shrouding,GE - Site excavation &amp; Reinstatement,GE - SP Energy Networks Policy / Procedures,GE - Street furniture defects (pillars etc.)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Street Lighting,&quot;GE - Substation- Fencing, Hedges, Trees&quot;,&quot;GE - Substation -Graffiti, Litter, Weeds Pests, Vandalism, Needles, Roofs&quot;,GE - Unclip/Reclip,GE - Voltage Enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Substation- Fencing,Hedges,Trees</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPGELanarkshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7 OR 8) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances,GE - Issues with SP Energy Networks Contractors</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>Lanarkshire</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Staff,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines,GE - Renewable energy enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Safety advice,GE - Service refurbishment,GE - Shrouding,GE - Site excavation &amp; Reinstatement,GE - SP Energy Networks Policy / Procedures,GE - Street furniture defects (pillars etc.)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Street Lighting,&quot;GE - Substation- Fencing, Hedges, Trees&quot;,&quot;GE - Substation -Graffiti, Litter, Weeds Pests, Vandalism, Needles, Roofs&quot;,GE - Unclip/Reclip,GE - Voltage Enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Substation- Fencing,Hedges,Trees</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMGEMerseyside</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - Cut out / Cable head,GE - Earthing enquiry,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>Merseyside</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Contractors,GE - Issues with SP Energy Networks Staff,GE - Load checks,GE - Meter boards,GE - Modernisation &amp; Investment</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Noise Levels,GE - Overhead Lines,GE - Renewable energy enquiry,GE - Safety advice,GE - Service refurbishment,GE - Shrouding</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Site excavation &amp; Reinstatement,GE - Street furniture defects (pillars etc.),&quot;GE - Substation- Fencing, Hedges, Trees&quot;,GE - Unclip/Reclip,GE - Underground cable</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMGEWirral</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7 OR 8) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - Earthing enquiry,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances,GE - Issues with SP Energy Networks Contractors</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>Wirral</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Cut out / Cable head,GE - Issues with SP Energy Networks Staff</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Load checks,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines,GE - Renewable energy enquiry</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Safety advice,GE - Service refurbishment,GE - Shrouding,GE - Site excavation &amp; Reinstatement,GE - Street furniture defects (pillars etc.)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>&quot;GE - Substation- Fencing, Hedges, Trees&quot;,GE - Unclip/Reclip,GE - Underground cable</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMGEDeeValleyMidWales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7) AND (2 AND 3 AND 4 AND 8)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - Cut out / Cable head,GE - Earthing enquiry,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>contains</operation>
+                <value>Dee Valley</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Contractors,GE - Issues with SP Energy Networks Staff,GE - Load checks,GE - Meter boards,GE - Modernisation &amp; Investment</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Noise Levels,GE - Overhead Lines,GE - Renewable energy enquiry,GE - Safety advice,GE - Service refurbishment,GE - Shrouding</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Site excavation &amp; Reinstatement,GE - Street furniture defects (pillars etc.),&quot;GE - Substation- Fencing, Hedges, Trees&quot;,GE - Unclip/Reclip,GE - Underground cable</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>contains</operation>
+                <value>Mid Wales and Oswestry</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMGENorthWales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - Cut out / Cable head,GE - Earthing enquiry,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>North Wales</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Contractors,GE - Issues with SP Energy Networks Staff,GE - Load checks,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Renewable energy enquiry,GE - Safety advice,GE - Service refurbishment,GE - Shrouding,GE - Site excavation &amp; Reinstatement,GE - Street furniture defects (pillars etc.)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>&quot;GE - Substation- Fencing, Hedges, Trees&quot;,GE - Unclip/Reclip,GE - Underground cable</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPMGEMidCheshire</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 5 OR 6 OR 7) AND (2 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Access,GE - Bird deviator,GE - Condition of Poles,GE - Cut out / Cable head,GE - Earthing enquiry,GE - EMF Electrical Magnetic Fields,GE - Environmental,GE - EV / HP Voltage Enquiry,GE - GS6 / Clearances</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_District__c</field>
+                <operation>equals</operation>
+                <value>MID CHESHIRE</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Issues with SP Energy Networks Contractors,GE - Issues with SP Energy Networks Staff,GE - Load checks,GE - Meter boards,GE - Modernisation &amp; Investment,GE - Noise Levels,GE - Overhead Lines</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>GE - Renewable energy enquiry,GE - Safety advice,GE - Service refurbishment,GE - Shrouding,GE - Site excavation &amp; Reinstatement,GE - Street furniture defects (pillars etc.)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>contains</operation>
+                <value>&quot;GE - Substation- Fencing, Hedges, Trees&quot;,GE - Unclip/Reclip,GE - Underground cable</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_GESPDLicenceSmart</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.SPEN_Category__c</field>
+                <operation>equals</operation>
+                <value>GE - DFWEB</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>General Enquiries</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_SPD_SPM__c</field>
+                <operation>equals</operation>
+                <value>SPD</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>Admin User</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>SPEN Case Online Faults</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>SPEN_VIPFaults</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>TEXT( Contact.SPEN_Priority__c ) =&apos;VIP&apos;  &amp;&amp;  TEXT(Origin)  &lt;&gt; &apos;Web&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPEN_Online_Faults</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_PowerOnCallReference__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SPEN_PowerOnCallReference__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

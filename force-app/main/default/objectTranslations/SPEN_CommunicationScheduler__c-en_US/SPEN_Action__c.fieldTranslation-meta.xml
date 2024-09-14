@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action --></label>
+    <name>SPEN_Action__c</name>
+    <picklistValues>
+        <masterLabel>Send SMS to All Customers</masterLabel>
+        <translation><!-- Send SMS to All Customers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send SMS to Called In</masterLabel>
+        <translation><!-- Send SMS to Called In --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send SMS to PSR</masterLabel>
+        <translation><!-- Send SMS to PSR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Voice Alert to All Customers</masterLabel>
+        <translation><!-- Send Voice Alert to All Customers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Voice Alert to Called In</masterLabel>
+        <translation><!-- Send Voice Alert to Called In --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Voice Alert to PSR</masterLabel>
+        <translation><!-- Send Voice Alert to PSR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

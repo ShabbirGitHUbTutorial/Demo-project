@@ -1,0 +1,18 @@
+<apex:page id="pge" lightningStylesheets="{!IF($User.UIThemeDisplayed == 'Theme4d',true,false)}" docType="html-5.0" standardController="DSWB__Dataset_Writeback__c" extensions="DSWB.DatasetWritebackUtils" action="{!autoCloneDatasetWritebackwithRelated}">	
+    <apex:pageMessage summary="{!$Label.dswb__Cloning}" severity="Info" strength="2"/>	
+    <apex:pageMessages id="pgemsg" escape="false"/>	
+    <script>	
+        if ('{!NewId}' != "") {	
+            switch ('{!$User.UIThemeDisplayed}') {	
+                default:	
+                case 'Theme3': //Classic	
+                case 'Theme4t':  //Salesforce Mobile	
+                    window.open('{!ReturnURL}', '_parent');	
+                    break;	
+                case 'Theme4d': //Lightning	
+                    sforce.one.navigateToSObject('{!NewId}');	
+                    break;	
+            }	
+        }	
+    </script>	
+</apex:page>

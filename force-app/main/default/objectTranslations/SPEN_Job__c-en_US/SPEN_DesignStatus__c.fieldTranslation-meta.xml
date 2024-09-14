@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Design Status --></label>
+    <name>SPEN_DesignStatus__c</name>
+    <picklistValues>
+        <masterLabel>Design Freeze 1</masterLabel>
+        <translation><!-- Design Freeze 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design Freeze 2</masterLabel>
+        <translation><!-- Design Freeze 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redesign</masterLabel>
+        <translation><!-- Redesign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redesign Completed</masterLabel>
+        <translation><!-- Redesign Completed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

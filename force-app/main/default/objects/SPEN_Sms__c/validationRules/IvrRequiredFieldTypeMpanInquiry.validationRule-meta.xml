@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IvrRequiredFieldTypeMpanInquiry</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;IVR&quot; &amp;&amp;
+ISPICKVAL(SPEN_Event__c, &quot;Supplier Inquiry&quot;) &amp;&amp;
+OR(ISBLANK(SPEN_SupplierName__c), ISBLANK(SPEN_MpanName__c))</errorConditionFormula>
+    <errorMessage>The Supplier Name or MPAN Name field is required if the record type is set to IVR.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PaymentGesturesCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>SPEN_PaymentAmountPaid__c</fields>
+    <fields>SPEN_GSPaymentType__c</fields>
+    <fields>SPEN_PaymentGesturesdate__c</fields>
+    <fields>RecordTypeId</fields>
+    <label>Complaints Payment/Gestures Compact Layout</label>
+</CompactLayout>

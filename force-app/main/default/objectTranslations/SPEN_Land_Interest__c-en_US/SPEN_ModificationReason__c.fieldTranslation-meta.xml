@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Modification Reason --></label>
+    <name>SPEN_ModificationReason__c</name>
+    <picklistValues>
+        <masterLabel>Change of consent type</masterLabel>
+        <translation><!-- Change of consent type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual</masterLabel>
+        <translation><!-- Manual --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

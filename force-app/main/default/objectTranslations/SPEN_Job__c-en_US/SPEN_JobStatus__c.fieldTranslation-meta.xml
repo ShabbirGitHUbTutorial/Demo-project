@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Status --></label>
+    <name>SPEN_JobStatus__c</name>
+    <picklistValues>
+        <masterLabel>Assigned</masterLabel>
+        <translation><!-- Assigned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Job Released</masterLabel>
+        <translation><!-- Full Job Released --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Released</masterLabel>
+        <translation><!-- Job Released --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Released - Awaiting Final Land Right Invoicing</masterLabel>
+        <translation><!-- Job Released - Awaiting Final Land Right Invoicing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Released -Completion Certificate Required</masterLabel>
+        <translation><!-- Job Released -Completion Certificate Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Live</masterLabel>
+        <translation><!-- Live --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QA</masterLabel>
+        <translation><!-- QA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation><!-- Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Review</masterLabel>
+        <translation><!-- Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

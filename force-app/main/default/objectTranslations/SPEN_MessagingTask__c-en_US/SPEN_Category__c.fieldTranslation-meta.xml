@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>SPEN_Category__c</name>
+    <picklistValues>
+        <masterLabel>3-Hour Comfort Call</masterLabel>
+        <translation><!-- 3-Hour Comfort Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Call Received</masterLabel>
+        <translation><!-- 3rd Call Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply with Notice</masterLabel>
+        <translation><!-- Dropped Supply with Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply without Notice</masterLabel>
+        <translation><!-- Dropped Supply without Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated Restoration Time Extended</masterLabel>
+        <translation><!-- Estimated Restoration Time Extended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Created</masterLabel>
+        <translation><!-- Incident Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Restored</masterLabel>
+        <translation><!-- Incident Restored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource Arrival On Site</masterLabel>
+        <translation><!-- Resource Arrival On Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource Dispatched</masterLabel>
+        <translation><!-- Resource Dispatched --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

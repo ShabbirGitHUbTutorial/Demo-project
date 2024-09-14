@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Purpose --></label>
+    <name>SPEN_Purpose__c</name>
+    <picklistValues>
+        <masterLabel>3-Hour Comfort Call</masterLabel>
+        <translation><!-- 3-Hour Comfort Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Call Received</masterLabel>
+        <translation><!-- 3rd Call Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blank Template</masterLabel>
+        <translation><!-- Blank Template --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled Pre Arranged</masterLabel>
+        <translation><!-- Cancelled Pre Arranged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Creation</masterLabel>
+        <translation><!-- Case Creation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comfort</masterLabel>
+        <translation><!-- Comfort --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections</masterLabel>
+        <translation><!-- Connections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply</masterLabel>
+        <translation><!-- Dropped Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply Within a Fault</masterLabel>
+        <translation><!-- Dropped Supply Within a Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply with Notice</masterLabel>
+        <translation><!-- Dropped Supply with Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply without Notice</masterLabel>
+        <translation><!-- Dropped Supply without Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ETR Unknown</masterLabel>
+        <translation><!-- ETR Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated Restoration Time Extended</masterLabel>
+        <translation><!-- Estimated Restoration Time Extended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extended Awaiting Emergency Services to provide access</masterLabel>
+        <translation><!-- Extended Awaiting Emergency Services to provide access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extended Pre-Arranged</masterLabel>
+        <translation><!-- Extended Pre-Arranged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flickering</masterLabel>
+        <translation><!-- Flickering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE Closure Survey</masterLabel>
+        <translation><!-- GE Closure Survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generators</masterLabel>
+        <translation><!-- Generators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV</masterLabel>
+        <translation><!-- HV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV Proactive Contact</masterLabel>
+        <translation><!-- HV Proactive Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV Shutdown for Safety</masterLabel>
+        <translation><!-- HV Shutdown for Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Created</masterLabel>
+        <translation><!-- Incident Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Restored</masterLabel>
+        <translation><!-- Incident Restored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LV</masterLabel>
+        <translation><!-- LV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MPAS Inquiry</masterLabel>
+        <translation><!-- MPAS Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MPAS Out-Of-Area Inquiry</masterLabel>
+        <translation><!-- MPAS Out-Of-Area Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medically Dependent by District</masterLabel>
+        <translation><!-- Medically Dependent by District --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Fuse Replacements</masterLabel>
+        <translation><!-- Multiple Fuse Replacements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Used</masterLabel>
+        <translation><!-- Not Used --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Outage</masterLabel>
+        <translation><!-- Planned Outage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource Arrival On Site</masterLabel>
+        <translation><!-- Resource Arrival On Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource Dispatched</masterLabel>
+        <translation><!-- Resource Dispatched --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restore Confirmation</masterLabel>
+        <translation><!-- Restore Confirmation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Survey Incident Restored</masterLabel>
+        <translation><!-- SP Survey Incident Restored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Some on Some off</masterLabel>
+        <translation><!-- Some on Some off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storm</masterLabel>
+        <translation><!-- Storm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplier Inquiry</masterLabel>
+        <translation><!-- Supplier Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Survey SMS Intro</masterLabel>
+        <translation><!-- Survey SMS Intro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unconfirmed reports of Fire, Vandalism, 3rd Party damage</masterLabel>
+        <translation><!-- Unconfirmed reports of Fire, Vandalism, 3rd Party damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XRT</masterLabel>
+        <translation><!-- XRT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XRT - Some On</masterLabel>
+        <translation><!-- XRT - Some On --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

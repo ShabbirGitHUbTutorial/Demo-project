@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Team --></label>
+    <name>SPEN_Team__c</name>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation><!-- Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial Manager Approval</masterLabel>
+        <translation><!-- Commercial Manager Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery</masterLabel>
+        <translation><!-- Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Manager Approval</masterLabel>
+        <translation><!-- Delivery Manager Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Development</masterLabel>
+        <translation><!-- Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Development Manager Approval</masterLabel>
+        <translation><!-- Development Manager Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Design</masterLabel>
+        <translation><!-- Engineering Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Design Manager Approval</masterLabel>
+        <translation><!-- Engineering Design Manager Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Design</masterLabel>
+        <translation><!-- System Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Design Manager Approval</masterLabel>
+        <translation><!-- System Design Manager Approval --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

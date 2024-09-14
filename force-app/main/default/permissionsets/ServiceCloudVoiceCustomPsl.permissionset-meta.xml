@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission Set to access Service Cloud Voice Connected Apps (presence status access is granted through a separate permission set)</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Service Cloud Voice Permission Set</label>
+    <license>ServiceCloudVoicePsl</license>
+</PermissionSet>

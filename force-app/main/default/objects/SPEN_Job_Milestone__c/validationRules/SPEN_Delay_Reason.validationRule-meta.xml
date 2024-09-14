@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Delay_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+	NOT(ISPICKVAL(SPEN_Milestone_Type__c , &apos;Planning Task&apos;)),
+        SPEN_Is_Late__c  = True,
+        ISPICKVAL(SPEN_Status__c, &apos;Completed&apos;),
+	ISBLANK(TEXT( SPEN_Reason_of_Delay__c ))
+)</errorConditionFormula>
+    <errorMessage>Your milestone is over it&apos;s planned end date, please provide the reason for delay from the options provided in the dropdown.</errorMessage>
+</ValidationRule>

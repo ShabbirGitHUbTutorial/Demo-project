@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Variation Reason --></label>
+    <name>SPEN_VariationReason__c</name>
+    <picklistValues>
+        <masterLabel>Excavation Costs</masterLabel>
+        <translation><!-- Excavation Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Design</masterLabel>
+        <translation><!-- Incorrect Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refund</masterLabel>
+        <translation><!-- Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Management</masterLabel>
+        <translation><!-- Traffic Management --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

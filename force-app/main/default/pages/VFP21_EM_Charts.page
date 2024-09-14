@@ -1,0 +1,242 @@
+<apex:page lightningStylesheets="true" controller="APC21_ChartController" docType="html-5.0" showHeader="false" sidebar="false">
+    <head>
+        <title>
+            Daily Event Monitoring
+        </title>  
+        
+    </head>
+    <apex:slds />
+    <style>
+        .detailList table{
+        table-layout: unset !important;
+        }
+    </style>
+    <div class="slds-scope">
+        
+        <apex:tabPanel switchType="client" selectedTab="name1" id="theTabPanel">
+            <apex:tab label="Event Monitoring" name="name1" id="tabOne">
+                
+                <apex:pageBlock id="parentDiv" >
+                    <apex:pageBlockSection title="Configuration form" collapsible="false" >
+                        <apex:pageBlockSectionItem >
+                            <!--    <c:VFC21_EM_TableChart_Actionable />	-->
+                            <apex:form >
+                                <h1>
+                                    <apex:outputLabel value="Salesforce Daily Event Monitoring"></apex:outputLabel>  
+                                </h1>
+                                <apex:dataTable value="{!evnts}" var="lim" border="1" title="Test" align="center">
+                                    <apex:column headerValue="Name" value="{!lim.name}" />
+                                    <apex:column headerValue="IsActive">
+                                        <apex:outputField value="{!lim.isActive__c}">
+                                            <apex:inlineEditSupport showOnEdit="saveButton" 
+                                                                    hideOnEdit="showButton" event="ondblclick" 
+                                                                    changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                        </apex:outputField> 
+                                    </apex:column>
+                                    <apex:column headerValue="Total" value="{!lim.Total__c}" />
+                                    <apex:column headerValue="Usage" value="{!lim.Usage__c}" />
+                                    <apex:column headerValue="Consumption(%)"  value="{!lim.Consumption__c}"/>
+                                    <apex:column headerValue="Threshold(%)" >
+                                        <apex:outputField value="{!lim.Threshhold_Limit__c}">
+                                            <apex:inlineEditSupport showOnEdit="saveButton" 
+                                                                    hideOnEdit="showButton" event="ondblclick" 
+                                                                    changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                                        </apex:outputField> 
+                                    </apex:column>
+                                    
+                                </apex:dataTable>
+                                <apex:commandButton action="{!testAction}" value="Show Events" id="showButton"/>
+                                <apex:commandButton action="{!saveEvent}" value="Save Events" id="saveButton" />
+                            </apex:form>
+                            
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            
+                            <apex:form >
+                                <apex:outputPanel >
+                                <div style='padding-left:20px'>
+                                    <h1>
+                                        <apex:outputLabel value="Salesforce Certificate Monitoring"></apex:outputLabel>  
+                                    </h1>
+                                    
+                                    <table style="border: 1px solid black;">
+                                            <tr>
+                                                <td style="border: 1px solid black;width:60%;">
+                                                    <b><apex:outputLabel value="Is There Any Certificates Expiring Nearby"></apex:outputLabel></b>
+                                                </td><td style="border: 1px solid black;">
+                                                <b><apex:commandLink target="_blank" action="/0P1" value="{!expiryStatus}"/> </b> 
+                                                </td>
+                                            </tr>
+                                    </table>
+                                        
+                                    
+                                </div>
+                                </apex:outputPanel>
+                                
+                            </apex:form>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection title="Daily Event Monitoring" collapsible="false">
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--  <c:VFC21_PieChartFileStorage />	-->
+                            <apex:chart height="200" width="300" data="{!FileStorage}" name="File Storage">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <h3>
+                                    <apex:outputLabel value="File Storage Usage {! fs.consumption } "></apex:outputLabel>
+                                </h3>
+                            </apex:chart>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--                   <c:VFC21_PieChartDataStorage />		-->
+                            <apex:chart height="200" width="300" data="{!DataStorage}" name="Data Storage">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <h3>
+                                    <apex:outputLabel value="Data Storage Usage {! ds.consumption } "></apex:outputLabel>
+                                </h3>
+                            </apex:chart>    
+                        </apex:pageBlockSectionItem>
+                        
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--   <c:VFC21_PieChartSFLicense />	-->
+                            <apex:chart height="200" width="300" data="{!SFLicenseUsage}" name="SF License">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <h3>
+                                    <apex:outputLabel value="Salesforce License Usage {! sfLicn.consumption } "></apex:outputLabel>
+                                </h3>
+                            </apex:chart>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--    <c:VFC21_PieChartAPIUsage />	-->
+                            <apex:chart height="200" width="300" data="{!APIUsage}" name="API Usage">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <H3>
+                                    <apex:outputLabel value="API Request Usage {! apiReq.consumption } "></apex:outputLabel>
+                                </H3>
+                                
+                            </apex:chart>
+                        </apex:pageBlockSectionItem>          
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--    <c:VFC21_PieChartAPIUsage />	-->
+                            <apex:chart height="200" width="300" data="{!CommLicenseUsage}" name="Community License Usage">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <H3>
+                                    <apex:outputLabel value="Community License Usage {! commLicn.consumption } "></apex:outputLabel>
+                                </H3>
+                                
+                            </apex:chart>
+                        </apex:pageBlockSectionItem>
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--    <c:VFC21_PieChartAPIUsage />	-->
+                            <apex:chart height="200" width="300" data="{!AsyncUsage}" name="Async Apex Job Usage">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <H3>
+                                    <apex:outputLabel value="Async Apex Job Usage {! async.consumption } "></apex:outputLabel>
+                                </H3>
+                                
+                            </apex:chart>	
+                        </apex:pageBlockSectionItem> 
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--    <c:VFC21_PieChartAPIUsage />	-->
+                            <apex:chart height="200" width="300" data="{!WorkflowUsage}" name="Hourly TimeBased Workflow Usage">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <H3>
+                                    <apex:outputLabel value="Hourly TimeBased Workflow Usage {! workflow.consumption } "></apex:outputLabel>
+                                </H3>
+                                
+                            </apex:chart>	
+                        </apex:pageBlockSectionItem> 
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--    <c:VFC21_PieChartAPIUsage />	-->
+                            <apex:chart height="200" width="300" data="{!FlexJobUsage}" name="Apex Flex Job">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <H3>
+                                    <apex:outputLabel value="API Flex Job Usage {! flexjob.consumption } "></apex:outputLabel>
+                                </H3>
+                                
+                            </apex:chart>
+                        </apex:pageBlockSectionItem> 
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--    <c:VFC21_PieChartAPIUsage />	-->
+                            <apex:chart height="200" width="300" data="{!SingleEmailUsage}" name="Single Email Usage">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <H3>
+                                    <apex:outputLabel value="Single Email Usage {! singleEmail.consumption } "></apex:outputLabel>
+                                </H3>
+                                
+                            </apex:chart>
+                        </apex:pageBlockSectionItem> 
+                        
+                        <apex:pageBlockSectionItem >
+                            <!--    <c:VFC21_PieChartAPIUsage />    -->
+                            <apex:chart height="200" width="300" data="{!WorkflowEmailUsage}" name="Daily Workflow Email Usage">
+                                <apex:pieSeries dataField="data" labelField="name"/>
+                                <apex:legend position="right"/>
+                                <H3>
+                                    <apex:outputLabel value="Workflow Email Usage {! wfemail.consumption } "></apex:outputLabel>
+                                </H3>
+                                
+                            </apex:chart>
+                        </apex:pageBlockSectionItem>
+                        
+                    </apex:pageBlockSection>    
+                </apex:pageBlock>
+                
+            </apex:tab>
+            <apex:tab label="Certificate Monitoring Set Up" name="name2" id="tabTwo">
+                <c:VFP21_EM_Certificate />
+            </apex:tab>
+            <apex:tab label="Email Recipient Set Up" name="name3" id="tabThree">
+                <apex:pageBlock >
+                    <apex:pageBlockSection title="Configuration form" collapsible="false" columns="1">
+                        
+                            <!--                <c:ShowEmailIds />		-->
+                            <apex:messages id="msgId"  />
+                            <apex:form >
+                                <div>
+                                    <h1>
+                                        <apex:outputLabel value="Recipients of Daily-Monitoring/Alert email"></apex:outputLabel>  
+                                    </h1>
+                                </div>
+                                <apex:outputPanel id="ajaxrequest">
+                                    <apex:inputText value="{!newEmail}" label="test"/>
+                                    
+                                    <apex:commandButton action="{!addNewEmail}" value="Add Email" reRender="ajaxrequest,msgId" />
+                                    <br />
+                                    <apex:dataTable value="{!emails}" var="em" id="dt1" style="min-width:40%;max-width:40%">
+                                        <apex:column headerValue="Email Id" value="{!em.EmailId__c}" />
+                                        <apex:column headerValue="Delete">
+                                            <apex:commandLink action="{!removeEmail}" value="remove" reRender="ajaxrequest">
+                                                <apex:param name="emId" value="{!em.Id}" assignTo="{!emailId}"/>
+                                            </apex:commandLink>
+                                        </apex:column>
+                                    </apex:dataTable>         
+                                    
+                                </apex:outputPanel>
+                            </apex:form>
+                        
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+            </apex:tab>
+        </apex:tabPanel>
+    </div>
+    
+    
+</apex:page>

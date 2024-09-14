@@ -1,0 +1,47 @@
+<template>
+    <template if:true={sapNullError}>
+        <div class="slds-align_absolute-center slds-p-around_x-small">
+            <p style="color:red;font-size: 20px">
+                <strong>
+                    {infoLabel.SAPNullErrorLabel}
+                </strong>
+            </p>
+        </div>
+    </template>
+    <template if:true={sapSuccess}>
+        <div class="slds-align_absolute-center slds-p-around_x-small">
+            <p style="color:#5d9732;font-size: 20px">
+                <strong>
+                    {infoLabel.SAPSuccessLabel}
+                </strong>
+            </p>
+        </div>
+    </template>
+    <template if:true={sapReadyError}>
+        <div class="slds-align_absolute-center slds-p-around_x-small">
+            <p style="color:red;font-size: 20px">
+                <strong>
+                    {infoLabel.SAPReadyLabel}
+                </strong>
+            </p>
+        </div>
+    </template>
+    <template if:true={caseModifiedSyncError}>
+        <div class="slds-align_absolute-center slds-p-around_x-small">
+            <p style="color:red;font-size: 20px">
+                <strong>
+                    {infoLabel.SAPChangeLabel}
+                </strong>
+            </p>
+        </div>
+    </template>
+    <template if:true={sapCalloutDeatilsError}>
+        <div class="slds-align_absolute-center slds-p-around_x-small">
+            <p style="color:red;font-size: 20px">
+                <strong>
+                    {infoLabel.SAPCallOUTDETAILSERRORLabel}
+                </strong>
+            </p>
+        </div>
+    </template>
+</template>

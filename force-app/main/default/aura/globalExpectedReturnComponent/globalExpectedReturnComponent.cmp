@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" >
+    <aura:html tag="style">
+        .slds-truncate {
+            white-space: inherit;
+        }
+    </aura:html>
+    <c:sPEN_GlobalAuraFlowRunner FlowName="SPEN_Compliance_Stores_Expected_Return_Update"/>
+</aura:component>

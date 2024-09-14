@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Project_Type__c</fullName>
+    <label>Project Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S37 EIA</fullName>
+                <default>false</default>
+                <label>S37 EIA</label>
+            </value>
+            <value>
+                <fullName>S37 Non-EIA</fullName>
+                <default>false</default>
+                <label>S37 Non-EIA</label>
+            </value>
+            <value>
+                <fullName>DCO</fullName>
+                <default>false</default>
+                <label>DCO</label>
+            </value>
+            <value>
+                <fullName>S37 132 &lt;2KM</fullName>
+                <default>false</default>
+                <label>S37 132 &lt;2KM</label>
+            </value>
+            <value>
+                <fullName>S37 &lt;132</fullName>
+                <default>false</default>
+                <label>S37 &lt;132</label>
+            </value>
+            <value>
+                <fullName>IC 132</fullName>
+                <default>false</default>
+                <label>IC 132</label>
+            </value>
+            <value>
+                <fullName>IC &lt;132</fullName>
+                <default>false</default>
+                <label>IC &lt;132</label>
+            </value>
+            <value>
+                <fullName>SPD Substation</fullName>
+                <default>false</default>
+                <label>SPD Substation</label>
+            </value>
+            <value>
+                <fullName>SPM 132 Substation</fullName>
+                <default>false</default>
+                <label>SPM 132 Substation</label>
+            </value>
+            <value>
+                <fullName>SPM Substation</fullName>
+                <default>false</default>
+                <label>SPM Substation</label>
+            </value>
+            <value>
+                <fullName>SPT Substation</fullName>
+                <default>false</default>
+                <label>SPT Substation</label>
+            </value>
+            <value>
+                <fullName>SPT Cable</fullName>
+                <default>false</default>
+                <label>SPT Cable</label>
+            </value>
+            <value>
+                <fullName>SPM Cable</fullName>
+                <default>false</default>
+                <label>SPM Cable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

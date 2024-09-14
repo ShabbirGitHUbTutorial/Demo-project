@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Repaired By --></label>
+    <name>SPEN_RepairedBy__c</name>
+    <picklistValues>
+        <masterLabel>Council or LA Repair</masterLabel>
+        <translation><!-- Council or LA Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Arranging Repair</masterLabel>
+        <translation><!-- Customer Arranging Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Partner Repair</masterLabel>
+        <translation><!-- Service Partner Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialist Repair</masterLabel>
+        <translation><!-- Specialist Repair --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

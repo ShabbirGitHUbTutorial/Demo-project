@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Application Status --></label>
+    <name>SPEN_ApplicationStatus__c</name>
+    <picklistValues>
+        <masterLabel>Auto-Approved</masterLabel>
+        <translation><!-- Auto-Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Assessment</masterLabel>
+        <translation><!-- Awaiting Assessment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DNO Approved</masterLabel>
+        <translation><!-- DNO Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DNO Approved with Limit</masterLabel>
+        <translation><!-- DNO Approved with Limit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalated to DNO</masterLabel>
+        <translation><!-- Escalated to DNO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed</masterLabel>
+        <translation><!-- Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed - Too Large</masterLabel>
+        <translation><!-- Failed - Too Large --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Information Required</masterLabel>
+        <translation><!-- Further Information Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Image Scan Failed</masterLabel>
+        <translation><!-- Image Scan Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scanning Cut-Out Image</masterLabel>
+        <translation><!-- Scanning Cut-Out Image --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under Assessment</masterLabel>
+        <translation><!-- Under Assessment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

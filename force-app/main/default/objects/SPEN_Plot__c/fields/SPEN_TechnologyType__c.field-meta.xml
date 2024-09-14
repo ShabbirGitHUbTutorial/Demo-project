@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TechnologyType__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is for Connections process</description>
+    <label>Technology Type</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Engine (combustion / reciprocating)</fullName>
+                <default>false</default>
+                <label>Engine (combustion / reciprocating)</label>
+            </value>
+            <value>
+                <fullName>Steam turbine (thermal power plant)</fullName>
+                <default>false</default>
+                <label>Steam turbine (thermal power plant)</label>
+            </value>
+            <value>
+                <fullName>Gas turbine (OCGT)</fullName>
+                <default>false</default>
+                <label>Gas turbine (OCGT)</label>
+            </value>
+            <value>
+                <fullName>Steam - gas turbine (CCGT)</fullName>
+                <default>false</default>
+                <label>Steam - gas turbine (CCGT)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Data not available</fullName>
+                <default>false</default>
+                <label>Data not available</label>
+            </value>
+            <value>
+                <fullName>Geothermal power plant</fullName>
+                <default>false</default>
+                <label>Geothermal power plant</label>
+            </value>
+            <value>
+                <fullName>Fuel cell</fullName>
+                <default>false</default>
+                <label>Fuel cell</label>
+            </value>
+            <value>
+                <fullName>Photovoltaic</fullName>
+                <default>false</default>
+                <label>Photovoltaic</label>
+            </value>
+            <value>
+                <fullName>Storage - Chemical</fullName>
+                <default>false</default>
+                <label>Storage - Chemical</label>
+            </value>
+            <value>
+                <fullName>Storage - Electrical</fullName>
+                <default>false</default>
+                <label>Storage - Electrical</label>
+            </value>
+            <value>
+                <fullName>Storage - Mechanical - Compressed Air</fullName>
+                <default>false</default>
+                <label>Storage - Mechanical - Compressed Air</label>
+            </value>
+            <value>
+                <fullName>Storage - Mechanical - Liquid Air</fullName>
+                <default>false</default>
+                <label>Storage - Mechanical - Liquid Air</label>
+            </value>
+            <value>
+                <fullName>Storage - Mechanical - Pumped Hydro</fullName>
+                <default>false</default>
+                <label>Storage - Mechanical - Pumped Hydro</label>
+            </value>
+            <value>
+                <fullName>Storage - Mechanical - Flywheel</fullName>
+                <default>false</default>
+                <label>Storage - Mechanical - Flywheel</label>
+            </value>
+            <value>
+                <fullName>Storage - Thermal</fullName>
+                <default>false</default>
+                <label>Storage - Thermal</label>
+            </value>
+            <value>
+                <fullName>Storage - Electrochemical (Batteries)</fullName>
+                <default>false</default>
+                <label>Storage - Electrochemical (Batteries)</label>
+            </value>
+            <value>
+                <fullName>Storage - Other</fullName>
+                <default>false</default>
+                <label>Storage - Other</label>
+            </value>
+            <value>
+                <fullName>Hydro - Run of river</fullName>
+                <default>false</default>
+                <label>Hydro - Run of river</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

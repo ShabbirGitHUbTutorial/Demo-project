@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Days_Run_Over__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((SPEN_Actual_lead_time_Days__c - SPEN_Planned_lead_time_Days__c)&lt;0 , 0, (SPEN_Actual_lead_time_Days__c - SPEN_Planned_lead_time_Days__c) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Run Over</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

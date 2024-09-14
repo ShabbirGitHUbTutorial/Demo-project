@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Major_Connections_Master_List</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Case__c</columns>
+    <columns>SPEN_CaseDistrict__c</columns>
+    <columns>SPEN_CaseOwner__c</columns>
+    <columns>SPEN_AcceptanceDate__c</columns>
+    <columns>SPEN_GSCallCompletionDate__c</columns>
+    <columns>SPEN_GSCallStatus__c</columns>
+    <columns>SPEN_SiteClear__c</columns>
+    <columns>SPEN_SchedulingRequested__c</columns>
+    <columns>SPEN_SchedulingConfirmed__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_DeliveryType__c</field>
+        <operation>equals</operation>
+        <value>Major</value>
+    </filters>
+    <label>Major Connections - Master List</label>
+</ListView>

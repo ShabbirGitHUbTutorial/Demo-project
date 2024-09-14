@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Standard Icon name (mainly used for standard objects) that have a corresponding icon at https://lightningdesignsystem.com/icons/#standard --></help>
+    <label><!-- Icon Name --></label>
+    <name>timeline__Icon_Name__c</name>
+</CustomFieldTranslation>

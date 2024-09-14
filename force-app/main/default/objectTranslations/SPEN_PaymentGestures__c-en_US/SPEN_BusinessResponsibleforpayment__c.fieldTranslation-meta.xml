@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Responsible for payment --></label>
+    <name>SPEN_BusinessResponsibleforpayment__c</name>
+    <picklistValues>
+        <masterLabel>CS</masterLabel>
+        <translation><!-- CS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>District</masterLabel>
+        <translation><!-- District --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L&amp;P</masterLabel>
+        <translation><!-- L&amp;P --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>License</masterLabel>
+        <translation><!-- License --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Partner</masterLabel>
+        <translation><!-- Service Partner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

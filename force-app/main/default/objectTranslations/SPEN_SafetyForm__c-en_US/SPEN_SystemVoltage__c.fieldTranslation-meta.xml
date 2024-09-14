@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- System voltage --></label>
+    <name>SPEN_SystemVoltage__c</name>
+    <picklistValues>
+        <masterLabel>11 kV</masterLabel>
+        <translation><!-- 11 kV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>132 kV</masterLabel>
+        <translation><!-- 132 kV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>275 kV</masterLabel>
+        <translation><!-- 275 kV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>33 kV</masterLabel>
+        <translation><!-- 33 kV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>400 kV</masterLabel>
+        <translation><!-- 400 kV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>66 kV</masterLabel>
+        <translation><!-- 66 kV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low voltage</masterLabel>
+        <translation><!-- Low voltage --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

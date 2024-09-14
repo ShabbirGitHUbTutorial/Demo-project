@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_IsItSafeToInspectTheRoof__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to capture the &quot;Is it safe to inspect the roof?&quot;. Used in the RAAC Concrete Survey</description>
+    <label>Is it safe to inspect the roof</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SPEN_YesOrNo</valueSetName>
+    </valueSet>
+</CustomField>

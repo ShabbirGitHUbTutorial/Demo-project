@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SurfaceType__c</fullName>
+    <description>CRMD- 7409</description>
+    <label>Surface Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carriageway</fullName>
+                <default>false</default>
+                <label>Carriageway</label>
+            </value>
+            <value>
+                <fullName>Cycleway</fullName>
+                <default>false</default>
+                <label>Cycleway</label>
+            </value>
+            <value>
+                <fullName>Footpath</fullName>
+                <default>false</default>
+                <label>Footpath</label>
+            </value>
+            <value>
+                <fullName>Footway</fullName>
+                <default>false</default>
+                <label>Footway</label>
+            </value>
+            <value>
+                <fullName>Unmade</fullName>
+                <default>false</default>
+                <label>Unmade</label>
+            </value>
+            <value>
+                <fullName>Verge</fullName>
+                <default>false</default>
+                <label>Verge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

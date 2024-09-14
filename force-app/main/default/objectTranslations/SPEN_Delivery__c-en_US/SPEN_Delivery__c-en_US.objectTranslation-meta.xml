@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Delivery</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deliveries</value>
+    </caseValues>
+    <quickActions>
+        <label><!-- Delivery --></label>
+        <name>SPEN_DeliveryTab</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Pre Delivery --></label>
+        <name>SPEN_PreDelivery</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- GS Call Completion Date cannot be a future date --></errorMessage>
+        <name>SPEN_GSCallCompletionDateNotFuture</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill the GS Call Completion date if GS status is Successful --></errorMessage>
+        <name>SPEN_GSCallCompletionMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot able to modify GS Call status and GS Call Completion field. --></errorMessage>
+        <name>SPEN_GSStatusLocked</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this if the field selected in the &quot;Object Field API Name&quot; picklist is a Unique &amp; External ID Field. A Unique &amp; External ID is used to prevent duplicate and relate or associate records to each other during the upsert operation. --></help>
+    <label><!-- Is a Unique &amp; External ID Field --></label>
+    <name>DSWB__Is_External_ID_Field__c</name>
+</CustomFieldTranslation>

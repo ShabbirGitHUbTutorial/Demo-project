@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- How was your experience? --></label>
+    <name>SPEN_HowWasYourExperience__c</name>
+    <picklistValues>
+        <masterLabel>Dissatisfied</masterLabel>
+        <translation><!-- Dissatisfied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neutral</masterLabel>
+        <translation><!-- Neutral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Satisfied</masterLabel>
+        <translation><!-- Satisfied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Very dissatisfied</masterLabel>
+        <translation><!-- Very dissatisfied --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Very satisfied</masterLabel>
+        <translation><!-- Very satisfied --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

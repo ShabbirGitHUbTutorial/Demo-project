@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Associated With --></label>
+    <lookupFilter>
+        <errorMessage><!-- Association can only be done with Owner or Occupier. --></errorMessage>
+    </lookupFilter>
+    <name>SPEN_AssociatedWith__c</name>
+    <relationshipLabel><!-- Land Contacts --></relationshipLabel>
+</CustomFieldTranslation>

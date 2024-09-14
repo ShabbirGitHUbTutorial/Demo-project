@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of earthing connection --></label>
+    <name>SPEN_TypeOfEarthingConnection__c</name>
+    <picklistValues>
+        <masterLabel>Earthing block</masterLabel>
+        <translation><!-- Earthing block --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hepworth clamp</masterLabel>
+        <translation><!-- Hepworth clamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jubilee clip</masterLabel>
+        <translation><!-- Jubilee clip --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sweated</masterLabel>
+        <translation><!-- Sweated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unapproved</masterLabel>
+        <translation><!-- Unapproved --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

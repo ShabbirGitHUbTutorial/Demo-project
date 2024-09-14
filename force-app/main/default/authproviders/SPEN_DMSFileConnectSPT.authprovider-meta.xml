@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://login.microsoftonline.com/common/oauth2/authorize?resource=https%3A%2F%2Fiberdrola.sharepoint.com&amp;prompt=login</authorizeUrl>
+    <consumerKey>48c8b73c-a78e-4279-a44a-2152fb222909</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <friendlyName>DMS File Connect SPT</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <isPkceEnabled>true</isPkceEnabled>
+    <providerType>OpenIdConnect</providerType>
+    <requireMfa>false</requireMfa>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://login.microsoftonline.com/common/oauth2/token</tokenUrl>
+</AuthProvider>

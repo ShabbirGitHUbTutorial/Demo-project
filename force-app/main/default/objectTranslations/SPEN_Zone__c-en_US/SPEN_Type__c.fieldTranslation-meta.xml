@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>SPEN_Type__c</name>
+    <picklistValues>
+        <masterLabel>District</masterLabel>
+        <translation><!-- District --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Region</masterLabel>
+        <translation><!-- Region --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Town</masterLabel>
+        <translation><!-- Town --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zone</masterLabel>
+        <translation><!-- Zone --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Registered_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(SPEN_Job__r.SPEN_LicenseArea__c ,&apos;SPD&apos;),&apos;Registered Number 189125&apos;,IF(ISPICKVAL(SPEN_Job__r.SPEN_LicenseArea__c,&apos;SPT&apos;),&apos;Registered Number 189126&apos;,IF(ISPICKVAL(SPEN_Job__r.SPEN_LicenseArea__c,&apos;SPM&apos;),&apos;Registered Number 2366937&apos;,&apos;&apos;)))</formula>
+    <label>Registered Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

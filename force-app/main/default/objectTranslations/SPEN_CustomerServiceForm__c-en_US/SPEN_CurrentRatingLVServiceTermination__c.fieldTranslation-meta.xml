@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current rating of LV service termination --></label>
+    <name>SPEN_CurrentRatingLVServiceTermination__c</name>
+    <picklistValues>
+        <masterLabel>100A</masterLabel>
+        <translation><!-- 100A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>200A</masterLabel>
+        <translation><!-- 200A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25A</masterLabel>
+        <translation><!-- 25A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>300A (heavy duty)</masterLabel>
+        <translation><!-- 300A (heavy duty) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>400A (heavy duty)</masterLabel>
+        <translation><!-- 400A (heavy duty) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>600A (heavy duty)</masterLabel>
+        <translation><!-- 600A (heavy duty) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60A</masterLabel>
+        <translation><!-- 60A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>80A</masterLabel>
+        <translation><!-- 80A --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

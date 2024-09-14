@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_NRSWABusinessUnit__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( (SPEN_Case__r.RecordType.DeveloperName =&apos;SPEN_NRSWA&apos;&amp;&amp; SPEN_Case__r.SPEN_SPDSPMIndicator__c =&apos;SPD&apos;),&apos;Immediate emergency&apos; , IF( (SPEN_Case__r.RecordType.DeveloperName=&apos;SPEN_NRSWA&apos; &amp;&amp; SPEN_Case__r.SPEN_SPDSPMIndicator__c =&apos;SPM&apos;) , &apos;Immediate urgent&apos;,null))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NRSWA Business Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

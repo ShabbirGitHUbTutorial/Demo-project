@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contact Status --></label>
+    <name>SPEN_ContactStatus__c</name>
+    <picklistValues>
+        <masterLabel>Email sent</masterLabel>
+        <translation><!-- Email sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Face to Face update</masterLabel>
+        <translation><!-- Face to Face update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone -Update provided</masterLabel>
+        <translation><!-- Phone -Update provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone -Voice Message Left</masterLabel>
+        <translation><!-- Phone -Voice Message Left --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone-No reply by</masterLabel>
+        <translation><!-- Phone-No reply by --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Winter Prep update</masterLabel>
+        <translation><!-- Winter Prep update --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

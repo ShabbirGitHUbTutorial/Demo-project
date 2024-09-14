@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Asset Condition Code --></label>
+    <name>SPEN_AssetConditionCode__c</name>
+    <picklistValues>
+        <masterLabel>A01</masterLabel>
+        <translation><!-- A01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A03</masterLabel>
+        <translation><!-- A03 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A04</masterLabel>
+        <translation><!-- A04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A05</masterLabel>
+        <translation><!-- A05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A07</masterLabel>
+        <translation><!-- A07 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A10</masterLabel>
+        <translation><!-- A10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A12</masterLabel>
+        <translation><!-- A12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A14</masterLabel>
+        <translation><!-- A14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A15</masterLabel>
+        <translation><!-- A15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A17</masterLabel>
+        <translation><!-- A17 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A19</masterLabel>
+        <translation><!-- A19 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B01</masterLabel>
+        <translation><!-- B01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B02</masterLabel>
+        <translation><!-- B02 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B03</masterLabel>
+        <translation><!-- B03 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B04</masterLabel>
+        <translation><!-- B04 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B05</masterLabel>
+        <translation><!-- B05 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B07</masterLabel>
+        <translation><!-- B07 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B08</masterLabel>
+        <translation><!-- B08 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B10</masterLabel>
+        <translation><!-- B10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B11</masterLabel>
+        <translation><!-- B11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B12</masterLabel>
+        <translation><!-- B12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C02</masterLabel>
+        <translation><!-- C02 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C03</masterLabel>
+        <translation><!-- C03 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C06</masterLabel>
+        <translation><!-- C06 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C07</masterLabel>
+        <translation><!-- C07 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C11</masterLabel>
+        <translation><!-- C11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C14</masterLabel>
+        <translation><!-- C14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C15</masterLabel>
+        <translation><!-- C15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C16</masterLabel>
+        <translation><!-- C16 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C17</masterLabel>
+        <translation><!-- C17 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C18</masterLabel>
+        <translation><!-- C18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C19</masterLabel>
+        <translation><!-- C19 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C20</masterLabel>
+        <translation><!-- C20 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

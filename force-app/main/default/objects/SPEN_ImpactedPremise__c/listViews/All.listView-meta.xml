@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SPEN_Incident_Status__c</columns>
+    <columns>SPEN_RelatedIncident__c</columns>
+    <columns>SPEN_PremiseId__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_ContactPremise__c</field>
+        <operation>equals</operation>
+        <value>INC-000072263</value>
+    </filters>
+    <label>All</label>
+</ListView>

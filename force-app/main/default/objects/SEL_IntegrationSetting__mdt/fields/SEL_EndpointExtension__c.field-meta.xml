@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEL_EndpointExtension__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Append additional endpoint details using this field including dynamic values. Use braces for dynamic value e.g. /services/data/{version}</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Endpoint Extension</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <type>TextArea</type>
+</CustomField>

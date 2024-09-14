@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CustomerUpdate</fullName>
+    <fields>OwnerId</fields>
+    <fields>SPEN_Priority__c</fields>
+    <fields>SPEN_Info__c</fields>
+    <fields>SPEN_IncidentId__c</fields>
+    <label>Customer Update</label>
+</CompactLayout>

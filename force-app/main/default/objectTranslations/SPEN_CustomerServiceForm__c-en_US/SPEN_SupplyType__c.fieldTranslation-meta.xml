@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Supply type --></label>
+    <name>SPEN_SupplyType__c</name>
+    <picklistValues>
+        <masterLabel>Internal mains</masterLabel>
+        <translation><!-- Internal mains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mural wiring</masterLabel>
+        <translation><!-- Mural wiring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHL</masterLabel>
+        <translation><!-- OHL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U/G service</masterLabel>
+        <translation><!-- U/G service --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

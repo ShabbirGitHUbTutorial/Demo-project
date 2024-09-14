@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- First Language --></label>
+    <name>SPEN_FirstLanguage__c</name>
+    <picklistValues>
+        <masterLabel>ALBANIAN</masterLabel>
+        <translation><!-- ALBANIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMHARIC</masterLabel>
+        <translation><!-- AMHARIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARABIC</masterLabel>
+        <translation><!-- ARABIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BENGALI</masterLabel>
+        <translation><!-- BENGALI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BULGARIAN</masterLabel>
+        <translation><!-- BULGARIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CANTONESE</masterLabel>
+        <translation><!-- CANTONESE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHINESE</masterLabel>
+        <translation><!-- CHINESE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CROATIAN</masterLabel>
+        <translation><!-- CROATIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZECH</masterLabel>
+        <translation><!-- CZECH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DANISH</masterLabel>
+        <translation><!-- DANISH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DUTCH</masterLabel>
+        <translation><!-- DUTCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESTONIAN</masterLabel>
+        <translation><!-- ESTONIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FINNISH</masterLabel>
+        <translation><!-- FINNISH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRENCH</masterLabel>
+        <translation><!-- FRENCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GERMAN</masterLabel>
+        <translation><!-- GERMAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GREEK</masterLabel>
+        <translation><!-- GREEK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HINDI</masterLabel>
+        <translation><!-- HINDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HUNGARIAN</masterLabel>
+        <translation><!-- HUNGARIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INDONESIAN</masterLabel>
+        <translation><!-- INDONESIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITALIAN</masterLabel>
+        <translation><!-- ITALIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JAPANESE</masterLabel>
+        <translation><!-- JAPANESE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KOREAN</masterLabel>
+        <translation><!-- KOREAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KURDISH</masterLabel>
+        <translation><!-- KURDISH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LATVIAN</masterLabel>
+        <translation><!-- LATVIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LITHUANIAN</masterLabel>
+        <translation><!-- LITHUANIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LYBIAN</masterLabel>
+        <translation><!-- LYBIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MALTESE</masterLabel>
+        <translation><!-- MALTESE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MANDARIN</masterLabel>
+        <translation><!-- MANDARIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEPALI</masterLabel>
+        <translation><!-- NEPALI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PASHTO</masterLabel>
+        <translation><!-- PASHTO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PERSIAN</masterLabel>
+        <translation><!-- PERSIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POLISH</masterLabel>
+        <translation><!-- POLISH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PORTUGUESE</masterLabel>
+        <translation><!-- PORTUGUESE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PUNJABI</masterLabel>
+        <translation><!-- PUNJABI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROMANIAN</masterLabel>
+        <translation><!-- ROMANIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RUSSIAN</masterLabel>
+        <translation><!-- RUSSIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLOVAK</masterLabel>
+        <translation><!-- SLOVAK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLOVENIAN</masterLabel>
+        <translation><!-- SLOVENIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOMALI</masterLabel>
+        <translation><!-- SOMALI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPANISH</masterLabel>
+        <translation><!-- SPANISH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SWAHILI</masterLabel>
+        <translation><!-- SWAHILI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SWEDISH</masterLabel>
+        <translation><!-- SWEDISH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAMIL</masterLabel>
+        <translation><!-- TAMIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TELUGU</masterLabel>
+        <translation><!-- TELUGU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>THAI</masterLabel>
+        <translation><!-- THAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TIGRINYA</masterLabel>
+        <translation><!-- TIGRINYA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TURKISH</masterLabel>
+        <translation><!-- TURKISH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UKRAINIAN</masterLabel>
+        <translation><!-- UKRAINIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UNKNOWN</masterLabel>
+        <translation><!-- UNKNOWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>URDU</masterLabel>
+        <translation><!-- URDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WELSH</masterLabel>
+        <translation><!-- WELSH --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

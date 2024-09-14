@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Callback</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_FlowNameFormula__c</columns>
+    <columns>SPEN_isActive__c</columns>
+    <columns>SPEN_IsCallBackEnabled__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SPEN_IVROperatinghours__c.SPEN_Callback</value>
+    </filters>
+    <filters>
+        <field>SPEN_isActive__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Callback</label>
+</ListView>

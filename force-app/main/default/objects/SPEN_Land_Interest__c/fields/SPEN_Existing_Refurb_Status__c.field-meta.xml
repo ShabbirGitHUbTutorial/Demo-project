@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Existing_Refurb_Status__c</fullName>
+    <label>Existing/Refurb Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaiting Design</fullName>
+                <color>#FF6A3B</color>
+                <default>false</default>
+                <label>Awaiting Design</label>
+            </value>
+            <value>
+                <fullName>In Negotiation</fullName>
+                <color>#86B8D6</color>
+                <default>false</default>
+                <label>In Negotiation</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <color>#5C881A</color>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Land Right Confirmed</fullName>
+                <color>#73A616</color>
+                <default>false</default>
+                <label>Land Right Confirmed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

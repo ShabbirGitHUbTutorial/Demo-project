@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>GE SPM - Licence Programmes</name>
+    <queueMembers>
+        <users>
+            <user>a.macdonald@spenergynetworks.co.uk.spencrm</user>
+            <user>ailsa.fitzgerald@spenergynetworks.co.uk.spencrm</user>
+            <user>asobczak@spenergynetworks.co.uk.spencrm</user>
+            <user>amanda.meyers@spenergynetworks.co.uk.spencrm</user>
+            <user>ashley.male@spenergynetworks.co.uk.spencrm</user>
+            <user>cilla.evans@spenergynetworks.co.uk.spencrm</user>
+            <user>clare.tudor@spenergynetworks.co.uk.spencrm</user>
+            <user>dperry@spenergynetworks.co.uk.spencrm</user>
+            <user>dawn.rogers@spenergynetworks.co.uk.spencrm</user>
+            <user>debbie.griffiths@spenergynetworks.co.uk.spencrm</user>
+            <user>ggregory@spenergynetworks.co.uk.spencrm</user>
+            <user>jmoneypenny@spenergynetworks.co.uk.spencrm</user>
+            <user>john.davies@spenergynetworks.co.uk.spencrm</user>
+            <user>lynn.cooke@spenergynetworks.co.uk.spencrm</user>
+            <user>michelle.edwards@spenergynetworks.co.uk.spencrm</user>
+            <user>oharrison@spenergynetworks.co.uk.spencrm</user>
+            <user>paul.penhale@spenergynetworks.co.uk.spencrm</user>
+            <user>r.butler@spenergynetworks.co.uk.spencrm</user>
+            <user>sam.hughes@spenergynetworks.co.uk.spencrm</user>
+            <user>sian.williams@spenergynetworks.co.uk.spencrm</user>
+            <user>snettel@spenergynetworks.co.uk.spencrm</user>
+            <user>stephen.nugent@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_GECaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

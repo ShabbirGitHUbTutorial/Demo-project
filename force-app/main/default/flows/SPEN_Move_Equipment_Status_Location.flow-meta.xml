@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Assigns the Serialised Product record to recordId variable.</description>
+        <name>Assign_Serialised_Product_Record_to_recordId_Variable</name>
+        <label>Assign Serialised Product Record to recordId Variable</label>
+        <locationX>264</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>recordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_a_Serialised_Product_from_Parent_ENID</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Enter_Status_Location_Change_Screen_Multiset</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the Serialised Product record to recordId variable.</description>
+        <name>Assign_Serialised_Product_Record_to_recordId_Variable_Single</name>
+        <label>Assign Serialised Product Record to recordId Variable</label>
+        <locationX>924</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>recordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Serialised_Product_from_ENID_Entry</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Enter_Status_Location_Change_Screen</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Available_Choice</name>
+        <choiceText>Available</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Available</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Away_For_Calibration_Choice</name>
+        <choiceText>Away For Calibration</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Away For Calibration</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Away_For_Repair_Choice</name>
+        <choiceText>Away For Repair</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Away For Repair</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Update_All_Choice</name>
+        <choiceText>Update All</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Update All</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Update_Individual_Choice</name>
+        <choiceText>Update Individual Item</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Update Individual Item</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <description>Checks if a Serialised Product is found where the ENID entered matches ENID field.</description>
+        <name>Check_If_ENID_Serialised_Product_Found</name>
+        <label>Check If ENID Serialised Product Found</label>
+        <locationX>1056</locationX>
+        <locationY>674</locationY>
+        <defaultConnector>
+            <targetReference>Invalid_ENID_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No ENID Identified</defaultConnectorLabel>
+        <rules>
+            <name>ENID_Identified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Serialised_Product_from_ENID_Entry.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Serialised_Product_Record_to_recordId_Variable_Single</targetReference>
+            </connector>
+            <label>ENID Identified</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if a Serialised Product is found where the ENID entered matches ENID field.</description>
+        <name>Check_If_Individual_ENID_Serialised_Product_Found</name>
+        <label>Check If Individual ENID Serialised Product Found</label>
+        <locationX>264</locationX>
+        <locationY>998</locationY>
+        <defaultConnector>
+            <targetReference>Invalid_ENID_Screen_Individual</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No ENID Identified</defaultConnectorLabel>
+        <rules>
+            <name>ENID_Identified_Individual</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>ENID Identified</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the item is being moved from a Quarantine area and status is being changed to available. This should be done via an Inspection rather than manual move.</description>
+        <name>Check_if_Inspection_Due</name>
+        <label>Check if Inspection Due</label>
+        <locationX>396</locationX>
+        <locationY>1940</locationY>
+        <defaultConnector>
+            <targetReference>Get_Compliance_Stores_Product_Transfer_Record_Type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Inspection Due</defaultConnectorLabel>
+        <rules>
+            <name>Inspection_Due</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.SPEN_Item_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Quarantine - Awaiting Inspection</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.SPEN_Current_Location__r.SPEN_Is_Quarantine_Location__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Item_Status_Picklist</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Available_Choice</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Item_Status_Picklist</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Away_For_Calibration_Choice</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Item_Status_Picklist</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Away_For_Repair_Choice</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Inspection_Due_Screen</targetReference>
+            </connector>
+            <label>Inspection Due</label>
+        </rules>
+        <rules>
+            <name>Non_Quarantine_Move</name>
+            <conditionLogic>(1 AND 2) AND NOT (3) AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.SPEN_Item_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Quarantine - Awaiting Inspection</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.SPEN_Current_Location__r.SPEN_Is_Quarantine_Location__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>QuarantineLocationId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Item_Status_Picklist</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Non_Quarantine_Move_Screen</targetReference>
+            </connector>
+            <label>Non Quarantine Move</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if a Serialised Product is found where the ENID entered matches Parent ENID field.</description>
+        <name>Check_If_Parent_ENID_Serialised_Product_Found</name>
+        <label>Check If Parent ENID Serialised Product Found</label>
+        <locationX>660</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Get_Serialised_Product_from_ENID_Entry</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Parent ENID Identified</defaultConnectorLabel>
+        <rules>
+            <name>Parent_ENID_Identified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_a_Serialised_Product_from_Parent_ENID.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Serialised_Product_Record_to_recordId_Variable</targetReference>
+            </connector>
+            <label>Parent ENID Identified</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks to see if the user selected to update an individual component, or all items in the multiset.</description>
+        <name>Check_If_User_Update_Is_All_or_Individual</name>
+        <label>Check If User Update Is All or Individual</label>
+        <locationX>264</locationX>
+        <locationY>782</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Update_All</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Update_Option_Picklist</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Update_All_Choice</elementReference>
+                </rightValue>
+            </conditions>
+            <label>Update All</label>
+        </rules>
+        <rules>
+            <name>Update_Individual</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Update_Option_Picklist</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Update_Individual_Choice</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Serialised_Product_from_Individual_ENID_Entry</targetReference>
+            </connector>
+            <label>Update Individual</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether the flow has been invoked from a Quick Action or a Global Action.</description>
+        <name>Quick_Action_or_Global_Action</name>
+        <label>Quick Action or Global Action</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>CaptureENIDScreen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Global Action</defaultConnectorLabel>
+        <rules>
+            <name>Quick_Action</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Enter_Status_Location_Change_Screen</targetReference>
+            </connector>
+            <label>Quick Action</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the user selected to update all items in the multiset from previous screen.</description>
+        <name>User_Selected_to_Update_All</name>
+        <label>User Selected to Update All?</label>
+        <locationX>176</locationX>
+        <locationY>1724</locationY>
+        <defaultConnector>
+            <targetReference>Get_Location_Information</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Update Single</defaultConnectorLabel>
+        <rules>
+            <name>Update_All_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Update_All_Checkbox_Multiset</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Update All</label>
+        </rules>
+    </decisions>
+    <description>Screen flow to allow users to manually move Item Status or Location on a Compliance Stores Serialised Product.</description>
+    <environments>Default</environments>
+    <interviewLabel>Move Equipment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Move Equipment (Status/Location)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get Records element to find one of the Serialised Products via the Parent Energy Networks ID entered.</description>
+        <name>Get_a_Serialised_Product_from_Parent_ENID</name>
+        <label>Get a Serialised Product from Parent ENID</label>
+        <locationX>660</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_If_Parent_ENID_Serialised_Product_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Parent_Energy_Networks_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ENID_Entry_Text</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Multiset__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SerializedProduct</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the record type ID of the compliance stores record type for the Product Transfer object.</description>
+        <name>Get_Compliance_Stores_Product_Transfer_Record_Type</name>
+        <label>Get Compliance Stores Product Transfer Record Type</label>
+        <locationX>660</locationX>
+        <locationY>2048</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ProductTransfer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Compliance_Stores</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Records to find the Location record and store the quarantine information.</description>
+        <name>Get_Location_Information</name>
+        <label>Get Location Information</label>
+        <locationX>396</locationX>
+        <locationY>1832</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_Inspection_Due</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LocationLookup.recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Is_Quarantine_Location__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Location</object>
+        <outputAssignments>
+            <assignToReference>QuarantineLocationId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the Serialised Product record via the ENID entry from user on previous screen.</description>
+        <name>Get_Serialised_Product_from_ENID_Entry</name>
+        <label>Get Serialised Product from ENID Entry</label>
+        <locationX>1056</locationX>
+        <locationY>566</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_If_ENID_Serialised_Product_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Energy_Networks_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ENID_Entry_Text</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SerializedProduct</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the Serialised Product record via the Individual ENID entry from user on previous screen.</description>
+        <name>Get_Serialised_Product_from_Individual_ENID_Entry</name>
+        <label>Get Serialised Product from Individual ENID Entry</label>
+        <locationX>264</locationX>
+        <locationY>890</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_If_Individual_ENID_Serialised_Product_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Energy_Networks_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Energy_Networks_ID_Individual_Update</elementReference>
+            </value>
+        </filters>
+        <object>SerializedProduct</object>
+        <outputReference>recordId</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>SPEN_Energy_Networks_ID__c</queriedFields>
+        <queriedFields>SPEN_Current_Location__c</queriedFields>
+        <queriedFields>SPEN_Base_Location__c</queriedFields>
+        <queriedFields>SPEN_Location_Name__c</queriedFields>
+        <queriedFields>SPEN_Multiset__c</queriedFields>
+        <queriedFields>SPEN_Parent_Energy_Networks_ID__c</queriedFields>
+        <queriedFields>Product2Id</queriedFields>
+        <queriedFields>ProductItemId</queriedFields>
+        <queriedFields>RecordTypeId</queriedFields>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <description>Screen to manually capture the ENID for the equipment due to being invoked from a global action.</description>
+        <name>CaptureENIDScreen</name>
+        <label>Capture ENID Screen</label>
+        <locationX>660</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Get_a_Serialised_Product_from_Parent_ENID</targetReference>
+        </connector>
+        <fields>
+            <name>ENID_Entry_Text</name>
+            <dataType>String</dataType>
+            <fieldText>Input or Scan Energy Networks ID:</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <nextOrFinishButtonLabel>Find Item</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to allow the user to confirm what status and location they wish to change to.</description>
+        <name>Enter_Status_Location_Change_Screen</name>
+        <label>Enter Status &amp; Location Change Screen</label>
+        <locationX>176</locationX>
+        <locationY>1616</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>User_Selected_to_Update_All</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Energy_Networks_ID</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Energy Networks ID: &lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!recordId.SPEN_Energy_Networks_ID__c}﻿&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>ENID_Identified</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>Display_Dual_ID</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Energy Networks ID: &lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!recordId.SPEN_Energy_Networks_ID__c}﻿&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Parent Energy Networks ID: &lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!recordId.SPEN_Parent_Energy_Networks_ID__c}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Quick_Action</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>recordId.SPEN_Multiset__c</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>StatusLocationChangeDisplayText</name>
+            <fieldText>&lt;p&gt;You can choose to change both the item status and location below:&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Enter_Status_Location_Change_Screen_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Enter_Status_Location_Change_Screen_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>LocationLookup</name>
+                    <extensionName>flowruntime:lookup</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value>
+                            <stringValue>DestinationLocationId</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value>
+                            <stringValue>Change Location</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value>
+                            <stringValue>ProductTransfer</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxValues</name>
+                        <value>
+                            <numberValue>1.0</numberValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value>
+                            <booleanValue>false</booleanValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <fields>
+                    <name>Item_Status_Picklist</name>
+                    <choiceReferences>Available_Choice</choiceReferences>
+                    <choiceReferences>Away_For_Calibration_Choice</choiceReferences>
+                    <choiceReferences>Away_For_Repair_Choice</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Change Item Status</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>3</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Enter_Status_Location_Change_Screen_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Display_text_screen1</name>
+                    <fieldText>&lt;p&gt;This equipment is part of a multiset, if you wish to update all items in the set, please tick the box below.&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                    <visibilityRule>
+                        <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+                        <conditions>
+                            <leftValueReference>LocationLookup.recordId</leftValueReference>
+                            <operator>IsNull</operator>
+                            <rightValue>
+                                <booleanValue>false</booleanValue>
+                            </rightValue>
+                        </conditions>
+                        <conditions>
+                            <leftValueReference>Item_Status_Picklist</leftValueReference>
+                            <operator>IsNull</operator>
+                            <rightValue>
+                                <booleanValue>false</booleanValue>
+                            </rightValue>
+                        </conditions>
+                        <conditions>
+                            <leftValueReference>recordId.SPEN_Multiset__c</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <booleanValue>true</booleanValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Update_All_Checkbox_Multiset</name>
+                    <dataType>Boolean</dataType>
+                    <fieldText>Update All</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+                        <conditions>
+                            <leftValueReference>LocationLookup.recordId</leftValueReference>
+                            <operator>IsNull</operator>
+                            <rightValue>
+                                <booleanValue>false</booleanValue>
+                            </rightValue>
+                        </conditions>
+                        <conditions>
+                            <leftValueReference>Item_Status_Picklist</leftValueReference>
+                            <operator>IsNull</operator>
+                            <rightValue>
+                                <booleanValue>false</booleanValue>
+                            </rightValue>
+                        </conditions>
+                        <conditions>
+                            <leftValueReference>recordId.SPEN_Multiset__c</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <booleanValue>true</booleanValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>3</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Enter_Status_Location_Change_Screen_Section1_Column3</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <nextOrFinishButtonLabel>Update</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to allow the user to confirm what status and location they wish to change to.</description>
+        <name>Enter_Status_Location_Change_Screen_Multiset</name>
+        <label>Enter Status &amp; Location Change Screen</label>
+        <locationX>264</locationX>
+        <locationY>674</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Check_If_User_Update_Is_All_or_Individual</targetReference>
+        </connector>
+        <fields>
+            <name>StatusLocationChangeDisplayText_Multi</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Parent Energy Networks ID: &lt;/strong&gt;{!recordId.SPEN_Parent_Energy_Networks_ID__c}&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can choose to change both the item status and location below:&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Enter_Status_Location_Change_Screen_Multiset_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Enter_Status_Location_Change_Screen_Multiset_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>LocationLookup_Multiset</name>
+                    <extensionName>flowruntime:lookup</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>fieldApiName</name>
+                        <value>
+                            <stringValue>DestinationLocationId</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>label</name>
+                        <value>
+                            <stringValue>Change Location</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>objectApiName</name>
+                        <value>
+                            <stringValue>ProductTransfer</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>maxValues</name>
+                        <value>
+                            <numberValue>1.0</numberValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>required</name>
+                        <value>
+                            <booleanValue>false</booleanValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <fields>
+                    <name>Item_Status_Picklist_Multiset</name>
+                    <choiceReferences>Available_Choice</choiceReferences>
+                    <choiceReferences>Away_For_Calibration_Choice</choiceReferences>
+                    <choiceReferences>Away_For_Repair_Choice</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Change Item Status</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>3</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Enter_Status_Location_Change_Screen_Multiset_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Copy_1_of_Display_text_screen1</name>
+                    <fieldText>&lt;p&gt;You have scanned a parent Energy Networks ID, please confirm if you wish to update all items?&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                    <visibilityRule>
+                        <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+                        <conditions>
+                            <leftValueReference>LocationLookup_Multiset.recordId</leftValueReference>
+                            <operator>IsNull</operator>
+                            <rightValue>
+                                <booleanValue>false</booleanValue>
+                            </rightValue>
+                        </conditions>
+                        <conditions>
+                            <leftValueReference>Item_Status_Picklist_Multiset</leftValueReference>
+                            <operator>IsNull</operator>
+                            <rightValue>
+                                <booleanValue>false</booleanValue>
+                            </rightValue>
+                        </conditions>
+                        <conditions>
+                            <leftValueReference>recordId.SPEN_Multiset__c</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <booleanValue>true</booleanValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Update_Option_Picklist</name>
+                    <choiceReferences>Update_All_Choice</choiceReferences>
+                    <choiceReferences>Update_Individual_Choice</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Update Option</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+                        <conditions>
+                            <leftValueReference>LocationLookup_Multiset.recordId</leftValueReference>
+                            <operator>IsNull</operator>
+                            <rightValue>
+                                <booleanValue>false</booleanValue>
+                            </rightValue>
+                        </conditions>
+                        <conditions>
+                            <leftValueReference>Item_Status_Picklist_Multiset</leftValueReference>
+                            <operator>IsNull</operator>
+                            <rightValue>
+                                <booleanValue>false</booleanValue>
+                            </rightValue>
+                        </conditions>
+                        <conditions>
+                            <leftValueReference>recordId.SPEN_Multiset__c</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <booleanValue>true</booleanValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Energy_Networks_ID_Individual_Update</name>
+                    <dataType>String</dataType>
+                    <fieldText>Energy Networks ID</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Update_Option_Picklist</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <elementReference>Update_Individual_Choice</elementReference>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>3</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Enter_Status_Location_Change_Screen_Multiset_Section1_Column3</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <nextOrFinishButtonLabel>Update</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to confirm to users they are attempting to move an item sat in quarantine - awaiting inspection to a non quarantine location.</description>
+        <name>Inspection_Due_Screen</name>
+        <label>Inspection Due Screen</label>
+        <locationX>132</locationX>
+        <locationY>2048</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>InspectionDueDisplayText</name>
+            <fieldText>&lt;p&gt;You are attempting to move a quarantined item that is awaiting an inspection back to available. Please complete an inspection to change the status.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to confirm to the user that the ENID entered is not valid/doesn&apos;t match a Serialised Product record.</description>
+        <name>Invalid_ENID_Screen</name>
+        <label>Invalid ENID Screen</label>
+        <locationX>1188</locationX>
+        <locationY>782</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>CaptureENIDScreen</targetReference>
+        </connector>
+        <fields>
+            <name>InvalidENIDDisplayText</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;The chosen Energy Networks ID is not valid. Please input or scan an ID that matches a valid item.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Retry</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to confirm to the user that the ENID entered is not valid/doesn&apos;t match a Serialised Product record.</description>
+        <name>Invalid_ENID_Screen_Individual</name>
+        <label>Invalid ENID Screen - Individual</label>
+        <locationX>396</locationX>
+        <locationY>1106</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>CaptureENIDScreen</targetReference>
+        </connector>
+        <fields>
+            <name>Copy_1_of_InvalidENIDDisplayText</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;The chosen Energy Networks ID is not valid. Please input or scan an ID that matches a valid item.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Retry</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to confirm to users they are attempting to move an item sat in quarantine - awaiting inspection to a non quarantine location.</description>
+        <name>Non_Quarantine_Move_Screen</name>
+        <label>Non Quarantine Move Screen</label>
+        <locationX>396</locationX>
+        <locationY>2048</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>NonQuarantineDisplayText</name>
+            <fieldText>&lt;p&gt;You are attempting to move a quarantined item to a non quarantine location. Please go back to amend the location details.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Retry</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Quick_Action_or_Global_Action</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>Populates if the user enters a location ID and it brings back a record which is a quarantine location.</description>
+        <name>QuarantineLocationId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the Serialised Product record which the flow has been invoked from when applicable via Quick Action, stores the Serialised Product assigned when user chooses via ENID if invoked via Global Action.</description>
+        <name>recordId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SerializedProduct</objectType>
+    </variables>
+</Flow>

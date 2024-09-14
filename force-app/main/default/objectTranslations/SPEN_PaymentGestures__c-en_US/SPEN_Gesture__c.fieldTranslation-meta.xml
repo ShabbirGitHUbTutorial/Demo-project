@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Gesture --></label>
+    <name>SPEN_Gesture__c</name>
+    <picklistValues>
+        <masterLabel>Cards</masterLabel>
+        <translation><!-- Cards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flowers</masterLabel>
+        <translation><!-- Flowers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voucher</masterLabel>
+        <translation><!-- Voucher --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

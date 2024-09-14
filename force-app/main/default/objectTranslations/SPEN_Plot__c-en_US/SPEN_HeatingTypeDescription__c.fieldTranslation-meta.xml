@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Heating Type Description --></label>
+    <name>SPEN_HeatingTypeDescription__c</name>
+    <picklistValues>
+        <masterLabel>CIC</masterLabel>
+        <translation><!-- CIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISC</masterLabel>
+        <translation><!-- DISC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dom LV Net- Whole Current- HH Aggregated-SPD-DO/MX-2</masterLabel>
+        <translation><!-- Dom LV Net- Whole Current- HH Aggregated-SPD-DO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dom LV Net- Whole Current- HH Aggregated-SPM-DO/MX-2</masterLabel>
+        <translation><!-- Dom LV Net- Whole Current- HH Aggregated-SPM-DO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dom Two rate E7 standard credit NHH-SPM-DO/MX-1</masterLabel>
+        <translation><!-- Dom Two rate E7 standard credit NHH-SPM-DO/MX-1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dom Two rate WHITE METER 1,Credit NHH-SPD-DO/MX-1</masterLabel>
+        <translation><!-- Dom Two rate WHITE METER 1,Credit NHH-SPD-DO/MX-1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dom Unrestricted CPC general credit NHH-SPD-DO/MX-1</masterLabel>
+        <translation><!-- Dom Unrestricted CPC general credit NHH-SPD-DO/MX-1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dom Unrestricted single rate credit NHH-SPD-DO/MX-1</masterLabel>
+        <translation><!-- Dom Unrestricted single rate credit NHH-SPD-DO/MX-1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dom Unrestricted single rate credit NHH-SPD-DO/MX-2</masterLabel>
+        <translation><!-- Dom Unrestricted single rate credit NHH-SPD-DO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dom Unrestricted single rate credit NHH-SPM-DO/MX-2</masterLabel>
+        <translation><!-- Dom Unrestricted single rate credit NHH-SPM-DO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EHV-SiteSpecific-Form Req-SPD/SPM-DO/CO/MX-2</masterLabel>
+        <translation><!-- EHV-SiteSpecific-Form Req-SPD/SPM-DO/CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered HV Net Import-SPD-CO/MX-2</masterLabel>
+        <translation><!-- HH CT Metered HV Net Import-SPD-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered HV Net Import-SPD-DO-2</masterLabel>
+        <translation><!-- HH CT Metered HV Net Import-SPD-DO-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered HV Net Import-SPM-CO/MX-2</masterLabel>
+        <translation><!-- HH CT Metered HV Net Import-SPM-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered HV Net Import-SPM-DO-2</masterLabel>
+        <translation><!-- HH CT Metered HV Net Import-SPM-DO-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered LV Net Import-SPD-CO/MX-2</masterLabel>
+        <translation><!-- HH CT Metered LV Net Import-SPD-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered LV Net Import-SPD-DO-2</masterLabel>
+        <translation><!-- HH CT Metered LV Net Import-SPD-DO-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered LV Net Import-SPM-CO/MX-2</masterLabel>
+        <translation><!-- HH CT Metered LV Net Import-SPM-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered LV Net Import-SPM-DO-2</masterLabel>
+        <translation><!-- HH CT Metered LV Net Import-SPM-DO-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered LV Sub Import-SPD-DO/CO/MX-2</masterLabel>
+        <translation><!-- HH CT Metered LV Sub Import-SPD-DO/CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered LV Sub Import-SPM-CO/MX-2</masterLabel>
+        <translation><!-- HH CT Metered LV Sub Import-SPM-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HH CT Metered LV Sub Import-SPM-DO-2</masterLabel>
+        <translation><!-- HH CT Metered LV Sub Import-SPM-DO-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Dom LV Net-HH Whole Current metered-SPD-CO/MX-2</masterLabel>
+        <translation><!-- Non Dom LV Net-HH Whole Current metered-SPD-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non Dom LV Net-HH Whole Current metered-SPM-CO/MX-2</masterLabel>
+        <translation><!-- Non Dom LV Net-HH Whole Current metered-SPM-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SmII Non Dom UR Two Rate DAY/NIGHT-SPD-DO/CO-3</masterLabel>
+        <translation><!-- SmII Non Dom UR Two Rate DAY/NIGHT-SPD-DO/CO-3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SmII Non Dom UR Two rate DAY/NIGHT-SPD-CO/MX-1</masterLabel>
+        <translation><!-- SmII Non Dom UR Two rate DAY/NIGHT-SPD-CO/MX-1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SmII Non Dom Unrstd 1 rate credit LV net-SPD-CO/MX-2</masterLabel>
+        <translation><!-- SmII Non Dom Unrstd 1 rate credit LV net-SPD-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SmII Non Dom Unrstd 1 rate credit LV net-SPM-CO/MX-2</masterLabel>
+        <translation><!-- SmII Non Dom Unrstd 1 rate credit LV net-SPM-CO/MX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smll Biz UR two rate E7 credit LV net-SPM-DO/CO-3</masterLabel>
+        <translation><!-- Smll Biz UR two rate E7 credit LV net-SPM-DO/CO-3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smll Biz UR two rate E7 credit LV net-SPM-MX-1</masterLabel>
+        <translation><!-- Smll Biz UR two rate E7 credit LV net-SPM-MX-1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UMS-SPD</masterLabel>
+        <translation><!-- UMS-SPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UMS-SPM</masterLabel>
+        <translation><!-- UMS-SPM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

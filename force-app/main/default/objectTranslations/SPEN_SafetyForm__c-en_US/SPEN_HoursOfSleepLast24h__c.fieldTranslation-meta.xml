@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- How many hours of sleep in the last 24h? --></label>
+    <name>SPEN_HoursOfSleepLast24h__c</name>
+    <picklistValues>
+        <masterLabel>Between 5 - 7 hours</masterLabel>
+        <translation><!-- Between 5 - 7 hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Less than 5 hours</masterLabel>
+        <translation><!-- Less than 5 hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>More than 7 hours</masterLabel>
+        <translation><!-- More than 7 hours --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

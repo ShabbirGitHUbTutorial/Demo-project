@@ -1,0 +1,52 @@
+<apex:component controller="APC21_ChartController" allowDML="true">
+    <apex:pageBlock >
+        
+        <apex:pageBlockSection title="Certification Expiry Notification" collapsible="false" columns="1">
+            <!-- Certificate Expiry Notification Start-->
+           
+     
+                <apex:pageMessages id="certExpMsgId"  />
+                <apex:form >
+                    <apex:outputPanel id="ajaxrequestCert">
+
+                        <!-- div>
+                            <b>
+                                <apex:outputLabel value="Is There Any Certificates Expiring Nearby"></apex:outputLabel>
+                                <apex:commandLink target="_blank" action="/0P1" value="{!expiryStatus}"/>
+                            </b>
+                        </div -->
+                        
+                        <div style="padding:5px">
+                            <h1><apex:outputLabel value="Certification Expiry Notification Configuration"></apex:outputLabel></h1>
+                            <table style="border:groove">
+                                <thead>
+                                    <tr class="headerRow ">
+                                        <th class="headerRow" scope="col">Configuration Items</th>
+                                        <th class="headerRow" scope="col">Value</th>
+                                    </tr>
+                                </thead>
+                                <tr><td>
+                                    <apex:outputLabel value="Enable Certification Expiry Monitoring" /></td>
+                                    <td><apex:inputField id="enableNoti" value="{!certInfo.Enable_Certificate_Notification__c}" /></td>
+                                </tr>
+                                <tr>
+                                    <td><apex:outputLabel value="First Notification(in Days)" /></td>
+                                    <td><apex:inputField id="firstNoti" value="{!certInfo.First_Notification__c}" /></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><apex:outputLabel value="Second Notification(in Days)" /></td>
+                                    <td><apex:inputField id="secondNoti" value="{!certInfo.Second_Notification__c}" /></td>
+                                </tr>
+                                
+                            </table>      
+                            <div style="padding:5px">
+                                <apex:commandButton action="{!saveCertconfig}" value="Save Configuration" reRender="ajaxrequestCert,certExpMsgId,parentDiv" />
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                </apex:form>
+       
+            <!-- Certificate Expiry Notification End-->
+        </apex:pageBlockSection>
+    </apex:pageBlock></apex:component>

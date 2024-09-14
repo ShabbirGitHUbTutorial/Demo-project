@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Purpose of undertaking survey --></label>
+    <name>SPEN_PurposeOfUndertakingSurvey__c</name>
+    <picklistValues>
+        <masterLabel>Fault</masterLabel>
+        <translation><!-- Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection</masterLabel>
+        <translation><!-- Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New service connection</masterLabel>
+        <translation><!-- New service connection --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

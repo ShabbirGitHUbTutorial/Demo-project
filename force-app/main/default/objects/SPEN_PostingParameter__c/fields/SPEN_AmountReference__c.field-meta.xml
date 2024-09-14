@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_AmountReference__c</fullName>
+    <label>Amount Reference</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yearly Amount</fullName>
+                <default>false</default>
+                <label>Yearly Amount</label>
+            </value>
+            <value>
+                <fullName>Monthly Amount</fullName>
+                <default>false</default>
+                <label>Monthly Amount</label>
+            </value>
+            <value>
+                <fullName>Daily Amount</fullName>
+                <default>false</default>
+                <label>Daily Amount</label>
+            </value>
+            <value>
+                <fullName>Cyclical Amount</fullName>
+                <default>false</default>
+                <label>Cyclical Amount</label>
+            </value>
+            <value>
+                <fullName>Hourly Amount</fullName>
+                <default>false</default>
+                <label>Hourly Amount</label>
+            </value>
+            <value>
+                <fullName>Amount Per Minute</fullName>
+                <default>false</default>
+                <label>Amount Per Minute</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

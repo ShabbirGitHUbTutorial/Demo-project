@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>58.0</apiVersion>
+    <description>flow used for cancelling jobs
+ESC-1703: Fault path added</description>
+    <dynamicChoiceSets>
+        <name>CancelledbyWho</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>SPEN_Cancelledby__c</picklistField>
+        <picklistObject>SPEN_Job__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>CancelReason</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>SPEN_CancelledReason__c</picklistField>
+        <picklistObject>SPEN_Job__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <interviewLabel>SPEN Job Action Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SPEN Job Cancellation Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Job_Record</name>
+        <label>Job Record</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SPEN_Job_Screen</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SPEN_ErrorFaultMessageScreen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SPEN_Job__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Cancel_Job_Status</name>
+        <label>Cancel Job Status</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>SPEN_ErrorFaultMessageScreen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Job_Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPEN_CancelledReason__c</field>
+            <value>
+                <elementReference>Cancelled_Reason</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SPEN_Cancelledby__c</field>
+            <value>
+                <elementReference>Cancelled_By</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SPEN_JobStatus__c</field>
+            <value>
+                <stringValue>Cancelled</stringValue>
+            </value>
+        </inputAssignments>
+        <object>SPEN_Job__c</object>
+    </recordUpdates>
+    <screens>
+        <name>SPEN_ErrorFaultMessageScreen</name>
+        <label>ErrorFaultMessageScreen</label>
+        <locationX>704</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SPEN_FaultMessage</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;{!$Label.SPEN_ErrorHandlingMessage}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>SPEN_Job_Screen</name>
+        <label>SPEN Job Screen</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Cancel_Job_Status</targetReference>
+        </connector>
+        <fields>
+            <name>Cancel_Job</name>
+            <fieldText>Cancel Job</fieldText>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Cancel_Job_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Cancelled_Reason</name>
+                    <choiceReferences>CancelReason</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Cancelled Reason</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Cancel_Job_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Cancelled_By</name>
+                    <choiceReferences>CancelledbyWho</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Cancelled By</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithHeader</regionContainerType>
+        </fields>
+        <nextOrFinishButtonLabel>Confirm Cancellation</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Job_Record</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RequiredFieldValidationOnReview</fullName>
+    <active>false</active>
+    <description>This validation is on the fields that are required for the job to be in Review status</description>
+    <errorConditionFormula>AND(ISPICKVAL( SPEN_JobStatus__c , &quot;Review&quot;), OR(ISPICKVAL( SPEN_CancelledReason__c , &quot;&quot;),ISBLANK(SPEN_CircuitID__c),ISNULL(SPEN_ConnectionDate__c),ISBLANK(SPEN_ControlNumber__c),ISPICKVAL( SPEN_CustomerType__c , &quot;&quot;),ISBLANK(SPEN_DeliveryEngineer__c),ISBLANK(SPEN_Description__c),ISPICKVAL( SPEN_DesignStatus__c , &quot;&quot;),ISPICKVAL( SPEN_District__c , &quot;&quot;),ISBLANK(SPENEnvironmentalPlanner__c),ISNULL(SPEN_InstructLegalTitleReportRequested__c),ISBLANK(SPEN_LandAssistant__c),ISNULL(SPEN_LandDeliveryRequiredByDate__c),ISBLANK(SPEN_LandManager__c),ISBLANK(SPEN_LandOfficer__c),ISNULL(SPEN_LegalTitleReportReceived__c),ISPICKVAL( SPEN_LicenseArea__c , &quot;&quot;),ISBLANK(SPEN_Location__c),ISBLANK(SPEN_OSGridReference__c),ISBLANK(OwnerId),ISPICKVAL( SPEN_PlanningRequired__c , &quot;&quot;),ISBLANK(SPEN_PMONumber__c),SPEN_POforTitleReport__c = false,ISBLANK(SPEN_ProjectManager__c),ISPICKVAL( SPEN_TerminatedReason__c , &quot;&quot;),SPEN_TitleReportQuoteRequested__c=false,ISBLANK(SPEN_UniqueID__c)) )</errorConditionFormula>
+    <errorMessage>All fields are required for Review status</errorMessage>
+</ValidationRule>

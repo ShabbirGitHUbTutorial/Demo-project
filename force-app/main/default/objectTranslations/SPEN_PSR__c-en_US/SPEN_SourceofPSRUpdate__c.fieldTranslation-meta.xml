@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source of PSR Update --></label>
+    <name>SPEN_SourceofPSRUpdate__c</name>
+    <picklistValues>
+        <masterLabel>Inbound Call</masterLabel>
+        <translation><!-- Inbound Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outbound Call</masterLabel>
+        <translation><!-- Outbound Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Visit</masterLabel>
+        <translation><!-- Site Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Obligations</masterLabel>
+        <translation><!-- Social Obligations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web Form</masterLabel>
+        <translation><!-- Web Form --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

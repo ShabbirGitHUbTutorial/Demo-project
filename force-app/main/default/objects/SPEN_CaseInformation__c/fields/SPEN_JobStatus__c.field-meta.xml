@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_JobStatus__c</fullName>
+    <label>Job Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Reject: Incomplete contact details</fullName>
+                <default>false</default>
+                <label>Reject: Incomplete contact details</label>
+            </value>
+            <value>
+                <fullName>Reject: Out of Area / unknown postcode</fullName>
+                <default>false</default>
+                <label>Reject: Out of Area / unknown postcode</label>
+            </value>
+            <value>
+                <fullName>Reject: Duplicate</fullName>
+                <default>false</default>
+                <label>Reject: Duplicate</label>
+            </value>
+            <value>
+                <fullName>In flight job (CAT-A or CAT-B)</fullName>
+                <default>false</default>
+                <label>In flight job (CAT-A or CAT-B)</label>
+            </value>
+            <value>
+                <fullName>MEX completed</fullName>
+                <default>false</default>
+                <label>MEX completed</label>
+            </value>
+            <value>
+                <fullName>Issued To LP - pending delivery instruction</fullName>
+                <default>false</default>
+                <label>Issued To LP - pending delivery instruction</label>
+            </value>
+            <value>
+                <fullName>Awaiting Appointment Call 1 Made</fullName>
+                <default>false</default>
+                <label>Awaiting Appointment Call 1 Made</label>
+            </value>
+            <value>
+                <fullName>Awaiting Appointment Call 2 Made</fullName>
+                <default>false</default>
+                <label>Awaiting Appointment Call 2 Made</label>
+            </value>
+            <value>
+                <fullName>Awaiting Appointment Call 3 Made</fullName>
+                <default>false</default>
+                <label>Awaiting Appointment Call 3 Made</label>
+            </value>
+            <value>
+                <fullName>Awaiting Appointment Letter 1 Sent</fullName>
+                <default>false</default>
+                <label>Awaiting Appointment Letter 1 Sent</label>
+            </value>
+            <value>
+                <fullName>Awaiting Appointment 10 WD response</fullName>
+                <default>false</default>
+                <label>Awaiting Appointment 10 WD response</label>
+            </value>
+            <value>
+                <fullName>Land Registry</fullName>
+                <default>false</default>
+                <label>Land Registry</label>
+            </value>
+            <value>
+                <fullName>Awaiting Appointment Letter 2 Sent</fullName>
+                <default>false</default>
+                <label>Awaiting Appointment Letter 2 Sent</label>
+            </value>
+            <value>
+                <fullName>Escalation L2 Manager/Legal</fullName>
+                <default>false</default>
+                <label>Escalation L2 Manager/Legal</label>
+            </value>
+            <value>
+                <fullName>Reject: Unable to Contact Customer Reasonable Endeavours Made</fullName>
+                <default>false</default>
+                <label>Reject: Unable to Contact Customer Reasonable Endeavours Made</label>
+            </value>
+            <value>
+                <fullName>Appointment Booked 1</fullName>
+                <default>false</default>
+                <label>Appointment Booked 1</label>
+            </value>
+            <value>
+                <fullName>No Access on 1st Appointment Date</fullName>
+                <default>false</default>
+                <label>No Access on 1st Appointment Date</label>
+            </value>
+            <value>
+                <fullName>Appointment Booked 2</fullName>
+                <default>false</default>
+                <label>Appointment Booked 2</label>
+            </value>
+            <value>
+                <fullName>Reject: No further appointment made</fullName>
+                <default>false</default>
+                <label>Reject: No further appointment made</label>
+            </value>
+            <value>
+                <fullName>Reject: No Access on 2nd Appointment Date</fullName>
+                <default>false</default>
+                <label>Reject: No Access on 2nd Appointment Date</label>
+            </value>
+            <value>
+                <fullName>Reject: Access Refused Safety</fullName>
+                <default>false</default>
+                <label>Reject: Access Refused Safety</label>
+            </value>
+            <value>
+                <fullName>Reject: Access Refused Non Safety</fullName>
+                <default>false</default>
+                <label>Reject: Access Refused Non Safety</label>
+            </value>
+            <value>
+                <fullName>Reject: Unable to Access Equipment Safety</fullName>
+                <default>false</default>
+                <label>Reject: Unable to Access Equipment Safety</label>
+            </value>
+            <value>
+                <fullName>Reject: Unable to Access Equipment Non Safety</fullName>
+                <default>false</default>
+                <label>Reject: Unable to Access Equipment Non Safety</label>
+            </value>
+            <value>
+                <fullName>Further SPEN Works Req</fullName>
+                <default>false</default>
+                <label>Further SPEN Works Req</label>
+            </value>
+            <value>
+                <fullName>Reject: no works required</fullName>
+                <default>false</default>
+                <label>Reject: no works required</label>
+            </value>
+            <value>
+                <fullName>Reject: works already completed</fullName>
+                <default>false</default>
+                <label>Reject: works already completed</label>
+            </value>
+            <value>
+                <fullName>Works Completed</fullName>
+                <default>false</default>
+                <label>Works Completed</label>
+            </value>
+            <value>
+                <fullName>Final Contact Attempt</fullName>
+                <default>false</default>
+                <label>Final Contact Attempt</label>
+            </value>
+            <value>
+                <fullName>Disconnection Letter Issued</fullName>
+                <default>false</default>
+                <label>Disconnection Letter Issued</label>
+            </value>
+            <value>
+                <fullName>Disconnection Delayed</fullName>
+                <default>false</default>
+                <label>Disconnection Delayed</label>
+            </value>
+            <value>
+                <fullName>Works Completed-Disconnected</fullName>
+                <default>false</default>
+                <label>Works Completed-Disconnected</label>
+            </value>
+            <value>
+                <fullName>Cat C Job - On Hold</fullName>
+                <default>false</default>
+                <label>Cat C Job - On Hold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

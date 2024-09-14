@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_3PDDamageForm</fullName>
+    <active>true</active>
+    <label>3PD Damage Form</label>
+    <picklistValues>
+        <picklist>SPEN_10WDstatus__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pass</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_28CDstatus__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pass</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_40WDstatus__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pass</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ApplicationStatus__c</picklist>
+        <values>
+            <fullName>Auto-Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNO Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNO Approved with Limit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated to DNO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed - Too Large</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Further Information Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Image Scan Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scanning Cut-Out Image</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Assessment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_AppointmentType__c</picklist>
+        <values>
+            <fullName>I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_AssetConditionClearanceCode__c</picklist>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Neutral Fault Invoice Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - No response from customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer changed their mind %28post-referral%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer changed their mind %28pre-referral%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer denied request for service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer received service but does not want to progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner could not deliver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment%2Fgesture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral created in error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolution - Deadlock Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Apology Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Checks Completed Damage Rectified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Checks Completed Insurance payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Checks Completed No Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Checks Completed and GS Customer Service %2F Top Up %2F Ex-Gratia Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Checks Completed and Simply Thank You Gesture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Claim Refuted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Customer Service Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Customer Service Simply Thank You</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Customer to arrange own repairs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Explanation Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Future modernisation and investment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - GS Customer Service %2F Top Up %2F Ex-Gratia Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - GS Exemption no payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - GS Failure Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - GS Simply Thank You Gesture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - GS no response from customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - GS11 %28 only%29 Goodwill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Goodwill payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Haste Invoice Updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Hot Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Hotels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Information provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Information sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Insurance payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - No payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - No response from customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Ombudsman Full Case Issued - Findings Against</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Ombudsman Full Case Issued - Findings In SPEN Favour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Ombudsman PICC %2F MAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Ombudsman Withdrawal %28OTOR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Simply Thank You Gesture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Voltage Outwith limits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Voltage within limits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Wayleave payments made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Wayleaves sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Work Completed %2F Issues Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Works no longer Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved -GS Exemption Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved -GS Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved -GS5 Letter to customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved -GS5 On site repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service%28s%29 delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Winter Pack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_AssetConditionCode__c</picklist>
+        <values>
+            <fullName>A01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C20</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CableRecordsonsite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Cableavoidancetoolsonsite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Cableprotection__c</picklist>
+        <values>
+            <fullName>Duct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tape</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiles</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Category__c</picklist>
+        <values>
+            <fullName>O%2FH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2FG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2FG %26 O%2FH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CollaborationRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Contractor__c</picklist>
+        <values>
+            <fullName>Aggreko UK Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balfour Beatty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2E Spratt Multi Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C-Plan Telecommunications Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clancy Docwra Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DT Hughes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%27Connors Overhead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overlec Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPIE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voltcom Group</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CustomerAgreedAppointmentTimeBand__c</picklist>
+        <values>
+            <fullName>2H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CustomerCancelledAppointment1__c</picklist>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CustomerCancelledAppointment2__c</picklist>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CustomerImpact__c</picklist>
+        <values>
+            <fullName>Community Liaison Meetings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Letter Drop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_DamageCausedBy__c</picklist>
+        <values>
+            <fullName>Compressor Tool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cutting Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drilling Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excavator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Farm Vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Tool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Vehicle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_DidthelineremainLiveonground__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ENAFormApprovedorRejected__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ENAPlatformDecision__c</picklist>
+        <values>
+            <fullName>Decision Timestamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENA Processing Successful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCTs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_EarlyStartRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_EscalatedbyPhoneEmail__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Exemptionoutcome__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_FurtherSPENworksRequired__c</picklist>
+        <values>
+            <fullName>Looped Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obstructed Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shutdown Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_GRNorDisputed__c</picklist>
+        <values>
+            <fullName>Disputed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_GroundClearanceor52m__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HVList__c</picklist>
+        <values>
+            <fullName>%3E%3D132kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33kV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%2E6kV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HastherebeenanInjuryorFatality__c</picklist>
+        <values>
+            <fullName>Fatality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neither</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_IfInjuryorFatalityWho__c</picklist>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member of Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP Contractor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_IfYesCauseofLossofSupply__c</picklist>
+        <values>
+            <fullName>Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage %26 Shutdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shutdown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_IfYesIsRoadCrossingClearanceor58__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_IncidentType__c</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latent Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road Traffic Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vandalism</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_IsAnyoneonsite__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_JobStatus__c</picklist>
+        <values>
+            <fullName>Appointment Booked 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appointment Booked 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Appointment 10 WD response</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Appointment Call 1 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Appointment Call 2 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Appointment Call 3 Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Appointment Letter 1 Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Appointment Letter 2 Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat C Job - On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disconnection Delayed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disconnection Letter Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalation L2 Manager%2FLegal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Contact Attempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Further SPEN Works Req</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In flight job %28CAT-A or CAT-B%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issued To LP - pending delivery instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEX completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Access on 1st Appointment Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A Access Refused Non Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A Access Refused Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A Incomplete contact details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A No Access on 2nd Appointment Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A No further appointment made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A Out of Area %2F unknown postcode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A Unable to Access Equipment Non Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A Unable to Access Equipment Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A Unable to Contact Customer Reasonable Endeavours Made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A no works required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reject%3A works already completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Works Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Works Completed-Disconnected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_JointingRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_LVList__c</picklist>
+        <values>
+            <fullName>Main</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pilot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Street Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Un-Metered</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_MaterialTypeUsed__c</picklist>
+        <values>
+            <fullName>O%2FH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pillar %2F Switch Point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2FG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U%2FG %26 O%2FH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_NCTApproval__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_NoticeRequestorBusinessUnit__c</picklist>
+        <values>
+            <fullName>Connections %28Fully Customer Funded%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connections %28Partially Customer Funded%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connections %28SPEN Funded%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jones Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licence Programmes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance %28Tea cutting %26 Link Box Lids%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Programme %28UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Repairs %28HV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Repairs %28LV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Works %28HV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Works %28LV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive Faults %28HV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive Faults %28LV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Street Lighting Connections %28SPEN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Street Lighting Faults %28SPEN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Numberofphases__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Looped Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No other issues identified with adequacy or integrity of the DNO service equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premises cut out rating</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_OtherUtilitiesInvolved__c</picklist>
+        <values>
+            <fullName>Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other IDNO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecoms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_PhaseCode__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_PoleReplacement__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_PrinciplePartyCategory__c</picklist>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Developer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecoms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_PrivateLand__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ResolutionCategory__c</picklist>
+        <values>
+            <fullName>Already gone to BMCS survey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleared- defect cleared and Asset Condition Category as reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint raised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint raised prior to R%26R feedback%2C notes added</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact not made - SMS required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact not made - no voicemail left</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact not made - voicemail left</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer does not want to discuss experience%2Ffeedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer made mistake with score</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer satisfied with experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer still dissatisfied with experience but does not wish to raise a case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer was not off supply %28incorrect contact details%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disputed - no defect identified that prevents meter installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enquiry raised prior to R%26R feedback%2C notes added</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Enquiry raised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold- Cat C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance Land Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No response from customer%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed to DCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed to District</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RATOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Apology Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Customer Service Simply Thank You</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Explanation Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - Work Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - defect cleared but Asset Condition Category less serious than reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - goodwill payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - information sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - insurance payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - no payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - wayleave payments made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved - wayleaves sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to resolve</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RevisedAssetCode__c</picklist>
+        <values>
+            <fullName>A01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B08</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C20</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RoadLaneClosure__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RoadOpeningNoticeRequired__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SubStatus__c</picklist>
+        <values>
+            <fullName>28 day - letter 1 issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28 day - letter 2 issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>28 day - letter 3 issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Contact Attempt %E2%80%93 Day 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Contact Attempt %E2%80%93 Day 2 %28AM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Contact Attempt %E2%80%93 Day 3 %28PM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Contact Attempt %E2%80%93 Day 4 %28OOH%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Information Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Information Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Survey%2FQuote Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_TypeofEquipment__c</picklist>
+        <values>
+            <fullName>BATTERY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device System Ref</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENALCT Dataset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EVCP_AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EVCP_DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maximum demand of proposed equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V2G_INVERTER</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_VoltageType__c</picklist>
+        <values>
+            <fullName>HV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV %26 HV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WasDamageAssessedby3rdParty__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Wastherealossofsupply__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WereEmergencyServicesinvolved__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WereMaterialsUsedtoresolveDamage__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WereOtherUtilitiesInvolved__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WeretheOHLconductorsinsulated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WhathasbeenDamaged__c</picklist>
+        <values>
+            <fullName>Cable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable Head</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV Pillar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%2FH Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub Station</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch Gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Supply</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WhathasbeendonetoResolve__c</picklist>
+        <values>
+            <fullName>Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diverted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perm%2E Repair to Modified Spec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair to Original Spec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temp%2E Repair to Modified Spec</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WhichEmergencyServicesInvolved__c</picklist>
+        <values>
+            <fullName>Ambulance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Brigade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WorkRequestorBusinessUnit__c</picklist>
+        <values>
+            <fullName>Connections %28Fully Customer Funded%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connections %28Partially Customer Funded%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connections %28SPEN Funded%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jones Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licence Programmes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance %28Tea cutting %26 Link Box Lids%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Programme %28UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Repairs %28HV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Repairs %28LV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Works %28HV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Works %28LV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive Faults %28HV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reactive Faults %28LV - UG %26 OHL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Street Lighting Connections %28SPEN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Street Lighting Faults %28SPEN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_trialholesused__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_weredangerofdeathsignsdisplayed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_weretheoverheadlinesaboveroadway__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

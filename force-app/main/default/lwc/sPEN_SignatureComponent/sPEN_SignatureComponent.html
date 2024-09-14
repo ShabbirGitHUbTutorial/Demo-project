@@ -1,0 +1,39 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-05-2024
+  @last modified by  : PATC
+-->
+<template>
+	<div class="max-height: 160px">
+		<c-s-p-e-n_-signature-pad
+			enable-name-signing="false"
+			name-input-label="Type name here:"
+			enable-signature-drawing="true"
+			pad-label={signatureLabel}
+			stroke-thickness="2"
+			pen-color="black"
+			pad-color="white"
+			font="30px 'Great Vibes'"
+		>
+		</c-s-p-e-n_-signature-pad>
+		<div class="slds-m-top_small">
+			<!--<lightning-button
+				variant="brand"
+				icon-name="utility:save"
+				label="Save signature"
+				title="Save"
+				onclick={saveSignature}
+			></lightning-button>-->
+			<lightning-button
+				variant="base"
+				icon-name="utility:delete"
+				label="Clear"
+				title="Clear"
+				onclick={clearSignature}
+				required
+			></lightning-button>
+		</div>
+	</div>
+</template>

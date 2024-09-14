@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Asset Condition Clearance Code --></label>
+    <name>SPEN_AssetConditionClearanceCode__c</name>
+    <picklistValues>
+        <masterLabel>C</masterLabel>
+        <translation><!-- C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - Neutral Fault Invoice Updated</masterLabel>
+        <translation><!-- Closed - Neutral Fault Invoice Updated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed - No response from customer</masterLabel>
+        <translation><!-- Closed - No response from customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer changed their mind (post-referral)</masterLabel>
+        <translation><!-- Customer changed their mind (post-referral) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer changed their mind (pre-referral)</masterLabel>
+        <translation><!-- Customer changed their mind (pre-referral) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer denied request for service</masterLabel>
+        <translation><!-- Customer denied request for service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer received service but does not want to progress</masterLabel>
+        <translation><!-- Customer received service but does not want to progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D</masterLabel>
+        <translation><!-- D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information only</masterLabel>
+        <translation><!-- Information only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of engagement</masterLabel>
+        <translation><!-- Lack of engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No partner</masterLabel>
+        <translation><!-- No partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner could not deliver</masterLabel>
+        <translation><!-- Partner could not deliver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payment/gesture</masterLabel>
+        <translation><!-- Payment/gesture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R</masterLabel>
+        <translation><!-- R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referral created in error</masterLabel>
+        <translation><!-- Referral created in error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolution - Deadlock Letter</masterLabel>
+        <translation><!-- Resolution - Deadlock Letter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Apology Provided</masterLabel>
+        <translation><!-- Resolved - Apology Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Cancellation</masterLabel>
+        <translation><!-- Resolved - Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Checks Completed Damage Rectified</masterLabel>
+        <translation><!-- Resolved - Checks Completed Damage Rectified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Checks Completed Insurance payment</masterLabel>
+        <translation><!-- Resolved - Checks Completed Insurance payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Checks Completed No Damage</masterLabel>
+        <translation><!-- Resolved - Checks Completed No Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Checks Completed and GS Customer Service / Top Up / Ex-Gratia Payment</masterLabel>
+        <translation><!-- Resolved - Checks Completed and GS Customer Service / Top Up / Ex-Gratia Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Checks Completed and Simply Thank You Gesture</masterLabel>
+        <translation><!-- Resolved - Checks Completed and Simply Thank You Gesture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Claim Refuted</masterLabel>
+        <translation><!-- Resolved - Claim Refuted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Customer Service Payment</masterLabel>
+        <translation><!-- Resolved - Customer Service Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Customer Service Simply Thank You</masterLabel>
+        <translation><!-- Resolved - Customer Service Simply Thank You --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Customer to arrange own repairs</masterLabel>
+        <translation><!-- Resolved - Customer to arrange own repairs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Explanation Provided</masterLabel>
+        <translation><!-- Resolved - Explanation Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Future modernisation and investment</masterLabel>
+        <translation><!-- Resolved - Future modernisation and investment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - GS Customer Service / Top Up / Ex-Gratia Payment</masterLabel>
+        <translation><!-- Resolved - GS Customer Service / Top Up / Ex-Gratia Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - GS Exemption no payment</masterLabel>
+        <translation><!-- Resolved - GS Exemption no payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - GS Failure Payment</masterLabel>
+        <translation><!-- Resolved - GS Failure Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - GS Simply Thank You Gesture</masterLabel>
+        <translation><!-- Resolved - GS Simply Thank You Gesture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - GS no response from customer</masterLabel>
+        <translation><!-- Resolved - GS no response from customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - GS11 ( only) Goodwill</masterLabel>
+        <translation><!-- Resolved - GS11 ( only) Goodwill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Goodwill payment</masterLabel>
+        <translation><!-- Resolved - Goodwill payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Haste Invoice Updated</masterLabel>
+        <translation><!-- Resolved - Haste Invoice Updated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Hot Food</masterLabel>
+        <translation><!-- Resolved - Hot Food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Hotels</masterLabel>
+        <translation><!-- Resolved - Hotels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Information provided</masterLabel>
+        <translation><!-- Resolved - Information provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Information sent</masterLabel>
+        <translation><!-- Resolved - Information sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Insurance payment</masterLabel>
+        <translation><!-- Resolved - Insurance payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - No payment</masterLabel>
+        <translation><!-- Resolved - No payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - No response from customer</masterLabel>
+        <translation><!-- Resolved - No response from customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Ombudsman Full Case Issued - Findings Against</masterLabel>
+        <translation><!-- Resolved - Ombudsman Full Case Issued - Findings Against --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Ombudsman Full Case Issued - Findings In SPEN Favour</masterLabel>
+        <translation><!-- Resolved - Ombudsman Full Case Issued - Findings In SPEN Favour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Ombudsman PICC / MAS</masterLabel>
+        <translation><!-- Resolved - Ombudsman PICC / MAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Ombudsman Withdrawal (OTOR)</masterLabel>
+        <translation><!-- Resolved - Ombudsman Withdrawal (OTOR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Simply Thank You Gesture</masterLabel>
+        <translation><!-- Resolved - Simply Thank You Gesture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Voltage Outwith limits</masterLabel>
+        <translation><!-- Resolved - Voltage Outwith limits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Voltage within limits</masterLabel>
+        <translation><!-- Resolved - Voltage within limits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Wayleave payments made</masterLabel>
+        <translation><!-- Resolved - Wayleave payments made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Wayleaves sent</masterLabel>
+        <translation><!-- Resolved - Wayleaves sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Work Completed / Issues Resolved</masterLabel>
+        <translation><!-- Resolved - Work Completed / Issues Resolved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved - Works no longer Required</masterLabel>
+        <translation><!-- Resolved - Works no longer Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved -GS Exemption Payment</masterLabel>
+        <translation><!-- Resolved -GS Exemption Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved -GS Payment</masterLabel>
+        <translation><!-- Resolved -GS Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved -GS5 Letter to customer</masterLabel>
+        <translation><!-- Resolved -GS5 Letter to customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved -GS5 On site repair</masterLabel>
+        <translation><!-- Resolved -GS5 On site repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service(s) delivered</masterLabel>
+        <translation><!-- Service(s) delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U</masterLabel>
+        <translation><!-- U --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Winter Pack</masterLabel>
+        <translation><!-- Winter Pack --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

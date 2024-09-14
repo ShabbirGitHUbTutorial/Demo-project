@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SmsBroadcastRequiredFieldScheduledDateTi</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;SmsBroadcast&quot; &amp;&amp; 
+SPEN_SendNow__c = FALSE &amp;&amp;
+ISBLANK(SPEN_ScheduledDateTime__c)</errorConditionFormula>
+    <errorDisplayField>SPEN_ScheduledDateTime__c</errorDisplayField>
+    <errorMessage>The Scheduled DateTime field is required if the Record Type is SMS Broadcast and Send Now = False.</errorMessage>
+</ValidationRule>

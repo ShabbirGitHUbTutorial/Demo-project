@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TOCOciculatetarget__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is for Transmission planning details process.</description>
+    <inlineHelpText>Target SRG plus 7 calendar days</inlineHelpText>
+    <label>TOCO ciculate target</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

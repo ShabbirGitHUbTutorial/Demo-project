@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Knowledge-DCC-Approvals</name>
+    <queueMembers>
+        <users>
+            <user>davedcc.jones@spenergynetworks.co.uk.spencrm</user>
+            <user>jackie.hatton@spenergynetworks.co.uk.spencrm</user>
+            <user>joanne_jones@spenergynetworks.co.uk.spencrm</user>
+            <user>k.wintersgill@spenergynetworks.co.uk.spencrm</user>
+            <user>ljones@spenergynetworks.co.uk.spencrm</user>
+            <user>lhamlett@spenergynetworks.co.uk.spencrm</user>
+            <user>lmcdougall@spenergynetworks.co.uk.spencrm</user>
+            <user>peter.jones@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>KnowledgeArticleVersion</sobjectType>
+    </queueSobject>
+</Queue>

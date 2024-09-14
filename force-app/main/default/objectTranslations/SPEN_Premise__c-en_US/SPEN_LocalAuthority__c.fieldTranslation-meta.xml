@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Local Authority --></label>
+    <name>SPEN_LocalAuthority__c</name>
+    <picklistValues>
+        <masterLabel>Ayrshire Council</masterLabel>
+        <translation><!-- Ayrshire Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceredigion (Nr Aber)</masterLabel>
+        <translation><!-- Ceredigion (Nr Aber) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheshire East/West/Chester</masterLabel>
+        <translation><!-- Cheshire East/West/Chester --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clackmannan Council</masterLabel>
+        <translation><!-- Clackmannan Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dumfries Council</masterLabel>
+        <translation><!-- Dumfries Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Dunbartonshire Council</masterLabel>
+        <translation><!-- East Dunbartonshire Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Lothian Council</masterLabel>
+        <translation><!-- East Lothian Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edinburgh Council</masterLabel>
+        <translation><!-- Edinburgh Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falkirk Council</masterLabel>
+        <translation><!-- Falkirk Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fife Council</masterLabel>
+        <translation><!-- Fife Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glasgow City Council</masterLabel>
+        <translation><!-- Glasgow City Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Halton</masterLabel>
+        <translation><!-- Halton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Knowsley</masterLabel>
+        <translation><!-- Knowsley --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liverpool City</masterLabel>
+        <translation><!-- Liverpool City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midlothian Council</masterLabel>
+        <translation><!-- Midlothian Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORTH WALES EAST HUB</masterLabel>
+        <translation><!-- NORTH WALES EAST HUB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORTH WALES WEST HUB</masterLabel>
+        <translation><!-- NORTH WALES WEST HUB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Lanarkshire Council</masterLabel>
+        <translation><!-- North Lanarkshire Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northumberland County Council</masterLabel>
+        <translation><!-- Northumberland County Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renfrewshire Council / West Dumbartonshire</masterLabel>
+        <translation><!-- Renfrewshire Council / West Dumbartonshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scottish Borders Council</masterLabel>
+        <translation><!-- Scottish Borders Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shropshire</masterLabel>
+        <translation><!-- Shropshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Lanarkshire Council</masterLabel>
+        <translation><!-- South Lanarkshire Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St Helens</masterLabel>
+        <translation><!-- St Helens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stirling Council</masterLabel>
+        <translation><!-- Stirling Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warrington</masterLabel>
+        <translation><!-- Warrington --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Lothian</masterLabel>
+        <translation><!-- West Lothian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wirral</masterLabel>
+        <translation><!-- Wirral --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

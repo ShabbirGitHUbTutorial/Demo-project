@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>StreetWorks - North</name>
+    <queueMembers>
+        <users>
+            <user>c.mooney@spenergynetworks.co.uk.spencrm</user>
+            <user>gmacdonald@spenergynetworks.co.uk.spencrm</user>
+            <user>james.trotter@spenergynetworks.co.uk.spencrm</user>
+            <user>julieps.carlton@spenergynetworks.co.uk.spencrm</user>
+            <user>julie.hughes@spenergynetworks.co.uk.spencrm</user>
+            <user>lstirling@spenergynetworks.co.uk.spencrm</user>
+            <user>s.brown@spenergynetworks.co.uk.spencrm</user>
+            <user>stephen.murray@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

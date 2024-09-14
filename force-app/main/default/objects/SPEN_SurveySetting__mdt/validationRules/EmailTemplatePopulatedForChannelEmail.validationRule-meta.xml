@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmailTemplatePopulatedForChannelEmail</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( TEXT(SPEN_SurveyChannel__c) = &apos;Email&apos; &amp;&amp;  ISBLANK(SPEN_EmailTemplate__c), True, False)</errorConditionFormula>
+    <errorDisplayField>SPEN_EmailTemplate__c</errorDisplayField>
+    <errorMessage>Email template should be populated if channel is Email</errorMessage>
+</ValidationRule>

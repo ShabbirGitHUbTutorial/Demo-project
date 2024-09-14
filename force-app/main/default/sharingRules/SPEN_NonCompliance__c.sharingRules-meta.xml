@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>SPEN_All_L_P_User_Except_External_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SPEN All L&amp;P User Except External Access</label>
+        <sharedTo>
+            <group>All_LnP_User_Except_External</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_Non_Compliance_Sharing_Read_Write</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Non Compliance Sharing Read Write</label>
+        <sharedTo>
+            <group>SPEN_SuperUsers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

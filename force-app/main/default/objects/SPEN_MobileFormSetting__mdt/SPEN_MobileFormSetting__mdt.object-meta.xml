@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CMDT used in the Field Service Mobile App to display the list of forms that can be invoked by the LWC (for non-work related data capture forms).</description>
+    <label>SPEN Field Service Mobile Form Setting</label>
+    <pluralLabel>SPEN Field Service Mobile Form Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

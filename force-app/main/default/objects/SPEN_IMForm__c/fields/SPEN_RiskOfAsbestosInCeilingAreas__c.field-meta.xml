@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RiskOfAsbestosInCeilingAreas__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to capture the &quot;Is there any risk of asbestos in the ceiling areas?&quot;. Used in the RAAC Concrete Survey</description>
+    <label>Risk of asbestos in ceiling areas?</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SPEN_YesOrNo</valueSetName>
+    </valueSet>
+</CustomField>

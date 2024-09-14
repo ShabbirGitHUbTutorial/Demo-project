@@ -1,0 +1,41 @@
+<!-- locationServiceExample.html -->
+<template>
+    <!-- While request is processing, show spinner -->
+   <!-- <div class="slds-m-around_large">
+        <template lwc:if={requestInProgress}>
+            <div class="slds-is-relative">
+                <lightning-spinner
+                    alternative-text="Getting location...">
+                </lightning-spinner>
+            </div>
+        </template>
+    </div> -->
+  
+    <!-- Static help text -->
+    <!--<div class="slds-text-align_center slds-text-color_weak slds-m-vertical_large">
+        Click <strong>Get Current Location</strong> to see where you are.
+    </div>-->
+  
+    <!-- The get-current-location button;
+         Disabled if LocationService isn't available -->
+    <div class="slds-float_left" style="margin-bottom: 3%;">
+        <lightning-button
+            variant="brand"
+            disabled={locationButtonDisabled}
+            icon-name="utility:target"
+            label="Refresh Geolocation"
+            title="Use your device's GPS and other location sensors to determine your current location"
+            onclick={handleGetCurrentLocationClick}
+            style="margin:1%;">
+        </lightning-button>
+    </div>
+    <div class="slds-m-around_large">
+        <template lwc:if={requestInProgress}>
+            <div class="slds-is-relative">
+                <lightning-spinner
+                    alternative-text="Getting location...">
+                </lightning-spinner>
+            </div>
+        </template>
+    </div> 
+ </template>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3PD_Articles</fullName>
+    <columns>TITLE</columns>
+    <columns>VERSION_NUMBER</columns>
+    <columns>ABSTRACT</columns>
+    <columns>OWNER_ID</columns>
+    <columns>VALIDATION_STATUS_ENUM</columns>
+    <columns>PUBLISH_STATUS</columns>
+    <columns>LAST_PUBLISHED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TITLE</field>
+        <operation>contains</operation>
+        <value>3PD</value>
+    </filters>
+    <filters>
+        <field>PUBLISH_STATUS</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <label>3PD Articles</label>
+</ListView>

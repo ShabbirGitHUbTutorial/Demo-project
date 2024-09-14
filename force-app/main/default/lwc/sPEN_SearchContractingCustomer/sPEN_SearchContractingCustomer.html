@@ -1,0 +1,78 @@
+<template>
+    <template if:true={showLoading}>
+        <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+    </template>
+    
+    <template if:true={showSearchScreen}>
+        <lightning-quick-action-panel header="Search Contracting Customer">
+            <div class="slds-modal__content slds-p-around_medium"> 
+                <lightning-accordion class="searchAccordion"
+                allow-multiple-sections-open
+                active-section-name={activeSections}>
+                            <lightning-accordion-section name="searchBodyQAS" label="Search Existing Customer">
+                                <div class="slds-grid slds-grid_align-center">
+                                    <div class="slds-col slds-size_6-of-12" >
+                                        <lightning-combobox
+                                            name="searchQAS"
+                                            label="Select Contracting Customer"
+                                            value={value}
+                                            placeholder={holderText}
+                                            options={statusOptions}
+                                            onchange={handleCustomerSelection}
+                                            disabled={disableValue} >
+                                        </lightning-combobox> 
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-12" style="margin-top: 22px;">
+                                        <lightning-button variant="brand"  icon-name="action:refresh" onclick={handleClickSearch} class="slds-p-left_x-small" ></lightning-button>
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                            </lightning-accordion-section>
+                                <br/>
+                                <br/>
+                            <lightning-accordion-section name="searchBody" label="Search Customer">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-2"> 
+                                        <div class="slds-p-around_x-small">
+                                            <lightning-input label="Company Name" type="text" value={companyName} onchange={handleNameChange}></lightning-input>
+                                            <lightning-input label="Phone Number"  type="tel" value={phone} onchange={handlePhoneChange}></lightning-input>
+                                            <lightning-input label="Building Name/Flat No.: " value={building} onchange={handleBuildingChange}></lightning-input>
+                                            <lightning-input label="Mobile" type="tel" value={mobile} onchange={handleMobileChange}></lightning-input>
+                                            <lightning-input label="VAT" value={vat} onchange={handleVATChange}></lightning-input>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2"> 
+                                        <div class="slds-p-around_x-small">
+                                            <lightning-input label="Postcode" value={postcode} onchange={handlePostCodeChange}></lightning-input>
+                                            <lightning-input label="Email Address" type="email" value={email} onchange={handleEmailChange}></lightning-input>
+                                            <lightning-input label="Building No./Street: " value={street} onchange={handleStreetChange}></lightning-input>
+                                            <lightning-input label="FAX" value={fax} onchange={handleFAXChange}></lightning-input>
+                                            <lightning-input label="CRN" value={crn} onchange={handleCRNChange}></lightning-input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-float_right" style = "margin-right:10px;">
+                                    <button class="slds-button slds-button--brand " style="background-color: #5d9732;"
+                                    onclick={handleClear}>CLEAR</button>
+                                    <button class="slds-button slds-button--brand " style="background-color: #5d9732;"
+                                    onclick={handleSearch}>SEARCH</button>
+                                </div>
+                            </lightning-accordion-section>
+                </lightning-accordion>
+            </div>
+            <br/>
+            <br/>
+            <template if:true={showSearchResult}>
+                <div class="slds-p-around_x-small">
+                    <c-s-p-e-n_-search-contracting-customer-results case-record-id={recordId} search-result={searchResult} onhandleaddnew={hideSearchScreen} onhandlesubmitclick={handleshowSearchScreen} onhandlecancelclick={hideSearchResults}></c-s-p-e-n_-search-contracting-customer-results>
+                </div>
+            </template>
+        </lightning-quick-action-panel>
+    </template>
+    <template if:true={showAddNewCustomer}>
+        <div class="slds-p-around_x-small">
+            <c-s-p-e-n_-add-new-contracting-customer case-record-id={recordId} onhandleaddnewcancel={hideAddNewSearch} onhandleaddconfirm={handleshowSearchScreen}></c-s-p-e-n_-add-new-contracting-customer>
+        </div>
+    </template>
+</template>

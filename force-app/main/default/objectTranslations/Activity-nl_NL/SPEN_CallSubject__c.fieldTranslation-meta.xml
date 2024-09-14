@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Subject --></label>
+    <name>SPEN_CallSubject__c</name>
+    <picklistValues>
+        <masterLabel>Acknowledgement</masterLabel>
+        <translation><!-- Acknowledgement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone - External Investigations</masterLabel>
+        <translation><!-- Telephone - External Investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone - Inbound Customer Contact</masterLabel>
+        <translation><!-- Telephone - Inbound Customer Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone - Internal Investigations</masterLabel>
+        <translation><!-- Telephone - Internal Investigations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone - Outbound Customer Contact</masterLabel>
+        <translation><!-- Telephone - Outbound Customer Contact --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>SPEN_SmsRW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Grant READ and WRITE access to all SMSes</label>
+        <sharedTo>
+            <group>SPEN_IntegrationUserMarketingCloud</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>IVR,Broadcast,Case</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

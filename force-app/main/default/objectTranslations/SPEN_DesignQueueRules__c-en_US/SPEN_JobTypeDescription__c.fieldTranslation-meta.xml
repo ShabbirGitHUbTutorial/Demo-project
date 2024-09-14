@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Type Description --></label>
+    <name>SPEN_JobTypeDescription__c</name>
+    <picklistValues>
+        <masterLabel>Additional Load</masterLabel>
+        <translation><!-- Additional Load --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additional Load (Syst Ext)</masterLabel>
+        <translation><!-- Additional Load (Syst Ext) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alteration to Point of Connection</masterLabel>
+        <translation><!-- Alteration to Point of Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CNO CONNECTIONS NOT REPORTED I</masterLabel>
+        <translation><!-- CNO CONNECTIONS NOT REPORTED I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cut Out Change</masterLabel>
+        <translation><!-- Cut Out Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnect/Reconnect (Estimate Required)</masterLabel>
+        <translation><!-- Disconnect/Reconnect (Estimate Required) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection</masterLabel>
+        <translation><!-- Disconnection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Bulk</masterLabel>
+        <translation><!-- Disconnection Bulk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Single</masterLabel>
+        <translation><!-- Disconnection Single --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Unmetered Supply- Existing</masterLabel>
+        <translation><!-- Disconnection Unmetered Supply- Existing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Unmetered Supply- New High</masterLabel>
+        <translation><!-- Disconnection Unmetered Supply- New High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diversion(s)</masterLabel>
+        <translation><!-- Diversion(s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic CONV/REFURB System Ext (Vat)</masterLabel>
+        <translation><!-- Domestic CONV/REFURB System Ext (Vat) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic Conversion / Refurb (VAT)</masterLabel>
+        <translation><!-- Domestic Conversion / Refurb (VAT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earthing</masterLabel>
+        <translation><!-- Earthing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earthing (System Ext)</masterLabel>
+        <translation><!-- Earthing (System Ext) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded Generation</masterLabel>
+        <translation><!-- Embedded Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded Generation - no plots</masterLabel>
+        <translation><!-- Embedded Generation - no plots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Isolator Switch (100 and over)</masterLabel>
+        <translation><!-- Isolator Switch (100 and over) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landlord Supply - Existing Cablehead</masterLabel>
+        <translation><!-- Landlord Supply - Existing Cablehead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Sup Apps (UMS) New Highway</masterLabel>
+        <translation><!-- Multiple Sup Apps (UMS) New Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Supply Applications (Metered)</masterLabel>
+        <translation><!-- Multiple Supply Applications (Metered) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Supply Applications(UMS) Existing</masterLabel>
+        <translation><!-- Multiple Supply Applications(UMS) Existing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRSWA Diversion 18%</masterLabel>
+        <translation><!-- NRSWA Diversion 18% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRSWA Diversion 7.5%</masterLabel>
+        <translation><!-- NRSWA Diversion 7.5% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New EV Supply</masterLabel>
+        <translation><!-- New EV Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New EV Supply (System Extension)</masterLabel>
+        <translation><!-- New EV Supply (System Extension) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Supply</masterLabel>
+        <translation><!-- New Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Supply (System Extension)</masterLabel>
+        <translation><!-- New Supply (System Extension) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Temporary Supply</masterLabel>
+        <translation><!-- New Temporary Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Temporary Supply (System Ext)</masterLabel>
+        <translation><!-- New Temporary Supply (System Ext) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Unmetered Supply - Existing Highway</masterLabel>
+        <translation><!-- New Unmetered Supply - Existing Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Unmetered Supply - New Highway</masterLabel>
+        <translation><!-- New Unmetered Supply - New Highway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC/DA Demand</masterLabel>
+        <translation><!-- POC/DA Demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC/DA Generation</masterLabel>
+        <translation><!-- POC/DA Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC\DA</masterLabel>
+        <translation><!-- POC\DA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Unmetered Supply - Existing High</masterLabel>
+        <translation><!-- Transfer Unmetered Supply - Existing High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Unmetered Supply - New High</masterLabel>
+        <translation><!-- Transfer Unmetered Supply - New High --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

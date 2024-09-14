@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Arable</fullName>
+        <default>false</default>
+        <label>Arable</label>
+    </customValue>
+    <customValue>
+        <fullName>Arable (F/H)</fullName>
+        <default>false</default>
+        <label>Arable (F/H)</label>
+    </customValue>
+    <customValue>
+        <fullName>Enclosed Permanent Pasture</fullName>
+        <default>false</default>
+        <label>Enclosed Permanent Pasture</label>
+    </customValue>
+    <customValue>
+        <fullName>Enclosed Permanent Pasture (F/H)</fullName>
+        <default>false</default>
+        <label>Enclosed Permanent Pasture (F/H)</label>
+    </customValue>
+    <customValue>
+        <fullName>Hedge/Ditching</fullName>
+        <default>false</default>
+        <label>Hedge/Ditching</label>
+    </customValue>
+    <customValue>
+        <fullName>Intensively Farmed</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Intensively Farmed</label>
+    </customValue>
+    <customValue>
+        <fullName>Grazing &amp; Hill (F/H)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Grazing &amp; Hill (F/H)</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Only</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Service Only</label>
+    </customValue>
+    <customValue>
+        <fullName>N/A</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>N/A</label>
+    </customValue>
+    <customValue>
+        <fullName>Grazing &amp; Hill Grassland</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Grazing &amp; Hill Grassland</label>
+    </customValue>
+    <customValue>
+        <fullName>Non Paid</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Non Paid</label>
+    </customValue>
+    <customValue>
+        <fullName>Rent Only</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Rent Only</label>
+    </customValue>
+    <customValue>
+        <fullName>One Off Payment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>One Off Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>Back Payment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Back Payment</label>
+    </customValue>
+    <masterLabel>L&amp;P Land Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>VCL0</fullName>
+        <default>false</default>
+        <label>Measure Based Lands</label>
+    </customValue>
+    <customValue>
+        <fullName>VEL0</fullName>
+        <default>false</default>
+        <label>Compensation Lands</label>
+    </customValue>
+    <customValue>
+        <fullName>VFL0</fullName>
+        <default>false</default>
+        <label>Fixed Rent Lands</label>
+    </customValue>
+    <customValue>
+        <fullName>VKL0</fullName>
+        <default>false</default>
+        <label>Damage</label>
+    </customValue>
+    <customValue>
+        <fullName>Lands</fullName>
+        <default>false</default>
+        <label>Lands</label>
+    </customValue>
+    <masterLabel>L&amp;P Condition Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

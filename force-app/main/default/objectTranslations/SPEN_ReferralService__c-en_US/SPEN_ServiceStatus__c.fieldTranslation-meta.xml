@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Status --></label>
+    <name>SPEN_ServiceStatus__c</name>
+    <picklistValues>
+        <masterLabel>Awaiting Customer Feedback</masterLabel>
+        <translation><!-- Awaiting Customer Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Created</masterLabel>
+        <translation><!-- Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Partner</masterLabel>
+        <translation><!-- With Partner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

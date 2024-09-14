@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPM CITL - Cheshire</name>
+    <queueMembers>
+        <users>
+            <user>alan.harding@spenergynetworks.co.uk.spencrm</user>
+            <user>e.webb@spenergynetworks.co.uk.spencrm</user>
+            <user>fraser.white@spenergynetworks.co.uk.spencrm</user>
+            <user>kthomas@spenergynetworks.co.uk.spencrm</user>
+            <user>rscott@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ExistingLandRight__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Existing Land Right (Reference)</label>
+    <referenceTo>SPEN_Land_Interest__c</referenceTo>
+    <relationshipLabel>Land Rights</relationshipLabel>
+    <relationshipName>Land_Interests</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

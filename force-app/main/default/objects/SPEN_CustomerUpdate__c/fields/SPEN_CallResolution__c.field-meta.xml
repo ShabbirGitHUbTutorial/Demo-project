@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CallResolution__c</fullName>
+    <label>Call Resolution</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Outbound-not reachable</fullName>
+                <default>false</default>
+                <label>Outbound-not reachable</label>
+            </value>
+            <value>
+                <fullName>Successful call</fullName>
+                <default>false</default>
+                <label>Successful call</label>
+            </value>
+            <value>
+                <fullName>Voicemail left</fullName>
+                <default>false</default>
+                <label>Voicemail left</label>
+            </value>
+            <value>
+                <fullName>Case created</fullName>
+                <default>false</default>
+                <label>Case created</label>
+            </value>
+            <value>
+                <fullName>Case updated</fullName>
+                <default>false</default>
+                <label>Case updated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

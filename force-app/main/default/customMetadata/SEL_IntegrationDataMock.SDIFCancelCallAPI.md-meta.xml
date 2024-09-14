@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SDIFCancelCallAPI</label>
+    <protected>false</protected>
+    <values>
+        <field>SEL_Body__c</field>
+        <value xsi:type="xsd:string">&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:sdif=&quot;SDIF&quot;&gt;&lt;soapenv:Header/&gt;&lt;soapenv:Body&gt;&lt;sdif:SDIFCancelCall&gt;&lt;sdif:CancelCallStc&gt;&lt;!-Optional:-&gt;&lt;sdif:CallCategoryID&gt;?&lt;/sdif:CallCategoryID&gt;&lt;!-Optional:-&gt;&lt;sdif:CallID&gt;?&lt;/sdif:CallID&gt;&lt;!-Optional:-&gt;&lt;sdif:CallReference&gt;?(Call reference number of power on)&lt;/sdif:CallReference&gt;&lt;!-Optional:-&gt;&lt;sdif:CancelReason&gt;?&lt;/sdif:CancelReason&gt;&lt;!-Optional:-&gt;&lt;sdif:PropertyNumber&gt;?&lt;/sdif:PropertyNumber&gt;&lt;!-Optional:-&gt;&lt;sdif:SuppressIncLogAudit&gt;?&lt;/sdif:SuppressIncLogAudit&gt;&lt;/sdif:CancelCallStc&gt;&lt;/sdif:SDIFCancelCall&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;</value>
+    </values>
+    <values>
+        <field>SEL_Header__c</field>
+        <value xsi:type="xsd:string">{&quot;Key2&quot;:&quot;Value2&quot;,&quot;Key1&quot;:&quot;Value1&quot;}</value>
+    </values>
+    <values>
+        <field>SEL_StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>SEL_Status__c</field>
+        <value xsi:type="xsd:string">Success</value>
+    </values>
+</CustomMetadata>

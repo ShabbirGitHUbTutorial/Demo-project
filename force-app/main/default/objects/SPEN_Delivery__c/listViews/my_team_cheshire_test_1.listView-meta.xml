@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>my_team_cheshire_test_1</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Case__c</columns>
+    <columns>SPEN_CaseOwner__c</columns>
+    <columns>SPEN_AcceptanceDate__c</columns>
+    <columns>SPEN_AcceptanceStatus__c</columns>
+    <columns>SPEN_GSCallCompletionDate__c</columns>
+    <columns>SPEN_GSCallStatus__c</columns>
+    <columns>SPEN_SiteClear__c</columns>
+    <columns>SPEN_SchedulingRequested__c</columns>
+    <columns>SPEN_SchedulingConfirmed__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_CaseOwner__c</field>
+        <operation>equals</operation>
+        <value>Michael hill,hannah casson,emma webb,paul jaffrey,lee agate,sharon webb,Daniel Morrey,Brian Rustage,alan harding,Kira,barker,tomos davies,Dave Hemmings,fraser white</value>
+    </filters>
+    <label>my team cheshire test 1</label>
+</ListView>

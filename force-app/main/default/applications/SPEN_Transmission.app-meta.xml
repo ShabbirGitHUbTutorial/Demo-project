@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page2</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page2</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#327821</headerColor>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>Application created for Transmission</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>true</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>SPEN Transmission</label>
+    <navType>Console</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN AWS Integration</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN AWS Integration</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN AWS Integration</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN AWS Integration</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordConnections</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_ConnectionRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordConnections</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_ConnectionRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordConnections</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_ConnectionRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordConnections</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_ConnectionRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordConnections</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_ConnectionRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordConnections</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_ConnectionRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordConnections</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_ConnectionRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordConnections</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_ConnectionRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordPageNewPinned3region</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_FaultRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordPageNewPinned3region</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_FaultRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordPageNewPinned3region</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_FaultRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordPageNewPinned3region</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_FaultRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordPage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_FaultRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordPage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_FaultRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordPage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_FaultRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_VoiceCallRecordPage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>VoiceCall</pageOrSobjectType>
+        <recordType>VoiceCall.SPEN_FaultRecordtype</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Transmission_Homepage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN Commercial Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Transmission_Homepage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Transmission_Homepage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Transmission_Homepage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>SPEN Transmission Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Contact Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Contact Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn CS Design Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn CS Design Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Delivery Agents</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Delivery Agents</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Delivery Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Delivery Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Design Agents</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Design Agents</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn District Design Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn District Design Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Contact Team Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Contact Team Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN  Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN  Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN  Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN  Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPagePreApplication</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CasePreApplication</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN  Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN  Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN  Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN  Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Contact Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Contact Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn CS Design Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn CS Design Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Delivery Agents</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Delivery Agents</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Delivery Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Delivery Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Design Agents</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn Design Agents</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn District Design Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Conn District Design Managers</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Contact Team Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Contact Team Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Team Leader</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SPEN_CaseRecordPageTransmission</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.SPEN_CaseTransmission</recordType>
+        <type>Flexipage</type>
+        <profile>SPEN Connection Team Leader</profile>
+    </profileActionOverrides>
+    <setupExperience>service</setupExperience>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Task</tabs>
+    <tabs>standard-report</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>SPEN_Transmission_UtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>standard-Account</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Case</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Contact</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-Task</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-report</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

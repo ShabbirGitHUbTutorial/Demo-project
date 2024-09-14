@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LCT Technology Type --></label>
+    <name>SPEN_LCTTechnologyType__c</name>
+    <picklistValues>
+        <masterLabel>Data not available</masterLabel>
+        <translation><!-- Data not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engine (combustion / reciprocating)</masterLabel>
+        <translation><!-- Engine (combustion / reciprocating) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fuel cell</masterLabel>
+        <translation><!-- Fuel cell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas turbine (OCGT)</masterLabel>
+        <translation><!-- Gas turbine (OCGT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geothermal power plant</masterLabel>
+        <translation><!-- Geothermal power plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydro - Run of river</masterLabel>
+        <translation><!-- Hydro - Run of river --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photovoltaic</masterLabel>
+        <translation><!-- Photovoltaic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steam -gas turbine (CCGT)</masterLabel>
+        <translation><!-- Steam -gas turbine (CCGT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steam turbine (thermal power plant)</masterLabel>
+        <translation><!-- Steam turbine (thermal power plant) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Chemical</masterLabel>
+        <translation><!-- Storage - Chemical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Electrical</masterLabel>
+        <translation><!-- Storage - Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Electrochemical (Batteries)</masterLabel>
+        <translation><!-- Storage - Electrochemical (Batteries) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Mechanical - Compressed Air</masterLabel>
+        <translation><!-- Storage - Mechanical - Compressed Air --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Mechanical - Flywheel</masterLabel>
+        <translation><!-- Storage - Mechanical - Flywheel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Mechanical - Liquid Air</masterLabel>
+        <translation><!-- Storage - Mechanical - Liquid Air --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Mechanical - Pumped Hydro</masterLabel>
+        <translation><!-- Storage - Mechanical - Pumped Hydro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Other</masterLabel>
+        <translation><!-- Storage - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage - Thermal</masterLabel>
+        <translation><!-- Storage - Thermal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Type --></label>
+    <name>SPEN_GSPaymentType__c</name>
+    <picklistValues>
+        <masterLabel>Customer Service Payment</masterLabel>
+        <translation><!-- Customer Service Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customers Refund For Own Appliances Payment</masterLabel>
+        <translation><!-- Customers Refund For Own Appliances Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decorating, Carpets, Cleaning, Plumber, Joining Payments</masterLabel>
+        <translation><!-- Decorating, Carpets, Cleaning, Plumber, Joining Payments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GS - IDNO/DNO Payment</masterLabel>
+        <translation><!-- GS - IDNO/DNO Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GS Customer Service / Top Up / Ex-Gratia Payment</masterLabel>
+        <translation><!-- GS Customer Service / Top Up / Ex-Gratia Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GS Exemption Payment</masterLabel>
+        <translation><!-- GS Exemption Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GS Exemption no Payment</masterLabel>
+        <translation><!-- GS Exemption no Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GS Failure Payment</masterLabel>
+        <translation><!-- GS Failure Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GS no response from customer</masterLabel>
+        <translation><!-- GS no response from customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GS11 ( only) Goodwill Payment</masterLabel>
+        <translation><!-- GS11 ( only) Goodwill Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Food</masterLabel>
+        <translation><!-- Hot Food --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel Payment</masterLabel>
+        <translation><!-- Hotel Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Land Damage</masterLabel>
+        <translation><!-- Insurance Land Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance Payment</masterLabel>
+        <translation><!-- Insurance Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Just Eat Payment</masterLabel>
+        <translation><!-- Just Eat Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Partners Invoice Cost</masterLabel>
+        <translation><!-- Service Partners Invoice Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Simply Thank You</masterLabel>
+        <translation><!-- Simply Thank You --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

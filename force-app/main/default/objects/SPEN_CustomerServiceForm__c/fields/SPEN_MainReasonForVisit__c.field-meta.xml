@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MainReasonForVisit__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the main reason for visit
+Used in LV Service Termination Survey forms</description>
+    <label>Indicate the main reason for the visit</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Proactive LV service termination replacement</fullName>
+                <default>false</default>
+                <label>Proactive LV service termination replacement</label>
+            </value>
+            <value>
+                <fullName>Proactive unlooping replacement</fullName>
+                <default>false</default>
+                <label>Proactive unlooping replacement</label>
+            </value>
+            <value>
+                <fullName>Reactive LV service termination replacement</fullName>
+                <default>false</default>
+                <label>Reactive LV service termination replacement</label>
+            </value>
+            <value>
+                <fullName>Reactive unlooping replacement</fullName>
+                <default>false</default>
+                <label>Reactive unlooping replacement</label>
+            </value>
+            <value>
+                <fullName>Rising lateral main replacement</fullName>
+                <default>false</default>
+                <label>Rising lateral main replacement</label>
+            </value>
+            <value>
+                <fullName>Fault replacement</fullName>
+                <default>false</default>
+                <label>Fault replacement</label>
+            </value>
+            <value>
+                <fullName>Smart services driven replacement</fullName>
+                <default>false</default>
+                <label>Smart services driven replacement</label>
+            </value>
+            <value>
+                <fullName>New service connection</fullName>
+                <default>false</default>
+                <label>New service connection</label>
+            </value>
+            <value>
+                <fullName>Proactive inspection</fullName>
+                <default>false</default>
+                <label>Proactive inspection</label>
+            </value>
+            <value>
+                <fullName>Proactive inspection programme</fullName>
+                <default>false</default>
+                <label>Proactive inspection programme</label>
+            </value>
+            <value>
+                <fullName>Coincidental inspection while at property</fullName>
+                <default>false</default>
+                <label>Coincidental inspection while at property</label>
+            </value>
+            <value>
+                <fullName>DELOG</fullName>
+                <default>false</default>
+                <label>DELOG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

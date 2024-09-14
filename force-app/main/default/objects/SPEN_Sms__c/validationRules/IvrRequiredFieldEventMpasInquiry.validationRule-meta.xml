@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IvrRequiredFieldEventMpasInquiry</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;IVR&quot; &amp;&amp;
+ISPICKVAL(SPEN_Event__c, &quot;MPAS Inquiry&quot;) &amp;&amp;
+ISBLANK(SPEN_SupplierName__c) &amp;&amp; 
+ISBLANK(SPEN_SupplierNumber__c) &amp;&amp; 
+ISBLANK(SPEN_MpanName__c)</errorConditionFormula>
+    <errorMessage>The Supplier Name, Supplier Number and MPAN Name fields are required if the Event field is set to MPAN Inquiry.</errorMessage>
+</ValidationRule>

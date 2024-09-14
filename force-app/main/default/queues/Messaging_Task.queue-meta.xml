@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Messaging Task</name>
+    <queueMembers>
+        <users>
+            <user>james.doyle@spenergynetworks.co.uk</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_MessagingTaskRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>SPEN_MessagingTask__c</sobjectType>
+    </queueSobject>
+</Queue>

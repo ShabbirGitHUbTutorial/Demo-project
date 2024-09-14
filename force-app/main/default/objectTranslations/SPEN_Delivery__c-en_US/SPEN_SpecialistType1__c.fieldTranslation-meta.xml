@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Specialist Type 1 --></label>
+    <name>SPEN_SpecialistType1__c</name>
+    <picklistValues>
+        <masterLabel>Live Line Truck</masterLabel>
+        <translation><!-- Live Line Truck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub Station Works</masterLabel>
+        <translation><!-- Sub Station Works --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

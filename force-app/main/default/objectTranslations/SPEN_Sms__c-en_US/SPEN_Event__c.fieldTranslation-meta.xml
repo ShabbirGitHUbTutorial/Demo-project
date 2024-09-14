@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Event --></label>
+    <name>SPEN_Event__c</name>
+    <picklistValues>
+        <masterLabel>3-Hour Comfort Call</masterLabel>
+        <translation><!-- 3-Hour Comfort Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Call Received</masterLabel>
+        <translation><!-- 3rd Call Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Creation</masterLabel>
+        <translation><!-- Case Creation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint Case Creation</masterLabel>
+        <translation><!-- Complaint Case Creation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections</masterLabel>
+        <translation><!-- Connections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply with Notice</masterLabel>
+        <translation><!-- Dropped Supply with Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply without Notice</masterLabel>
+        <translation><!-- Dropped Supply without Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated Restoration Time Extended</masterLabel>
+        <translation><!-- Estimated Restoration Time Extended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE</masterLabel>
+        <translation><!-- GE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GE Closure Survey</masterLabel>
+        <translation><!-- GE Closure Survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV proactive contact</masterLabel>
+        <translation><!-- HV proactive contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Created</masterLabel>
+        <translation><!-- Incident Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Restored</masterLabel>
+        <translation><!-- Incident Restored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MPAS Inquiry</masterLabel>
+        <translation><!-- MPAS Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MPAS Out-Of-Area Inquiry</masterLabel>
+        <translation><!-- MPAS Out-Of-Area Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medically Dependent by District</masterLabel>
+        <translation><!-- Medically Dependent by District --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merged from SP to Network</masterLabel>
+        <translation><!-- Merged from SP to Network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Demand</masterLabel>
+        <translation><!-- On Demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Outage Communication</masterLabel>
+        <translation><!-- Planned Outage Communication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource Arrival On Site</masterLabel>
+        <translation><!-- Resource Arrival On Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource Dispatched</masterLabel>
+        <translation><!-- Resource Dispatched --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource ETA Change</masterLabel>
+        <translation><!-- Resource ETA Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplier Inquiry</masterLabel>
+        <translation><!-- Supplier Inquiry --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

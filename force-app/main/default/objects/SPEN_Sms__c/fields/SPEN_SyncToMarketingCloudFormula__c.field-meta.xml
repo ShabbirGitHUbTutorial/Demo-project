@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SyncToMarketingCloudFormula__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Informs Marketing Cloud to sync the record.</description>
+    <formula>IF(ISPICKVAL(SPEN_Status__c, &quot;Ready&quot;), TRUE, FALSE)</formula>
+    <label>Sync to Marketing Cloud?</label>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

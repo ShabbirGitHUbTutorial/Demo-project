@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SEL Integration Value</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SEL Integration Values</value>
+    </caseValues>
+    <layouts>
+        <layout>SEL Integration Value Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Header or Endpoint Configuration --></label>
+            <section>Header or Endpoint Configuration</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Is_Associated_Type_Person__c</fullName>
+    <formula>TEXT(SPEN_LandInterest__r.SPEN_Land_Interest_Type__c) =SPEN_AssociationType__c</formula>
+    <label>Is Associated Type Person</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

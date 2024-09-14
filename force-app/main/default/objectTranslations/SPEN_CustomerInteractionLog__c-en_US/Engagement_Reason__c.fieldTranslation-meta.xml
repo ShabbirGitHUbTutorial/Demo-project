@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Engagement Reason --></label>
+    <name>Engagement_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Constraints Notification</masterLabel>
+        <translation><!-- Constraints Notification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notification of Fault</masterLabel>
+        <translation><!-- Notification of Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notification of Planned Outage</masterLabel>
+        <translation><!-- Notification of Planned Outage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outage Notification</masterLabel>
+        <translation><!-- Outage Notification --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

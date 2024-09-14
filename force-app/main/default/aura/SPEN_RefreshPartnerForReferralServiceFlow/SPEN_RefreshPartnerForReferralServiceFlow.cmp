@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="flowName" type="String" default="SPEN_SelectPartnerForReferralService"
+                    description="SPEN_SelectPartnerForReferralService"/>
+    <aura:attribute name="recordId" type="String"
+                    description="The ID of the record to be displayed. Provided by force:hasRecordId interface."/>
+    <aura:attribute name="record" type="Object"
+                    description="The record object to be displayed. Managed by force:recordData component."/>
+    <aura:attribute name="simpleRecord" type="Object"
+                    description="A simplified view record object to be displayed. Managed by force:recordData component."/>
+    
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      recordUpdated="{!c.handleRecordUpdated}"
+                      mode="VIEW"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:if isTrue="{!not(empty(v.flowName))}">
+        
+        <lightning:flow aura:id="flow" onstatuschange="{!c.handleFlowStatusChange}"/>
+        <span aura:id="flowContainer"></span>
+        
+    </aura:if>
+</aura:component>

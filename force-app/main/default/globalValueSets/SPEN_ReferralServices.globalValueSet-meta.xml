@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Befriending Service</fullName>
+        <default>false</default>
+        <label>Befriending Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Benefits Advice</fullName>
+        <default>false</default>
+        <label>Benefits Advice</label>
+    </customValue>
+    <customValue>
+        <fullName>Debt Advice</fullName>
+        <default>false</default>
+        <label>Debt Advice</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Efficiency Advice</fullName>
+        <default>false</default>
+        <label>Energy Efficiency Advice</label>
+    </customValue>
+    <customValue>
+        <fullName>Friendship &amp; Hot Meals</fullName>
+        <default>false</default>
+        <label>Friendship &amp; Hot Meals</label>
+    </customValue>
+    <customValue>
+        <fullName>Help for Dementia</fullName>
+        <default>false</default>
+        <label>Help for Dementia</label>
+    </customValue>
+    <customValue>
+        <fullName>Help in a Power Cut</fullName>
+        <default>false</default>
+        <label>Help in a Power Cut</label>
+    </customValue>
+    <customValue>
+        <fullName>Helping Carers</fullName>
+        <default>false</default>
+        <label>Helping Carers</label>
+    </customValue>
+    <customValue>
+        <fullName>Staying Safe at Home</fullName>
+        <default>false</default>
+        <label>Staying Safe at Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Low Carbon Technology</fullName>
+        <default>false</default>
+        <label>Low Carbon Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>LCT - Advice</fullName>
+        <default>false</default>
+        <label>LCT - Advice</label>
+    </customValue>
+    <customValue>
+        <fullName>LCT - Personal Plan</fullName>
+        <default>false</default>
+        <label>LCT - Personal Plan</label>
+    </customValue>
+    <customValue>
+        <fullName>LCT - Client Journey</fullName>
+        <default>false</default>
+        <label>LCT - Client Journey</label>
+    </customValue>
+    <customValue>
+        <fullName>Best Tariff</fullName>
+        <default>false</default>
+        <label>Best Tariff</label>
+    </customValue>
+    <description>List of all &quot;referral services&quot; offered via the &quot;Social Obligations&quot; team.</description>
+    <masterLabel>Referral Services</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

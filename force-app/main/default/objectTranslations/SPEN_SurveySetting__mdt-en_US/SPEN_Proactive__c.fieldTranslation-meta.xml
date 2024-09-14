@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- To be used for Incident related surveys where customeres were proactively contacted in prior messaging tasks --></help>
+    <label><!-- Proactive --></label>
+    <name>SPEN_Proactive__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_XMLNamespace__c</fullName>
+    <description>Populate this if only message type is XML</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Applicable only for XML &amp; Container types</inlineHelpText>
+    <label>XML Namespace</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

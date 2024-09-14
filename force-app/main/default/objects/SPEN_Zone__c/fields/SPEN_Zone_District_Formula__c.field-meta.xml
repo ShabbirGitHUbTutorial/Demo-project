@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Zone_District_Formula__c</fullName>
+    <description>Analogue to &quot;Zone Region&quot;, this holds the name of the parent record of this zone, as long as the record is of type &quot;Zone&quot;.  --&gt; Zone hierachy:  town -&gt; zone -&gt; district -&gt; region.</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+    ISPICKVAL(SPEN_Type__c , &quot;Zone&quot;), 
+    SPEN_Parent__r.Name ,
+    &quot;NA&quot;)</formula>
+    <label>Zone District</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

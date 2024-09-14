@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- District --></label>
+    <name>SPEN_District__c</name>
+    <picklistValues>
+        <masterLabel>Ayrshire &amp; Clyde South</masterLabel>
+        <translation><!-- Ayrshire &amp; Clyde South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Central &amp; Fife</masterLabel>
+        <translation><!-- Central &amp; Fife --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dee Valley/ Mid Wales</masterLabel>
+        <translation><!-- Dee Valley/ Mid Wales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dumfries &amp; Galloway</masterLabel>
+        <translation><!-- Dumfries &amp; Galloway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edinburgh &amp; Borders</masterLabel>
+        <translation><!-- Edinburgh &amp; Borders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glasgow &amp; Clyde North</masterLabel>
+        <translation><!-- Glasgow &amp; Clyde North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lanarkshire</masterLabel>
+        <translation><!-- Lanarkshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merseyside</masterLabel>
+        <translation><!-- Merseyside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mid-Cheshire</masterLabel>
+        <translation><!-- Mid-Cheshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Wales</masterLabel>
+        <translation><!-- North Wales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wirral</masterLabel>
+        <translation><!-- Wirral --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

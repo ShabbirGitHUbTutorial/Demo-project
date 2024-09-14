@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Role --></label>
+    <name>SPEN_Role__c</name>
+    <picklistValues>
+        <masterLabel>Alternative Contact</masterLabel>
+        <translation><!-- Alternative Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSR Contact (Alternative)</masterLabel>
+        <translation><!-- PSR Contact (Alternative) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSR Contact (Primary)</masterLabel>
+        <translation><!-- PSR Contact (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premise Owner</masterLabel>
+        <translation><!-- Premise Owner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

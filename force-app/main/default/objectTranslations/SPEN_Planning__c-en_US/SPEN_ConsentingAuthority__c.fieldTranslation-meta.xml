@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Consenting Authority --></label>
+    <name>SPEN_ConsentingAuthority__c</name>
+    <picklistValues>
+        <masterLabel>DESNZ</masterLabel>
+        <translation><!-- DESNZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPA</masterLabel>
+        <translation><!-- LPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS</masterLabel>
+        <translation><!-- MS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEDW</masterLabel>
+        <translation><!-- PEDW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SGECU</masterLabel>
+        <translation><!-- SGECU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

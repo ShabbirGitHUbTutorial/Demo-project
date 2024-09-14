@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Voice Alert</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Voice Alerts</value>
+    </caseValues>
+    <layouts>
+        <layout>Voice Alert Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Instant --></label>
+        <name>Instant</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- schedule --></label>
+        <name>schedule</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

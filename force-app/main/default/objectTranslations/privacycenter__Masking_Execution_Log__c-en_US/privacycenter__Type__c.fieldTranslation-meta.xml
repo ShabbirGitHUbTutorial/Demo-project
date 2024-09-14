@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>privacycenter__Type__c</name>
+    <picklistValues>
+        <masterLabel>Cache Completion</masterLabel>
+        <translation><!-- Cache Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cache Processing</masterLabel>
+        <translation><!-- Cache Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error</masterLabel>
+        <translation><!-- Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Execution Completion</masterLabel>
+        <translation><!-- Execution Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Execution Start</masterLabel>
+        <translation><!-- Execution Start --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mapping Completion</masterLabel>
+        <translation><!-- Mapping Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Object Completion</masterLabel>
+        <translation><!-- Object Completion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Object Start</masterLabel>
+        <translation><!-- Object Start --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sync Completion</masterLabel>
+        <translation><!-- Sync Completion --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

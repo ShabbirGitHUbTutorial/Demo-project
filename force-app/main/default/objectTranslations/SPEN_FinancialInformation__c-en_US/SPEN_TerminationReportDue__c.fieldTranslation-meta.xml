@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Termination Received On + 6 calendar months --></help>
+    <label><!-- Termination Report Due --></label>
+    <name>SPEN_TerminationReportDue__c</name>
+</CustomFieldTranslation>

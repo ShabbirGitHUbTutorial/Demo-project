@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>NRSWA - SPM</name>
+    <queueMembers>
+        <users>
+            <user>jevans@spenergynetworks.co.uk.spencrm</user>
+            <user>kimberley.birkett@spenergynetworks.co.uk.spencrm</user>
+            <user>n.brown@spenergynetworks.co.uk.spencrm</user>
+            <user>nikki.wilde@spenergynetworks.co.uk.spencrm</user>
+            <user>ssadler@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_NRSWA_Case_Routing</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

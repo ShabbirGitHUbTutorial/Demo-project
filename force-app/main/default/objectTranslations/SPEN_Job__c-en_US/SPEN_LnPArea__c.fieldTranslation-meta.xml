@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- L&amp;P Area --></label>
+    <name>SPEN_LnPArea__c</name>
+    <picklistValues>
+        <masterLabel>Distribution Land North</masterLabel>
+        <translation><!-- Distribution Land North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Land North &amp; EP North</masterLabel>
+        <translation><!-- Distribution Land North &amp; EP North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Land South</masterLabel>
+        <translation><!-- Distribution Land South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Land South &amp; EP South</masterLabel>
+        <translation><!-- Distribution Land South &amp; EP South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Planning North</masterLabel>
+        <translation><!-- Environmental Planning North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Planning South</masterLabel>
+        <translation><!-- Environmental Planning South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land North</masterLabel>
+        <translation><!-- Land North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land North &amp; Distribution Land North</masterLabel>
+        <translation><!-- Land North &amp; Distribution Land North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land South</masterLabel>
+        <translation><!-- Land South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land South &amp; Distribution Land South</masterLabel>
+        <translation><!-- Land South &amp; Distribution Land South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM 132 Land</masterLabel>
+        <translation><!-- SPM 132 Land --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM 132 Land &amp; EP South</masterLabel>
+        <translation><!-- SPM 132 Land &amp; EP South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPT Land &amp; EP North</masterLabel>
+        <translation><!-- SPT Land &amp; EP North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transmission Land</masterLabel>
+        <translation><!-- Transmission Land --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

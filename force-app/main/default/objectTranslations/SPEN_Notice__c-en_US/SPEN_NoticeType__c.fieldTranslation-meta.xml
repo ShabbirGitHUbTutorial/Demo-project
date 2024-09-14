@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Notice Type --></label>
+    <name>SPEN_NoticeType__c</name>
+    <picklistValues>
+        <masterLabel>Individual Notice Procedure</masterLabel>
+        <translation><!-- Individual Notice Procedure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Period of Notice</masterLabel>
+        <translation><!-- No Period of Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Notice Procedure</masterLabel>
+        <translation><!-- Standard Notice Procedure --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

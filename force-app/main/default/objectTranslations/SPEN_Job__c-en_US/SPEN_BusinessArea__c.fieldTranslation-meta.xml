@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Area --></label>
+    <name>SPEN_BusinessArea__c</name>
+    <picklistValues>
+        <masterLabel>Business Transformation</masterLabel>
+        <translation><!-- Business Transformation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Connections</masterLabel>
+        <translation><!-- Customer Connections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Resolution</masterLabel>
+        <translation><!-- Customer Resolution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Network Operations</masterLabel>
+        <translation><!-- Distribution Network Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distribution Network Projects</masterLabel>
+        <translation><!-- Distribution Network Projects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estates</masterLabel>
+        <translation><!-- Estates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Customer</masterLabel>
+        <translation><!-- External Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation><!-- Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HS2</masterLabel>
+        <translation><!-- HS2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interal Customer</masterLabel>
+        <translation><!-- Interal Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Customer</masterLabel>
+        <translation><!-- Internal Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land &amp; Planning</masterLabel>
+        <translation><!-- Land &amp; Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Agent</masterLabel>
+        <translation><!-- Land Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Solutions Policy &amp; Performance</masterLabel>
+        <translation><!-- Land Solutions Policy &amp; Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Solutions, Policy &amp; Performance</masterLabel>
+        <translation><!-- Land Solutions, Policy &amp; Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Licence Programmes</masterLabel>
+        <translation><!-- Licence Programmes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>License Programmes</masterLabel>
+        <translation><!-- License Programmes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance</masterLabel>
+        <translation><!-- Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processes &amp; Technology</masterLabel>
+        <translation><!-- Processes &amp; Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM 132 Operations</masterLabel>
+        <translation><!-- SPM 132 Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM 132 Projects - Customer Connection</masterLabel>
+        <translation><!-- SPM 132 Projects - Customer Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM 132 Projects - Infrastructure</masterLabel>
+        <translation><!-- SPM 132 Projects - Infrastructure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic Transmission Projects</masterLabel>
+        <translation><!-- Strategic Transmission Projects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transmission Operations</masterLabel>
+        <translation><!-- Transmission Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transmission Projects - Customer Connection</masterLabel>
+        <translation><!-- Transmission Projects - Customer Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transmission Projects - Infrastructure</masterLabel>
+        <translation><!-- Transmission Projects - Infrastructure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tree Department</masterLabel>
+        <translation><!-- Tree Department --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

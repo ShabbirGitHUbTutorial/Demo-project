@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Target SRG plus 14 calendar days --></help>
+    <label><!-- P&amp;S target --></label>
+    <name>SPEN_PStarget__c</name>
+</CustomFieldTranslation>

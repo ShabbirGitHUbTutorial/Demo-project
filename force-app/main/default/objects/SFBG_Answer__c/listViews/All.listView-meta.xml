@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>SFBG_QuestionnaireFormula__c</columns>
+    <columns>SFBG_QuestionId__c</columns>
+    <columns>SFBG_Answer__c</columns>
+    <columns>SFBG_Value__c</columns>
+    <columns>SFBG_IsActive__c</columns>
+    <columns>SFBG_QuestionToDisplayId__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,52 @@
+<template>
+    <lightning-quick-action-panel header="Add Contracting Customer">
+        <template if:true={showLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+        </template>
+        <div class="slds-modal__content slds-p-around_medium">  
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-p-around_x-small">
+                        <lightning-combobox name="customerType" label="Customer Type:" value={customerType} required="true"
+                                            placeholder="Please Select" options={customerTypeValues} onchange={handleCustomerTypeChange}>
+                        </lightning-combobox>
+                        <lightning-combobox name="customerClass" label="Customer Class:" value={customerClass} required="true"
+                                            placeholder="Please Select" options={customerClassValues} onchange={handleCustomerClassChange}>
+                        </lightning-combobox>
+                        <lightning-combobox name="titleName" label="Title:" value={title} 
+                                            placeholder="Please Select" options={titleValues} onchange={handleTitleChange}>
+                        </lightning-combobox>
+                        
+                        <lightning-input label="Company/Person Name:" value={companyName} required="true" onchange={handleCompanyNameChange}></lightning-input>
+                        <lightning-input label="Building Name/Flat Number:" value={flat} onchange={handleFlatChange}></lightning-input>
+                        <lightning-input label="Building Number/Street:" type="text" value={street} required="true" onchange={handleStreetChange}></lightning-input>
+                        <lightning-input label="Town/City:"  value={town} required="true" onchange={handleTownChange}></lightning-input>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-p-around_x-small">
+                        <lightning-input label="Post Code:" value={postcode} required="true" pattern={postcodePattern} message-when-pattern-mismatch="The post code you entered was not recognised. Please ensure you have used the correct formatting with capital letters and appropriate spacing." field-level-help="The postcode should consist of 5 to 7 alphanumeric characters with appropriate space in between." onchange={handlePostCodeChange}></lightning-input>
+                        <!-- <lightning-input label="Country:" value={country} required="true" onchange={handleCountryChange}></lightning-input> -->
+                        <lightning-combobox name="countryName" label="Country:" value={country} 
+                                            placeholder="Select A Country" options={countryValues} onchange={handleCountryChange}>
+                        </lightning-combobox>
+                        <lightning-input label="Phone Number:" type="tel" value={phone} pattern="^0[1238][0-9]{9}$" message-when-pattern-mismatch="Phone Number should always be 11 digits long and starts with 01 or 02 or 03 or 08." field-level-help="Phone Number should always be 11 digits long and starts with 01 or 02 or 03 or 08." onchange={handlePhoneChange}></lightning-input>
+                        <lightning-input label="Mobile Number:" type="tel" value={mobile} pattern="[07]{2}[0-9]{9}" message-when-pattern-mismatch="Mobile Number should always be 11 digits long and starts with 07." field-level-help="Mobile Number should always be 11 digits long and starts with 07." onchange={handleMobileChange}></lightning-input>
+                        <lightning-input label="Fax Number:"  value={fax} onchange={handleFaxChange}></lightning-input>
+                        <lightning-input label="Email Adress:" type="email" value={email} onchange={handleEmailChange}></lightning-input>
+                        <lightning-input label="CRN:" value={crn} placeholder="SC123456" field-level-help="CRN Number should always be 8 digits long." onchange={handleCRNChange}></lightning-input>
+                        <lightning-input label="VAT:" value={vat} placeholder="GB123456789" field-level-help="VAT should start with GB followed by 9 digits" onchange={handleVATChange}></lightning-input>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-p-around_x-small">
+                <div class="slds-float_right" style = "margin-right:10px;">
+                    <button class="slds-button slds-button--brand " style="background-color: #5d9732;"
+                    onclick={handleCancel}>CANCEL</button>
+                    <button class="slds-button slds-button--brand " style="background-color: #5d9732"
+                    onclick={handleConfirm}>CONFIRM</button>
+                </div>
+            </div>
+        </div>
+    </lightning-quick-action-panel>
+</template>

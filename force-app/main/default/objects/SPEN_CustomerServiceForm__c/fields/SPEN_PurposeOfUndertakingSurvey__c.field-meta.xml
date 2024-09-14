@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PurposeOfUndertakingSurvey__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the values of the reason to undertake the survey
+Used in LV Service Termination Survey forms</description>
+    <label>Purpose of undertaking survey</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fault</fullName>
+                <default>false</default>
+                <label>Fault</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>New service connection</fullName>
+                <default>false</default>
+                <label>New service connection</label>
+            </value>
+            <value>
+                <fullName>DELOG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DELOG</label>
+            </value>
+            <value>
+                <fullName>LV service termination inspection</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LV service termination inspection</label>
+            </value>
+            <value>
+                <fullName>LV service termination replacement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LV service termination replacement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

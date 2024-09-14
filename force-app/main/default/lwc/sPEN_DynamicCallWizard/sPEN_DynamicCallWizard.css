@@ -1,0 +1,48 @@
+.buttonAllignment{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.default-msg,
+.critical-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  word-break: break-all;
+}
+.info-msg {
+  color: #000;
+  border:solid 3px #BEF;
+  /*word-break: break-all;*/
+}
+.success-msg {
+  color: #270;
+  border:solid 3px #DFF2BF;
+  /*word-break: break-all;*/
+}
+
+.warning-msg {
+  color: #9F6000;
+  border:solid 3px #FEEFB3;
+  /*word-break: break-all;*/
+}
+.critical-msg {
+  color: #D8000C;
+  border:solid 3px #FFBABA;
+  /*word-break: break-all;*/
+}
+
+.default-msg {
+  color: #000;
+  background-color:#bbeeff5e;
+  border:solid 3px rgb(71, 167, 246);
+ 
+}
+ 
+.slds-wrap{
+  word-break: break-all;
+}

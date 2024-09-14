@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Check_For_SLA_Description</name>
+        <label>Check For SLA Description</label>
+        <locationX>380</locationX>
+        <locationY>384</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SLA_contains_strings</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>checkSLADescription</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Permission.SPEN_BypassFlowSAPSLACreation</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_Case_Record</targetReference>
+            </connector>
+            <label>SLA contains strings</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_For_SLA_Description_On_Update</name>
+        <label>Check For SLA Description On Update</label>
+        <locationX>1172</locationX>
+        <locationY>384</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SLA_Strings</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>checkSLADescription</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Permission.SPEN_BypassFlowSAPSLACreation</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_Case_Record_For_Update</targetReference>
+            </connector>
+            <label>SLA Strings</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_New_Record</name>
+        <label>Is New Record</label>
+        <locationX>776</locationX>
+        <locationY>276</locationY>
+        <defaultConnector>
+            <targetReference>Check_For_SLA_Description_On_Update</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Update Record</defaultConnectorLabel>
+        <rules>
+            <name>New_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isNewRecord</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_For_SLA_Description</targetReference>
+            </connector>
+            <label>New Record</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Record_Type_Check</name>
+        <label>Record Type Check</label>
+        <locationX>182</locationX>
+        <locationY>600</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Connection_Record_Type</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Case_Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPEN_FormalConnectionEnquiry</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Related_Case_Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPEN_BudgetConnectionEnquiry</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Related_Case_Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPEN_ConnectionReadOnlyCase</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Related_Case</targetReference>
+            </connector>
+            <label>Connection Record Type</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Record_Type_Check_For_Case</name>
+        <label>Record Type Check For Case</label>
+        <locationX>974</locationX>
+        <locationY>600</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Connection_Record_Type_Update</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Case_Record_For_Update.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPEN_FormalConnectionEnquiry</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Related_Case_Record_For_Update.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPEN_BudgetConnectionEnquiry</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Related_Case_Record_For_Update.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPEN_ConnectionReadOnlyCase</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Related_Case_on_Update</targetReference>
+            </connector>
+            <label>Connection Record Type Update</label>
+        </rules>
+    </decisions>
+    <description>SAP SLA Creation Record Triggered Flow which handles After Create and Update operation</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>checkSLADescription</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(OR(CONTAINS({!$Record.SPEN_SLADescription__c}, &quot;Formal Quotation Preparation Tim&quot;),CONTAINS({!$Record.SPEN_SLADescription__c}, &quot;UMC - Formal Quotation Preparation Tim&quot;),CONTAINS({!$Record.SPEN_SLADescription__c}, &quot;DG - Budgeting Quote  + Preparation Tim&quot;),CONTAINS({!$Record.SPEN_SLADescription__c}, &quot;Budgeting Quotation Preparation Tim&quot;),CONTAINS({!$Record.SPEN_SLADescription__c}, &quot;DG - Formal Quotation Preparation Tim&quot;),
+CONTAINS({!$Record.SPEN_SLADescription__c}, &quot;DG - Budgeting Quotation Preparation Tim&quot;),
+CONTAINS({!$Record.SPEN_SLADescription__c}, &quot;DG - Budgeting Quote + Preparation Tim&quot;), 
+CONTAINS({!$Record.SPEN_SLADescription__c}, &quot;Post Acceptance Contact Tim&quot;)), True, False)</expression>
+    </formulas>
+    <formulas>
+        <name>getDateTimeValue</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(TEXT(YEAR({!$Record.SPEN_Plannedfinishdate__c})) + &quot;-&quot; + TEXT(MONTH({!$Record.SPEN_Plannedfinishdate__c})) + &quot;-&quot; + TEXT(DAY({!$Record.SPEN_Plannedfinishdate__c})) + &quot; &quot; +TEXT(VALUE(LEFT({!$Record.SPEN_PlannedFinishTime__c}, 2))) + MID({!$Record.SPEN_PlannedFinishTime__c}, 3, 3) + &quot;:00&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>isNewRecord</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>SAP SLA Creation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SAP SLA Creation - Actions and Related Records - After Create/Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Related_Case_Record</name>
+        <label>Get Related Case Record</label>
+        <locationX>182</locationX>
+        <locationY>492</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Record_Type_Check</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SPEN_RelatedCase__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Related_Case_Record_For_Update</name>
+        <label>Get Related Case Record For Update</label>
+        <locationX>974</locationX>
+        <locationY>492</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Record_Type_Check_For_Case</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SPEN_RelatedCase__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Related_Case</name>
+        <label>Update Related Case</label>
+        <locationX>50</locationX>
+        <locationY>708</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Case_Record.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPEN_GSDueDate__c</field>
+            <value>
+                <elementReference>getDateTimeValue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.SPEN_RelatedCase__r</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Related_Case_on_Update</name>
+        <label>Update Related Case on Update</label>
+        <locationX>842</locationX>
+        <locationY>708</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Case_Record_For_Update.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SPEN_GSDueDate__c</field>
+            <value>
+                <elementReference>getDateTimeValue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.SPEN_RelatedCase__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>155</locationX>
+        <locationY>0</locationY>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>LastModifiedDate</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>SPEN_SAPSLACreation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Is_New_Record</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

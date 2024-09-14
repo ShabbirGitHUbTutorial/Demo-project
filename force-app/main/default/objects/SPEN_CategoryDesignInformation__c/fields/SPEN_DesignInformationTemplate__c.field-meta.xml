@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_DesignInformationTemplate__c</fullName>
+    <label>Design Information Template</label>
+    <referenceTo>SPEN_DesignInformationTemplate__c</referenceTo>
+    <relationshipLabel>Category Design Informations</relationshipLabel>
+    <relationshipName>Category_Design_Informations</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

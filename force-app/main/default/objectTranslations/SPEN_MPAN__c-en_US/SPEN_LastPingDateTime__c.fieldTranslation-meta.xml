@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Last Ping Date/Time --></label>
+    <name>SPEN_LastPingDateTime__c</name>
+</CustomFieldTranslation>

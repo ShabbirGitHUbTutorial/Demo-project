@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Knowledge-GeneralKnowledge-Approvals</name>
+    <queueMembers>
+        <users>
+            <user>david.w.mcarthur@spenergynetworks.co.uk.spencrm</user>
+            <user>dylan.richards@spenergynetworks.co.uk.spencrm</user>
+            <user>fprewett@spenergynetworks.co.uk.spencrm</user>
+            <user>gsmith@spenergynetworks.co.uk.spencrm</user>
+            <user>geoff.littler@spenergynetworks.co.uk.spencrm</user>
+            <user>gpaterson1@spenergynetworks.co.uk.spencrm</user>
+            <user>graham.rixon@spenergynetworks.co.uk.spencrm</user>
+            <user>gatkinson@spenergynetworks.co.uk.spencrm</user>
+            <user>jackie.hatton@spenergynetworks.co.uk.spencrm</user>
+            <user>kgreenough@spenergynetworks.co.uk.spencrm</user>
+            <user>kimberley.birkett@spenergynetworks.co.uk.spencrm</user>
+            <user>lfriel@spenergynetworks.co.uk.spencrm</user>
+            <user>lhamlett@spenergynetworks.co.uk.spencrm</user>
+            <user>lmcdougall@spenergynetworks.co.uk.spencrm</user>
+            <user>peter.jones@spenergynetworks.co.uk.spencrm</user>
+            <user>skirkham@spenergynetworks.co.uk.spencrm</user>
+            <user>smaxwell@spenergynetworks.co.uk.spencrm</user>
+            <user>stacey.clyde@spenergynetworks.co.uk.spencrm</user>
+            <user>sdonaldson@spenergynetworks.co.uk.spencrm</user>
+            <user>stephanie.carrodus@spenergynetworks.co.uk.spencrm</user>
+            <user>tpearson@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>KnowledgeArticleVersion</sobjectType>
+    </queueSobject>
+</Queue>

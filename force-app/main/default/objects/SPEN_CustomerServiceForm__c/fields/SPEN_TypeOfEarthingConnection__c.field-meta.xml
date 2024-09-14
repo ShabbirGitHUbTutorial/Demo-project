@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TypeOfEarthingConnection__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the type of earthing connection
+Used in LV Service Termination Survey forms</description>
+    <label>Type of earthing connection</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sweated</fullName>
+                <default>false</default>
+                <label>Sweated</label>
+            </value>
+            <value>
+                <fullName>Jubilee clip</fullName>
+                <default>false</default>
+                <label>Jubilee clip</label>
+            </value>
+            <value>
+                <fullName>Hepworth clamp</fullName>
+                <default>false</default>
+                <label>Hepworth clamp</label>
+            </value>
+            <value>
+                <fullName>Earthing block</fullName>
+                <default>false</default>
+                <label>Earthing block</label>
+            </value>
+            <value>
+                <fullName>Unapproved</fullName>
+                <default>false</default>
+                <label>Unapproved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

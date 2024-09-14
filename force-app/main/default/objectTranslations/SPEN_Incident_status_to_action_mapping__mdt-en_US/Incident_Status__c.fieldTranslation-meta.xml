@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Incident Status --></label>
+    <name>Incident_Status__c</name>
+    <picklistValues>
+        <masterLabel>3HourComfortCall</masterLabel>
+        <translation><!-- 3HourComfortCall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rdCall</masterLabel>
+        <translation><!-- 3rdCall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Created</masterLabel>
+        <translation><!-- Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delog</masterLabel>
+        <translation><!-- Delog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispatch</masterLabel>
+        <translation><!-- Dispatch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DroppedSupplyWithNotice</masterLabel>
+        <translation><!-- DroppedSupplyWithNotice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DroppedSupplyWithoutNotice</masterLabel>
+        <translation><!-- DroppedSupplyWithoutNotice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ExtendedRestorationTime</masterLabel>
+        <translation><!-- ExtendedRestorationTime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Site</masterLabel>
+        <translation><!-- On Site --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

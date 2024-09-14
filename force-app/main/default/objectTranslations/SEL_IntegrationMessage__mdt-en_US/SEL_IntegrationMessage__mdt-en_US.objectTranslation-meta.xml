@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SEL Integration Message</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SEL Integration Messages</value>
+    </caseValues>
+    <layouts>
+        <layout>SEL Integration Message Layout</layout>
+        <sections>
+            <label><!-- Collection Information (If applicable) --></label>
+            <section>Collection Information (If applicable)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Source to Target Mapping --></label>
+            <section>Source to Target Mapping</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Source Field must be filled out if the Source Field Type is set to static. --></errorMessage>
+        <name>SourceFieldMustNotBeBlankForStatic</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Source Object, Source Field and Source Field Type fields must be filled out if the Target Field Type is NOT a Container. --></errorMessage>
+        <name>SourceFieldsAreRequiredForNonContainers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Source Object, Source Field and Source Field Type fields must remain BLANK if the Target Field Type is set to Container. --></errorMessage>
+        <name>SourceFieldsMustBeBankForContainers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Source Object must be blank if the Source Field Type is Static. --></errorMessage>
+        <name>SourceObjectMustBeBlankForStatic</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Source Object field must always start with the same base API in the Integration Settings. --></errorMessage>
+        <name>SourceObjectMustMatchTheBaseObjectApi</name>
+    </validationRules>
+</CustomObjectTranslation>

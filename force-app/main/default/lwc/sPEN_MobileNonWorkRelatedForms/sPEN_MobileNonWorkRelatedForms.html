@@ -1,0 +1,108 @@
+<!-- 
+	US MS-136 
+	DESCRIPTION: LWC to display the list of forms that can be executed as 'stand alone'
+-->
+<template>
+	<lightning-card>
+	<!-- Location Service Error Message -->
+	<div lwc:if={locationServiceError}>
+		<lightning-card 
+			variant="Narrow" 
+			icon-name="utility:error" 
+			title="Location Service Error"
+			>
+			<div class="slds-text-color_destructive">{locationServiceError}</div>
+		</lightning-card>
+	</div>
+
+	<!-- START SCREEN MENU -->
+	<div lwc:if={screenMenu}>
+		<!-- List of Signed Forms -->
+		<div lwc:if={signedDeepLinks}>
+			<!-- for spaceman -->
+			<br key={rec.Id}>
+			<template for:each={signedDeepLinks} for:item="rec">
+				<!-- form button -->
+				<lightning-button-icon class="slds-m-left_x-small" variant="brand" onclick={handleNavigate} key={rec.Id}
+					value={rec.SPEN_FormDeepLink__c} icon-name="utility:form">&nbsp;</lightning-button-icon>&nbsp;
+				{rec.MasterLabel}
+				<!-- for space -->
+				<br key={rec.Id}><br key={rec.Id}>
+			</template>
+		</div>
+		<!-- List of UnSigned Forms -->
+		<div lwc:elseif={unsignedDeepLinks}>
+				<!-- for spaceman -->
+				<br key={rec.Id}>
+				<template for:each={unsignedDeepLinks} for:item="rec">
+					<!-- form button -->
+					<lightning-button-icon class="slds-m-left_x-small" variant="brand" onclick={handleNavigate} key={rec.Id}
+						value={rec.SPEN_FormDeepLink__c} icon-name="utility:form">&nbsp;</lightning-button-icon>&nbsp;
+					{rec.MasterLabel}
+					<!-- for space -->
+					<br key={rec.Id}><br key={rec.Id}>
+				</template>
+		</div>
+		<!-- Error while retrieving data -->
+		<div lwc:else>
+			<lightning-card variant="Narrow" icon-name="utility:error" title="Error while retrieving Forms">
+				<div class="slds-text-color_destructive">Signed links error: {errorSignedDeepLinks}</div><br>
+				<div class="slds-text-color_destructive">UnSigned links error: {errorUnsignedDeepLinks}</div>
+			</lightning-card>
+		</div>
+	</div>
+	<!-- END SCREEN MENU -->
+
+	<!-- START SCREEN SEARCH PREMISE -->
+	<div lwc:if={screenSearchPremise}>
+			<lightning-layout multiple-rows>
+				<lightning-layout-item size="12" padding="horizontal-small">
+					<div class="slds-text-align_left">
+						<div class="marginBettwenElements slds-m-bottom_x-small" style="justify-content: space-between;width: 100%;">
+							<lightning-record-picker
+								label="Address Search"
+								placeholder="Search for address"
+								object-api-name="SPEN_Premise__c"
+								matching-info={matchingInfo}
+								onchange={onPremiseChange}
+							>
+							</lightning-record-picker>
+							<div lwc:if={graphqlPremiseQueryErrors} class="slds-text-color_destructive">
+								{locationServiceError}
+							</div>
+						</div>
+					</div>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="3" padding="horizontal-small">
+					<div lwc:if={premiseChanged} class="slds-text-align_left">
+						<lightning-input type="text" label="Address" value={premiseAddress} disabled></lightning-input>
+					</div>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="3" padding="horizontal-small">
+					<div lwc:if={premiseChanged} class="slds-text-align_left">
+						<lightning-input type="text" label="Postal code" value={premisePostcode} disabled></lightning-input>
+					</div>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="3" padding="horizontal-small">
+					<div lwc:if={premiseChanged} class="slds-text-align_left">
+						<lightning-input type="text" label="City" value={premiseCity} disabled></lightning-input>
+					</div>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" padding="around-small">
+					<div if:false={premiseChanged} onclick={handleOfflineLinkClick} class="offline_link slds-text-body_small">
+						{offlineWarning}
+					</div>
+				</lightning-layout-item>
+				<lightning-layout-item size="12" padding="around-small">
+					<div class="slds-float_left">
+						<lightning-button variant="base" label="Back" title="Back" onclick={handleBack} class="slds-p-vertical_small slds-m-left_x-small slds-float_left default-margin"></lightning-button>
+					</div>
+					<div lwc:if={premiseChanged} class="slds-float_right">
+						<lightning-button variant="brand" label="Next" title="Next" onclick={handleNext} class="slds-p-vertical_small slds-m-left_x-small slds-float_right default-margin"></lightning-button>
+					</div>
+				</lightning-layout-item>
+			</lightning-layout>
+	</div>
+	<!-- END SCREEN SEARCH PREMISE -->
+</lightning-card>
+</template>

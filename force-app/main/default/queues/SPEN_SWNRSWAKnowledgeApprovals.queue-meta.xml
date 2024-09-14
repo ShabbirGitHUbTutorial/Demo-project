@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Knowledge-SW-NRSWA-Approvals</name>
+    <queueMembers>
+        <users>
+            <user>gpaterson1@spenergynetworks.co.uk.spencrm</user>
+            <user>kimberley.birkett@spenergynetworks.co.uk.spencrm</user>
+            <user>lhamlett@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>KnowledgeArticleVersion</sobjectType>
+    </queueSobject>
+</Queue>

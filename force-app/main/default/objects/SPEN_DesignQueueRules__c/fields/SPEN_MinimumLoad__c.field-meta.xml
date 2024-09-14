@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MinimumLoad__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is for Connection process. CRMD-6827</description>
+    <externalId>false</externalId>
+    <label>Minimum Load</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

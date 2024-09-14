@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CommentsCannotBeBlank</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED( SPEN_Status__c ), OR(  ISPICKVAL(SPEN_Status__c, &quot;Cancelled&quot;) , ISPICKVAL(SPEN_Status__c, &quot;Refused&quot;)), ISBLANK( SPEN_Comments__c ))</errorConditionFormula>
+    <errorDisplayField>SPEN_Comments__c</errorDisplayField>
+    <errorMessage>Note/Comment cannot be blank for Cancelled/Refused status.</errorMessage>
+</ValidationRule>

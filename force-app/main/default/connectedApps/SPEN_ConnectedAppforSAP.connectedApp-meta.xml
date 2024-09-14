@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>aborthwick@spenergynetworks.co.uk</contactEmail>
+    <label>Connected App for SAP</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MITA1TCCAr0CFGrp1DYtDFYeV45wC905wwaT1090MA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJVSzEQMA4GA1UECAwHR0xBU0dPVzEQMA4GA1UEBwwHR0xBU0dPVzENMAsGA1UECgwEU1BFTjEMMAoGA1UECwwDQ1JNMRcwFQYDVQQDDA5TQUxFU0ZPUkNFX1VBVDE9MDsGCSqGSIb3DQEJARYuG1tBG1tCc3Blbi5jcy5jcm0udWF0QHNwZW5lbmVyZ3luZXR3b3Jrcy5jby51azAeFw0yMzAxMzAwOTM2MDVaFw0yNDAxMzAwOTM2MDVaMIGmMQswCQYDVQQGEwJVSzEQMA4GA1UECAwHR0xBU0dPVzEQMA4GA1UEBwwHR0xBU0dPVzENMAsGA1UECgwEU1BFTjEMMAoGA1UECwwDQ1JNMRcwFQYDVQQDDA5TQUxFU0ZPUkNFX1VBVDE9MDsGCSqGSIb3DQEJARYuG1tBG1tCc3Blbi5jcy5jcm0udWF0QHNwZW5lbmVyZ3luZXR3b3Jrcy5jby51azCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALsYMOykGxUgXEDuIMtDiGy++o8EOgN20EdV1kKuCIknyf1ozVErI4SxgQlR3n6FTn5S0tyw9ejbBA/by4M4dq1u1/7JQqFN+eq8i8CcLjv0sSAk3I3k7iHYNMw7kPFkgOPb/YC3VJiRpHrvSjYQS99+LPhNqdWZ5/f6nmbV/luce0K+59v5MYBKd+OeQK/i3s8E2E293MHeMqj8FX2M/4vtjohP2jKMPIQo+fW+m/CklgSlp/1KGbdojLhkDTMnDLEWX8WzluCyODLLIgRY4XgEz3lO1qtzHZkRpWZtg+v38HYdxZ6UzzAQzOeJLbm8X0E9+KWiEI2JriehZo3PEqsCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAq3pn9n8LFBYHb82j1LR9S0lSnfO03pV3mHcEvdNb07LtzyALtS/55B5R5AX34LJaiuYp9q2xbYUoCe3uV07gX3r1Y/i1JG0HMzdbv7vTWXG7fTj8D80R/i7UbWao2hpb7YAZ5GLVFkHVL0V5yIIlr4Pu5zKMrnkWbzLcGR7m6QZdSbs5h3Ry1xttrAzdq7xMgQKXw1euQCjPuPHfV3s9DxXPqm6u0lMl7qgn3aGsxPCWDK2ZJqj1y7b42+dp1HmAdPZUaE1GPVgR+LhUiY1BtHHvJEkVfxCgDEjbQp2piXc8MJvJFJGqp84BNuPBVOSVTslOtK2BP7f1tvgVnEGjJw==</certificate>
+        <consumerKey>3MVG9395hRoMgFO2shyYvKpShhpgHr0A5pfQVR7IFUe8f8SKMZiwbDLfqWusKtP3uhcZDsrIq8yPBfBDBgOwy</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Api</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>SPEN Integration</profileName>
+</ConnectedApp>

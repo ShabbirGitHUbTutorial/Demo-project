@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MandatoryEffectiveToDate</fullName>
+    <active>true</active>
+    <description>&apos;Effective to date&apos; field is mandatory for code 29</description>
+    <errorConditionFormula>IF(
+!IsNull( SPEN_PSRVulnerabilityType__r.Name ) &amp;&amp;
+CONTAINS( SPEN_PSRVulnerabilityType__r.Name ,&apos;29-Families with young children 5 or under&apos;) &amp;&amp;  ISBLANK( SPEN_PSREffectiveToDate__c ), true, false)</errorConditionFormula>
+    <errorMessage>Please Select PSR Effective To Date</errorMessage>
+</ValidationRule>

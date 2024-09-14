@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_WhathasbeenDamaged__c</fullName>
+    <description>CRMD-7691</description>
+    <label>What has been Damaged</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cable</fullName>
+                <default>false</default>
+                <label>Cable</label>
+            </value>
+            <value>
+                <fullName>O/H Line</fullName>
+                <default>false</default>
+                <label>O/H Line</label>
+            </value>
+            <value>
+                <fullName>Cable Head</fullName>
+                <default>false</default>
+                <label>Cable Head</label>
+            </value>
+            <value>
+                <fullName>LV Pillar</fullName>
+                <default>false</default>
+                <label>LV Pillar</label>
+            </value>
+            <value>
+                <fullName>Unmetered Supply</fullName>
+                <default>false</default>
+                <label>Unmetered Supply</label>
+            </value>
+            <value>
+                <fullName>Sub Station</fullName>
+                <default>false</default>
+                <label>Sub Station</label>
+            </value>
+            <value>
+                <fullName>Switch Gear</fullName>
+                <default>false</default>
+                <label>Switch Gear</label>
+            </value>
+            <value>
+                <fullName>Pole</fullName>
+                <default>false</default>
+                <label>Pole</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

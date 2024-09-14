@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_EarthLoopImpedanceZe__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the Earth Loop Impedance (Ze)
+Used in LV Service Termination Survey forms</description>
+    <externalId>false</externalId>
+    <label>Earth loop impedance (Ze)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

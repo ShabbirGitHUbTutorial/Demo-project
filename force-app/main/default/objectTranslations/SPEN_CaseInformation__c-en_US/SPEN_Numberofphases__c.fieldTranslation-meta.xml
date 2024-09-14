@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Number of phases --></label>
+    <name>SPEN_Numberofphases__c</name>
+    <picklistValues>
+        <masterLabel>1</masterLabel>
+        <translation><!-- 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3</masterLabel>
+        <translation><!-- 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Details</masterLabel>
+        <translation><!-- Details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Looped Service</masterLabel>
+        <translation><!-- Looped Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No other issues identified with adequacy or integrity of the DNO service equipment</masterLabel>
+        <translation><!-- No other issues identified with adequacy or integrity of the DNO service equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Premises cut out rating</masterLabel>
+        <translation><!-- Premises cut out rating --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

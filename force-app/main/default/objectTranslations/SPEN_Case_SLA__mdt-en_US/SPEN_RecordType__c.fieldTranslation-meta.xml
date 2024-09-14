@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Record Type --></label>
+    <name>SPEN_RecordType__c</name>
+    <picklistValues>
+        <masterLabel>SPEN_NRSWA</masterLabel>
+        <translation><!-- SPEN_NRSWA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPEN_Query</masterLabel>
+        <translation><!-- SPEN_Query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPEN_Streetworks</masterLabel>
+        <translation><!-- SPEN_Streetworks --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

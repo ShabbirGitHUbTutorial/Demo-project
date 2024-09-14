@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NOS</fullName>
+        <default>false</default>
+        <label>No Supply (Network)</label>
+    </customValue>
+    <customValue>
+        <fullName>EON1</fullName>
+        <default>false</default>
+        <label>No Supply (Other)</label>
+    </customValue>
+    <customValue>
+        <fullName>ENS1</fullName>
+        <default>false</default>
+        <label>No Supply (Single Premise)</label>
+    </customValue>
+    <customValue>
+        <fullName>EOS1</fullName>
+        <default>false</default>
+        <label>No Supply (Off Peak)</label>
+    </customValue>
+    <customValue>
+        <fullName>OUTD</fullName>
+        <default>false</default>
+        <label>Outdoor Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>ENS2</fullName>
+        <default>false</default>
+        <label>Partial No Supply (Comm)</label>
+    </customValue>
+    <customValue>
+        <fullName>PTSA</fullName>
+        <default>false</default>
+        <label>Potential Theft SP Apparatus</label>
+    </customValue>
+    <customValue>
+        <fullName>ESF3</fullName>
+        <default>false</default>
+        <label>Shocks From Equipment (External)</label>
+    </customValue>
+    <customValue>
+        <fullName>ESF2</fullName>
+        <default>false</default>
+        <label>Shocks From Equipment (Internal)</label>
+    </customValue>
+    <customValue>
+        <fullName>SLER</fullName>
+        <default>false</default>
+        <label>Street Lighting Emerg Response</label>
+    </customValue>
+    <customValue>
+        <fullName>SLHP</fullName>
+        <default>false</default>
+        <label>Street Lighting High Pri Fault</label>
+    </customValue>
+    <customValue>
+        <fullName>TREE</fullName>
+        <default>false</default>
+        <label>Tree Cutting Required</label>
+    </customValue>
+    <customValue>
+        <fullName>UESS</fullName>
+        <default>false</default>
+        <label>Unauthorised S/S Entry</label>
+    </customValue>
+    <customValue>
+        <fullName>UMTR</fullName>
+        <default>false</default>
+        <label>Unmetered Supplies - Street Furniture</label>
+    </customValue>
+    <customValue>
+        <fullName>ESF5</fullName>
+        <default>false</default>
+        <label>Wires Hanging Down From Meter</label>
+    </customValue>
+    <customValue>
+        <fullName>EHV</fullName>
+        <default>false</default>
+        <label>EHV - No Customers</label>
+    </customValue>
+    <customValue>
+        <fullName>NPAO</fullName>
+        <default>false</default>
+        <label>No Supply (Pro-Active Contact)</label>
+    </customValue>
+    <customValue>
+        <fullName>NSDA</fullName>
+        <default>false</default>
+        <label>No Supply (Delayed Attendance)</label>
+    </customValue>
+    <customValue>
+        <fullName>MCAS</fullName>
+        <default>false</default>
+        <label>MOP CAT- A Smart</label>
+    </customValue>
+    <customValue>
+        <fullName>MCAN</fullName>
+        <default>false</default>
+        <label>MOP CAT - A Non Smart</label>
+    </customValue>
+    <customValue>
+        <fullName>IDNO</fullName>
+        <default>false</default>
+        <label>IDNO-GTC</label>
+    </customValue>
+    <customValue>
+        <fullName>SMLG</fullName>
+        <default>false</default>
+        <label>SMLG - Confrimed Off Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>NSOS</fullName>
+        <default>false</default>
+        <label>No Supply (Online) SP</label>
+    </customValue>
+    <customValue>
+        <fullName>NSON</fullName>
+        <default>false</default>
+        <label>No Supply (Online) Network</label>
+    </customValue>
+    <customValue>
+        <fullName>NCD</fullName>
+        <default>false</default>
+        <label>Neutral Current Diversion</label>
+    </customValue>
+    <customValue>
+        <fullName>MET</fullName>
+        <default>false</default>
+        <label>Smart Meter AD1 No Supply Alert</label>
+    </customValue>
+    <customValue>
+        <fullName>NOS4</fullName>
+        <default>false</default>
+        <label>No Supply (SP) auto call IVR</label>
+    </customValue>
+    <customValue>
+        <fullName>NOS1</fullName>
+        <default>false</default>
+        <label>No Supply (IVR) Network</label>
+    </customValue>
+    <customValue>
+        <fullName>NOS2</fullName>
+        <default>false</default>
+        <label>No Supply (IVR) Single Premise</label>
+    </customValue>
+    <customValue>
+        <fullName>FDAM</fullName>
+        <default>false</default>
+        <label>Damaged Equip/ 3rd Party Dam</label>
+    </customValue>
+    <customValue>
+        <fullName>EDIS</fullName>
+        <default>false</default>
+        <label>Emergency Disconnection</label>
+    </customValue>
+    <customValue>
+        <fullName>CHCK</fullName>
+        <default>false</default>
+        <label>Check For Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>ESF4</fullName>
+        <default>false</default>
+        <label>Flooding</label>
+    </customValue>
+    <customValue>
+        <fullName>GS6</fullName>
+        <default>false</default>
+        <label>GS6 Guidance Request</label>
+    </customValue>
+    <customValue>
+        <fullName>SMTR</fullName>
+        <default>false</default>
+        <label>I Hazard - Smart Meter</label>
+    </customValue>
+    <customValue>
+        <fullName>COND</fullName>
+        <default>false</default>
+        <label>Low/ Grounded Conductors</label>
+    </customValue>
+    <customValue>
+        <fullName>ESF7</fullName>
+        <default>false</default>
+        <label>Meter Damage/ Interference</label>
+    </customValue>
+    <customValue>
+        <fullName>EOTH</fullName>
+        <default>false</default>
+        <label>Miscellaneous</label>
+    </customValue>
+    <customValue>
+        <fullName>EOS2</fullName>
+        <default>false</default>
+        <label>No Htg/ HotWat White Meter</label>
+    </customValue>
+    <customValue>
+        <fullName>SREQ</fullName>
+        <default>false</default>
+        <label>Shrouding Request</label>
+    </customValue>
+    <customValue>
+        <fullName>FIR1</fullName>
+        <default>false</default>
+        <label>Fire Call</label>
+    </customValue>
+    <customValue>
+        <fullName>ESF1</fullName>
+        <default>false</default>
+        <label>Flickering Lights</label>
+    </customValue>
+    <customValue>
+        <fullName>FIR2</fullName>
+        <default>false</default>
+        <label>Smell of Burning</label>
+    </customValue>
+    <customValue>
+        <fullName>KEY</fullName>
+        <default>false</default>
+        <label>Key Meter</label>
+    </customValue>
+    <customValue>
+        <fullName>HELI</fullName>
+        <default>false</default>
+        <label>High Earth Reading</label>
+    </customValue>
+    <customValue>
+        <fullName>ESF6</fullName>
+        <default>false</default>
+        <label>Noisy Meter</label>
+    </customValue>
+    <customValue>
+        <fullName>Fault Flow</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fault Flow</label>
+    </customValue>
+    <customValue>
+        <fullName>No Supply (IVR)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>No Supply (IVR)</label>
+    </customValue>
+    <customValue>
+        <fullName>NOS11</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>No Supply (IVR) Network1</label>
+    </customValue>
+    <masterLabel>Case Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source --></label>
+    <name>SPEN_Source__c</name>
+    <picklistValues>
+        <masterLabel>Email LV Claims</masterLabel>
+        <translation><!-- Email LV Claims --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email North</masterLabel>
+        <translation><!-- Email North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email South</masterLabel>
+        <translation><!-- Email South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External</masterLabel>
+        <translation><!-- External --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L&amp;P</masterLabel>
+        <translation><!-- L&amp;P --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

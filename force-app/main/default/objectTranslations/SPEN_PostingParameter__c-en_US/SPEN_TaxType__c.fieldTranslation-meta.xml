@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tax Type --></label>
+    <name>SPEN_TaxType__c</name>
+    <picklistValues>
+        <masterLabel>FT Fleet VAT Shared Use (20%)</masterLabel>
+        <translation><!-- FT Fleet VAT Shared Use (20%) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S9 Standard Rated VAT (20%)</masterLabel>
+        <translation><!-- S9 Standard Rated VAT (20%) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Exempt (0%)</masterLabel>
+        <translation><!-- SE Exempt (0%) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SW Outside of the Scope (0%)</masterLabel>
+        <translation><!-- SW Outside of the Scope (0%) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

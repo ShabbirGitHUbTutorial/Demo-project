@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Premise</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Premises</value>
+    </caseValues>
+    <layouts>
+        <layout>Premise Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPEN Premise</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Premise Details --></label>
+            <section>Premise Details</section>
+        </sections>
+        <sections>
+            <label><!-- Require below field updates in ADQM (Send to Data team) --></label>
+            <section>Require below field updates in ADQM (Send to Data team)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPEN Premise Connections CRM Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Premise Details --></label>
+            <section>Premise Details</section>
+        </sections>
+        <sections>
+            <label><!-- Require below field updates in ADQM (Send to Data team) --></label>
+            <section>Require below field updates in ADQM (Send to Data team)</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Create Contact Premise --></label>
+        <name>SPEN_CreateContactPremise</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Premise --></label>
+        <name>SPEN_UpdatePremise</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Create new record type for SPEN Premise --></description>
+        <label><!-- SPEN Premise --></label>
+        <name>SPEN_Premise</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type is for Connections process --></description>
+        <label><!-- SPEN Premise Connections CRM --></label>
+        <name>SPEN_PremiseConnectionsCRM</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have Sufficient Permission to Change. --></errorMessage>
+        <name>SPEN_PremiseIDValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Premise Name or Premise Number --></errorMessage>
+        <name>SPEN_PremiseNameOrNumberValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only numeric values are allowed for UPRN --></errorMessage>
+        <name>UPRN_Only_Numeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only numeric values are allowed for X Co-Ordinate --></errorMessage>
+        <name>X_CoOrdinate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only numeric values are allowed for Y Co-Ordinate --></errorMessage>
+        <name>Y_CoOrdinate</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New --></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPEN_SubmitAmendedCustomerDetails --></label>
+        <name>SPEN_SubmitAmendedCustomerDetails</name>
+    </webLinks>
+</CustomObjectTranslation>

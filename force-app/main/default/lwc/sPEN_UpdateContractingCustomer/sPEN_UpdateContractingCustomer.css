@@ -1,0 +1,6 @@
+:host {
+    --slds-c-modal-header-color-background: #5d9732;
+	--slds-c-modal-header-text-color: white;
+	--slds-c-modal-heading-font-size: 1rem;
+	--slds-c-modal-heading-font-weight: bold;
+}

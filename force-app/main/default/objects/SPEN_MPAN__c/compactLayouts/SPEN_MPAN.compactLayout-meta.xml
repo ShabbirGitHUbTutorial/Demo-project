@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MPAN</fullName>
+    <fields>SPEN_AccountNumberMPAN__c</fields>
+    <fields>SPEN_PremiseRetailer__c</fields>
+    <fields>SPEN_Status__c</fields>
+    <label>SPEN MPAN</label>
+</CompactLayout>

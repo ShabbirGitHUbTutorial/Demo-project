@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RestrictContactPremiseUpdates</fullName>
+    <active>true</active>
+    <description>Restrict Contact Premise Updates for ADQM migrated data</description>
+    <errorConditionFormula>AND
+(
+NOT(ISNEW()),
+NOT(ISCHANGED(SPEN_Role__c)),
+OR
+(
+ISCHANGED(SPEN_Premise__c) 
+),
+NOT(ISBLANK(TEXT(SPEN_Role__c)))
+)</errorConditionFormula>
+    <errorMessage>You are not authorized to change Premise details on ADQM migrated data.</errorMessage>
+</ValidationRule>

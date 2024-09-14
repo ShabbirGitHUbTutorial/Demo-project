@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Jobs</value>
+    </caseValues>
+    <layouts>
+        <layout>Job Layout</layout>
+        <sections>
+            <label><!-- Completion Certificate Information --></label>
+            <section>Completion Certificate Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Design --></label>
+            <section>Design</section>
+        </sections>
+        <sections>
+            <label><!-- Job Dates --></label>
+            <section>Job Dates</section>
+        </sections>
+        <sections>
+            <label><!-- L&amp;P Users --></label>
+            <section>L&amp;P Users</section>
+        </sections>
+        <sections>
+            <label><!-- Land and Planning Use Only --></label>
+            <section>Land and Planning Use Only</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Title Report (Scotland) --></label>
+            <section>Legal Title Report (Scotland)</section>
+        </sections>
+        <sections>
+            <label><!-- Project Costs --></label>
+            <section>Project Costs</section>
+        </sections>
+        <sections>
+            <label><!-- Rejection Information --></label>
+            <section>Rejection Information</section>
+        </sections>
+        <sections>
+            <label><!-- Requestor Comments/Notes --></label>
+            <section>Requestor Comments/Notes</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Cancel Job --></label>
+        <name>Cancel_Job</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage Documents --></label>
+        <name>Manage_Documents</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- QA Job --></label>
+        <name>QA_Job</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Release Job --></label>
+        <name>Release_Job</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Review Job --></label>
+        <name>Review</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SPEN_JobEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Redesign Request --></label>
+        <name>SPEN_JobRedesignRequest</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Release - Pending Invoicing --></label>
+        <name>SPEN_ReleasePendingInvoicing</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Setup Land Right --></label>
+        <name>SPEN_SetupLandRight</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit Job --></label>
+        <name>Submit</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>
+            <!-- For Customer Type as Customer connection please add the details for below fields:
+Customer, Customer Address, Customer Phone, Customer Email -->
+        </errorMessage>
+        <name>SPEN_CustomerDetailsMandate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter valid phone number --></errorMessage>
+        <name>SPEN_CustomerPhoneValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter values for Cancelled by and Cancelled Reason to cancel the job. --></errorMessage>
+        <name>SPEN_JobCancellationMandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensure Format of OS Grid Reference is &apos;NNNNNN,NNNNNN&apos; --></errorMessage>
+        <name>SPEN_OSGridReferenceInputValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All fields are required for Review status --></errorMessage>
+        <name>SPEN_RequiredFieldValidationOnReview</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Please provide the value for the following fields:
+Customer Type,
+Control Number,
+District,
+OS Grid reference
+License Area
+Work Category
+Job Title
+Customer type -->
+        </errorMessage>
+        <name>SPEN_RequiredFieldsforLiveJob</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add at least one user in L&amp;P user section --></errorMessage>
+        <name>SPEN_RequiredUserforLive</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_Acknowledgement_Letters --></label>
+        <name>Conga_Composer_Acknowledgement_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Closure_Letters --></label>
+        <name>Conga_Composer_Closure_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Communication_Log --></label>
+        <name>Conga_Composer_Communication_Log</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Further_Information_Required_Letters_Job_Level --></label>
+        <name>Conga_Composer_Further_Information_Required_Letters_Job_Level</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPEN_New --></label>
+        <name>SPEN_New</name>
+    </webLinks>
+</CustomObjectTranslation>

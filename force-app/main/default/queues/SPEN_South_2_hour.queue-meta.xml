@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Streetwork-SPM-2 Hours</name>
+    <queueMembers>
+        <users>
+            <user>amolloy@spenergynetworks.co.uk.spencrm</user>
+            <user>alison.stewart@spenergynetworks.co.uk.spencrm</user>
+            <user>amackinnon@spenergynetworks.co.uk</user>
+            <user>castle@spenergynetworks.co.uk.spencrm</user>
+            <user>jevans@spenergynetworks.co.uk.spencrm</user>
+            <user>kimberley.birkett@spenergynetworks.co.uk.spencrm</user>
+            <user>n.brown@spenergynetworks.co.uk.spencrm</user>
+            <user>natalie.kean@spenergynetworks.co.uk.spencrm</user>
+            <user>nikki.wilde@spenergynetworks.co.uk.spencrm</user>
+            <user>p.morris@spenergynetworks.co.uk.spencrm</user>
+            <user>r.sides@spenergynetworks.co.uk.spencrm</user>
+            <user>ssadler@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_SW_NRSWA_Email_Work_Item_Routing_Config</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

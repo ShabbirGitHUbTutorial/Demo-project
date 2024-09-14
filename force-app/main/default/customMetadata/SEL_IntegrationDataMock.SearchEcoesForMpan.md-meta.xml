@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SearchEcoesForMpan</label>
+    <protected>false</protected>
+    <values>
+        <field>SEL_Body__c</field>
+        <value xsi:type="xsd:string">{
+&quot;Errors&quot;: [],
+
+&quot;ParameterSet&quot;:{
+&quot;Parameters&quot;:[
+          {
+            &quot;Key&quot;: &quot;Postcode&quot;,
+            &quot;Value&quot;: &quot;G11 1GG&quot;
+          },
+          {
+            &quot;Key&quot;: &quot;BuildingNumber&quot;,
+            &quot;Value&quot;: &quot;11&quot;
+          },
+          {
+            &quot;Key&quot;: &quot;SubBuilding&quot;,
+            &quot;Value&quot;: null
+          },
+          {
+            &quot;Key&quot;: &quot;BuildingName&quot;,
+            &quot;Value&quot;: null
+          },
+          {
+            &quot;Key&quot;: &quot;DependentThoroughfare&quot;,
+            &quot;Value&quot;: null
+          },
+          {
+            &quot;Key&quot;: &quot;ThoroughfareName&quot;,
+            &quot;Value&quot;: null
+          },
+          {
+            &quot;Key&quot;: &quot;DoubleDependentLocality&quot;,
+            &quot;Value&quot;: null
+          },
+          {
+            &quot;Key&quot;: &quot;DependentLocality&quot;,
+            &quot;Value&quot;: null
+          },
+          {
+            &quot;Key&quot;: &quot;PostTown&quot;,
+            &quot;Value&quot;: null
+          },
+          {
+            &quot;Key&quot;: &quot;ReturnDataForSingleResult&quot;,
+            &quot;Value&quot;: &quot;true&quot;
+          },
+          {
+            &quot;Key&quot;: &quot;MeterSerialNumber&quot;,
+            &quot;Value&quot;: null
+          }
+]
+},
+&quot;UtilityAddressMatches&quot;: [
+{
+&quot;AddressDetails&quot;: [
+            {
+              &quot;Key&quot;: &quot;postcode&quot;,
+              &quot;Value&quot;: &quot;G11 1GG&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;trading_status_efd&quot;,
+              &quot;Value&quot;: &quot;19960401&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;profile_class&quot;,
+              &quot;Value&quot;: &quot;01&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;profile_class_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;meter_timeswitch_class&quot;,
+              &quot;Value&quot;: &quot;801&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;meter_timeswitch_class_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;line_loss_factor&quot;,
+              &quot;Value&quot;: &quot;100&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;line_loss_factor_efd&quot;,
+              &quot;Value&quot;: &quot;19960401&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;standard_settlement_configuration&quot;,
+              &quot;Value&quot;: &quot;0393&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;standard_settlement_configuration_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;energisation_status&quot;,
+              &quot;Value&quot;: &quot;E&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;gsp_group_efd&quot;,
+              &quot;Value&quot;: &quot;19960401&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;data_aggregator_mpid&quot;,
+              &quot;Value&quot;: &quot;UDMS&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;data_aggregator_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;data_collector_mpid&quot;,
+              &quot;Value&quot;: &quot;UDMS&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;data_collector_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;supplier_mpid&quot;,
+              &quot;Value&quot;: &quot;BGAS&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;supplier_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;energisation_status_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;meter_operator_mpid&quot;,
+              &quot;Value&quot;: &quot;UPLD&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;meter_operator_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;measurement_class&quot;,
+              &quot;Value&quot;: &quot;A&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;measurement_class_efd&quot;,
+              &quot;Value&quot;: &quot;20211105&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;green_deal_in_effect&quot;,
+              &quot;Value&quot;: &quot;0&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;smso_mpid&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;smso_efd&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;dcc_service_flag&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;dcc_service_flag_efd&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;ihd_status&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;ihd_status_efd&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;smets_version&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;metered_indicator&quot;,
+              &quot;Value&quot;: &quot;T&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;metered_indicator_efd&quot;,
+              &quot;Value&quot;: &quot;20190622&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;metered_indicator_etd&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;consumer_type&quot;,
+              &quot;Value&quot;: &quot;Domestic&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;domestic_consumer_indicator&quot;,
+              &quot;Value&quot;: &quot;T&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;relationship_status_indicator&quot;,
+              &quot;Value&quot;: &quot;None&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;rmp_state&quot;,
+              &quot;Value&quot;: &quot;O&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;rmp_efd&quot;,
+              &quot;Value&quot;: &quot;19960401&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;css_supplier_mpid&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;css_supply_start_date&quot;,
+              &quot;Value&quot;: null
+            },
+            {
+              &quot;Key&quot;: &quot;mpancore&quot;,
+              &quot;Value&quot;: &quot;1800017037796&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;meter_serial_number&quot;,
+              &quot;Value&quot;: &quot;A11X004040&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;meter_install_date&quot;,
+              &quot;Value&quot;: &quot;20110405&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;meter_type&quot;,
+              &quot;Value&quot;: &quot;N&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;map_mpid&quot;,
+              &quot;Value&quot;: &quot;ONST&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;map_mpid_efd&quot;,
+              &quot;Value&quot;: &quot;20110405&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;installing_supplier_mpid&quot;,
+              &quot;Value&quot;: &quot;BGAS&quot;
+            }
+],
+&quot;UtilityType&quot;: null
+}
+]
+}</value>
+    </values>
+    <values>
+        <field>SEL_Header__c</field>
+        <value xsi:type="xsd:string">{&quot;RequestDate&quot;: &quot;20221115 12:24:45.PM&quot;,
+    &quot;RequestId&quot;: 190518530,
+    &quot;ResponseTime&quot;: &quot;593.8763&quot;,
+    &quot;VersionNumber&quot;: &quot;2.0.0.0;Instance=LIVE&quot;}</value>
+    </values>
+    <values>
+        <field>SEL_StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>SEL_Status__c</field>
+        <value xsi:type="xsd:string">Success</value>
+    </values>
+</CustomMetadata>

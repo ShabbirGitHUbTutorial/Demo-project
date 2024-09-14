@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TotalEstimated__c</fullName>
+    <externalId>false</externalId>
+    <formula>SPEN_Stage1Estimate__c + SPEN_Stage2Estimate__c + SPEN_InterimEstimate__c + SPEN_LandownerLegalEstimate__c + SPEN_PostConstructionEstimate__c + SPEN_ServitudeValueEstimate__c + SPEN_SigningIncentiveEstimate__c + SPEN_SPENLegalEstimate__c + SPEN_TCCEstimate__c + SPEN_ResourceEstimate__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Estimated</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

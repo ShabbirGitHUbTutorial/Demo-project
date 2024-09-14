@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_BudgetType__c</fullName>
+    <label>Budget Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Capex</fullName>
+                <default>false</default>
+                <label>Capex</label>
+            </value>
+            <value>
+                <fullName>Estates (NTS From Capex Budget)</fullName>
+                <default>false</default>
+                <label>Estates (NTS From Capex Budget)</label>
+            </value>
+            <value>
+                <fullName>Estates (PO&apos;s From Capex Budget)</fullName>
+                <default>false</default>
+                <label>Estates (PO&apos;s From Capex Budget)</label>
+            </value>
+            <value>
+                <fullName>Estates (PO &amp; NTS - Wayleave Budget)</fullName>
+                <default>false</default>
+                <label>Estates (PO &amp; NTS - Wayleave Budget)</label>
+            </value>
+            <value>
+                <fullName>Rechargeable</fullName>
+                <default>false</default>
+                <label>Rechargeable</label>
+            </value>
+            <value>
+                <fullName>Wayleave Budget</fullName>
+                <default>false</default>
+                <label>Wayleave Budget</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

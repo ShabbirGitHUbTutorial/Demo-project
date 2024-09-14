@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Role --></label>
+    <name>SPEN_Role__c</name>
+    <picklistValues>
+        <masterLabel>Consultant</masterLabel>
+        <translation><!-- Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor</masterLabel>
+        <translation><!-- Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developer</masterLabel>
+        <translation><!-- Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrician</masterLabel>
+        <translation><!-- Electrician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Householder</masterLabel>
+        <translation><!-- Householder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICP</masterLabel>
+        <translation><!-- ICP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IDNO</masterLabel>
+        <translation><!-- IDNO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landlord</masterLabel>
+        <translation><!-- Landlord --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Authority</masterLabel>
+        <translation><!-- Local Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main Contact</masterLabel>
+        <translation><!-- Main Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Property Owner</masterLabel>
+        <translation><!-- Property Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relative</masterLabel>
+        <translation><!-- Relative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Stakeholder</masterLabel>
+        <translation><!-- Secondary Stakeholder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solicitor / Lawyer</masterLabel>
+        <translation><!-- Solicitor / Lawyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tenant</masterLabel>
+        <translation><!-- Tenant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Land Owner</masterLabel>
+        <translation><!-- Third Party Land Owner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

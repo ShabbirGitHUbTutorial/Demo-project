@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Land Right</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Land Rights</value>
+    </caseValues>
+    <layouts>
+        <layout>Land Interest Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Redesign Information --></label>
+            <section>Redesign Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Manage Documents --></label>
+        <name>Manage_Documents</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Change Consent Type --></label>
+        <name>SPEN_ChangeConsentType</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Configure Contracting --></label>
+        <name>SPEN_Configure_Contracting</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Redesign Request --></label>
+        <name>SPEN_LIRedesignRequest</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SPEN_LandRightEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Manage Land Contacts --></label>
+        <name>SPEN_ManageLandContacts</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send to SAP RE --></label>
+        <name>SPEN_SendToSAPRE</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Synchronise Contract Status --></label>
+        <name>SPEN_SyncContractStatus</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Existing/Refurb --></label>
+        <name>SPEN_Existing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Permanent Land Right --></label>
+        <name>SPEN_Servitude</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Statutory Land Right --></label>
+        <name>SPEN_Statutory</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wayleave --></label>
+        <name>SPEN_Wayleave</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If you need to change the Consent Type within the same category, please close the current Land Right and create a new Land Right with the correct Consent Type. --></errorMessage>
+        <name>SPEN_ConsentTypeUpdate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Heads of Terms Agreed Date must be completed before this information can be completed. --></errorMessage>
+        <name>SPEN_HeadsOfTermsAgreedDateBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Heads of Terms Agreed Date must be completed before this information can be completed. --></errorMessage>
+        <name>SPEN_HeadsOfTermsAgreedDateIsNull</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Internal Legal Instruction Date must be completed before this information can be completed --></errorMessage>
+        <name>SPEN_InternalLegalInstructionDaIsNull</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The date entered must be equal to or greater than the date HoTs were agreed --></errorMessage>
+        <name>SPEN_InternalLegalInstructionDateRange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not update Land Right record as this is already Closed/Completed. --></errorMessage>
+        <name>SPEN_LandInterest_Closed_NonEditable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The date entered must be later than HoTs Agreed date and Internal Legal Instruction Date. --></errorMessage>
+        <name>SPEN_SignedLegalDocumentReturnedRange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Wayleave Status cannot be marked as Consent Acquired until RiR Received field has dates and Signed RiR Provided is checked. --></errorMessage>
+        <name>SPEN_WayleaveConsentAcquiredFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a reason for closure --></errorMessage>
+        <name>SPEN_WayleaveLIClosure</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_Closure_Letters_at_Land_Right_Level --></label>
+        <name>Conga_Composer_Closure_Letters_at_Land_Right_Level</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Communication_log --></label>
+        <name>Conga_Composer_Communication_log</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Export_SAP_RE_Contract --></label>
+        <name>Conga_Composer_Export_SAP_RE_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Further_Information_Required_Letters --></label>
+        <name>Conga_Composer_Further_Information_Required_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Generate_Documents --></label>
+        <name>Conga_Composer_Generate_Documents</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Legal_Templates --></label>
+        <name>Conga_Composer_Legal_Templates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Wayleave_Enclosed_Letters --></label>
+        <name>Conga_Composer_Wayleave_Enclosed_Letters</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPEN_New --></label>
+        <name>SPEN_New</name>
+    </webLinks>
+</CustomObjectTranslation>

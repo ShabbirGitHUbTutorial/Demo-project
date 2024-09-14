@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Case_SW_SPD_Minor_TS</label>
+    <protected>false</protected>
+    <values>
+        <field>Number_of_Days__c</field>
+        <value xsi:type="xsd:double">5.0</value>
+    </values>
+    <values>
+        <field>SPEN_BusinessHours__c</field>
+        <value xsi:type="xsd:string">SPD SW/NRSWA Business Hours</value>
+    </values>
+    <values>
+        <field>SPEN_ClockEndTime__c</field>
+        <value xsi:type="xsd:string">16,30,0,0</value>
+    </values>
+    <values>
+        <field>SPEN_ClockStartTime__c</field>
+        <value xsi:type="xsd:string">8,0,0,0</value>
+    </values>
+    <values>
+        <field>SPEN_Excavation_Required__c</field>
+        <value xsi:type="xsd:string">No</value>
+    </values>
+    <values>
+        <field>SPEN_Notice_Type__c</field>
+        <value xsi:type="xsd:string">Minor</value>
+    </values>
+    <values>
+        <field>SPEN_NumberofHours__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_QueryType__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_RecordType__c</field>
+        <value xsi:type="xsd:string">SPEN_Streetworks</value>
+    </values>
+    <values>
+        <field>SPEN_SLA__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SPEN_SPD_SPM__c</field>
+        <value xsi:type="xsd:string">SPD</value>
+    </values>
+    <values>
+        <field>SPEN_Sensitivity__c</field>
+        <value xsi:type="xsd:string">T/S</value>
+    </values>
+    <values>
+        <field>SPEN_WorkItemRouting__c</field>
+        <value xsi:type="xsd:string">Streetworks - 5 Working Days</value>
+    </values>
+</CustomMetadata>

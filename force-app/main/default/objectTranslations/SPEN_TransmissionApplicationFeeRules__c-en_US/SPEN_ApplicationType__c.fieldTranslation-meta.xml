@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Application Type --></label>
+    <name>SPEN_ApplicationType__c</name>
+    <picklistValues>
+        <masterLabel>BEGA (Dist)</masterLabel>
+        <translation><!-- BEGA (Dist) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEGA (Trans)</masterLabel>
+        <translation><!-- BEGA (Trans) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BELLA (Dist)</masterLabel>
+        <translation><!-- BELLA (Dist) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BELLA (Trans)</masterLabel>
+        <translation><!-- BELLA (Trans) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct</masterLabel>
+        <translation><!-- Direct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Onshore Supply Point</masterLabel>
+        <translation><!-- New Onshore Supply Point --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOW</masterLabel>
+        <translation><!-- SOW --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

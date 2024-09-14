@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Creates the custom notification record. Used to send a Field Service Mobile app notification and push notifcation.</description>
+        <name>Send_Overdue_Notification</name>
+        <label>Send Overdue Notification</label>
+        <locationX>50</locationX>
+        <locationY>792</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <elementReference>Custom_Custom_Notification_Type.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>notificationRecipients</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <stringValue>Item Return Warning</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <elementReference>variableBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <description>Puts the name (Type) of the item in the body of the notifcation.</description>
+        <name>Assign_Body</name>
+        <label>Assign Body</label>
+        <locationX>50</locationX>
+        <locationY>576</locationY>
+        <assignmentItems>
+            <assignToReference>variableBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>{!$Record.SPEN_Type__c} is due for return.</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Custom_Custom_Notification_Type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the owner of the record as the mobile app notifcation receiver.</description>
+        <name>Assign_Recipient</name>
+        <label>Assign Recipient</label>
+        <locationX>50</locationX>
+        <locationY>468</locationY>
+        <assignmentItems>
+            <assignToReference>notificationRecipients</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_Body</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Decides if the item is the correct record type and if the Safety Check Date field or the Expected Return Date field are completed as well as being 3 or less days away.</description>
+        <name>Is_Compliance_Stores_and_Upcoming_Overdue</name>
+        <label>Is Compliance Stores and Upcoming/Overdue</label>
+        <locationX>182</locationX>
+        <locationY>360</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>1 AND ((2 AND 4) OR (3 AND 5))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Record_Type_for_Complaince_Stores_Serialized_Products.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SPEN_Safety_Check_Date__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>TODAY_PLUS3</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SPEN_Expected_Return_Date__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>TODAY_PLUS3</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SPEN_Safety_Check_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SPEN_Expected_Return_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Recipient</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Flow to send custom notifications and push notifications to Field Service Mobile app users. Runs daily.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Formula to calculate the date that notifications should start going out, 3 days in the future.</description>
+        <name>TODAY_PLUS3</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() +3</expression>
+    </formulas>
+    <interviewLabel>Compliance Stores - Overdue Notification and Escalation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Compliance Stores - Overdue Notification and Escalation - Mobile</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the notification type for SPEN custom mobile notifcations. Used to send notification in the following action.</description>
+        <name>Custom_Custom_Notification_Type</name>
+        <label>Custom Custom Notification Type</label>
+        <locationX>50</locationX>
+        <locationY>684</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Send_Overdue_Notification</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Overdue_Item_Notification_Mobile</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the Compliance Stores record type for serialised products. Used in Get Records to find only Compliance Stores items.</description>
+        <name>Get_Record_Type_for_Complaince_Stores_Serialized_Products</name>
+        <label>Get Record Type for Complaince Stores Serialized Products</label>
+        <locationX>182</locationX>
+        <locationY>252</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Compliance_Stores_and_Upcoming_Overdue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SerializedProduct</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Compliance_Stores</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Record_Type_for_Complaince_Stores_Serialized_Products</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Item_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Booked Out</stringValue>
+            </value>
+        </filters>
+        <object>SerializedProduct</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2024-04-04</startDate>
+            <startTime>07:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Collection variable that is used to send the notification.</description>
+        <name>notificationRecipients</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Text variable to hold the body of the notification.</description>
+        <name>variableBody</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

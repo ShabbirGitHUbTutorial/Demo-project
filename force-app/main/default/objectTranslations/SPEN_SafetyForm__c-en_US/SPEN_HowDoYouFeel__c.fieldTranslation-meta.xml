@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- How do you feel? --></label>
+    <name>SPEN_HowDoYouFeel__c</name>
+    <picklistValues>
+        <masterLabel>Active, alert or wide awake</masterLabel>
+        <translation><!-- Active, alert or wide awake --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exhausted and in urgent need of rest</masterLabel>
+        <translation><!-- Exhausted and in urgent need of rest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Functioning at a good level, able to concentrate but not at peak</masterLabel>
+        <translation><!-- Functioning at a good level, able to concentrate but not at peak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Groggy and finding it difficult to concentrate</masterLabel>
+        <translation><!-- Groggy and finding it difficult to concentrate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tired and not fully alert</masterLabel>
+        <translation><!-- Tired and not fully alert --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

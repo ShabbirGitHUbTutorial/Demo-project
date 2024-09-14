@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SDIFGetTownZoneList</label>
+    <protected>false</protected>
+    <values>
+        <field>SEL_Body__c</field>
+        <value xsi:type="xsd:string">{
+    &quot;APIName&quot;   :   &quot;SDIFGetTownZoneList&quot;,
+    &quot;operatingZoneList&quot;:  [      
+	{&quot;ozId&quot;:&quot;OZ00&quot;,&quot;ozName&quot;:&quot;UNKNOWN&quot;,&quot;ozParentId&quot;:&quot;ZW01&quot;,&quot;ozType&quot;:&quot;Operating&quot;},{&quot;ozId&quot;:&quot;OZ01&quot;,&quot;ozName&quot;:&quot;LANARK NORTH&quot;,&quot;ozParentId&quot;:&quot;ZW11&quot;,&quot;ozType&quot;:&quot;Operating&quot;}
+    ]
+}</value>
+    </values>
+    <values>
+        <field>SEL_Header__c</field>
+        <value xsi:type="xsd:string">{&quot;RequestDate&quot;: &quot;20221115 12:24:45.PM&quot;,
+&quot;RequestId&quot;: 190518530,
+&quot;ResponseTime&quot;: &quot;593.8763&quot;,
+&quot;VersionNumber&quot;: &quot;2.0.0.0;Instance=LIVE&quot;}</value>
+    </values>
+    <values>
+        <field>SEL_StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>SEL_Status__c</field>
+        <value xsi:type="xsd:string">Success</value>
+    </values>
+</CustomMetadata>

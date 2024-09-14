@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Stage --></label>
+    <name>SPEN_Stage__c</name>
+    <picklistValues>
+        <masterLabel>MTM 1</masterLabel>
+        <translation><!-- MTM 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM 2</masterLabel>
+        <translation><!-- MTM 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM 3</masterLabel>
+        <translation><!-- MTM 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM 4</masterLabel>
+        <translation><!-- MTM 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM 5</masterLabel>
+        <translation><!-- MTM 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM 6</masterLabel>
+        <translation><!-- MTM 6 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

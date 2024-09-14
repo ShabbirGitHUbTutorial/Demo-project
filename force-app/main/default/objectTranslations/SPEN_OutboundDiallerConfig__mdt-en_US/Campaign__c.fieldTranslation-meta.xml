@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Campaign --></label>
+    <name>Campaign__c</name>
+    <picklistValues>
+        <masterLabel>Stage 1</masterLabel>
+        <translation><!-- Stage 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage 1 Retry</masterLabel>
+        <translation><!-- Stage 1 Retry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage 2</masterLabel>
+        <translation><!-- Stage 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage 2 Retry</masterLabel>
+        <translation><!-- Stage 2 Retry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage 3</masterLabel>
+        <translation><!-- Stage 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage 3 Retry</masterLabel>
+        <translation><!-- Stage 3 Retry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage 4</masterLabel>
+        <translation><!-- Stage 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage 4 Retry</masterLabel>
+        <translation><!-- Stage 4 Retry --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

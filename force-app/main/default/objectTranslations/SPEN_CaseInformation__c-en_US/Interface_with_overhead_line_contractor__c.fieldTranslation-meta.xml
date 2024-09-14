@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Interface with overhead line contractor --></label>
+    <name>Interface_with_overhead_line_contractor__c</name>
+</CustomFieldTranslation>

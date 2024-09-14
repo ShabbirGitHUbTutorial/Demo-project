@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Agreed Appointment Time Band --></label>
+    <name>SPEN_CustomerAgreedAppointmentTimeBand__c</name>
+    <picklistValues>
+        <masterLabel>2H</masterLabel>
+        <translation><!-- 2H --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AM</masterLabel>
+        <translation><!-- AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DY</masterLabel>
+        <translation><!-- DY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM</masterLabel>
+        <translation><!-- PM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

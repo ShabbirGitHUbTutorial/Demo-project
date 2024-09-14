@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MaxDemandlessthan138kVAperphase__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Max Demand less than 13.8kVA per phase</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

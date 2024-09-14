@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Delivered - Completed</fullName>
+        <default>false</default>
+        <label>Delivered - Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>Delivered - Customer changed mind (post-referral)</fullName>
+        <default>false</default>
+        <label>Delivered - Customer changed mind (post-referral)</label>
+    </customValue>
+    <customValue>
+        <fullName>Delivered - Customer received service but does not want to progress</fullName>
+        <default>false</default>
+        <label>Delivered - Customer received service but does not want to progress</label>
+    </customValue>
+    <customValue>
+        <fullName>Lack of Engagement</fullName>
+        <default>false</default>
+        <label>Lack of Engagement</label>
+    </customValue>
+    <customValue>
+        <fullName>No Partner</fullName>
+        <default>false</default>
+        <label>No Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner could not deliver</fullName>
+        <default>false</default>
+        <label>Partner could not deliver</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner could not deliver - Age restriction</fullName>
+        <default>false</default>
+        <label>Partner could not deliver - Age restriction</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner could not deliver - Customer in contract/debt</fullName>
+        <default>false</default>
+        <label>Partner could not deliver - Customer in contract/debt</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner could not deliver - Other</fullName>
+        <default>false</default>
+        <label>Partner could not deliver - Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer changed mind (pre-referral)</fullName>
+        <default>false</default>
+        <label>Customer changed mind (pre-referral)</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer denies requesting service</fullName>
+        <default>false</default>
+        <label>Customer denies requesting service</label>
+    </customValue>
+    <customValue>
+        <fullName>Referral service created in error</fullName>
+        <default>false</default>
+        <label>Referral service created in error</label>
+    </customValue>
+    <description>CRMD-5428 : List of values for the closure code, used for Referrals case type</description>
+    <masterLabel>Closure Code</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

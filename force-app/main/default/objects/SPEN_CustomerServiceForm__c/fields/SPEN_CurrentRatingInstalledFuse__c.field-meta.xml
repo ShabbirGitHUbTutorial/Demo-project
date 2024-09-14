@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CurrentRatingInstalledFuse__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the current rating of installed Fuses
+Used in LV Service Termination Survey forms</description>
+    <label>Current rating of installed fuse(s)</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>6A</fullName>
+                <default>false</default>
+                <label>6A</label>
+            </value>
+            <value>
+                <fullName>16A</fullName>
+                <default>false</default>
+                <label>16A</label>
+            </value>
+            <value>
+                <fullName>30A</fullName>
+                <default>false</default>
+                <label>30A</label>
+            </value>
+            <value>
+                <fullName>60A</fullName>
+                <default>false</default>
+                <label>60A</label>
+            </value>
+            <value>
+                <fullName>80A</fullName>
+                <default>false</default>
+                <label>80A</label>
+            </value>
+            <value>
+                <fullName>100A</fullName>
+                <default>false</default>
+                <label>100A</label>
+            </value>
+            <value>
+                <fullName>160A</fullName>
+                <default>false</default>
+                <label>160A</label>
+            </value>
+            <value>
+                <fullName>200A</fullName>
+                <default>false</default>
+                <label>200A</label>
+            </value>
+            <value>
+                <fullName>315A</fullName>
+                <default>false</default>
+                <label>315A</label>
+            </value>
+            <value>
+                <fullName>400A</fullName>
+                <default>false</default>
+                <label>400A</label>
+            </value>
+            <value>
+                <fullName>Wired (uknown)</fullName>
+                <default>false</default>
+                <label>Wired (uknown)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

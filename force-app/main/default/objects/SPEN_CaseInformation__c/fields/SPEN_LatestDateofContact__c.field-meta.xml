@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_LatestDateofContact__c</fullName>
+    <description>Latest date of  Contact of Date &amp; Time Call 1, 2, 3, Date Letter 1, 2   (Created as part of CRMD-10581)</description>
+    <formula>IF(
+    AND(
+        ISBLANK(DATEVALUE(SPEN_DateTimeCall1__c)),
+        ISBLANK(DATEVALUE(SPEN_DateTimeCall2__c)),
+        ISBLANK(DATEVALUE(SPEN_DateTimeCall3__c)),
+        ISBLANK(SPEN_DateLetter1__c),
+        ISBLANK(SPEN_DateLetter2__c)
+    ),
+    NULL,
+    DATE(1900, 01, 01) +
+    MAX(
+        BLANKVALUE(
+            DATEVALUE(SPEN_DateTimeCall1__c), 
+            DATE(1900, 01, 01)
+        ) - DATE(1900, 01, 01),
+        BLANKVALUE(
+            DATEVALUE(SPEN_DateTimeCall2__c),
+            DATE(1900, 01, 01)
+        ) - DATE(1900, 01, 01),
+        BLANKVALUE(
+            DATEVALUE(SPEN_DateTimeCall3__c),
+            DATE(1900, 01, 01)
+        ) - DATE(1900, 01, 01),
+        BLANKVALUE(
+            SPEN_DateLetter1__c,
+            DATE(1900, 01, 01)
+        ) - DATE(1900, 01, 01),
+        BLANKVALUE(
+            SPEN_DateLetter2__c,
+            DATE(1900, 01, 01)
+        ) - DATE(1900, 01, 01)
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Latest Date of Contact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

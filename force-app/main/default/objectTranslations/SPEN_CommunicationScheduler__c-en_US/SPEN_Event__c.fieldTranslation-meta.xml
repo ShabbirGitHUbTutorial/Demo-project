@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Event --></label>
+    <name>SPEN_Event__c</name>
+    <picklistValues>
+        <masterLabel>10 Days System Email Non LVHV</masterLabel>
+        <translation><!-- 10 Days System Email Non LVHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10 Days Task Creation LVHV</masterLabel>
+        <translation><!-- 10 Days Task Creation LVHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15 Days System Email LVHV</masterLabel>
+        <translation><!-- 15 Days System Email LVHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>15days Task Creation non LVHV</masterLabel>
+        <translation><!-- 15days Task Creation non LVHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 days Prior Post Acceptance task</masterLabel>
+        <translation><!-- 2 days Prior Post Acceptance task --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>20 Days Task Creation LVHV</masterLabel>
+        <translation><!-- 20 Days Task Creation LVHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3-Hour Comfort Call</masterLabel>
+        <translation><!-- 3-Hour Comfort Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3rd Call Received</masterLabel>
+        <translation><!-- 3rd Call Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45 Days System email Non LVHV</masterLabel>
+        <translation><!-- 45 Days System email Non LVHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 Days System Email LVHV</masterLabel>
+        <translation><!-- 5 Days System Email LVHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60 Days task Create Non LVHV</masterLabel>
+        <translation><!-- 60 Days task Create Non LVHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Annual Meeting Prior 14 Days</masterLabel>
+        <translation><!-- Annual Meeting Prior 14 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BiAnnual Meeting Prior 14 Days</masterLabel>
+        <translation><!-- BiAnnual Meeting Prior 14 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Engagement Task HOD</masterLabel>
+        <translation><!-- Customer Engagement Task HOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Engagement Task PM</masterLabel>
+        <translation><!-- Customer Engagement Task PM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Engagement Task PUM/PDM</masterLabel>
+        <translation><!-- Customer Engagement Task PUM/PDM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply with Notice</masterLabel>
+        <translation><!-- Dropped Supply with Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dropped Supply without Notice</masterLabel>
+        <translation><!-- Dropped Supply without Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energisation Date Prior 14 days</masterLabel>
+        <translation><!-- Energisation Date Prior 14 days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estimated Restoration Time Extended</masterLabel>
+        <translation><!-- Estimated Restoration Time Extended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV proactive contact</masterLabel>
+        <translation><!-- HV proactive contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITT Issued Due Date Prior 1 day</masterLabel>
+        <translation><!-- ITT Issued Due Date Prior 1 day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Created</masterLabel>
+        <translation><!-- Incident Created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Restored</masterLabel>
+        <translation><!-- Incident Restored --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTM 2 Offer Expire To NGESO CCM 14 Days</masterLabel>
+        <translation><!-- MTM 2 Offer Expire To NGESO CCM 14 Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medically Dependent by District</masterLabel>
+        <translation><!-- Medically Dependent by District --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Demand</masterLabel>
+        <translation><!-- On Demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Outage Communication</masterLabel>
+        <translation><!-- Planned Outage Communication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource Arrival On Site</masterLabel>
+        <translation><!-- Resource Arrival On Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource Dispatched</masterLabel>
+        <translation><!-- Resource Dispatched --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stage 1 Energisation Date to PM</masterLabel>
+        <translation><!-- Stage 1 Energisation Date to PM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

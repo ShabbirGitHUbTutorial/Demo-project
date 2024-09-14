@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason For Delay --></label>
+    <name>SPEN_ReasonForDelay__c</name>
+    <picklistValues>
+        <masterLabel>Customer Not Ready</masterLabel>
+        <translation><!-- Customer Not Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue with Quotation</masterLabel>
+        <translation><!-- Issue with Quotation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Planning Permission</masterLabel>
+        <translation><!-- No Planning Permission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other - Please add note</masterLabel>
+        <translation><!-- Other - Please add note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Time To Connect</masterLabel>
+        <translation><!-- Time To Connect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Identify Right Person</masterLabel>
+        <translation><!-- Unable to Identify Right Person --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

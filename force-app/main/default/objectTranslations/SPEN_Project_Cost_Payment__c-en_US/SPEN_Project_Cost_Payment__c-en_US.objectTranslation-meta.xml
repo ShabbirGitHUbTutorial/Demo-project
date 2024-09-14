@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Cost &amp; Payment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Costs &amp; Payments</value>
+    </caseValues>
+    <layouts>
+        <layout>Project Cost &amp; Payment Layout</layout>
+        <sections>
+            <label><!-- Agent Costs --></label>
+            <section>Agent Costs</section>
+        </sections>
+        <sections>
+            <label><!-- Annual Estimates --></label>
+            <section>Annual Estimates</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Compensation --></label>
+            <section>Compensation</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Land Services Resource --></label>
+            <section>Land Services Resource</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Costs --></label>
+            <section>Legal Costs</section>
+        </sections>
+        <sections>
+            <label><!-- Payments Summary --></label>
+            <section>Payments Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Servitude Costs --></label>
+            <section>Servitude Costs</section>
+        </sections>
+        <sections>
+            <label><!-- Title Search Costs --></label>
+            <section>Title Search Costs</section>
+        </sections>
+        <sections>
+            <label><!-- Tree Crop Compensation Payments --></label>
+            <section>Tree Crop Compensation Payments</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill Year 1 in YYYY format --></errorMessage>
+        <name>SPEN_Year1FormatRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Year 2 in YYYY format --></errorMessage>
+        <name>SPEN_Year2FormatRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Year 3 in YYYY format --></errorMessage>
+        <name>SPEN_Year3FormatRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Year 4 in YYYY format --></errorMessage>
+        <name>SPEN_Year4FormatRule</name>
+    </validationRules>
+</CustomObjectTranslation>

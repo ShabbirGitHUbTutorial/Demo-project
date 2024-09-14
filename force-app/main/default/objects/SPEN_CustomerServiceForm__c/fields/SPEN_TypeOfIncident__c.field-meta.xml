@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TypeOfIncident__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to identify the type of incident
+Field used in RATOV forms</description>
+    <label>Type of Incident</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Connections Delivery</fullName>
+                <default>false</default>
+                <label>Connections delivery</label>
+            </value>
+            <value>
+                <fullName>Earthing</fullName>
+                <default>false</default>
+                <label>Earthing</label>
+            </value>
+            <value>
+                <fullName>Inaccurate Information</fullName>
+                <default>false</default>
+                <label>Inaccurate information</label>
+            </value>
+            <value>
+                <fullName>Internal mains/ laterals</fullName>
+                <default>false</default>
+                <label>Internal mains/Laterals</label>
+            </value>
+            <value>
+                <fullName>Land Damage</fullName>
+                <default>false</default>
+                <label>Land damage</label>
+            </value>
+            <value>
+                <fullName>LCT</fullName>
+                <default>false</default>
+                <label>LCT</label>
+            </value>
+            <value>
+                <fullName>Loss of supply</fullName>
+                <default>false</default>
+                <label>Loss of supply</label>
+            </value>
+            <value>
+                <fullName>Lost Neutral</fullName>
+                <default>false</default>
+                <label>Lost neutral</label>
+            </value>
+            <value>
+                <fullName>Planned Interruptions</fullName>
+                <default>false</default>
+                <label>Planned interruptions</label>
+            </value>
+            <value>
+                <fullName>Site excavation / reinstatement</fullName>
+                <default>false</default>
+                <label>Site excavation/Reinstatement</label>
+            </value>
+            <value>
+                <fullName>Unloop / Shared supplies</fullName>
+                <default>false</default>
+                <label>Unloop/Shared supplies</label>
+            </value>
+            <value>
+                <fullName>Voltage Issues</fullName>
+                <default>false</default>
+                <label>Voltage issues</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

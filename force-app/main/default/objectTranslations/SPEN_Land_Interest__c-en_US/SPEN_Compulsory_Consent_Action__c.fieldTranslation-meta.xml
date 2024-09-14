@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compulsory Consent Action --></label>
+    <name>SPEN_Compulsory_Consent_Action__c</name>
+    <picklistValues>
+        <masterLabel>Hearing</masterLabel>
+        <translation><!-- Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Written Rep</masterLabel>
+        <translation><!-- Written Rep --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

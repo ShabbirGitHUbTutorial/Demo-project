@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://login.windows.net/common/oauth2/authorize</authorizeUrl>
+    <consumerKey>0c4ddb8d-4c2e-4c3f-b121-14411daba013</consumerKey>
+    <consumerSecret>Placeholder_Value</consumerSecret>
+    <friendlyName>spenergynetworkscrm</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <isPkceEnabled>false</isPkceEnabled>
+    <providerType>OpenIdConnect</providerType>
+    <requireMfa>false</requireMfa>
+    <sendAccessTokenInHeader>true</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://login.windows.net/common/oauth2/token</tokenUrl>
+    <userInfoUrl>https://login.windows.net/common/openid/userinfo</userInfoUrl>
+</AuthProvider>

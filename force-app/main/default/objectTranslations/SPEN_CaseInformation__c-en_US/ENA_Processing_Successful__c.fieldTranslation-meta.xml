@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ENA Processing Successful --></label>
+    <name>ENA_Processing_Successful__c</name>
+</CustomFieldTranslation>

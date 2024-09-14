@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_AddressPDF__c</fullName>
+    <description>Field used to get Address with the correct format in the pdf</description>
+    <externalId>false</externalId>
+    <formula>SPEN_Street__c  + &apos;, &apos; +   SPEN_City__c   + &apos;, &apos; +   SPEN_ZipPostalCode__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Address PDF</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

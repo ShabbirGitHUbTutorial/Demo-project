@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ApplianceType__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field created as part of CRMD-5580 for Lookup to Master Appliance Type Data</description>
+    <label>Appliance Type</label>
+    <referenceTo>SPEN_ApplianceType__c</referenceTo>
+    <relationshipLabel>Appliances</relationshipLabel>
+    <relationshipName>Appliances</relationshipName>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

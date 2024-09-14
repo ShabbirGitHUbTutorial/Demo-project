@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contractor --></label>
+    <name>SPEN_Contractor__c</name>
+    <picklistValues>
+        <masterLabel>Aggreko UK Limited</masterLabel>
+        <translation><!-- Aggreko UK Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Balfour Beatty</masterLabel>
+        <translation><!-- Balfour Beatty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C-Plan Telecommunications Ltd</masterLabel>
+        <translation><!-- C-Plan Telecommunications Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C. Spratt Multi Utility</masterLabel>
+        <translation><!-- C. Spratt Multi Utility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chevron TM</masterLabel>
+        <translation><!-- Chevron TM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CityFibre</masterLabel>
+        <translation><!-- CityFibre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clancy Docwra Ltd</masterLabel>
+        <translation><!-- Clancy Docwra Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connors Design and Restoration</masterLabel>
+        <translation><!-- Connors Design and Restoration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D&amp;C Jones</masterLabel>
+        <translation><!-- D&amp;C Jones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT Hughes</masterLabel>
+        <translation><!-- DT Hughes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electricity Asset Services</masterLabel>
+        <translation><!-- Electricity Asset Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emerald Power</masterLabel>
+        <translation><!-- Emerald Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freedom</masterLabel>
+        <translation><!-- Freedom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IQA</masterLabel>
+        <translation><!-- IQA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keltbray</masterLabel>
+        <translation><!-- Keltbray --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morrisons Energy Services</masterLabel>
+        <translation><!-- Morrisons Energy Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O&apos;Connors Overhead</masterLabel>
+        <translation><!-- O&apos;Connors Overhead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPUS</masterLabel>
+        <translation><!-- OPUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optimum Technical Services</masterLabel>
+        <translation><!-- Optimum Technical Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overlec Ltd</masterLabel>
+        <translation><!-- Overlec Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O’Connors</masterLabel>
+        <translation><!-- O’Connors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLPC</masterLabel>
+        <translation><!-- PLPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMK Civil Engineering</masterLabel>
+        <translation><!-- PMK Civil Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prysmian</masterLabel>
+        <translation><!-- Prysmian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quartzelec</masterLabel>
+        <translation><!-- Quartzelec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPIE</masterLabel>
+        <translation><!-- SPIE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Singleton &amp; Smart</masterLabel>
+        <translation><!-- Singleton &amp; Smart --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voltcom Group</masterLabel>
+        <translation><!-- Voltcom Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walker &amp; Watts Ltd</masterLabel>
+        <translation><!-- Walker &amp; Watts Ltd --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

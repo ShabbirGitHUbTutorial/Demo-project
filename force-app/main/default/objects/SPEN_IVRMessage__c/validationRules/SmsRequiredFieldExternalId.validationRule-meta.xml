@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SmsRequiredFieldExternalId</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;SMS&quot; &amp;&amp;
+ISBLANK(SPEN_ExternalId__c)</errorConditionFormula>
+    <errorDisplayField>SPEN_ExternalId__c</errorDisplayField>
+    <errorMessage>The External ID field is required.</errorMessage>
+</ValidationRule>

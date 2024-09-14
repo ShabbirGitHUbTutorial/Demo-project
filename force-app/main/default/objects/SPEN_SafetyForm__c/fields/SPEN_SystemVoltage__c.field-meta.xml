@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SystemVoltage__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to capture the system voltage
+Used in GS6 forms</description>
+    <label>System voltage</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low Voltage</fullName>
+                <default>false</default>
+                <label>Low voltage</label>
+            </value>
+            <value>
+                <fullName>11 kV</fullName>
+                <default>false</default>
+                <label>11 kV</label>
+            </value>
+            <value>
+                <fullName>33 kV</fullName>
+                <default>false</default>
+                <label>33 kV</label>
+            </value>
+            <value>
+                <fullName>66 kV</fullName>
+                <default>false</default>
+                <label>66 kV</label>
+            </value>
+            <value>
+                <fullName>132 kV</fullName>
+                <default>false</default>
+                <label>132 kV</label>
+            </value>
+            <value>
+                <fullName>275 kV</fullName>
+                <default>false</default>
+                <label>275 kV</label>
+            </value>
+            <value>
+                <fullName>400 kV</fullName>
+                <default>false</default>
+                <label>400 kV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

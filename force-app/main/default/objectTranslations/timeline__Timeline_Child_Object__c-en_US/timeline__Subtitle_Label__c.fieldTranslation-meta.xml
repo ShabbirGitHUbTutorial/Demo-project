@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A label that goes in front of the sub title field --></help>
+    <label><!-- Subtitle Label --></label>
+    <name>timeline__Subtitle_Label__c</name>
+</CustomFieldTranslation>

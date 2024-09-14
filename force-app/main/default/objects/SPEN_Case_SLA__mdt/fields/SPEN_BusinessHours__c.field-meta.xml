@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_BusinessHours__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Business Hours</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Default</fullName>
+                <default>true</default>
+                <label>Default</label>
+            </value>
+            <value>
+                <fullName>SPD SW/NRSWA Business Hours</fullName>
+                <default>false</default>
+                <label>SPD SW/NRSWA Business Hours</label>
+            </value>
+            <value>
+                <fullName>SPD Default</fullName>
+                <default>false</default>
+                <label>SPD Default</label>
+            </value>
+            <value>
+                <fullName>SPM SW/NRSWA Business Hours Extended</fullName>
+                <default>false</default>
+                <label>SPM SW/NRSWA Business Hours Extended</label>
+            </value>
+            <value>
+                <fullName>SPM SW/NRSWA Business Hours</fullName>
+                <default>false</default>
+                <label>SPM SW/NRSWA Business Hours</label>
+            </value>
+            <value>
+                <fullName>SPEN SPM SW Business Hours Extended</fullName>
+                <default>false</default>
+                <label>SPEN SPM SW Business Hours Extended</label>
+            </value>
+            <value>
+                <fullName>SPEN SPM SW Business Hours</fullName>
+                <default>false</default>
+                <label>SPEN SPM SW Business Hours</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

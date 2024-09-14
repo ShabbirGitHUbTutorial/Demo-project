@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used to sync data categories associated to the article --></help>
+    <label><!-- Data Categories --></label>
+    <name>SPEN_DataCategories__c</name>
+    <picklistValues>
+        <masterLabel>Complaints</masterLabel>
+        <translation><!-- Complaints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connection</masterLabel>
+        <translation><!-- Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections Services</masterLabel>
+        <translation><!-- Connections Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCC</masterLabel>
+        <translation><!-- DCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debt</masterLabel>
+        <translation><!-- Debt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Enquiries</masterLabel>
+        <translation><!-- General Enquiries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guaranteed Standards</masterLabel>
+        <translation><!-- Guaranteed Standards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident Control</masterLabel>
+        <translation><!-- Incident Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRSWA</masterLabel>
+        <translation><!-- NRSWA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neutral Faults</masterLabel>
+        <translation><!-- Neutral Faults --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Outages</masterLabel>
+        <translation><!-- Planned Outages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referrals</masterLabel>
+        <translation><!-- Referrals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks</masterLabel>
+        <translation><!-- Streetworks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Damage</masterLabel>
+        <translation><!-- Third Party Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Damage(restricted)</masterLabel>
+        <translation><!-- Third Party Damage(restricted) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_FinalEnergisationDate__c</fullName>
+    <description>CRMD-7633</description>
+    <formula>SPEN_RelatedCase__r.SPEN_FinalEnergisationDate__c</formula>
+    <label>Final Energisation Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

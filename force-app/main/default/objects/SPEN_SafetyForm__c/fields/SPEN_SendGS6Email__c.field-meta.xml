@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SendGS6Email__c</fullName>
+    <description>##Conga created button:00bSr000000X1oX</description>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;solmgr=1&quot; + 
+&quot;&amp;id=&quot; + Id +
+&quot;&amp;templateid=0T_010EAE276722,0T_011EAE108396,0T_012EAE790488&quot; + 
+&quot;&amp;queryid=[photos]0Q_022EAE890896&quot; +
+&quot;&amp;congaemailtemplateid=0E_000EAE583579&quot; + 
+&quot;&amp;qmode=SendEmail&quot; + 
+&quot;&amp;defaultpdf=1&quot; + 
+&quot;&amp;ofn={Template.Label}&quot; +
+&quot;&amp;emailadditionalto=&quot; + SPEN_CustomerEmail__c +
+&quot;&amp;sc1=Attachments&quot; + 
+&quot;&amp;sc0=1&quot; + 
+&quot;&amp;zippdfs=0&quot; + 
+&quot;&amp;emailfromid=0D2Sr00000003vZ&quot; + 
+&quot;&amp;qvar0id=a1cSr000000fI4DIAU&quot; +
+&quot;&amp;attachmentid={QVar0}&quot; +
+&quot;&amp;cetid=0E_000EAE583579&quot;</formula>
+    <label>SPEN_SendGS6Email</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

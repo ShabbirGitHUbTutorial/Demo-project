@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Social Obligations Source --></label>
+    <name>SPEN_SocialObligationsSource__c</name>
+    <picklistValues>
+        <masterLabel>Email/online form/tweet</masterLabel>
+        <translation><!-- Email/online form/tweet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HES</masterLabel>
+        <translation><!-- HES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaflet</masterLabel>
+        <translation><!-- Leaflet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Natter</masterLabel>
+        <translation><!-- Network Natter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Partner</masterLabel>
+        <translation><!-- Other Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other leaflet/correspondence</masterLabel>
+        <translation><!-- Other leaflet/correspondence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SGN</masterLabel>
+        <translation><!-- SGN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WWU</masterLabel>
+        <translation><!-- WWU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

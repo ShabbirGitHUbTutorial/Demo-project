@@ -1,0 +1,14 @@
+.signature_pad_flexbox {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 150px;
+	border: var(--lwc-borderWidthThin,1px) solid var(--slds-c-input-color-border, var(--sds-c-input-color-border, var(--slds-g-color-border-base-4, var(--lwc-colorBorderInput,rgb(201, 201, 201)))));
+	border-radius: var(--slds-c-input-radius-border, var(--sds-c-input-radius-border, var(--lwc-borderRadiusMedium,0.50rem)));
+}
+
+.signature_pad_canvas {
+	flex-grow: 1;
+	min-height: 0px;
+	min-width: 0px;
+}

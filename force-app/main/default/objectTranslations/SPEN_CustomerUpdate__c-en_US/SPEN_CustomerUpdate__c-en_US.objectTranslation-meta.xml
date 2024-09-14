@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Outbound Dialler Task</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Outbound Dialler Tasks</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Update Layout</layout>
+        <sections>
+            <label><!-- Agent Context --></label>
+            <section>Agent Context</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Outbound dialer Call Resolution --></label>
+            <section>Outbound dialer Call Resolution</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Resolution Comments are Mandatory while completing Task --></errorMessage>
+        <name>SPEN_Resolution_comments_Mandatory</name>
+    </validationRules>
+</CustomObjectTranslation>

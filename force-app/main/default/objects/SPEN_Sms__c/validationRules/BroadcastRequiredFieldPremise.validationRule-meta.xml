@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BroadcastRequiredFieldPremise</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Broadcast&quot; &amp;&amp;
+ISBLANK(SPEN_PremiseId__c) &amp;&amp; SPEN_CaseId__r.RecordType.DeveloperName != &quot;SPEN_UnplannedBypass&quot;</errorConditionFormula>
+    <errorMessage>The Premise field is required.</errorMessage>
+</ValidationRule>

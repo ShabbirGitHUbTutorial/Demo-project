@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ConnectionsPlots</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_CaseRecord__c</columns>
+    <columns>SPEN_SupplyPointCode__c</columns>
+    <columns>SPEN_PlotNumbers__c</columns>
+    <columns>SPEN_MPAN1__c</columns>
+    <columns>SPEN_MPAN2__c</columns>
+    <columns>SPEN_MeteringPointProfile__c</columns>
+    <columns>SPEN_MaxPowerkVA__c</columns>
+    <columns>SPEN_UNIT__c</columns>
+    <columns>SPEN_Phase__c</columns>
+    <columns>SPEN_FutureEarthType__c</columns>
+    <columns>SPEN_PropertyType__c</columns>
+    <columns>SPEN_PropertyID__c</columns>
+    <columns>SPEN_Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_CaseRecord__c</field>
+        <operation>contains</operation>
+        <value>151038</value>
+    </filters>
+    <label>Connections Plots</label>
+</ListView>

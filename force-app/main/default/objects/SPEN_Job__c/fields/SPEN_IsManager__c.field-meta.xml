@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_IsManager__c</fullName>
+    <formula>IF(SPENEnvironmentalPlanner__c != NULL &amp;&amp; SPENEnvironmentalPlanner__r.ManagerId != Null &amp;&amp; SPENEnvironmentalPlanner__r.ManagerId =  $User.Id, true,  
+IF( SPEN_LandAssistant__c != NULL &amp;&amp; SPEN_LandAssistant__r.ManagerId != NULL &amp;&amp; SPEN_LandAssistant__r.ManagerId = $User.Id, true,  
+IF( SPEN_LandOfficer__c != NULL &amp;&amp; SPEN_LandOfficer__r.ManagerId != NULL &amp;&amp; SPEN_LandOfficer__r.ManagerId = $User.Id , true, 
+IF( SPEN_LandManager__c != NULL &amp;&amp; SPEN_LandManager__r.ManagerId != NULL &amp;&amp; SPEN_LandManager__r.ManagerId = $User.Id, true, 
+IF( SPEN_ProjectManager__c !=NULL &amp;&amp; SPEN_ProjectManager__r.ManagerId !=NULL &amp;&amp; SPEN_ProjectManager__r.ManagerId =$User.Id, true,  
+IF( SPENEnvironmentalPlanner__c !=NULL &amp;&amp; SPENEnvironmentalPlanner__r.Manager.ManagerId != NULL &amp;&amp; SPENEnvironmentalPlanner__r.Manager.ManagerId =$User.Id, true,  
+IF( SPEN_LandAssistant__c != NULL &amp;&amp; SPEN_LandAssistant__r.Manager.ManagerId != NULL &amp;&amp; SPEN_LandAssistant__r.Manager.ManagerId= $User.Id, true,  
+IF( SPEN_LandOfficer__c != NULL &amp;&amp; SPEN_LandOfficer__r.Manager.ManagerId !=NULL &amp;&amp; SPEN_LandOfficer__r.Manager.ManagerId = $User.Id, true,  
+IF( SPEN_LandManager__c != NULL &amp;&amp; SPEN_LandManager__r.Manager.ManagerId !=NULL &amp;&amp; SPEN_LandManager__r.Manager.ManagerId = $User.Id, true,  
+IF( SPEN_ProjectManager__c != NULL &amp;&amp; SPEN_ProjectManager__r.Manager.ManagerId !=NULL &amp;&amp; SPEN_ProjectManager__r.Manager.ManagerId= $User.Id , true,  
+IF( OwnerId != NULL &amp;&amp;  Owner:User.ManagerId !=NULL &amp;&amp; Owner:User.ManagerId =$User.Id, true,  IF(OwnerId != NULL &amp;&amp; Owner:User.Manager.ManagerId!=NULL &amp;&amp;  Owner:User.Manager.ManagerId  = $User.Id, true, false
+) ) 
+
+) ) ) ) ) ) ) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Manager</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

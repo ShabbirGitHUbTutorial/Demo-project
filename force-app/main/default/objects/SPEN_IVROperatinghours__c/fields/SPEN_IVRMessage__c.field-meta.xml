@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_IVRMessage__c</fullName>
+    <description>IVR Message field is in master details relationship with IVR Message object and IVR Operating hours</description>
+    <label>IVR Message</label>
+    <referenceTo>SPEN_IVRMessage__c</referenceTo>
+    <relationshipLabel>IVR Operating hours</relationshipLabel>
+    <relationshipName>IVR_Operating_hours</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

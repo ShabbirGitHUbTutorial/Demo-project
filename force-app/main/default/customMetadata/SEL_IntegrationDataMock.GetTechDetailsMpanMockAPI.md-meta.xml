@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>GetTechDetailsMpanMockAPI</label>
+    <protected>false</protected>
+    <values>
+        <field>SEL_Body__c</field>
+        <value xsi:type="xsd:string">{&quot;Errors&quot;:[{&quot;Code&quot;:&quot;String content&quot;,&quot;Description&quot;:&quot;String content&quot;}],&quot;ParameterSet&quot;:{&quot;Parameters&quot;:[{&quot;Key&quot;:&quot;String content&quot;,&quot;Value&quot;:&quot;String content&quot;}]},&quot;UtilityMatches&quot;:[{&quot;UtilityDetails&quot;:[{&quot;Key&quot;:&quot;String content&quot;,&quot;Value&quot;:&quot;String content&quot;}],&quot;UtilityKey&quot;:&quot;String content&quot;,&quot;UtilityType&quot;:&quot;String content&quot;,&quot;Meters&quot;:[{&quot;MeterDetails&quot;:[{&quot;Key&quot;:&quot;distributor_mpid&quot;,&quot;Value&quot;:&quot;13256734&quot;}]}]}]}</value>
+    </values>
+    <values>
+        <field>SEL_Header__c</field>
+        <value xsi:type="xsd:string">{&quot;RequestDate&quot;:&quot;value&quot;,&quot;RequestId&quot;:2147483647,&quot;ResponseTime&quot;:&quot;value&quot;,&quot;VersionNumber&quot;:&quot;value&quot;}</value>
+    </values>
+    <values>
+        <field>SEL_StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>SEL_Status__c</field>
+        <value xsi:type="xsd:string">Success</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permanent Land Right Status --></label>
+    <name>SPEN_ServitudeStatus__c</name>
+    <picklistValues>
+        <masterLabel>Awaiting Design</masterLabel>
+        <translation><!-- Awaiting Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft Documents Agreed</masterLabel>
+        <translation><!-- Draft Documents Agreed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft Documents Issued</masterLabel>
+        <translation><!-- Draft Documents Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HoTs Agreed</masterLabel>
+        <translation><!-- HoTs Agreed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Negotiation</masterLabel>
+        <translation><!-- In Negotiation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Legal Instruct External Legal Team</masterLabel>
+        <translation><!-- Internal Legal Instruct External Legal Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Legal Instructed</masterLabel>
+        <translation><!-- Internal Legal Instructed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Milestones Complete</masterLabel>
+        <translation><!-- Legal Milestones Complete --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

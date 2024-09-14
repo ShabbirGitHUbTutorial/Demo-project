@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>BiAnnual_Meeting_Reminder_MTM5</fullName>
+        <description>BiAnnual Meeting Reminder - MTM5</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_MTM5AccountOwner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sptpace@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_TransmissionFolder/BiAnnual_Meeting_Reminder_1697622914525</template>
+    </alerts>
+</Workflow>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Existing Land Right (Reference) --></label>
+    <name>SPEN_ExistingLandRight__c</name>
+    <relationshipLabel><!-- Land Rights --></relationshipLabel>
+</CustomFieldTranslation>

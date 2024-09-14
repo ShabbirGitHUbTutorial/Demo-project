@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CancelledReason__c</fullName>
+    <description>Used to capture the reason for cancellation of the Job</description>
+    <label>Cancelled Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Withdrawn</fullName>
+                <default>false</default>
+                <label>Customer Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Business Withdrawn</fullName>
+                <default>false</default>
+                <label>Business Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Land Consent Issue</fullName>
+                <default>false</default>
+                <label>Land Consent Issue</label>
+            </value>
+            <value>
+                <fullName>Business Re-Design</fullName>
+                <default>false</default>
+                <label>Business Re-Design</label>
+            </value>
+            <value>
+                <fullName>Programme Refresh</fullName>
+                <default>false</default>
+                <label>Programme Refresh</label>
+            </value>
+            <value>
+                <fullName>Planning Refused</fullName>
+                <default>false</default>
+                <label>Planning Refused</label>
+            </value>
+            <value>
+                <fullName>Energy Consents refused</fullName>
+                <default>false</default>
+                <label>Energy Consents refused</label>
+            </value>
+            <value>
+                <fullName>Other External Stakeholder</fullName>
+                <default>false</default>
+                <label>Other External Stakeholder</label>
+            </value>
+            <value>
+                <fullName>Raised in error</fullName>
+                <default>false</default>
+                <label>Raised in error</label>
+            </value>
+            <value>
+                <fullName>No PO received</fullName>
+                <default>false</default>
+                <label>No PO received</label>
+            </value>
+            <value>
+                <fullName>Program Change</fullName>
+                <default>false</default>
+                <label>Program Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<template>
+    <div class="width slds-m-top_small slds-m-bottom_medium" >
+        
+        <lightning-button variant="brand" label="Sync to ADQM" title="Sync to ADQM will happen after certain delay, plese refresh the page if you see the button is disabled!!!" 
+                onclick={handleClick} class="slds-m-left_x-small" disabled={isDisabled}>
+        </lightning-button>
+        <br/><br/>
+        <lightning-card class="slds-card__header "><lightning-formatted-rich-text style="font-size: medium; text-align: center;color:red;margin-left: 10px;" value={statusMessage}></lightning-formatted-rich-text></lightning-card>
+        
+        
+    </div>   
+</template>

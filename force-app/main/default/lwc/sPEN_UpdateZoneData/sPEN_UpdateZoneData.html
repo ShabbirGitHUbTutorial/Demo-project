@@ -1,0 +1,28 @@
+<!--
+  @description       : 
+  @author            : ramesh.c.singh@accenture.com
+  @group             : 
+  @last modified on  : 12-22-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <div class="width slds-m-top_small slds-m-bottom_medium" >
+        <lightning-button variant="brand" label="Update Zone Data" title="Update Zone Data" 
+                          onclick={handleClick} class="slds-m-left_x-small" disabled={isDisabled}></lightning-button>
+        <template if:true={isBack}>                  
+          <lightning-button variant="brand" label="Back" title="Back" 
+                          onclick={navigateToAccountListView} class="slds-m-left_x-small" ></lightning-button>   
+        </template>               
+    </div> 
+    <template if:true={isSuccess}>
+      <div class="slds-m-vertical_medium">
+        Data is refreshed sucessfully!
+      </div>
+    </template>
+    <template if:true={isDefaultMessage}>
+      <div class="slds-m-vertical_medium">
+        Please click the Update Zone Data button to refresh the Data!<br/>
+      </div>
+    </template>
+  
+</template>

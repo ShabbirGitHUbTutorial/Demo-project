@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_IncidentType__c</fullName>
+    <label>Incident Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SP</fullName>
+                <default>false</default>
+                <label>Single Premise Incident</label>
+            </value>
+            <value>
+                <fullName>LV</fullName>
+                <default>false</default>
+                <label>Low Voltage Incident</label>
+            </value>
+            <value>
+                <fullName>HV_S</fullName>
+                <default>false</default>
+                <label>High Voltage Incident</label>
+            </value>
+            <value>
+                <fullName>HV_N</fullName>
+                <default>false</default>
+                <label>High Voltage Network Incident</label>
+            </value>
+            <value>
+                <fullName>CG</fullName>
+                <default>false</default>
+                <label>Call Group Incident</label>
+            </value>
+            <value>
+                <fullName>AREA</fullName>
+                <default>false</default>
+                <label>Area Incident</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

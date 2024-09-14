@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Incident Type --></label>
+    <name>SPEN_IncidentType__c</name>
+    <picklistValues>
+        <masterLabel>Area Incident</masterLabel>
+        <translation><!-- Area Incident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Group Incident</masterLabel>
+        <translation><!-- Call Group Incident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Voltage Incident</masterLabel>
+        <translation><!-- High Voltage Incident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Voltage Network Incident</masterLabel>
+        <translation><!-- High Voltage Network Incident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Voltage Incident</masterLabel>
+        <translation><!-- Low Voltage Incident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Premise Incident</masterLabel>
+        <translation><!-- Single Premise Incident --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_BusinessArea__c</fullName>
+    <description>It holds the business area for CRMD-1358</description>
+    <label>Business Area</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1480</fullName>
+                <default>false</default>
+                <label>1480</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

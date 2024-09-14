@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Licence Area --></label>
+    <name>SPEN_Licence_Area__c</name>
+    <picklistValues>
+        <masterLabel>SPD</masterLabel>
+        <translation><!-- SPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM</masterLabel>
+        <translation><!-- SPM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM 132</masterLabel>
+        <translation><!-- SPM 132 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPT</masterLabel>
+        <translation><!-- SPT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

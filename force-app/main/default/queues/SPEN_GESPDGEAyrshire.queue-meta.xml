@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>GE SPD - Ayrshire</name>
+    <queueMembers>
+        <users>
+            <user>andrew.clark2@spenergynetworks.co.uk.spencrm</user>
+            <user>dkempton@spenergynetworks.co.uk.spencrm</user>
+            <user>kerry.quinn@spenergynetworks.co.uk.spencrm</user>
+            <user>lee.thomson@spenergynetworks.co.uk.spencrm</user>
+            <user>martin.maxwell@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_GECaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Other Utilities Involved --></help>
+    <label><!-- Who? --></label>
+    <name>SPEN_OtherUtilitiesInvolved__c</name>
+    <picklistValues>
+        <masterLabel>Gas</masterLabel>
+        <translation><!-- Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other IDNO</masterLabel>
+        <translation><!-- Other IDNO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecoms</masterLabel>
+        <translation><!-- Telecoms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water</masterLabel>
+        <translation><!-- Water --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

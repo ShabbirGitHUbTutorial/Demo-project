@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_HeadsOfTermsAgreedDateIsNull</fullName>
+    <active>true</active>
+    <description>ESC-841</description>
+    <errorConditionFormula>AND(NOT( ISNULL(SPEN_InternalLegalInstructionDate__c ) ),ISNULL( SPEN_HeadofTermAgreedDate__c ))</errorConditionFormula>
+    <errorDisplayField>SPEN_InternalLegalInstructionDate__c</errorDisplayField>
+    <errorMessage>Heads of Terms Agreed Date must be completed before this information can be completed.</errorMessage>
+</ValidationRule>

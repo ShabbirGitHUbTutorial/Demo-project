@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>aborthwick@spenergynetworks.co.uk</contactEmail>
+    <description>Connected App for Geofield integration</description>
+    <label>Connected App for Geofield</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIDNDCCAhygAwIBAgIQdcQmsVVp4qVI8Ufmpami9jANBgkqhkiG9w0BAQUFADAxMS8wLQYDVQQDDCZHZW9maWVsZEV4Y2hhbmdlX1NhbGVzZm9yY2VJbnRlZ3JhdGlvbjAgFw0yMzEwMDEwMDAwMDBaGA8yMTAwMTIzMTAwMDAwMFowMTEvMC0GA1UEAwwmR2VvZmllbGRFeGNoYW5nZV9TYWxlc2ZvcmNlSW50ZWdyYXRpb24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC25z6uoMYLb5LIYqm90GBD7sSlXFV7UTEnHoQU8LZrJGN1x7gOxmxk+m74jN4v98I0S6wtKTuf6qzvSr+SvbMAYksUPFYydCwiiJ2nLAXoFofNl7XFUnY0WXRHqJARAGBxVKZTU+7gSQsubgsYsyTKMfZFBj3eTo+ifBdlFHz+Emyn/y4LIBetJGYev+jOgW7+CZtQk3mgIqC1dGZjk3WXq3f09Q33VUNn7BlqS+VPT3b/eO0hCAJGEsjY9YWV+jkdo2KXJZD41s0WpCWG7xm3V+4gao/4irYUluMPOaOEwTNgQq8f1prO2AckT4X6Hr/sasx4l/pkK7/0wrriWFnhAgMBAAGjRjBEMBMGA1UdJQQMMAoGCCsGAQUFBwMBMB0GA1UdDgQWBBQq6g+nIxjuu4CLV61h6PhGIqOUyzAOBgNVHQ8BAf8EBAMCBSAwDQYJKoZIhvcNAQEFBQADggEBAAQSnu0mBbZN4kWbwZr5cGAWz4FHn4wuktv8wnVk3JZKx9NWIsqfTvEA0kMlJHQap0QKE2tGHC5wWaPNxL4sgmjlrl0L83zcnpq8C+WVbwq3yA7TApb+3o15Bc/6T+jZq2u0sOfr1+ryXNFFGUPFpXCcM992eJd9DXTN8Wq1jfSkqnUHlg8YXzvEapnkMknbU7PPE0KrTf4phc83SkPnI+ryG0kgM3jE9Oijd39NBk3hOTEeki+flTJJ2eumx+IuoqtMwpnp+N/uT0sKCbxfL7GPvfwmBgydpC4CWrOIcEyKpVPCfudAcc6HDg3Clyg3n/560vOPVnpqId7QrxpJGsk=</certificate>
+        <consumerKey>3MVG9395hRoMgFO2shyYvKpShhpgHr0A5pfQVgIAbxHnCcZH8gT5VzIundQLC3F7cZzXlYBaDgnfDTZIUZbdW</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>SPEN Integration</profileName>
+</ConnectedApp>

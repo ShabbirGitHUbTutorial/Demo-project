@@ -1,0 +1,7 @@
+<template>
+    <div class="width slds-m-top_small slds-m-bottom_medium" >
+        <lightning-input type="datetime" name="input2" label="Date Time field" value={scheduleDateForPSRs} onchange={handleChange}></lightning-input>
+        <lightning-button variant="brand" label="Schedule Send Voice Alert" title="Schedule Send Voice Alert" 
+                          onclick={handleClick} class="slds-m-left_x-small" disabled={isDisabled}></lightning-button>
+    </div>  
+</template>

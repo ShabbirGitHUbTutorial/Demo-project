@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllApexExceptions</fullName>
+    <columns>NAME</columns>
+    <columns>SEL_Source__c</columns>
+    <columns>SEL_Method__c</columns>
+    <columns>SEL_Exception__c</columns>
+    <columns>SEL_Message__c</columns>
+    <columns>SEL_RunningUserId__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SEL_Category__c</field>
+        <operation>equals</operation>
+        <value>Apex</value>
+    </filters>
+    <label>All Apex Exceptions</label>
+</ListView>

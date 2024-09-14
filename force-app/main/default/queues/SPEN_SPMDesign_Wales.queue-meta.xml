@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPM Design-Wales</name>
+    <queueMembers>
+        <users>
+            <user>alex.jones@spenergynetworks.co.uk.spencrm</user>
+            <user>brett.monk@spenergynetworks.co.uk.spencrm</user>
+            <user>delyth.evans@spenergynetworks.co.uk.spencrm</user>
+            <user>james.gwynfor@spenergynetworks.co.uk.spencrm</user>
+            <user>ian.jones3@spenergynetworks.co.uk.spencrm</user>
+            <user>louise.williams@spenergynetworks.co.uk.spencrm</user>
+            <user>luke.owens@spenergynetworks.co.uk.spencrm</user>
+            <user>mhafeez@spenergynetworks.co.uk.spencrm</user>
+            <user>nicholas.davies@spenergynetworks.co.uk.spencrm</user>
+            <user>rijones@spenergynetworks.co.uk.spencrm</user>
+            <user>richard.parry2@spenergynetworks.co.uk.spencrm</user>
+            <user>sam.boon@spenergynetworks.co.uk.spencrm</user>
+            <user>sarah.ps.williams@spenergynetworks.co.uk.spencrm</user>
+            <user>stephenmanweb.owen@spenergynetworks.co.uk.spencrm</user>
+            <user>tprince@spenergynetworks.co.uk.spencrm</user>
+            <user>tony.mills@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

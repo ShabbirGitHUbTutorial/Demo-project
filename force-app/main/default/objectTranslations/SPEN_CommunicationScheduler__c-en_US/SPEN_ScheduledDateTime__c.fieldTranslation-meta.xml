@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The system will only recognize this if the Send Now? field is set to No. The value must be future date/time. --></help>
+    <label><!-- Scheduled Date and Time --></label>
+    <name>SPEN_ScheduledDateTime__c</name>
+</CustomFieldTranslation>

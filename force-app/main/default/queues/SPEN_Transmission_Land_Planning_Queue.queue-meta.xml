@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Transmission Land &amp; Planning Queue</name>
+    <queueMembers>
+        <users>
+            <user>amcintosh@spenergynetworks.co.uk</user>
+            <user>alaird@spenergynetworks.co.uk</user>
+            <user>andrew.millar@spenergynetworks.co.uk.spencrm</user>
+            <user>andrew.stockton@spenergynetworks.co.uk</user>
+            <user>a.robertson@spenergynetworks.co.uk</user>
+            <user>a.james@spenergynetworks.co.uk</user>
+            <user>chibbert@spenergynetworks.co.uk</user>
+            <user>cbarbour@spenergynetworks.co.uk</user>
+            <user>c.barbour@spenergynetworks.co.uk</user>
+            <user>dleggatt@spenergynetworks.co.uk</user>
+            <user>dokane@spenergynetworks.co.uk</user>
+            <user>dbruce@spenergynetworks.co.uk</user>
+            <user>ede@spenergynetworks.co.uk</user>
+            <user>ecavanagh@spenergynetworks.co.uk</user>
+            <user>fdavies@spenergynetworks.co.uk</user>
+            <user>f.ramage@spenergynetworks.co.uk.spencrm</user>
+            <user>george.mcnaught@spenergynetworks.co.uk</user>
+            <user>ipaterson@spenergynetworks.co.uk</user>
+            <user>ian.wall@spenergynetworks.co.uk</user>
+            <user>irving.gracie@spenergynetworks.co.uk</user>
+            <user>jo.stiles@spenergynetworks.co.uk</user>
+            <user>k.anderson@spenergynetworks.co.uk.spencrm</user>
+            <user>kbean@spenergynetworks.co.uk.spencrm</user>
+            <user>malcolm.thomson@spenergynetworks.co.uk</user>
+            <user>neil.hardie@spenergynetworks.co.uk</user>
+            <user>nburrows@spenergynetworks.co.uk</user>
+            <user>ross.baxter@spenergynetworks.co.uk</user>
+            <user>simon.gavin@spenergynetworks.co.uk</user>
+            <user>sblack@spenergynetworks.co.uk</user>
+            <user>stephen.jack@spenergynetworks.co.uk</user>
+            <user>steven.mcchristie@spenergynetworks.co.uk.spencrm</user>
+            <user>tshearer@spenergynetworks.co.uk</user>
+            <user>t.lawrence@spenergynetworks.co.uk</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>SPEN_Job__c</sobjectType>
+    </queueSobject>
+</Queue>

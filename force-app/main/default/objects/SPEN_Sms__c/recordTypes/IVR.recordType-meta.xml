@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IVR</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>IVR</compactLayoutAssignment>
+    <label>IVR</label>
+    <picklistValues>
+        <picklist>SPEN_Event__c</picklist>
+        <values>
+            <fullName>Case Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPAS Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPAS Out-Of-Area Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medically Dependent by District</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Inquiry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_MessageType__c</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RestoredConfirmation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Status__c</picklist>
+        <values>
+            <fullName>Delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Potentially Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undelivered</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Type__c</picklist>
+        <values>
+            <fullName>MPAN Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier Inquiry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

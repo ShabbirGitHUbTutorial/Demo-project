@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Application Stage --></label>
+    <name>SPEN_ApplicationStage__c</name>
+    <picklistValues>
+        <masterLabel>Initial</masterLabel>
+        <translation><!-- Initial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mod-App</masterLabel>
+        <translation><!-- Mod-App --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Complaints_Queue_Responsibility__c</fullName>
+    <description>For CNT &amp; Complaints case assignment logic:  this field holds the name of the &quot;region/cluster&quot; based on the Zone&apos;s name (multiple zones are covered by the same queue in the complaints team) that is later on used to determine the Queue responsible for complaints in the respective zone.</description>
+    <externalId>false</externalId>
+    <formula>/* Ayrshire */
+IF(((UPPER(Name) = &apos;AYRSHIRE &amp; CLYDE SOUTH&apos; || UPPER(Name) = &apos;AYR CENTRAL&apos; || UPPER(Name) = &apos;AYR NORTH&apos; || UPPER(Name)= &apos;AYR SOUTH&apos; || UPPER(Name) = &apos;CLYDE SOUTH&apos;) &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Ayrshire&quot;,  
+/* Central &amp; Fife */
+IF(((UPPER(Name) = &apos;CENTRAL &amp; FIFE&apos; || UPPER(Name) = &apos;BATHGATE&apos; || UPPER(Name) = &apos;CENTRAL&apos; || UPPER(Name) = &apos;FIFE EAST&apos; || UPPER(Name) = &apos;FIFE WEST&apos; || UPPER(Name) = &apos;STIRLING&apos;) &amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Central &amp; Fife&quot;,  
+/* Dumfries */
+IF(((UPPER(Name) = &apos;DUMFRIES&apos; || UPPER(Name) = &apos;STEWARTRY&apos; || UPPER(Name) = &apos;WIGTOWNSHIRE&apos;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Dumfries&quot;,  
+/* Edinburgh &amp; Borders */
+IF(((UPPER(Name) = &apos;EDINBURGH &amp; LOTHIANS&apos; || UPPER(Name) = &apos;EDINBURGH&apos; || UPPER(Name) = &apos;LOTHIANS&apos; || UPPER(Name) = &apos;GALASHIELS&apos; || UPPER(Name) = &apos;BERWICK&apos;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Edinburgh &amp; Borders&quot;,  
+/* Glasgow */
+IF(((UPPER(Name) = &apos;GLASGOW &amp; CLYDE NORTH&apos; || UPPER(Name) = &apos;CLYDE NORTH&apos; || UPPER(Name) = &apos;CLYDE CENTRAL&apos; || UPPER(Name) = &apos;CLYDE(CENTRAL)&apos; || UPPER(Name) = &apos;GLASGOW NORTH&apos; || UPPER(Name) = &apos;GLASGOW SOUTH&apos;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Glasgow&quot;,  
+/* Lanarkshire */
+IF(((UPPER(Name) = &apos;LANARKSHIRE&apos; || UPPER(Name) = &apos;LANARK CENTRAL&apos; || UPPER(Name) = &apos;LANARK(CENTRAL)&apos; || UPPER(Name) = &apos;LANARK NORTH&apos; || UPPER(Name) = &apos;LANARK SOUTH&apos; || UPPER(Name) = &apos;LANARK WEST&apos;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Lanarkshire&quot;,  
+/* Dee Valley / Mid Wales */
+IF(((UPPER(Name) = &apos;DEE VALLEY &amp; OSWESTRY&apos; || UPPER(Name) = &apos;DEE VALLEY NORTH&apos; || UPPER(Name) = &apos;DEE VALLEY SOUTH&apos; || UPPER(Name) = &apos;OSWESTRY NORTH&apos; || UPPER(Name) = &apos;OSWESTRY SOUTH&apos;|| UPPER(Name) = &quot;ABERYSTWYTH NORTH&quot; || UPPER(Name) = &quot;ABERYSTWYTH SOUTH&quot; || UPPER(Name) = &quot;NEWTOWN&quot;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Dee Valley / Mid Wales&quot;,  
+/* Merseyside */
+IF(((UPPER(Name) = &apos;LIVERPOOL NORTH&apos; || UPPER(Name) = &apos;LIVERPOOL SOUTH&apos; || UPPER(Name) = &apos;ST HELENS&apos; || UPPER(Name) = &apos;WIDNES&apos;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Merseyside&quot;,  
+/* Mid Cheshire*/
+IF(((UPPER(Name) = &apos;MID CHESHIRE NORTH&apos; || UPPER(Name) = &apos;MID CHESHIRE SOUTH&apos; || UPPER(Name) = &apos;WARRINGTON&apos;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Mid Cheshire&quot;,  
+/* North Wales */
+IF(((UPPER(Name)= &apos;CLWYD EAST&apos; || UPPER(Name) = &apos;CLWYD WEST&apos; || UPPER(Name) = &apos;GWYNEDD ERYRI&apos; || UPPER(Name) = &apos;GWYNEDD MENAI&apos;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;North Wales&quot;,  
+/* Wirral*/
+IF(((UPPER(Name) = &apos;CHESTER&apos; || UPPER(Name) = &apos;ELLESMERE PORT&apos; || UPPER(Name) = &apos;NORTH WIRRAL&apos; || UPPER(Name) = &apos;RUNCORN&apos;)&amp;&amp; ISPICKVAL(SPEN_Type__c, &apos;Zone&apos;)), &quot;Wirral&quot;, 
+&quot;No match for Zone Name to determine Complaints Queue Responsibility for Zone&quot;
+)))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Queue Responsible for Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

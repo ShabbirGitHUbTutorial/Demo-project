@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>System Design</name>
+    <queueMembers>
+        <users>
+            <user>afoster@spenergynetworks.co.uk.spencrm</user>
+            <user>bhillman@spenergynetworks.co.uk.spencrm</user>
+            <user>davidr.adam@spenergynetworks.co.uk.spencrm</user>
+            <user>eric.leavy@spenergynetworks.co.uk.spencrm</user>
+            <user>f.mcnicol@spenergynetworks.co.uk.spencrm</user>
+            <user>gdean@spenergynetworks.co.uk.spencrm</user>
+            <user>graeme.vincent@spenergynetworks.co.uk.spencrm</user>
+            <user>graposo@spenergynetworks.co.uk.spencrm</user>
+            <user>jcao@spenergynetworks.co.uk.spencrm</user>
+            <user>kdowling@scottishpower.com.spencrm</user>
+            <user>mnedd@spenergynetworks.co.uk.spencrm</user>
+            <user>mstoichkov@spenergynetworks.co.uk.spencrm</user>
+            <user>rmillar@spenergynetworks.co.uk.spencrm</user>
+            <user>rcurley@spenergynetworks.co.uk.spencrm</user>
+            <user>rkirkwood@spenergynetworks.co.uk.spencrm</user>
+            <user>j.scott@spenergynetworks.co.uk.spencrm</user>
+            <user>tsansawatt@spenergynetworks.co.uk.spencrm</user>
+            <user>tsaka@spenergynetworks.co.uk.spencrm</user>
+            <user>tracey.miller@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

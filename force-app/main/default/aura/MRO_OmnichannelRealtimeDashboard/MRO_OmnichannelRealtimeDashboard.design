@@ -1,0 +1,4 @@
+<design:component>
+ <design:attribute name="dashboardid" label="Analytics Dashboard ID" required="false" description="The Analytics Dashboard ID to embed - "/> 
+ <design:attribute name="refreshinterval" label="Refresh Interval (ms)" required="false" description="The Refresh Interval of the data - "/>    
+</design:component>

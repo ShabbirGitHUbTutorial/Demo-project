@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Field that will be used as the title of the activity timeline. --></help>
+    <label><!-- Title Field --></label>
+    <name>timeline__Title_Field__c</name>
+</CustomFieldTranslation>

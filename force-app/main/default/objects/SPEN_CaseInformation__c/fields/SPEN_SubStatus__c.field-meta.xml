@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SubStatus__c</fullName>
+    <label>Sub Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Contact Attempt – Day 1</fullName>
+                <default>false</default>
+                <label>Customer Contact Attempt – Day 1</label>
+            </value>
+            <value>
+                <fullName>Customer Contact Attempt – Day 2 (AM)</fullName>
+                <default>false</default>
+                <label>Customer Contact Attempt – Day 2 (AM)</label>
+            </value>
+            <value>
+                <fullName>Customer Contact Attempt – Day 3 (PM)</fullName>
+                <default>false</default>
+                <label>Customer Contact Attempt – Day 3 (PM)</label>
+            </value>
+            <value>
+                <fullName>Customer Contact Attempt – Day 4 (OOH)</fullName>
+                <default>false</default>
+                <label>Customer Contact Attempt – Day 4 (OOH)</label>
+            </value>
+            <value>
+                <fullName>28 day - letter 1 issued</fullName>
+                <default>false</default>
+                <label>28 day - letter 1 issued</label>
+            </value>
+            <value>
+                <fullName>28 day - letter 2 issued</fullName>
+                <default>false</default>
+                <label>28 day - letter 2 issued</label>
+            </value>
+            <value>
+                <fullName>28 day - letter 3 issued</fullName>
+                <default>false</default>
+                <label>28 day - letter 3 issued</label>
+            </value>
+            <value>
+                <fullName>Missing Information Received</fullName>
+                <default>false</default>
+                <label>Missing Information Received</label>
+            </value>
+            <value>
+                <fullName>Missing Information Requested</fullName>
+                <default>false</default>
+                <label>Missing Information Requested</label>
+            </value>
+            <value>
+                <fullName>Survey/Quote Review</fullName>
+                <default>false</default>
+                <label>Survey/Quote Review</label>
+            </value>
+            <value>
+                <fullName>Quote Approved</fullName>
+                <default>false</default>
+                <label>Quote Approved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

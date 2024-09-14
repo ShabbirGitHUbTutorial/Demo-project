@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Financial Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financial Information</value>
+    </caseValues>
+    <layouts>
+        <layout>Financial Details SAP Updates</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Financial details SAP updates --></label>
+            <section>Financial details SAP updates</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Financial Information Layout</layout>
+        <sections>
+            <label><!-- Application Fees --></label>
+            <section>Application Fees</section>
+        </sections>
+        <sections>
+            <label><!-- Costs --></label>
+            <section>Costs</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Termination --></label>
+            <section>Termination</section>
+        </sections>
+        <sections>
+            <label><!-- User Commitment Table (GAV/LARF): A1 commitments --></label>
+            <section>User Commitment Table (GAV/LARF): A1 commitments</section>
+        </sections>
+        <sections>
+            <label><!-- User Commitment Table (GAV/LARF): H1 commitments --></label>
+            <section>User Commitment Table (GAV/LARF): H1 commitments</section>
+        </sections>
+        <sections>
+            <label><!-- User Commitment Table (GAV/LARF): One-off commitments --></label>
+            <section>User Commitment Table (GAV/LARF): One-off commitments</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Financial Information --></label>
+        <name>SPEN_UpdateFinancialInformation</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_EmailAddress__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( SPEN_Type__c ,&apos;Company&apos;) ,  SPEN_Company__r.SPEN_PartnerEmailaddress__c ,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Email Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

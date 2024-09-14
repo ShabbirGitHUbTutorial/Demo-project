@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_WorkRequestorBusinessUnit__c</fullName>
+    <description>Work Requestor Business Unit for Web Form</description>
+    <label>SPEN Originator Business Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Connections (Fully Customer Funded)</fullName>
+                <default>false</default>
+                <label>Connections (Fully Customer Funded)</label>
+            </value>
+            <value>
+                <fullName>Connections (Partially Customer Funded)</fullName>
+                <default>false</default>
+                <label>Connections (Partially Customer Funded)</label>
+            </value>
+            <value>
+                <fullName>Connections (SPEN Funded)</fullName>
+                <default>false</default>
+                <label>Connections (SPEN Funded)</label>
+            </value>
+            <value>
+                <fullName>Reactive Faults (LV - UG &amp; OHL)</fullName>
+                <default>false</default>
+                <label>Reactive Faults (LV - UG &amp; OHL)</label>
+            </value>
+            <value>
+                <fullName>Planned Repairs (LV - UG &amp; OHL)</fullName>
+                <default>false</default>
+                <label>Planned Repairs (LV - UG &amp; OHL)</label>
+            </value>
+            <value>
+                <fullName>Planned Works (LV - UG &amp; OHL)</fullName>
+                <default>false</default>
+                <label>Planned Works (LV - UG &amp; OHL)</label>
+            </value>
+            <value>
+                <fullName>Reactive Faults (HV - UG &amp; OHL)</fullName>
+                <default>false</default>
+                <label>Reactive Faults (HV - UG &amp; OHL)</label>
+            </value>
+            <value>
+                <fullName>Planned Repairs (HV - UG &amp; OHL)</fullName>
+                <default>false</default>
+                <label>Planned Repairs (HV - UG &amp; OHL)</label>
+            </value>
+            <value>
+                <fullName>Planned Works (HV - UG &amp; OHL)</fullName>
+                <default>false</default>
+                <label>Planned Works (HV - UG &amp; OHL)</label>
+            </value>
+            <value>
+                <fullName>Network Programme (UG &amp; OHL)</fullName>
+                <default>false</default>
+                <label>Network Programme (UG &amp; OHL)</label>
+            </value>
+            <value>
+                <fullName>Transmission</fullName>
+                <default>false</default>
+                <label>Transmission</label>
+            </value>
+            <value>
+                <fullName>Street Lighting Faults (SPEN)</fullName>
+                <default>false</default>
+                <label>Street Lighting Faults (SPEN)</label>
+            </value>
+            <value>
+                <fullName>Street Lighting Connections (SPEN)</fullName>
+                <default>false</default>
+                <label>Street Lighting Connections (SPEN)</label>
+            </value>
+            <value>
+                <fullName>Maintenance (Tea cutting &amp; Link Box Lids)</fullName>
+                <default>false</default>
+                <label>Maintenance (Tea cutting &amp; Link Box Lids)</label>
+            </value>
+            <value>
+                <fullName>Jones Lighting</fullName>
+                <default>false</default>
+                <label>Jones Lighting</label>
+            </value>
+            <value>
+                <fullName>Licence Programmes</fullName>
+                <default>false</default>
+                <label>Licence Programmes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

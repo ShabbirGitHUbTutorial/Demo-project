@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Closed_Status_for_Mood_score</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISBLANK(Text(SPEN_PredictedMoodScore__c)),
+OR( ISPICKVAL(SPEN_CustomerContactStatus__c ,&apos;Phone call&apos;),
+ISPICKVAL(SPEN_CustomerContactStatus__c,&apos;Successful – Email&apos;), ISPICKVAL(SPEN_CustomerContactStatus__c,&apos;Case Accepted - With Delivery&apos;) )
+)</errorConditionFormula>
+    <errorDisplayField>SPEN_PredictedMoodScore__c</errorDisplayField>
+    <errorMessage>User cannot to change any closed status without Predicted Mood Score.</errorMessage>
+</ValidationRule>

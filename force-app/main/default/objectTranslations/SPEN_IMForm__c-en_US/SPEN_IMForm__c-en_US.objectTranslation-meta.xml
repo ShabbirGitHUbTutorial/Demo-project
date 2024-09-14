@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>I&amp;M Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>I&amp;M Forms</value>
+    </caseValues>
+    <layouts>
+        <layout>RAAC Concrete Survey Layout</layout>
+        <sections>
+            <label><!-- Asbestos information --></label>
+            <section>Asbestos information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Quality information --></label>
+            <section>Quality information</section>
+        </sections>
+        <sections>
+            <label><!-- Roof information --></label>
+            <section>Roof information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Record type used to identify the RAAC Concrete Survey forms --></description>
+        <label><!-- RAAC Concrete Survey --></label>
+        <name>SPEN_RAACConcreteSurvey</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contract Area --></label>
+    <name>SPEN_ContractArea__c</name>
+    <picklistValues>
+        <masterLabel>Affected</masterLabel>
+        <translation><!-- Affected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Area</masterLabel>
+        <translation><!-- In Area --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<apex:page controller="AP230_MonitoringEventsTypes" renderAs="PDF" readOnly="true">
+    <apex:pageBlock >
+        <apex:pageBlockSection title="{!$Label.ProfilePermMsg}">
+            <apex:pageBlockTable value="{!DangerousSystemPermChanged}" var="la" border="1" cellpadding="3" cellspacing="3">
+                <apex:column headerValue="{!$Label.Action}" value="{!la.PermissionSet.Label}">    
+                </apex:column>
+                <apex:column headerValue="{!$Label.AssignedUser}" value="{!la.Assignee.Name} ">
+                    
+                </apex:column>
+                <apex:column headerValue="{!$Label.ActionDate}" value="{!la.SystemModstamp}">
+                    
+                </apex:column>
+            </apex:pageBlockTable>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

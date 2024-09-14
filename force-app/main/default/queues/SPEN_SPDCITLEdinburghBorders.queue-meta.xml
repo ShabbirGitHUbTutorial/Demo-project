@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPD CITL - Edinburgh &amp; Borders</name>
+    <queueMembers>
+        <users>
+            <user>doriolowo@spenergynetworks.co.uk.spencrm</user>
+            <user>linda.sokol@spenergynetworks.co.uk.spencrm</user>
+            <user>lorraine.brown@spenergynetworks.co.uk</user>
+            <user>mskirving@spenergynetworks.co.uk.spencrm</user>
+            <user>smatthews@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

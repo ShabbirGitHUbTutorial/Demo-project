@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ReportStatus__c</fullName>
+    <description>Created as part of CRMD-10581</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: Incomplete contact details&apos;) , &apos;SMOPS Data Rejection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: Out of Area / unknown postcode&apos;) , &apos;SMOPS Data Rejection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: Duplicate&apos;) , &apos;SMOPS Data Rejection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Issued To LP - pending delivery instruction&apos;) , &apos;Awaiting Appointment&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Awaiting Appointment Call 1 Made&apos;) , &apos;Contact Calls&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Awaiting Appointment Call 2 Made&apos;) , &apos;Contact Calls&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Awaiting Appointment Call 3 Made&apos;) , &apos;Contact Calls&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Awaiting Appointment Letter 1 Sent&apos;) , &apos;Letter 1&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Awaiting Appointment 10 WD response&apos;) , &apos;Letter 1&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Land Registry&apos;) , &apos;Letter 2&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Awaiting Appointment Letter 2 Sent&apos;) , &apos;Letter 2&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Escalation L2 Manager/Legal&apos;) , &apos;Disconnection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: Unable to Contact Customer Reasonable Endeavours Made&apos;) , &apos;Rejected - Unresolved&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Appointment Booked 1&apos;) , &apos;Appointment Booked&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;No Access on 1st Appointment Date&apos;) , &apos;Awaiting Appointment&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Appointment Booked 2&apos;) , &apos;Appointment Booked&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: No further appointment made&apos;) , &apos;Rejected - Unresolved&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: No Access on 2nd Appointment Date&apos;) , &apos;Rejected - Unresolved&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: Access Refused Safety&apos;) , &apos;Disconnection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: Access Refused Non Safety&apos;) , &apos;Rejected - Unresolved&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: Unable to Access Equipment Safety&apos;) , &apos;Disconnection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: Unable to Access Equipment Non Safety&apos;) , &apos;Rejected - Unresolved&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Further SPEN Works Req&apos;) , &apos;Further Works&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: no works required&apos;) , &apos;Data Disputed&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Reject: works already completed&apos;) , &apos;Data Disputed&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Works Completed&apos;) , &apos;Works Completed&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Works Completed&apos;) , &apos;Works Completed&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Cat C Job - On Hold&apos;) , &apos;HOLD&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Final Contact Attempt&apos;) , &apos;Disconnection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Disconnection Letter Issued&apos;) , &apos;Disconnection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Disconnection Delayed&apos;) , &apos;Disconnection&apos;,
+IF( ISPICKVAL( SPEN_JobStatus__c , &apos;Works Completed-Disconnected&apos;) , &apos;Works Completed&apos;,&apos;&apos;))))))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Report Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

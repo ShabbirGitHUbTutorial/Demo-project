@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_BlockInvoiceCreationOnClosedCases</fullName>
+    <active>true</active>
+    <description>Validation to block invoice creation on closed cases.</description>
+    <errorConditionFormula>ISPICKVAL(SPEN_Case__r.Status, &apos;Closed&apos;)</errorConditionFormula>
+    <errorMessage>Invoice cannot be created on a closed case. Please reopen the case in order to create Invoice.</errorMessage>
+</ValidationRule>

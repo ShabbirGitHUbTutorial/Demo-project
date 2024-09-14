@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The header must be a serialized version of a map of a string of strings. Example: {&quot;Key2&quot;:&quot;value2&quot;,&quot;Key1&quot;:&quot;value1&quot;} --></help>
+    <label><!-- Header --></label>
+    <name>SEL_Header__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DelegateGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groups>Q-CSLVSSA</groups>
+    <groups>Q-CSAPOS</groups>
+    <groups>Q-CSLVSSB</groups>
+    <groups>Q-CSCommercial</groups>
+    <groups>Q-CSDisconnections</groups>
+    <groups>Q-CSDomestic</groups>
+    <groups>Q-CSOtherWorks</groups>
+    <groups>Q-SPDDesignEast</groups>
+    <groups>Q-SPDDesignMajor</groups>
+    <groups>Q-SPDDesignWest</groups>
+    <groups>Q-SPMDesignCheshire</groups>
+    <groups>Q-SPMDesignMerseyside</groups>
+    <groups>Q-SPMDesignWales</groups>
+    <groups>Q-Contact Team</groups>
+    <groups>Q-Contact Team Awaiting Information</groups>
+    <groups>Q-Contact Team Existing Enquiry</groups>
+    <groups>Q-Design Team</groups>
+    <label>Connection Admin</label>
+    <loginAccess>false</loginAccess>
+    <roles>Connections Team Leader</roles>
+    <roles>DCC Agent</roles>
+    <roles>DCC Team Manager</roles>
+    <roles>General Manager</roles>
+</DelegateGroup>

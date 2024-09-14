@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Total__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Formula field used in Transmission Financial Information process to calculate the total of payment values.</description>
+    <externalId>false</externalId>
+    <formula>SPEN_A1Payment__c + SPEN_H1Payment__c + SPEN_OneoffPayment__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

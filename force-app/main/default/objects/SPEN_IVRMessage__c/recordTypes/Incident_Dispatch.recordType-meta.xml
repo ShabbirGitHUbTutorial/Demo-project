@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incident_Dispatch</fullName>
+    <active>true</active>
+    <label>Incident Dispatch</label>
+    <picklistValues>
+        <picklist>SPEN_Purpose__c</picklist>
+        <values>
+            <fullName>3-Hour Comfort Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3rd Call Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blank Template</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Pre Arranged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comfort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped Supply Within a Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped Supply with Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dropped Supply without Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETR Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estimated Restoration Time Extended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended Awaiting Emergency Services to provide access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended Pre-Arranged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flickering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HV Proactive Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HV Shutdown for Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Restored</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Fuse Replacements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Arrival On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Dispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some on Some off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unconfirmed reports of Fire%2C Vandalism%2C 3rd Party damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XRT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XRT - Some On</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

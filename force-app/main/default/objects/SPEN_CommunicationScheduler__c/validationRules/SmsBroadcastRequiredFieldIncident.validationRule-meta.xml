@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SmsBroadcastRequiredFieldIncident</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;SmsBroadcast&quot; &amp;&amp; 
+ISBLANK(SPEN_IncidentId__c) &amp;&amp; TEXT(SPEN_Event__c) != &apos;Medically Dependent by District&apos; &amp;&amp; TEXT(SPEN_Event__c) != &apos;Planned Outage Communication&apos; &amp;&amp; TEXT(SPEN_Event__c) != &apos;On Demand&apos;</errorConditionFormula>
+    <errorDisplayField>SPEN_IncidentId__c</errorDisplayField>
+    <errorMessage>The incident field is required if the Record Type is SMS Broadcast.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Scope of the batch - defaulted to 200 --></help>
+    <label><!-- Batch Size --></label>
+    <name>SPEN_BatchSize__c</name>
+</CustomFieldTranslation>

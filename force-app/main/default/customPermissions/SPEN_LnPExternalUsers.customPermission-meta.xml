@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission set is given to all external users.</description>
+    <isLicensed>false</isLicensed>
+    <label>SPEN L&amp;P External Users</label>
+</CustomPermission>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_LnPArea__c</fullName>
+    <label>L&amp;P Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPEN_LicenseArea__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transmission Land</fullName>
+                <default>false</default>
+                <label>Transmission Land</label>
+            </value>
+            <value>
+                <fullName>Land North</fullName>
+                <default>false</default>
+                <label>Land North</label>
+            </value>
+            <value>
+                <fullName>Environmental Planning North</fullName>
+                <default>false</default>
+                <label>Environmental Planning North</label>
+            </value>
+            <value>
+                <fullName>Distribution Land North</fullName>
+                <default>false</default>
+                <label>Distribution Land North</label>
+            </value>
+            <value>
+                <fullName>Distribution Land South</fullName>
+                <default>false</default>
+                <label>Distribution Land South</label>
+            </value>
+            <value>
+                <fullName>Land South</fullName>
+                <default>false</default>
+                <label>Land South</label>
+            </value>
+            <value>
+                <fullName>Environmental Planning South</fullName>
+                <default>false</default>
+                <label>Environmental Planning South</label>
+            </value>
+            <value>
+                <fullName>SPM 132 Land</fullName>
+                <default>false</default>
+                <label>SPM 132 Land</label>
+            </value>
+            <value>
+                <fullName>SPT Land &amp; EP North</fullName>
+                <default>false</default>
+                <label>SPT Land &amp; EP North</label>
+            </value>
+            <value>
+                <fullName>Distribution Land North &amp; EP North</fullName>
+                <default>false</default>
+                <label>Distribution Land North &amp; EP North</label>
+            </value>
+            <value>
+                <fullName>Land North &amp; Distribution Land North</fullName>
+                <default>false</default>
+                <label>Land North &amp; Distribution Land North</label>
+            </value>
+            <value>
+                <fullName>Distribution Land South &amp; EP South</fullName>
+                <default>false</default>
+                <label>Distribution Land South &amp; EP South</label>
+            </value>
+            <value>
+                <fullName>Land South &amp; Distribution Land South</fullName>
+                <default>false</default>
+                <label>Land South &amp; Distribution Land South</label>
+            </value>
+            <value>
+                <fullName>SPM 132 Land &amp; EP South</fullName>
+                <default>false</default>
+                <label>SPM 132 Land &amp; EP South</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Land North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Environmental Planning North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <valueName>Distribution Land North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <valueName>Distribution Land North &amp; EP North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <valueName>Land North &amp; Distribution Land North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Distribution Land South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Land South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Environmental Planning South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Distribution Land South &amp; EP South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Land South &amp; Distribution Land South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Transmission Land</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>SPT Land &amp; EP North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>SPM 132 Land</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>SPM 132 Land &amp; EP South</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

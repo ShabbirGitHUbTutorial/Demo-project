@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ConsentType__c</fullName>
+    <label>Consent Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Easement</fullName>
+                <color>#A5DD50</color>
+                <default>false</default>
+                <label>Easement</label>
+            </value>
+            <value>
+                <fullName>Servitude</fullName>
+                <color>#5C881A</color>
+                <default>false</default>
+                <label>Servitude</label>
+            </value>
+            <value>
+                <fullName>Wayleave</fullName>
+                <color>#F07B2B</color>
+                <default>false</default>
+                <label>Wayleave</label>
+            </value>
+            <value>
+                <fullName>Lease</fullName>
+                <color>#C3E98A</color>
+                <default>false</default>
+                <label>Lease</label>
+            </value>
+            <value>
+                <fullName>Freehold</fullName>
+                <color>#A6A6A6</color>
+                <default>false</default>
+                <label>Freehold</label>
+            </value>
+            <value>
+                <fullName>CPO</fullName>
+                <color>#B9CDE6</color>
+                <default>false</default>
+                <label>CPO</label>
+            </value>
+            <value>
+                <fullName>DCO</fullName>
+                <color>#8BABD5</color>
+                <default>false</default>
+                <label>DCO</label>
+            </value>
+            <value>
+                <fullName>NWL</fullName>
+                <color>#4A7CBE</color>
+                <default>false</default>
+                <label>NWL</label>
+            </value>
+            <value>
+                <fullName>Close Coupled Lease</fullName>
+                <color>#F6B283</color>
+                <default>false</default>
+                <label>Close Coupled Lease</label>
+            </value>
+            <value>
+                <fullName>Incorporated Rights</fullName>
+                <color>#FFA16D</color>
+                <default>false</default>
+                <label>Incorporated Rights</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LV List --></label>
+    <name>SPEN_LVList__c</name>
+    <picklistValues>
+        <masterLabel>Main</masterLabel>
+        <translation><!-- Main --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pilot</masterLabel>
+        <translation><!-- Pilot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation><!-- Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting</masterLabel>
+        <translation><!-- Street Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Un-Metered</masterLabel>
+        <translation><!-- Un-Metered --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

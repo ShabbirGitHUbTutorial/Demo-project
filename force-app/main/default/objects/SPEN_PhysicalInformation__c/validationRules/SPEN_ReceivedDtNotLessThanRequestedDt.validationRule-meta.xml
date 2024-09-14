@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ReceivedDtNotLessThanRequestedDt</fullName>
+    <active>true</active>
+    <description>Item Requested Date can not be less than created date and time</description>
+    <errorConditionFormula>SPEN_ItemRequestedDate__c &gt;  SPEN_ItemReceivedOn__c</errorConditionFormula>
+    <errorDisplayField>SPEN_ItemReceivedOn__c</errorDisplayField>
+    <errorMessage>Item Received On can&apos;t be less than the Item Requested Date</errorMessage>
+</ValidationRule>

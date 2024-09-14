@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Permission set is made only for Available for SMS presence status initially, can be assigned to only specific agents/users/TL who will be trained just to check the SMS and not reply</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SPEN Omni Available for SMS Status Only</label>
+</PermissionSet>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ResolutionCategory__c</fullName>
+    <description>Created as part of CRMD-10581</description>
+    <label>Outcome Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resolved - cancellation</fullName>
+                <default>false</default>
+                <label>Resolved - cancellation</label>
+            </value>
+            <value>
+                <fullName>Resolved - Customer Service Simply Thank You</fullName>
+                <default>false</default>
+                <label>Resolved - Customer Service Simply Thank You</label>
+            </value>
+            <value>
+                <fullName>Resolved - Explanation Provided</fullName>
+                <default>false</default>
+                <label>Resolved - Explanation Provided</label>
+            </value>
+            <value>
+                <fullName>Resolved - goodwill payment</fullName>
+                <default>false</default>
+                <label>Resolved - goodwill payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - information sent</fullName>
+                <default>false</default>
+                <label>Resolved - information sent</label>
+            </value>
+            <value>
+                <fullName>Resolved - insurance payment</fullName>
+                <default>false</default>
+                <label>Resolved - insurance payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - no payment</fullName>
+                <default>false</default>
+                <label>Resolved - no payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - wayleave payments made</fullName>
+                <default>false</default>
+                <label>Resolved - wayleave payments made</label>
+            </value>
+            <value>
+                <fullName>Resolved - wayleaves sent</fullName>
+                <default>false</default>
+                <label>Resolved - wayleaves sent</label>
+            </value>
+            <value>
+                <fullName>Resolved - Work Completed</fullName>
+                <default>false</default>
+                <label>Resolved - Work Completed</label>
+            </value>
+            <value>
+                <fullName>Already gone to BMCS survey</fullName>
+                <default>false</default>
+                <label>Already gone to BMCS survey</label>
+            </value>
+            <value>
+                <fullName>Complaint raised prior to R&amp;R feedback, notes added</fullName>
+                <default>false</default>
+                <label>Complaint raised prior to R&amp;R feedback, notes added</label>
+            </value>
+            <value>
+                <fullName>Enquiry raised prior to R&amp;R feedback, notes added</fullName>
+                <default>false</default>
+                <label>Enquiry raised prior to R&amp;R feedback, notes added</label>
+            </value>
+            <value>
+                <fullName>Complaint raised</fullName>
+                <default>false</default>
+                <label>Complaint raised</label>
+            </value>
+            <value>
+                <fullName>General Enquiry raised</fullName>
+                <default>false</default>
+                <label>General Enquiry raised</label>
+            </value>
+            <value>
+                <fullName>Contact not made - no voicemail left</fullName>
+                <default>false</default>
+                <label>Contact not made - no voicemail left</label>
+            </value>
+            <value>
+                <fullName>Contact not made - voicemail left</fullName>
+                <default>false</default>
+                <label>Contact not made - voicemail left</label>
+            </value>
+            <value>
+                <fullName>Contact not made - SMS required</fullName>
+                <default>false</default>
+                <label>Contact not made - SMS required</label>
+            </value>
+            <value>
+                <fullName>Customer does not want to discuss experience/feedback</fullName>
+                <default>false</default>
+                <label>Customer does not want to discuss experience/feedback</label>
+            </value>
+            <value>
+                <fullName>Customer made mistake with score</fullName>
+                <default>false</default>
+                <label>Customer made mistake with score</label>
+            </value>
+            <value>
+                <fullName>Customer satisfied with experience</fullName>
+                <default>false</default>
+                <label>Customer satisfied with experience</label>
+            </value>
+            <value>
+                <fullName>Customer still dissatisfied with experience but does not wish to raise a case</fullName>
+                <default>false</default>
+                <label>Customer still dissatisfied with experience but does not wish to raise a case</label>
+            </value>
+            <value>
+                <fullName>Customer was not off supply (incorrect contact details)</fullName>
+                <default>false</default>
+                <label>Customer was not off supply (incorrect contact details)</label>
+            </value>
+            <value>
+                <fullName>Passed to DCC</fullName>
+                <default>false</default>
+                <label>Passed to DCC</label>
+            </value>
+            <value>
+                <fullName>Passed to District</fullName>
+                <default>false</default>
+                <label>Passed to District</label>
+            </value>
+            <value>
+                <fullName>RATOC</fullName>
+                <default>false</default>
+                <label>RATOC</label>
+            </value>
+            <value>
+                <fullName>No response from customer.</fullName>
+                <default>false</default>
+                <label>No response from customer.</label>
+            </value>
+            <value>
+                <fullName>Resolved - Apology Provided</fullName>
+                <default>false</default>
+                <label>Resolved - Apology Provided</label>
+            </value>
+            <value>
+                <fullName>Insurance Land Damage</fullName>
+                <default>false</default>
+                <label>Insurance Land Damage</label>
+            </value>
+            <value>
+                <fullName>Cleared- defect cleared and Asset Condition Category as reported</fullName>
+                <default>false</default>
+                <label>Cleared- defect cleared and Asset Condition Category as reported</label>
+            </value>
+            <value>
+                <fullName>Resolved - defect cleared but Asset Condition Category less serious than reported</fullName>
+                <default>false</default>
+                <label>Resolved - defect cleared but Asset Condition Category less serious than reported</label>
+            </value>
+            <value>
+                <fullName>Disputed - no defect identified that prevents meter installation</fullName>
+                <default>false</default>
+                <label>Disputed - no defect identified that prevents meter installation</label>
+            </value>
+            <value>
+                <fullName>Unable to resolve</fullName>
+                <default>false</default>
+                <label>Unable to resolve</label>
+            </value>
+            <value>
+                <fullName>Hold- Cat C</fullName>
+                <default>false</default>
+                <label>Hold- Cat C</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

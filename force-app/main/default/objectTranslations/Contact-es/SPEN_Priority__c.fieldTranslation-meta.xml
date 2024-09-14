@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Priority --></label>
+    <name>SPEN_Priority__c</name>
+    <picklistValues>
+        <masterLabel>Councilors</masterLabel>
+        <translation><!-- Councilors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPO</masterLabel>
+        <translation><!-- EPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High profile customers</masterLabel>
+        <translation><!-- High profile customers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MP</masterLabel>
+        <translation><!-- MP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSP</masterLabel>
+        <translation><!-- MSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIP</masterLabel>
+        <translation><!-- VIP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

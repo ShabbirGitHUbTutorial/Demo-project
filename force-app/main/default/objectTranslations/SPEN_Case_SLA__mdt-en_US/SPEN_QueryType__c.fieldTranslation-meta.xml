@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Query Type --></label>
+    <name>SPEN_QueryType__c</name>
+    <picklistValues>
+        <masterLabel>NRSWA</masterLabel>
+        <translation><!-- NRSWA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>StreetWorks</masterLabel>
+        <translation><!-- StreetWorks --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

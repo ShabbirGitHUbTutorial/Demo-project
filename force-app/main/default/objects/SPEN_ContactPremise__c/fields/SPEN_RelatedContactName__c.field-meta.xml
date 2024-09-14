@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RelatedContactName__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Contact premise-related contact names will captured in this field</description>
+    <externalId>false</externalId>
+    <formula>SPEN_RelatedContact__r.FirstName  &amp;  SPEN_RelatedContact__r.MiddleName  &amp;  SPEN_RelatedContact__r.LastName</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Related Contact Name</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

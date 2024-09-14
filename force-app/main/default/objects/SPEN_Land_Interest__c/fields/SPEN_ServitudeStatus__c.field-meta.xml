@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ServitudeStatus__c</fullName>
+    <label>Permanent Land Right Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaiting Design</fullName>
+                <color>#FF6A3B</color>
+                <default>false</default>
+                <label>Awaiting Design</label>
+            </value>
+            <value>
+                <fullName>In Negotiation</fullName>
+                <color>#86B8D6</color>
+                <default>false</default>
+                <label>In Negotiation</label>
+            </value>
+            <value>
+                <fullName>HoTs Agreed</fullName>
+                <color>#B9CDE6</color>
+                <default>false</default>
+                <label>HoTs Agreed</label>
+            </value>
+            <value>
+                <fullName>Internal Legal Instructed</fullName>
+                <color>#FFE653</color>
+                <default>false</default>
+                <label>Internal Legal Instructed</label>
+            </value>
+            <value>
+                <fullName>Internal Legal Instruct External Legal Team</fullName>
+                <color>#FFE237</color>
+                <default>false</default>
+                <label>Internal Legal Instruct External Legal Team</label>
+            </value>
+            <value>
+                <fullName>Draft Documents Issued</fullName>
+                <color>#F2CF00</color>
+                <default>false</default>
+                <label>Draft Documents Issued</label>
+            </value>
+            <value>
+                <fullName>Draft Documents Agreed</fullName>
+                <color>#FFC000</color>
+                <default>false</default>
+                <label>Draft Documents Agreed</label>
+            </value>
+            <value>
+                <fullName>Legal Milestones Complete</fullName>
+                <color>#A4BA08</color>
+                <default>false</default>
+                <label>Legal Milestones Complete</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <color>#5C881A</color>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Signed Legal Document Returned</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Signed Legal Document Returned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

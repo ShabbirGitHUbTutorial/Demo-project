@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ApplianceServiceStatus__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Ceated as part of CRMD-5580</description>
+    <label>Appliance Service status</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaiting Inspection</fullName>
+                <default>false</default>
+                <label>Awaiting Inspection</label>
+            </value>
+            <value>
+                <fullName>Under Investigation</fullName>
+                <default>false</default>
+                <label>Under Investigation</label>
+            </value>
+            <value>
+                <fullName>Replacement Ordered</fullName>
+                <default>false</default>
+                <label>Replacement Ordered</label>
+            </value>
+            <value>
+                <fullName>Parts On Order</fullName>
+                <default>false</default>
+                <label>Parts On Order</label>
+            </value>
+            <value>
+                <fullName>Non Neutral Fault Related</fullName>
+                <default>false</default>
+                <label>Non Neutral Fault Related</label>
+            </value>
+            <value>
+                <fullName>Asset at workshop</fullName>
+                <default>false</default>
+                <label>Asset at workshop</label>
+            </value>
+            <value>
+                <fullName>Repaired Closed</fullName>
+                <default>false</default>
+                <label>Repaired Closed</label>
+            </value>
+            <value>
+                <fullName>Replacement Delivered</fullName>
+                <default>false</default>
+                <label>Replacement Delivered</label>
+            </value>
+            <value>
+                <fullName>Customer organising</fullName>
+                <default>false</default>
+                <label>Customer organising</label>
+            </value>
+            <value>
+                <fullName>Awaiting for customer to respond</fullName>
+                <default>false</default>
+                <label>Awaiting for customer to respond</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

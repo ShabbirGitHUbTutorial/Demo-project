@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CustomerDetailsMandate</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(SPEN_CustomerType__c, &quot;Customer Connection&quot;) &amp;&amp;(
+
+ ISBLANK(SPEN_Customer__c) || ISBLANK( SPEN_CustomerAddress__c) ||  ISBLANK(SPEN_CustomerPhone__c) ||  ISBLANK(SPEN_CustomerEmail__c  )  )</errorConditionFormula>
+    <errorMessage>For Customer Type as Customer connection please add the details for below fields:
+Customer, Customer Address, Customer Phone, Customer Email</errorMessage>
+</ValidationRule>

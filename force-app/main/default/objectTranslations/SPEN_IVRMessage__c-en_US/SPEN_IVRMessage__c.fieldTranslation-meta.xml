@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Message Template. Do not replace keywords enclosed with &lt;&lt; and &gt;&gt; for SMS templates as those are used by the application. --></help>
+    <label><!-- Message --></label>
+    <name>SPEN_IVRMessage__c</name>
+</CustomFieldTranslation>

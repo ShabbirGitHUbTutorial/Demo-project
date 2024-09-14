@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- either json or xml --></help>
+    <label><!-- Message Format --></label>
+    <name>SEL_MessageFormat__c</name>
+    <picklistValues>
+        <masterLabel>JSON</masterLabel>
+        <translation><!-- JSON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XML</masterLabel>
+        <translation><!-- XML --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

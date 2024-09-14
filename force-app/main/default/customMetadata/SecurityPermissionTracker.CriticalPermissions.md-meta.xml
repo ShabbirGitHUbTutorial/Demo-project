@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>CriticalPermissions</label>
+    <protected>false</protected>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">(PermissionSet.PermissionsModifyAllData = true 
+or PermissionSet.PermissionsAssignPermissionSets = true 
+or PermissionSet.PermissionsAuthorApex = true 
+or PermissionSet.PermissionsBulkApiHardDelete = true
+or PermissionSet.PermissionsCustomizeApplication = true 
+or PermissionSet.PermissionsInboundMigrationToolsUser = true 
+or PermissionSet.PermissionsEditHtmlTemplates = true 
+or PermissionSet.PermissionsEditReadonlyFields = true 
+or PermissionSet.PermissionsManageAuthProviders = true 
+or PermissionSet.PermissionsManageInternalUsers = true 
+or PermissionSet.PermissionsManageLoginAccessPolicies = true 
+or PermissionSet.PermissionsManagePasswordPolicies = true 
+or PermissionSet.PermissionsManageUsers = true 
+or PermissionSet.PermissionsModifyAllData = true 
+or PermissionSet.PermissionsPasswordNeverExpires = true 
+or PermissionSet.PermissionsResetPasswords = true 
+or PermissionSet.PermissionsViewAllData = true)</value>
+    </values>
+</CustomMetadata>

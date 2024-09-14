@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_AssetConditionClearanceCode__c</fullName>
+    <description>Created as part of CRMD-10581</description>
+    <label>Asset Condition Clearance Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Resolved - Apology Provided</fullName>
+                <default>false</default>
+                <label>Resolved - Apology Provided</label>
+            </value>
+            <value>
+                <fullName>Resolved - Cancellation</fullName>
+                <default>false</default>
+                <label>Resolved - Cancellation</label>
+            </value>
+            <value>
+                <fullName>Resolved - Claim Refuted</fullName>
+                <default>false</default>
+                <label>Resolved - Claim Refuted</label>
+            </value>
+            <value>
+                <fullName>Resolved - Customer Service Payment</fullName>
+                <default>false</default>
+                <label>Resolved - Customer Service Payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - Explanation Provided</fullName>
+                <default>false</default>
+                <label>Resolved - Explanation Provided</label>
+            </value>
+            <value>
+                <fullName>Resolved - Hot Food</fullName>
+                <default>false</default>
+                <label>Resolved - Hot Food</label>
+            </value>
+            <value>
+                <fullName>Resolved - Hotels</fullName>
+                <default>false</default>
+                <label>Resolved - Hotels</label>
+            </value>
+            <value>
+                <fullName>Resolved - Information provided</fullName>
+                <default>false</default>
+                <label>Resolved - Information provided</label>
+            </value>
+            <value>
+                <fullName>Resolved - Insurance payment</fullName>
+                <default>false</default>
+                <label>Resolved - Insurance payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - Ombudsman Full Case Issued - Findings Against</fullName>
+                <default>false</default>
+                <label>Resolved - Ombudsman Full Case Issued - Findings Against</label>
+            </value>
+            <value>
+                <fullName>Resolved - Ombudsman Full Case Issued - Findings In SPEN Favour</fullName>
+                <default>false</default>
+                <label>Resolved - Ombudsman Full Case Issued - Findings In SPEN Favour</label>
+            </value>
+            <value>
+                <fullName>Resolved - Ombudsman PICC / MAS</fullName>
+                <default>false</default>
+                <label>Resolved - Ombudsman PICC / MAS</label>
+            </value>
+            <value>
+                <fullName>Resolved - Ombudsman Withdrawal (OTOR)</fullName>
+                <default>false</default>
+                <label>Resolved - Ombudsman Withdrawal (OTOR)</label>
+            </value>
+            <value>
+                <fullName>Resolved - Simply Thank You Gesture</fullName>
+                <default>false</default>
+                <label>Resolved - Simply Thank You Gesture</label>
+            </value>
+            <value>
+                <fullName>Resolved - Wayleave payments made</fullName>
+                <default>false</default>
+                <label>Resolved - Wayleave payments made</label>
+            </value>
+            <value>
+                <fullName>Resolved - Wayleaves sent</fullName>
+                <default>false</default>
+                <label>Resolved - Wayleaves sent</label>
+            </value>
+            <value>
+                <fullName>Resolved - Work Completed / Issues Resolved</fullName>
+                <default>false</default>
+                <label>Resolved - Work Completed / Issues Resolved</label>
+            </value>
+            <value>
+                <fullName>Resolved -GS Payment</fullName>
+                <default>false</default>
+                <label>Resolved -GS Payment</label>
+            </value>
+            <value>
+                <fullName>Closed - Neutral Fault Invoice Updated</fullName>
+                <default>false</default>
+                <label>Closed - Neutral Fault Invoice Updated</label>
+            </value>
+            <value>
+                <fullName>Closed - No response from customer</fullName>
+                <default>false</default>
+                <label>Closed - No response from customer</label>
+            </value>
+            <value>
+                <fullName>Service(s) delivered</fullName>
+                <default>false</default>
+                <label>Service(s) delivered</label>
+            </value>
+            <value>
+                <fullName>Lack of engagement</fullName>
+                <default>false</default>
+                <label>Lack of engagement</label>
+            </value>
+            <value>
+                <fullName>No partner</fullName>
+                <default>false</default>
+                <label>No partner</label>
+            </value>
+            <value>
+                <fullName>Partner could not deliver</fullName>
+                <default>false</default>
+                <label>Partner could not deliver</label>
+            </value>
+            <value>
+                <fullName>Customer denied request for service</fullName>
+                <default>false</default>
+                <label>Customer denied request for service</label>
+            </value>
+            <value>
+                <fullName>Customer changed their mind (pre-referral)</fullName>
+                <default>false</default>
+                <label>Customer changed their mind (pre-referral)</label>
+            </value>
+            <value>
+                <fullName>Customer changed their mind (post-referral)</fullName>
+                <default>false</default>
+                <label>Customer changed their mind (post-referral)</label>
+            </value>
+            <value>
+                <fullName>Customer received service but does not want to progress</fullName>
+                <default>false</default>
+                <label>Customer received service but does not want to progress</label>
+            </value>
+            <value>
+                <fullName>Referral created in error</fullName>
+                <default>false</default>
+                <label>Referral created in error</label>
+            </value>
+            <value>
+                <fullName>Resolution - Deadlock Letter</fullName>
+                <default>false</default>
+                <label>Resolution - Deadlock Letter</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Resolved - GS Failure Payment</fullName>
+                <default>false</default>
+                <label>Resolved - GS Failure Payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - GS Customer Service / Top Up / Ex-Gratia Payment</fullName>
+                <default>false</default>
+                <label>Resolved - GS Customer Service / Top Up / Ex-Gratia Payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - GS Simply Thank You Gesture</fullName>
+                <default>false</default>
+                <label>Resolved - GS Simply Thank You Gesture</label>
+            </value>
+            <value>
+                <fullName>Resolved -GS Exemption Payment</fullName>
+                <default>false</default>
+                <label>Resolved -GS Exemption Payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - GS Exemption no payment</fullName>
+                <default>false</default>
+                <label>Resolved - GS Exemption no payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - GS no response from customer</fullName>
+                <default>false</default>
+                <label>Resolved - GS no response from customer</label>
+            </value>
+            <value>
+                <fullName>Resolved - GS11 ( only) Goodwill</fullName>
+                <default>false</default>
+                <label>Resolved - GS11 ( only) Goodwill</label>
+            </value>
+            <value>
+                <fullName>Resolved - Voltage within limits</fullName>
+                <default>false</default>
+                <label>Resolved - Voltage within limits</label>
+            </value>
+            <value>
+                <fullName>Resolved - Voltage Outwith limits</fullName>
+                <default>false</default>
+                <label>Resolved - Voltage Outwith limits</label>
+            </value>
+            <value>
+                <fullName>Resolved -GS5 Letter to customer</fullName>
+                <default>false</default>
+                <label>Resolved -GS5 Letter to customer</label>
+            </value>
+            <value>
+                <fullName>Resolved -GS5 On site repair</fullName>
+                <default>false</default>
+                <label>Resolved -GS5 On site repair</label>
+            </value>
+            <value>
+                <fullName>Resolved - Checks Completed and GS Customer Service / Top Up / Ex-Gratia Payment</fullName>
+                <default>false</default>
+                <label>Resolved - Checks Completed and GS Customer Service / Top Up / Ex-Gratia Payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - Checks Completed Insurance payment</fullName>
+                <default>false</default>
+                <label>Resolved - Checks Completed Insurance payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - Checks Completed and Simply Thank You Gesture</fullName>
+                <default>false</default>
+                <label>Resolved - Checks Completed and Simply Thank You Gesture</label>
+            </value>
+            <value>
+                <fullName>Resolved - No response from customer</fullName>
+                <default>false</default>
+                <label>Resolved - No response from customer</label>
+            </value>
+            <value>
+                <fullName>Resolved - Checks Completed No Damage</fullName>
+                <default>false</default>
+                <label>Resolved - Checks Completed No Damage</label>
+            </value>
+            <value>
+                <fullName>Resolved - Checks Completed Damage Rectified</fullName>
+                <default>false</default>
+                <label>Resolved - Checks Completed Damage Rectified</label>
+            </value>
+            <value>
+                <fullName>Resolved - Customer to arrange own repairs</fullName>
+                <default>false</default>
+                <label>Resolved - Customer to arrange own repairs</label>
+            </value>
+            <value>
+                <fullName>Information only</fullName>
+                <default>false</default>
+                <label>Information only</label>
+            </value>
+            <value>
+                <fullName>Payment/gesture</fullName>
+                <default>false</default>
+                <label>Payment/gesture</label>
+            </value>
+            <value>
+                <fullName>Winter Pack</fullName>
+                <default>false</default>
+                <label>Winter Pack</label>
+            </value>
+            <value>
+                <fullName>Resolved - Customer Service Simply Thank You</fullName>
+                <default>false</default>
+                <label>Resolved - Customer Service Simply Thank You</label>
+            </value>
+            <value>
+                <fullName>Resolved - Future modernisation and investment</fullName>
+                <default>false</default>
+                <label>Resolved - Future modernisation and investment</label>
+            </value>
+            <value>
+                <fullName>Resolved - Goodwill payment</fullName>
+                <default>false</default>
+                <label>Resolved - Goodwill payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - Haste Invoice Updated</fullName>
+                <default>false</default>
+                <label>Resolved - Haste Invoice Updated</label>
+            </value>
+            <value>
+                <fullName>Resolved - Information sent</fullName>
+                <default>false</default>
+                <label>Resolved - Information sent</label>
+            </value>
+            <value>
+                <fullName>Resolved - No payment</fullName>
+                <default>false</default>
+                <label>Resolved - No payment</label>
+            </value>
+            <value>
+                <fullName>Resolved - Works no longer Required</fullName>
+                <default>false</default>
+                <label>Resolved - Works no longer Required</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>R</fullName>
+                <default>false</default>
+                <label>R</label>
+            </value>
+            <value>
+                <fullName>U</fullName>
+                <default>false</default>
+                <label>U</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

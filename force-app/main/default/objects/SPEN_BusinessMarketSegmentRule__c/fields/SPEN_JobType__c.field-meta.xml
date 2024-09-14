@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_JobType__c</fullName>
+    <description>This field is used for connections process</description>
+    <label>Job Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UMANU033</fullName>
+                <default>false</default>
+                <label>Additional Load</label>
+            </value>
+            <value>
+                <fullName>UMANU034</fullName>
+                <default>false</default>
+                <label>Additional Load (Sys Ext)</label>
+            </value>
+            <value>
+                <fullName>UMANU044</fullName>
+                <default>false</default>
+                <label>Cut Out Change</label>
+            </value>
+            <value>
+                <fullName>UMANU040</fullName>
+                <default>false</default>
+                <label>Disconnect/Reconnect (Estimate Required)</label>
+            </value>
+            <value>
+                <fullName>UMANU009</fullName>
+                <default>false</default>
+                <label>Disconnection</label>
+            </value>
+            <value>
+                <fullName>UMANU053</fullName>
+                <default>false</default>
+                <label>Disconnection Bulk</label>
+            </value>
+            <value>
+                <fullName>UMANU052</fullName>
+                <default>false</default>
+                <label>Disconnection Single</label>
+            </value>
+            <value>
+                <fullName>UMANU045</fullName>
+                <default>false</default>
+                <label>Disconnection Unmetered Supply - Existing</label>
+            </value>
+            <value>
+                <fullName>UMANU046</fullName>
+                <default>false</default>
+                <label>Disconnection Unmetered Supply - New High</label>
+            </value>
+            <value>
+                <fullName>UMANU022</fullName>
+                <default>false</default>
+                <label>Diversion(S)</label>
+            </value>
+            <value>
+                <fullName>UMANU030</fullName>
+                <default>false</default>
+                <label>Domestic CONV/REFURB System Ext (Vat)</label>
+            </value>
+            <value>
+                <fullName>UMANU029</fullName>
+                <default>false</default>
+                <label>Domestic Conversion / Refurb (VAT)</label>
+            </value>
+            <value>
+                <fullName>UMANU047</fullName>
+                <default>false</default>
+                <label>Earthing</label>
+            </value>
+            <value>
+                <fullName>UMANU048</fullName>
+                <default>false</default>
+                <label>Earthing (System Ext)</label>
+            </value>
+            <value>
+                <fullName>UMANU024</fullName>
+                <default>false</default>
+                <label>Embedded Generation</label>
+            </value>
+            <value>
+                <fullName>UMANU049</fullName>
+                <default>false</default>
+                <label>Embedded Generation - no plots</label>
+            </value>
+            <value>
+                <fullName>UMANU039</fullName>
+                <default>false</default>
+                <label>Isolator Switch (100 and Over)</label>
+            </value>
+            <value>
+                <fullName>UMANU015</fullName>
+                <default>false</default>
+                <label>Multiple Sup Apps(UMS) New Highway</label>
+            </value>
+            <value>
+                <fullName>UMANU014</fullName>
+                <default>false</default>
+                <label>Multiple Supply Applications (Metered)</label>
+            </value>
+            <value>
+                <fullName>UMANU028</fullName>
+                <default>false</default>
+                <label>Multiple Supply Applications(UMS) Existing</label>
+            </value>
+            <value>
+                <fullName>UMANU026</fullName>
+                <default>false</default>
+                <label>Multi Utility with Plots</label>
+            </value>
+            <value>
+                <fullName>UMANU051</fullName>
+                <default>false</default>
+                <label>Multi Utility With Plots (Out of Area)</label>
+            </value>
+            <value>
+                <fullName>UMANU054</fullName>
+                <default>false</default>
+                <label>New EV Supply</label>
+            </value>
+            <value>
+                <fullName>UMANU055</fullName>
+                <default>false</default>
+                <label>New EV Supply (System Extension)</label>
+            </value>
+            <value>
+                <fullName>UMANU031</fullName>
+                <default>false</default>
+                <label>New Supply</label>
+            </value>
+            <value>
+                <fullName>UMANU032</fullName>
+                <default>false</default>
+                <label>New Supply (System Extension)</label>
+            </value>
+            <value>
+                <fullName>UMANU041</fullName>
+                <default>false</default>
+                <label>New Temporary Supply</label>
+            </value>
+            <value>
+                <fullName>UMANU042</fullName>
+                <default>false</default>
+                <label>New Temporary Supply (System Ext)</label>
+            </value>
+            <value>
+                <fullName>UMANU035</fullName>
+                <default>false</default>
+                <label>New Unmetered Supply - Existing Highway</label>
+            </value>
+            <value>
+                <fullName>UMANU036</fullName>
+                <default>false</default>
+                <label>New Unmetered Supply - New Highway</label>
+            </value>
+            <value>
+                <fullName>UMANU037</fullName>
+                <default>false</default>
+                <label>Transfer Unmetered Supply - Existing High</label>
+            </value>
+            <value>
+                <fullName>UMANU038</fullName>
+                <default>false</default>
+                <label>Transfer Unmetered Supply - New Highway</label>
+            </value>
+            <value>
+                <fullName>UCICO001</fullName>
+                <default>false</default>
+                <label>POC/DA</label>
+            </value>
+            <value>
+                <fullName>UCICO007</fullName>
+                <default>false</default>
+                <label>POC/DA Demand</label>
+            </value>
+            <value>
+                <fullName>UCICO008</fullName>
+                <default>false</default>
+                <label>POC/DA Generation</label>
+            </value>
+            <value>
+                <fullName>UFIQU027</fullName>
+                <default>false</default>
+                <label>Domestic CONV/REFURB Sytem Ext (Vat)</label>
+            </value>
+            <value>
+                <fullName>UNRSW001</fullName>
+                <default>false</default>
+                <label>NRSWA Diversion  7.5%</label>
+            </value>
+            <value>
+                <fullName>UPCQ0001</fullName>
+                <default>false</default>
+                <label>New Supply 1PH -UG (1PH JB)</label>
+            </value>
+            <value>
+                <fullName>UPCQ0002</fullName>
+                <default>false</default>
+                <label>New Supply 1PH OH TO UG</label>
+            </value>
+            <value>
+                <fullName>UPCQ0003</fullName>
+                <default>false</default>
+                <label>APOS 1PH (Cable Head Relocation)</label>
+            </value>
+            <value>
+                <fullName>UPCQ0004</fullName>
+                <default>false</default>
+                <label>APOS 1PH UG Cust Excavation</label>
+            </value>
+            <value>
+                <fullName>UPCQ0005</fullName>
+                <default>false</default>
+                <label>APOS 1PH Lateral Mains</label>
+            </value>
+            <value>
+                <fullName>UPCQ0006</fullName>
+                <default>false</default>
+                <label>APOS 1PH OH Line</label>
+            </value>
+            <value>
+                <fullName>UFEQU001</fullName>
+                <default>false</default>
+                <label>CNO CONNECTIONS NOT REPORTED I</label>
+            </value>
+            <value>
+                <fullName>UCICO009</fullName>
+                <default>false</default>
+                <label>POC/DA UMS</label>
+            </value>
+            <value>
+                <fullName>USLFI014</fullName>
+                <default>false</default>
+                <label>NEW 1PH UG SL CON (INC EXC/REIN-FP BTOP)</label>
+            </value>
+            <value>
+                <fullName>USLFI018</fullName>
+                <default>false</default>
+                <label>NEW 3PH UG SL CON (INC EXC/REIN-FP BTOP)</label>
+            </value>
+            <value>
+                <fullName>UFIQU077</fullName>
+                <default>false</default>
+                <label>MULTIPLE SUP APPS (UMS) NEW HIWAY - OTH</label>
+            </value>
+            <value>
+                <fullName>USLFI015</fullName>
+                <default>false</default>
+                <label>NEW 1PH UG SL CON (INC EXC/REIN-ROAD)</label>
+            </value>
+            <value>
+                <fullName>USLFI016</fullName>
+                <default>false</default>
+                <label>NEW 1PH UG SL CON (INC EXC/REIN-UNMADE)</label>
+            </value>
+            <value>
+                <fullName>USLFI017</fullName>
+                <default>false</default>
+                <label>NEW 1PH UG SL CON (NO EXCAV/REIN)</label>
+            </value>
+            <value>
+                <fullName>USLFI019</fullName>
+                <default>false</default>
+                <label>NEW 3PH UG SL CON (INC EXC/REIN-ROAD)</label>
+            </value>
+            <value>
+                <fullName>USLFI020</fullName>
+                <default>false</default>
+                <label>NEW 3PH UG SL CON (INC EXC/REIN-UNMADE)</label>
+            </value>
+            <value>
+                <fullName>USLFI021</fullName>
+                <default>false</default>
+                <label>NEW 3PH UG SL CON (NO EXCAV/REIN)</label>
+            </value>
+            <value>
+                <fullName>USLFI022</fullName>
+                <default>false</default>
+                <label>OHL SL DISCONNECTION</label>
+            </value>
+            <value>
+                <fullName>USLFI023</fullName>
+                <default>false</default>
+                <label>OHL SL NEW CONNECTION</label>
+            </value>
+            <value>
+                <fullName>USLFI024</fullName>
+                <default>false</default>
+                <label>OHL SL TRANSFER</label>
+            </value>
+            <value>
+                <fullName>USLFI025</fullName>
+                <default>false</default>
+                <label>SL CUT OUT - NO EXCAVATION</label>
+            </value>
+            <value>
+                <fullName>USLFI026</fullName>
+                <default>false</default>
+                <label>SL CUT OUT (INC EXC/REIN-FP BTOP)</label>
+            </value>
+            <value>
+                <fullName>USLFI027</fullName>
+                <default>false</default>
+                <label>SL CUT OUT (INC EXCAV/REINS - ROAD)</label>
+            </value>
+            <value>
+                <fullName>USLFI028</fullName>
+                <default>false</default>
+                <label>SL CUT OUT (INC EXCAV/REINS - UNMADE)</label>
+            </value>
+            <value>
+                <fullName>USLFI029</fullName>
+                <default>false</default>
+                <label>SL DISCO (INC EXC/REIN-FP BTOP)</label>
+            </value>
+            <value>
+                <fullName>USLFI030</fullName>
+                <default>false</default>
+                <label>SL DISCO (INC EXCAV/REINS - ROAD)</label>
+            </value>
+            <value>
+                <fullName>USLFI031</fullName>
+                <default>false</default>
+                <label>SL DISCO (INC EXC/REIN-UNMADE)</label>
+            </value>
+            <value>
+                <fullName>USLFI032</fullName>
+                <default>false</default>
+                <label>SL TRANSFER (INC EXC/REIN-FP BTOP)</label>
+            </value>
+            <value>
+                <fullName>USLFI033</fullName>
+                <default>false</default>
+                <label>SL TRANSFER (INC EXCAV/REINS - ROAD)</label>
+            </value>
+            <value>
+                <fullName>USLFI034</fullName>
+                <default>false</default>
+                <label>SL TRANSFER (INC EXCAV/REINS - UNMADE)</label>
+            </value>
+            <value>
+                <fullName>USLFI035</fullName>
+                <default>false</default>
+                <label>U/G SL DISCO (NO EXCAV - MULTIPLE)</label>
+            </value>
+            <value>
+                <fullName>USLFI036</fullName>
+                <default>false</default>
+                <label>U/G SL DISCO (NO EXCAV - SINGLE)</label>
+            </value>
+            <value>
+                <fullName>USLFI037</fullName>
+                <default>false</default>
+                <label>U/G SL TRANSFER (NO EXCAV - MULTIPLE)</label>
+            </value>
+            <value>
+                <fullName>USLFI038</fullName>
+                <default>false</default>
+                <label>U/G SL TRANSFER (NO EXCAV - SINGLE)</label>
+            </value>
+            <value>
+                <fullName>UFIQU035</fullName>
+                <default>false</default>
+                <label>Multiple Sup Apps(UMS)  Existing Highway</label>
+            </value>
+            <value>
+                <fullName>UFIQU045</fullName>
+                <default>false</default>
+                <label>Disconnection UMS - Existing Highway</label>
+            </value>
+            <value>
+                <fullName>UFIQU046</fullName>
+                <default>false</default>
+                <label>Transfer UMS - New Highway</label>
+            </value>
+            <value>
+                <fullName>UFIQU047</fullName>
+                <default>false</default>
+                <label>Transfer UMS - Existing Highway</label>
+            </value>
+            <value>
+                <fullName>UFIQU048</fullName>
+                <default>false</default>
+                <label>Disconnection UMS - New Highway</label>
+            </value>
+            <value>
+                <fullName>UFIQU049</fullName>
+                <default>false</default>
+                <label>Multiple Sup Apps (UMS) New Highway</label>
+            </value>
+            <value>
+                <fullName>USLFI001</fullName>
+                <default>false</default>
+                <label>Street Lighting Connection</label>
+            </value>
+            <value>
+                <fullName>USLFI002</fullName>
+                <default>false</default>
+                <label>Street Lighting Transfer</label>
+            </value>
+            <value>
+                <fullName>USLFI003</fullName>
+                <default>false</default>
+                <label>Street Lighting Disconnection</label>
+            </value>
+            <value>
+                <fullName>USLFI004</fullName>
+                <default>false</default>
+                <label>Street Lighting Connection + Reinstatem</label>
+            </value>
+            <value>
+                <fullName>USLFI005</fullName>
+                <default>false</default>
+                <label>Street Lighting Transfer + Reinstatement</label>
+            </value>
+            <value>
+                <fullName>USLFI006</fullName>
+                <default>false</default>
+                <label>Street Lighting Disconnection + Reinstat</label>
+            </value>
+            <value>
+                <fullName>USLFI007</fullName>
+                <default>false</default>
+                <label>Street Lighting Re-service Reinstatement</label>
+            </value>
+            <value>
+                <fullName>USLFI008</fullName>
+                <default>false</default>
+                <label>Street Lighting Re-service</label>
+            </value>
+            <value>
+                <fullName>USLFI009</fullName>
+                <default>false</default>
+                <label>Street Lighting Cutout Change</label>
+            </value>
+            <value>
+                <fullName>USLFI010</fullName>
+                <default>false</default>
+                <label>Street Lighting Replacement Same Day</label>
+            </value>
+            <value>
+                <fullName>USLFI011</fullName>
+                <default>false</default>
+                <label>Street Lighting Replacement Differen Day</label>
+            </value>
+            <value>
+                <fullName>USLFI012</fullName>
+                <default>false</default>
+                <label>SL Network Replacement + Reinstatement</label>
+            </value>
+            <value>
+                <fullName>USLFI013</fullName>
+                <default>false</default>
+                <label>SL Network Replacement</label>
+            </value>
+            <value>
+                <fullName>UMANU081</fullName>
+                <default>false</default>
+                <label>NEW HS2 PROJECT</label>
+            </value>
+            <value>
+                <fullName>UMANU043</fullName>
+                <default>false</default>
+                <label>Alteration to Point of Connection</label>
+            </value>
+            <value>
+                <fullName>UNRSW002</fullName>
+                <default>false</default>
+                <label>NRSWA Diversion 18%</label>
+            </value>
+            <value>
+                <fullName>UFIPR022</fullName>
+                <default>false</default>
+                <label>Sub Station Stand By</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

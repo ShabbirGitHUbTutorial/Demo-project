@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- GroundClearanceHeight --></help>
+    <label><!-- If No, What Height(m)? --></label>
+    <name>SPEN_IfNoWhatHeightmGC__c</name>
+</CustomFieldTranslation>

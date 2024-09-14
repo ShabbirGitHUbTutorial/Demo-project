@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RecordType__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Record Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SPEN_Streetworks</fullName>
+                <default>true</default>
+                <label>SPEN_Streetworks</label>
+            </value>
+            <value>
+                <fullName>SPEN_NRSWA</fullName>
+                <default>false</default>
+                <label>SPEN_NRSWA</label>
+            </value>
+            <value>
+                <fullName>SPEN_Query</fullName>
+                <default>false</default>
+                <label>SPEN_Query</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

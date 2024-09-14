@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPD Design - East</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>SPEN_SPDDesignEast</publicGroup>
+        </publicGroups>
+        <users>
+            <user>katrina.young@spenergynetworks.co.uk.spencrm</user>
+            <user>lesley.hogg@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Land</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lands</value>
+    </caseValues>
+    <layouts>
+        <layout>Land Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Manage Land Contacts --></label>
+        <name>SPEN_ManageLandContacts</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Ensure Format of OS Grid Reference of Parcel is &apos;NNNNNN,NNNNNN&apos; --></errorMessage>
+        <name>SPEN_OSGridRefParcelFormat</name>
+    </validationRules>
+</CustomObjectTranslation>

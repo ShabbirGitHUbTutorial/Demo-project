@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SFBG_IsQuestionnaireActiveFormula__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Formula field showing the Is Active status of the parent Questionnaire. Use this in configuring the briefcase.</description>
+    <formula>SFBG_QuestionId__r.SFBG_QuestionnaireId__r.SFBG_IsActive__c</formula>
+    <label>Is Questionnaire Active?</label>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Energy Consenting Authority --></label>
+    <name>SPEN_Energy_Consenting_Authority__c</name>
+    <picklistValues>
+        <masterLabel>DESNZ</masterLabel>
+        <translation><!-- DESNZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECU</masterLabel>
+        <translation><!-- ECU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPA</masterLabel>
+        <translation><!-- LPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEDW</masterLabel>
+        <translation><!-- PEDW --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

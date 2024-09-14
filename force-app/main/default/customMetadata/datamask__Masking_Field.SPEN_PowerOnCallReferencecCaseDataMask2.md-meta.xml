@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SPEN_PowerOnCallReference__c</label>
+    <protected>false</protected>
+    <values>
+        <field>datamask__API_Name__c</field>
+        <value xsi:type="xsd:string">SPEN_PowerOnCallReference__c</value>
+    </values>
+    <values>
+        <field>datamask__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Custom_Pattern__c</field>
+        <value xsi:type="xsd:string">XXXX-%6d-%c</value>
+    </values>
+    <values>
+        <field>datamask__Custom__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Date_Max__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Date_Min__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Field_Length__c</field>
+        <value xsi:type="xsd:double">255.0</value>
+    </values>
+    <values>
+        <field>datamask__Field_Type__c</field>
+        <value xsi:type="xsd:string">Text</value>
+    </values>
+    <values>
+        <field>datamask__Masking_Category__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Masking_Object__c</field>
+        <value xsi:type="xsd:string">CaseDataMask28thAprReviewItems</value>
+    </values>
+    <values>
+        <field>datamask__Masking_Type__c</field>
+        <value xsi:type="xsd:string">Patternize</value>
+    </values>
+    <values>
+        <field>datamask__Pattern_Data__c</field>
+        <value xsi:type="xsd:string">XXXX-234815-c,XXXX-463098-m,XXXX-514357-y,XXXX-022891-e,XXXX-786388-n,XXXX-140151-q,XXXX-367208-b,XXXX-976231-l,XXXX-673484-h,XXXX-995013-s,XXXX-939584-g,XXXX-617695-g,XXXX-875787-r,XXXX-186767-d,XXXX-743473-d,XXXX-296097-r,XXXX-001847-b,XXXX-808101-i,XXXX-447065-x,XXXX-688870-u,XXXX-691409-j,XXXX-943762-z,XXXX-147344-s,XXXX-001950-t,XXXX-075500-i,XXXX-337000-j,XXXX-399848-y,XXXX-309127-n,XXXX-315310-p,XXXX-693382-g,XXXX-115306-x,XXXX-850415-v,XXXX-272036-z,XXXX-743335-x,XXXX-823402-k,XXXX-482360-a,XXXX-778955-f,XXXX-611690-e,XXXX-017920-z,XXXX-317269-k,XXXX-919004-t,XXXX-135057-z,XXXX-213620-m,XXXX-201404-e,XXXX-927835-x,XXXX-781134-h,XXXX-800075-a,XXXX-142731-b,XXXX-932732-u,XXXX-286527-l</value>
+    </values>
+    <values>
+        <field>datamask__Range_Max__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Range_Min__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Required__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__Unique__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

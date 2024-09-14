@@ -1,0 +1,30 @@
+.resultClass{
+    height: 200px;
+    width: 100%;
+    border: 1px groove black;
+}
+
+:host {
+    --slds-c-card-header-spacing-block-start : 1rem;
+    --slds-c-card-header-spacing-inline-start : 1rem;
+    --slds-c-card-footer-sizing-border : 1px;
+    --slds-c-card-footer-color-border : Black;
+    --slds-c-card-color-background : rgb(179 226 209);
+    --slds-c-card-radius-border : 1rem;
+}
+
+.addNewEnable{
+    background-color: #5d9732;
+}
+
+.addNewDisable{
+    background-color: grey;
+}
+
+.submitEnable{
+    background-color: #5d9732;
+}
+
+.submitDisable{
+    background-color: grey;
+}

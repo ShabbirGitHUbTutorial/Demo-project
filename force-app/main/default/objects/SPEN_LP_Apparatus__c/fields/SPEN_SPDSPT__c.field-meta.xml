@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SPDSPT__c</fullName>
+    <formula>IF(  ISPICKVAL(Licence_Area__c , &apos;SPD&apos;) , true,  IF(  ISPICKVAL(Licence_Area__c , &apos;SPT&apos;) , true, false ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SPD &amp; SPT</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

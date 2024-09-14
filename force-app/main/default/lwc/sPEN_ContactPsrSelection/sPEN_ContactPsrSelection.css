@@ -1,0 +1,24 @@
+.scroller {
+  height: 200px;
+  overflow: auto;
+  padding: var(--lwc-varSpacingXSmall, 8px);
+  border: solid var(--lwc-borderWidthThin, 1px) #eee;
+}
+
+.buttonClass{
+  margin-top: 4%;
+  margin-left: 32%;
+}
+
+.EffectiveDateErrorMessage,
+.FirstLanguageErrorMessage,
+.SourcePsrUpdateErrorMessage,
+.isShowSocialObligationsErrorMessage,
+.CustomerHappyErrorMessage,
+.PsrDetailsErrorMessage,
+.AdditinalInfoErrorMessage
+.isShowSocialObligationsErrorMessage
+{
+  display: none;
+	color: #DA3E23;
+}

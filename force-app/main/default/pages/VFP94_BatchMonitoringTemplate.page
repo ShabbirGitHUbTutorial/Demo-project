@@ -1,0 +1,155 @@
+<apex:page controller="APC22_BatchMonitoring">
+    <apex:slds />
+    <apex:pageBlock >
+        
+        <apex:pageBlockSection >
+            
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputPanel >
+                    
+                    <style type="text/css">
+                        table {
+                        border: solid 5px grey;
+                        font-family :verdana;
+                        font-size: 12px;
+                        }
+                        
+                        tr.ColumnNames{
+                        background-color: lightgrey;
+                        text-align: center;
+                        }
+                        
+                        tr.Row {
+                        text-align: center;
+                        }
+                        
+                        table td { 
+                        border: solid 1px; 
+                        } 
+                        
+                        td.OK {
+                        background-color: green;
+                        color: Black;
+                        }
+                        
+                        td.KO {
+                        background-color: red;
+                        color: Black;
+                        }
+                        td.Aborted {
+                        background-color: Orange;
+                        color: Black;
+                        }
+                    </style>
+                    <html><br></br>
+                    <h1 style="font-family:Arial;font-size:18px;background-color:lightgrey;color:black;width: 250px;"><b>BATCH MONITORING REPORT </b></h1>
+                    <br></br>
+                <h2 style="color:Black;">{! IF(queryres.size = 0, $Label.BatchMonitoringNotes, $Label.BatchMonitoringNotes2)}</h2><br></br>
+            
+            <br></br><br></br>
+    
+</html>
+
+
+<table style="border: 5px" cellpadding="10px" rules="rows" >
+    <tr class="ColumnNames" > <!-- Description of columns of Table -->
+        <td>Batch Name</td>
+        <td>MethodName</td>
+        <td>Batch Type</td>
+        <td>Error Description</td>
+        <td>Number of Queried Records</td>
+        <td>Number of Errors</td>
+        <td>Start Date</td>
+        <td>Completed Date</td>
+        <td>Status</td>
+    </tr>
+    
+    <apex:repeat value="{!queryres}" var="asyncapexjob" >
+        
+        <tr class="Row">
+            <td>
+                <apex:outputField value="{!asyncapexjob.ApexClass.Name}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.MethodName}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.JobType}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.ExtendedStatus}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.TotalJobItems}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.NumberOfErrors}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.CreatedDate}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.CompleteDdate}"/>
+            </td>
+            <td class="{!IF(asyncapexjob.ExtendedStatus == NULL , 'OK', 'KO')}">{!IF(asyncapexjob.ExtendedStatus == NULL , 'OK', 'KO')}</td>
+        </tr>
+        
+    </apex:repeat>
+    
+    
+</table>
+</apex:outputPanel>
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+    <apex:outputPanel >
+        <html><br></br>
+        <h1 style="font-family:Arial;font-size:18px;background-color:lightgrey;color:black;width: 250px;"><b>Email Configuration Form</b></h1>
+        <br></br>                
+</html>
+<apex:messages id="msgId"  />
+<apex:form >
+    <div>
+        <h1>
+            <apex:outputLabel value="Recipients of Daily-Batch Monitoring Email Alert"></apex:outputLabel>  
+        </h1>
+    </div>
+    <apex:outputPanel id="ajaxrequest">
+        <apex:inputText value="{!newEmail}" label="test"/>
+        
+        <apex:commandButton action="{!addNewEmail}" value="Add Email" reRender="ajaxrequest,msgId" />
+        <br />
+        <apex:dataTable value="{!emails}" var="em" id="dt1">
+            <apex:column headerValue="Email Id" value="{!em.EmailId__c}" />
+            <apex:column headerValue="Delete">
+                <apex:commandLink action="{!removeEmail}" value="remove" reRender="ajaxrequest">
+                    <apex:param name="emId" value="{!em.Id}" assignTo="{!emailId}"/>
+                </apex:commandLink>
+            </apex:column>
+        </apex:dataTable>         
+        
+    </apex:outputPanel>
+</apex:form>
+<br></br>
+<html>
+    <h2 style="font-family:Arial;font-size:18px;background-color:lightgrey;color:black;width: 250px;"><b>Jobs Going to End Soon</b></h2>
+    <br></br>
+<marquee behavior="scroll" direction="left" bgcolor="white"><b>{! IF(query.size > 0, $Label.Batch_ScheduledEnddate, 'No jobs are going to end in next 15 days...')}</b></marquee>
+</html>
+<apex:dataTable value="{!query}" var="bm" id="dt2">
+    <apex:column headerValue="Job Name" rendered="{! IF(query.size > 0,true,false)}" value="{!bm.CronJobDetail.Name}"/>
+    <apex:column headerValue="Job Type" rendered="{! IF(query.size > 0,true,false)}" value="{!bm.CronJobDetail.Jobtype}"/>
+    <apex:column headerValue="Ending Date" rendered="{! IF(query.size > 0,true,false)}" value="{!bm.EndTime}" />
+    <apex:column headerValue="Last Created By" rendered="{! IF(query.size > 0,true,false)}" value="{!bm.createdby.name}"/>
+    <apex:column style="background-color:red;text-align: center" rendered="{! IF(query.size > 0,true,false)}">
+        <apex:facet name="header">Ending in Next</apex:facet>
+        <b>{!FLOOR(bm.endtime - now())} Days </b>
+    </apex:column>
+</apex:dataTable>
+
+</apex:outputPanel>
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+
+</apex:page>

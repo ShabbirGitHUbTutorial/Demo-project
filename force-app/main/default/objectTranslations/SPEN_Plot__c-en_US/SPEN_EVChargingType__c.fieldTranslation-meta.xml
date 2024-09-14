@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- EV Charging Type --></label>
+    <name>SPEN_EVChargingType__c</name>
+    <picklistValues>
+        <masterLabel>Don&apos;t know</masterLabel>
+        <translation><!-- Don&apos;t know --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fast (Up to 8KW / 32A)</masterLabel>
+        <translation><!-- Fast (Up to 8KW / 32A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Over 8KW / 32A</masterLabel>
+        <translation><!-- Over 8KW / 32A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slow (Up to 4KW / 16A)</masterLabel>
+        <translation><!-- Slow (Up to 4KW / 16A) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

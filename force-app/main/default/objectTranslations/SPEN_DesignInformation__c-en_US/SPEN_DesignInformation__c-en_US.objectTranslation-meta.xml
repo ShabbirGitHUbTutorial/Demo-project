@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Design Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Design Informations</value>
+    </caseValues>
+    <layouts>
+        <layout>Design Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill the completion date. --></errorMessage>
+        <name>SPEN_CompletionDateRequired</name>
+    </validationRules>
+</CustomObjectTranslation>

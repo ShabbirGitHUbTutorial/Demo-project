@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Undelivered_SMS</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_CommunicationSchedulerId__c</columns>
+    <columns>SPEN_ContactId__c</columns>
+    <columns>SPEN_IncidentId__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SPEN_IvrMessageId__c</columns>
+    <columns>SPEN_Mobile__c</columns>
+    <columns>SPEN_Status__c</columns>
+    <columns>SPEN_Event__c</columns>
+    <columns>SPEN_Message__c</columns>
+    <columns>SPEN_CaseId__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_Status__c</field>
+        <operation>equals</operation>
+        <value>Undelivered</value>
+    </filters>
+    <filters>
+        <field>SPEN_ContactId__c</field>
+        <operation>contains</operation>
+        <value>Hannah Simpson</value>
+    </filters>
+    <label>All Undelivered SMS</label>
+</ListView>

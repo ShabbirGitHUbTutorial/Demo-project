@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Site Details</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Site Details</value>
+    </caseValues>
+    <layouts>
+        <layout>NRSWA Site Details Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- NRSWA - Symology/Aurora --></label>
+            <section>NRSWA - Symology/Aurora</section>
+        </sections>
+        <sections>
+            <label><!-- Site Detail Information --></label>
+            <section>Site Detail Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>StreetWorks Site Details Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Site Detail Information --></label>
+            <section>Site Detail Information</section>
+        </sections>
+        <sections>
+            <label><!-- StreetWorks- Symology/Aurora --></label>
+            <section>StreetWorks- Symology/Aurora</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- NRSWA --></label>
+        <name>NRSWA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Streetworks --></label>
+        <name>Streetworks</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

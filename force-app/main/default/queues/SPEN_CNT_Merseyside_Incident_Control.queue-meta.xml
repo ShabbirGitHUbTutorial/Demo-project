@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CNT Merseyside Incident Control</name>
+    <queueMembers>
+        <users>
+            <user>a.taylor@spenergynetworks.co.uk.spencrm</user>
+            <user>adam.latham2@spenergynetworks.co.uk.spencrm</user>
+            <user>amy.scarbrough@spenergynetworks.co.uk.spencrm</user>
+            <user>b.bradshaw@spenergynetworks.co.uk.spencrm</user>
+            <user>c.bottom@spenergynetworks.co.uk.spencrm</user>
+            <user>c.west@spenergynetworks.co.uk.spencrm</user>
+            <user>dduncan@spenergynetworks.co.uk.spencrm</user>
+            <user>david.parry@spenergynetworks.co.uk.spencrm</user>
+            <user>h.brookman@spenergynetworks.co.uk.spencrm</user>
+            <user>idolan@spenergynetworks.co.uk.spencrm</user>
+            <user>jacqui.jones@spenergynetworks.co.uk.spencrm</user>
+            <user>jhooper@spenergynetworks.co.uk.spencrm</user>
+            <user>j_cameron@spenergynetworks.co.uk.spencrm</user>
+            <user>ljones1@spenergynetworks.co.uk.spencrm</user>
+            <user>janette.jones@spenergynetworks.co.uk.spencrm</user>
+            <user>m.parnell@spenergynetworks.co.uk.spencrm</user>
+            <user>nfarragher@spenergynetworks.co.uk.spencrm</user>
+            <user>neil.mason@spenergynetworks.co.uk.spencrm</user>
+            <user>neil.palin@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

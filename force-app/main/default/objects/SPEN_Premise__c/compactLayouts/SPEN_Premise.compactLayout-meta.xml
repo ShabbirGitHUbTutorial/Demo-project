@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Premise</fullName>
+    <fields>SPEN_AccountNumberMPAN__c</fields>
+    <fields>SPEN_FlatNumber__c</fields>
+    <fields>SPEN_PremiseNumber__c</fields>
+    <fields>SPEN_Street__c</fields>
+    <fields>SPEN_Area__c</fields>
+    <fields>SPEN_Town__c</fields>
+    <fields>SPEN_PostCode__c</fields>
+    <label>SPEN Premise</label>
+</CompactLayout>

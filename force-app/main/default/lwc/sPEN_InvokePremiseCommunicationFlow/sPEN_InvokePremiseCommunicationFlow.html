@@ -1,0 +1,14 @@
+<template>
+    <template if:true={isSpinner} >
+    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+    <lightning-flow if:true={launchFlow} 
+        flow-api-name='Send_Communication_From_Premise'
+        flow-input-variables={flowInputVariables}
+        onstatuschange={handleFlowStatusChange}
+    >
+    </lightning-flow>
+    <template if:false={launchFlow} >
+        <div class="slds-m-left_xx-small slds-text-heading_small slds-text-color_error">{errorMsg}</div>
+    </template>
+</template>

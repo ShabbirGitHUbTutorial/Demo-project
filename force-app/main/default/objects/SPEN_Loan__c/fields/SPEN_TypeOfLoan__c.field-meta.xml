@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TypeOfLoan__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>To Capture type of loan captured as part of CRMD - 5580</description>
+    <label>Type of Loan</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Washing Machine</fullName>
+                <default>false</default>
+                <label>Washing Machine</label>
+            </value>
+            <value>
+                <fullName>Fridge</fullName>
+                <default>false</default>
+                <label>Fridge</label>
+            </value>
+            <value>
+                <fullName>Freezer</fullName>
+                <default>false</default>
+                <label>Freezer</label>
+            </value>
+            <value>
+                <fullName>Fridge Freezer</fullName>
+                <default>false</default>
+                <label>Fridge Freezer</label>
+            </value>
+            <value>
+                <fullName>Hotplate</fullName>
+                <default>false</default>
+                <label>Hotplate</label>
+            </value>
+            <value>
+                <fullName>Microwave</fullName>
+                <default>false</default>
+                <label>Microwave</label>
+            </value>
+            <value>
+                <fullName>Fan Heater</fullName>
+                <default>false</default>
+                <label>Fan Heater</label>
+            </value>
+            <value>
+                <fullName>Portable Heaters</fullName>
+                <default>false</default>
+                <label>Portable Heaters</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

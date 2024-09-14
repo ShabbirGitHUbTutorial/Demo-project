@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_WorkItemRouting__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Work Item Routing</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>30 Min SLA North</fullName>
+                <default>false</default>
+                <label>30 Min SLA North</label>
+            </value>
+            <value>
+                <fullName>30 Min SLA South</fullName>
+                <default>false</default>
+                <label>30 Min SLA South</label>
+            </value>
+            <value>
+                <fullName>1 Hr SLA North</fullName>
+                <default>false</default>
+                <label>1 Hr SLA North</label>
+            </value>
+            <value>
+                <fullName>1 Hr SLA South</fullName>
+                <default>false</default>
+                <label>1 Hr SLA South</label>
+            </value>
+            <value>
+                <fullName>4 Hr SLA North</fullName>
+                <default>false</default>
+                <label>4 Hr SLA North</label>
+            </value>
+            <value>
+                <fullName>4 Hr SLA South</fullName>
+                <default>false</default>
+                <label>4 Hr SLA South</label>
+            </value>
+            <value>
+                <fullName>7 Hr SLA North</fullName>
+                <default>false</default>
+                <label>7 Hr SLA North</label>
+            </value>
+            <value>
+                <fullName>7 Hr SLA South</fullName>
+                <default>false</default>
+                <label>7 Hr SLA South</label>
+            </value>
+            <value>
+                <fullName>72 Hr SLA North</fullName>
+                <default>false</default>
+                <label>72 Hr SLA North</label>
+            </value>
+            <value>
+                <fullName>72 Hr SLA South</fullName>
+                <default>false</default>
+                <label>72 Hr SLA South</label>
+            </value>
+            <value>
+                <fullName>2 Hr SLA North</fullName>
+                <default>false</default>
+                <label>2 Hr SLA North</label>
+            </value>
+            <value>
+                <fullName>2 Hr SLA South</fullName>
+                <default>false</default>
+                <label>2 Hr SLA South</label>
+            </value>
+            <value>
+                <fullName>8 Hr SLA North</fullName>
+                <default>false</default>
+                <label>8 Hr SLA North</label>
+            </value>
+            <value>
+                <fullName>8 Hr SLA South</fullName>
+                <default>false</default>
+                <label>8 Hr SLA South</label>
+            </value>
+            <value>
+                <fullName>Streetworks - 5 Working Days</fullName>
+                <default>false</default>
+                <label>Streetworks - 5 Working Days</label>
+            </value>
+            <value>
+                <fullName>Streetworks-2 Working Hours</fullName>
+                <default>false</default>
+                <label>Streetworks-2 Working Hours</label>
+            </value>
+            <value>
+                <fullName>Streetworks-3 Working Days</fullName>
+                <default>false</default>
+                <label>Streetworks-3 Working Days</label>
+            </value>
+            <value>
+                <fullName>Streetworks-35 Calendar Days</fullName>
+                <default>false</default>
+                <label>Streetworks-35 Calendar Days</label>
+            </value>
+            <value>
+                <fullName>Streetworks-14 Calendar Days</fullName>
+                <default>false</default>
+                <label>Streetworks-14 Calendar Days</label>
+            </value>
+            <value>
+                <fullName>Streetworks-15 Calendar Weeks</fullName>
+                <default>false</default>
+                <label>Streetworks-15 Calendar Weeks</label>
+            </value>
+            <value>
+                <fullName>Streetworks-13 Working Days</fullName>
+                <default>false</default>
+                <label>Streetworks-13 Working Days</label>
+            </value>
+            <value>
+                <fullName>NRSWA - 2 Business Hours</fullName>
+                <default>false</default>
+                <label>NRSWA - 2 Business Hours</label>
+            </value>
+            <value>
+                <fullName>Streetworks- 2 Business Hours</fullName>
+                <default>false</default>
+                <label>Streetworks- 2 Business Hours</label>
+            </value>
+            <value>
+                <fullName>4 Hr SLA North-Lowest</fullName>
+                <default>false</default>
+                <label>4 Hr SLA North-Lowest</label>
+            </value>
+            <value>
+                <fullName>4 Hr SLA South-Lowest</fullName>
+                <default>false</default>
+                <label>4 Hr SLA South-Lowest</label>
+            </value>
+            <value>
+                <fullName>Streetworks_North_1Hr_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_North_1Hr_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_North_30Min_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_North_30Min_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_North_4Hr_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_North_4Hr_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_North_72Hr_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_North_72Hr_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_North_7Hr_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_North_7Hr_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_South_1Hr_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_South_1Hr_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_South_30Min_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_South_30Min_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_South_4Hr_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_South_4Hr_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_South_72Hr_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_South_72Hr_SLA</label>
+            </value>
+            <value>
+                <fullName>Streetworks_South_7Hr_SLA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Streetworks_South_7Hr_SLA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

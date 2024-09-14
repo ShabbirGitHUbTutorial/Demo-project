@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdditinalInformation</fullName>
+    <active>true</active>
+    <description>Additional information should be required for PSRVulnerabilityType  code is 99</description>
+    <errorConditionFormula>AND(SPEN_PSRVulnerabilityType__r.SPEN_Code__c  = &apos;99&apos;,ISBLANK( SPEN_AdditionalInfo__c ) )</errorConditionFormula>
+    <errorDisplayField>SPEN_AdditionalInfo__c</errorDisplayField>
+    <errorMessage>Please enter a password in the additional info field in order to add this PSR category</errorMessage>
+</ValidationRule>

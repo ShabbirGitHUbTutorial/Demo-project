@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Adds the recordId to collection variable.</description>
+        <name>Add_to_Collection_Variable</name>
+        <label>Add to Collection Variable</label>
+        <locationX>490</locationX>
+        <locationY>1706</locationY>
+        <assignmentItems>
+            <assignToReference>serialisedProducts</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Multiset_Items</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns expected return date to recordId variable.</description>
+        <name>Assign_Expected_Return</name>
+        <label>Assign Expected Return</label>
+        <locationX>358</locationX>
+        <locationY>1166</locationY>
+        <assignmentItems>
+            <assignToReference>recordId.SPEN_Expected_Return_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Expected_Return_Date</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Equipment_Status</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the expected return date.</description>
+        <name>Assign_Multiset_Expected_Return</name>
+        <label>Assign Multiset Expected Return</label>
+        <locationX>490</locationX>
+        <locationY>1598</locationY>
+        <assignmentItems>
+            <assignToReference>recordId.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>loopMultisetItem.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>recordId.SPEN_Expected_Return_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Expected_Return_Date</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_Collection_Variable</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the record Id to collection variable.</description>
+        <name>Assign_Record_Id</name>
+        <label>Assign Record Id</label>
+        <locationX>50</locationX>
+        <locationY>1382</locationY>
+        <assignmentItems>
+            <assignToReference>serialisedProducts</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Update_Serialised_Product</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Decision to find out if Serialised Product is in a booked out status.</description>
+        <name>Check_Equipment_Status</name>
+        <label>Check Equipment Status</label>
+        <locationX>358</locationX>
+        <locationY>1274</locationY>
+        <defaultConnector>
+            <targetReference>Invalid_Return_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Equipment Booked Out Past Return</defaultConnectorLabel>
+        <rules>
+            <name>Equipment_Booked_Out_Future_Single</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Expected_Return_Date</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.SPEN_Item_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Booked Out</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.SPEN_Multiset__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Record_Id</targetReference>
+            </connector>
+            <label>Equipment Booked Out Future Single</label>
+        </rules>
+        <rules>
+            <name>Equipment_Booked_Out_Future_Parent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Expected_Return_Date</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Flow.CurrentDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.SPEN_Item_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Booked Out</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.SPEN_Multiset__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Multiset_Serialised_Products</targetReference>
+            </connector>
+            <label>Equipment Booked Out Future Parent</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if a Serialised Product is found where the ENID entered matches ENID field.</description>
+        <name>Check_if_Multi_ENID_Serialised_Product_Found</name>
+        <label>Check if Multi ENID Serialised Product Found</label>
+        <locationX>490</locationX>
+        <locationY>674</locationY>
+        <defaultConnector>
+            <targetReference>Invalid_ENID_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No ENID Identified</defaultConnectorLabel>
+        <rules>
+            <name>Multi_ENID_Identified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Expected_Return</targetReference>
+            </connector>
+            <label>Multi ENID Identified</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if a Serialised Product is found where the ENID entered matches ENID field.</description>
+        <name>Check_If_Single_ENID_Serialised_Product_Found</name>
+        <label>Check If Single ENID Serialised Product Found</label>
+        <locationX>358</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Get_Multi_Serialised_Product_from_ENID_Entry</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No ENID Identified</defaultConnectorLabel>
+        <rules>
+            <name>Single_ENID_Identified</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Expected_Return</targetReference>
+            </connector>
+            <label>Single ENID Identified</label>
+        </rules>
+    </decisions>
+    <description>Field Service mobile flow to allow a user to update the expected return date on a Serialised Product, for use with Compliance Stores.</description>
+    <environments>Default</environments>
+    <interviewLabel>Compliance Stores - Expected Return Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Compliance Stores - Expected Return Update</label>
+    <loops>
+        <description>Loop through multiset items to update expected return date.</description>
+        <name>Loop_Multiset_Items</name>
+        <label>Loop Multiset Items</label>
+        <locationX>402</locationX>
+        <locationY>1490</locationY>
+        <assignNextValueToReference>loopMultisetItem</assignNextValueToReference>
+        <collectionReference>multisetSerialisedProducts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Multiset_Expected_Return</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Serialised_Product</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <recordLookups>
+        <description>Gets the Multi Set Serialised Product record via the ENID entry from user on previous screen.</description>
+        <name>Get_Multi_Serialised_Product_from_ENID_Entry</name>
+        <label>Get Multi Serialised Product from ENID Entry</label>
+        <locationX>490</locationX>
+        <locationY>566</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_Multi_ENID_Serialised_Product_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Parent_Energy_Networks_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Enter_Energy_Networks_ID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>serialisedProductRecordType</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Item_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Booked Out</stringValue>
+            </value>
+        </filters>
+        <object>SerializedProduct</object>
+        <outputReference>recordId</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>SPEN_Multiset__c</queriedFields>
+        <queriedFields>SPEN_Parent_Energy_Networks_ID__c</queriedFields>
+        <queriedFields>SPEN_Item_Status__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Get records to find all the multiset items linked to the original Serialised Product record.</description>
+        <name>Get_Multiset_Serialised_Products</name>
+        <label>Get Multiset Serialised Products</label>
+        <locationX>402</locationX>
+        <locationY>1382</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Multiset_Items</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>serialisedProductRecordType</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Parent_Energy_Networks_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.SPEN_Parent_Energy_Networks_ID__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Item_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Booked Out</stringValue>
+            </value>
+        </filters>
+        <object>SerializedProduct</object>
+        <outputReference>multisetSerialisedProducts</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Serialised Product record type.</description>
+        <name>Get_Serialised_Product_Record_Type</name>
+        <label>Get Serialised Product Record Type</label>
+        <locationX>358</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CaptureENIDScreen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SerializedProduct</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Compliance_Stores</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>serialisedProductRecordType</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the Serialised Product record via the ENID entry from user on previous screen.</description>
+        <name>Get_Single_Serialised_Product_from_ENID_Entry</name>
+        <label>Get Single Serialised Product from ENID Entry</label>
+        <locationX>358</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_If_Single_ENID_Serialised_Product_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_Energy_Networks_ID__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Enter_Energy_Networks_ID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>serialisedProductRecordType</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Item_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Booked Out</stringValue>
+            </value>
+        </filters>
+        <object>SerializedProduct</object>
+        <outputReference>recordId</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>SPEN_Multiset__c</queriedFields>
+        <queriedFields>SPEN_Parent_Energy_Networks_ID__c</queriedFields>
+        <queriedFields>SPEN_Item_Status__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update Serialised Product record with new expected return date.</description>
+        <name>Update_Serialised_Product</name>
+        <label>Update Serialised Product</label>
+        <locationX>402</locationX>
+        <locationY>1898</locationY>
+        <connector>
+            <targetReference>Confirmation_Screen</targetReference>
+        </connector>
+        <inputReference>serialisedProducts</inputReference>
+    </recordUpdates>
+    <screens>
+        <description>Screen to capture ENID and expected return date information.</description>
+        <name>CaptureENIDScreen</name>
+        <label>Enter Details</label>
+        <locationX>358</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Get_Single_Serialised_Product_from_ENID_Entry</targetReference>
+        </connector>
+        <fields>
+            <name>Enter_Energy_Networks_ID</name>
+            <dataType>String</dataType>
+            <fieldText>Enter Energy Networks ID</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Expected_Return_Date</name>
+            <dataType>Date</dataType>
+            <fieldText>Expected Return Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to confirm to the user that the equipment has been updated.</description>
+        <name>Confirmation_Screen</name>
+        <label>Confirmation</label>
+        <locationX>402</locationX>
+        <locationY>2006</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>ConfirmationDisplayText</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(68, 68, 68);&quot;&gt;The expected return date has been updated.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to confirm to user no equipment has been found booked out referencing the energy networks ID.</description>
+        <name>Invalid_ENID_Screen</name>
+        <label>Invalid Energy Networks ID</label>
+        <locationX>578</locationX>
+        <locationY>782</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>InvalidENIDDisplayText</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;The chosen Energy Networks ID is not valid. Please input or scan an ID that matches a valid item.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to confirm to the user that the expected return date is in the past.</description>
+        <name>Invalid_Return_Screen</name>
+        <label>Invalid Date</label>
+        <locationX>666</locationX>
+        <locationY>1382</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <backButtonLabel>Retry</backButtonLabel>
+        <fields>
+            <name>InvalidDateDisplayText</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; color: rgb(68, 68, 68);&quot;&gt;The chosen return date is in the past, press retry to enter a date for today or in the future.&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>232</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Serialised_Product_Record_Type</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>loopMultisetItem</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SerializedProduct</objectType>
+    </variables>
+    <variables>
+        <name>multisetSerialisedProducts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SerializedProduct</objectType>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SerializedProduct</objectType>
+    </variables>
+    <variables>
+        <name>serialisedProductRecordType</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>serialisedProducts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SerializedProduct</objectType>
+    </variables>
+</Flow>

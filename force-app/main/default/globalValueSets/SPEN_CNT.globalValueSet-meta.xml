@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Alternate Contact</fullName>
+        <default>false</default>
+        <label>Alternate Contact</label>
+    </customValue>
+    <customValue>
+        <fullName>British Red Cross</fullName>
+        <default>false</default>
+        <label>British Red Cross</label>
+    </customValue>
+    <customValue>
+        <fullName>Charger</fullName>
+        <default>false</default>
+        <label>Charger</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency Planning Officer Support</fullName>
+        <default>false</default>
+        <label>Emergency Planning Officer Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency Services</fullName>
+        <default>false</default>
+        <label>Emergency Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Van</fullName>
+        <default>false</default>
+        <label>Food Van</label>
+    </customValue>
+    <customValue>
+        <fullName>Generator - Customer</fullName>
+        <default>false</default>
+        <label>Generator - Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Generator - Incident</fullName>
+        <default>false</default>
+        <label>Generator - Incident</label>
+    </customValue>
+    <customValue>
+        <fullName>Help with Stair Lift or Hoist</fullName>
+        <default>false</default>
+        <label>Help with Stair Lift or Hoist</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotel Reimbursement</fullName>
+        <default>false</default>
+        <label>Hotel Reimbursement</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotel Request</fullName>
+        <default>false</default>
+        <label>Hotel Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Hot Meal Delivered</fullName>
+        <default>false</default>
+        <label>Hot Meal Delivered</label>
+    </customValue>
+    <customValue>
+        <fullName>Hot Meal Self Service</fullName>
+        <default>false</default>
+        <label>Hot Meal Self Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Hot Water/Drink</fullName>
+        <default>false</default>
+        <label>Hot Water/Drink</label>
+    </customValue>
+    <customValue>
+        <fullName>Language Assistance</fullName>
+        <default>false</default>
+        <label>Language Assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>Medication Uplift</fullName>
+        <default>false</default>
+        <label>Medication Uplift</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Services Assistance</fullName>
+        <default>false</default>
+        <label>Social Services Assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>Torch</fullName>
+        <default>false</default>
+        <label>Torch</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport</fullName>
+        <default>false</default>
+        <label>Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Winter Pack During Fault</fullName>
+        <default>false</default>
+        <label>Winter Pack During Fault</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>Holds the different &quot;needs&quot; a customer might be offered by us when a power outage occurs. (via the &quot;Customer Needs Tracker&quot; process).</description>
+    <masterLabel>Customer Needs Tracker</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

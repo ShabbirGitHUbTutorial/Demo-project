@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ClosureMandatoryonClosedStatus</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(SPEN_ServiceStatus__c, &apos;Closed&apos;) , 
+OR(
+ISBLANK( TEXT(SPEN_ClosureCode__c )),
+ISBLANK( SPEN_ClosureDate__c ),
+ISBLANK( TEXT( SPEN_CustomerSatisfaction__c )),
+ISBLANK( TEXT( SPEN_CustomerSatisfactionLevel__c )))
+)</errorConditionFormula>
+    <errorMessage>It is mandatory to populate &apos;Closure Date&apos;, &apos;Customer Satisfaction&apos;, &apos;Customer Satisfaction Level, &apos;Closure Code&apos; before closing.</errorMessage>
+</ValidationRule>

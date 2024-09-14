@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Energy Source --></label>
+    <name>SPEN_EnergySource__c</name>
+    <picklistValues>
+        <masterLabel>Advanced Fuel</masterLabel>
+        <translation><!-- Advanced Fuel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biofuel - Anaerobic digestion</masterLabel>
+        <translation><!-- Biofuel - Anaerobic digestion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biofuel - Landfill gas</masterLabel>
+        <translation><!-- Biofuel - Landfill gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biofuel - Other</masterLabel>
+        <translation><!-- Biofuel - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biofuel - Sewage gas</masterLabel>
+        <translation><!-- Biofuel - Sewage gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biomass</masterLabel>
+        <translation><!-- Biomass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fossil - Brown coal/lignite</masterLabel>
+        <translation><!-- Fossil - Brown coal/lignite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fossil - Coal gas</masterLabel>
+        <translation><!-- Fossil - Coal gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fossil - Gas</masterLabel>
+        <translation><!-- Fossil - Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fossil - Hard coal</masterLabel>
+        <translation><!-- Fossil - Hard coal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fossil - Oil</masterLabel>
+        <translation><!-- Fossil - Oil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fossil - Oil shale</masterLabel>
+        <translation><!-- Fossil - Oil shale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fossil - Other</masterLabel>
+        <translation><!-- Fossil - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fossil - Peat</masterLabel>
+        <translation><!-- Fossil - Peat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geothermal</masterLabel>
+        <translation><!-- Geothermal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydrogen</masterLabel>
+        <translation><!-- Hydrogen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuclear</masterLabel>
+        <translation><!-- Nuclear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solar</masterLabel>
+        <translation><!-- Solar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stored Energy</masterLabel>
+        <translation><!-- Stored Energy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

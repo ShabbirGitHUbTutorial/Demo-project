@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Inspection_Compact_Layout</fullName>
+    <fields>SPEN_Result__c</fields>
+    <fields>SPEN_Date_Performed__c</fields>
+    <fields>SPEN_Location_Inspected__c</fields>
+    <fields>SPEN_Inspected_By__c</fields>
+    <fields>SPEN_Inspected_By_External__c</fields>
+    <label>Inspection Compact Layout</label>
+</CompactLayout>

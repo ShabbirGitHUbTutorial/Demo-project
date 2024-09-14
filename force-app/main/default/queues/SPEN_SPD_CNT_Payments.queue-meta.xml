@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPD CNT Payments</name>
+    <queueMembers>
+        <users>
+            <user>cmacfarlane@spenergynetworks.co.uk.spencrm</user>
+            <user>c.dougan@spenergynetworks.co.uk.spencrm</user>
+            <user>ckerr1@spenergynetworks.co.uk.spencrm</user>
+            <user>g.hood@spenergynetworks.co.uk.spencrm</user>
+            <user>w.curran@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_QuotationType__c</fullName>
+    <label>Quotation Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>E2-UBUDGET</fullName>
+                <default>false</default>
+                <label>Budget - Budgeting Offer</label>
+            </value>
+            <value>
+                <fullName>E2-UFEAS</fullName>
+                <default>false</default>
+                <label>Budget - Feasibility Study Offer</label>
+            </value>
+            <value>
+                <fullName>E2-UBUDQT+</fullName>
+                <default>false</default>
+                <label>Budget - Quote+ Offer</label>
+            </value>
+            <value>
+                <fullName>E2-UNCOFXPR</fullName>
+                <default>false</default>
+                <label>Fixed price - Fixed Price Alternative</label>
+            </value>
+            <value>
+                <fullName>E2-UQUOTE</fullName>
+                <default>false</default>
+                <label>Formal - Quotation Offer</label>
+            </value>
+            <value>
+                <fullName>E2-UPREQUO</fullName>
+                <default>false</default>
+                <label>Pre-Quotation Offer</label>
+            </value>
+            <value>
+                <fullName>E2-UNCOPCQ</fullName>
+                <default>false</default>
+                <label>PCQ Alternative</label>
+            </value>
+            <value>
+                <fullName>E2-USLFIXPR</fullName>
+                <default>false</default>
+                <label>Street Lighting Fixed Price Alternative</label>
+            </value>
+            <value>
+                <fullName>E2-UVARIAN</fullName>
+                <default>false</default>
+                <label>Variance Offer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

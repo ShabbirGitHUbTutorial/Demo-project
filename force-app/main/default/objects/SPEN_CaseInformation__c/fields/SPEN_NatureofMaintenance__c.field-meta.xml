@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_NatureofMaintenance__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A01&apos;) , &apos;DB equipment operating hot (signs of overheating)&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A03&apos;) , &apos;Defective/weakened fuse carrier&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A04&apos;) , &apos;Physical damage to DB equipment requiring immediate action&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A05&apos;) , &apos;Sign of DB equipment burning, smoking or arcing&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A07&apos;) , &apos;Exposed live conductor&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A10&apos;) , &apos;DB earthing issue at existing installation which presents an immediate risk to Customer/MO&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A12&apos;) , &apos;Damaged asbestos component in DB equipment&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A14&apos;) , &apos;Polarity identified as incorrect at DB equipment&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A15&apos;) , &apos;Immediate risk to the public or Customer due to current service position location&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A17&apos;) , &apos;Live unearthed DB metal-encased equipment&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;A19&apos;) , &apos;Surface voltage found on plastic cut-out&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B01&apos;) , &apos;Fuse carrier welded in to cut-out base&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B02&apos;) , &apos;Cut-out loose&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B03&apos;) , &apos;Damaged/missing phase barrier in DB equipment&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B04&apos;) , &apos;Damaged/broken cut-out terminal including missing terminal screws&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B05&apos;) , &apos;Non-withdrawable fuse by design&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B07&apos;) , &apos;DB equipment issue preventing installation/replacement of meter tails&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B08&apos;) , &apos;Unhinged metal cut-out cover over un-insulated conductor&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B10&apos;) , &apos;Unearthed DB metal-encased equipment&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B11&apos;) , &apos;Cut-out with a fused neutral&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;B12&apos;) , &apos;DB owned CT metering equipment issue&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C02&apos;) , &apos;Signs of bitumen compound leaking&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C03&apos;) , &apos;Lower rating fuse or cut-out (less than 60A)&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C06&apos;) , &apos; Metal-encased cut-out&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c, &apos;C07&apos;) , &apos;DB equipment unable to be securely sealed&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C11&apos;) , &apos;Asbestos component identified in DB equipment&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C14&apos;) , &apos;Fed from distribution board – local/remote from meter&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C15&apos;) , &apos;DB cable terminating into DB equipment is VIR/MICC&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C16&apos;) , &apos;DB equipment mounted on asbestos board&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C17&apos;) , &apos;Black plastic cut-out&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C18&apos;) , &apos;Rewireable cut-out fuse&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C19&apos;) , &apos;Single insulated DB conductor (phase or non-PME neutral)&apos;,
+IF( ISPICKVAL( SPEN_AssetConditionCode__c , &apos;C20&apos;) , &apos;Missing combined neutral-earth cover on DB equipment&apos;,&apos;&apos;)))))))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nature of Maintenance</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Will determine if the data is being fetched from a related record or a delegated apex class. --></help>
+    <label><!-- Data Provider Type --></label>
+    <name>timeline__Data_Provider_Type__c</name>
+    <picklistValues>
+        <masterLabel>Apex class</masterLabel>
+        <translation><!-- Apex class --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Related Record</masterLabel>
+        <translation><!-- Related Record --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

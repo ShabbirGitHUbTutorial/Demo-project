@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Email Routing Outcome --></label>
+    <name>SPEN_RoutingOutcome__c</name>
+    <picklistValues>
+        <masterLabel>1 Hr SLA North</masterLabel>
+        <translation><!-- 1 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 Hr SLA South</masterLabel>
+        <translation><!-- 1 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 hr SLA North</masterLabel>
+        <translation><!-- 2 hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 hr SLA South</masterLabel>
+        <translation><!-- 2 hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Min SLA North</masterLabel>
+        <translation><!-- 30 Min SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Min SLA South</masterLabel>
+        <translation><!-- 30 Min SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Hr SLA North</masterLabel>
+        <translation><!-- 4 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Hr SLA North-Lowest</masterLabel>
+        <translation><!-- 4 Hr SLA North-Lowest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Hr SLA South</masterLabel>
+        <translation><!-- 4 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Hr SLA South-Lowest</masterLabel>
+        <translation><!-- 4 Hr SLA South-Lowest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 Hr SLA North</masterLabel>
+        <translation><!-- 7 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 Hr SLA South</masterLabel>
+        <translation><!-- 7 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>72 Hr SLA North</masterLabel>
+        <translation><!-- 72 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>72 Hr SLA South</masterLabel>
+        <translation><!-- 72 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 hr SLA North</masterLabel>
+        <translation><!-- 8 hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 hr SLA South</masterLabel>
+        <translation><!-- 8 hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jointing Complete - South</masterLabel>
+        <translation><!-- Jointing Complete - South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks Additional - North - High</masterLabel>
+        <translation><!-- Streetworks Additional - North - High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks Openings - North</masterLabel>
+        <translation><!-- Streetworks Openings - North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks Openings - North - High</masterLabel>
+        <translation><!-- Streetworks Openings - North - High --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

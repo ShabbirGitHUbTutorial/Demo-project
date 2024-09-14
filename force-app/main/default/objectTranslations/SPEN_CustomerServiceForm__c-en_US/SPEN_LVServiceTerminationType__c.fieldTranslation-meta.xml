@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- LVST - LV Service Termination --></help>
+    <label><!-- What type of LVST is being replaced? --></label>
+    <name>SPEN_LVServiceTerminationType__c</name>
+    <picklistValues>
+        <masterLabel>Black plastic</masterLabel>
+        <translation><!-- Black plastic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fused neutral</masterLabel>
+        <translation><!-- Fused neutral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grey plastic</masterLabel>
+        <translation><!-- Grey plastic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metal clad</masterLabel>
+        <translation><!-- Metal clad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rewireable</masterLabel>
+        <translation><!-- Rewireable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

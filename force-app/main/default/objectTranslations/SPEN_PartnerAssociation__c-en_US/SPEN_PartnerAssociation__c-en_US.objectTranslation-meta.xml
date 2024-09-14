@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Association</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Associations</value>
+    </caseValues>
+    <layouts>
+        <layout>Partner Association Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Selected partner does not belong to the same land as of land Right. Please select the appropriate partner. --></errorMessage>
+        <name>SPEN_PartnerLandAssociation</name>
+    </validationRules>
+</CustomObjectTranslation>

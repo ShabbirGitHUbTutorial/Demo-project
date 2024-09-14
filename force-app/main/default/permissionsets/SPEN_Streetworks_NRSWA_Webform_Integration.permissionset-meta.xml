@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>SPEN_SyncNRSWACaseDetails</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SPEN_SyncNRSWACaseDetailsWrapper</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SPEN_SyncStreetWorksCaseQueueable</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SPEN_SyncStreetworksCaseDetails</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SPEN_SyncStreetworksCaseDetailsWrapper</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Grants CREATE, READ and UPDATE access for Case Streetworks/NRSWA to web portal integration user</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SPEN: Streetworks NRSWA Webform Integration</label>
+</PermissionSet>

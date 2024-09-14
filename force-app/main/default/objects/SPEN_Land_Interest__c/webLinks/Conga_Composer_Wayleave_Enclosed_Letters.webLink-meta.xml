@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Wayleave_Enclosed_Letters</fullName>
+    <availability>online</availability>
+    <description>Created by Conga Solution Manager. Record link: https://spenergynetworkscrm--apxtconga4.vf.force.com/a1iSr000000aQNgIAM.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Wayleave Enclosed Letters</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_520}
+&amp;Id={!SPEN_Land_Interest__c.Id}
+
+&amp;QueryId=[Job]0Q_011EAE036868,
+[Land]0Q_005EAE498722,
+[Assoc]0Q_013EAE056630,
+[PartnerApparatus]0Q_017EAE418897,
+[Lastmodifieduser]0Q_020EAE235633,
+[BackPayment]0Q_021EAE969910,
+[Partner]0Q_018EAE259328
+
+&amp;TemplateId=0T_024EAE618775,0T_025EAE912467,0T_026EAE674791,0T_027EAE515461
+
+&amp;SC0=1
+&amp;SC1=attachments</url>
+    <width>900</width>
+</WebLink>

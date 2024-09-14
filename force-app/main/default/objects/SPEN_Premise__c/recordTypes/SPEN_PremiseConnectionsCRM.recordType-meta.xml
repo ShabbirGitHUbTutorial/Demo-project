@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PremiseConnectionsCRM</fullName>
+    <active>true</active>
+    <description>This record type is for Connections process</description>
+    <label>SPEN Premise Connections CRM</label>
+    <picklistValues>
+        <picklist>SPEN_DCCServiceFlag__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HVLV__c</picklist>
+        <values>
+            <fullName>HV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_LocalAuthority__c</picklist>
+        <values>
+            <fullName>Ayrshire Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceredigion %28Nr Aber%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheshire East%2FWest%2FChester</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clackmannan Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dumfries Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Dunbartonshire Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Lothian Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edinburgh Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falkirk Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fife Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glasgow City Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Halton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knowsley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liverpool City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midlothian Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORTH WALES EAST HUB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORTH WALES WEST HUB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Lanarkshire Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northumberland County Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renfrewshire Council %2F West Dumbartonshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scottish Borders Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shropshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Lanarkshire Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St Helens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stirling Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warrington</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West Lothian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wirral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_OperatingZone__c</picklist>
+        <values>
+            <fullName>132KV SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>275kV SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33KV SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABERYSTWYTH NORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABERYSTWYTH SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHESTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLWYD EAST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLWYD WEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEE VALLEY NORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEE VALLEY SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dee Valley %26 Oswestry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EHV South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELLESMERE PORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GWYNEDD ERYRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GWYNEDD MENAI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIVERPOOL NORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIVERPOOL SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MID CHESHIRE NORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MID CHESHIRE SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merseyside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid Cheshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEWTOWN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORTH WIRRAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSWESTRY NORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OSWESTRY SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RUNCORN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ST HELENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEST CHESHIRE ZONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEST MERSEYSIDE ZONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEST NMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEST WALES ZONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Clyde Operating Zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Forth Operating Zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Test Southern Operating Zone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WARRINGTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIDNES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wirral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ResponsibleDistrict__c</picklist>
+        <values>
+            <fullName>Ayrshire %26 Clyde South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central %26 Fife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dee Valley %2F Mid Wales Oswestry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dumfries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edinburgh %26 Borders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glasgow %26 Clyde North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lanarkshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merseyside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid Cheshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wirral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Type__c</picklist>
+        <values>
+            <fullName>Domestic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmetered Supply</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

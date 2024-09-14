@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Score &amp; Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Score &amp; Feedbacks</value>
+    </caseValues>
+    <layouts>
+        <layout>Pre-Application</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Score Feedback --></label>
+            <section>Survey Score Feedback</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transmission</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Survey Score Feedback --></label>
+            <section>Survey Score Feedback</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Pre-Application --></label>
+        <name>SPEN_PreApplication</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Transmission --></label>
+        <name>SPEN_Transmission</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

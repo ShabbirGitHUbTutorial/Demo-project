@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Personas --></label>
+    <name>SPEN_CustomerPersonas__c</name>
+    <picklistValues>
+        <masterLabel>Commercial - Deal Seeker</masterLabel>
+        <translation><!-- Commercial - Deal Seeker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Energy Expert</masterLabel>
+        <translation><!-- Commercial - Energy Expert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Hoping to Harness</masterLabel>
+        <translation><!-- Commercial - Hoping to Harness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Open for Business</masterLabel>
+        <translation><!-- Commercial - Open for Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Silent Partner</masterLabel>
+        <translation><!-- Commercial - Silent Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Actively Green</masterLabel>
+        <translation><!-- Domestic - Actively Green --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Careful &amp; Caring</masterLabel>
+        <translation><!-- Domestic - Careful &amp; Caring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Control Seeker</masterLabel>
+        <translation><!-- Domestic - Control Seeker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Cost is King</masterLabel>
+        <translation><!-- Domestic - Cost is King --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Go with the flow</masterLabel>
+        <translation><!-- Domestic - Go with the flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Seen to be Green</masterLabel>
+        <translation><!-- Domestic - Seen to be Green --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Unplugged</masterLabel>
+        <translation><!-- Domestic - Unplugged --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

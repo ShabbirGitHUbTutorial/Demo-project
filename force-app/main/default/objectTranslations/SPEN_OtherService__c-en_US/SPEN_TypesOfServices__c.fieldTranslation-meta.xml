@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Types of services --></label>
+    <name>SPEN_TypesOfServices__c</name>
+    <picklistValues>
+        <masterLabel>Carpets</masterLabel>
+        <translation><!-- Carpets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleaning</masterLabel>
+        <translation><!-- Cleaning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decorating</masterLabel>
+        <translation><!-- Decorating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joiner</masterLabel>
+        <translation><!-- Joiner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plumber</masterLabel>
+        <translation><!-- Plumber --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

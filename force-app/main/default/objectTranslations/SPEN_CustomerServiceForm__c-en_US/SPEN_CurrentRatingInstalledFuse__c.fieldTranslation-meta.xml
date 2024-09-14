@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current rating of installed fuse(s) --></label>
+    <name>SPEN_CurrentRatingInstalledFuse__c</name>
+    <picklistValues>
+        <masterLabel>100A</masterLabel>
+        <translation><!-- 100A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>160A</masterLabel>
+        <translation><!-- 160A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>16A</masterLabel>
+        <translation><!-- 16A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>200A</masterLabel>
+        <translation><!-- 200A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30A</masterLabel>
+        <translation><!-- 30A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>315A</masterLabel>
+        <translation><!-- 315A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>400A</masterLabel>
+        <translation><!-- 400A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60A</masterLabel>
+        <translation><!-- 60A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6A</masterLabel>
+        <translation><!-- 6A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>80A</masterLabel>
+        <translation><!-- 80A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wired (uknown)</masterLabel>
+        <translation><!-- Wired (uknown) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

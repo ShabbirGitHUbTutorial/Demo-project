@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Negotiated Settlement reason --></label>
+    <name>SPEN_NegotiatedSettlementReason__c</name>
+    <picklistValues>
+        <masterLabel>Best Return Received Through Negotiation</masterLabel>
+        <translation><!-- Best Return Received Through Negotiation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Service</masterLabel>
+        <translation><!-- Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Photographs/Information</masterLabel>
+        <translation><!-- Lack of Photographs/Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overhead/Salary Costs</masterLabel>
+        <translation><!-- Overhead/Salary Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Liability</masterLabel>
+        <translation><!-- Partial Liability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request from District</masterLabel>
+        <translation><!-- Request from District --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

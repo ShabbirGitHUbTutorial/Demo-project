@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Incident Status --></label>
+    <name>SPEN_IncidentStatus__c</name>
+    <picklistValues>
+        <masterLabel>Awaiting</masterLabel>
+        <translation><!-- Awaiting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complete</masterLabel>
+        <translation><!-- Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delog</masterLabel>
+        <translation><!-- Delog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency</masterLabel>
+        <translation><!-- Emergency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merged</masterLabel>
+        <translation><!-- Merged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Cancel</masterLabel>
+        <translation><!-- Pending Cancel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Merge</masterLabel>
+        <translation><!-- Pending Merge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-arranged</masterLabel>
+        <translation><!-- Pre-arranged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reports OS</masterLabel>
+        <translation><!-- Reports OS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

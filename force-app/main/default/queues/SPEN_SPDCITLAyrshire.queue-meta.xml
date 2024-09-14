@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPD CITL - Ayrshire</name>
+    <queueMembers>
+        <users>
+            <user>aileen.rourke@spenergynetworks.co.uk.spencrm</user>
+            <user>hcampbell@spenergynetworks.co.uk.spencrm</user>
+            <user>j.young@spenergynetworks.co.uk.spencrm</user>
+            <user>lstirling@spenergynetworks.co.uk.spencrm</user>
+            <user>lee.thomson@spenergynetworks.co.uk.spencrm</user>
+            <user>mnicholls@spenergynetworks.co.uk.spencrm</user>
+            <user>martin.maxwell@spenergynetworks.co.uk.spencrm</user>
+            <user>michael.nimbley@spenergynetworks.co.uk.spencrm</user>
+            <user>mniven@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

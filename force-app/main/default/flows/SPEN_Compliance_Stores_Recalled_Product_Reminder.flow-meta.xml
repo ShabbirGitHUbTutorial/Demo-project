@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Action to send the email notification based on prior information in flow/loops.</description>
+        <name>Send_Email_Notification</name>
+        <label>Send Email Notification</label>
+        <locationX>402</locationX>
+        <locationY>2448</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Reset_Assignments</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>recipientEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>DefaultWorkflowUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Recall Requested</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>compiledMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>useLineBreaks</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Sends custom notification to mobile for the recalled Serialised Product.</description>
+        <name>Send_Mobile_Notification</name>
+        <label>Send Mobile Notification</label>
+        <locationX>490</locationX>
+        <locationY>2040</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <connector>
+            <targetReference>Reset_Mobile_Assignment</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <elementReference>Get_Custom_Notification_Type_Mobile.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>recipientIds</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <stringValue>Recall Required</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <elementReference>mobileBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetId</name>
+            <value>
+                <elementReference>Loop_through_Filtered_Serialised_Products.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>Action to send desktop notification based on prior information in flow/loops.</description>
+        <name>Send_Recall_Notification</name>
+        <label>Send Recall Notification</label>
+        <locationX>402</locationX>
+        <locationY>2340</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <connector>
+            <targetReference>Send_Email_Notification</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <elementReference>Get_Custom_Notification_Type_Desktop_Email.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>recipientIds</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <stringValue>Recall Required</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <elementReference>compiledMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetPageRef</name>
+            <value>
+                <elementReference>notificationTargetPage</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <description>Adds the Serialised Product row to the templates.</description>
+        <name>Add_Individual_Details</name>
+        <label>Add Individual Details</label>
+        <locationX>490</locationX>
+        <locationY>1932</locationY>
+        <assignmentItems>
+            <assignToReference>compiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>recordDetails</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>mobileBody</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>mobileBodyTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Send_Mobile_Notification</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assignment to add the current Serialised Product to the outstanding variable in order to issue reminder.</description>
+        <name>Add_to_Outstanding_Variable</name>
+        <label>Add to Outstanding Variable</label>
+        <locationX>622</locationX>
+        <locationY>792</locationY>
+        <assignmentItems>
+            <assignToReference>outstandingSerialisedProducts</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Found_Active_Recalled_Products</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Found_Active_Recalled_Products</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds User Id to variable.</description>
+        <name>Add_User_Id_and_Assign_Headers</name>
+        <label>Add User Id and Assign Headers</label>
+        <locationX>402</locationX>
+        <locationY>1608</locationY>
+        <assignmentItems>
+            <assignToReference>loopedUsersIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Active_Serialised_Products.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>compiledMessage</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Header</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>recipientIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Active_Serialised_Products.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>recipientEmail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_Active_Serialised_Products.Owner:User.Email</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Filter_Serialised_Products</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Remove all assignments so that the loop can be refreshed.</description>
+        <name>Reset_Assignments</name>
+        <label>Reset Assignments</label>
+        <locationX>402</locationX>
+        <locationY>2556</locationY>
+        <assignmentItems>
+            <assignToReference>compiledMessage</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>recipientIds</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>recipientEmail</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Active_Serialised_Products</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Resets the mobile body for the next mobile notification.</description>
+        <name>Reset_Mobile_Assignment</name>
+        <label>Reset Mobile Assignment</label>
+        <locationX>490</locationX>
+        <locationY>2148</locationY>
+        <assignmentItems>
+            <assignToReference>mobileBody</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_Filtered_Serialised_Products</targetReference>
+        </connector>
+    </assignments>
+    <collectionProcessors>
+        <description>Filter Serialised Products to notify user of all Serialised Products they own.</description>
+        <name>Filter_Serialised_Products</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>Filter Serialised Products</label>
+        <locationX>402</locationX>
+        <locationY>1716</locationY>
+        <assignNextValueToReference>currentItem_Filter_Serialised_Products_0</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>outstandingSerialisedProducts</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_Filter_Serialised_Products_0.OwnerId</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <elementReference>Loop_Active_Serialised_Products.OwnerId</elementReference>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>Loop_through_Filtered_Serialised_Products</targetReference>
+        </connector>
+    </collectionProcessors>
+    <decisions>
+        <description>Checks to see if the new variable is populated and reminders are required.</description>
+        <name>Any_Reminders_Required</name>
+        <label>Any Reminders Required?</label>
+        <locationX>182</locationX>
+        <locationY>1068</locationY>
+        <defaultConnectorLabel>No Reminders</defaultConnectorLabel>
+        <rules>
+            <name>Reminders_Needed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>outstandingSerialisedProducts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Custom_Notification_Type_Desktop_Email</targetReference>
+            </connector>
+            <label>Reminders Needed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the User has been looped.</description>
+        <name>Check_If_User_Already_Looped</name>
+        <label>Check If User Already Looped</label>
+        <locationX>270</locationX>
+        <locationY>1500</locationY>
+        <defaultConnector>
+            <targetReference>Add_User_Id_and_Assign_Headers</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>First Time User</defaultConnectorLabel>
+        <rules>
+            <name>User_Looped</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>loopedUsersIds</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>Loop_Active_Serialised_Products.OwnerId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Active_Serialised_Products</targetReference>
+            </connector>
+            <label>User Looped</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks to see if the item is not away for repair/calibration, or not in quarantine and has been recalled.</description>
+        <name>Reminder_Required</name>
+        <label>Reminder Required?</label>
+        <locationX>446</locationX>
+        <locationY>684</locationY>
+        <defaultConnector>
+            <targetReference>Add_to_Outstanding_Variable</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Reminder Needed</defaultConnectorLabel>
+        <rules>
+            <name>Away_for_Repair_Calibration</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Found_Active_Recalled_Products.SPEN_Item_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Away For Calibration</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Loop_Found_Active_Recalled_Products.SPEN_Item_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Away For Repair</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Found_Active_Recalled_Products</targetReference>
+            </connector>
+            <label>Away for Repair/Calibration</label>
+        </rules>
+        <rules>
+            <name>InQuarantine</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Found_Active_Recalled_Products.SPEN_Current_Location__r.SPEN_Is_Quarantine_Location__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Found_Active_Recalled_Products</targetReference>
+            </connector>
+            <label>In Quarantine</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks to see if any active recalled Serialised Products were found.</description>
+        <name>Serialised_Products_Found</name>
+        <label>Serialised Products Found?</label>
+        <locationX>380</locationX>
+        <locationY>468</locationY>
+        <defaultConnectorLabel>None Found</defaultConnectorLabel>
+        <rules>
+            <name>Recalled_Items_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Recalled_Serialised_Products</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Found_Active_Recalled_Products</targetReference>
+            </connector>
+            <label>Recalled Items Found</label>
+        </rules>
+    </decisions>
+    <description>Flow to send custom notifications and push notifications for active recalled Serialised Products. Runs daily.</description>
+    <environments>Default</environments>
+    <interviewLabel>Compliance Stores - Recalled Reminder {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Compliance Stores - Recalled Product Reminder</label>
+    <loops>
+        <description>Loops through the active Serialised Products.</description>
+        <name>Loop_Active_Serialised_Products</name>
+        <label>Loop Active Serialised Products</label>
+        <locationX>50</locationX>
+        <locationY>1392</locationY>
+        <collectionReference>outstandingSerialisedProducts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_If_User_Already_Looped</targetReference>
+        </nextValueConnector>
+    </loops>
+    <loops>
+        <description>Loop through the found Active Recalled Products</description>
+        <name>Loop_Found_Active_Recalled_Products</name>
+        <label>Loop Found Active Recalled Products</label>
+        <locationX>182</locationX>
+        <locationY>576</locationY>
+        <collectionReference>Get_Recalled_Serialised_Products</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Reminder_Required</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Any_Reminders_Required</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loop through filtered Serialised Products.</description>
+        <name>Loop_through_Filtered_Serialised_Products</name>
+        <label>Loop through Filtered Serialised Products</label>
+        <locationX>402</locationX>
+        <locationY>1824</locationY>
+        <collectionReference>Filter_Serialised_Products</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_Individual_Details</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Send_Recall_Notification</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get Records to find Compliance Stores Serialised Product Record Type.</description>
+        <name>Get_Compliance_Stores_Record_Type</name>
+        <label>Get Compliance Stores Record Type</label>
+        <locationX>380</locationX>
+        <locationY>252</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Recalled_Serialised_Products</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Compliance_Stores</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SerializedProduct</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>serialisedProductRecordTypeId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the custom notification for desktop/email.</description>
+        <name>Get_Custom_Notification_Type_Desktop_Email</name>
+        <label>Get Custom Notification Type (Desktop/Email)</label>
+        <locationX>50</locationX>
+        <locationY>1176</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Custom_Notification_Type_Mobile</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Compliance_Stores_Recall_Notification_Desktop_Email</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the custom notification for mobile.</description>
+        <name>Get_Custom_Notification_Type_Mobile</name>
+        <label>Get Custom Notification Type (Mobile)</label>
+        <locationX>50</locationX>
+        <locationY>1284</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Active_Serialised_Products</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SPEN_Compliance_Stores_Recall_Notification_Mobile</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Records to find all active Serialised Products which have been recalled.</description>
+        <name>Get_Recalled_Serialised_Products</name>
+        <label>Get Recalled Serialised Products</label>
+        <locationX>380</locationX>
+        <locationY>360</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Serialised_Products_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>serialisedProductRecordTypeId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Recalled__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SPEN_Active__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SerializedProduct</object>
+        <sortField>OwnerId</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Compliance_Stores_Record_Type</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2024-02-09</startDate>
+            <startTime>06:55:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Text template to hold the header for email/desktop notifications.</description>
+        <name>Header</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The below item(s) have been recalled, please return ASAP:</text>
+    </textTemplates>
+    <textTemplates>
+        <name>mobileBodyTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Loop_through_Filtered_Serialised_Products.Product2.SPEN_Recall_Comments__c}: {!Loop_through_Filtered_Serialised_Products.SPEN_ENID_Category_Description_Safety__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Hard coded JSON to direct notifications to a serialised product list view.</description>
+        <name>notificationTargetPage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{    
+    &quot;type&quot;: &quot;standard__objectPage&quot;,
+    &quot;attributes&quot;: {
+        &quot;objectApiName&quot;: &quot;SerializedProduct&quot;,
+        &quot;actionName&quot;: &quot;list&quot;
+    },
+    &quot;state&quot;: {
+        &quot;filterName&quot;: &quot;SPEN_Recalled_Serialised_Products&quot;
+  }
+}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>recordDetails</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!Loop_Active_Serialised_Products.Asset.Id}
+{!Loop_Active_Serialised_Products.Asset.Id}
+Item: {!Loop_through_Filtered_Serialised_Products.SPEN_ENID_Category_Description_Safety__c}
+Location: {!Loop_through_Filtered_Serialised_Products.SPEN_Location_Name__c}
+Reason: {!finalRecallComments}</text>
+    </textTemplates>
+    <variables>
+        <description>Text variable to hold the compiled notification/email message.</description>
+        <name>compiledMessage</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>currentItem_Filter_Serialised_Products_0</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SerializedProduct</objectType>
+    </variables>
+    <variables>
+        <name>finalRecallComments</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>loopedUsersIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>mobileBody</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Collection for any outstanding recalled products which are not away for repair or are not in quarantine.</description>
+        <name>outstandingSerialisedProducts</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SerializedProduct</objectType>
+    </variables>
+    <variables>
+        <name>recipientEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recipientIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>serialisedProductRecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

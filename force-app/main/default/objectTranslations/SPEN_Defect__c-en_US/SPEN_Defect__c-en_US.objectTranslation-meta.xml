@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Defect</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Defects</value>
+    </caseValues>
+    <layouts>
+        <layout>Defect Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Defect Streetwork NRSWA layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Streetworks / NRSWA --></label>
+        <name>SPEN_StreetworksNRSWADefect</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Third Party Damage --></label>
+        <name>SPEN_ThirtdPartyDamageDefect</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If Department is DCC/Incident Control, Please clear previous Responsible Employee value by selecting Department as SPD/SPM --></errorMessage>
+        <name>SPEN_DCCIncident_Control</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Department is SPD/SPM, Please clear previous Responsible Employee value by selecting Department as DCC/Incident Control --></errorMessage>
+        <name>SPEN_SPDSPM</name>
+    </validationRules>
+</CustomObjectTranslation>

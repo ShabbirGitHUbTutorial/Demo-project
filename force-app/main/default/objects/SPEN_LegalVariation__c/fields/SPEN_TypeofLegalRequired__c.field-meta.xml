@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TypeofLegalRequired__c</fullName>
+    <label>Type of Legal Required</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Easement</fullName>
+                <default>false</default>
+                <label>Easement</label>
+            </value>
+            <value>
+                <fullName>Servitude</fullName>
+                <default>false</default>
+                <label>Servitude</label>
+            </value>
+            <value>
+                <fullName>Sub Station Lease</fullName>
+                <default>false</default>
+                <label>Sub Station Lease</label>
+            </value>
+            <value>
+                <fullName>Wayleave</fullName>
+                <default>false</default>
+                <label>Wayleave</label>
+            </value>
+            <value>
+                <fullName>Wayleave (TTC)</fullName>
+                <default>false</default>
+                <label>Wayleave (TTC)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

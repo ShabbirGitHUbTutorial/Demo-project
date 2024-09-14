@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Select any LCTs found at this address --></label>
+    <name>SPEN_SelectLCTFoundAddress__c</name>
+    <picklistValues>
+        <masterLabel>Battery storage</masterLabel>
+        <translation><!-- Battery storage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EV charger</masterLabel>
+        <translation><!-- EV charger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heat pump</masterLabel>
+        <translation><!-- Heat pump --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (specify)</masterLabel>
+        <translation><!-- Other (specify) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solar panels</masterLabel>
+        <translation><!-- Solar panels --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_LIStatus__c</fullName>
+    <description>Primary Status on Land Right based on consent type and Record type</description>
+    <externalId>false</externalId>
+    <formula>CASE(  RecordType.DeveloperName  , 
+ 	&quot;SPEN_Wayleave&quot;,   TEXT(SPEN_WayleaveStatus__c) , 	
+	&quot;SPEN_Servitude&quot;, TEXT(SPEN_ServitudeStatus__c) ,
+	&quot;SPEN_Statutory&quot;, TEXT(SPEN_CompulsoryStatus__c) ,
+        &quot;SPEN_Existing&quot;, TEXT(SPEN_Existing_Refurb_Status__c),
+	&quot;Closed&quot; )</formula>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

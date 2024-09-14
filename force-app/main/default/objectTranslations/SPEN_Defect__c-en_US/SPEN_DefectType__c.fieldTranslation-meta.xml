@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Defect Type --></label>
+    <name>SPEN_DefectType__c</name>
+    <picklistValues>
+        <masterLabel>Cable Depth Not Indicated</masterLabel>
+        <translation><!-- Cable Depth Not Indicated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled – Not required</masterLabel>
+        <translation><!-- Cancelled – Not required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conflicting information</masterLabel>
+        <translation><!-- Conflicting information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor issue</masterLabel>
+        <translation><!-- Contractor issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coordinates added to job, but works not imminent or taking place</masterLabel>
+        <translation><!-- Coordinates added to job, but works not imminent or taking place --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coordinates in wrong category</masterLabel>
+        <translation><!-- Coordinates in wrong category --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Description of works / TM insufficient</masterLabel>
+        <translation><!-- Description of works / TM insufficient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate case / request / job reference</masterLabel>
+        <translation><!-- Duplicate case / request / job reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Footway closure details not sufficient</masterLabel>
+        <translation><!-- Footway closure details not sufficient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground Clearance Not Indicated</masterLabel>
+        <translation><!-- Ground Clearance Not Indicated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Location / Coordinates</masterLabel>
+        <translation><!-- Incorrect Location / Coordinates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Notice type / Duration of works requested</masterLabel>
+        <translation><!-- Incorrect Notice type / Duration of works requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect Surface type</masterLabel>
+        <translation><!-- Incorrect Surface type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect information provided in email</masterLabel>
+        <translation><!-- Incorrect information provided in email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information not provided at top of email chain</masterLabel>
+        <translation><!-- Information not provided at top of email chain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient location details</masterLabel>
+        <translation><!-- Insufficient location details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Coordinates</masterLabel>
+        <translation><!-- Late Coordinates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Form</masterLabel>
+        <translation><!-- Missing Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Photos</masterLabel>
+        <translation><!-- Missing Photos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing contact information</masterLabel>
+        <translation><!-- Missing contact information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCT approval not sought</masterLabel>
+        <translation><!-- NCT approval not sought --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Coordinates</masterLabel>
+        <translation><!-- No Coordinates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Description of Third Party Works</masterLabel>
+        <translation><!-- No Description of Third Party Works --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Location provided on damage report</masterLabel>
+        <translation><!-- No Location provided on damage report --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Name/Tel of Third Party who assessed damage</masterLabel>
+        <translation><!-- No Name/Tel of Third Party who assessed damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Permit Condition Check Sheet attached</masterLabel>
+        <translation><!-- No Permit Condition Check Sheet attached --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Photographs Available</masterLabel>
+        <translation><!-- No Photographs Available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Photographs on Damage Form</masterLabel>
+        <translation><!-- No Photographs on Damage Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Repair Detail on Sketch</masterLabel>
+        <translation><!-- No Repair Detail on Sketch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No plan attached</masterLabel>
+        <translation><!-- No plan attached --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No/insufficient reason for early start documented</masterLabel>
+        <translation><!-- No/insufficient reason for early start documented --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not all required information provided in email</masterLabel>
+        <translation><!-- Not all required information provided in email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notice requested but RON not required</masterLabel>
+        <translation><!-- Notice requested but RON not required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permit Condition Checklist in incorrect format</masterLabel>
+        <translation><!-- Permit Condition Checklist in incorrect format --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor Quality Photos</masterLabel>
+        <translation><!-- Poor Quality Photos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resources incorrectly cancelled</masterLabel>
+        <translation><!-- Resources incorrectly cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TM application not sent but TM requested on RON</masterLabel>
+        <translation><!-- TM application not sent but TM requested on RON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Details Insufficient</masterLabel>
+        <translation><!-- Third Party Details Insufficient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unanswered Precautionary Questions</masterLabel>
+        <translation><!-- Unanswered Precautionary Questions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Webform / TM does not match permit checklist</masterLabel>
+        <translation><!-- Webform / TM does not match permit checklist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working on/near a junction. Recognised from the system that more than one RON is required</masterLabel>
+        <translation><!-- Working on/near a junction. Recognised from the system that more than one RON is required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

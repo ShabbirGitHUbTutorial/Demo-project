@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Type --></label>
+    <name>SPEN_SubType__c</name>
+    <picklistValues>
+        <masterLabel>0702</masterLabel>
+        <translation><!-- 0702 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0705</masterLabel>
+        <translation><!-- 0705 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0706</masterLabel>
+        <translation><!-- 0706 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0749</masterLabel>
+        <translation><!-- 0749 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

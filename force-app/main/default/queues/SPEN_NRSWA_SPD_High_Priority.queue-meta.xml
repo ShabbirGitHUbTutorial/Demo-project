@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>NRSWA SPD - High Priority</name>
+    <queueMembers>
+        <users>
+            <user>ashley.stokes@spenergynetworks.co.uk.spencrm</user>
+            <user>c.mckever@spenergynetworks.co.uk.spencrm</user>
+            <user>emcarthur@spenergynetworks.co.uk.spencrm</user>
+            <user>k.pudlowska@spenergynetworks.co.uk</user>
+            <user>s.coyne@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_SW_NRSWA_High_Priority</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

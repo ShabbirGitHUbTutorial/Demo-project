@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Serialised_Product__c</fullName>
+    <description>Master detail to link Inspection Item to Serialised Product.</description>
+    <label>Serialised Product</label>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>Serialised Product is not a Compliance Stores record type.</errorMessage>
+        <filterItems>
+            <field>SerializedProduct.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Compliance Stores</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>SerializedProduct</referenceTo>
+    <relationshipLabel>Inspection Items</relationshipLabel>
+    <relationshipName>Inspection_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

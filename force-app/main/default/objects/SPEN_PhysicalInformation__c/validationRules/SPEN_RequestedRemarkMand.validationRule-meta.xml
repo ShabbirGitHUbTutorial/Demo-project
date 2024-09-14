@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RequestedRemarkMand</fullName>
+    <active>true</active>
+    <description>CRMD-5996 Connection process</description>
+    <errorConditionFormula>AND(NOT(ISBLANK( SPEN_ItemReceivedOn__c )), ISBLANK(SPEN_ItemReceivedRemark__c) )</errorConditionFormula>
+    <errorDisplayField>SPEN_ItemReceivedRemark__c</errorDisplayField>
+    <errorMessage>Please fill up Item Received Remark</errorMessage>
+</ValidationRule>

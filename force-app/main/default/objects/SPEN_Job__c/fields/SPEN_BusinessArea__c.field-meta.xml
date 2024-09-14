@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_BusinessArea__c</fullName>
+    <label>Business Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPEN_LicenseArea__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Land &amp; Planning</fullName>
+                <default>false</default>
+                <label>Land &amp; Planning</label>
+            </value>
+            <value>
+                <fullName>Business Transformation</fullName>
+                <default>false</default>
+                <label>Business Transformation</label>
+            </value>
+            <value>
+                <fullName>External Customer</fullName>
+                <default>false</default>
+                <label>External Customer</label>
+            </value>
+            <value>
+                <fullName>Internal Customer</fullName>
+                <default>false</default>
+                <label>Internal Customer</label>
+            </value>
+            <value>
+                <fullName>Land Solutions Policy &amp; Performance</fullName>
+                <default>false</default>
+                <label>Land Solutions Policy &amp; Performance</label>
+            </value>
+            <value>
+                <fullName>Licence Programmes</fullName>
+                <default>false</default>
+                <label>Licence Programmes</label>
+            </value>
+            <value>
+                <fullName>Processes &amp; Technology</fullName>
+                <default>false</default>
+                <label>Processes &amp; Technology</label>
+            </value>
+            <value>
+                <fullName>Strategic Transmission Projects</fullName>
+                <default>false</default>
+                <label>Strategic Transmission Projects</label>
+            </value>
+            <value>
+                <fullName>Transmission Operations</fullName>
+                <default>false</default>
+                <label>Transmission Operations</label>
+            </value>
+            <value>
+                <fullName>Transmission Projects - Customer Connection</fullName>
+                <default>false</default>
+                <label>Transmission Projects - Customer Connection</label>
+            </value>
+            <value>
+                <fullName>Transmission Projects - Infrastructure</fullName>
+                <default>false</default>
+                <label>Transmission Projects - Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Customer Resolution</fullName>
+                <default>false</default>
+                <label>Customer Resolution</label>
+            </value>
+            <value>
+                <fullName>Customer Connections</fullName>
+                <default>false</default>
+                <label>Customer Connections</label>
+            </value>
+            <value>
+                <fullName>Distribution Network Operations</fullName>
+                <default>false</default>
+                <label>Distribution Network Operations</label>
+            </value>
+            <value>
+                <fullName>Distribution Network Projects</fullName>
+                <default>false</default>
+                <label>Distribution Network Projects</label>
+            </value>
+            <value>
+                <fullName>Estates</fullName>
+                <default>false</default>
+                <label>Estates</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Land Agent</fullName>
+                <default>false</default>
+                <label>Land Agent</label>
+            </value>
+            <value>
+                <fullName>Land Solutions, Policy &amp; Performance</fullName>
+                <default>false</default>
+                <label>Land Solutions, Policy &amp; Performance</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Tree Department</fullName>
+                <default>false</default>
+                <label>Tree Department</label>
+            </value>
+            <value>
+                <fullName>License Programmes</fullName>
+                <default>false</default>
+                <label>License Programmes</label>
+            </value>
+            <value>
+                <fullName>HS2</fullName>
+                <default>false</default>
+                <label>HS2</label>
+            </value>
+            <value>
+                <fullName>SPM 132 Operations</fullName>
+                <default>false</default>
+                <label>SPM 132 Operations</label>
+            </value>
+            <value>
+                <fullName>SPM 132 Projects - Infrastructure</fullName>
+                <default>false</default>
+                <label>SPM 132 Projects - Infrastructure</label>
+            </value>
+            <value>
+                <fullName>SPM 132 Projects - Customer Connection</fullName>
+                <default>false</default>
+                <label>SPM 132 Projects - Customer Connection</label>
+            </value>
+            <value>
+                <fullName>Interal Customer</fullName>
+                <default>false</default>
+                <label>Interal Customer</label>
+            </value>
+            <value>
+                <fullName>CRM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CRM</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Land &amp; Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Business Transformation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>External Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Internal Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Processes &amp; Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Customer Resolution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Customer Connections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Distribution Network Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Distribution Network Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Estates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Land Agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Land Solutions, Policy &amp; Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Legal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <valueName>Tree Department</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPD</controllingFieldValue>
+            <controllingFieldValue>SPM</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>License Programmes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Land Solutions Policy &amp; Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Licence Programmes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Strategic Transmission Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Transmission Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Transmission Projects - Customer Connection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPT</controllingFieldValue>
+            <valueName>Transmission Projects - Infrastructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>HS2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>SPM 132 Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>SPM 132 Projects - Infrastructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>SPM 132 Projects - Customer Connection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPM 132</controllingFieldValue>
+            <valueName>Interal Customer</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

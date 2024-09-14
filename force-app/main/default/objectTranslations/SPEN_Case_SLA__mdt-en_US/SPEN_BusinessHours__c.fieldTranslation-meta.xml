@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Hours --></label>
+    <name>SPEN_BusinessHours__c</name>
+    <picklistValues>
+        <masterLabel>Default</masterLabel>
+        <translation><!-- Default --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPD Default</masterLabel>
+        <translation><!-- SPD Default --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPD SW/NRSWA Business Hours</masterLabel>
+        <translation><!-- SPD SW/NRSWA Business Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPEN SPM SW Business Hours</masterLabel>
+        <translation><!-- SPEN SPM SW Business Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPEN SPM SW Business Hours Extended</masterLabel>
+        <translation><!-- SPEN SPM SW Business Hours Extended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM SW/NRSWA Business Hours</masterLabel>
+        <translation><!-- SPM SW/NRSWA Business Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM SW/NRSWA Business Hours Extended</masterLabel>
+        <translation><!-- SPM SW/NRSWA Business Hours Extended --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

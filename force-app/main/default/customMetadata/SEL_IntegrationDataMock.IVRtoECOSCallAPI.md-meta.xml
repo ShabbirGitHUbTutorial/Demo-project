@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>IVRtoECOSCallAPI</label>
+    <protected>false</protected>
+    <values>
+        <field>SEL_Body__c</field>
+        <value xsi:type="xsd:string">{
+&quot;Errors&quot;:[{&quot;Code&quot;:&quot;String content&quot;,&quot;Description&quot;:&quot;String content&quot;}],
+
+&quot;ParameterSet&quot;:{&quot;Parameters&quot;:[{&quot;Key&quot;:&quot;String content&quot;,&quot;Value&quot;:&quot;String content&quot;}]},
+      &quot;UtilityAddressMatches&quot;: [
+        {
+          &quot;AddressDetails&quot;: [
+            {
+              &quot;Key&quot;: &quot;postcode&quot;,
+              &quot;Value&quot;: &quot;G11 1GG&quot;
+            },
+            
+            {
+              &quot;Key&quot;: &quot;dcc_service_flag&quot;,
+              &quot;Value&quot;: &quot;A&quot;
+            },
+            {
+              &quot;Key&quot;: &quot;supplier_mpid&quot;,
+              &quot;Value&quot;: &quot;MRCY&quot;
+            }
+          ],
+          &quot;UtilityType&quot;: null
+        }
+      ]
+}</value>
+    </values>
+    <values>
+        <field>SEL_Header__c</field>
+        <value xsi:type="xsd:string">{&quot;RequestDate&quot;: &quot;20221115 12:24:45.PM&quot;,
+    &quot;RequestId&quot;: 190518530,
+    &quot;ResponseTime&quot;: &quot;593.8763&quot;,
+    &quot;VersionNumber&quot;: &quot;2.0.0.0;Instance=LIVE&quot;}</value>
+    </values>
+    <values>
+        <field>SEL_StatusCode__c</field>
+        <value xsi:type="xsd:double">200.0</value>
+    </values>
+    <values>
+        <field>SEL_Status__c</field>
+        <value xsi:type="xsd:string">Success</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>SPEN_CrmAnalytics</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Grants access to the Wallboard application.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SPEN: Wallboard User</label>
+</PermissionSet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Redesign Reason --></label>
+    <name>SPEN_RedesignReason__c</name>
+    <picklistValues>
+        <masterLabel>Customer Issue</masterLabel>
+        <translation><!-- Customer Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECU Issue</masterLabel>
+        <translation><!-- ECU Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landowner Refusal</masterLabel>
+        <translation><!-- Landowner Refusal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other External Stakeholder</masterLabel>
+        <translation><!-- Other External Stakeholder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning/Environmental</masterLabel>
+        <translation><!-- Planning/Environmental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undeliverable Design</masterLabel>
+        <translation><!-- Undeliverable Design --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

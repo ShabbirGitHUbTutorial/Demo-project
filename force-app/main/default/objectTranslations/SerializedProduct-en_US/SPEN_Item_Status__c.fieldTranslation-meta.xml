@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Item Status --></label>
+    <name>SPEN_Item_Status__c</name>
+    <picklistValues>
+        <masterLabel>Available</masterLabel>
+        <translation><!-- Available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Away For Calibration</masterLabel>
+        <translation><!-- Away For Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Away For Repair</masterLabel>
+        <translation><!-- Away For Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booked Out</masterLabel>
+        <translation><!-- Booked Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost/Stolen</masterLabel>
+        <translation><!-- Lost/Stolen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quarantine - Awaiting Calibration</masterLabel>
+        <translation><!-- Quarantine - Awaiting Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quarantine - Awaiting Inspection</masterLabel>
+        <translation><!-- Quarantine - Awaiting Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quarantine - Awaiting Repair</masterLabel>
+        <translation><!-- Quarantine - Awaiting Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage</masterLabel>
+        <translation><!-- Storage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unserviceable</masterLabel>
+        <translation><!-- Unserviceable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

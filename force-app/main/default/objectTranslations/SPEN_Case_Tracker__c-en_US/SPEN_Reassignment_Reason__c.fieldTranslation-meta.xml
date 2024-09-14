@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reassignment Reason --></label>
+    <name>SPEN_Reassignment_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Automation</masterLabel>
+        <translation><!-- Automation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting information</masterLabel>
+        <translation><!-- Awaiting information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moving to Another Agent</masterLabel>
+        <translation><!-- Moving to Another Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moving to Another Queue</masterLabel>
+        <translation><!-- Moving to Another Queue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone Call</masterLabel>
+        <translation><!-- Telephone Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Complete (Insufficient Time Remaining on Shift)</masterLabel>
+        <translation><!-- Unable to Complete (Insufficient Time Remaining on Shift) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

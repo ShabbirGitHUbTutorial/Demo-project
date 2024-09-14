@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Milestone Type (Linked to Job) --></label>
+    <name>SPEN_JobMilestoneType__c</name>
+    <picklistValues>
+        <masterLabel>Consenting</masterLabel>
+        <translation><!-- Consenting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning</masterLabel>
+        <translation><!-- Planning --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

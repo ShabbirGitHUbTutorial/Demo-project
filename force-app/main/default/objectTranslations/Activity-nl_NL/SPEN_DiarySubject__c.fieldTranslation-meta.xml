@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Diary Update --></label>
+    <name>SPEN_DiarySubject__c</name>
+    <picklistValues>
+        <masterLabel>Agent Initiated Task</masterLabel>
+        <translation><!-- Agent Initiated Task --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chasers</masterLabel>
+        <translation><!-- Chasers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Email (Personal Mailbox)</masterLabel>
+        <translation><!-- External Email (Personal Mailbox) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Email (Shared Mailbox)</masterLabel>
+        <translation><!-- External Email (Shared Mailbox) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facebook Post</masterLabel>
+        <translation><!-- Facebook Post --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal</masterLabel>
+        <translation><!-- Internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal (District Meetings)</masterLabel>
+        <translation><!-- Internal (District Meetings) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Email (Personal Mailbox)</masterLabel>
+        <translation><!-- Internal Email (Personal Mailbox) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Email (Shared Mailbox)</masterLabel>
+        <translation><!-- Internal Email (Shared Mailbox) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Letter Inbound</masterLabel>
+        <translation><!-- Letter Inbound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Letter Outbound</masterLabel>
+        <translation><!-- Letter Outbound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Visits</masterLabel>
+        <translation><!-- Personal Visits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TM Generated Task</masterLabel>
+        <translation><!-- TM Generated Task --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Twitter Post</masterLabel>
+        <translation><!-- Twitter Post --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

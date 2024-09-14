@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material Type Used --></label>
+    <name>SPEN_MaterialTypeUsed__c</name>
+    <picklistValues>
+        <masterLabel>O/H</masterLabel>
+        <translation><!-- O/H --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pillar / Switch Point</masterLabel>
+        <translation><!-- Pillar / Switch Point --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U/G</masterLabel>
+        <translation><!-- U/G --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U/G &amp; O/H</masterLabel>
+        <translation><!-- U/G &amp; O/H --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

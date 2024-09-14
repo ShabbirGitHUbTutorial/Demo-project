@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Entity Status --></label>
+    <name>SPEN_EntityStatus__c</name>
+    <picklistValues>
+        <masterLabel>ACPC</masterLabel>
+        <translation><!-- ACPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BESE</masterLabel>
+        <translation><!-- BESE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CANA</masterLabel>
+        <translation><!-- CANA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CANB</masterLabel>
+        <translation><!-- CANB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CARE PECA</masterLabel>
+        <translation><!-- CARE PECA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLOS</masterLabel>
+        <translation><!-- CLOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPRE PECA</masterLabel>
+        <translation><!-- CPRE PECA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPEC</masterLabel>
+        <translation><!-- FPEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JOBR</masterLabel>
+        <translation><!-- JOBR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Old</masterLabel>
+        <translation><!-- Old --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PECA</masterLabel>
+        <translation><!-- PECA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PENA</masterLabel>
+        <translation><!-- PENA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRTQ</masterLabel>
+        <translation><!-- PRTQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QUOP</masterLabel>
+        <translation><!-- QUOP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WTPL</masterLabel>
+        <translation><!-- WTPL --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

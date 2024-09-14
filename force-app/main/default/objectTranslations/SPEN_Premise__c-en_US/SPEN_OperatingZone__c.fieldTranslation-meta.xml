@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Operating Zone --></label>
+    <name>SPEN_OperatingZone__c</name>
+    <picklistValues>
+        <masterLabel>132KV SOUTH</masterLabel>
+        <translation><!-- 132KV SOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>275kV SOUTH</masterLabel>
+        <translation><!-- 275kV SOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>33KV SOUTH</masterLabel>
+        <translation><!-- 33KV SOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ABERYSTWYTH NORTH</masterLabel>
+        <translation><!-- ABERYSTWYTH NORTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ABERYSTWYTH SOUTH</masterLabel>
+        <translation><!-- ABERYSTWYTH SOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHESTER</masterLabel>
+        <translation><!-- CHESTER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLWYD EAST</masterLabel>
+        <translation><!-- CLWYD EAST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLWYD WEST</masterLabel>
+        <translation><!-- CLWYD WEST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEE VALLEY NORTH</masterLabel>
+        <translation><!-- DEE VALLEY NORTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DEE VALLEY SOUTH</masterLabel>
+        <translation><!-- DEE VALLEY SOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dee Valley &amp; Oswestry</masterLabel>
+        <translation><!-- Dee Valley &amp; Oswestry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EHV South</masterLabel>
+        <translation><!-- EHV South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELLESMERE PORT</masterLabel>
+        <translation><!-- ELLESMERE PORT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GWYNEDD ERYRI</masterLabel>
+        <translation><!-- GWYNEDD ERYRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GWYNEDD MENAI</masterLabel>
+        <translation><!-- GWYNEDD MENAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LIVERPOOL NORTH</masterLabel>
+        <translation><!-- LIVERPOOL NORTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LIVERPOOL SOUTH</masterLabel>
+        <translation><!-- LIVERPOOL SOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MID CHESHIRE NORTH</masterLabel>
+        <translation><!-- MID CHESHIRE NORTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MID CHESHIRE SOUTH</masterLabel>
+        <translation><!-- MID CHESHIRE SOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merseyside</masterLabel>
+        <translation><!-- Merseyside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mid Cheshire</masterLabel>
+        <translation><!-- Mid Cheshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mid Wales</masterLabel>
+        <translation><!-- Mid Wales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEWTOWN</masterLabel>
+        <translation><!-- NEWTOWN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORTH WIRRAL</masterLabel>
+        <translation><!-- NORTH WIRRAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Wales</masterLabel>
+        <translation><!-- North Wales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSWESTRY NORTH</masterLabel>
+        <translation><!-- OSWESTRY NORTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OSWESTRY SOUTH</masterLabel>
+        <translation><!-- OSWESTRY SOUTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RUNCORN</masterLabel>
+        <translation><!-- RUNCORN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ST HELENS</masterLabel>
+        <translation><!-- ST HELENS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEST CHESHIRE ZONE</masterLabel>
+        <translation><!-- TEST CHESHIRE ZONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEST MERSEYSIDE ZONE</masterLabel>
+        <translation><!-- TEST MERSEYSIDE ZONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEST NMS</masterLabel>
+        <translation><!-- TEST NMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEST WALES ZONE</masterLabel>
+        <translation><!-- TEST WALES ZONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Clyde Operating Zone</masterLabel>
+        <translation><!-- Test Clyde Operating Zone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Forth Operating Zone</masterLabel>
+        <translation><!-- Test Forth Operating Zone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test North</masterLabel>
+        <translation><!-- Test North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test South</masterLabel>
+        <translation><!-- Test South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Southern Operating Zone</masterLabel>
+        <translation><!-- Test Southern Operating Zone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WARRINGTON</masterLabel>
+        <translation><!-- WARRINGTON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIDNES</masterLabel>
+        <translation><!-- WIDNES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wirral</masterLabel>
+        <translation><!-- Wirral --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

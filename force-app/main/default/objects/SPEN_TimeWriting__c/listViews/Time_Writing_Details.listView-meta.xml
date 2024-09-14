@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Writing_Details</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Team__c</columns>
+    <columns>SPEN_Role__c</columns>
+    <columns>SPEN_FinancialInformation__c</columns>
+    <columns>SPEN_HoursSpent__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_FinancialInformation__c</field>
+        <operation>contains</operation>
+        <value>00014149</value>
+    </filters>
+    <label>Time Writing Details</label>
+</ListView>

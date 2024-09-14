@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IvrRequiredFieldType</fullName>
+    <active>false</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;IVR&quot; &amp;&amp;
+ISPICKVAL(SPEN_Type__c, &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>SPEN_Type__c</errorDisplayField>
+    <errorMessage>The Type field is required if the record type is set to IVR.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SourceFieldsMustBeBankForContainers</fullName>
+    <active>false</active>
+    <description>This rule enforces the source fields to remain BLANK if the target field type is a container. Source fields are as follows: SEL_SourceField__c, SEL_SourceFieldType__c and SEL_SourceObject__c.</description>
+    <errorConditionFormula>ISPICKVAL(SEL_TargetFieldType__c, &apos;Container&apos;)
+&amp;&amp;
+NOT(
+  ISBLANK(SEL_SourceField__c) &amp;&amp;
+  ISBLANK(SEL_SourceObject__c) &amp;&amp;
+  ISPICKVAL(SEL_SourceFieldType__c, &apos;&apos;)
+)</errorConditionFormula>
+    <errorMessage>Source Object, Source Field and Source Field Type fields must remain BLANK if the Target Field Type is set to Container.</errorMessage>
+</ValidationRule>

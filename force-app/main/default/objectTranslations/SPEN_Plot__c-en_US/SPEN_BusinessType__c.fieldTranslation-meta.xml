@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Type --></label>
+    <name>SPEN_BusinessType__c</name>
+    <picklistValues>
+        <masterLabel>Bank</masterLabel>
+        <translation><!-- Bank --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coffee Shop</masterLabel>
+        <translation><!-- Coffee Shop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Convenience Store</masterLabel>
+        <translation><!-- Convenience Store --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garage</masterLabel>
+        <translation><!-- Garage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gym</masterLabel>
+        <translation><!-- Gym --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel</masterLabel>
+        <translation><!-- Hotel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical</masterLabel>
+        <translation><!-- Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office</masterLabel>
+        <translation><!-- Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant</masterLabel>
+        <translation><!-- Restaurant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation><!-- Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School</masterLabel>
+        <translation><!-- School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

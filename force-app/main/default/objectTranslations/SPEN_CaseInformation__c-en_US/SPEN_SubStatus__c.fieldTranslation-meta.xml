@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Status --></label>
+    <name>SPEN_SubStatus__c</name>
+    <picklistValues>
+        <masterLabel>28 day - letter 1 issued</masterLabel>
+        <translation><!-- 28 day - letter 1 issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>28 day - letter 2 issued</masterLabel>
+        <translation><!-- 28 day - letter 2 issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>28 day - letter 3 issued</masterLabel>
+        <translation><!-- 28 day - letter 3 issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Contact Attempt – Day 1</masterLabel>
+        <translation><!-- Customer Contact Attempt – Day 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Contact Attempt – Day 2 (AM)</masterLabel>
+        <translation><!-- Customer Contact Attempt – Day 2 (AM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Contact Attempt – Day 3 (PM)</masterLabel>
+        <translation><!-- Customer Contact Attempt – Day 3 (PM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Contact Attempt – Day 4 (OOH)</masterLabel>
+        <translation><!-- Customer Contact Attempt – Day 4 (OOH) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Information Received</masterLabel>
+        <translation><!-- Missing Information Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Information Requested</masterLabel>
+        <translation><!-- Missing Information Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Approved</masterLabel>
+        <translation><!-- Quote Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Survey/Quote Review</masterLabel>
+        <translation><!-- Survey/Quote Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Populate using a Questionnaire short name that uniquely identifies a questionnaire record followed by version number. --></help>
+    <label><!-- External ID --></label>
+    <name>SFBG_ExternalId__c</name>
+</CustomFieldTranslation>

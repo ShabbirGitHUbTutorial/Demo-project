@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Name field should match the value of this field. --></help>
+    <label><!-- External ID --></label>
+    <name>SFBG_ExternalId__c</name>
+</CustomFieldTranslation>

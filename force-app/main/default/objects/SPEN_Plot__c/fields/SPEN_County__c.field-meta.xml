@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_County__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is for Connections Process</description>
+    <label>County</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>08</fullName>
+                <default>false</default>
+                <label>Argyll &amp; Bute</label>
+            </value>
+            <value>
+                <fullName>44</fullName>
+                <default>false</default>
+                <label>Ceredigion</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>Cheshire East</label>
+            </value>
+            <value>
+                <fullName>46</fullName>
+                <default>false</default>
+                <label>Clackmannanshire</label>
+            </value>
+            <value>
+                <fullName>48</fullName>
+                <default>false</default>
+                <label>Conwy</label>
+            </value>
+            <value>
+                <fullName>53</fullName>
+                <default>false</default>
+                <label>Cumbria</label>
+            </value>
+            <value>
+                <fullName>55</fullName>
+                <default>false</default>
+                <label>Denbighshire</label>
+            </value>
+            <value>
+                <fullName>64</fullName>
+                <default>false</default>
+                <label>Dumfries &amp; Galloway</label>
+            </value>
+            <value>
+                <fullName>69</fullName>
+                <default>false</default>
+                <label>East Ayrshire</label>
+            </value>
+            <value>
+                <fullName>70</fullName>
+                <default>false</default>
+                <label>East Dunbartonshire</label>
+            </value>
+            <value>
+                <fullName>72</fullName>
+                <default>false</default>
+                <label>East Lothian</label>
+            </value>
+            <value>
+                <fullName>73</fullName>
+                <default>false</default>
+                <label>East Renfrewshire</label>
+            </value>
+            <value>
+                <fullName>76</fullName>
+                <default>false</default>
+                <label>Edinburgh</label>
+            </value>
+            <value>
+                <fullName>82</fullName>
+                <default>false</default>
+                <label>Falkirk</label>
+            </value>
+            <value>
+                <fullName>84</fullName>
+                <default>false</default>
+                <label>Fife</label>
+            </value>
+            <value>
+                <fullName>85</fullName>
+                <default>false</default>
+                <label>Flintshire</label>
+            </value>
+            <value>
+                <fullName>87</fullName>
+                <default>false</default>
+                <label>Glasgow</label>
+            </value>
+            <value>
+                <fullName>92</fullName>
+                <default>false</default>
+                <label>Gwynedd</label>
+            </value>
+            <value>
+                <fullName>94</fullName>
+                <default>false</default>
+                <label>Halton</label>
+            </value>
+            <value>
+                <fullName>AH</fullName>
+                <default>false</default>
+                <label>Inverclyde</label>
+            </value>
+            <value>
+                <fullName>AI</fullName>
+                <default>false</default>
+                <label>Isle of Anglesey</label>
+            </value>
+            <value>
+                <fullName>AU</fullName>
+                <default>false</default>
+                <label>Lancashire</label>
+            </value>
+            <value>
+                <fullName>BC</fullName>
+                <default>false</default>
+                <label>Merseyside</label>
+            </value>
+            <value>
+                <fullName>BH</fullName>
+                <default>false</default>
+                <label>Greater Manchester</label>
+            </value>
+            <value>
+                <fullName>BM</fullName>
+                <default>false</default>
+                <label>Midlothian</label>
+            </value>
+            <value>
+                <fullName>CA</fullName>
+                <default>false</default>
+                <label>North Ayrshire</label>
+            </value>
+            <value>
+                <fullName>CD</fullName>
+                <default>false</default>
+                <label>North Lanarkshire</label>
+            </value>
+            <value>
+                <fullName>CJ</fullName>
+                <default>false</default>
+                <label>Northumberland</label>
+            </value>
+            <value>
+                <fullName>CT</fullName>
+                <default>false</default>
+                <label>Perth &amp; Kinross</label>
+            </value>
+            <value>
+                <fullName>CY</fullName>
+                <default>false</default>
+                <label>Powys</label>
+            </value>
+            <value>
+                <fullName>DD</fullName>
+                <default>false</default>
+                <label>Renfrewshire</label>
+            </value>
+            <value>
+                <fullName>DL</fullName>
+                <default>false</default>
+                <label>Scottish Borders</label>
+            </value>
+            <value>
+                <fullName>DP</fullName>
+                <default>false</default>
+                <label>Shropshire</label>
+            </value>
+            <value>
+                <fullName>DT</fullName>
+                <default>false</default>
+                <label>South Ayrshire</label>
+            </value>
+            <value>
+                <fullName>DV</fullName>
+                <default>false</default>
+                <label>South Lanarkshire</label>
+            </value>
+            <value>
+                <fullName>EC</fullName>
+                <default>false</default>
+                <label>Staffordshire</label>
+            </value>
+            <value>
+                <fullName>ED</fullName>
+                <default>false</default>
+                <label>Stirling</label>
+            </value>
+            <value>
+                <fullName>ER</fullName>
+                <default>false</default>
+                <label>Telford &amp; Wrekin</label>
+            </value>
+            <value>
+                <fullName>FC</fullName>
+                <default>false</default>
+                <label>Warrington</label>
+            </value>
+            <value>
+                <fullName>FG</fullName>
+                <default>false</default>
+                <label>West Dunbartonshire</label>
+            </value>
+            <value>
+                <fullName>FI</fullName>
+                <default>false</default>
+                <label>West Lothian</label>
+            </value>
+            <value>
+                <fullName>FQ</fullName>
+                <default>false</default>
+                <label>Cheshire West &amp; Ches</label>
+            </value>
+            <value>
+                <fullName>FV</fullName>
+                <default>false</default>
+                <label>Wrexham</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

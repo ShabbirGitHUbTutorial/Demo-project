@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_Demand_Messaging_Tasks</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Event__c</columns>
+    <columns>SPEN_Category__c</columns>
+    <columns>SPEN_CreatedDateTime__c</columns>
+    <columns>SPEN_Status__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>SPEN_IncidentId__c</columns>
+    <columns>SPEN_OnDemandRef__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_Event__c</field>
+        <operation>equals</operation>
+        <value>On Demand</value>
+    </filters>
+    <label>On Demand Messaging Tasks</label>
+</ListView>

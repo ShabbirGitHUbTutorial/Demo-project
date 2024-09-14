@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Truncate the custom object (the one selected in the Object API Name field) during the Dataset Writeback. The Writeback will delete all records in this custom object before inserting the new ones. You can recover the records from the Recycle Bin. --></help>
+    <label><!-- Truncate Custom Object --></label>
+    <name>DSWB__Truncate_Custom_Object__c</name>
+</CustomFieldTranslation>

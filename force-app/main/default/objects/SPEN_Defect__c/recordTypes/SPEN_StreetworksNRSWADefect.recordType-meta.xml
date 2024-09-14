@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_StreetworksNRSWADefect</fullName>
+    <active>true</active>
+    <label>Streetworks / NRSWA</label>
+    <picklistValues>
+        <picklist>Department__c</picklist>
+        <values>
+            <fullName>DCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_DefectType__c</picklist>
+        <values>
+            <fullName>Cancelled %E2%80%93 Not required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conflicting information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coordinates added to job%2C but works not imminent or taking place</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coordinates in wrong category</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Description of works %2F TM insufficient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate case %2F request %2F job reference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footway closure details not sufficient</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Location %2F Coordinates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Notice type %2F Duration of works requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Surface type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect information provided in email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information not provided at top of email chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient location details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late Coordinates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing contact information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCT approval not sought</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Coordinates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Permit Condition Check Sheet attached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No plan attached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No%2Finsufficient reason for early start documented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not all required information provided in email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notice requested but RON not required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit Condition Checklist in incorrect format</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resources incorrectly cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TM application not sent but TM requested on RON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webform %2F TM does not match permit checklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working on%2Fnear a junction%2E Recognised from the system that more than one RON is required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

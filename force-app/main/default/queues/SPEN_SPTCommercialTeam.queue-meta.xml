@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPT Commercial Team</name>
+    <queueMembers>
+        <users>
+            <user>a.cairns@spenergynetworks.co.uk.spencrm</user>
+            <user>estewart@spenergynetworks.co.uk.spencrm</user>
+            <user>fhaq@spenergynetworks.co.uk.spencrm</user>
+            <user>fewart@spenergynetworks.co.uk.spencrm</user>
+            <user>gareth.williams@spenergynetworks.co.uk.spencrm</user>
+            <user>hannah.martin@spenergynetworks.co.uk.spencrm</user>
+            <user>iahayes@spenergynetworks.co.uk.spencrm</user>
+            <user>jrushe@spenergynetworks.co.uk.spencrm</user>
+            <user>jmcdougall@spenergynetworks.co.uk.spencrm</user>
+            <user>lbryceland@spenergynetworks.co.uk.spencrm</user>
+            <user>n.collins@spenergynetworks.co.uk.spencrm</user>
+            <user>neil.geddes@spenergynetworks.co.uk.spencrm</user>
+            <user>psmillie@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

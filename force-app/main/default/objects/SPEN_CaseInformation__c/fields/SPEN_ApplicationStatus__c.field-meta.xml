@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ApplicationStatus__c</fullName>
+    <label>Application Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaiting Assessment</fullName>
+                <default>false</default>
+                <label>Awaiting Assessment</label>
+            </value>
+            <value>
+                <fullName>Scanning Cut-Out Image</fullName>
+                <default>false</default>
+                <label>Scanning Cut-Out Image</label>
+            </value>
+            <value>
+                <fullName>Under Assessment</fullName>
+                <default>false</default>
+                <label>Under Assessment</label>
+            </value>
+            <value>
+                <fullName>Escalated to DNO</fullName>
+                <default>false</default>
+                <label>Escalated to DNO</label>
+            </value>
+            <value>
+                <fullName>Auto-Approved</fullName>
+                <default>false</default>
+                <label>Auto-Approved</label>
+            </value>
+            <value>
+                <fullName>DNO Approved</fullName>
+                <default>false</default>
+                <label>DNO Approved</label>
+            </value>
+            <value>
+                <fullName>DNO Approved with Limit</fullName>
+                <default>false</default>
+                <label>DNO Approved with Limit</label>
+            </value>
+            <value>
+                <fullName>Further Information Required</fullName>
+                <default>false</default>
+                <label>Further Information Required</label>
+            </value>
+            <value>
+                <fullName>Failed - Too Large</fullName>
+                <default>false</default>
+                <label>Failed - Too Large</label>
+            </value>
+            <value>
+                <fullName>Failed</fullName>
+                <default>false</default>
+                <label>Failed</label>
+            </value>
+            <value>
+                <fullName>Image Scan Failed</fullName>
+                <default>false</default>
+                <label>Image Scan Failed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

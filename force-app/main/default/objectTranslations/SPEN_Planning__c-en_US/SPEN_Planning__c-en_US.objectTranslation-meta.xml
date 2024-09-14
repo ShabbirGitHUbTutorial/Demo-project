@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Planning</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Planning</value>
+    </caseValues>
+    <layouts>
+        <layout>Planning Layout</layout>
+        <sections>
+            <label><!-- Conditions Discharged --></label>
+            <section>Conditions Discharged</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Manage Documents --></label>
+        <name>Manage_Documents</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SPEN_PlanningEmail</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Note/Comment cannot be blank for Cancelled/Refused status. --></errorMessage>
+        <name>SPEN_CommentsCannotBeBlank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_Communication_Log --></label>
+        <name>Conga_Composer_Communication_Log</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPEN_New --></label>
+        <name>SPEN_New</name>
+    </webLinks>
+</CustomObjectTranslation>

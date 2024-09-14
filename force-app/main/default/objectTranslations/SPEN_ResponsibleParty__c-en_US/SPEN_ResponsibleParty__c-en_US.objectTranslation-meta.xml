@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Responsible Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Responsible Parties</value>
+    </caseValues>
+    <layouts>
+        <layout>Responsibility Party Layout</layout>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Person Information --></label>
+            <section>Person Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- First Name and Last Name should not be blank if Type = Person --></errorMessage>
+        <name>BlankFirstAndLastNameForPersonType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Company Lookup should not be blank if Type = Company --></errorMessage>
+        <name>Blank_Company_Error_For_Company_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Company should be blank if Type = Person --></errorMessage>
+        <name>CompanyNotBlankErrorForPersonType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Name and Last Name should be blank if Type = Company --></errorMessage>
+        <name>FirstAndLastNameErrorForCompanyType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Primary Responsible Party already exists --></errorMessage>
+        <name>MultiplePrimaryResponsiibilityPartyError</name>
+    </validationRules>
+</CustomObjectTranslation>

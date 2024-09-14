@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Land Right Closure --></label>
+    <name>SPEN_ReasonforLIClosure__c</name>
+    <picklistValues>
+        <masterLabel>Business Re-Design</masterLabel>
+        <translation><!-- Business Re-Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled - Signed with Agent</masterLabel>
+        <translation><!-- Cancelled - Signed with Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of Owner</masterLabel>
+        <translation><!-- Change of Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Withdrawn</masterLabel>
+        <translation><!-- Customer Withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Consent Issue</masterLabel>
+        <translation><!-- Land Consent Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Owner Refused - Historical Instance</masterLabel>
+        <translation><!-- Land Owner Refused - Historical Instance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landowner Refused - General</masterLabel>
+        <translation><!-- Landowner Refused - General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Programmed Refresh</masterLabel>
+        <translation><!-- Programmed Refresh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raised in Error</masterLabel>
+        <translation><!-- Raised in Error --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

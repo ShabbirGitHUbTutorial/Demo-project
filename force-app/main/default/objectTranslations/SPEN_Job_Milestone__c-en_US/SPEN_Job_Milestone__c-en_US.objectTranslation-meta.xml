@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job Milestone</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Job Milestones</value>
+    </caseValues>
+    <layouts>
+        <layout>Job Milestone Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Milestone Data --></label>
+            <section>Milestone Data</section>
+        </sections>
+        <sections>
+            <label><!-- Milestone Progress Information --></label>
+            <section>Milestone Progress Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Your milestone is over it&apos;s planned end date, please provide the reason for delay from the options provided in the dropdown. --></errorMessage>
+        <name>SPEN_Delay_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Actual End Date to complete the Job Milestone --></errorMessage>
+        <name>SPEN_JobMilesCompletionMandatoryFields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Job design status should be redesign if you want to update milestone with &apos;Redesign&apos; reason. --></errorMessage>
+        <name>SPEN_RedesignValidationCheck</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- SPEN_New --></label>
+        <name>SPEN_New</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPEN_NewListMilestone --></label>
+        <name>SPEN_NewListMilestone</name>
+    </webLinks>
+</CustomObjectTranslation>

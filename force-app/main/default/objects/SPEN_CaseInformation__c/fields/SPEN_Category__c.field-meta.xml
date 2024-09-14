@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>U/G</fullName>
+                <default>false</default>
+                <label>U/G</label>
+            </value>
+            <value>
+                <fullName>O/H</fullName>
+                <default>false</default>
+                <label>O/H</label>
+            </value>
+            <value>
+                <fullName>U/G &amp; O/H</fullName>
+                <default>false</default>
+                <label>U/G &amp; O/H</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

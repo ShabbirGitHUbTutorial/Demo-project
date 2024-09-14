@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Contractor__c</fullName>
+    <description>CRMD-731</description>
+    <label>Contractor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aggreko UK Limited</fullName>
+                <default>false</default>
+                <label>Aggreko UK Limited</label>
+            </value>
+            <value>
+                <fullName>Balfour Beatty</fullName>
+                <default>false</default>
+                <label>Balfour Beatty</label>
+            </value>
+            <value>
+                <fullName>C. Spratt Multi Utility</fullName>
+                <default>false</default>
+                <label>C. Spratt Multi Utility</label>
+            </value>
+            <value>
+                <fullName>Clancy Docwra Ltd</fullName>
+                <default>false</default>
+                <label>Clancy Docwra Ltd</label>
+            </value>
+            <value>
+                <fullName>C-Plan Telecommunications Ltd</fullName>
+                <default>false</default>
+                <label>C-Plan Telecommunications Ltd</label>
+            </value>
+            <value>
+                <fullName>DT Hughes</fullName>
+                <default>false</default>
+                <label>DT Hughes</label>
+            </value>
+            <value>
+                <fullName>O&apos;Connors Overhead</fullName>
+                <default>false</default>
+                <label>O&apos;Connors Overhead</label>
+            </value>
+            <value>
+                <fullName>Overlec Ltd</fullName>
+                <default>false</default>
+                <label>Overlec Ltd</label>
+            </value>
+            <value>
+                <fullName>SPIE</fullName>
+                <default>false</default>
+                <label>SPIE</label>
+            </value>
+            <value>
+                <fullName>Voltcom Group</fullName>
+                <default>false</default>
+                <label>Voltcom Group</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Chevron TM</fullName>
+                <default>false</default>
+                <label>Chevron TM</label>
+            </value>
+            <value>
+                <fullName>CityFibre</fullName>
+                <default>false</default>
+                <label>CityFibre</label>
+            </value>
+            <value>
+                <fullName>Connors Design and Restoration</fullName>
+                <default>false</default>
+                <label>Connors Design and Restoration</label>
+            </value>
+            <value>
+                <fullName>D&amp;C Jones</fullName>
+                <default>false</default>
+                <label>D&amp;C Jones</label>
+            </value>
+            <value>
+                <fullName>Electricity Asset Services</fullName>
+                <default>false</default>
+                <label>Electricity Asset Services</label>
+            </value>
+            <value>
+                <fullName>Emerald Power</fullName>
+                <default>false</default>
+                <label>Emerald Power</label>
+            </value>
+            <value>
+                <fullName>Freedom</fullName>
+                <default>false</default>
+                <label>Freedom</label>
+            </value>
+            <value>
+                <fullName>IQA</fullName>
+                <default>false</default>
+                <label>IQA</label>
+            </value>
+            <value>
+                <fullName>Keltbray</fullName>
+                <default>false</default>
+                <label>Keltbray</label>
+            </value>
+            <value>
+                <fullName>Morrisons Energy Services</fullName>
+                <default>false</default>
+                <label>Morrisons Energy Services</label>
+            </value>
+            <value>
+                <fullName>Optimum Technical Services</fullName>
+                <default>false</default>
+                <label>Optimum Technical Services</label>
+            </value>
+            <value>
+                <fullName>OPUS</fullName>
+                <default>false</default>
+                <label>OPUS</label>
+            </value>
+            <value>
+                <fullName>PLPC</fullName>
+                <default>false</default>
+                <label>PLPC</label>
+            </value>
+            <value>
+                <fullName>PMK Civil Engineering</fullName>
+                <default>false</default>
+                <label>PMK Civil Engineering</label>
+            </value>
+            <value>
+                <fullName>Prysmian</fullName>
+                <default>false</default>
+                <label>Prysmian</label>
+            </value>
+            <value>
+                <fullName>Quartzelec</fullName>
+                <default>false</default>
+                <label>Quartzelec</label>
+            </value>
+            <value>
+                <fullName>Singleton &amp; Smart</fullName>
+                <default>false</default>
+                <label>Singleton &amp; Smart</label>
+            </value>
+            <value>
+                <fullName>Walker &amp; Watts Ltd</fullName>
+                <default>false</default>
+                <label>Walker &amp; Watts Ltd</label>
+            </value>
+            <value>
+                <fullName>O’Connors</fullName>
+                <default>false</default>
+                <label>O’Connors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

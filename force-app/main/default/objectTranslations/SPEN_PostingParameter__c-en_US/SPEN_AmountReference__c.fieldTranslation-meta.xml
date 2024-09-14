@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Amount Reference --></label>
+    <name>SPEN_AmountReference__c</name>
+    <picklistValues>
+        <masterLabel>Amount Per Minute</masterLabel>
+        <translation><!-- Amount Per Minute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyclical Amount</masterLabel>
+        <translation><!-- Cyclical Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Daily Amount</masterLabel>
+        <translation><!-- Daily Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hourly Amount</masterLabel>
+        <translation><!-- Hourly Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly Amount</masterLabel>
+        <translation><!-- Monthly Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yearly Amount</masterLabel>
+        <translation><!-- Yearly Amount --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

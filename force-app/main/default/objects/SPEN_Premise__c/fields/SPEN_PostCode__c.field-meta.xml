@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PostCode__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>It takes the premise postal code</description>
+    <externalId>true</externalId>
+    <label>Post Code</label>
+    <length>10</length>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

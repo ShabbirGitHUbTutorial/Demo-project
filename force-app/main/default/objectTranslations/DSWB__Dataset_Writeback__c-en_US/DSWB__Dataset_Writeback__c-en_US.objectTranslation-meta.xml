@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Dataset Writeback Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Latest Writeback Logs Roll-Up Summary --></label>
+            <section>Latest Writeback Logs Roll-Up Summary</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Query and Message --></label>
+            <section>Query and Message</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Clone_with_Related --></label>
+        <name>Clone_with_Related</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Custom_Clone --></label>
+        <name>Custom_Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run --></label>
+        <name>Run</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Schedule --></label>
+        <name>Schedule</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Test --></label>
+        <name>Test</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unschedule --></label>
+        <name>Unschedule</name>
+    </webLinks>
+</CustomObjectTranslation>

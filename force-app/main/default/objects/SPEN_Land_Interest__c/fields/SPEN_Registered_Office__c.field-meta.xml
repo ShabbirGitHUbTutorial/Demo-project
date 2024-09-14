@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Registered_Office__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( SPEN_Job__r.SPEN_LicenseArea__c ,&apos;SPD&apos;),&apos;SPD - 320 St Vincent Street, Glasgow. G2 5AD&apos;,IF(ISPICKVAL(SPEN_Job__r.SPEN_LicenseArea__c,&apos;SPT&apos;),&apos;SPT - 320 St Vincent Street, Glasgow. G2 5AD&apos;,IF(ISPICKVAL(SPEN_Job__r.SPEN_LicenseArea__c,&apos;SPM&apos;),&apos;SPM - 3 Prenton Way, Prenton, Wirral. CH43 3ET&apos;,&apos;&apos;)) )</formula>
+    <label>Registered Office</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

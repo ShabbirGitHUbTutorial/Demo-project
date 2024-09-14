@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Item Profile --></label>
+    <name>SPEN_ItemProfile__c</name>
+    <picklistValues>
+        <masterLabel>Billing address</masterLabel>
+        <translation><!-- Billing address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded generation information</masterLabel>
+        <translation><!-- Embedded generation information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal layout floor plans (flats only)</masterLabel>
+        <translation><!-- Internal layout floor plans (flats only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Load details</masterLabel>
+        <translation><!-- Load details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location plan</masterLabel>
+        <translation><!-- Location plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meter Point Administration Number (MPAN)</masterLabel>
+        <translation><!-- Meter Point Administration Number (MPAN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photograph(s)</masterLabel>
+        <translation><!-- Photograph(s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relocation drawing</masterLabel>
+        <translation><!-- Relocation drawing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site address</masterLabel>
+        <translation><!-- Site address --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site layout plan</masterLabel>
+        <translation><!-- Site layout plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone number</masterLabel>
+        <translation><!-- Telephone number --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unmetered information</masterLabel>
+        <translation><!-- Unmetered information --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

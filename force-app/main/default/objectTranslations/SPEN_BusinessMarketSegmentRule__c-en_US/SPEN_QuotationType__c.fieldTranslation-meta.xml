@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Quotation Type --></label>
+    <name>SPEN_QuotationType__c</name>
+    <picklistValues>
+        <masterLabel>Budget - Budgeting Offer</masterLabel>
+        <translation><!-- Budget - Budgeting Offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Budget - Feasibility Study Offer</masterLabel>
+        <translation><!-- Budget - Feasibility Study Offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Budget - Quote+ Offer</masterLabel>
+        <translation><!-- Budget - Quote+ Offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fixed price - Fixed Price Alternative</masterLabel>
+        <translation><!-- Fixed price - Fixed Price Alternative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Formal - Quotation Offer</masterLabel>
+        <translation><!-- Formal - Quotation Offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCQ Alternative</masterLabel>
+        <translation><!-- PCQ Alternative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Quotation Offer</masterLabel>
+        <translation><!-- Pre-Quotation Offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Fixed Price Alternative</masterLabel>
+        <translation><!-- Street Lighting Fixed Price Alternative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Variance Offer</masterLabel>
+        <translation><!-- Variance Offer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

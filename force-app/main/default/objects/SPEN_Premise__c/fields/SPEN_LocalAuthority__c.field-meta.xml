@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_LocalAuthority__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Pick your local authority.</description>
+    <label>Local Authority</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ayrshire Council</fullName>
+                <default>false</default>
+                <label>Ayrshire Council</label>
+            </value>
+            <value>
+                <fullName>Ceredigion (Nr Aber)</fullName>
+                <default>false</default>
+                <label>Ceredigion (Nr Aber)</label>
+            </value>
+            <value>
+                <fullName>Cheshire East/West/Chester</fullName>
+                <default>false</default>
+                <label>Cheshire East/West/Chester</label>
+            </value>
+            <value>
+                <fullName>Clackmannan Council</fullName>
+                <default>false</default>
+                <label>Clackmannan Council</label>
+            </value>
+            <value>
+                <fullName>Dumfries Council</fullName>
+                <default>false</default>
+                <label>Dumfries Council</label>
+            </value>
+            <value>
+                <fullName>East Dunbartonshire Council</fullName>
+                <default>false</default>
+                <label>East Dunbartonshire Council</label>
+            </value>
+            <value>
+                <fullName>East Lothian Council</fullName>
+                <default>false</default>
+                <label>East Lothian Council</label>
+            </value>
+            <value>
+                <fullName>Edinburgh Council</fullName>
+                <default>false</default>
+                <label>Edinburgh Council</label>
+            </value>
+            <value>
+                <fullName>Falkirk Council</fullName>
+                <default>false</default>
+                <label>Falkirk Council</label>
+            </value>
+            <value>
+                <fullName>Fife Council</fullName>
+                <default>false</default>
+                <label>Fife Council</label>
+            </value>
+            <value>
+                <fullName>Glasgow City Council</fullName>
+                <default>false</default>
+                <label>Glasgow City Council</label>
+            </value>
+            <value>
+                <fullName>Halton</fullName>
+                <default>false</default>
+                <label>Halton</label>
+            </value>
+            <value>
+                <fullName>Knowsley</fullName>
+                <default>false</default>
+                <label>Knowsley</label>
+            </value>
+            <value>
+                <fullName>Liverpool City</fullName>
+                <default>false</default>
+                <label>Liverpool City</label>
+            </value>
+            <value>
+                <fullName>Midlothian Council</fullName>
+                <default>false</default>
+                <label>Midlothian Council</label>
+            </value>
+            <value>
+                <fullName>North Lanarkshire Council</fullName>
+                <default>false</default>
+                <label>North Lanarkshire Council</label>
+            </value>
+            <value>
+                <fullName>NORTH WALES EAST HUB</fullName>
+                <default>false</default>
+                <label>NORTH WALES EAST HUB</label>
+            </value>
+            <value>
+                <fullName>NORTH WALES WEST HUB</fullName>
+                <default>false</default>
+                <label>NORTH WALES WEST HUB</label>
+            </value>
+            <value>
+                <fullName>Northumberland County Council</fullName>
+                <default>false</default>
+                <label>Northumberland County Council</label>
+            </value>
+            <value>
+                <fullName>Renfrewshire Council / West Dumbartonshire</fullName>
+                <default>false</default>
+                <label>Renfrewshire Council / West Dumbartonshire</label>
+            </value>
+            <value>
+                <fullName>Scottish Borders Council</fullName>
+                <default>false</default>
+                <label>Scottish Borders Council</label>
+            </value>
+            <value>
+                <fullName>Shropshire</fullName>
+                <default>false</default>
+                <label>Shropshire</label>
+            </value>
+            <value>
+                <fullName>South Lanarkshire Council</fullName>
+                <default>false</default>
+                <label>South Lanarkshire Council</label>
+            </value>
+            <value>
+                <fullName>St Helens</fullName>
+                <default>false</default>
+                <label>St Helens</label>
+            </value>
+            <value>
+                <fullName>Stirling Council</fullName>
+                <default>false</default>
+                <label>Stirling Council</label>
+            </value>
+            <value>
+                <fullName>Warrington</fullName>
+                <default>false</default>
+                <label>Warrington</label>
+            </value>
+            <value>
+                <fullName>West Lothian</fullName>
+                <default>false</default>
+                <label>West Lothian</label>
+            </value>
+            <value>
+                <fullName>Wirral</fullName>
+                <default>false</default>
+                <label>Wirral</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

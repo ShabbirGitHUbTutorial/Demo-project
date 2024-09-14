@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Complaint Case Staus</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>SPEN_ActionTrackerDetailsAvoidable__c</fieldNames>
+        <fieldNames>SPEN_Resolution__c</fieldNames>
+        <fieldNames>SPEN_RootCause__c</fieldNames>
+        <picklistValueName>Cancelled</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>SPEN_ActionTrackerDetailsAvoidable__c</fieldNames>
+        <fieldNames>SPEN_Resolution__c</fieldNames>
+        <fieldNames>SPEN_RootCause__c</fieldNames>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>SPEN_Complaints</recordTypeName>
+</PathAssistant>

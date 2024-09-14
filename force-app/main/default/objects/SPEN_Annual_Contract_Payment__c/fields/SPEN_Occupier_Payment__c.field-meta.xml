@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Occupier_Payment__c</fullName>
+    <formula>IF(SPEN_Rental_Only__c,0,IF(SPEN_ServiceOnly__c,0,IF(SPEN_NonPaid__c,0,CASE( SPEN_Apparatus_Description__c, &apos;One Off Payment&apos;, IF( TEXT(SPEN_Land_Interest__r.SPEN_Land_Interest_Type__c) = &apos;Occupier&apos;,SPEN_Special_Payment__c,0), &apos;Back Payment&apos;, IF( TEXT(SPEN_Land_Interest__r.SPEN_Land_Interest_Type__c) = &apos;Occupier&apos;,SPEN_Special_Payment__c,0),      
+      IF( TEXT(SPEN_Land_Interest__r.SPEN_Land_Interest_Type__c) != &apos;Owner&apos;, 
+      SPEN_Payment_Rate__r.SPEN_Occupier_Cost_Per_Annum__c , 0) * SPEN_Payment_Percentage__c * SPEN_Quantity__c
+)
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Occupier Payment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

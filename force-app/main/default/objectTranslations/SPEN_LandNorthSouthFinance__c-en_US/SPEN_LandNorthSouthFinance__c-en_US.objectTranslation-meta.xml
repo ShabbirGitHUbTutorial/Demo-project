@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Land North &amp; South Finance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Land North &amp; South Finances</value>
+    </caseValues>
+    <layouts>
+        <layout>Land Assistant Finance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Information --></label>
+            <section>Finance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill Budget Year Raised in YYYY format. --></errorMessage>
+        <name>SPEN_BudgetYearRaisedRule</name>
+    </validationRules>
+</CustomObjectTranslation>

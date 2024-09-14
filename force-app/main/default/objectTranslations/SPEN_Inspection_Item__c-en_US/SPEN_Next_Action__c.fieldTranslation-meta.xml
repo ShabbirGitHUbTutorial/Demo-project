@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Next Action --></label>
+    <name>SPEN_Next_Action__c</name>
+    <picklistValues>
+        <masterLabel>Lost/Stolen</masterLabel>
+        <translation><!-- Lost/Stolen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Needs Calibration</masterLabel>
+        <translation><!-- Needs Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Needs Repair</masterLabel>
+        <translation><!-- Needs Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unserviceable</masterLabel>
+        <translation><!-- Unserviceable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

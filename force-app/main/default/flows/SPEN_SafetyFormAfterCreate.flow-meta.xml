@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Conga_Trigger_Send_Email</name>
+        <label>Conga Trigger Send Email</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>SPEN_SafetyForm__c.SPEN_CongaTriggerGS6Email</actionName>
+        <actionType>outboundMessage</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>SPEN_SafetyForm__c.SPEN_CongaTriggerGS6Email</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Execute_Action</name>
+        <label>Execute Action</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>None</defaultConnectorLabel>
+        <rules>
+            <name>Send_Email_GS6_Form</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SPEN_RecordTypeDevName__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPEN_GS6Form</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Conga_Trigger_Send_Email</targetReference>
+            </connector>
+            <label>Send Email GS6 Form</label>
+        </rules>
+    </decisions>
+    <description>Flow used to manage the actions to execute after a Safety Form is created</description>
+    <environments>Default</environments>
+    <interviewLabel>Safety Form - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Safety Form - After Create</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Execute_Action</targetReference>
+        </connector>
+        <object>SPEN_SafetyForm__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

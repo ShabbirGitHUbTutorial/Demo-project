@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_DataCategories__c</fullName>
+    <inlineHelpText>Used to sync data categories associated to the article</inlineHelpText>
+    <label>Data Categories</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Third Party Damage</fullName>
+                <default>false</default>
+                <label>Third Party Damage</label>
+            </value>
+            <value>
+                <fullName>Streetworks</fullName>
+                <default>false</default>
+                <label>Streetworks</label>
+            </value>
+            <value>
+                <fullName>NRSWA</fullName>
+                <default>false</default>
+                <label>NRSWA</label>
+            </value>
+            <value>
+                <fullName>Complaints</fullName>
+                <default>false</default>
+                <label>Complaints</label>
+            </value>
+            <value>
+                <fullName>Connection</fullName>
+                <default>false</default>
+                <label>Connection</label>
+            </value>
+            <value>
+                <fullName>Neutral Faults</fullName>
+                <default>false</default>
+                <label>Neutral Faults</label>
+            </value>
+            <value>
+                <fullName>Guaranteed Standards</fullName>
+                <default>false</default>
+                <label>Guaranteed Standards</label>
+            </value>
+            <value>
+                <fullName>DCC</fullName>
+                <default>false</default>
+                <label>DCC</label>
+            </value>
+            <value>
+                <fullName>Incident Control</fullName>
+                <default>false</default>
+                <label>Incident Control</label>
+            </value>
+            <value>
+                <fullName>General Enquiries</fullName>
+                <default>false</default>
+                <label>General Enquiries</label>
+            </value>
+            <value>
+                <fullName>Referrals</fullName>
+                <default>false</default>
+                <label>Referrals</label>
+            </value>
+            <value>
+                <fullName>Connections Services</fullName>
+                <default>false</default>
+                <label>Connections Services</label>
+            </value>
+            <value>
+                <fullName>Planned Outages</fullName>
+                <default>false</default>
+                <label>Planned Outages</label>
+            </value>
+            <value>
+                <fullName>Third Party Damage(restricted)</fullName>
+                <default>false</default>
+                <label>Third Party Damage(restricted)</label>
+            </value>
+            <value>
+                <fullName>Debt</fullName>
+                <default>false</default>
+                <label>Debt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

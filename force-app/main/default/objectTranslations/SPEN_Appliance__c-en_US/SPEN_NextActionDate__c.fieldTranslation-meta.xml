@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Next Action Date --></label>
+    <name>SPEN_NextActionDate__c</name>
+    <picklistValues>
+        <masterLabel>Closed Date</masterLabel>
+        <translation><!-- Closed Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Inspected</masterLabel>
+        <translation><!-- Date Inspected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Of Repair</masterLabel>
+        <translation><!-- Date Of Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Parts Ordered</masterLabel>
+        <translation><!-- Date Parts Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Repair Due</masterLabel>
+        <translation><!-- Date Repair Due --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Replacement Appliance Delivered</masterLabel>
+        <translation><!-- Date Replacement Appliance Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Replacement Appliance Due</masterLabel>
+        <translation><!-- Date Replacement Appliance Due --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date Replacement Appliance Ordered</masterLabel>
+        <translation><!-- Date Replacement Appliance Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Reply</masterLabel>
+        <translation><!-- No Reply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

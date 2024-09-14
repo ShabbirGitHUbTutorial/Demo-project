@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPM_VIew</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>IsProtected</columns>
+    <columns>SPEN_Excavation_Required__c</columns>
+    <columns>SPEN_Notice_Type__c</columns>
+    <columns>Number_of_Days__c</columns>
+    <columns>SPEN_Sensitivity__c</columns>
+    <columns>SPEN_SLA__c</columns>
+    <columns>SPEN_SPD_SPM__c</columns>
+    <columns>SPEN_BusinessHours__c</columns>
+    <columns>SPEN_ClockEndTime__c</columns>
+    <columns>SPEN_ClockStartTime__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_SPD_SPM__c</field>
+        <operation>equals</operation>
+        <value>SPM</value>
+    </filters>
+    <label>SPM VIew</label>
+</ListView>

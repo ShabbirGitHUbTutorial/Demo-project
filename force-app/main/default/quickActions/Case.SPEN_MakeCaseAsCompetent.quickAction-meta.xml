@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CRMD-6699</description>
+    <flowDefinition>SPEN_MakeCaseAsCompetent</flowDefinition>
+    <label>Confirm Competency</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

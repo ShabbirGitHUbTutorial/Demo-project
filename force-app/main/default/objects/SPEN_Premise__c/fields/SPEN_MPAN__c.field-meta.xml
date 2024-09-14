@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MPAN__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>A text box to capture MPAN number to be sent to ADQM.</description>
+    <externalId>false</externalId>
+    <label>MPAN</label>
+    <length>25</length>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Contact Status --></label>
+    <name>SPEN_CustomerContactStatus__c</name>
+    <picklistValues>
+        <masterLabel>Attempted</masterLabel>
+        <translation><!-- Attempted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case Accepted - With Delivery</masterLabel>
+        <translation><!-- Case Accepted - With Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Designer Escalation Addressed</masterLabel>
+        <translation><!-- Designer Escalation Addressed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone call</masterLabel>
+        <translation><!-- Phone call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Successful – Email</masterLabel>
+        <translation><!-- Successful – Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team Leader Escalation Addressed</masterLabel>
+        <translation><!-- Team Leader Escalation Addressed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

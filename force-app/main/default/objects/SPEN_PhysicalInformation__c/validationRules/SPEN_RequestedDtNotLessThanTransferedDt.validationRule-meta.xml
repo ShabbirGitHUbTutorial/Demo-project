@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RequestedDtNotLessThanTransferedDt</fullName>
+    <active>true</active>
+    <description>When Case is transferred in SAP then Requested Date Time of a record can&apos;t be less than Case Transferred Date Time in SAP</description>
+    <errorConditionFormula>AND( SPEN_Case__r.SPEN_Is_Case_Competent__c ,  SPEN_Case__r.SPEN_CaseTransferredDateTimeInSAP__c &gt;  SPEN_ItemRequestedDate__c  )</errorConditionFormula>
+    <errorDisplayField>SPEN_ItemRequestedDate__c</errorDisplayField>
+    <errorMessage>Item Requested Date and Time can not be less than Case Transferred Date Time In SAP</errorMessage>
+</ValidationRule>

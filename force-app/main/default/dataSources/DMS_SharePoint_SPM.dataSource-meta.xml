@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalDataSource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authProvider>DMS_File_Connect_SPM</authProvider>
+    <customConfiguration>{&quot;sharepointConnectorUrl&quot;:&quot;https://iberdrola.sharepoint.com/sites/EscomsSPM&quot;,&quot;singleSiteCollection&quot;:&quot;true&quot;}</customConfiguration>
+    <isWritable>false</isWritable>
+    <label>DMS SharePoint SPM</label>
+    <principalType>NamedUser</principalType>
+    <protocol>Oauth</protocol>
+    <type>ContentHubSharepointOffice365</type>
+</ExternalDataSource>

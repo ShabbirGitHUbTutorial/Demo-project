@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ActualLeadTime__c</fullName>
+    <label>Actual Lead Time</label>
+    <summarizedField>SPEN_Job_Milestone__c.SPEN_Actual_lead_time_Days__c</summarizedField>
+    <summaryForeignKey>SPEN_Job_Milestone__c.SPEN_Job__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

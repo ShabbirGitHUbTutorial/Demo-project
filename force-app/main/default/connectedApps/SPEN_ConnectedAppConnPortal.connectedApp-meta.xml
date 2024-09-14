@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>aborthwick@spenergynetworks.co.uk</contactEmail>
+    <description>Connected App for SPD Connections Portal</description>
+    <label>SPEN_ConnectedAppConnPortal</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>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</certificate>
+        <consumerKey>3MVG9395hRoMgFO2shyYvKpShhvcNpM6wSrq8bbv8d7aKN5MjNjsBIcJGNXxNbZXgaG2IaiYhKizSnVrR4yJ7</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>SPEN Integration</profileName>
+</ConnectedApp>

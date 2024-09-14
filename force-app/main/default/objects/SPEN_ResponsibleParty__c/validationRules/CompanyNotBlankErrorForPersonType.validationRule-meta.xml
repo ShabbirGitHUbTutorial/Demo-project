@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompanyNotBlankErrorForPersonType</fullName>
+    <active>true</active>
+    <description>CRMD - 6634, Company should be blank if Type = Person</description>
+    <errorConditionFormula>AND(ISPICKVAL(SPEN_Type__c , &apos;Person&apos;), NOT(SPEN_Company__c =&apos;&apos;))</errorConditionFormula>
+    <errorMessage>Company should be blank if Type = Person</errorMessage>
+</ValidationRule>

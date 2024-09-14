@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to identify users which are part of Compliance Stores solution.</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SerializedProduct.SPEN_Blank_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SerializedProduct.SPEN_Competent_User_Needed__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>SerializedProduct.SPEN_Model__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Compliance Stores User</label>
+</PermissionSet>

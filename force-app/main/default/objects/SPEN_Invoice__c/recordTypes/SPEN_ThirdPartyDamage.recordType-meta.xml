@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ThirdPartyDamage</fullName>
+    <active>true</active>
+    <description>Record type for the Third Party Damage type invoices related to Third party damage cases</description>
+    <label>Third Party Damage</label>
+    <picklistValues>
+        <picklist>SPEN_InvoicedOutcome__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issued</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Negotiated Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid in Full</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redirected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Written Off</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_NegotiatedSettlementReason__c</picklist>
+        <values>
+            <fullName>Best Return Received Through Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Photographs%2FInformation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overhead%2FSalary Costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Liability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request from District</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <description>Combination of premiseId+CustomerId</description>
+        <name>UpdatedExternalIdValue</name>
+        <dataType>String</dataType>
+        <expression>{!$Record__Prior.SPEN_Premise__r.SPEN_PremiseID__c}+
+IF({!$Record__Prior.SPEN_RelatedContact__r.SPEN_CustomerID__c} != null, &apos;-&apos;+{!$Record__Prior.SPEN_RelatedContact__r.SPEN_CustomerID__c}, &apos;&apos;)+
+IF(TEXT({!$Record__Prior.SPEN_Role__c}) != &apos;&apos;, &apos;-&apos;+TEXT({!$Record__Prior.SPEN_Role__c}), &apos;&apos;)</expression>
+    </formulas>
+    <interviewLabel>PopulateExternalId {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PopulateExternalId</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>This will populate the record with ContactId and PremiseId</description>
+        <name>PopulateExternalId</name>
+        <label>PopulateExternalId</label>
+        <locationX>616</locationX>
+        <locationY>359</locationY>
+        <inputAssignments>
+            <field>SPEN_ExternalId__c</field>
+            <value>
+                <elementReference>UpdatedExternalIdValue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>490</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>PopulateExternalId</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_ExternalId__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <object>SPEN_ContactPremise__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_OperatingZone__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Pick the operating Zone from picklist.</description>
+    <label>Operating Zone</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EHV South</fullName>
+                <default>false</default>
+                <label>EHV South</label>
+            </value>
+            <value>
+                <fullName>132KV SOUTH</fullName>
+                <default>false</default>
+                <label>132KV SOUTH</label>
+            </value>
+            <value>
+                <fullName>275kV SOUTH</fullName>
+                <default>false</default>
+                <label>275kV SOUTH</label>
+            </value>
+            <value>
+                <fullName>33KV SOUTH</fullName>
+                <default>false</default>
+                <label>33KV SOUTH</label>
+            </value>
+            <value>
+                <fullName>Dee Valley &amp; Oswestry</fullName>
+                <default>false</default>
+                <label>Dee Valley &amp; Oswestry</label>
+            </value>
+            <value>
+                <fullName>DEE VALLEY NORTH</fullName>
+                <default>false</default>
+                <label>DEE VALLEY NORTH</label>
+            </value>
+            <value>
+                <fullName>DEE VALLEY SOUTH</fullName>
+                <default>false</default>
+                <label>DEE VALLEY SOUTH</label>
+            </value>
+            <value>
+                <fullName>OSWESTRY NORTH</fullName>
+                <default>false</default>
+                <label>OSWESTRY NORTH</label>
+            </value>
+            <value>
+                <fullName>OSWESTRY SOUTH</fullName>
+                <default>false</default>
+                <label>OSWESTRY SOUTH</label>
+            </value>
+            <value>
+                <fullName>Merseyside</fullName>
+                <default>false</default>
+                <label>Merseyside</label>
+            </value>
+            <value>
+                <fullName>LIVERPOOL NORTH</fullName>
+                <default>false</default>
+                <label>LIVERPOOL NORTH</label>
+            </value>
+            <value>
+                <fullName>LIVERPOOL SOUTH</fullName>
+                <default>false</default>
+                <label>LIVERPOOL SOUTH</label>
+            </value>
+            <value>
+                <fullName>ST HELENS</fullName>
+                <default>false</default>
+                <label>ST HELENS</label>
+            </value>
+            <value>
+                <fullName>WIDNES</fullName>
+                <default>false</default>
+                <label>WIDNES</label>
+            </value>
+            <value>
+                <fullName>Mid Cheshire</fullName>
+                <default>false</default>
+                <label>Mid Cheshire</label>
+            </value>
+            <value>
+                <fullName>MID CHESHIRE NORTH</fullName>
+                <default>false</default>
+                <label>MID CHESHIRE NORTH</label>
+            </value>
+            <value>
+                <fullName>MID CHESHIRE SOUTH</fullName>
+                <default>false</default>
+                <label>MID CHESHIRE SOUTH</label>
+            </value>
+            <value>
+                <fullName>WARRINGTON</fullName>
+                <default>false</default>
+                <label>WARRINGTON</label>
+            </value>
+            <value>
+                <fullName>Mid Wales</fullName>
+                <default>false</default>
+                <label>Mid Wales</label>
+            </value>
+            <value>
+                <fullName>ABERYSTWYTH NORTH</fullName>
+                <default>false</default>
+                <label>ABERYSTWYTH NORTH</label>
+            </value>
+            <value>
+                <fullName>ABERYSTWYTH SOUTH</fullName>
+                <default>false</default>
+                <label>ABERYSTWYTH SOUTH</label>
+            </value>
+            <value>
+                <fullName>NEWTOWN</fullName>
+                <default>false</default>
+                <label>NEWTOWN</label>
+            </value>
+            <value>
+                <fullName>North Wales</fullName>
+                <default>false</default>
+                <label>North Wales</label>
+            </value>
+            <value>
+                <fullName>CLWYD EAST</fullName>
+                <default>false</default>
+                <label>CLWYD EAST</label>
+            </value>
+            <value>
+                <fullName>CLWYD WEST</fullName>
+                <default>false</default>
+                <label>CLWYD WEST</label>
+            </value>
+            <value>
+                <fullName>GWYNEDD ERYRI</fullName>
+                <default>false</default>
+                <label>GWYNEDD ERYRI</label>
+            </value>
+            <value>
+                <fullName>GWYNEDD MENAI</fullName>
+                <default>false</default>
+                <label>GWYNEDD MENAI</label>
+            </value>
+            <value>
+                <fullName>Wirral</fullName>
+                <default>false</default>
+                <label>Wirral</label>
+            </value>
+            <value>
+                <fullName>CHESTER</fullName>
+                <default>false</default>
+                <label>CHESTER</label>
+            </value>
+            <value>
+                <fullName>ELLESMERE PORT</fullName>
+                <default>false</default>
+                <label>ELLESMERE PORT</label>
+            </value>
+            <value>
+                <fullName>NORTH WIRRAL</fullName>
+                <default>false</default>
+                <label>NORTH WIRRAL</label>
+            </value>
+            <value>
+                <fullName>RUNCORN</fullName>
+                <default>false</default>
+                <label>RUNCORN</label>
+            </value>
+            <value>
+                <fullName>Test North</fullName>
+                <default>false</default>
+                <label>Test North</label>
+            </value>
+            <value>
+                <fullName>Test Clyde Operating Zone</fullName>
+                <default>false</default>
+                <label>Test Clyde Operating Zone</label>
+            </value>
+            <value>
+                <fullName>Test Forth Operating Zone</fullName>
+                <default>false</default>
+                <label>Test Forth Operating Zone</label>
+            </value>
+            <value>
+                <fullName>Test Southern Operating Zone</fullName>
+                <default>false</default>
+                <label>Test Southern Operating Zone</label>
+            </value>
+            <value>
+                <fullName>Test South</fullName>
+                <default>false</default>
+                <label>Test South</label>
+            </value>
+            <value>
+                <fullName>TEST CHESHIRE ZONE</fullName>
+                <default>false</default>
+                <label>TEST CHESHIRE ZONE</label>
+            </value>
+            <value>
+                <fullName>TEST MERSEYSIDE ZONE</fullName>
+                <default>false</default>
+                <label>TEST MERSEYSIDE ZONE</label>
+            </value>
+            <value>
+                <fullName>TEST NMS</fullName>
+                <default>false</default>
+                <label>TEST NMS</label>
+            </value>
+            <value>
+                <fullName>TEST WALES ZONE</fullName>
+                <default>false</default>
+                <label>TEST WALES ZONE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

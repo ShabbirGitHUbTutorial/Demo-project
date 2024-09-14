@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Designer Escalation --></label>
+    <name>SPEN_DesignerEscalation__c</name>
+    <relationshipLabel><!-- Post Quote Contact ODTs (Designer Escalation) --></relationshipLabel>
+</CustomFieldTranslation>

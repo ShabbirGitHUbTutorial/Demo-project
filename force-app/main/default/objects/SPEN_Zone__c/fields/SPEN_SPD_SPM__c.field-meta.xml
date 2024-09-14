@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SPD_SPM__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+(
+(
+/* Expected under parent: AYRSHIRE */
+(Name = &quot;Ayrshire &amp; Clyde South&quot; || Name = &quot;AYR CENTRAL&quot; || Name = &quot;AYR NORTH&quot; || Name = &quot;AYRSHIRE&quot;|| Name = &quot;AYR SOUTH&quot; || Name = &quot;CLYDE SOUTH&quot;) ||
+/* Expected under parent: CENTRAL &amp; FIFE */
+(Name = &quot;Central &amp; Fife&quot; || Name = &quot;CENTRAL &amp; FIFE&quot; || Name = &quot;BATHGATE&quot; || Name = &quot;CENTRAL&quot; || Name = &quot;FIFE EAST&quot; || Name = &quot;FIFE WEST&quot; || Name = &quot;STIRLING&quot;) ||
+/* Expected under parent: DUMFRIES */
+(Name = &quot;Dumfries&quot; || Name = &quot;DUMFRIES&quot; || Name = &quot;STEWARTRY&quot; || Name = &quot;WIGTOWNSHIRE&quot;) ||
+/* Expected under parent: EDINBURGH &amp; BORDERS */
+(Name = &quot;EDINBURGH &amp; LOTHIANS&quot; || Name =&quot;Edinburgh &amp; Borders&quot;|| Name = &quot;EDINBURGH&quot; || Name = &quot;LOTHIANS&quot; || Name = &quot;GALASHIELS&quot; || Name = &quot;BERWICK&quot;) ||
+/* Expected under parent: GLASGOW */
+(Name = &quot;Glasgow &amp; Clyde North&quot; || Name = &quot;GLASGOW &amp; CLYDE NORTH&quot; || Name = &quot;CLYDE NORTH&quot; || Name = &quot;CLYDE CENTRAL&quot; || Name = &quot;GLASGOW NORTH&quot; || Name = &quot;GLASGOW SOUTH&quot; || Name = &quot;CLYDE(CENTRAL)&quot; || Name = &quot;Glasgow&quot; || Name = &quot;GLASGOW&quot;) ||
+/* Expected under parent: LANARKSHIRE */
+(Name = &quot;Lanarkshire&quot; || Name = &quot;LANARKSHIRE&quot; || Name = &quot;LANARK CENTRAL&quot; || Name = &quot;LANARK NORTH&quot; || Name = &quot;LANARK SOUTH&quot; || Name = &quot;LANARK WEST&quot; || Name = &quot;LANARK(CENTRAL)&quot;) || (Name = &quot;UNKNOWN&quot; || Name = &quot;Unknown&quot;)
+),
+&quot;SPD&quot;,
+IF
+(
+(
+/* Expected under parent: DEE VALLEY / MID WALES */
+(Name = &quot;Dee Valley, Mid Wales and Oswestry&quot;|| Name = &quot;Dee Valley, Oswestry &amp; Mid Wales&quot;|| Name = &quot;DeeValley &amp; Mid Wales&quot; || Name = &quot;DEE VALLEY NORTH&quot; || Name = &quot;DEE VALLEY SOUTH&quot; || Name = &quot;OSWESTRY NORTH&quot; || Name = &quot;OSWESTRY SOUTH&quot; || Name = &quot;ABERYSTWYTH NORTH&quot; || Name = &quot;ABERYSTWYTH SOUTH&quot; || Name = &quot;NEWTOWN&quot;) ||
+/* Expected under parent: MERSEYSIDE */
+(Name = &quot;LIVERPOOL NORTH&quot; || Name = &quot;LIVERPOOL SOUTH&quot; || Name = &quot;ST HELENS&quot;|| Name = &quot;Merseyside&quot;|| Name = &quot;MERSEYSIDE&quot; || Name = &quot;WIDNES&quot;) ||
+/* Expected under parent: MID CHESHIRE */
+(Name = &quot;MID CHESHIRE NORTH&quot; || Name = &quot;MID CHESHIRE SOUTH&quot; || Name = &quot;WARRINGTON&quot; || Name = &quot;Mid Cheshire&quot; || Name = &quot;MID CHESHIRE&quot;) ||
+/* Expected under parent: NORTH WALES */
+(Name = &quot;CLWYD EAST&quot; || Name = &quot;CLWYD WEST&quot; || Name = &quot;GWYNEDD ERYRI&quot; || Name = &quot;GWYNEDD MENAI&quot; || Name = &quot;North Wales&quot; || Name = &quot;Shropshire(DeeValley,Oswestry &amp; Mid Wales District)&quot;|| Name = &quot;Shropshire (DeeValley, Oswestry &amp; Mid Wales District)&quot;|| Name = &quot;Northumberland(Edinburgh District)&quot; || Name = &quot;Northumberland (Edinburgh District)&quot;) ||
+/* Expected under parent: WIRRAL */
+(Name = &quot;CHESTER&quot; || Name = &quot;ELLESMERE PORT&quot; || Name = &quot;NORTH WIRRAL&quot; || Name = &quot;RUNCORN&quot; || Name = &quot;Wirral&quot; || Name = &quot;WIRRAL&quot; )
+),
+&quot;SPM&quot;,
+&quot;NO SPD/SPM MATCH&quot;
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SPD/SPM</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

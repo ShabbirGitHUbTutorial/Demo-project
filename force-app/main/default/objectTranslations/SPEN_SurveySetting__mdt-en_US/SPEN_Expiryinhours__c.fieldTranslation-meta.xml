@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- In how many hours the survey would expire --></help>
+    <label><!-- Expiry (in hours) --></label>
+    <name>SPEN_Expiryinhours__c</name>
+</CustomFieldTranslation>

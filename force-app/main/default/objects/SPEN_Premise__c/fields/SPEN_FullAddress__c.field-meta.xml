@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_FullAddress__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Flat Number + Building + Street + Area + Town + Post Code
+(Combination of all other Premise Fields)</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT(ISBLANK(SPEN_PlotNumber__c)), SPEN_PlotNumber__c &amp;&quot; &quot;&amp; SPEN_FlatNumber__c &amp;&quot; &quot;&amp; SPEN_BuildingNameNumber__c &amp;&quot; &quot;&amp; SPEN_Street__c &amp;&quot; &quot; &amp;SPEN_Area__c &amp;&quot; &quot;&amp; SPEN_Town__c &amp;&quot; &quot;&amp; SPEN_PostCode__c, SPEN_FlatNumber__c &amp;&quot; &quot;&amp; SPEN_BuildingNameNumber__c &amp;&quot; &quot;&amp; SPEN_Street__c &amp;&quot; &quot; &amp;SPEN_Area__c &amp;&quot; &quot;&amp; SPEN_Town__c &amp;&quot; &quot;&amp; SPEN_PostCode__c)</formula>
+    <label>Full Address</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<apex:page controller="AP230_MonitoringEventsTypes" renderAs="PDF" readOnly="true">
+    <apex:pageBlock >
+        <apex:pageBlockSection title="{!$Label.EventMonitoring}">
+            <apex:pageBlockTable value="{!EventConfigurationMonitoring}" var="la" border="1" cellpadding="1" cellspacing="1">
+                <apex:column headerValue="{!$Label.ActionDate}" value="{!la.CreatedDate}">
+                </apex:column>
+                <apex:column headerValue="{!$Label.ActionUser}" value="{!la.CreatedBy.username }  ">
+                    
+                </apex:column>
+                <apex:column headerValue="{!$Label.Action}" value="{!la.Display}">
+                    
+                </apex:column>
+            </apex:pageBlockTable>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

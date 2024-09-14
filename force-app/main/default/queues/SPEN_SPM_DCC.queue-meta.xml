@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPM DCC</name>
+    <queueMembers>
+        <users>
+            <user>davedcc.jones@spenergynetworks.co.uk.spencrm</user>
+            <user>joanne_jones@spenergynetworks.co.uk.spencrm</user>
+            <user>jmcferran@spenergynetworks.co.uk.spencrm</user>
+            <user>k.wintersgill@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

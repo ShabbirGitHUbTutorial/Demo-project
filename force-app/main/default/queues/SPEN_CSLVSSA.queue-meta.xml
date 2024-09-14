@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CS LVSSA</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>SPEN_CSLVSSA</publicGroup>
+        </publicGroups>
+        <users>
+            <user>aadeseye@spenergynetworks.co.uk.spencrm</user>
+            <user>bpokk@spenergynetworks.co.uk.spencrm</user>
+            <user>cmccormack@spenergynetworks.co.uk.spencrm</user>
+            <user>cgilmour1@spenergynetworks.co.uk.spencrm</user>
+            <user>cinches@spenergynetworks.co.uk.spencrm</user>
+            <user>cgraham@spenergynetworks.co.uk.spencrm</user>
+            <user>cbrand@spenergynetworks.co.uk.spencrm</user>
+            <user>cwallace@spenergynetworks.co.uk.spencrm</user>
+            <user>dsparham@spenergynetworks.co.uk.spencrm</user>
+            <user>dmontgomery@spenergynetworks.co.uk.spencrm</user>
+            <user>emclean@spenergynetworks.co.uk.spencrm</user>
+            <user>gduffy@spenergynetworks.co.uk.spencrm</user>
+            <user>hfraser@spenergynetworks.co.uk.spencrm</user>
+            <user>j.gallagher@spenergynetworks.co.uk.spencrm</user>
+            <user>joanna.hawthorne@spenergynetworks.co.uk.spencrm</user>
+            <user>jthadathil@spenergynetworks.co.uk.spencrm</user>
+            <user>kjones@spenergynetworks.co.uk.spencrm</user>
+            <user>mfinnie@spenergynetworks.co.uk.spencrm</user>
+            <user>mdundas@spenergynetworks.co.uk.spencrm</user>
+            <user>ncarswell@spenergynetworks.co.uk.spencrm</user>
+            <user>nbuckley@spenergynetworks.co.uk.spencrm</user>
+            <user>pgoodwin@spenergynetworks.co.uk.spencrm</user>
+            <user>rmcgillivray@spenergynetworks.co.uk.spencrm</user>
+            <user>rtorrance@spenergynetworks.co.uk.spencrm</user>
+            <user>rpick@spenergynetworks.co.uk.spencrm</user>
+            <user>smclaughlan@spenergynetworks.co.uk.spencrm</user>
+            <user>ttodorova@spenergynetworks.co.uk.spencrm</user>
+            <user>wendy.kola@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_JobMilesCompletionMandatoryFields</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK( SPEN_Actual_End_Date__c ) &amp;&amp;  ISPICKVAL( SPEN_Status__c , &quot;Completed&quot;)</errorConditionFormula>
+    <errorMessage>Please enter the Actual End Date to complete the Job Milestone</errorMessage>
+</ValidationRule>

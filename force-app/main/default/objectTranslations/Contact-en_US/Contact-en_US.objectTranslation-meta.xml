@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>EPO Contact</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SPEN Contact Connections CRM Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add/Remove PSR --></label>
+        <name>SPEN_CreatePSR</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>SPEN_LogaCall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Contact --></label>
+        <name>SPEN_UpdateContact</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Record type created for SPEN Contact --></description>
+        <label><!-- Customer --></label>
+        <name>SPEN_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type is for Connections process and Third Party Damage and Street Works and NRSWA Case Types --></description>
+        <label><!-- Company Contact --></label>
+        <name>SPEN_ContactConnectionsCRM</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Contact record type for external contractor field service operatives. --></description>
+        <label><!-- Contractor Contact --></label>
+        <name>SPEN_ContractorContact</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- EPO Contact --></description>
+        <label><!-- EPO Contact --></label>
+        <name>SPEN_EPOContact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SPEN Other Contact --></label>
+        <name>SPEN_Other_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner Contact --></label>
+        <name>SPEN_PartnerContact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please fill in the Mobile Number in UK format --></errorMessage>
+        <name>SPEN_MobileValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Agent can&apos;t link a Customer contact or Partner Contact or SPEN Other Contact with &apos;SPEN Accounts&apos; --></errorMessage>
+        <name>SPEN_NonCompanyContactsWithOtherAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone Number&apos;s can&apos;t be same --></errorMessage>
+        <name>SPEN_NumberNotSameValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Agent can only link a &apos;Company Contact&apos; record with an account of type &apos;SPEN Accounts&apos; and not with &apos;Other Account&apos; or &apos;Partner Account&apos; type --></errorMessage>
+        <name>SPEN_OtherAccountInCompanyContact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Partner Contact can only be associated with a Partner Account. --></errorMessage>
+        <name>SPEN_PartnerAccountInPartnerContact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill in the Landline Number in UK format --></errorMessage>
+        <name>SPEN_PhoneValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Priority can&apos;t be change by Agent --></errorMessage>
+        <name>SPEN_PriorityCheckAgent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter EPO Stake Holder Account details for EPO Contact --></errorMessage>
+        <name>SPEN_ValidationForEPOContact</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SPEN_SendSMS --></label>
+        <name>SPEN_SendSMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Resubscribe --></label>
+        <name>et4ae5__ExactTarget_Resubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ExactTarget_Unsubscribe --></label>
+        <name>et4ae5__ExactTarget_Unsubscribe</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_Email --></label>
+        <name>et4ae5__Send_ExactTarget_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_ExactTarget_SMS --></label>
+        <name>et4ae5__Send_ExactTarget_SMS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_ExactTarget_Analytics --></label>
+        <name>et4ae5__View_ExactTarget_Analytics</name>
+    </webLinks>
+</CustomObjectTranslation>

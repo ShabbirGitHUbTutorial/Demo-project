@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral Service</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referral Services</value>
+    </caseValues>
+    <layouts>
+        <layout>Referral Service Layout</layout>
+        <sections>
+            <label><!-- Closure Information --></label>
+            <section>Closure Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Feedback --></label>
+            <section>Partner Feedback</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Close Referral Service --></label>
+        <name>SPEN_CloseReferralService</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- A Referral Service can&apos;t be re-opened if the Case is Closed. --></errorMessage>
+        <name>SPEN_ClosedCaseReferralServices</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is mandatory to populate &apos;Closure Date&apos;, &apos;Customer Satisfaction&apos;, &apos;Customer Satisfaction Level, &apos;Closure Code&apos; before closing. --></errorMessage>
+        <name>SPEN_ClosureMandatoryonClosedStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill Due Date for next Partner Contact. --></errorMessage>
+        <name>SPEN_DueDateMandatorybasedonStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have updated the &apos;Service&apos; field - Please clear the &apos;Partner Name&apos; field and update it using the &apos;Select Partner&apos; widget. --></errorMessage>
+        <name>SPEN_UpdatePartnerAccountOnServiceChange</name>
+    </validationRules>
+</CustomObjectTranslation>

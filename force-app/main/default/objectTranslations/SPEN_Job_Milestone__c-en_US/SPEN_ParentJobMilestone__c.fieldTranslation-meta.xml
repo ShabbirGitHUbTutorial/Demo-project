@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Parent Job Milestone --></label>
+    <name>SPEN_ParentJobMilestone__c</name>
+    <relationshipLabel><!-- Job Milestones --></relationshipLabel>
+</CustomFieldTranslation>

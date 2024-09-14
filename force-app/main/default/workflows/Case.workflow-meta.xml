@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>SPEN_Connection14DaysReminderPackSent</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>Connection 14 Days Reminder Pack Sent</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_Missing_Information_14_day_reminder_E_mail_1686827190312</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Connection14DaysWelcomePackSent</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>Connection 14 Days Welcome Pack Sent</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_Application_Pack_14_Day_Chaser_Email_1686825024278</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Connection21DaysReminderPackSent</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>Connection 21 Days Reminder Pack Sent</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_Missing_Information_21_day_reminder_E_mail_1686827492612</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Connection21DaysWelcomePackSent</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>Connection 21 Days Welcome Pack Sent</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_Application_Pack_21_Day_Chaser_Email_1686825156533</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Connection7DaysReminderPackSent</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>Connection 7 Days Reminder Pack Sent</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_Missing_Information_7_day_reminder_E_mail_1686825787972</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Connection7DaysWelcomePackSent</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>Connection 7Days Welcome Pack Sent</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_Application_Pack_7_Day_Chaser_Email_1686820700223</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_ConnectionCaseNumberToApplicantEmail</fullName>
+        <description>Connection Case Number To Applicant Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_ApplicantEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_ConnectionCaseNumberToApplicantEmailTemplate_1697024557242</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_ConnectionNewEnquiryEmailAutoResponse</fullName>
+        <description>Connection New Enquiry(Email) Auto Response</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_ConnectionCaseToContactEmailTemplate_1697636836517</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_DesignInformationRequiredFinal</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>SPEN Design Information Required Final</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_Design_Information_Required_Final_1695579888193</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_Design_Information_Required_Chaser</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>SPEN Design Information Required Chaser</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_Design_Information_Required_Chaser_1695379141983</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_NBDesignInformationRequiredFinalEmail</fullName>
+        <ccEmails>gettingconnected@spenergynetworkscrm.co.uk</ccEmails>
+        <description>SPEN NB Design Information Required Final Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>gettingconnected@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_ConnectionFolder/SPEN_NB_Design_Information_Required_Final_Email_1695581941115</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_PaceMeetingAutoResponseNotification</fullName>
+        <description>Pace Meeting Auto Response Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>sptpace@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Pace_Meeting_Auto_Response_Template_1692950683723</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_TaskDueDateNotification</fullName>
+        <description>Task Due Date Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>sptpace@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_TransmissionFolder/Case_owner_change_to_Queue_Template_1695011241821</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_GE_Case_Acknowledgment_Email_SPD</fullName>
+        <description>Send GE Case Acknowledgment Email SPD</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SPEN_GEEmailTemplates/SPEN_GE_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_GE_Case_Acknowledgment_Email_SPM</fullName>
+        <description>Send GE Case Acknowledgment Email SPM</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SPEN_GEEmailTemplates/SPEN_GE_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_GE_Case_Autoresponse_Email_SPD</fullName>
+        <description>Send GE Case Autoresponse Email - SPD</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SPEN_GEEmailTemplates/SPEN_GE_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_GE_Case_Autoresponse_Email_SPM</fullName>
+        <description>Send GE Case Autoresponse Email - SPM</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SPEN_GEEmailTemplates/SPEN_GE_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_email_notification_to_NGESCO_Contact_from_case_in_MTM_expires_in_14_days</fullName>
+        <description>Send email notification to NGESCO Contact from case in MTM expires in 14 days</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SPEN_NGESOCCMContact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>SPEN_AccountEmail__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>sptpace@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SPEN_TransmissionFolder/MTM_2_Offer_due_to_expire_email_template_1696587212079</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <tasks>
+        <fullName>Day_106_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 106 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_116_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 116 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_126_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 126 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_136_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 136 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_146_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 146 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_156_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 156 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_15_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 15 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_166_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 166 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_1_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 1 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_20_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 20 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_30_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 30 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_31_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 31 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_40_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 40 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_50_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 50 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_56_Resolution_Letter</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 56 Resolution Letter</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_66_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 66 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_76_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 76 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_86_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 86 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Day_96_BCSM_EWI_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Day 96 - BCSM EWI Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GE_10_Days_Customer_Contact_Reminder_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Milestone Warning: GE 10 Days Customer Contact</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Acknowledgement_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Acknowledgement Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_18_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 18 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_28_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 28 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_38_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 38 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_48_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 48 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_58_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 58 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_68_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 68 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_78_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 78 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_88_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 88 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_8_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 8 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>GS_EWI_Day_98_Task</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>GS EWI Day 98 Task</subject>
+    </tasks>
+    <tasks>
+        <fullName>Milestones_Warning_Complaints_Journey_Step_1_Contact_Team_is_due_in_2_days</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Milestones Warning - Complaints Journey Step 1- Contact Team is due in 2 days</subject>
+    </tasks>
+    <tasks>
+        <fullName>Milestones_Warning_Complaints_Journey_Step_2_Local_Manager_is_due_in_2_days</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Milestones Warning - Complaints Journey Step 2- Local Manager is due in 2 days</subject>
+    </tasks>
+    <tasks>
+        <fullName>Milestones_Warning_Complaints_Journey_Step_3_Senior_Manager_is_due_in_2_days</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Milestones Warning - Complaints Journey Step 3- Senior Manager is due in 2 days</subject>
+    </tasks>
+    <tasks>
+        <fullName>Milestones_Warning_Complaints_Journey_Step_4_CS_Director_is_due_in_2_days</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Milestones Warning - Complaints Journey Step 4- CS Director is due in 2 days</subject>
+    </tasks>
+    <tasks>
+        <fullName>Milestones_Warning_Complaints_Journey_Step_5_Ombudsman_is_due_in_2_days</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Milestones Warning - Complaints Journey Step 5- Ombudsman is due in 2 days</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_DCC_Critical_Customer_Close_Down_Call_SLA_for_CNT_Service</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Please ensure that the appropriate actions are taken to prevent the &quot;DCC Critical Customer Close Down Call SLA&quot; milestone on the CNT case from being violated.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure DCC Critical Customer Close Down Call SLA for CNT Service</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_Ensure_Confirmation_SLA_for_CNT_Service</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure Confirmation SLA for CNT Service</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_Ensure_DCC_Customer_Update_SLA_for_CNT_Service</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Please ensure that the appropriate actions are taken to prevent the &quot;DCC Customer Update SLA&quot; milestone on the CNT case from being violated.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure DCC Customer Update SLA for CNT Service</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_Ensure_Delivery_SLA_for_CNT_Service</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure Delivery SLA for CNT Service</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_Ensure_Delivery_SLA_for_CNT_Service_120min</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure Delivery SLA for CNT Service</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_Ensure_Delivery_SLA_for_CNT_Service_150min</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure Delivery SLA for CNT Service</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_Ensure_Delivery_SLA_for_CNT_Service_210min</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure Delivery SLA for CNT Service</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_Ensure_Delivery_SLA_for_CNT_Service_270min</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure Delivery SLA for CNT Service</subject>
+    </tasks>
+    <tasks>
+        <fullName>SPEN_Reminder_Payment_SLA_for_CNT_Service</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Please ensure that the appropriate actions are taken to prevent the &quot;Payment SLA&quot; milestone on the CNT case from being violated.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Reminder: Ensure Payment SLA for CNT Service</subject>
+    </tasks>
+</Workflow>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Include the API Name of the Trigger Object here if it does not appear in the drop down --></help>
+    <label><!-- Alt Object Api Name --></label>
+    <name>Alt_Object_Api_Name__c</name>
+</CustomFieldTranslation>

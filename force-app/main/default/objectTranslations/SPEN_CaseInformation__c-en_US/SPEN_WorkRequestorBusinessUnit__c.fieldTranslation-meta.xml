@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SPEN Originator Business Unit --></label>
+    <name>SPEN_WorkRequestorBusinessUnit__c</name>
+    <picklistValues>
+        <masterLabel>Connections (Fully Customer Funded)</masterLabel>
+        <translation><!-- Connections (Fully Customer Funded) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections (Partially Customer Funded)</masterLabel>
+        <translation><!-- Connections (Partially Customer Funded) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections (SPEN Funded)</masterLabel>
+        <translation><!-- Connections (SPEN Funded) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jones Lighting</masterLabel>
+        <translation><!-- Jones Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Licence Programmes</masterLabel>
+        <translation><!-- Licence Programmes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance (Tea cutting &amp; Link Box Lids)</masterLabel>
+        <translation><!-- Maintenance (Tea cutting &amp; Link Box Lids) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Programme (UG &amp; OHL)</masterLabel>
+        <translation><!-- Network Programme (UG &amp; OHL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Repairs (HV - UG &amp; OHL)</masterLabel>
+        <translation><!-- Planned Repairs (HV - UG &amp; OHL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Repairs (LV - UG &amp; OHL)</masterLabel>
+        <translation><!-- Planned Repairs (LV - UG &amp; OHL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Works (HV - UG &amp; OHL)</masterLabel>
+        <translation><!-- Planned Works (HV - UG &amp; OHL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Works (LV - UG &amp; OHL)</masterLabel>
+        <translation><!-- Planned Works (LV - UG &amp; OHL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Faults (HV - UG &amp; OHL)</masterLabel>
+        <translation><!-- Reactive Faults (HV - UG &amp; OHL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive Faults (LV - UG &amp; OHL)</masterLabel>
+        <translation><!-- Reactive Faults (LV - UG &amp; OHL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Connections (SPEN)</masterLabel>
+        <translation><!-- Street Lighting Connections (SPEN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street Lighting Faults (SPEN)</masterLabel>
+        <translation><!-- Street Lighting Faults (SPEN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transmission</masterLabel>
+        <translation><!-- Transmission --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

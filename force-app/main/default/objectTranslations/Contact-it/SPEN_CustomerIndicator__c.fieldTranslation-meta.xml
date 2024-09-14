@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Indicator --></label>
+    <name>SPEN_CustomerIndicator__c</name>
+    <picklistValues>
+        <masterLabel>Commercial - Business Size in terms of Staff (&lt;10, 10-49, 50-249, 250+)</masterLabel>
+        <translation><!-- Commercial - Business Size in terms of Staff (&lt;10, 10-49, 50-249, 250+) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Care Provider</masterLabel>
+        <translation><!-- Commercial - Care Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Continuous Operations</masterLabel>
+        <translation><!-- Commercial - Continuous Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - EHV</masterLabel>
+        <translation><!-- Commercial - EHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Ethnic Minority</masterLabel>
+        <translation><!-- Commercial - Ethnic Minority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - General Large Business (excluding the 4 above)</masterLabel>
+        <translation><!-- Commercial - General Large Business (excluding the 4 above) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - General Small Business</masterLabel>
+        <translation><!-- Commercial - General Small Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Low Income (&lt;£25k)</masterLabel>
+        <translation><!-- Commercial - Low Income (&lt;£25k) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Micro Business</masterLabel>
+        <translation><!-- Commercial - Micro Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Not for Profit</masterLabel>
+        <translation><!-- Commercial - Not for Profit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Off Gas Grid</masterLabel>
+        <translation><!-- Commercial - Off Gas Grid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Private Networks</masterLabel>
+        <translation><!-- Commercial - Private Networks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Sensitive Sites</masterLabel>
+        <translation><!-- Commercial - Sensitive Sites --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections Survey</masterLabel>
+        <translation><!-- Connections Survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections Survey Sent</masterLabel>
+        <translation><!-- Connections Survey Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Digitally Excluded</masterLabel>
+        <translation><!-- Domestic - Digitally Excluded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Ethnic Minorities</masterLabel>
+        <translation><!-- Domestic - Ethnic Minorities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Fuel Poor</masterLabel>
+        <translation><!-- Domestic - Fuel Poor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Low Income (&lt;£15k gross per household)</masterLabel>
+        <translation><!-- Domestic - Low Income (&lt;£15k gross per household) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Low/No Qualification</masterLabel>
+        <translation><!-- Domestic - Low/No Qualification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Off Gas Grid</masterLabel>
+        <translation><!-- Domestic - Off Gas Grid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCT Survey</masterLabel>
+        <translation><!-- LCT Survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCT Survey Sent</masterLabel>
+        <translation><!-- LCT Survey Sent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

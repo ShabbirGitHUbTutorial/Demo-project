@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TerminatedReason__c</fullName>
+    <description>Used to capture reason for the termination of job</description>
+    <label>Terminated Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Withdrawn</fullName>
+                <default>false</default>
+                <label>Customer Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Business Withdrawn</fullName>
+                <default>false</default>
+                <label>Business Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Land Consent Issue</fullName>
+                <default>false</default>
+                <label>Land Consent Issue</label>
+            </value>
+            <value>
+                <fullName>Business Re-Design</fullName>
+                <default>false</default>
+                <label>Business Re-Design</label>
+            </value>
+            <value>
+                <fullName>Programme Refresh</fullName>
+                <default>false</default>
+                <label>Programme Refresh</label>
+            </value>
+            <value>
+                <fullName>Planning Refused</fullName>
+                <default>false</default>
+                <label>Planning Refused</label>
+            </value>
+            <value>
+                <fullName>Energy Consents refused</fullName>
+                <default>false</default>
+                <label>Energy Consents refused</label>
+            </value>
+            <value>
+                <fullName>Other External Stakeholder</fullName>
+                <default>false</default>
+                <label>Other External Stakeholder</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

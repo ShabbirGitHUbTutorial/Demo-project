@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_JobTypeDescription__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is for Connection process. CRMD-6827</description>
+    <label>Job Type Description</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>UFIPR019</fullName>
+                <default>false</default>
+                <label>Landlord Supply - Existing Cablehead</label>
+            </value>
+            <value>
+                <fullName>UMANU033</fullName>
+                <default>false</default>
+                <label>Additional Load</label>
+            </value>
+            <value>
+                <fullName>UMANU034</fullName>
+                <default>false</default>
+                <label>Additional Load (Syst Ext)</label>
+            </value>
+            <value>
+                <fullName>UFEQU001</fullName>
+                <default>false</default>
+                <label>CNO CONNECTIONS NOT REPORTED I</label>
+            </value>
+            <value>
+                <fullName>UMANU040</fullName>
+                <default>false</default>
+                <label>Disconnect/Reconnect (Estimate Required)</label>
+            </value>
+            <value>
+                <fullName>UMANU022</fullName>
+                <default>false</default>
+                <label>Diversion(s)</label>
+            </value>
+            <value>
+                <fullName>UMANU030</fullName>
+                <default>false</default>
+                <label>Domestic CONV/REFURB System Ext (Vat)</label>
+            </value>
+            <value>
+                <fullName>UMANU029</fullName>
+                <default>false</default>
+                <label>Domestic Conversion / Refurb (VAT)</label>
+            </value>
+            <value>
+                <fullName>UMANU047</fullName>
+                <default>false</default>
+                <label>Earthing</label>
+            </value>
+            <value>
+                <fullName>UMANU048</fullName>
+                <default>false</default>
+                <label>Earthing (System Ext)</label>
+            </value>
+            <value>
+                <fullName>UMANU024</fullName>
+                <default>false</default>
+                <label>Embedded Generation</label>
+            </value>
+            <value>
+                <fullName>UMANU049</fullName>
+                <default>false</default>
+                <label>Embedded Generation - no plots</label>
+            </value>
+            <value>
+                <fullName>UMANU039</fullName>
+                <default>false</default>
+                <label>Isolator Switch (100 and over)</label>
+            </value>
+            <value>
+                <fullName>UMANU015</fullName>
+                <default>false</default>
+                <label>Multiple Sup Apps (UMS) New Highway</label>
+            </value>
+            <value>
+                <fullName>UMANU014</fullName>
+                <default>false</default>
+                <label>Multiple Supply Applications (Metered)</label>
+            </value>
+            <value>
+                <fullName>UMANU028</fullName>
+                <default>false</default>
+                <label>Multiple Supply Applications(UMS) Existing</label>
+            </value>
+            <value>
+                <fullName>UMANU054</fullName>
+                <default>false</default>
+                <label>New EV Supply</label>
+            </value>
+            <value>
+                <fullName>UMANU055</fullName>
+                <default>false</default>
+                <label>New EV Supply (System Extension)</label>
+            </value>
+            <value>
+                <fullName>UMANU031</fullName>
+                <default>false</default>
+                <label>New Supply</label>
+            </value>
+            <value>
+                <fullName>UMANU032</fullName>
+                <default>false</default>
+                <label>New Supply (System Extension)</label>
+            </value>
+            <value>
+                <fullName>UMANU041</fullName>
+                <default>false</default>
+                <label>New Temporary Supply</label>
+            </value>
+            <value>
+                <fullName>UMANU042</fullName>
+                <default>false</default>
+                <label>New Temporary Supply (System Ext)</label>
+            </value>
+            <value>
+                <fullName>UMANU035</fullName>
+                <default>false</default>
+                <label>New Unmetered Supply - Existing Highway</label>
+            </value>
+            <value>
+                <fullName>UMANU036</fullName>
+                <default>false</default>
+                <label>New Unmetered Supply - New Highway</label>
+            </value>
+            <value>
+                <fullName>UNRSW002</fullName>
+                <default>false</default>
+                <label>NRSWA Diversion 18%</label>
+            </value>
+            <value>
+                <fullName>UNRSW001</fullName>
+                <default>false</default>
+                <label>NRSWA Diversion 7.5%</label>
+            </value>
+            <value>
+                <fullName>UMANU037</fullName>
+                <default>false</default>
+                <label>Transfer Unmetered Supply - Existing High</label>
+            </value>
+            <value>
+                <fullName>UMANU038</fullName>
+                <default>false</default>
+                <label>Transfer Unmetered Supply - New High</label>
+            </value>
+            <value>
+                <fullName>UCIC001</fullName>
+                <default>false</default>
+                <label>POC\DA</label>
+            </value>
+            <value>
+                <fullName>UMANU009</fullName>
+                <default>false</default>
+                <label>Disconnection</label>
+            </value>
+            <value>
+                <fullName>UMANU043</fullName>
+                <default>false</default>
+                <label>Alteration to Point of Connection</label>
+            </value>
+            <value>
+                <fullName>UMANU045</fullName>
+                <default>false</default>
+                <label>Disconnection Unmetered Supply- Existing</label>
+            </value>
+            <value>
+                <fullName>UMANU046</fullName>
+                <default>false</default>
+                <label>Disconnection Unmetered Supply- New High</label>
+            </value>
+            <value>
+                <fullName>UMANU052</fullName>
+                <default>false</default>
+                <label>Disconnection Single</label>
+            </value>
+            <value>
+                <fullName>UMANU053</fullName>
+                <default>false</default>
+                <label>Disconnection Bulk</label>
+            </value>
+            <value>
+                <fullName>UCICO008</fullName>
+                <default>false</default>
+                <label>POC/DA Generation</label>
+            </value>
+            <value>
+                <fullName>UCICO007</fullName>
+                <default>false</default>
+                <label>POC/DA Demand</label>
+            </value>
+            <value>
+                <fullName>UMANU044</fullName>
+                <default>false</default>
+                <label>Cut Out Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

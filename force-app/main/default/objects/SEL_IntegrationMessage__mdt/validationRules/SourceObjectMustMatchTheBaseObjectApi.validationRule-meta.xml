@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SourceObjectMustMatchTheBaseObjectApi</fullName>
+    <active>true</active>
+    <description>This rule ensures that whenever the Source object is populated that it matches the same Base Object API value in the Integration Settings.</description>
+    <errorConditionFormula>NOT(ISPICKVAL(SEL_TargetFieldType__c, &apos;Container&apos;)) &amp;&amp;
+NOT(ISPICKVAL(SEL_SourceFieldType__c, &apos;Static&apos;)) &amp;&amp; 
+IF(
+  LEN(SEL_SourceObject__c) ==
+  LEN(SEL_IntegrationSettingId__r.SEL_BaseObjectApi__c), 
+  LEFT(SEL_SourceObject__c, 
+  LEN(SEL_IntegrationSettingId__r.SEL_BaseObjectApi__c)) != 
+  SEL_IntegrationSettingId__r.SEL_BaseObjectApi__c, 
+  LEFT(SEL_SourceObject__c, 
+  LEN(SEL_IntegrationSettingId__r.SEL_BaseObjectApi__c) + 1) != 
+  SEL_IntegrationSettingId__r.SEL_BaseObjectApi__c + &apos;.&apos;
+)</errorConditionFormula>
+    <errorMessage>The Source Object field must always start with the same base API in the Integration Settings.</errorMessage>
+</ValidationRule>

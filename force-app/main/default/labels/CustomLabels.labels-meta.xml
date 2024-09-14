@@ -1,0 +1,1741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>APIEvent</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APIEvent</shortDescription>
+        <value>Daily API Call</value>
+    </labels>
+    <labels>
+        <fullName>Action</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Action</shortDescription>
+        <value>Action</value>
+    </labels>
+    <labels>
+        <fullName>ActionDate</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ActionDate</shortDescription>
+        <value>Action Date</value>
+    </labels>
+    <labels>
+        <fullName>ActionUser</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ActionUser</shortDescription>
+        <value>Action by username</value>
+    </labels>
+    <labels>
+        <fullName>ApexFlexLimit</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ApexFlexLimit</shortDescription>
+        <value>Apex Flex Job Limit</value>
+    </labels>
+    <labels>
+        <fullName>AssignedProfile</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AssignedProfile</shortDescription>
+        <value>Assigned Profile</value>
+    </labels>
+    <labels>
+        <fullName>AssignedUser</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AssignedUser</shortDescription>
+        <value>Assigned To</value>
+    </labels>
+    <labels>
+        <fullName>AsyncApex</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AsyncApex</shortDescription>
+        <value>Async Apex Limit</value>
+    </labels>
+    <labels>
+        <fullName>BatchMonitoring</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BatchMonitoring</shortDescription>
+        <value>SPEN AMSDEV | Batch Monitoring</value>
+    </labels>
+    <labels>
+        <fullName>BatchMonitoringNotes</fullName>
+        <categories>BM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BatchMonitoringNotes</shortDescription>
+        <value>Note: The below table shows status of  all the Batch Apex executed since last 24 hours, The table will be empty if there is no Batch Apex executed since last 24 hours.</value>
+    </labels>
+    <labels>
+        <fullName>BatchMonitoringNotes2</fullName>
+        <categories>BM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BatchMonitoringNotes2</shortDescription>
+        <value>Note: The below table shows status of all the Batch Apex executed since last 24 hours.</value>
+    </labels>
+    <labels>
+        <fullName>BatchMonitoringOrgName</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BatchMonitoringOrgName</shortDescription>
+        <value>SPEN AMSDEV</value>
+    </labels>
+    <labels>
+        <fullName>Batch_SchEndDateLabel</fullName>
+        <categories>BM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Batch&amp;SchEndDateLabel</shortDescription>
+        <value>UU AMSDEV || Batch &amp; Scheduled Job End Date Monitoring|</value>
+    </labels>
+    <labels>
+        <fullName>Batch_ScheduledEnddate</fullName>
+        <categories>BM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Batch&amp;ScheduledEnddate</shortDescription>
+        <value>Below Reoccurring Batch Or Scheduled Jobs are Going to End Soon, Please Take Necessary Action If Required...</value>
+    </labels>
+    <labels>
+        <fullName>Certificate_First_Notification_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Certificate First Notification Error</shortDescription>
+        <value>First Notification should be greater than Second Notification</value>
+    </labels>
+    <labels>
+        <fullName>Certificate_Second_Notification_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Certificate Second Notification Error</shortDescription>
+        <value>Second Notification should be greater than {0} days</value>
+    </labels>
+    <labels>
+        <fullName>CommLicense</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CommLicense</shortDescription>
+        <value>Community License</value>
+    </labels>
+    <labels>
+        <fullName>CountryService</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CountryService</shortDescription>
+        <value>AMSDEV</value>
+    </labels>
+    <labels>
+        <fullName>CountryTitle</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CountryTitle</shortDescription>
+        <value>AMSDEV Event Monitoring</value>
+    </labels>
+    <labels>
+        <fullName>DSEvent</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DSEvent</shortDescription>
+        <value>Data Storage</value>
+    </labels>
+    <labels>
+        <fullName>DailyMonitoring</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DailyMonitoring</shortDescription>
+        <value>AMSDEV || Daily Event Monitoring</value>
+    </labels>
+    <labels>
+        <fullName>DataExpLabel</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DataExpLabel</shortDescription>
+        <value>Data export report|</value>
+    </labels>
+    <labels>
+        <fullName>DefaultSAPUser</fullName>
+        <categories>SAP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DefaultSAPUser</shortDescription>
+        <value>E903055</value>
+    </labels>
+    <labels>
+        <fullName>EnableSAPCreateQas</fullName>
+        <categories>Sap</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnableSAPCreateQas</shortDescription>
+        <value>True</value>
+    </labels>
+    <labels>
+        <fullName>EnableSAPGetQas</fullName>
+        <categories>SAP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnableSAPGetQas</shortDescription>
+        <value>True</value>
+    </labels>
+    <labels>
+        <fullName>EnableSAPSearch</fullName>
+        <categories>SAP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EnableSAPSearch</shortDescription>
+        <value>True</value>
+    </labels>
+    <labels>
+        <fullName>EventMonitoring</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EventMonitoring</shortDescription>
+        <value>Event Monitoring Changes|</value>
+    </labels>
+    <labels>
+        <fullName>FSEvent</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FSEvent</shortDescription>
+        <value>File Storage</value>
+    </labels>
+    <labels>
+        <fullName>FaultsSurveyBatchTimingRange</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FaultsSurveyBatchTimingRange</shortDescription>
+        <value>-96</value>
+    </labels>
+    <labels>
+        <fullName>GESharePointNamed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GESharePointNamed</shortDescription>
+        <value>callout:GESharePointNC</value>
+    </labels>
+    <labels>
+        <fullName>GESharePointSite</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GESharePointSite</shortDescription>
+        <value>spen-ge</value>
+    </labels>
+    <labels>
+        <fullName>NetworkSettingChanges</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NetworkSettingChanges</shortDescription>
+        <value>Network setting changes|</value>
+    </labels>
+    <labels>
+        <fullName>NewUserMail</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewUserMail</shortDescription>
+        <value>New User Email</value>
+    </labels>
+    <labels>
+        <fullName>OrgLabel</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrgLabel</shortDescription>
+        <value>Org ID :</value>
+    </labels>
+    <labels>
+        <fullName>OrgWideEmail</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrgWideEmail</shortDescription>
+        <value>donotreplyspensurveys@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>PSRContext</fullName>
+        <categories>OutboundDialler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PSRContext</shortDescription>
+        <value>Last Gasp has been received for the customer MPAN</value>
+    </labels>
+    <labels>
+        <fullName>PasswordPolicyChanges</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PasswordPolicyChanges</shortDescription>
+        <value>Password policy changes|</value>
+    </labels>
+    <labels>
+        <fullName>PermLabel</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PermLabel</shortDescription>
+        <value>PermissionSet Assignments</value>
+    </labels>
+    <labels>
+        <fullName>PermSentence</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PermSentence</shortDescription>
+        <value>Assigned Permission Set</value>
+    </labels>
+    <labels>
+        <fullName>PriorityMonitoring</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PriorityMonitoring</shortDescription>
+        <value>Alert||AMSDEV||Event Monitoring</value>
+    </labels>
+    <labels>
+        <fullName>ProfilePermMsg</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProfilePermMsg</shortDescription>
+        <value>Profile/Permissionset changes|</value>
+    </labels>
+    <labels>
+        <fullName>ProfilePermSubjectLabel</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProfilePermSubjectLabel</shortDescription>
+        <value>Profile Assignments</value>
+    </labels>
+    <labels>
+        <fullName>SISharePointNamed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SISharePointNamed</shortDescription>
+        <value>callout:SISharePointNC</value>
+    </labels>
+    <labels>
+        <fullName>SISharePointSite</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SISharePointSite</shortDescription>
+        <value>spen-si</value>
+    </labels>
+    <labels>
+        <fullName>SLEvent</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SLEvent</shortDescription>
+        <value>Salesforce License</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_10DaysSystemEmail</fullName>
+        <categories>1333</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>10 Days System E-mail</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_10DaysTask</fullName>
+        <categories>1333</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>10 Days task</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_15DaysSystemEmail</fullName>
+        <categories>CRMD-1333</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15 Days System email</shortDescription>
+        <value>15</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_15DaysTask</fullName>
+        <categories>1333</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>15 Days task</shortDescription>
+        <value>15</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_20DaysTask</fullName>
+        <categories>1333</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>20 Days Task</shortDescription>
+        <value>20</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_28dayletter2issuedinterval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>28 day letter 2 issued interval</shortDescription>
+        <value>9</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_28dayletter2issuedinterval0Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>28 day letter issued interval 0 Days</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_28dayletter3issuedinterval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>28 day letter 3 issued interval</shortDescription>
+        <value>7</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_2DaysPriorAcceptance_Task</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>2 Days Prior Acceptance Task</shortDescription>
+        <value>-2</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_3PDSouthEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>3PD South Email</shortDescription>
+        <value>3pdsouth@scottishpower.com</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_3pdMissingFormTaskDescription</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_3pdMissingFormTaskDescription</shortDescription>
+        <value>Contact engineer regarding missing damage form</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_45DaysSystemEmail</fullName>
+        <categories>1333</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>45 Days System email</shortDescription>
+        <value>45</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_5DaysSystemEmail</fullName>
+        <categories>CRMD-1333</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>5 Days System E-mail</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_60DaysTask</fullName>
+        <categories>CRMD-1333</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>60 Days task</shortDescription>
+        <value>60</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_AdminUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_AdminUser</shortDescription>
+        <value>service.0elwjxsovq05@example.com</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_AgentWorkTestUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_AgentWorkTestUser</shortDescription>
+        <value>Kalpana Gajwa</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_AllowedGEFileExtension</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_AllowedGEFileExtension</shortDescription>
+        <value>jpg,jpeg,png,pdf,doc,docx,xls,xlsx,csv</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_AllowedGEFileSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_AllowedGEFileSize</shortDescription>
+        <value>31457280</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_AnnualEventNotification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>To notify the event owner 14 days prior to the Event Due Date.</shortDescription>
+        <value>-14</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_AssociatedEmailIdErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_AssociatedEmailIdErrorMsg</shortDescription>
+        <value>Can not display email addresses since no parent case is associated with this query.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_Azure_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN Azure User</shortDescription>
+        <value>SPEN Azure User</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_BatchSizeLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_BatchSizeLabel</shortDescription>
+        <value>100000</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_BiAnnualEventNotification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>To notify the event owner 14 days prior to the BiAnnual Event Due Date</shortDescription>
+        <value>-14</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CJBusinessHours</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_CJBusinessHours</shortDescription>
+        <value>Default,SPD Complaints Business Hours,SPM Complaints Business Hours,SPD SW/NRSWA Business Hours,SPM SW/NRSWA Business Hours,SPEN GE SPM Business Hours,SPEN GE SPD Business Hours,SPEN LCT SPD Business Hours,SPEN LCT SPM Business Hours,SPEN SI SPD Business Hours,SPEN SI SPM Business Hours</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CallDownTask</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_CallDownTask</shortDescription>
+        <value>24 h Customer Intervention</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CaseBatchSizeLimit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_CaseBatchSizeLimit</shortDescription>
+        <value>100</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CaseInfo28DaysLetterSubStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseInfo28DaysLetterSubStatus</shortDescription>
+        <value>28 day - letter 3 issued</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CaseInfoMissingInfoRequestedSubStaus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CaseInfoMissingInfoRequestedSubStatus</shortDescription>
+        <value>Missing Information Requested</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CaseNumberRegex</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_CaseNumberRegex</shortDescription>
+        <value>\d{8}</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CasePreApplicationRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_CasePreApplicationRecordType</shortDescription>
+        <value>SPEN_CasePreApplication</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CaseProcessingLimit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_CaseProcessingLimit</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CaseRecordTypeForRelatedProject</fullName>
+        <categories>Transmission</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Record Type For Related Project Search</shortDescription>
+        <value>SPEN_CaseTransmission</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ChannelName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Channel Name</shortDescription>
+        <value>TEXT_GB_447860035232</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ConnCaseStatus</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Connection Case Status To Be Restrict From Cancel</shortDescription>
+        <value>Acceptance,Acceptance and Payment received,Budget Quote Issued Awaiting Cust Acceptance,Closed,Quote Issued Awaiting Cust Acceptance,Delivery Work Planning,Delivery,Delivery Closure,Delivered</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ConnDefaultEmailFromAdd</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Email FromAddress For Connection</shortDescription>
+        <value>gettingconnected@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ConnMigrationOrigin</fullName>
+        <categories>SharePoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Conn Migration Origin</shortDescription>
+        <value>Mass Creation</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ConnSAPStatusValues</fullName>
+        <categories>SAP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Conn SAP Status Value</shortDescription>
+        <value>PECA,ACPC,JOBR,CLOS,CANB,CANA,PRBE,BESE,PRTQ</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_Connection_CITL_Team_Queues</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Connection CITL Team Queues</shortDescription>
+        <value>SPEN_SPDCITLAyrshire;SPEN_SPDCITLCentralFife;SPEN_SPMCITLDeeValleyMidWales;SPEN_SPDCITLDumfries;SPEN_SPDCITLEdinburghBorders;SPEN_SPDCITLGlasgowClyde;SPEN_SPDCITLLanarkshire;SPEN_SPMCITLMerseyside;SPEN_SPMCITLCheshire;SPEN_SPMCITLNorthWales;SPEN_SPMCITLWirral;SPEN_SPDCITLExceptionsNorth;SPEN_SPMCITLExceptionsSouth</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ConnectionsRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_ConnectionsRecordType</shortDescription>
+        <value>SPEN_PremiseConnectionsCRM,SPEN_ContactConnectionsCRM,SPEN_BudgetConnectionEnquiry,SPEN_FormalConnectionEnquiry,SPEN_ConnectionTaskSLABreach,SPEN_ConnectionReadOnlyCase</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CustomerContactAttemptTaskInterval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Contact Attempt Task Interval</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CustomerContactAttemptTaskIntervalDay1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Contact Attempt Task Interval Day1</shortDescription>
+        <value>2</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CustomerEngagementTaskHOD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Engagement Task HOD</shortDescription>
+        <value>84</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CustomerEngagementTaskPM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Engagement Task PM</shortDescription>
+        <value>56</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_CustomerEngagementTaskPUMPDM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Engagement Task PUM/PDM</shortDescription>
+        <value>70</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_DamageEquipmentWizardCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_DamageEquipmentWizardCase</shortDescription>
+        <value>Damaged Equipment Wizard Case</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_DefaultTransmissionEmailFrom</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Transmission Email From</shortDescription>
+        <value>spt.pace.meeting_dev@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_DesignQueueLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Design Queue Label</shortDescription>
+        <value>SPEN_CSAPOS;SPEN_CSCommercial;SPEN_CSDisconnections;SPEN_CSDomestic;SPEN_CSLVSSA;SPEN_CSLVSSB;SPEN_CSMIXED;SPEN_CSOtherWorks;SPEN_SPDDesignMajor;SPEN_SPDDesignEast;SPEN_SPDDesignWest;SPEN_SPMDesignCheshire;SPEN_SPMDesignMerseyside;SPEN_SPMDesignWales;SPEN_SPMDesign132kV</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_EmailCreationOn3Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Creation on 3 Days</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_EmailCreationOn5Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Creation on 5 Days</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_EnergisationDateTaskPM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Energisation Date Task to PM</shortDescription>
+        <value>-14</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ErrorHandlingMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ErrorHandlingMessage</shortDescription>
+        <value>We couldn&apos;t carry out your request, please check that you have the correct access to carry out the transaction requested.
+
+		If the problem continues, please contact your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ErrorMessageWhenRequestTypeIsBlank</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message when Request Type is blank</shortDescription>
+        <value>Please populate Request Type on Deployment Request before creating new Network Strength record.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ErrorMsgForEmptyRoleOnCP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_ErrorMsgForEmptyRoleOnCP</shortDescription>
+        <value>The role is required when associating a contact to a premise for the first time.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ErrorMsgForMultipleContactTag</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_ErrorMsgForMultipleContactTag</shortDescription>
+        <value>This contact is already identified as the &lt;ROLE&gt; to &lt;EXISTING PREMISE&gt; premise. If you need to associate this contact with other premises, you can keep the role blank and fill out the Relationship field instead. However, if the ask is to truly populate the role field to sync those changes back to ADQM, you can either overwrite an existing contact record for that other premise or clone the contact record before associating that to the new premise.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_FaultSurvey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fault Survey</shortDescription>
+        <value>Please fill in the survey :</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_FinalReminderFor9days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>9 days Final Reminder Customer contact needed</shortDescription>
+        <value>9</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_FirstReminderFor3Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>3 days First Reminder Customer contact needed)</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_FolderSharePointURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_FolderSharePointURL</shortDescription>
+        <value>https://iberdrola.sharepoint.com/sites/spen-fr-3pd/3PD%20Reports/</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_GEAcknowledgementTaskSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN GE Acknowledgement Task Subject</shortDescription>
+        <value>GE Acknowledgement Task</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_GECaseTimeline</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GE Case Timeline</shortDescription>
+        <value>TL-00005</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_GELoginThresholdDayValue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Login threshold value after which users will be deactivated</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_GEPlanofWorkTaskSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN GE Plan of Work Task Subject</shortDescription>
+        <value>GE Visit/Plan of Works Task</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_GESPDContactAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN GE SPD Contact Address</shortDescription>
+        <value>customer.resolution@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_GESPDOrgWideAddressDisplayName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GE SPD Org Wide Address Display Name</shortDescription>
+        <value>GESPD</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_GESPMContactAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN GE SPM Contact Address</shortDescription>
+        <value>south.customerresolution@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_GESPMOrgWideAddressDisplayName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GE SPM Org Wide Address Display Name</shortDescription>
+        <value>GESPM</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_ITTISSUED</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Label to notify the PM user on case 24 hours prior to the ITT Issued due.</shortDescription>
+        <value>-1</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_IVRMessageTemplateCaseWeborPhoneSP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IVRMessageTemplateCaseWeborPhoneSP</shortDescription>
+        <value>Case-Creation-Message</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_IncidentCheckCustomSetTimeOut</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_IncidentCheckCustomSetTimeOut</shortDescription>
+        <value>2000</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_IncidentReferenceNumberExactRegex</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_IncidentReferenceNumberExactRegex</shortDescription>
+        <value>\bINCD-\d{6,7}-[a-zA-Z]\b</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_IncidentReferenceNumberFuzzyRegex</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_IncidentReferenceNumberFuzzyRegex</shortDescription>
+        <value>-(\d{6,7})-</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_IncidentReferenceNumberFuzzyRegex2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_IncidentReferenceNumberFuzzyRegex2</shortDescription>
+        <value>\d{6,7}-[a-zA-Z]\b</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_IncidentReferenceNumberFuzzyRegex3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_IncidentReferenceNumberFuzzyRegex3</shortDescription>
+        <value>[a-zA-Z]\b-\d{6,7}-[a-zA-Z]\b</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_IncidentSubcategoryValues</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_IncidentSubcategoryValues</shortDescription>
+        <value>Third Party Damage;</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_IncomingCaseVolumeCount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Incoming Case Volume Count</shortDescription>
+        <value>50</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_InsertSMSBatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_InsertSMSBatchSize</shortDescription>
+        <value>100</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_InsertVABatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_InsertVABatchSize</shortDescription>
+        <value>25</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_InvoiceNumberRegex</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_InvoiceNumberRegex</shortDescription>
+        <value>\d{9}</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_JobStatus_Cat_C_Job_On_Hold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN JobStatus Cat C Job - On Hold</shortDescription>
+        <value>Cat C Job - On Hold</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_JobStatus_In_flight_job_CAT_A_or_CAT_B</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN JobStatus In flight job (CAT-A or CAT-B)</shortDescription>
+        <value>In flight job (CAT-A or CAT-B)</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_JobStatus_MEX_completed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN JobStatus MEX completed</shortDescription>
+        <value>MEX completed</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_JobStatus_Reject_Out_of_Area_unknown_postcode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN JobStatus Reject: Out of Area / unknown postcode</shortDescription>
+        <value>Reject: Out of Area / unknown postcode</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_Job_Status_Reject_Duplicate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN Job Status Reject: Duplicate</shortDescription>
+        <value>Reject: Duplicate</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_Jobstatus_Issued_LP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN Jobstatus Issued LP</shortDescription>
+        <value>Issued To LP - pending delivery instruction</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_Jobstatus_Reject_Incomplete_contact_details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN Jobstatus Reject: Incomplete contact details</shortDescription>
+        <value>Reject: Incomplete contact details</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LARefRegexSPD</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_LARefRegexSPD</shortDescription>
+        <value>\d{7}</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LARefRegexSPM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_LARefRegexSPM</shortDescription>
+        <value>\d{6}</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LCTSPDContactAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_LCTSPDContactAddress</shortDescription>
+        <value>lctapplicationnorth@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LCTSPMContactAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_LCTSPMContactAddress</shortDescription>
+        <value>lctapplicationsouth@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LVSSACaseNeedsActionBeforeDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LVSSA Case Needs Action Before Days</shortDescription>
+        <value>2</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LVSSBCaseNeedsActionBeforeDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LVSSB Case Needs Action Before Days</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LnP_SAPCallout</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>L&amp;P SAP Callout</shortDescription>
+        <value>callout:SAPCON/ukcrmsd1/zqkre_escoms_srv</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LnP_SAPRE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN LnP SAPRE</shortDescription>
+        <value>https://apid.iberdrola.com/ukcrmsd1/zqkre_escoms_srv</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LnP_SAPTimeout</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>L&amp;P SAP Timeout</shortDescription>
+        <value>80000</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_LnP_VendorAccountSyncInterval</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_LnP_VendorAccountSyncInterval</shortDescription>
+        <value>240</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_MessagingTaskQueue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN Messaging Task Queue</shortDescription>
+        <value>Messaging Task SPD;Messaging Task SPM</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_MissingInfoTaskCreation6Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Info Task Creation on 6 Days</shortDescription>
+        <value>6</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_MissingPhotos3PDTaskDescription</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_MissingPhotos3PDTaskDescription</shortDescription>
+        <value>Contact the field engineers onsite for Missing Photo</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_NRSWANorthAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPENNRSWANorthAddress</shortDescription>
+        <value>occnrswaqa@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_NRSWAOpenStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_NRSWAOpenStatus</shortDescription>
+        <value>Request for Further Information;Rejected;Awaiting Jointing Complete/Works Completion;Jointing Complete Actioned;Works Completed;Two Hour Defect Reported;Reopened;Closed</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_NRSWASouthAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPENNRSWASouthAddress</shortDescription>
+        <value>opssthfaultsqa@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_NonPSR_ODSONOFF</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Non PSR ODS ON/OFF</shortDescription>
+        <value>True</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_OCCThirdPartyEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OCC Third Party Email</shortDescription>
+        <value>occthirdpartydamage@scottishpower.com</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_Organization_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN Organization Name</shortDescription>
+        <value>SP Energy Networks</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_PlannedOutageErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_PlannedOutageErrorMessage</shortDescription>
+        <value>Communications can be sent from only selected list views on Premise tab</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_PowerOnCheck</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PowerOnCheck</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_PremiseListViewNames</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_PremiseListViewNames</shortDescription>
+        <value>SPD Planned Outage,SPM Planned Outage,SPD Faults Manual Contact Group,SPM Faults Manual Contact Group</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_RHYTHMSPDUser</fullName>
+        <categories>RHYTHM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RHYTHM SPD User</shortDescription>
+        <value>Sam McNeil</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_RHYTHMSPMUser</fullName>
+        <categories>RHYTHM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RHYTHM SPM User</shortDescription>
+        <value>Ruth Fitzgerald</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SAPErrorCalloutDeatils</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAPErrorCalloutDeatils</shortDescription>
+        <value>There was a sync with SAP error, please check call out details</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SAPStatusDeliveryWrokPlann</fullName>
+        <categories>SAP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAP Statuses for Delivery Work Planning</shortDescription>
+        <value>&apos;JOBR&apos;,&apos;ACPC&apos;</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SAPTimeOut</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAPTimeOut</shortDescription>
+        <value>20000</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SMSUnidentifiedContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SMSUnidentifiedContact</shortDescription>
+        <value>[Unidentified] Web/Phone - DoNotEdit</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SPDComplaintsAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPDComplaintsAddress</shortDescription>
+        <value>Spencomplaintsnorth@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SPDQueueEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SPDQueueEmailAddress</shortDescription>
+        <value>3pdqueriesnorth@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SPDTaskRecordTypes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPD Task Record Types</shortDescription>
+        <value>SPEN_ConnPostQuoteContact;SPEN_PreQuoteContactTask;SPEN_AcceptanceExceptionTask;SPEN_ConnectionGenTask;SPEN_ConnDesignCustomerContNeed;SPEN_ConnectionTaskSLABreach;SPEN_PostAcceptanceContact</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SPMComplaintsAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPMComplaintsAddress</shortDescription>
+        <value>Spencomplaintssouth@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SPMQueueCRMEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SPMQueueCRMEmailAddress</shortDescription>
+        <value>3pdsouth@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SPMQueueEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SPMQueueEmailAddress</shortDescription>
+        <value>3pdqueriessouth@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SPTCustomerengagementduedate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPT Customer engagement due date</shortDescription>
+        <value>56</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SWNorthAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPENSWNorthAddress</shortDescription>
+        <value>streetworks-scotland-additional-requestsqa@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SWNorthAddressCRM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SWNorthAddressCRM</shortDescription>
+        <value>streetworks-scotland-additional-requests@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SWOpenStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SWOpenStatus</shortDescription>
+        <value>Request for Further Information;Rejected;Awaiting Jointing Complete/Works Completion;Jointing Complete Actioned;Works Completed;Two Hour Defect Reported;Reopened;Closed</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SWSPDJointingCRM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SWSPDJointingCRM</shortDescription>
+        <value>jointingcompletenorth@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SWSPMJointingCRM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SWSPMJointingCRM</shortDescription>
+        <value>jointingcompletesouth@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SWSouthhAddressCRM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SWSouthhAddressCRM</shortDescription>
+        <value>additionalstreetworksew@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_CreateCustomerSAP</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name CreateCustomerSAP</shortDescription>
+        <value>altadeudores</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_CreateEditQas</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name CreateEditQas</shortDescription>
+        <value>createeditqas</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_GetQas</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name GetQas</shortDescription>
+        <value>getqas</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_PhysicalInf</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name PhysicalInf</shortDescription>
+        <value>physicalinf</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_PostAccContactCallout</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name PostAccContactCallout</shortDescription>
+        <value>postacceptcontact</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_ProjectAssignCallout</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name ProjectAssignCallout</shortDescription>
+        <value>projectassign</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_SearchData</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name SearchData</shortDescription>
+        <value>busdeudores</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_SearchbyQAS</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name SearchbyQAS</shortDescription>
+        <value>custbyqas</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_SearchbyUKC</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name SearchbyUKC</shortDescription>
+        <value>sapsdcustbyid</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SapApiName_UpdateCustomerSAP</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sap Api Name UpdateCustomerSAP</shortDescription>
+        <value>modifdeudores</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SearchUtilityAddressEndPointKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_SearchUtilityAddressEndPointKey</shortDescription>
+        <value>52NT-7PP0-TTAK-L76M</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SecondReminderFor6dyas</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>6 days  Second Reminder Customer contact needed)</shortDescription>
+        <value>6</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SharepointLnPSPDCallout</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint LnP SPD Callout</shortDescription>
+        <value>callout:SharePointLnpSPD/</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SharepointLnPSPDSiteName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint LnP Site Name</shortDescription>
+        <value>EscomsSPDUAT/</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SharepointLnPSPMCallout</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint LnP SPM Callout</shortDescription>
+        <value>callout:SharePointLnpSPM/</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SharepointLnPSPMSiteName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint LnP SPM Site Name</shortDescription>
+        <value>EscomsSPMUAT/</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SharepointLnPSPTCallout</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint LnP SPT Callout</shortDescription>
+        <value>callout:SharePointLnpSPT/</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SharepointLnPSPTSiteName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint LnP SPT Site Name</shortDescription>
+        <value>EscomsSPTUAT/</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_Stage1EnergisationDateToPM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stage 1 Energisation Date trigger to PM</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_StopChaser14</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stop Chaser14</shortDescription>
+        <value>14</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_StopChaser21</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stop Chaser21</shortDescription>
+        <value>21</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_StopChaser7</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stop Chaser7</shortDescription>
+        <value>7</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_StreerworksAdditionalRequestSouth</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Streerworks Additional Request South</shortDescription>
+        <value>streetworks-e&amp;w-additional-requests@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_StreerworksAdditionalRequestSouthAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Streerworks Additional Request South Address</shortDescription>
+        <value>additionalstreetworksewqa@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_StreetworksJointingNorthAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Streetworks Jointing North Address</shortDescription>
+        <value>jointingcompletenorthqa@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_StreetworksJointingSouthAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Streetworks Jointing South Address</shortDescription>
+        <value>jointingcompletesouthqa@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SurveyCommunityName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Survey Community Name</shortDescription>
+        <value>SPEN Survey</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SyncToSAPChangeMessage</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sync To SAP Change Message</shortDescription>
+        <value>The case is not synced with SAP. When ready please select Sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SyncToSAPErrorMessage</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sync To SAP Error Message</shortDescription>
+        <value>Before changing the status to Formal or Budget Enquiry and syncing to SAP,  
+ please update Site Details, Electrical Details &amp; Contracting Party Info.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SyncToSAPReadyMessage</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sync To SAP Ready Message</shortDescription>
+        <value>The case is not synced with SAP. When ready please select Sync to SAP.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_SyncToSAPSuccessMessage</fullName>
+        <categories>Connection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sync To SAP Success Message</shortDescription>
+        <value>This case is synced with SAP.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_TemporaryPSRCodes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_TemporaryPSRCodes</shortDescription>
+        <value>32;33;34</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_TransmissionProfileIDs</fullName>
+        <categories>Transmission</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transmission Profile IDs</shortDescription>
+        <value>00e26000000l6DgAAI,00e26000000l6DqAAI,00e26000000l6EJAAY</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_TransmissionScript</fullName>
+        <categories>Transmission</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transmission Script</shortDescription>
+        <value>Please do all email communications from the parent Case including creating Events or Tasks.</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_TransmissionsRecordType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_TransmissionsRecordType</shortDescription>
+        <value>SPEN_CaseTransmission</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_WebFormModifiedUsername</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Web Form Modified Username</shortDescription>
+        <value>spenportaluser@spencrm.prod</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_WorkCategoryCancellationId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_WorkCategoryCancellationId</shortDescription>
+        <value>a1v260000058NhGAAU</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_WorkRefRegex</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SPEN_WorkRefRegex</shortDescription>
+        <value>GY\d{3}\w{3,12}|SP\d{3}\w{3,12}</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_WorkingDaysForComparison</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Working Days For Comparison</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>SPEN_queueName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>queueName</shortDescription>
+        <value>SPEN_DesignTeam;SPEN_AcceptanceTeam;SPEN_CustomerInterfaceTeamLeadersTeam;SPEN_ContactTeamExistingEnquiry;SPEN_ContactTeamAwaitingInformation;SPEN_ContactTeamFixedPriceQuotations;SPEN_ContactTeamFixedPriceQuoteIssued;SPEN_AcceptanceFixedPriceQuotationQueue;SPEN_Acceptancecancellationinprocess</value>
+    </labels>
+    <labels>
+        <fullName>SecurityInformation</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SecurityInformation</shortDescription>
+        <value>&lt;br&gt;&lt;br&gt;&lt;u&gt;&lt;b&gt;Just for your information:&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Above users have been assigned some potentially dangerous permissions through profiles/permission sets.Please verify whether this is based on valid and approved service request.&lt;br&gt;Following permissions are considered potentially dangerous which needs to be looked on:&lt;br&gt;&lt;br&gt;AssignPermission Sets &lt;br&gt;Author Apex&lt;br&gt;Bulk API Hard Delete&lt;br&gt;Create and Manage Communities&lt;br&gt;Customize Application&lt;br&gt;Deploy Change Sets&lt;br&gt;Edit HTML Templates&lt;br&gt;Edit Read Only Fields&lt;br&gt;Manage Auth. Providers&lt;br&gt;Manage Billing&lt;br&gt;Manage Internal Users&lt;br&gt;Manage Force.com&lt;br&gt;Manage Login Access Policies&lt;br&gt;Manage Password Polices&lt;br&gt;Manage Users&lt;br&gt;Modify All Data&lt;br&gt;Password Never Expires&lt;br&gt;Reset User Passwords and Unlock Users&lt;br&gt;View All Data&lt;br&gt;&lt;br&gt;If you cannot find a valid and approved service request against these actions,then please investigate it through Setup Audit Trail available in Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>SessionSettingChanges</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SessionSettingChanges</shortDescription>
+        <value>Session setting changes|</value>
+    </labels>
+    <labels>
+        <fullName>SharePointDomain</fullName>
+        <categories>SharePoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharePointDomain</shortDescription>
+        <value>iberdrola</value>
+    </labels>
+    <labels>
+        <fullName>SharePointFetchMigrated</fullName>
+        <categories>SharePoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharePointFetchMigrated</shortDescription>
+        <value>_api/Web/lists/GetbyTitle(&apos;Work%20Packs&apos;)/Items?$select=FileLeafRef,File_x0020_Type,FileRef,LinkFilename,EncodedAbsUrl,ID,GUID,Title,Created_x0020_Date&amp;$filter=FileRef%20eq%20&apos;/sites/</value>
+    </labels>
+    <labels>
+        <fullName>SharePointFetchProd</fullName>
+        <categories>SharePoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharePointFetchProd</shortDescription>
+        <value>_api/Web/lists/GetbyTitle(&apos;Shared%20Documents&apos;)/Items?$select=FileLeafRef,File_x0020_Type,FileRef,LinkFilename,EncodedAbsUrl,ID,GUID,Title,Created_x0020_Date&amp;$filter=FileDirRef%20eq%20&apos;/sites/</value>
+    </labels>
+    <labels>
+        <fullName>SharePointFetchSanbox</fullName>
+        <categories>SharePoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharePointFetchSanbox</shortDescription>
+        <value>_api/Web/lists/GetbyTitle(&apos;Documents&apos;)/Items?$select=FileLeafRef,File_x0020_Type,FileRef,LinkFilename,EncodedAbsUrl,ID,GUID,Title,Created_x0020_Date&amp;$filter=FileDirRef%20eq%20&apos;/sites/</value>
+    </labels>
+    <labels>
+        <fullName>SharePointMigratedPath</fullName>
+        <categories>Sharepoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharePointMigratedPath</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>SharePointNamed</fullName>
+        <categories>SharePoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharePointNamed</shortDescription>
+        <value>callout:SPPOC/</value>
+    </labels>
+    <labels>
+        <fullName>SharePointPath</fullName>
+        <categories>SharePoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharePointPath</shortDescription>
+        <value>https://iberdrola.sharepoint.com/sites/SFPOC/Shared%20Documents/</value>
+    </labels>
+    <labels>
+        <fullName>SharePointSite</fullName>
+        <categories>SharePoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharePointSite</shortDescription>
+        <value>SFPOC/</value>
+    </labels>
+    <labels>
+        <fullName>SharepointFolderName</fullName>
+        <categories>Sharepoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharepointFolderName</shortDescription>
+        <value>Shared%20Documents/</value>
+    </labels>
+    <labels>
+        <fullName>SharepointMigratedFolderName</fullName>
+        <categories>Sharepoint</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharepointMigratedFolderName</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>SharepointSiteName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SharepointSiteName</shortDescription>
+        <value>SharepointSiteName</value>
+    </labels>
+    <labels>
+        <fullName>SingleEmailLimit</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SingleEmailLimit</shortDescription>
+        <value>Single Email Limit</value>
+    </labels>
+    <labels>
+        <fullName>Spen_ChaserEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Spen_ChaserEmailAddress</shortDescription>
+        <value>gettingconnected_qa@spenergynetworkscrm.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>Spen_ConnManualFileUpload</fullName>
+        <categories>CRMD-7684</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Spen Conn Manual File Upload Required</shortDescription>
+        <value>SharePoint Manual File upload is required.</value>
+    </labels>
+    <labels>
+        <fullName>Streerworks_Additional_Request_North</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Streerworks Additional Request North Address</shortDescription>
+        <value>streetworksdev@spenergynetworks.co.uk</value>
+    </labels>
+    <labels>
+        <fullName>SysAdminUpdated</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SysAdminUpdated</shortDescription>
+        <value>New/Existing user is assigned with system admin profile|</value>
+    </labels>
+    <labels>
+        <fullName>TimelineRecord</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TimelineRecord</shortDescription>
+        <value>TL-00001</value>
+    </labels>
+    <labels>
+        <fullName>Username</fullName>
+        <categories>Security Event Monitoring</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Username</shortDescription>
+        <value>Username</value>
+    </labels>
+    <labels>
+        <fullName>VoiceResult</fullName>
+        <categories>Value Should be a combination of Minute and Threshold values , differentiate with &apos;|&apos; Symbol. 1. Before pipe symbol indicates minutes( Should not be Empty). 2. After pipe Symbol Indicate Threshold Value(Should not be Empty).</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VoiceResult</shortDescription>
+        <value>1|10</value>
+    </labels>
+    <labels>
+        <fullName>WorkflowEmailLimit</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkflowEmailLimit</shortDescription>
+        <value>Daily Workflow Emails</value>
+    </labels>
+    <labels>
+        <fullName>WorkflowLimit</fullName>
+        <categories>EM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WorkflowLimit</shortDescription>
+        <value>Daily Workflow Emails</value>
+    </labels>
+    <labels>
+        <fullName>voiceCallMinutesSetup</fullName>
+        <categories>Value Should be a combination of Minute and Threshold values , differentiate with &apos;|&apos; Symbol. 1. Before pipe symbol indicates minutes( Should not be Empty). 2. After pipe Symbol Indicate Threshold Value(Should not be Empty).</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>voiceCallMinutesSetup</shortDescription>
+        <value>100|25</value>
+    </labels>
+</CustomLabels>

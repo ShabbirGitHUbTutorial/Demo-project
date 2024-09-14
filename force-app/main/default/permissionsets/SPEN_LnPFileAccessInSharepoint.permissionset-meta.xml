@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to access files in Sharepoint for LnP</description>
+    <externalDataSourceAccesses>
+        <enabled>true</enabled>
+        <externalDataSource>DMS_SharePoint_SPD</externalDataSource>
+    </externalDataSourceAccesses>
+    <externalDataSourceAccesses>
+        <enabled>true</enabled>
+        <externalDataSource>DMS_SharePoint_SPM</externalDataSource>
+    </externalDataSourceAccesses>
+    <externalDataSourceAccesses>
+        <enabled>true</enabled>
+        <externalDataSource>DMS_SharePoint_SPT</externalDataSource>
+    </externalDataSourceAccesses>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SPEN L&amp;P File Access In Sharepoint</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ContentHubUser</name>
+    </userPermissions>
+</PermissionSet>

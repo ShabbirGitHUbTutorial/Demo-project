@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Action Matrix --></label>
+    <name>SPEN_ActionMatrix__c</name>
+    <picklistValues>
+        <masterLabel>Action High - Stop and contact Standby TL. Work should only continue if appropriate to do so with a risk mitigation action plan in place following discussion between Standby TL and Duty Manager. Please reassess in 1 hour.</masterLabel>
+        <translation><!-- Action High - Stop and contact Standby TL. Work should only continue if appropriate to do so with a risk mitigation action plan in place following discussion between Standby TL and Duty Manager. Please reassess in 1 hour. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action Low - Continue working and reassess in 2 hours.</masterLabel>
+        <translation><!-- Action Low - Continue working and reassess in 2 hours. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action Medium - ﻿Pause to contact your Standby TL. You may be able to continue following discussion with your Standby TL and creating a risk mitigation action plan. Please reassess in 1 hour.</masterLabel>
+        <translation><!-- Action Medium - ﻿Pause to contact your Standby TL. You may be able to continue following discussion with your Standby TL and creating a risk mitigation action plan. Please reassess in 1 hour. --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

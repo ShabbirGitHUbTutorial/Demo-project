@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>SPEN_Status__c</name>
+    <picklistValues>
+        <masterLabel>Awaiting Design</masterLabel>
+        <translation><!-- Awaiting Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consent Acquired</masterLabel>
+        <translation><!-- Consent Acquired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft Documents Agreed</masterLabel>
+        <translation><!-- Draft Documents Agreed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft Documents Issued</masterLabel>
+        <translation><!-- Draft Documents Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Negotiation</masterLabel>
+        <translation><!-- In Negotiation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Legal Instruction</masterLabel>
+        <translation><!-- Internal Legal Instruction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Right Acquired</masterLabel>
+        <translation><!-- Land Right Acquired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Right Issued</masterLabel>
+        <translation><!-- Land Right Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Right Secured</masterLabel>
+        <translation><!-- Land Right Secured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Milestones Completed</masterLabel>
+        <translation><!-- Legal Milestones Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Consent</masterLabel>
+        <translation><!-- Third Party Consent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

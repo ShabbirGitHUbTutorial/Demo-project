@@ -1,0 +1,34 @@
+<template>
+    <template if:true={checkQuestionList}>
+        <lightning-card>
+        <!--lightning-icon icon-name="utility:calculated_insights" alternative-text="Icon" class="slds-m-right_x-small" title="Event"></lightning-icon-->
+        <div style="display: flex; padding-left: 15Px;">
+        <lightning-icon icon-name="standard:feedback" alternative-text="Connected" title="medium (default)"></lightning-icon>
+        &nbsp;&nbsp;&nbsp;
+        <div class="slds-page-header__name-title">
+            <h1>
+              <span class="slds-page-header__title slds-truncate" title="Rohde Corp - 80,000 Widgets">Questions</span>
+            </h1>
+          </div>
+    </div>
+        <div style="padding-left: 25Px; padding-right: 25Px; padding-bottom: 20PX;">
+        <table style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr style="border-bottom: 1px solid black;">
+                <th scope="col" style="padding: 8px;">Question</th>
+                <th scope="col" style="padding: 8px;">Response</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={surveyResponses} for:item="response">
+                <tr key={response.Id} style="border-bottom: 1px solid black;">
+                    <td data-label="Question" style="padding: 8px;">{response.Question.Name}</td>
+                    <td data-label="Question" style="padding: 8px;">{response.ResponseValue}</td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+    </div>
+    </lightning-card>
+    </template>
+    </template>

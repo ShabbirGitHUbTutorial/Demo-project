@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Dataset Writeback runs in batch of SAQL rows, and the default batch size is 200. --></help>
+    <label><!-- Batch Size --></label>
+    <name>DSWB__Batch_Size__c</name>
+</CustomFieldTranslation>

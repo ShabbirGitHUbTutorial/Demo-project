@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source Field Type --></label>
+    <name>SEL_SourceFieldType__c</name>
+    <picklistValues>
+        <masterLabel>Static</masterLabel>
+        <translation><!-- Static --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sObject Field</masterLabel>
+        <translation><!-- sObject Field --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sObject Lookup</masterLabel>
+        <translation><!-- sObject Lookup --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

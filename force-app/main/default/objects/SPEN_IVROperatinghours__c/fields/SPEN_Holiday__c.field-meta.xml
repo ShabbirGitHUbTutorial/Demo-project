@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Holiday__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Holiday field is in lookup relationship between Holiday object and IVR Operating hours.</description>
+    <label>Holiday</label>
+    <referenceTo>SPEN_Holiday__c</referenceTo>
+    <relationshipLabel>IVR Operating hours</relationshipLabel>
+    <relationshipName>IVR_Operatinghours</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

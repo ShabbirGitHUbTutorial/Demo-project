@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RequiredFieldsforLiveJob</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(NOT(OR(ISPICKVAL(SPEN_JobStatus__c , &apos;Draft&apos;),ISPICKVAL(SPEN_JobStatus__c , &apos;Rejected&apos;),ISPICKVAL(SPEN_JobStatus__c , &apos;Cancelled&apos;))), AND(SPEN_Create_Job_in_Live__c = TRUE, ISNEW())),OR( ISPICKVAL( SPEN_District__c , &quot;&quot;), 
+ ISBLANK( SPEN_OSGridReference__c ) , ISBLANK( Name ),ISBLANK( SPEN_ControlNumber__c ),ISPICKVAL(SPEN_LicenseArea__c , &apos;&apos;), ISPICKVAL( SPEN_CustomerType__c , &apos;&apos;) , ISPICKVAL( SPEN_Work_Category__c , &apos;&apos;) , ISBLANK( SPEN_JobTitle__c ) ))</errorConditionFormula>
+    <errorMessage>Please provide the value for the following fields:
+Customer Type,
+Control Number,
+District,
+OS Grid reference
+License Area
+Work Category
+Job Title
+Customer type</errorMessage>
+</ValidationRule>

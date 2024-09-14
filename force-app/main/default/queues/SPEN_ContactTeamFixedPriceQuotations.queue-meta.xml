@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Contact Team Fixed Price Quotations</name>
+    <queueMembers>
+        <users>
+            <user>a.warnock@spenergynetworks.co.uk.spencrm</user>
+            <user>apollock@spenergynetworks.co.uk.spencrm</user>
+            <user>apaterson@spenergynetworks.co.uk.spencrm</user>
+            <user>abeattie@spenergynetworks.co.uk.spencrm</user>
+            <user>atracey@spenergynetworks.co.uk.spencrm</user>
+            <user>annemarie.kean@spenergynetworks.co.uk.spencrm</user>
+            <user>ashley.goldie@spenergynetworks.co.uk.spencrm</user>
+            <user>c.marshall@spenergynetworks.co.uk.spencrm</user>
+            <user>chenney@spenergynetworks.co.uk.spencrm</user>
+            <user>idoyle@spenergynetworks.co.uk.spencrm</user>
+            <user>j.dey@spenergynetworks.co.uk.spencrm</user>
+            <user>lsemple@spenergynetworks.co.uk.spencrm</user>
+            <user>mdonaghy@spenergynetworks.co.uk.spencrm</user>
+            <user>rbradley@spenergynetworks.co.uk.spencrm</user>
+            <user>susan.bell@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

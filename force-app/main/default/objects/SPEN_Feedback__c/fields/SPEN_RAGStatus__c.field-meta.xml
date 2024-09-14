@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RAGStatus__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(SPEN_DueDate__c - TODAY()&gt;=3,IMAGE(&quot;/resource/GreenRAG&quot;, &quot;Green&quot;, 30, 40) ,
+IF(SPEN_DueDate__c - TODAY()&gt;=2,IMAGE(&quot;/resource/AmberRAG&quot;, &quot;Amber&quot;, 30, 40),
+IF(SPEN_DueDate__c - TODAY()&gt;= 1,IMAGE(&quot;/resource/RedRAG&quot;, &quot;Red&quot;, 30, 40),
+IF(SPEN_DueDate__c - TODAY()&lt;= 0,IMAGE(&quot;/resource/RedRAG&quot;, &quot;Red&quot;, 30, 40),
+NULL))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RAG status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

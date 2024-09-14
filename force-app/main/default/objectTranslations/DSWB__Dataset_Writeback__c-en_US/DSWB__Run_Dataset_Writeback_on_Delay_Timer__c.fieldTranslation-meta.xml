@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Based on the minutes set in the Delay Timer field, this checkbox offers a quick and easy way to schedule Dataset Writeback to run minutes later after saving the record. Running Dataset Writeback asynchronously whenever you can is our best practice recommendation since a scheduled job gets higher governor and execution limits. --></help>
+    <label><!-- Run Dataset Writeback on Delay Timer --></label>
+    <name>DSWB__Run_Dataset_Writeback_on_Delay_Timer__c</name>
+</CustomFieldTranslation>

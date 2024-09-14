@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Outward_Code__c</columns>
+    <columns>SPEN_PostCode__c</columns>
+    <columns>SPEN_LocalAuthority__c</columns>
+    <columns>SPEN_LSOA__c</columns>
+    <columns>SPEN_Connections_District__c</columns>
+    <columns>SPEN_District__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

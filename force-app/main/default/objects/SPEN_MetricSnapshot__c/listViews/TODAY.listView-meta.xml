@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TODAY</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SPEN_MetricDate__c</columns>
+    <columns>SPEN_CallGroup__c</columns>
+    <columns>SPEN_ExternalId__c</columns>
+    <columns>SPEN_KM1__c</columns>
+    <columns>SPEN_KM2__c</columns>
+    <columns>SPEN_KM3__c</columns>
+    <columns>SPEN_KM4__c</columns>
+    <columns>SPEN_KM5__c</columns>
+    <columns>SPEN_KM5Percent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>TODAY</label>
+</ListView>

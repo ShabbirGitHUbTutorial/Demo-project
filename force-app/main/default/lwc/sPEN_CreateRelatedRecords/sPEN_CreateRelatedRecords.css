@@ -1,0 +1,11 @@
+.resultClass{
+    height: 200px;
+    width: 100%;
+    border: 1px groove black;
+}
+.resultClassExt{
+    height: 50px;
+    width: 100%;
+    border: 1px groove black;
+    text-align: center;
+}

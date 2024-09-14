@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PremiseNameOrNumberValidation</fullName>
+    <active>false</active>
+    <description>It check any of one cann&apos;t be blank; Causing error in ADQM sync - setting to inactive - Macjules</description>
+    <errorConditionFormula>AND(ISBLANK(SPEN_PremiseName__c), ISBLANK(SPEN_PremiseNumber__c))</errorConditionFormula>
+    <errorMessage>Please fill Premise Name or Premise Number</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SmsBroadcastRequiredFieldMessagingTask</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;SmsBroadcast&quot; &amp;&amp; 
+ISBLANK(SPEN_MessagingTaskId__c) &amp;&amp; TEXT(SPEN_Event__c) != &apos;Medically Dependent by District&apos;  &amp;&amp; TEXT(SPEN_Event__c) != &apos;Planned Outage Communication&apos;</errorConditionFormula>
+    <errorDisplayField>SPEN_MessagingTaskId__c</errorDisplayField>
+    <errorMessage>The message task field is required if the Record Type is SMS Broadcast.</errorMessage>
+</ValidationRule>

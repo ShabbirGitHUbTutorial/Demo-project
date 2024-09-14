@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>General Enequires ScotLand</name>
+    <queueMembers>
+        <users>
+            <user>ann.fisher@spenergynetworks.co.uk.spencrm</user>
+            <user>ewhyte@spenergynetworks.co.uk.spencrm</user>
+            <user>fprewett@spenergynetworks.co.uk.spencrm</user>
+            <user>jdunn@spenergynetworks.co.uk.spencrm</user>
+            <user>lorraine.brogan@spenergynetworks.co.uk.spencrm</user>
+            <user>maclarkson@spenergynetworks.co.uk.spencrm</user>
+            <user>s.abbas@spenergynetworks.co.uk.spencrm</user>
+            <user>sstephen@spenergynetworks.co.uk.spencrm</user>
+            <user>z.riadh@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

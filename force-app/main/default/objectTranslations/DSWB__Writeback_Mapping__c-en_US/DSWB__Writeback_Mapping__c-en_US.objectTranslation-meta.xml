@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Writeback Mapping Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Group Settings --></label>
+            <section>Group Settings</section>
+        </sections>
+        <sections>
+            <label><!-- Parent-Child Relationship Settings --></label>
+            <section>Parent-Child Relationship Settings</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Please fill out this field. --></errorMessage>
+        <name>DSWB__Group_Number_Not_Null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please use the Select Object Field API Name picklist to fill out this field. --></errorMessage>
+        <name>DSWB__Object_Field_API_Name_Not_Null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out this field. --></errorMessage>
+        <name>DSWB__SAQL_Query_Column_Name_Not_Null</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Ref --></label>
+    <name>SPEN_CaseRef__c</name>
+</CustomFieldTranslation>

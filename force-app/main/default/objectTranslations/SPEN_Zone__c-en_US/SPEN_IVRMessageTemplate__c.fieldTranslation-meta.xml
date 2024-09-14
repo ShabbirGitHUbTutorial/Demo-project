@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- IVR Message Template --></label>
+    <name>SPEN_IVRMessageTemplate__c</name>
+    <relationshipLabel><!-- Zone --></relationshipLabel>
+</CustomFieldTranslation>

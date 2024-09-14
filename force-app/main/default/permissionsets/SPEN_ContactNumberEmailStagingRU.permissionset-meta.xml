@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>SPEN_AdqmDailySync</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Grants READ and UPDATE permissions to the Contact Number Email Staging custom object.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SPEN_ContactNumberEmailStaging__c.SPEN_NumberOrEmail__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SPEN_ContactNumberEmailStaging__c.SPEN_SyncStatus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>SPEN_ContactNumberEmailStaging__c.SPEN_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SPEN: Contact Number Email Staging - RU</label>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>SPEN_ContactNumberEmailStaging__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>SPEN_ContactNumberEmailStaging__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

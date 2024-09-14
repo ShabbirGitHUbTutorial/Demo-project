@@ -1,0 +1,88 @@
+<apex:component access="global" controller="APC22_BatchMonitoring">
+    
+    <style type="text/css">
+        table {
+        border: solid 5px grey;
+        font-family :verdana;
+        font-size: 12px;
+        }
+        
+        tr.ColumnNames{
+        background-color: lightgrey;
+        text-align: center;
+        }
+        
+        tr.Row {
+        text-align: center;
+        }
+        
+        table td { 
+        border: solid 1px; 
+        } 
+        
+        td.OK {
+        background-color: green;
+        color: Black;
+        }
+        
+        td.KO {
+        background-color: red;
+        color: Black;
+        }
+        td.Aborted {
+        background-color: Orange;
+        color: Black;
+        }
+    </style>
+    <br></br>
+<h2 style="background-color:yellow;"><u>{!$Label.BatchMonitoringOrgName}{!$Organization.Id}</u> </h2>
+<h5 style="color:Black;">{! IF(queryres.size = 0, $Label.BatchMonitoringNotes, $Label.BatchMonitoringNotes2)}</h5><br></br>
+<table style="border: 5px" cellpadding="10px" rules="rows">
+    <tr class="ColumnNames"> <!-- Description of columns of Table -->
+        <td>Batch Name</td>
+        <td>MethodName</td>
+        <td>Batch Type</td>
+        <td>Error Description</td>
+        <td>Number of Queried Records</td>
+        <td>Number of Errors</td>
+        <td>Start Date</td>
+        <td>Completed Date</td>
+        <td>Status</td>
+    </tr>
+    
+    <apex:repeat value="{!queryres}" var="asyncapexjob">
+        
+        <tr class="Row">
+            <td>
+                <apex:outputField value="{!asyncapexjob.ApexClass.Name}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.MethodName}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.JobType}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.ExtendedStatus}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.TotalJobItems}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.NumberOfErrors}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.CreatedDate}"/>
+            </td>
+            <td>
+                <apex:outputField value="{!asyncapexjob.CompleteDdate}"/>
+            </td>
+            <td class="{!IF(asyncapexjob.ExtendedStatus == NULL , 'OK', 'KO')}">{!IF(asyncapexjob.ExtendedStatus == NULL , 'OK', 'KO')}</td>
+        </tr>
+        
+    </apex:repeat>
+    
+    
+</table>
+
+</apex:component>

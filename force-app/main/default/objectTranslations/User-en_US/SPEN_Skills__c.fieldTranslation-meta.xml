@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Skills --></label>
+    <name>SPEN_Skills__c</name>
+    <picklistValues>
+        <masterLabel>Complaints</masterLabel>
+        <translation><!-- Complaints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connections</masterLabel>
+        <translation><!-- Connections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debt</masterLabel>
+        <translation><!-- Debt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fault Calls</masterLabel>
+        <translation><!-- Fault Calls --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Enquiries</masterLabel>
+        <translation><!-- General Enquiries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IVR Assignment</masterLabel>
+        <translation><!-- IVR Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MPAS Calls</masterLabel>
+        <translation><!-- MPAS Calls --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRSWA</masterLabel>
+        <translation><!-- NRSWA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rant&apos;n&apos;rave</masterLabel>
+        <translation><!-- Rant&apos;n&apos;rave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMS Assignment</masterLabel>
+        <translation><!-- SMS Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Obligations</masterLabel>
+        <translation><!-- Social Obligations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Damage</masterLabel>
+        <translation><!-- Third Party Damage --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

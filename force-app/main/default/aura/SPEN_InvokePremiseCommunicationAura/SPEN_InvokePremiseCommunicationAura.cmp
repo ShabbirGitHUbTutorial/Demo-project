@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+     <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
+	<lightning:utilityBarAPI aura:id="utilitybar" />
+    <aura:attribute name="showLWC" type="Boolean" default="false"></aura:attribute>
+    <!--<aura:if isTrue="{!v.showLWC }">-->
+    <c:sPEN_InvokePremiseCommunicationFlow aura:id="lwcComp" />
+    <!--</aura:if>-->
+</aura:component>

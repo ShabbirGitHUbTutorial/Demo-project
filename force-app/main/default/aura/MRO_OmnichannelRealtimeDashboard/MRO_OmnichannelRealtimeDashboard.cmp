@@ -1,0 +1,19 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:availableForFlowScreens" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="dashboardid" type="string" default="0FK3V0000000EYIWA2"/>  
+    <aura:attribute name="refreshinterval" type="string" default="1000000"/>
+    <wave:sdk aura:id="sdk"/>
+    <wave:waveDashboard 
+                        aura:id="OmniDashboard"
+                        developerName="{!v.dashboardid}"
+                        hideOnError="true"
+                        height="820"
+                        showSharing="false"
+                        showTitle="false"
+                        showHeader="false"
+                        openLinksInNewWindow="false"
+                        openLocation="OPEN_IN_TAB"
+                        />
+    <!-- Load CSS from Static Resources -->
+	<ltng:require styles="{!$Resource.noHeader}"/>
+</aura:component>

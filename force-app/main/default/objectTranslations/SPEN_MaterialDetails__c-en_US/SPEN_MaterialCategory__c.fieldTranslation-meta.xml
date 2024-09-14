@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material Category --></label>
+    <name>SPEN_MaterialCategory__c</name>
+    <picklistValues>
+        <masterLabel>Cable</masterLabel>
+        <translation><!-- Cable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conductor</masterLabel>
+        <translation><!-- Conductor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ducting</masterLabel>
+        <translation><!-- Ducting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insulators</masterLabel>
+        <translation><!-- Insulators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joints</masterLabel>
+        <translation><!-- Joints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plant</masterLabel>
+        <translation><!-- Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poles</masterLabel>
+        <translation><!-- Poles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staywire</masterLabel>
+        <translation><!-- Staywire --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

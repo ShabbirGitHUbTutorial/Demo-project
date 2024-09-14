@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Traffic Management --></label>
+    <name>SPEN_TrafficManagement__c</name>
+    <picklistValues>
+        <masterLabel>Contraflow</masterLabel>
+        <translation><!-- Contraflow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Convoy Working</masterLabel>
+        <translation><!-- Convoy Working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Give &amp; Take</masterLabel>
+        <translation><!-- Give &amp; Take --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Give &amp; Take Traffic Control</masterLabel>
+        <translation><!-- Give &amp; Take Traffic Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hard Shoulder Closure</masterLabel>
+        <translation><!-- Hard Shoulder Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lane Closure</masterLabel>
+        <translation><!-- Lane Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi Way Signals</masterLabel>
+        <translation><!-- Multi Way Signals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No C/W Incursion</masterLabel>
+        <translation><!-- No C/W Incursion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Obstruction on C/W or F/W</masterLabel>
+        <translation><!-- No Obstruction on C/W or F/W --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portable Traffic Lights (TTLS)</masterLabel>
+        <translation><!-- Portable Traffic Lights (TTLS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priority System Traffic Control</masterLabel>
+        <translation><!-- Priority System Traffic Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Priority Working</masterLabel>
+        <translation><!-- Priority Working --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Closure</masterLabel>
+        <translation><!-- Road Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Road Narrowing (Two Way Working)</masterLabel>
+        <translation><!-- Road Narrowing (Two Way Working) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slip Closure</masterLabel>
+        <translation><!-- Slip Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Some C/W Incursion</masterLabel>
+        <translation><!-- Some C/W Incursion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop/Go Boards</masterLabel>
+        <translation><!-- Stop/Go Boards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop/Go Boards Traffic Control</masterLabel>
+        <translation><!-- Stop/Go Boards Traffic Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traffic Management Not Yet Known</masterLabel>
+        <translation><!-- Traffic Management Not Yet Known --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two Way Signals</masterLabel>
+        <translation><!-- Two Way Signals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works Entirely on the Footway</masterLabel>
+        <translation><!-- Works Entirely on the Footway --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current Project Status --></label>
+    <name>SPEN_CurrentProjectStatus__c</name>
+    <picklistValues>
+        <masterLabel>Accepted Not Paid</masterLabel>
+        <translation><!-- Accepted Not Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Road Opening Notice</masterLabel>
+        <translation><!-- Awaiting Road Opening Notice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complete</masterLabel>
+        <translation><!-- Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor</masterLabel>
+        <translation><!-- Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer not Ready</masterLabel>
+        <translation><!-- Customer not Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embargo</masterLabel>
+        <translation><!-- Embargo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Issues</masterLabel>
+        <translation><!-- Network Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Included APOS</masterLabel>
+        <translation><!-- Not Included APOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Included Cancelled</masterLabel>
+        <translation><!-- Not Included Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Included LV</masterLabel>
+        <translation><!-- Not Included LV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Included PCP</masterLabel>
+        <translation><!-- Not Included PCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Now Scheduled</masterLabel>
+        <translation><!-- Now Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Give Details)</masterLabel>
+        <translation><!-- Other (Give Details) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Vet</masterLabel>
+        <translation><!-- Pre-Vet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redesign/Variation</masterLabel>
+        <translation><!-- Redesign/Variation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shut Down</masterLabel>
+        <translation><!-- Shut Down --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting on Scheduled Date</masterLabel>
+        <translation><!-- Waiting on Scheduled Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wayleaves &amp; Planning</masterLabel>
+        <translation><!-- Wayleaves &amp; Planning --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

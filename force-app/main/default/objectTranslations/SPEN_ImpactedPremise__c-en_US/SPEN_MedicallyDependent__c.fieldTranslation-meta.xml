@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When the Premise has any Specific Vulnerability then this field will be checked --></help>
+    <label><!-- Medically Dependent --></label>
+    <name>SPEN_MedicallyDependent__c</name>
+</CustomFieldTranslation>

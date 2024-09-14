@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEL_IntegrationDataMockId__c</fullName>
+    <description>If mocking is enabled, this lookup uses the data stored in the Integration Data Mock CMT to return a response to the caller.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Data Mock</label>
+    <referenceTo>SEL_IntegrationDataMock__mdt</referenceTo>
+    <relationshipLabel>SEL Integration Settings</relationshipLabel>
+    <relationshipName>SEL_IntegrationSettingsMocks</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

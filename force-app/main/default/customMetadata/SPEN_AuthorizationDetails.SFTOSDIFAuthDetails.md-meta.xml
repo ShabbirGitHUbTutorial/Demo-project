@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SFTOSDIFAuthDetails</label>
+    <protected>false</protected>
+    <values>
+        <field>SPEN_Authheader__c</field>
+        <value xsi:type="xsd:string">Basic Z09mZjRsZjdNT29GVGxRd3VzVVdJSXZKaFhvYTpTNmxvUDJRemdRNzM0M01YOXpSeHY0YThWNmdh</value>
+    </values>
+    <values>
+        <field>SPEN_EndpointURL__c</field>
+        <value xsi:type="xsd:string">https://spdeveloper.scottishpower.com.invalid/token?grant_type=client_credentials</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>58.0</apiVersion>
+    <assignments>
+        <name>Assign_LSOA_and_LA</name>
+        <label>Assign LSOA and LA</label>
+        <locationX>320</locationX>
+        <locationY>506</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Details.SPEN_LSOA__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Post_Code_MDM_details.SPEN_LSOA__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Case_Details.SPEN_Local_Authority__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Post_Code_MDM_details.SPEN_LocalAuthority__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_LSOA_and_LA_From_Screen</name>
+        <label>Assign LSOA and LA From Screen</label>
+        <locationX>962</locationX>
+        <locationY>397</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Case_Details.SPEN_LSOA__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LSOA</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Get_Case_Details.SPEN_Local_Authority__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Local_Authority_Picklist</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case_from_Input</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Check if the post code is available in Post Code MDM</description>
+        <name>Check_Post_Code_MDM_record</name>
+        <label>Check Post Code MDM record</label>
+        <locationX>584</locationX>
+        <locationY>398</locationY>
+        <defaultConnector>
+            <targetReference>Error_Message_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Available</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Post_Code_MDM_details</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_LSOA_and_LA</targetReference>
+            </connector>
+            <label>Available</label>
+        </rules>
+    </decisions>
+    <description>CRMD-5815</description>
+    <dynamicChoiceSets>
+        <name>LACollectionChoiceSet</name>
+        <collectionReference>UniqueCollection</collectionReference>
+        <dataType>String</dataType>
+        <displayField>SPEN_LocalAuthority__c</displayField>
+        <object>SPEN_PostCodeMDM__c</object>
+        <valueField>SPEN_LocalAuthority__c</valueField>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>LOVPicklistCollection</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>SPEN_LocalAuthority__c</picklistField>
+        <picklistObject>SPEN_PostCodeMDM__c</picklistObject>
+        <sortOrder>Asc</sortOrder>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <interviewLabel>Populate Local Authority and LSOA {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Populate Local Authority and LSOA</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Get details of the post code/premise from the case</description>
+        <name>Get_Case_Details</name>
+        <label>Get Case Details</label>
+        <locationX>584</locationX>
+        <locationY>182</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Post_Code_MDM_details</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>SPEN_Bypass__c</queriedFields>
+        <queriedFields>SPEN_AddressPremise__c</queriedFields>
+        <queriedFields>SPEN_BYPASSPostCode__c</queriedFields>
+        <queriedFields>SPEN_Postcode_PowerOnFormula__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Based on Case&apos;s post code, get record from the Post Code MDM table</description>
+        <name>Get_Post_Code_MDM_details</name>
+        <label>Get Post Code MDM details</label>
+        <locationX>584</locationX>
+        <locationY>290</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Post_Code_MDM_record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SPEN_PostCode__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Case_Details.SPEN_Postcode_PowerOnFormula__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SPEN_PostCodeMDM__c</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update LSOA and Local Authority on case</description>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>320</locationX>
+        <locationY>614</locationY>
+        <connector>
+            <targetReference>Success_Message</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Message_1</targetReference>
+        </faultConnector>
+        <inputReference>Get_Case_Details</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update LSOA and Local Authority on case</description>
+        <name>Update_Case_from_Input</name>
+        <label>Update Case from Input</label>
+        <locationX>962</locationX>
+        <locationY>569</locationY>
+        <faultConnector>
+            <targetReference>Error_Message_3</targetReference>
+        </faultConnector>
+        <inputReference>Get_Case_Details</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Error_Message_1</name>
+        <label>Error Message 1</label>
+        <locationX>584</locationX>
+        <locationY>722</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Error_Message1</name>
+            <fieldText>&lt;p&gt;Some error occurred, please contact your admin!&lt;/p&gt;&lt;p&gt;Error - {!$Flow.FaultMessage}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Error_Message_2</name>
+        <label>Error Message 2</label>
+        <locationX>816</locationX>
+        <locationY>397</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assign_LSOA_and_LA_From_Screen</targetReference>
+        </connector>
+        <fields>
+            <name>Error_Message</name>
+            <fieldText>&lt;p&gt;No Local Authority and LSOA found for the given post code.&lt;/p&gt;&lt;p&gt;Please fill in if you know the local authority and LSOA, else contact your support team.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Local_Authority_Picklist</name>
+            <choiceReferences>LOVPicklistCollection</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Local Authority</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>LSOA</name>
+            <dataType>String</dataType>
+            <fieldText>LSOA</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>&lt;p&gt;Use LSOA code like S01006514&lt;/p&gt;</helpText>
+            <isRequired>false</isRequired>
+        </fields>
+        <nextOrFinishButtonLabel>Finish</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Error_Message_3</name>
+        <label>Error Message 3</label>
+        <locationX>963</locationX>
+        <locationY>801</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Error_Message3</name>
+            <fieldText>&lt;p&gt;Some error occurred, please contact your admin!&lt;/p&gt;&lt;p&gt;Error - {!$Flow.FaultMessage}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Success_Message</name>
+        <label>Success Message</label>
+        <locationX>320</locationX>
+        <locationY>722</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Success</name>
+            <fieldText>&lt;p&gt;Case updated successfully!&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Post Code : &lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!Get_Case_Details.SPEN_Postcode_PowerOnFormula__c}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;LSOA : &lt;/strong&gt;{!Get_Post_Code_MDM_details.SPEN_LSOA__c}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Local Authority : &lt;/strong&gt;{!Get_Post_Code_MDM_details.SPEN_LocalAuthority__c}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>458</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Get_Case_Details</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>LocalAuthorityCollection</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Variable to store the caseID from which flow is invoked</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SelectedLocalAuthority</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>UniqueCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>SPEN_PostCodeMDM__c</objectType>
+    </variables>
+</Flow>

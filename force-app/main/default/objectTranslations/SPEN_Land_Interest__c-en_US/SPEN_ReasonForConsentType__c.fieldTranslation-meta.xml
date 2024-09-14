@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Consent Type Change --></label>
+    <name>SPEN_ReasonForConsentType__c</name>
+    <picklistValues>
+        <masterLabel>Business request (PM)</masterLabel>
+        <translation><!-- Business request (PM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landowner has requested a permanent land right</masterLabel>
+        <translation><!-- Landowner has requested a permanent land right --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landowner unwilling to grant DoS / Easement</masterLabel>
+        <translation><!-- Landowner unwilling to grant DoS / Easement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landowner unwilling to grant WL</masterLabel>
+        <translation><!-- Landowner unwilling to grant WL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landowner unwilling to grant voluntary land right</masterLabel>
+        <translation><!-- Landowner unwilling to grant voluntary land right --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project has requested a permanent land right</masterLabel>
+        <translation><!-- Project has requested a permanent land right --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reduction in Rights compliance</masterLabel>
+        <translation><!-- Reduction in Rights compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Servitude/Easement not completed</masterLabel>
+        <translation><!-- Servitude/Easement not completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statutory Land Rights not compliant with programme</masterLabel>
+        <translation><!-- Statutory Land Rights not compliant with programme --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voluntary permanent land right secured</masterLabel>
+        <translation><!-- Voluntary permanent land right secured --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

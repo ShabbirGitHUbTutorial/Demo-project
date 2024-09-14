@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Statutory Land Right Status --></label>
+    <name>SPEN_CompulsoryStatus__c</name>
+    <picklistValues>
+        <masterLabel>Awaiting Decision</masterLabel>
+        <translation><!-- Awaiting Decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Design</masterLabel>
+        <translation><!-- Awaiting Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decision Received</masterLabel>
+        <translation><!-- Decision Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Hearing</masterLabel>
+        <translation><!-- In Hearing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Negotiation</masterLabel>
+        <translation><!-- In Negotiation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Preparation</masterLabel>
+        <translation><!-- In Preparation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Written Representation</masterLabel>
+        <translation><!-- In Written Representation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Objected</masterLabel>
+        <translation><!-- Objected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted</masterLabel>
+        <translation><!-- Submitted --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

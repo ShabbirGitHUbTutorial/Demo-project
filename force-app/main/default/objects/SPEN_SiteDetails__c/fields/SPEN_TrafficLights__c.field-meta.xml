@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TrafficLights__c</fullName>
+    <label>Traffic Lights</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2-Way</fullName>
+                <default>false</default>
+                <label>2-Way</label>
+            </value>
+            <value>
+                <fullName>3-Way</fullName>
+                <default>false</default>
+                <label>3-Way</label>
+            </value>
+            <value>
+                <fullName>4-Way</fullName>
+                <default>false</default>
+                <label>4-Way</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

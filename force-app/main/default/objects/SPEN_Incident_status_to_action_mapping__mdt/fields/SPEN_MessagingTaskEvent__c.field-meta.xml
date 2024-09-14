@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MessagingTaskEvent__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Messaging Task Event</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3-Hour Comfort Call</fullName>
+                <default>false</default>
+                <label>3-Hour Comfort Call</label>
+            </value>
+            <value>
+                <fullName>3rd Call Received</fullName>
+                <default>false</default>
+                <label>3rd Call Received</label>
+            </value>
+            <value>
+                <fullName>Dropped Supply with Notice</fullName>
+                <default>false</default>
+                <label>Dropped Supply with Notice</label>
+            </value>
+            <value>
+                <fullName>Dropped Supply without Notice</fullName>
+                <default>false</default>
+                <label>Dropped Supply without Notice</label>
+            </value>
+            <value>
+                <fullName>Estimated Restoration Time Extended</fullName>
+                <default>false</default>
+                <label>Estimated Restoration Time Extended</label>
+            </value>
+            <value>
+                <fullName>Incident Created</fullName>
+                <default>false</default>
+                <label>Incident Created</label>
+            </value>
+            <value>
+                <fullName>Incident Restored</fullName>
+                <default>false</default>
+                <label>Incident Restored</label>
+            </value>
+            <value>
+                <fullName>Resource Arrival On Site</fullName>
+                <default>false</default>
+                <label>Resource Arrival On Site</label>
+            </value>
+            <value>
+                <fullName>Resource Dispatched</fullName>
+                <default>false</default>
+                <label>Resource Dispatched</label>
+            </value>
+            <value>
+                <fullName>HV proactive contact</fullName>
+                <default>false</default>
+                <label>HV proactive contact</label>
+            </value>
+            <value>
+                <fullName>3HourComfortCall</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3HourComfortCall</label>
+            </value>
+            <value>
+                <fullName>3rdCall</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3rdCall</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Created</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Created</label>
+            </value>
+            <value>
+                <fullName>Delog</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Delog</label>
+            </value>
+            <value>
+                <fullName>Dispatch</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dispatch</label>
+            </value>
+            <value>
+                <fullName>DroppedSupplyWithNotice</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DroppedSupplyWithNotice</label>
+            </value>
+            <value>
+                <fullName>DroppedSupplyWithoutNotice</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DroppedSupplyWithoutNotice</label>
+            </value>
+            <value>
+                <fullName>Emergency</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Emergency</label>
+            </value>
+            <value>
+                <fullName>ExtendedRestorationTime</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ExtendedRestorationTime</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>On Site</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>On Site</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

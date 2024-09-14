@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Work Item Routing --></label>
+    <name>SPEN_WorkItemRouting__c</name>
+    <picklistValues>
+        <masterLabel>1 Hr SLA North</masterLabel>
+        <translation><!-- 1 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 Hr SLA South</masterLabel>
+        <translation><!-- 1 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 Hr SLA North</masterLabel>
+        <translation><!-- 2 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 Hr SLA South</masterLabel>
+        <translation><!-- 2 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Min SLA North</masterLabel>
+        <translation><!-- 30 Min SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Min SLA South</masterLabel>
+        <translation><!-- 30 Min SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Hr SLA North</masterLabel>
+        <translation><!-- 4 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Hr SLA North-Lowest</masterLabel>
+        <translation><!-- 4 Hr SLA North-Lowest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Hr SLA South</masterLabel>
+        <translation><!-- 4 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 Hr SLA South-Lowest</masterLabel>
+        <translation><!-- 4 Hr SLA South-Lowest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 Hr SLA North</masterLabel>
+        <translation><!-- 7 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 Hr SLA South</masterLabel>
+        <translation><!-- 7 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>72 Hr SLA North</masterLabel>
+        <translation><!-- 72 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>72 Hr SLA South</masterLabel>
+        <translation><!-- 72 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 Hr SLA North</masterLabel>
+        <translation><!-- 8 Hr SLA North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 Hr SLA South</masterLabel>
+        <translation><!-- 8 Hr SLA South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRSWA - 2 Business Hours</masterLabel>
+        <translation><!-- NRSWA - 2 Business Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks - 5 Working Days</masterLabel>
+        <translation><!-- Streetworks - 5 Working Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks- 2 Business Hours</masterLabel>
+        <translation><!-- Streetworks- 2 Business Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks-13 Working Days</masterLabel>
+        <translation><!-- Streetworks-13 Working Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks-14 Calendar Days</masterLabel>
+        <translation><!-- Streetworks-14 Calendar Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks-15 Calendar Weeks</masterLabel>
+        <translation><!-- Streetworks-15 Calendar Weeks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks-2 Working Hours</masterLabel>
+        <translation><!-- Streetworks-2 Working Hours --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks-3 Working Days</masterLabel>
+        <translation><!-- Streetworks-3 Working Days --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Streetworks-35 Calendar Days</masterLabel>
+        <translation><!-- Streetworks-35 Calendar Days --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

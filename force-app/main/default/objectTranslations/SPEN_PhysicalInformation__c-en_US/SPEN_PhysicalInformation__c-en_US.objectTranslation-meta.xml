@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Physical Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Physical Information</value>
+    </caseValues>
+    <layouts>
+        <layout>Physical Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Sync to SAP --></label>
+        <name>SPEN_SynctoSAP</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please sync the record to SAP in order to get Item Id before putting values for Item Received On and Item Received Remark --></errorMessage>
+        <name>SPEN_ItemIdMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Item requested date or Item received date cannot be future date and time --></errorMessage>
+        <name>SPEN_PreventFutureDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Item Received On can&apos;t be less than the Item Requested Date --></errorMessage>
+        <name>SPEN_ReceivedDtNotLessThanRequestedDt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Item Requested Date and Time can not be less than Case Transferred Date Time In SAP --></errorMessage>
+        <name>SPEN_RequestedDtNotLessThanTransferedDt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill up Item Received Remark --></errorMessage>
+        <name>SPEN_RequestedRemarkMand</name>
+    </validationRules>
+</CustomObjectTranslation>

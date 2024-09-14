@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CW6_SHUTDOWN</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>SPEN_PremiseID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_SubstationName__c</field>
+        <operation>equals</operation>
+        <value>07/1674/003/P-NARROW LANE</value>
+    </filters>
+    <filters>
+        <field>SPEN_FeederNo__c</field>
+        <operation>equals</operation>
+        <value>40</value>
+    </filters>
+    <filters>
+        <field>SPEN_SubstationENID__c</field>
+        <operation>equals</operation>
+        <value>10257084U</value>
+    </filters>
+    <filters>
+        <field>SPEN_SubstationTXLink__c</field>
+        <operation>equals</operation>
+        <value>10294219U</value>
+    </filters>
+    <label>DROPPED SUPPLY BY SUBSTATION NAME</label>
+</ListView>

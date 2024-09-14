@@ -1,0 +1,78 @@
+<template>
+    <lightning-quick-action-panel header="Create Related Records">
+        <template if:true={showLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+        </template>
+        <div class="slds-modal__content slds-p-around_medium"> 
+            <div class="slds-grid slds-p-around_x-medium">
+                <strong><p>Parent Case:&nbsp;&nbsp;&nbsp;</p></strong> <p>{parentCaseNumber} </p>
+            </div> 
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                    <lightning-input type ="text" label="Case Number/Project Name" value={searchVal} required="true" onchange={handleSearchChange}
+                                    minlength="4" message-when-too-short="Please input more than 3 characters.">
+                    </lightning-input>
+
+                    <lightning-combobox name="stageValue" label="Stage" value={stageVal} 
+                                        placeholder="Please Select" options={stageValues} onchange={handleStageChange}>
+                    </lightning-combobox>
+                </div>
+                <!-- <div class="slds-col slds-size_4-of-12 slds-p-around_x-small">
+                    
+                </div> -->
+                <div class="slds-col slds-size_1-of-2 slds-p-around_x-small">
+                    
+                    <lightning-combobox name="typeValue" label="Type" value={typeVal} 
+                                        placeholder="Please Select" options={typeValues} onchange={handleTypeChange}>
+                    </lightning-combobox>
+                    <!-- <div class="slds-p-around_x-small">
+
+                    </div> -->
+                    <lightning-combobox name="relationValue" label="Relationship" value={relationVal} 
+                                        placeholder="Please Select" options={relationshipValues} onchange={handleRelationChange}>
+                    </lightning-combobox>
+                    
+                    <lightning-combobox name="queueValue" label="Queue Position" value={queueVal} 
+                                        placeholder="Please Select" options={queueValues} onchange={handleQueueChange} disabled={queueEnable}>
+                    </lightning-combobox>
+                    
+                </div>
+            </div>
+            <div class="slds-p-around_x-small">
+                <div class="slds-float_right" style = "margin-right:10px;">
+                    <button class="slds-button slds-button--brand " style="background-color: #5d9732;"
+                    onclick={handleSearch}>Search</button>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <template if:true={records}>
+                <div class="slds-p-around_x-small resultClass">
+                    <lightning-datatable
+                        key-field="id"
+                        data={records}
+                        columns={searchResultColumns}
+                        onrowselection={getSelectedRows}
+                        >
+                    </lightning-datatable>
+                </div>
+                <div class="slds-p-around_x-small">
+                    <div class="slds-float_right" style = "margin-right:10px;">
+                        <button class="slds-button slds-button--brand " style="background-color: #5d9732;"
+                        onclick={handleFinish}>Finish</button>
+                    </div>
+                </div>
+            </template>
+            <template if:true={noResult}>
+                <div class="slds-p-around_x-small resultClassExt">
+                    <strong><p style="color:red;font-family:verdana;font-size:20px">No Records found!!</p></strong>
+                </div>
+            </template>
+            <template if:true={errors}>
+                <div class="slds-p-around_x-small resultClassExt">
+                    <strong><p style="color:red;font-family:verdana;font-size:20px">{errors}</p></strong>
+                </div>
+            </template>
+        </div>
+    </lightning-quick-action-panel>
+</template>

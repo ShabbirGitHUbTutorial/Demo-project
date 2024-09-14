@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <description>Checking for Creating or updating contact account record</description>
+        <name>SPEN_Create_or_Update_ContactAccount_Record</name>
+        <label>Create or Update Contact Account Record</label>
+        <locationX>328</locationX>
+        <locationY>328</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SPEN_Record_checking</name>
+            <conditionLogic>((1 OR 3 ) AND 2)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SPEN_IsPrimaryContact__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.AccountId</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SPEN_Contact</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SPEN_Create_Account_Record</targetReference>
+            </connector>
+            <label>Record checking</label>
+        </rules>
+    </decisions>
+    <description>As soon as contact get created create a account record with name details from contact
+Only for Primary contact account needs to be created automatically else not + Bypass.</description>
+    <environments>Default</environments>
+    <interviewLabel>SPEN_ContactTriggerFlow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SPEN Contact Trigger Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creating Account record from Contact record</description>
+        <name>SPEN_Create_Account_Record</name>
+        <label>Create Account Record</label>
+        <locationX>543</locationX>
+        <locationY>318</locationY>
+        <connector>
+            <targetReference>SPEN_Updating_Contact_Account_record</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <stringValue>{!$Record.FirstName} {!$Record.MiddleName} {!$Record.LastName}</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SPEN_ExternalID__c</field>
+            <value>
+                <elementReference>$Record.SPEN_CustomerID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>SPEN_Updating_Contact_Account_record</name>
+        <label>Updating Contact Account record</label>
+        <locationX>709</locationX>
+        <locationY>318</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>SPEN_Create_Account_Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>208</locationX>
+        <locationY>24</locationY>
+        <connector>
+            <targetReference>SPEN_Create_or_Update_ContactAccount_Record</targetReference>
+        </connector>
+        <filterFormula>NOT({!$Permission.SPEN_BypassFlowContact})</filterFormula>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

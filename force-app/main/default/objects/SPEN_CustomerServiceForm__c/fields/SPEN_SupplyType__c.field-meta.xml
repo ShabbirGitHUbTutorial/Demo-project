@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SupplyType__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field use to store the supply type
+Used in LV Service Termination Survey forms</description>
+    <label>Supply type</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal mains</fullName>
+                <default>false</default>
+                <label>Internal mains</label>
+            </value>
+            <value>
+                <fullName>U/G service</fullName>
+                <default>false</default>
+                <label>U/G service</label>
+            </value>
+            <value>
+                <fullName>OHL</fullName>
+                <default>false</default>
+                <label>OHL</label>
+            </value>
+            <value>
+                <fullName>Mural wiring</fullName>
+                <default>false</default>
+                <label>Mural wiring</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ApplicationType__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is for Transmission Process</description>
+    <label>Application Type</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>New Onshore Supply Point</fullName>
+                <default>false</default>
+                <label>New Onshore Supply Point</label>
+            </value>
+            <value>
+                <fullName>SOW</fullName>
+                <default>false</default>
+                <label>SOW</label>
+            </value>
+            <value>
+                <fullName>BELLA (Dist)</fullName>
+                <default>false</default>
+                <label>BELLA (Dist)</label>
+            </value>
+            <value>
+                <fullName>BELLA (Trans)</fullName>
+                <default>false</default>
+                <label>BELLA (Trans)</label>
+            </value>
+            <value>
+                <fullName>BEGA (Dist)</fullName>
+                <default>false</default>
+                <label>BEGA (Dist)</label>
+            </value>
+            <value>
+                <fullName>BEGA (Trans)</fullName>
+                <default>false</default>
+                <label>BEGA (Trans)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

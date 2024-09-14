@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Household/Business --></label>
+    <name>SPEN_TypeofHouseholdBusiness__c</name>
+    <picklistValues>
+        <masterLabel>Commercial -  Farming and agriculture</masterLabel>
+        <translation><!-- Commercial -  Farming and agriculture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial - Production</masterLabel>
+        <translation><!-- Commercial - Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Family</masterLabel>
+        <translation><!-- Domestic - Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Lone person</masterLabel>
+        <translation><!-- Domestic - Lone person --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domestic - Student</masterLabel>
+        <translation><!-- Domestic - Student --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

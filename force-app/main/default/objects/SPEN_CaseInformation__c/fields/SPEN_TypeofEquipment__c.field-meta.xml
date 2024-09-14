@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TypeofEquipment__c</fullName>
+    <label>Type of Equipment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Maximum demand of proposed equipment</fullName>
+                <default>false</default>
+                <label>Maximum demand of proposed equipment</label>
+            </value>
+            <value>
+                <fullName>Device Class</fullName>
+                <default>false</default>
+                <label>Device Class</label>
+            </value>
+            <value>
+                <fullName>Device System Ref</fullName>
+                <default>false</default>
+                <label>Device System Ref</label>
+            </value>
+            <value>
+                <fullName>ENALCT Dataset</fullName>
+                <default>false</default>
+                <label>ENALCT Dataset</label>
+            </value>
+            <value>
+                <fullName>BATTERY</fullName>
+                <default>false</default>
+                <label>BATTERY</label>
+            </value>
+            <value>
+                <fullName>EVCP_DC</fullName>
+                <default>false</default>
+                <label>EVCP_DC</label>
+            </value>
+            <value>
+                <fullName>EVCP_AC</fullName>
+                <default>false</default>
+                <label>EVCP_AC</label>
+            </value>
+            <value>
+                <fullName>HP</fullName>
+                <default>false</default>
+                <label>HP</label>
+            </value>
+            <value>
+                <fullName>V2G_INVERTER</fullName>
+                <default>false</default>
+                <label>V2G_INVERTER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>GE Voice SPM - GE Complaints</name>
+    <queueMembers>
+        <users>
+            <user>claire.mansell@spenergynetworks.co.uk.spencrm</user>
+            <user>c.macphee@spenergynetworks.co.uk.spencrm</user>
+            <user>dpowell@spenergynetworks.co.uk.spencrm</user>
+            <user>d.conway@spenergynetworks.co.uk.spencrm</user>
+            <user>gsmith@spenergynetworks.co.uk.spencrm</user>
+            <user>jclarke@spenergynetworks.co.uk.spencrm</user>
+            <user>j.jones@spenergynetworks.co.uk.spencrm</user>
+            <user>j.gallwey@spenergynetworks.co.uk.spencrm</user>
+            <user>joanna.hawthorne@spenergynetworks.co.uk.spencrm</user>
+            <user>kgreenough@spenergynetworks.co.uk.spencrm</user>
+            <user>k.barrett@spenergynetworks.co.uk.spencrm</user>
+            <user>kthomas@spenergynetworks.co.uk.spencrm</user>
+            <user>l.bryan@spenergynetworks.co.uk.spencrm</user>
+            <user>lmurphy@spenenergynetworks.co.uk.spencrm</user>
+            <user>louise.williams@spenergynetworks.co.uk.spencrm</user>
+            <user>nicholas.davies@spenergynetworks.co.uk.spencrm</user>
+            <user>n.burgess@spenergynetworks.co.uk.spencrm</user>
+            <user>nsutherland@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

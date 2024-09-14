@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_DeliveryCase</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>SPEN_Case__c</columns>
+    <columns>SPEN_CaseStatus__c</columns>
+    <columns>SPEN_CaseOwner__c</columns>
+    <columns>SPEN_CaseDistrict__c</columns>
+    <columns>SPEN_GSCallStatus__c</columns>
+    <columns>SPEN_GSCallCompletionDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_CaseStatus__c</field>
+        <operation>equals</operation>
+        <value>Delivery</value>
+    </filters>
+    <filters>
+        <field>SPEN_CaseStatus__c</field>
+        <operation>equals</operation>
+        <value>Delivery Work Planning</value>
+    </filters>
+    <label>Delivery Case</label>
+</ListView>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NRSWA</fullName>
+    <active>true</active>
+    <label>NRSWA</label>
+    <picklistValues>
+        <picklist>SPEN_NoticePermitReq__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RoadCategory__c</picklist>
+        <values>
+            <fullName>Cat 0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat 4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Sensitivity__c</picklist>
+        <values>
+            <fullName>Non-T%2FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T%2FS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SurfaceType__c</picklist>
+        <values>
+            <fullName>Carriageway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cycleway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footpath</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unmade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verge</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_TrafficLights__c</picklist>
+        <values>
+            <fullName>2-Way</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3-Way</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4-Way</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_TrafficManagement__c</picklist>
+        <values>
+            <fullName>Contraflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convoy Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Give %26 Take</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Give %26 Take Traffic Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard Shoulder Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lane Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multi Way Signals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No C%2FW Incursion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Obstruction on C%2FW or F%2FW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Traffic Lights %28TTLS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priority System Traffic Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Priority Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Road Narrowing %28Two Way Working%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slip Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Some C%2FW Incursion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stop%2FGo Boards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stop%2FGo Boards Traffic Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic Management Not Yet Known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two Way Signals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Works Entirely on the Footway</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

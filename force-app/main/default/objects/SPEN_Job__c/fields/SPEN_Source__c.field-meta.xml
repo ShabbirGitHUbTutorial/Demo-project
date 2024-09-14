@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Source__c</fullName>
+    <description>Created as part of ESC-39.</description>
+    <label>Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email North</fullName>
+                <default>false</default>
+                <label>Email North</label>
+            </value>
+            <value>
+                <fullName>Email South</fullName>
+                <default>false</default>
+                <label>Email South</label>
+            </value>
+            <value>
+                <fullName>L&amp;P</fullName>
+                <default>false</default>
+                <label>L&amp;P</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+            <value>
+                <fullName>Email LV Claims</fullName>
+                <default>false</default>
+                <label>Email LV Claims</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

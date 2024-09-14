@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>FSL__CrewManagement</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Permission set used to give the user crew management permissions</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FS Crew Management Permissions</label>
+    <pageAccesses>
+        <apexPage>FSL__CrewManagement</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>FSL__CrewsResourceLightbox</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>FSL__CrewsSaLightbox</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>FSL__CrewsWorkorderLightbox</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>FSL__CrewsWorkorderLineItemLightbox</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <tabSettings>
+        <tab>SPEN_FS_CrewManagement</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
+</PermissionSet>

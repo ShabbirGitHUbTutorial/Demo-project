@@ -1,0 +1,87 @@
+<template>
+    <br>
+    <lightning-card title="Design Checklist Details">
+        <template if:false={renderFlow}>
+            <div if:true={isDisableChecklist} style="text-align: right;">        
+                <lightning-button label="Enable Checklist" disabled class="slds-m-left_x-small"></lightning-button>
+            </div>
+            <div if:false={isDisableChecklist} style="text-align: right;">        
+                <lightning-button label="Enable Checklist" onclick={handleEnableChecklist} class="slds-m-left_x-small"></lightning-button>
+            </div>
+        </template>
+    <div class="custom-combolabel">
+        <label>Design Checklist Request</label>
+        <lightning-combobox
+                name="designChecklistRequest"
+                value={selectedDCRId}
+                placeholder="Request List in dropdown "
+                options={designChecklistRequestoptions}
+                onchange={handleChangeDCR} >
+        </lightning-combobox>
+    </div>
+    <div class="custom-section">
+        <h2>Design Checklist Summary</h2>
+    </div>
+    <div class="c-container">
+        <lightning-layout vertical-align="center" class="x-large">
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <h2>Total Design Information</h2> 
+                    <h1 class="custom-h1">{totalDesignInformation}</h1>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <h2>Completed Design Information</h2> 
+                    <h1 class="custom-h1">{completedDesignInformation}</h1>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <h2>Design Completion</h2> 
+                    <h1 class="custom-h1">{designCompletion}</h1>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+    <div class="custom-section">
+        <h2>Design Information Details</h2>
+    </div>
+   
+    <template if:true={dIlist}>
+        <div class="custom-combolabel">
+            <label>Design Groups</label>
+            <lightning-combobox
+                    name="designcategories"
+                    value={selectedCategory}
+                    placeholder="Search Group"
+                    options={designCatagoryoptions}
+                    onchange={handleChangeCategory} >
+            </lightning-combobox>
+        </div><br>
+        <c-l-w-c-custom-datatable-type
+            key-field="Id"
+            data={dIlist} 
+            columns={columns} 
+            onvalueselect={handleSelection}
+            draft-values={draftValues} 
+            oncellchange={handleCellChange}
+            onsave={handleSave}
+            oncancel={handleCancel}
+            hide-checkbox-column>
+        </c-l-w-c-custom-datatable-type> 
+    </template>    
+    <template if:true={error}>
+    Some error occured.
+    </template>
+    </lightning-card>
+    
+    <template if:true={renderFlow}>
+        <lightning-flow
+                flow-api-name='SPENCreateDesignChecklistDesignInformation'
+                flow-input-variables={inputVariables}
+                onstatuschange={handleStatusChange}
+        >
+        </lightning-flow>
+    </template>
+</template>

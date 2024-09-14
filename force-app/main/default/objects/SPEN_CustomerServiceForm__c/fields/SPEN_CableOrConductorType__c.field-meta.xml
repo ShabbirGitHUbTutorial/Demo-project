@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CableOrConductorType__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the cable or conductor type
+Used in LV Service Termination Survey forms</description>
+    <label>Cable or conductor type</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ABC</fullName>
+                <default>false</default>
+                <label>ABC</label>
+            </value>
+            <value>
+                <fullName>Concentric</fullName>
+                <default>false</default>
+                <label>Concentric</label>
+            </value>
+            <value>
+                <fullName>VIR/mackenite</fullName>
+                <default>false</default>
+                <label>VIR/mackenite</label>
+            </value>
+            <value>
+                <fullName>HSOS</fullName>
+                <default>false</default>
+                <label>HSOS</label>
+            </value>
+            <value>
+                <fullName>Under eaves</fullName>
+                <default>false</default>
+                <label>Under eaves</label>
+            </value>
+            <value>
+                <fullName>Tape armoured</fullName>
+                <default>false</default>
+                <label>Tape armoured</label>
+            </value>
+            <value>
+                <fullName>PILC</fullName>
+                <default>false</default>
+                <label>PILC</label>
+            </value>
+            <value>
+                <fullName>Hybrid concentric</fullName>
+                <default>false</default>
+                <label>Hybrid concentric</label>
+            </value>
+            <value>
+                <fullName>Split concentric</fullName>
+                <default>false</default>
+                <label>Split concentric</label>
+            </value>
+            <value>
+                <fullName>Looped service</fullName>
+                <default>false</default>
+                <label>Looped service</label>
+            </value>
+            <value>
+                <fullName>VIR cabling</fullName>
+                <default>false</default>
+                <label>VIR cabling</label>
+            </value>
+            <value>
+                <fullName>Bubsar riser</fullName>
+                <default>false</default>
+                <label>Bubsar riser</label>
+            </value>
+            <value>
+                <fullName>Pyro cable</fullName>
+                <default>false</default>
+                <label>Pyro cable</label>
+            </value>
+            <value>
+                <fullName>Undersized PVC</fullName>
+                <default>false</default>
+                <label>Undersized PVC</label>
+            </value>
+            <value>
+                <fullName>PVC looped neutral</fullName>
+                <default>false</default>
+                <label>PVC looped neutral</label>
+            </value>
+            <value>
+                <fullName>Concentric - LSOH</fullName>
+                <default>false</default>
+                <label>Concentric - LSOH</label>
+            </value>
+            <value>
+                <fullName>Concentric - old</fullName>
+                <default>false</default>
+                <label>Concentric - old</label>
+            </value>
+            <value>
+                <fullName>Concentric - CNE</fullName>
+                <default>false</default>
+                <label>Concentric - CNE</label>
+            </value>
+            <value>
+                <fullName>Lead covered</fullName>
+                <default>false</default>
+                <label>Lead covered</label>
+            </value>
+            <value>
+                <fullName>Wire armour</fullName>
+                <default>false</default>
+                <label>Wire armour</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

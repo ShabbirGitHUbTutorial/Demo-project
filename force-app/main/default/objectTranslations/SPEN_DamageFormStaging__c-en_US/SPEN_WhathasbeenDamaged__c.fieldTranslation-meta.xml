@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What has been Damaged --></label>
+    <name>SPEN_WhathasbeenDamaged__c</name>
+    <picklistValues>
+        <masterLabel>Cable</masterLabel>
+        <translation><!-- Cable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cable Head</masterLabel>
+        <translation><!-- Cable Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LV Pillar</masterLabel>
+        <translation><!-- LV Pillar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O/H Line</masterLabel>
+        <translation><!-- O/H Line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pole</masterLabel>
+        <translation><!-- Pole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sub Station</masterLabel>
+        <translation><!-- Sub Station --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switch Gear</masterLabel>
+        <translation><!-- Switch Gear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unmetered Supply</masterLabel>
+        <translation><!-- Unmetered Supply --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

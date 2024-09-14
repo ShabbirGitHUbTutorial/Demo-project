@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PremiseDistrict__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>21.6.23: as aligned with Lauren in context of CRMD-430: this field is not in use at all in PROD (populated for 5 records only) --&gt; NO LONGER RELEVANT &amp; candidate for deletion.</description>
+    <label>District</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>SPEN_Zone__c.SPEN_Type__c</field>
+            <operation>equals</operation>
+            <value>District</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>SPEN_Zone__c</referenceTo>
+    <relationshipLabel>Premises (District)</relationshipLabel>
+    <relationshipName>Premises1</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

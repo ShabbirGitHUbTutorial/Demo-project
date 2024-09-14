@@ -1,0 +1,555 @@
+<!--
+   @description       : GS6 Form
+   @author            : PATC
+   @group             : 
+   @last modified on  : 23-05-2024
+   @last modified by  : PATC
+   -->
+   <template>
+	<lightning-card title=""> 
+
+		<!--PAGE intro-->
+		<template if:true={pageIntro}>
+			<div class="slds-grid slds-wrap">
+				<!-- <div class="slds-align_absolute-center">
+					<img alt="" src={logoUrl} class="slds-align_absolute-center slds-col slds-size_1-of-1"/>   
+				</div>
+				<div if:true={formVisible} class="slds-align_absolute-center slds-col slds-size_1-of-1">
+					<h1 class="slds-text-heading_medium slds-m-bottom_medium">
+						GS6 Guidance
+					</h1>
+				</div> -->
+				<div if:true={formVisible} class="slds-col slds-size_1-of-1">
+					<h1 class="slds-text-heading_medium slds-m-bottom_medium margin-left-2">
+						<b>Reporting overhead electric power lines safety</b>
+					</h1>
+				</div>
+				<p if:true={formVisible} class="margin-left-2 margin-right-1 font-size-14">
+					The Health and Safety Executive issue guidance note GS6 - Avoidance of danger from overhead electric power lines.<br><br>
+					Following the guidance is not compulsory and you are free to take another action. But if you do not follow the guidance you may not be doing enough to comply with the law.<br><br>
+					Healthy and Safety inspectors seek to secure compliance with the law and may refer to GS6 as illustrating good practice.<br><br>
+					The safety clearance in this document apply when it is decided that work must be carried out in proximity to live overhead lines.<br><br>
+					This information is for employers and employees who are supervising or in control of work near live overhead electric power lines, but it will also be useful for those who are carrying
+					out the work.
+				</p>
+				
+				<div if:true={formVisible} class="slds-col slds-size_1-of-1">
+					<h1 class="slds-text-heading_small slds-m-bottom_medium margin-left-2 margin-top-7">
+						<b>What we will require</b>
+					</h1>
+				</div>
+				<ul if:true={formVisible} class="margin-left-2 font-size-14">
+					<li>• Job number</li> 
+					<li>• Location information</li>
+					<li>• Overhead clearance details</li>
+					<li>• Site contact including signature</li> 
+				</ul>
+				<br><br>
+				<div class="slds-col slds-size_1-of-1 slds-float_right">
+					<lightning-button variant="Success" label="Start >" title="Next" onclick={handleNextPage} class="slds-m-left_x-small slds-float_right default-margin"></lightning-button>
+				</div>
+			</div>
+		</template>
+		<div if:false={formVisible} class="submit-screen">
+			<div if:false={formVisible} class="slds-col slds-size_1-of-1 icon-margin">
+				<lightning-icon icon-name="utility:check" size="large" class='green-utility-icon'></lightning-icon>
+			</div>
+			<div if:false={formVisible} class="slds-col slds-size_1-of-1 header-margin">
+				<h1 class="slds-text-heading_large">
+					<b> Thank you for reporting this.</b>
+				</h1>
+			</div>
+			<div if:false={formVisible} class="slds-col slds-size_1-of-1">
+				<p class="font-size-14 spaceBetweenP">
+					An email has been sent to the site contact with the GS6 guidance.
+				</p>
+				<br>
+				<p class="font-size-14 spaceBetweenP">
+					Each year, contact with live electric overhead lines results in death and serious injuries.
+				</p>
+				<br>
+				<p class="font-size-14 spaceBetweenP">
+					The guidance is designed to prevent such incidents.
+				</p>
+				<br>
+				<p class="font-size-14">
+					Thank you for providing an excellent service.
+				</p>
+
+			</div>
+		</div>
+		<lightning-record-edit-form if:true={formVisible} object-api-name="SPEN_SafetyForm__c" onsubmit= {createForm}>
+			<div class="slds-grid slds-wrap">
+
+						<!--PAGE 1-->
+				<template if:true={page1}>
+					<div class="slds-col slds-size_1-of-1 page-header-padding">
+						<div class="slds-text-body_small">
+							Step 1 of 4
+						</div>
+					</div>
+					<div class="slds-col slds-size_1-of-1 slds-float_left page-header-padding header-container">
+						
+						<h1 class="slds-text-heading_medium"><strong>Job information</strong></h1>
+						<lightning-button
+							class = "slds-float_right gs6-guide margin-right-1"
+							variant="base"
+							icon-name="utility:info_alt"
+							label="GS6 Guide"
+							title="GS6 Guide"
+							onclick={handleGS6Guide}
+							>
+						</lightning-button>
+						
+					</div>
+					<div class="slds-col slds-size_1-of-1 page-header-padding sub-header-margin">
+						<p>Need to know the details of where this crossing is.
+						</p>
+					</div>
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_JobNumber__c" 
+							name="SPEN_JobNumber__c" 
+							value={jobNumber} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+				 	<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_District__c" 
+							name="SPEN_District__c" 
+							value={districtName} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div> 
+					<div class="slds-col slds-size_1-of-1 slds-float_left page-header-padding header-container sub-header-top-margin" >
+						<h1 class="slds-text-heading_medium"><strong>Site contact</strong></h1>
+					</div>
+					<div class="slds-col slds-size_1-of-1 page-header-padding sub-header-margin">
+						<p>These are the details of the person who will be receiving the GS6 documentation.
+						</p>
+					</div>
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_SiteContact__c" 
+							name="SPEN_SiteContact__c" 
+							value={formRecord.SPEN_SiteContact__c} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_TelephoneDetails__c" 
+							name="SPEN_TelephoneDetails__c" 
+							value={formRecord.SPEN_TelephoneDetails__c} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<div class="slds-col slds-size_1-of-1 div-margin">
+						<abbr for="email" class="slds-required">*</abbr>
+						<label  class="labels" for="email">Email address<br><p class="subLabels">Separate multiple addresses with a comma</p></label>
+						<lightning-input-field 
+							id="email"
+							field-name="SPEN_CustomerEmail__c"
+							variant="label-hidden" 
+							name="SPEN_CustomerEmail__c" 
+							value={formRecord.SPEN_CustomerEmail__c} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<div class="slds-col slds-size_1-of-1 slds-float_left page-header-padding header-container header-margin" >
+						<h1 class="slds-text-heading_medium"><strong>Location</strong></h1>
+					</div> 
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_NameOfContractorLandOwner__c" 
+							name="SPEN_NameOfContractorLandOwner__c" 
+							value={formRecord.SPEN_NameOfContractorLandOwner__c} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_Street__c" 
+							name="SPEN_Street__c"  
+							value={street} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_City__c" 
+							name="SPEN_City__c" 
+							value={city} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_ZipPostalCode__c" 
+							name="SPEN_ZipPostalCode__c"  
+							value={postalCode} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<br><br>
+
+					<div class="slds-size_1-of-1 slds-float_left">
+						<p class="font-size-12 default-margin" ><strong>Don't have an exact address?</strong></p>
+					</div>
+					<!-- Accordion implementation for Geolocation -->
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-accordion allow-multiple-sections-open="true" class="font-size-12">
+							<lightning-accordion-section  name="coordinatesAccordion" label="Use coordinates instead">
+								<div class="slds-col slds-size_1-of-1">
+									<lightning-input-field 
+										field-name="SPEN_CoordinateX__c" 
+										name="SPEN_CoordinateX__c" 
+										value={coordinateX}
+										onchange={handleChange}
+										readonly="true"
+										> 
+									</lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-1">
+									<lightning-input-field 
+										field-name="SPEN_CoordinateY__c" 
+										name="SPEN_CoordinateY__c" 
+										value={coordinateY}
+										onchange={handleChange}
+										readonly="true"
+									> 
+									</lightning-input-field>
+								</div>
+								<div class="slds-col slds-size_1-of-1 overflow-contents-hidden">
+									<c-s-p-e-n_-get-location-services  
+										onsavelocation={updateGeolocation}>
+									</c-s-p-e-n_-get-location-services>
+								</div>
+							</lightning-accordion-section>
+						</lightning-accordion>
+					</div>
+					<div class="slds-col slds-size_1-of-1">
+						<!-- Radio button -->
+						<lightning-radio-group name="radioGroup" label="System voltage" onchange={handleSystemVoltageChange} 
+							options={systemVoltageOptions} 
+							value={optionSelected} 
+							type="button" required>
+						</lightning-radio-group>
+					</div>
+					<div class="slds-col slds-size_1-of-1 reasonForVisit">
+						<lightning-input-field 
+							field-name="SPEN_ReasonForVisit__c" 
+							name="SPEN_ReasonForVisit__c" 
+							value={formRecord.SPEN_ReasonForVisit__c} 
+							required 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<div class="slds-col slds-size_1-of-2 slds-float_left">
+						<lightning-button variant="base" label="Back" title="Back" onclick={handlePreviousPage} class="slds-m-left_x-small slds-float_left default-margin"></lightning-button>
+					</div>
+					<div class="slds-col slds-size_1-of-2 slds-float_right">
+						<lightning-button variant="brand" label="Next" title="Next" onclick={handleNextPage} class="slds-m-left_x-small slds-float_right default-margin"></lightning-button>
+					</div>
+				</template>
+
+				<!--PAGE 2-->
+				<template if:true={page2}>
+					<div class="slds-col slds-size_1-of-1 page-header-padding slds-m-bottom_none">
+						<div class="slds-text-body_small">
+							Step 2 of 4
+						</div>
+					</div>
+					<div class="slds-col slds-size_1-of-1 slds-float_left page-header-padding header-container" >
+						<h1 class="slds-text-heading_medium"><strong>Clearance details</strong></h1>
+						<lightning-button
+							class = "slds-float_right gs6-guide"
+							variant="base"
+							icon-name="utility:info_alt"
+							label="GS6 Guide"
+							title="GS6 Guide"
+							onclick={handleGS6Guide}>
+						</lightning-button>
+					</div>
+					
+					<div class="slds-col slds-size_1-of-1 page-header-padding">
+						<p>It is critical for us to gather the correct accurate measurements 
+							for clearance.
+						</p>
+					</div>
+					<!-- Image Container -->
+					<div class="container slds-align_absolute-center slds-col slds-size_1-of-1 overflow-contents-hidden">
+						<!-- Image -->
+						<img src={gs6formUrl} alt="Background Image" class="background-image" if:true={imgContainer} />
+					</div>
+					
+					<div class="input-container">
+
+						<div class="input-meters-field">
+							<div class="slds-col slds-size_1-of-1">
+								<img src={gs6formUrl} alt="Background Image" class="background-image" if:true={polePylonNumberImgContainer} />
+								<div class="polePylonNumber"></div>
+							</div>
+							<div class="slds-col slds-size_1-of-1">
+								<!-- Input Field 1 (Left Side) -->
+								<lightning-input
+									type="text"
+									label="Pole/Pylon number"
+									name="SPEN_PolePylonNumber__c"
+									value={formRecord.SPEN_PolePylonNumber__c}
+									class="left-field"
+									required
+									onchange={handleChange}
+									onfocus={handleFocusOnMeasurementFields}
+									onblur={handleBlurOnMeasurementFields}
+									data-measurement="polePylonNumber"
+									pattern="[a-zA-Z0-9\-]+"
+									maxlength="50"
+									message-when-pattern-mismatch="Special characters are not allowed"
+								>
+								</lightning-input>
+							</div>
+						</div>
+
+						<div class="input-meters-field">
+							<div class="slds-col slds-size_1-of-1">
+								<img src={gs6formUrl} alt="Background Image" class="background-image" if:true={heightOfGoalPostImgContainer} />
+								<div class="heightOfGoalPost"></div>
+							</div>
+							<!-- Input Height of GoalPost -->
+							<lightning-input
+								type="number"
+								label="Height of goal post (metres)"
+								name="SPEN_HeightOfGoalPost__c"
+								value={formRecord.SPEN_HeightOfGoalPost__c}
+								class="height-of-Goalpost-field"
+								required
+								onchange={handleChange}
+								onfocus={handleFocusOnMeasurementFields}
+								onblur={handleBlurOnMeasurementFields}
+								data-measurement="heightOfGoalPost"
+								step="0.1"
+								pattern="[0-9]+([,\.][0-9]+)?"
+								message-when-step-mismatch="Please enter value to 1 decimal place"
+							>
+							</lightning-input> 
+							
+						</div>
+
+
+						<div class="input-meters-field">
+							<div class="slds-col slds-size_1-of-1">
+								<img src={gs6formUrl} alt="Background Image" class="background-image" if:true={safetyClearanceImgContainer} />
+								<div class="safetyClearance"></div>
+							</div>
+							<!-- Input safety Clearance -->
+							<lightning-input
+								type="number"
+								label="Safety clearance (metres)" 
+								name="SPEN_SafetyClearance__c"
+								value={formRecord.SPEN_SafetyClearance__c}
+								class="safety-clearance-field"
+								required
+								onchange={handleChange}
+								onfocus={handleFocusOnMeasurementFields}
+								onblur={handleBlurOnMeasurementFields}
+								data-measurement="safetyClearance"
+								step="0.1"
+								pattern="[0-9]+([,\.][0-9]+)?"
+								message-when-step-mismatch="Please enter value to 1 decimal place"
+							>
+							</lightning-input> 
+							
+						</div>
+
+
+						<div class="input-meters-field">
+							<div class="slds-col slds-size_1-of-1">
+								<img src={gs6formUrl} alt="Background Image" class="background-image" if:true={heightOfLowestConductorImgContainer} />
+								<div class="heightOfLowestConductor"></div>
+							</div>
+							
+							<!-- Input Height of Lowest Conductor -->
+							<lightning-input
+							type="number"
+							label="Height of lowest conductor (metres)"
+							name="SPEN_HeightOfLowestConductor__c"
+							value={formRecord.SPEN_HeightOfLowestConductor__c}
+							class="height-of-Lowest-conductor-field"
+							required
+							onchange={handleChange}
+							onfocus={handleFocusOnMeasurementFields}
+							onblur={handleBlurOnMeasurementFields}
+							data-measurement="heightOfLowestConductor"
+							step="0.1"
+							pattern="[0-9]+([,\.][0-9]+)?"
+							message-when-step-mismatch="Please enter value to 1 decimal place"
+							>
+							</lightning-input>
+						</div>
+
+						<div class="secondPolePylonNumberContainer">
+							<div class="slds-col slds-size_1-of-1">
+								<img src={gs6formUrl} alt="Background Image" class="background-image" if:true={secondPolePylonImgContainer} />
+								<div class="polePylonNumber2"></div>
+							</div>
+							<!-- Input Field 2 (Right Side) -->
+							<lightning-input
+							type="text"
+							label="Pole/Pylon number"
+							name="SPEN_PolePylonNumber2__c"
+							value={formRecord.SPEN_PolePylonNumber2__c}
+							class="right-field"
+							required
+							onchange={handleChange}
+							onfocus={handleFocusOnMeasurementFields}
+							onblur={handleBlurOnMeasurementFields}
+							data-measurement="polePylonNumber2"
+							pattern="[a-zA-Z0-9\-]+"
+							maxlength="50"
+							message-when-pattern-mismatch="Special characters are not allowed"
+							>
+							</lightning-input>
+						</div>
+								
+					</div> <!-- End of input container div-->
+
+					<br><br>
+					<div class="slds-col slds-size_1-of-1">
+						<lightning-input-field 
+							field-name="SPEN_Observations__c" 
+							name="SPEN_Observations__c" 
+							value={formRecord.SPEN_Observations__c} 
+							onchange={handleChange}
+						> 
+						</lightning-input-field>
+					</div>
+					<div class="slds-size_1-of-1 slds-m-vertical_medium"> 
+						<p><strong>Please note, multiple crossings will need
+							to be reported separately.
+						</strong></p>
+					</div>
+
+					<div class="slds-col slds-size_1-of-2 slds-float_left">
+						<lightning-button variant="base" label="Back" title="Back" onclick={handlePreviousPage} class="slds-m-left_x-small slds-float_left default-margin"></lightning-button>
+					</div>
+					<div class="slds-col slds-size_1-of-2 slds-float_right">
+						<lightning-button variant="brand" label="Next" title="Next" onclick={handleNextPage} class="slds-m-left_x-small slds-float_right default-margin"></lightning-button>
+					</div>
+				</template>
+
+				<!--PAGE 4-->
+				<template if:true={page4}>
+					<div class="slds-col slds-size_1-of-1 page-header-padding">
+						<div class="slds-text-body_small">
+							Step 4 of 4
+						</div>
+					</div>
+					<div class="slds-col slds-size_1-of-1 slds-float_left page-header-padding header-container" >
+						<h1 class="slds-text-heading_medium"><strong>Signatures</strong></h1>
+						<lightning-button
+							class = "slds-float_right gs6-guide"
+							variant="base"
+							icon-name="utility:info_alt"
+							label="GS6 Guide"
+							title="GS6 Guide"
+							onclick={handleGS6Guide}>
+						</lightning-button>
+					</div>
+					
+					<div class="slds-col slds-size_1-of-1 page-header-padding sub-header-margin">
+						<p>Please provide signature of contact site.
+						</p>
+					</div>
+					<div class="slds-col slds-size_1-of-1 margin-left-label sub-header-margin">
+						<abbr for="clientSignature" class="slds-required">*</abbr>
+						<label  class="labels" for="clientSignature">Signature of person receiving guidance</label>
+						<c-s-p-e-n_-signature-component 
+							id="clientSignature"
+							onsavesignature={updateClientSignature}
+							oncleansignature={removeClientSignature}
+							data-id="client">
+						</c-s-p-e-n_-signature-component>
+					</div>
+					<div class="slds-col slds-size_1-of-1 margin-left-label sub-header-margin">
+						<abbr for="fieldOperativeSignature" class="slds-required">*</abbr>
+						<label  class="labels" for="fieldOperativeSignature">Signature of person issuing guidance</label>
+						<c-s-p-e-n_-signature-component 
+							id="fieldOperativeSignature"
+							onsavesignature={updateSignature}
+							oncleansignature={removeSignature}
+							data-id="fieldOperative">
+						</c-s-p-e-n_-signature-component>
+					</div>
+					<div class="slds-col slds-size_1-of-2 slds-float_left">
+						<lightning-button variant="base" label="Back" title="Back" onclick={handlePreviousPage} class="slds-m-left_x-small slds-float_left default-margin"></lightning-button>
+					</div>
+					<div class="slds-col slds-size_1-of-2 slds-float_right">
+						<lightning-button label="Submit" variant="success" type="submit" disabled={disableSubmission} class="slds-m-left_x-small slds-float_right default-margin"></lightning-button>
+					</div>
+				</template>
+				<template if:true={gs6Guide}>
+					<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open slds-modal_full">
+						<div class="slds-modal__container">
+						  <!-- <lightning-button icon-name="utility:close" variant="base" class="slds-modal__close" onclick={closeGS6Guide}></lightning-button> -->
+					  <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+							<img alt="" src={gs6guideUrl} class="slds-align_absolute-center" />
+						  </div>
+						  <div class="slds-modal__footer">
+							<button class="slds-button slds-button_brand" type="button" onclick={closeGS6Guide}>Close GS6 guide</button>
+						  </div>
+						</div>
+					</section>
+					<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+				</template>
+			</div>
+		</lightning-record-edit-form>
+
+		<!--PAGE 3-->
+		<template if:true={page3}>
+			<lightning-layout multiple-rows>
+			<div class="slds-col slds-size_1-of-1 page-header-padding">
+				<div class="slds-text-body_small">
+					Step 3 of 4
+				</div>
+			</div>
+			<div class="slds-col slds-size_1-of-1 slds-float_left page-header-padding header-container" >
+				<h1 class="slds-text-heading_medium"><strong>Additional Documents</strong></h1>
+			</div>
+			<lightning-layout-item size="12" padding="around-small">
+				<c-s-p-e-n_-image-capture
+					ongetcontentdocumentid={handleUploadFinished}
+					action-message="Confirm photos"
+					add-file-message="Upload any supporting photos (optional)"
+					gs6=true>
+				</c-s-p-e-n_-image-capture>
+			</lightning-layout-item>
+			<lightning-layout-item size="12">
+				<lightning-button variant="base" label="Back" title="Back" onclick={handlePreviousPage} class="slds-m-left_x-small slds-float_left default-margin"></lightning-button>
+				<lightning-button variant="brand" label="Next" title="Next" onclick={handleNextPage} class="slds-m-left_x-small slds-float_right default-margin"></lightning-button>
+			</lightning-layout-item>
+			</lightning-layout>
+		</template>
+
+	</lightning-card>
+ </template>

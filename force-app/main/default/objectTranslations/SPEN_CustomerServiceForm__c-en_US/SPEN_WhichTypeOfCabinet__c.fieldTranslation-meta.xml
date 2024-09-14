@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Which type of cabinet is it? --></label>
+    <name>SPEN_WhichTypeOfCabinet__c</name>
+    <picklistValues>
+        <masterLabel>BT</masterLabel>
+        <translation><!-- BT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (specify)</masterLabel>
+        <translation><!-- Other (specify) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vodaphone</masterLabel>
+        <translation><!-- Vodaphone --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

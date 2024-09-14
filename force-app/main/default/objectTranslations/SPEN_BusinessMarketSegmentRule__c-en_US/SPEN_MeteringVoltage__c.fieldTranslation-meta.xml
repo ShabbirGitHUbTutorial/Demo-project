@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Metering Voltage --></label>
+    <name>SPEN_MeteringVoltage__c</name>
+    <picklistValues>
+        <masterLabel>132KV</masterLabel>
+        <translation><!-- 132KV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EHV</masterLabel>
+        <translation><!-- EHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HV</masterLabel>
+        <translation><!-- HV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LV</masterLabel>
+        <translation><!-- LV --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

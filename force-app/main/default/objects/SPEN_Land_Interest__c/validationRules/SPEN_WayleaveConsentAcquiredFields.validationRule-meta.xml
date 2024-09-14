@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_WayleaveConsentAcquiredFields</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(SPEN_WayleaveStatus__c,&apos;Consent Acquired&apos;) &amp;&amp;  SPEN_RIRRequired__c == true &amp;&amp; ( ISBLANK( SPEN_RIRReceived__c) ||  SPEN_SignedRIRProvided__c == false ) &amp;&amp;  RecordType.DeveloperName == &quot;SPEN_Wayleave&quot;</errorConditionFormula>
+    <errorMessage>Wayleave Status cannot be marked as Consent Acquired until RiR Received field has dates and Signed RiR Provided is checked.</errorMessage>
+</ValidationRule>

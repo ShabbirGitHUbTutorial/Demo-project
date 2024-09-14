@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_With_PSR_Info</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SPEN_RelatedIncident__c</columns>
+    <columns>SPEN_PSRCheckFormula__c</columns>
+    <columns>SPEN_MedicallyDependent__c</columns>
+    <columns>SPEN_PremiseId__c</columns>
+    <columns>SPEN_Status__c</columns>
+    <columns>SPEN_PreferredMethodofContactFormula__c</columns>
+    <columns>SPEN_ContactPremise__c</columns>
+    <columns>SPEN_CustomerMobileNumberFormula__c</columns>
+    <columns>SPEN_CustomerTelephoneNumberFormula__c</columns>
+    <columns>SPEN_CustomerOtherPhoneFormula__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_RelatedIncident__c</field>
+        <operation>equals</operation>
+        <value>INC-000080294</value>
+    </filters>
+    <label>All - With PSR Info</label>
+</ListView>

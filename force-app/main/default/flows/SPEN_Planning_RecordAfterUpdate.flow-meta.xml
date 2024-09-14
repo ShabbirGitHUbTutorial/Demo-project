@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <name>SPEN_Update_Planning_Number</name>
+        <label>Update Planning Number</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SPEN_PlanningNumberFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Spen_Update_Planning</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>SPEN_LicenseAreaCheck</name>
+        <label>LicenseAreaCheck</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Spen_Update_Planning</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SPEN_Update_Planning_Record_Number</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SPEN_Job__r.SPEN_LicenseArea__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SPEN_Update_Planning_Number</targetReference>
+            </connector>
+            <label>Update Planning Record Number</label>
+        </rules>
+    </decisions>
+    <description>ESC-180: On creating Planning record update Planning Record Number to Job&apos;s License Area and Unique ID of the record</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>SPEN_PlanningNumberFormula</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.SPEN_Job__r.SPEN_LicenseArea__c}) &amp; &quot; &quot; &amp; {!$Record.SPEN_UniqueID__c}</expression>
+    </formulas>
+    <interviewLabel>SPEN Planning Record AfterUpdate {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SPEN Planning Record AfterUpdate</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Spen_Update_Planning</name>
+        <label>Update Planning</label>
+        <locationX>182</locationX>
+        <locationY>623</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SPEN_LicenseAreaCheck</targetReference>
+        </connector>
+        <object>SPEN_Planning__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

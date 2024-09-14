@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PremiseMeterType__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Type of the Premise - Meter</description>
+    <label>Premise - Meter Type</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S</fullName>
+                <default>false</default>
+                <label>Smartmeter</label>
+            </value>
+            <value>
+                <fullName>T</fullName>
+                <default>false</default>
+                <label>Token Meter</label>
+            </value>
+            <value>
+                <fullName>K</fullName>
+                <default>false</default>
+                <label>Key Meter</label>
+            </value>
+            <value>
+                <fullName>N</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>N</label>
+            </value>
+            <value>
+                <fullName>S1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>S1</label>
+            </value>
+            <value>
+                <fullName>S2A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>S2A</label>
+            </value>
+            <value>
+                <fullName>S2AD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>S2AD</label>
+            </value>
+            <value>
+                <fullName>S2ADE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>S2ADE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEL_IsMockingEnabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check if mocking is enabled. Make sure you turn this off in production.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Is Mocking Enabled?</label>
+    <type>Checkbox</type>
+</CustomField>

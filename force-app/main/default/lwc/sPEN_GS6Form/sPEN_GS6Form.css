@@ -1,0 +1,213 @@
+.container {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 500px;
+
+}
+
+:host{ 
+    --slds-c-accordion-heading-font-size: 0.75rem; 
+    --slds-c-button-success-color-border: rgb(1, 32, 12); 
+    --slds-c-button-success-text-color: rgb(255, 255, 255); 
+    --slds-c-button-success-color-background: rgb(3, 134, 49);
+    --slds-c-button-success-color-border-hover: rgb(1, 32, 12); 
+    --slds-c-button-success-color-background-hover: rgb(0, 55, 19);
+    --slds-c-button-spacing-inline-start: var(--slds-c-button-outline-brand-spacing-inline-start, var(--sds-c-button-outline-brand-spacing-inline-start, var(--lwc-spacingMedium, 1rem)));
+    --slds-c-button-spacing-inline-end: var(--slds-c-button-outline-brand-spacing-inline-end, var(--sds-c-button-outline-brand-spacing-inline-end, var(--lwc-spacingMedium, 1rem)));
+}
+
+/* CSS for New diagram feature and enhancements */
+/* This is to give some space between the header text and the mobile border*/
+.page-header-padding {
+    padding-left: 1%;
+}
+
+.input-container {
+    margin:1%;
+}
+
+.first-pole-number {
+    top: 0%;
+    left: 5%;
+    width: 8%;
+    height: 73%;
+    position: absolute;
+    background-color: rgba(27,150,255, 0.5);
+}
+
+.safety-clearance {
+    top: 14%;
+    left: 44%;
+    width: 8%;
+    height: 20%;
+    position: absolute;
+    background-color: rgba(27, 150, 255, 0.5);
+}
+
+.height-of-goal-post {
+    top: 29%;
+    left: 35%;
+    width: 8%;
+    height: 40%;
+    position: absolute;
+    background-color: rgba(27, 150, 255, 0.5);
+
+}
+
+.height-of-lowest-conductor {
+    top: 15%;
+    left: 63%;
+    width: 8%;
+    height: 53%;
+    position: absolute;
+    background-color: rgba(27, 150, 255, 0.5);
+}
+
+.second-pole-number {
+    top: 0%;
+    left: 87%;
+    width: 8%;
+    height: 73%;
+    position: absolute;
+    background-color: rgba(27, 150, 255, 0.5);
+}
+
+.header-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    max-height: 30px;
+}
+
+.submit-screen {
+    padding: 2rem;
+    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+    max-width: auto;
+    border: 2px solid #589673;
+}
+
+.header-margin {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sub-header-top-margin {
+    margin-top: 1.5rem;
+}
+
+.sub-header-margin {
+    margin-bottom: 1rem;
+}
+
+.reasonForVisit{
+    margin-top: 1rem;
+}
+
+
+.icon-margin {
+    margin-bottom: 1rem;
+}
+
+.green-utility-icon {
+    --sds-c-icon-color-foreground-default: #49A54C;
+}
+
+.secondPolePylonNumberContainer, .input-meters-field {
+    position: relative;
+}
+
+.spaceBetweenP {
+    margin-bottom: -1rem;
+}
+
+/* Margin definition */
+.default-margin {
+    margin: 1%;
+}
+.margin-right-1 {
+    margin-right: 16px;
+}
+.margin-left-2 {
+    margin-left: 16px;
+}
+.margin-top-7 {
+    margin-top: 7%;
+}
+
+/* Font Size definition */
+.font-size-14 {
+    font-size: 14px;
+}
+.font-size-12 {
+    font-size: 12px;
+}
+
+.overflow-contents-hidden {
+    overflow: hidden;
+}
+
+/* Labels definition */
+
+.labels {
+    font-size: 14px;
+    color: #444444;
+}
+
+.subLabels {
+    font-size: 12px;
+    color: #444444;
+}
+
+.div-margin{
+    margin: 0px 0px 8px;
+    padding: 2px 4px;
+}
+
+.margin-left-label {
+    padding: 2px 4px;
+}
+
+/* Mobile styling definition */
+@media only screen and (max-width: 600px) {
+    .first-pole-number {
+        top: 0%;
+        left: 5%;
+        width: 8%;
+        height: 65%;
+    }
+    .safety-clearance {
+        top: 14%;
+        left: 44%;
+        width: 8%;
+        height: 20%;
+    }
+    .height-of-goal-post {
+        top: 25%;
+        left: 35%;
+        width: 8%;
+        height: 40%;
+    
+    }
+    .height-of-lowest-conductor {
+        top: 10%;
+        left: 63%;
+        width: 8%;
+        height: 53%;
+    }
+    .second-pole-number {
+        top: 0%;
+        left: 87%;
+        width: 8%;
+        height: 68%;
+    }
+}

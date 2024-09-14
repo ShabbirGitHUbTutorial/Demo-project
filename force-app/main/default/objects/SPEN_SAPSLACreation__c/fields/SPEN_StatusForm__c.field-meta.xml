@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_StatusForm__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(SPEN_Status__c , &apos;E0001&apos;, &apos;Open&apos;, &apos;E0002&apos;, &apos;Cancelled&apos;,&apos;E0003&apos;, &apos;Paused&apos;, &apos;Closed&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

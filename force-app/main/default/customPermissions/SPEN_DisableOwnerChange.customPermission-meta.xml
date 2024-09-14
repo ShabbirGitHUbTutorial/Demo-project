@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission used in all validation rules where you want to restrict user from changing owner</description>
+    <isLicensed>false</isLicensed>
+    <label>Disable Owner Change</label>
+</CustomPermission>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>PSR</name>
+    <queueMembers>
+        <users>
+            <user>jones.eilidh@spenergynetworks.co.uk.spencrm</user>
+            <user>g.patterson@spenergynetworks.co.uk.spencrm</user>
+            <user>i.roberts@spenergynetworks.co.uk.spencrm</user>
+            <user>jmcmahon2@spenergynetworks.co.uk.spencrm</user>
+            <user>j.mcmahon@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

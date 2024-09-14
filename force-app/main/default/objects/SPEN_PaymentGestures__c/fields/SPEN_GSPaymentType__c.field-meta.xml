@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_GSPaymentType__c</fullName>
+    <description>It includes the payment type of GS</description>
+    <label>Payment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GS Failure Payment</fullName>
+                <default>false</default>
+                <label>GS Failure Payment</label>
+            </value>
+            <value>
+                <fullName>GS Customer Service / Top Up / Ex-Gratia Payment</fullName>
+                <default>false</default>
+                <label>GS Customer Service / Top Up / Ex-Gratia Payment</label>
+            </value>
+            <value>
+                <fullName>GS Exemption Payment</fullName>
+                <default>false</default>
+                <label>GS Exemption Payment</label>
+            </value>
+            <value>
+                <fullName>GS Exemption no Payment</fullName>
+                <default>false</default>
+                <label>GS Exemption no Payment</label>
+            </value>
+            <value>
+                <fullName>GS no response from customer</fullName>
+                <default>false</default>
+                <label>GS no response from customer</label>
+            </value>
+            <value>
+                <fullName>Hotel Payment</fullName>
+                <default>false</default>
+                <label>Hotel Payment</label>
+            </value>
+            <value>
+                <fullName>Hot Food</fullName>
+                <default>false</default>
+                <label>Hot Food</label>
+            </value>
+            <value>
+                <fullName>Just Eat Payment</fullName>
+                <default>false</default>
+                <label>Just Eat Payment</label>
+            </value>
+            <value>
+                <fullName>Simply Thank You</fullName>
+                <default>false</default>
+                <label>Simply Thank You</label>
+            </value>
+            <value>
+                <fullName>GS11 ( only) Goodwill Payment</fullName>
+                <default>false</default>
+                <label>GS11 ( only) Goodwill Payment</label>
+            </value>
+            <value>
+                <fullName>GS - IDNO/DNO Payment</fullName>
+                <default>false</default>
+                <label>GS - IDNO/DNO Payment</label>
+            </value>
+            <value>
+                <fullName>Customer Service Payment</fullName>
+                <default>false</default>
+                <label>Customer Service Payment</label>
+            </value>
+            <value>
+                <fullName>Service Partners Invoice Cost</fullName>
+                <default>false</default>
+                <label>Service Partners Invoice Cost</label>
+            </value>
+            <value>
+                <fullName>Customers Refund For Own Appliances Payment</fullName>
+                <default>false</default>
+                <label>Customers Refund For Own Appliances Payment</label>
+            </value>
+            <value>
+                <fullName>Decorating, Carpets, Cleaning, Plumber, Joining Payments</fullName>
+                <default>false</default>
+                <label>Decorating, Carpets, Cleaning, Plumber, Joining Payments</label>
+            </value>
+            <value>
+                <fullName>Insurance Payment</fullName>
+                <default>false</default>
+                <label>Insurance Payment</label>
+            </value>
+            <value>
+                <fullName>Insurance Land Damage</fullName>
+                <default>false</default>
+                <label>Insurance Land Damage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

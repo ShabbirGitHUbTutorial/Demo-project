@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Calls a screenflow to reassign the CNT case to the correct DCC manager queue.</description>
+    <flowDefinition>Reassign_CNT_Case_to_DCC_Managers</flowDefinition>
+    <label>Reassign to DCC</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

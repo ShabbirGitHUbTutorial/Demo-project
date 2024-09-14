@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Land &amp; Planning Apparatus --></label>
+    <name>SPEN_Land_Planning_Apparatus__c</name>
+    <relationshipLabel><!-- Land &amp; Planning Apparatus Payment Rates --></relationshipLabel>
+</CustomFieldTranslation>

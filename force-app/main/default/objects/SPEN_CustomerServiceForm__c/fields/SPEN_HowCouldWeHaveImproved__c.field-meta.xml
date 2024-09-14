@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_HowCouldWeHaveImproved__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store possible improvements. 
+Used in Customer Handshake form.</description>
+    <label>How could we have improved?</label>
+    <length>32768</length>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

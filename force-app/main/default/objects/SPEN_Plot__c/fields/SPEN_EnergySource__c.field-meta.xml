@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_EnergySource__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is for Connections process</description>
+    <label>Energy Source</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Fuel</fullName>
+                <default>false</default>
+                <label>Advanced Fuel</label>
+            </value>
+            <value>
+                <fullName>Biofuel - Anaerobic digestion</fullName>
+                <default>false</default>
+                <label>Biofuel - Anaerobic digestion</label>
+            </value>
+            <value>
+                <fullName>Biofuel - Landfill gas</fullName>
+                <default>false</default>
+                <label>Biofuel - Landfill gas</label>
+            </value>
+            <value>
+                <fullName>Biofuel - Sewage gas</fullName>
+                <default>false</default>
+                <label>Biofuel - Sewage gas</label>
+            </value>
+            <value>
+                <fullName>Biofuel - Other</fullName>
+                <default>false</default>
+                <label>Biofuel - Other</label>
+            </value>
+            <value>
+                <fullName>Biomass</fullName>
+                <default>false</default>
+                <label>Biomass</label>
+            </value>
+            <value>
+                <fullName>Fossil - Brown coal/lignite</fullName>
+                <default>false</default>
+                <label>Fossil - Brown coal/lignite</label>
+            </value>
+            <value>
+                <fullName>Fossil - Coal gas</fullName>
+                <default>false</default>
+                <label>Fossil - Coal gas</label>
+            </value>
+            <value>
+                <fullName>Fossil - Gas</fullName>
+                <default>false</default>
+                <label>Fossil - Gas</label>
+            </value>
+            <value>
+                <fullName>Fossil - Hard coal</fullName>
+                <default>false</default>
+                <label>Fossil - Hard coal</label>
+            </value>
+            <value>
+                <fullName>Fossil - Oil</fullName>
+                <default>false</default>
+                <label>Fossil - Oil</label>
+            </value>
+            <value>
+                <fullName>Fossil - Oil shale</fullName>
+                <default>false</default>
+                <label>Fossil - Oil shale</label>
+            </value>
+            <value>
+                <fullName>Fossil - Peat</fullName>
+                <default>false</default>
+                <label>Fossil - Peat</label>
+            </value>
+            <value>
+                <fullName>Fossil - Other</fullName>
+                <default>false</default>
+                <label>Fossil - Other</label>
+            </value>
+            <value>
+                <fullName>Geothermal</fullName>
+                <default>false</default>
+                <label>Geothermal</label>
+            </value>
+            <value>
+                <fullName>Hydrogen</fullName>
+                <default>false</default>
+                <label>Hydrogen</label>
+            </value>
+            <value>
+                <fullName>Nuclear</fullName>
+                <default>false</default>
+                <label>Nuclear</label>
+            </value>
+            <value>
+                <fullName>Solar</fullName>
+                <default>false</default>
+                <label>Solar</label>
+            </value>
+            <value>
+                <fullName>Stored Energy</fullName>
+                <default>false</default>
+                <label>Stored Energy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

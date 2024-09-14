@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Communication Type --></label>
+    <name>SPEN_CommunicationType__c</name>
+    <picklistValues>
+        <masterLabel>SMS</masterLabel>
+        <translation><!-- SMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voice Alert</masterLabel>
+        <translation><!-- Voice Alert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voice Call</masterLabel>
+        <translation><!-- Voice Call --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

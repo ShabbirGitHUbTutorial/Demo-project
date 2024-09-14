@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SPEN_BypassFlowContact</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SPEN_BypassFlowMpan</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SPEN_BypassTriggerCase</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SPEN_BypassTriggerContact</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SPEN_BypassTriggerContactPremise</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SPEN_BypassTriggerPSR</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SPEN_BypassTriggerPermise</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SPEN_BypassVrPSR</name>
+    </customPermissions>
+    <description>Grant custom permissions allowing ADQM to bypass triggers and flows during Data Migration.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SPEN: ADQM Data Migration Bypass</label>
+</PermissionSet>

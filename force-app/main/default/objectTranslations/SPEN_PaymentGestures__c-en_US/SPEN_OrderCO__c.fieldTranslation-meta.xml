@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order CO --></label>
+    <name>SPEN_OrderCO__c</name>
+    <picklistValues>
+        <masterLabel>5701668687</masterLabel>
+        <translation><!-- 5701668687 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5701668692</masterLabel>
+        <translation><!-- 5701668692 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5701668718</masterLabel>
+        <translation><!-- 5701668718 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5701668720</masterLabel>
+        <translation><!-- 5701668720 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5701668721</masterLabel>
+        <translation><!-- 5701668721 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5701761208</masterLabel>
+        <translation><!-- 5701761208 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5701761209</masterLabel>
+        <translation><!-- 5701761209 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5701761225</masterLabel>
+        <translation><!-- 5701761225 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

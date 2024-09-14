@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPM_Planned_Outage</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_BuildingNameNumber__c</columns>
+    <columns>SPEN_SubstationName__c</columns>
+    <columns>SPEN_FullAddress__c</columns>
+    <columns>SPEN_PostCode__c</columns>
+    <columns>SPEN_Town__c</columns>
+    <columns>SPEN_Zone__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_PostCode__c</field>
+        <operation>equals</operation>
+        <value>LL52 0NB</value>
+    </filters>
+    <label>SPM Planned Outage</label>
+</ListView>

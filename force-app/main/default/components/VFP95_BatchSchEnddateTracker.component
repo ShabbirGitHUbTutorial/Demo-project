@@ -1,0 +1,29 @@
+<apex:component access="global" controller="APC22_BatchMonitoring">
+    <style>          
+
+ .headerStyle { background-color:lightgrey;}
+    </style>
+    <br></br>
+
+
+<html>
+    <h2 style="background-color:yellow;"><u>{!$Label.BatchMonitoringOrgName}{!$Organization.Id}</u> </h2>
+    <h1 style="font-family:Arial;font-size:14px;color:Red;width: 250px;"><b>Action Required!!!!</b></h1>
+    <h2 style="font-family:Arial;font-size:12px;color:Blue">{!$Label.Batch_ScheduledEnddate}
+    </h2>
+</html>
+<apex:outputPanel >
+    <apex:dataTable value="{!query}" var="bm" id="dt2" width="1000" border="5">
+    <apex:column headerValue="Job Name" headerClass="headerStyle" rendered="{! IF(query.size > 0,true,false)}" value="{!bm.CronJobDetail.Name}" style="text-align: center"/>
+    <apex:column headerValue="Job Type" headerClass="headerStyle" rendered="{! IF(query.size > 0,true,false)}" value="{!bm.CronJobDetail.Jobtype}" style="text-align: center"/>
+    <apex:column headerValue="Ending Date" headerClass="headerStyle" rendered="{! IF(query.size > 0,true,false)}" value="{!bm.EndTime}" style="text-align: center"/>
+    <apex:column headerValue="Last Created By" headerClass="headerStyle" rendered="{! IF(query.size > 0,true,false)}" value="{!bm.createdby.name}" style="text-align: center"/>
+    <apex:column headerClass="headerStyle" style="background-color:red;text-align: center" rendered="{! IF(query.size > 0,true,false)}">
+        <apex:facet name="header">Ending in Next</apex:facet>
+        <b>{!FLOOR(bm.endtime - now())} Days </b>
+    </apex:column>
+</apex:dataTable>
+</apex:outputPanel>
+
+
+</apex:component>

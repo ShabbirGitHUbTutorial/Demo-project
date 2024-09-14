@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FT</fullName>
+        <default>false</default>
+        <label>FT Fleet VAT Shared Use (20%)</label>
+    </customValue>
+    <customValue>
+        <fullName>S9</fullName>
+        <default>false</default>
+        <label>S9 Standard Rated VAT (20%)</label>
+    </customValue>
+    <customValue>
+        <fullName>SE</fullName>
+        <default>false</default>
+        <label>SE Exempt (0%)</label>
+    </customValue>
+    <customValue>
+        <fullName>SW</fullName>
+        <default>false</default>
+        <label>SW Outside of the Scope (0%)</label>
+    </customValue>
+    <masterLabel>L&amp;P Tax Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

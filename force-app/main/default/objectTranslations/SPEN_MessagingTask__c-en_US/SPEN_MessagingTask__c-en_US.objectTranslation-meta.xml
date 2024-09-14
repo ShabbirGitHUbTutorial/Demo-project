@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Messaging Task</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Messaging Tasks</value>
+    </caseValues>
+    <layouts>
+        <layout>Incident Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Messaging Task Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OnDemand Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- When the Messaging Task record is driven from an Incident event --></description>
+        <label><!-- Incident --></label>
+        <name>Incident</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- To be used to upload CSV and send communication --></description>
+        <label><!-- OnDemand --></label>
+        <name>OnDemand</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Event is required if the record type is set to Incident. --></errorMessage>
+        <name>IncidentRequiredFieldEvent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Incident is required if the record type is set to Incident. --></errorMessage>
+        <name>IncidentRequiredFieldIncident</name>
+    </validationRules>
+</CustomObjectTranslation>

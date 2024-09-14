@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Certificate Required --></label>
+    <name>SPEN_CertificateRequired__c</name>
+    <picklistValues>
+        <masterLabel>Completion Certificate Required</masterLabel>
+        <translation><!-- Completion Certificate Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Completion Certificate required</masterLabel>
+        <translation><!-- No Completion Certificate required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

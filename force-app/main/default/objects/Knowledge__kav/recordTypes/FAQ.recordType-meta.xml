@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FAQ</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Recommended_Compact_Layout</compactLayoutAssignment>
+    <description>This can be used for simple question and answer articles.</description>
+    <label>FAQ</label>
+    <picklistValues>
+        <picklist>SPEN_DataCategories__c</picklist>
+        <values>
+            <fullName>Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connections Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Enquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guaranteed Standards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NRSWA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neutral Faults</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planned Outages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referrals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Streetworks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Damage%28restricted%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_LastReviewOutcome__c</picklist>
+        <values>
+            <fullName>Reviewed%2C Change Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reviewed%2C No Change Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

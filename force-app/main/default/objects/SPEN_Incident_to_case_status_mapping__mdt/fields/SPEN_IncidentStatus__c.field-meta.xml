@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_IncidentStatus__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Incident Status</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Awaiting</fullName>
+                <default>false</default>
+                <label>Awaiting</label>
+            </value>
+            <value>
+                <fullName>Emergency</fullName>
+                <default>false</default>
+                <label>Emergency</label>
+            </value>
+            <value>
+                <fullName>Delog</fullName>
+                <default>false</default>
+                <label>Delog</label>
+            </value>
+            <value>
+                <fullName>Reports OS</fullName>
+                <default>false</default>
+                <label>Reports OS</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Pre-arranged</fullName>
+                <default>false</default>
+                <label>Pre-arranged</label>
+            </value>
+            <value>
+                <fullName>Merged</fullName>
+                <default>false</default>
+                <label>Merged</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Pending Merge</fullName>
+                <default>false</default>
+                <label>Pending Merge</label>
+            </value>
+            <value>
+                <fullName>Pending Cancel</fullName>
+                <default>false</default>
+                <label>Pending Cancel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

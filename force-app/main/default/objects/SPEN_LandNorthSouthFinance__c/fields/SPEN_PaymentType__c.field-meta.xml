@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PaymentType__c</fullName>
+    <label>Payment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PAO</fullName>
+                <default>false</default>
+                <label>PAO</label>
+            </value>
+            <value>
+                <fullName>NTS</fullName>
+                <default>false</default>
+                <label>NTS</label>
+            </value>
+            <value>
+                <fullName>Cheque Re-issue</fullName>
+                <default>false</default>
+                <label>Cheque Re-issue</label>
+            </value>
+            <value>
+                <fullName>NTS Cheque Re-issue</fullName>
+                <default>false</default>
+                <label>NTS Cheque Re-issue</label>
+            </value>
+            <value>
+                <fullName>PONS Estates</fullName>
+                <default>false</default>
+                <label>PONS Estates</label>
+            </value>
+            <value>
+                <fullName>PONS Legal</fullName>
+                <default>false</default>
+                <label>PONS Legal</label>
+            </value>
+            <value>
+                <fullName>NTS Estates</fullName>
+                <default>false</default>
+                <label>NTS Estates</label>
+            </value>
+            <value>
+                <fullName>NTS NWA Payment</fullName>
+                <default>false</default>
+                <label>NTS NWA Payment</label>
+            </value>
+            <value>
+                <fullName>Receipting</fullName>
+                <default>false</default>
+                <label>Receipting</label>
+            </value>
+            <value>
+                <fullName>Non-Self Invoicing</fullName>
+                <default>false</default>
+                <label>Non-Self Invoicing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

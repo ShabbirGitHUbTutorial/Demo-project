@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Select what you can see evidence of --></label>
+    <name>SPEN_SelectWhatYouCanSeeEvidenceOf__c</name>
+    <picklistValues>
+        <masterLabel>Bubbles on edge or face of roof panel</masterLabel>
+        <translation><!-- Bubbles on edge or face of roof panel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cracking at the supporting locations</masterLabel>
+        <translation><!-- Cracking at the supporting locations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cracking or spalling of the internal surface</masterLabel>
+        <translation><!-- Cracking or spalling of the internal surface --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deflection of roof panels</masterLabel>
+        <translation><!-- Deflection of roof panels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moisture ingress and degradation of the internal roof finish</masterLabel>
+        <translation><!-- Moisture ingress and degradation of the internal roof finish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rust staining or corrosion of reinforcements</masterLabel>
+        <translation><!-- Rust staining or corrosion of reinforcements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Water ponding on the surface of roof</masterLabel>
+        <translation><!-- Water ponding on the surface of roof --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

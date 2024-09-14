@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Communication Scheduler</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Communication Schedulers</value>
+    </caseValues>
+    <layouts>
+        <layout>SMS Broadcast Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Execution Details --></label>
+            <section>Execution Details</section>
+        </sections>
+        <sections>
+            <label><!-- Message --></label>
+            <section>Message</section>
+        </sections>
+        <sections>
+            <label><!-- Schedule --></label>
+            <section>Schedule</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- CRMD-1333 --></description>
+        <label><!-- Email Notification --></label>
+        <name>SPEN_EmailNotification</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- ICS-1333 --></description>
+        <label><!-- Task Notification --></label>
+        <name>SPEN_TaskNotification</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type to initiate an Voice Alert broadcast. --></description>
+        <label><!-- Voice Alert Broadcast --></label>
+        <name>SPEN_VoiceAlertBroadcast</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this record type to initiate an SMS broadcast. --></description>
+        <label><!-- SMS Broadcast --></label>
+        <name>SmsBroadcast</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The action field is required if the Record Type is SMS Broadcast. --></errorMessage>
+        <name>SmsBroadcastRequiredFieldAction</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The incident field is required if the Record Type is SMS Broadcast. --></errorMessage>
+        <name>SmsBroadcastRequiredFieldIncident</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- The message or Non PSR Message
+ field is required if the Record Type is SMS Broadcast. -->
+        </errorMessage>
+        <name>SmsBroadcastRequiredFieldMessage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The message task field is required if the Record Type is SMS Broadcast. --></errorMessage>
+        <name>SmsBroadcastRequiredFieldMessagingTask</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Scheduled DateTime field is required if the Record Type is SMS Broadcast and Send Now = False. --></errorMessage>
+        <name>SmsBroadcastRequiredFieldScheduledDateTi</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- SPEN_CancelBatch --></label>
+        <name>SPEN_CancelBatch</name>
+    </webLinks>
+</CustomObjectTranslation>

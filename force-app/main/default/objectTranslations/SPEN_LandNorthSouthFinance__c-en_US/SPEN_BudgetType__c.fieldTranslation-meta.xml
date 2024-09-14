@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Budget Type --></label>
+    <name>SPEN_BudgetType__c</name>
+    <picklistValues>
+        <masterLabel>Capex</masterLabel>
+        <translation><!-- Capex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estates (NTS From Capex Budget)</masterLabel>
+        <translation><!-- Estates (NTS From Capex Budget) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estates (PO &amp; NTS - Wayleave Budget)</masterLabel>
+        <translation><!-- Estates (PO &amp; NTS - Wayleave Budget) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estates (PO&apos;s From Capex Budget)</masterLabel>
+        <translation><!-- Estates (PO&apos;s From Capex Budget) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rechargeable</masterLabel>
+        <translation><!-- Rechargeable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wayleave Budget</masterLabel>
+        <translation><!-- Wayleave Budget --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

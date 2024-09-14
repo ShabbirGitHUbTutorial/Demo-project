@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>SPEN_JobAccessRWCA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SPEN_JobAccessRWCA</label>
+        <sharedTo>
+            <role>Clerical_Assistant</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_JobAccessRWEP</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Criteria Read/Write access to all Licence Area For Environmental Planner</description>
+        <label>SPEN_JobAccessRWEP</label>
+        <sharedTo>
+            <role>Environmental_Planner</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_JobAccessRW_LOD</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Owner based Read/Write access to SPD and Land Assistant North for Land Officer Distribution</description>
+        <label>SPEN_JobAccessRW_LOD</label>
+        <sharedTo>
+            <role>Land_Officer_Distribution</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_JobAccessRW_LOMW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Criteria based Read access to SPM, SPM 132 and Land Assistant south for Land Officer MenWeb</description>
+        <label>SPEN_JobAccessRW_LOMW</label>
+        <sharedTo>
+            <role>Land_Officer_MenWeb</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_JobAccessRW_LOT</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Criteria based Read access to SPT and Environmental Planner for Land Officer Transmission</description>
+        <label>SPEN_JobAccessRW_LOT</label>
+        <sharedTo>
+            <role>Land_Officer_Transmission</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_JobAccessR_LOD</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Criteria based Read access to all Licence Area for Land Officer Distribution</description>
+        <label>SPEN_JobAccessR_LOD</label>
+        <sharedTo>
+            <role>Land_Officer_Distribution</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_JobAccessR_LOMW</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Criteria based Read access to all Licence Area for Land Officer MenWeb</description>
+        <label>SPEN_JobAccessR_LOMW</label>
+        <sharedTo>
+            <role>Land_Officer_MenWeb</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_JobAccessR_LOT</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Criteria based Read access to all Licence Area for Land Officer Transmission</description>
+        <label>SPEN_JobAccessR_LOT</label>
+        <sharedTo>
+            <role>Land_Officer_Transmission</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_Job_AccessRWLA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Criteria Read/Write access to all Licence Area</description>
+        <label>SPEN_Job_AccessRWLA</label>
+        <sharedTo>
+            <group>SPEN_LnP_Land_Assistant</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_LnPManagerAccess</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>L&amp;P Manager Access</label>
+        <sharedTo>
+            <role>Manager</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_LnPSuperUserAccess</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>L&amp;P Super User Access</label>
+        <sharedTo>
+            <role>SPEN_LnP_SuperUser</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_SPDExternalDistribution</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Criteria based Read access for SPD For external distribution group</description>
+        <label>SPEN_SPDExternalDistribution</label>
+        <sharedTo>
+            <group>SPEN_LnPExternalDistribution</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPD</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_SPMSPM132ExternalManweb</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Criteria based Read access for SPM or SPM 132 For external manweb group</description>
+        <label>SPEN_SPMSPM132ExternalManweb</label>
+        <sharedTo>
+            <group>SPEN_LnPExternalManweb</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPM 132</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPEN_SPTExternalTransmission</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SPEN_SPTExternalTransmission</label>
+        <sharedTo>
+            <group>SPEN_LnPExternalTransmission</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>SPEN_LicenseArea__c</field>
+            <operation>equals</operation>
+            <value>SPT</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>SPEN_ExtDistributionOwnerBasedSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Owner based share access For external distribution</description>
+        <label>SPEN_ExtDistributionOwnerBasedSharing</label>
+        <sharedTo>
+            <group>SPEN_LnPExternalDistribution</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>SPEN_LnPExternalDistribution</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SPEN_ExtManwebOwnerBasedSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Owner based share access For external manweb</description>
+        <label>SPEN_ExtManwebOwnerBasedSharing</label>
+        <sharedTo>
+            <group>SPEN_LnPExternalManweb</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>SPEN_LnPExternalManweb</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SPEN_ExtTransmissionOwnerBasedSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Owner based share access For external transmission</description>
+        <label>SPEN_ExtTransmissionOwnerBasedSharing</label>
+        <sharedTo>
+            <group>SPEN_LnPExternalTransmission</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>SPEN_LnPExternalTransmission</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Relation to The Account --></label>
+    <name>SPEN_RelationtoTheAccount__c</name>
+    <picklistValues>
+        <masterLabel>Carer</masterLabel>
+        <translation><!-- Carer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Company Contact</masterLabel>
+        <translation><!-- Company Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalation Contact</masterLabel>
+        <translation><!-- Escalation Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Member</masterLabel>
+        <translation><!-- Family Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Friend</masterLabel>
+        <translation><!-- Friend --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landlord</masterLabel>
+        <translation><!-- Landlord --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Main Partner Contact</masterLabel>
+        <translation><!-- Main Partner Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neighbour</masterLabel>
+        <translation><!-- Neighbour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owner</masterLabel>
+        <translation><!-- Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional Contact</masterLabel>
+        <translation><!-- Regional Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tenant</masterLabel>
+        <translation><!-- Tenant --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

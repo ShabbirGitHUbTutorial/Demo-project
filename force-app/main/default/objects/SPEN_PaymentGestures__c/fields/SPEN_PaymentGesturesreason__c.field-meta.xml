@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PaymentGesturesreason__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>It holds Payment/ Gestures reason CRMD-5327</description>
+    <label>Payment/Gestures reason</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service Disruption Compensation</fullName>
+                <default>false</default>
+                <label>Service Disruption Compensation</label>
+            </value>
+            <value>
+                <fullName>Other Compensation</fullName>
+                <default>false</default>
+                <label>Other Compensation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SourceFieldsAreRequiredForNonContainers</fullName>
+    <active>true</active>
+    <description>This rule enforces the source fields to be required if the target field type is NOT a container. Source fields are as follows: SEL_SourceField__c, SEL_SourceFieldType__c and SEL_SourceObject__c.</description>
+    <errorConditionFormula>NOT(ISPICKVAL(SEL_TargetFieldType__c, &apos;Container&apos;))
+&amp;&amp;
+NOT(ISPICKVAL(SEL_SourceFieldType__c, &apos;Static&apos;))
+&amp;&amp;
+(
+  ISBLANK(SEL_SourceField__c) || 
+  ISBLANK(SEL_SourceObject__c) ||
+  ISPICKVAL(SEL_SourceFieldType__c, &apos;&apos;)
+)</errorConditionFormula>
+    <errorMessage>Source Object, Source Field and Source Field Type fields must be filled out if the Target Field Type is NOT a Container.</errorMessage>
+</ValidationRule>

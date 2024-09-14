@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Type --></label>
+    <name>SPEN_PartnerType__c</name>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referrals</masterLabel>
+        <translation><!-- Referrals --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

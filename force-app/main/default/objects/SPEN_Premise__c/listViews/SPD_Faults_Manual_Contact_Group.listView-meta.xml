@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPD_Faults_Manual_Contact_Group</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_BuildingNameNumber__c</columns>
+    <columns>SPEN_SubstationName__c</columns>
+    <columns>SPEN_FullAddress__c</columns>
+    <columns>SPEN_Town__c</columns>
+    <columns>SPEN_Zone__c</columns>
+    <columns>SPEN_PostCode__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_SubstationName__c</field>
+        <operation>equals</operation>
+        <value>G64,7,BELVIDERE CRESCENT BISHOPBRIGGS GLASGOW</value>
+    </filters>
+    <label>SPD Faults Manual Contact Group</label>
+</ListView>

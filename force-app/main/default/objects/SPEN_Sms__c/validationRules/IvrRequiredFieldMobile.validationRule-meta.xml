@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IvrRequiredFieldMobile</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;IVR&quot; &amp;&amp;
+ISBLANK(SPEN_Mobile__c)</errorConditionFormula>
+    <errorMessage>The Mobile field is required.</errorMessage>
+</ValidationRule>

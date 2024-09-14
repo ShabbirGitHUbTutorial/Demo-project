@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RejectionReason__c</fullName>
+    <description>Created as part of ESC-39.</description>
+    <label>Rejection Reason</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Insufficient Detail</fullName>
+                <default>false</default>
+                <label>Insufficient Detail</label>
+            </value>
+            <value>
+                <fullName>Missing Data</fullName>
+                <default>false</default>
+                <label>Missing Data</label>
+            </value>
+            <value>
+                <fullName>Incorrect Selection</fullName>
+                <default>false</default>
+                <label>Incorrect Selection</label>
+            </value>
+            <value>
+                <fullName>Other and comment</fullName>
+                <default>false</default>
+                <label>Other and comment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

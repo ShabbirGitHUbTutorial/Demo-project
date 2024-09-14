@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>GE Voice SPM License - GE</name>
+    <queueMembers>
+        <users>
+            <user>a.macdonald@spenergynetworks.co.uk.spencrm</user>
+            <user>ailsa.fitzgerald@spenergynetworks.co.uk.spencrm</user>
+            <user>alexjones2@spenergynetworks.co.uk.spencrm</user>
+            <user>asobczak@spenergynetworks.co.uk.spencrm</user>
+            <user>ashley.male@spenergynetworks.co.uk.spencrm</user>
+            <user>christine.mcnally@spenergynetworks.co.uk.spencrm</user>
+            <user>dperry@spenergynetworks.co.uk.spencrm</user>
+            <user>david.mitchell3@spenergynetworks.co.uk.spencrm</user>
+            <user>debbie.griffiths@spenergynetworks.co.uk.spencrm</user>
+            <user>ggregory@spenergynetworks.co.uk.spencrm</user>
+            <user>g.thompson@spenergynetworks.co.uk.spencrm</user>
+            <user>graeme.decke@spenergynetworks.co.uk.spencrm</user>
+            <user>jplace@spenergynetworks.co.uk.spencrm</user>
+            <user>j.horton@spenergynetworks.co.uk.spencrm</user>
+            <user>jonions@spenergynetworks.co.uk.spencrm</user>
+            <user>john.davies@spenergynetworks.co.uk.spencrm</user>
+            <user>kfarrell@spenergynetworks.co.uk.spencrm</user>
+            <user>khalik.ali@spenergynetworks.co.uk.spencrm</user>
+            <user>lprobbing1@spenergynetworks.co.uk.spencrm</user>
+            <user>lynn.cooke@spenergynetworks.co.uk.spencrm</user>
+            <user>m.graham@spenergynetworks.co.uk.spencrm</user>
+            <user>oharrison@spenergynetworks.co.uk.spencrm</user>
+            <user>paul.penhale@spenergynetworks.co.uk.spencrm</user>
+            <user>r.butler@spenergynetworks.co.uk.spencrm</user>
+            <user>rstenhouse@spenergynetworks.co.uk.spencrm</user>
+            <user>sian.williams@spenergynetworks.co.uk.spencrm</user>
+            <user>snettel@spenergynetworks.co.uk.spencrm</user>
+            <user>stephen.nugent@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

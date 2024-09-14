@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ContactToADQMAPIsurname</label>
+    <protected>false</protected>
+    <values>
+        <field>SEL_IntegrationSettingId__c</field>
+        <value xsi:type="xsd:string">ContactToADQMAPI</value>
+    </values>
+    <values>
+        <field>SEL_IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>SEL_Order__c</field>
+        <value xsi:type="xsd:double">12.0</value>
+    </values>
+    <values>
+        <field>SEL_SourceFieldType__c</field>
+        <value xsi:type="xsd:string">Static</value>
+    </values>
+    <values>
+        <field>SEL_SourceField__c</field>
+        <value xsi:type="xsd:string">LastName</value>
+    </values>
+    <values>
+        <field>SEL_SourceObject__c</field>
+        <value xsi:type="xsd:string">Contact</value>
+    </values>
+    <values>
+        <field>SEL_TagretFieldCollectionItem__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SEL_TargetFieldLabel__c</field>
+        <value xsi:type="xsd:string">surname</value>
+    </values>
+    <values>
+        <field>SEL_TargetFieldType__c</field>
+        <value xsi:type="xsd:string">Container</value>
+    </values>
+    <values>
+        <field>SEL_TargetParentNode__c</field>
+        <value xsi:type="xsd:string">adq:updatecustomerdetails</value>
+    </values>
+    <values>
+        <field>SPEN_XMLNamespace__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

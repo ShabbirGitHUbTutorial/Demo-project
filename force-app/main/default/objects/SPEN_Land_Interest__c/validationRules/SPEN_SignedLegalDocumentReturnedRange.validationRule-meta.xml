@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SignedLegalDocumentReturnedRange</fullName>
+    <active>true</active>
+    <description>ESC-841</description>
+    <errorConditionFormula>AND(NOT( ISNULL( SPEN_SignedLegalDocumentReturned__c  ) ),NOT(ISNULL(  SPEN_InternalLegalInstructionDate__c )),NOT(ISNULL(   SPEN_HeadofTermAgreedDate__c )), OR(SPEN_SignedLegalDocumentReturned__c  &lt;SPEN_InternalLegalInstructionDate__c ,SPEN_SignedLegalDocumentReturned__c &lt;SPEN_HeadofTermAgreedDate__c   ) )</errorConditionFormula>
+    <errorMessage>The date entered must be later than HoTs Agreed date and Internal Legal Instruction Date.</errorMessage>
+</ValidationRule>

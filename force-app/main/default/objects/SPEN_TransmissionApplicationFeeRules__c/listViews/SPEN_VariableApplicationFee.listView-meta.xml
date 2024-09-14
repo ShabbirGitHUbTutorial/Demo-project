@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_VariableApplicationFee</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Team__c</columns>
+    <columns>SPEN_Role__c</columns>
+    <columns>SPEN_DailyRate__c</columns>
+    <columns>SPEN_DailyHours__c</columns>
+    <columns>SPEN_isActive__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SPEN_TransmissionApplicationFeeRules__c.SPEN_VariableApplicationFee</value>
+    </filters>
+    <label>Variable Application Fee</label>
+</ListView>

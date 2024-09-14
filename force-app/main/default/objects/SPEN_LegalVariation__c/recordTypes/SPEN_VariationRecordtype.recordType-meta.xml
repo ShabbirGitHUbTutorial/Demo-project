@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_VariationRecordtype</fullName>
+    <active>true</active>
+    <label>Variation Recordtype</label>
+    <picklistValues>
+        <picklist>SPEN_TypeofLegalRequired__c</picklist>
+        <values>
+            <fullName>Easement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servitude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub Station Lease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wayleave</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_VariationReason__c</picklist>
+        <values>
+            <fullName>Excavation Costs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traffic Management</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

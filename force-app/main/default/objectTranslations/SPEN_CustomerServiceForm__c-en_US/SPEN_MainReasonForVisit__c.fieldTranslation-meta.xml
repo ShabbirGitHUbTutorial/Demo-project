@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Indicate the main reason for the visit --></label>
+    <name>SPEN_MainReasonForVisit__c</name>
+    <picklistValues>
+        <masterLabel>Coincidental inspection while at property</masterLabel>
+        <translation><!-- Coincidental inspection while at property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DELOG</masterLabel>
+        <translation><!-- DELOG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fault replacement</masterLabel>
+        <translation><!-- Fault replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New service connection</masterLabel>
+        <translation><!-- New service connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive LV service termination replacement</masterLabel>
+        <translation><!-- Proactive LV service termination replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive inspection</masterLabel>
+        <translation><!-- Proactive inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive inspection programme</masterLabel>
+        <translation><!-- Proactive inspection programme --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proactive unlooping replacement</masterLabel>
+        <translation><!-- Proactive unlooping replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive LV service termination replacement</masterLabel>
+        <translation><!-- Reactive LV service termination replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reactive unlooping replacement</masterLabel>
+        <translation><!-- Reactive unlooping replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rising lateral main replacement</masterLabel>
+        <translation><!-- Rising lateral main replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart services driven replacement</masterLabel>
+        <translation><!-- Smart services driven replacement --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

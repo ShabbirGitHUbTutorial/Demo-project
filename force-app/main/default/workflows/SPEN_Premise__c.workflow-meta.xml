@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>SPEN_SubmitCustomerInformation</fullName>
+        <ccEmails>meterpointaddresschanges@SPPowerSystems.com</ccEmails>
+        <description>Submit Customer Information</description>
+        <protected>false</protected>
+        <senderAddress>spen.cs.crm.prod@spenergynetworks.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Send_Customer_Information_1670516913021</template>
+    </alerts>
+    <alerts>
+        <fullName>Submit_Customer_Information_to_SPM</fullName>
+        <ccEmails>dmsouthmpac@sppowersystems.com</ccEmails>
+        <description>Submit Customer Information to SPM</description>
+        <protected>false</protected>
+        <senderAddress>spen.cs.crm.prod@spenergynetworks.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Send_Customer_Information_1670516913021</template>
+    </alerts>
+</Workflow>

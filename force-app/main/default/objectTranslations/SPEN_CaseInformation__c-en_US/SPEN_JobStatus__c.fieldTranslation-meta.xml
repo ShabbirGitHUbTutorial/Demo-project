@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Status --></label>
+    <name>SPEN_JobStatus__c</name>
+    <picklistValues>
+        <masterLabel>Appointment Booked 1</masterLabel>
+        <translation><!-- Appointment Booked 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appointment Booked 2</masterLabel>
+        <translation><!-- Appointment Booked 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Appointment 10 WD response</masterLabel>
+        <translation><!-- Awaiting Appointment 10 WD response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Appointment Call 1 Made</masterLabel>
+        <translation><!-- Awaiting Appointment Call 1 Made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Appointment Call 2 Made</masterLabel>
+        <translation><!-- Awaiting Appointment Call 2 Made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Appointment Call 3 Made</masterLabel>
+        <translation><!-- Awaiting Appointment Call 3 Made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Appointment Letter 1 Sent</masterLabel>
+        <translation><!-- Awaiting Appointment Letter 1 Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Appointment Letter 2 Sent</masterLabel>
+        <translation><!-- Awaiting Appointment Letter 2 Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cat C Job - On Hold</masterLabel>
+        <translation><!-- Cat C Job - On Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Delayed</masterLabel>
+        <translation><!-- Disconnection Delayed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnection Letter Issued</masterLabel>
+        <translation><!-- Disconnection Letter Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalation L2 Manager/Legal</masterLabel>
+        <translation><!-- Escalation L2 Manager/Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Final Contact Attempt</masterLabel>
+        <translation><!-- Final Contact Attempt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further SPEN Works Req</masterLabel>
+        <translation><!-- Further SPEN Works Req --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In flight job (CAT-A or CAT-B)</masterLabel>
+        <translation><!-- In flight job (CAT-A or CAT-B) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issued To LP - pending delivery instruction</masterLabel>
+        <translation><!-- Issued To LP - pending delivery instruction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Registry</masterLabel>
+        <translation><!-- Land Registry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MEX completed</masterLabel>
+        <translation><!-- MEX completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Access on 1st Appointment Date</masterLabel>
+        <translation><!-- No Access on 1st Appointment Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: Access Refused Non Safety</masterLabel>
+        <translation><!-- Reject: Access Refused Non Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: Access Refused Safety</masterLabel>
+        <translation><!-- Reject: Access Refused Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: Duplicate</masterLabel>
+        <translation><!-- Reject: Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: Incomplete contact details</masterLabel>
+        <translation><!-- Reject: Incomplete contact details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: No Access on 2nd Appointment Date</masterLabel>
+        <translation><!-- Reject: No Access on 2nd Appointment Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: No further appointment made</masterLabel>
+        <translation><!-- Reject: No further appointment made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: Out of Area / unknown postcode</masterLabel>
+        <translation><!-- Reject: Out of Area / unknown postcode --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: Unable to Access Equipment Non Safety</masterLabel>
+        <translation><!-- Reject: Unable to Access Equipment Non Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: Unable to Access Equipment Safety</masterLabel>
+        <translation><!-- Reject: Unable to Access Equipment Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: Unable to Contact Customer Reasonable Endeavours Made</masterLabel>
+        <translation><!-- Reject: Unable to Contact Customer Reasonable Endeavours Made --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: no works required</masterLabel>
+        <translation><!-- Reject: no works required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject: works already completed</masterLabel>
+        <translation><!-- Reject: works already completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works Completed</masterLabel>
+        <translation><!-- Works Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Works Completed-Disconnected</masterLabel>
+        <translation><!-- Works Completed-Disconnected --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

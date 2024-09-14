@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>record_view</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>SPEN_QueueName__c</columns>
+    <columns>SPEN_RoutingOutcome__c</columns>
+    <columns>SPEN_ToAddress__c</columns>
+    <columns>Matcher_String__c</columns>
+    <columns>Matcher_String_2__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>record view</label>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_FatigueRiskAssessmentScore__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the fatigue risk assessment score</description>
+    <externalId>false</externalId>
+    <label>Fatigue Risk Assessment Score</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

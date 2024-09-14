@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Non Compliance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Non Compliances</value>
+    </caseValues>
+    <layouts>
+        <layout>Non Compliance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please create an &apos;Access&apos; or &apos;Unknown&apos; Land Contact on the Land Right if the impacted land is owned by someone other than the Contracting Party and the Impacted party is not already a Land Contact on the associated Land Right. --></errorMessage>
+        <name>SPEN_LandContactAssociatedWithNC</name>
+    </validationRules>
+</CustomObjectTranslation>

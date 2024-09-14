@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Service Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Service Forms</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Handshake Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Satisfaction --></label>
+            <section>Customer Satisfaction</section>
+        </sections>
+        <sections>
+            <label><!-- Job Information --></label>
+            <section>Job Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>LV Service Termination Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Form Information --></label>
+            <section>Form Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RATOV Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Incident Information --></label>
+            <section>Incident Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Record type used for identifying the Customer Handshake forms --></description>
+        <label><!-- Customer Handshake --></label>
+        <name>SPEN_CustomerHandshake</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type used for identifying the LV Service Termination Surveys --></description>
+        <label><!-- LV cut out inspection --></label>
+        <name>SPEN_LVServiceTerminationSurvey</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type used to identify the RATOV forms --></description>
+        <label><!-- RATOV --></label>
+        <name>SPEN_RATOV</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

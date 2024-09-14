@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PreventFutureDate</fullName>
+    <active>true</active>
+    <description>CRMD-5996 Connection process</description>
+    <errorConditionFormula>OR(
+AND(NOT ISBLANK( SPEN_ItemReceivedOn__c), SPEN_ItemReceivedOn__c &gt; NOW()),
+AND(NOT ISBLANK( SPEN_ItemRequestedDate__c), SPEN_ItemRequestedDate__c &gt; NOW())
+)</errorConditionFormula>
+    <errorMessage>Item requested date or Item received date cannot be future date and time</errorMessage>
+</ValidationRule>

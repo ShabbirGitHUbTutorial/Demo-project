@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Thurs_15th_PQC</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Case__c</columns>
+    <columns>SPEN_CustomerContactStatus__c</columns>
+    <columns>SPEN_TaskType__c</columns>
+    <columns>SPEN_DueDate__c</columns>
+    <columns>SPEN_PredictedMoodScore__c</columns>
+    <columns>SPEN_CheckedTeamLead__c</columns>
+    <columns>SPEn_DateChecked__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_DueDate__c</field>
+        <operation>equals</operation>
+        <value>2/15/2024 12:00 AM</value>
+    </filters>
+    <label>Thurs 15th PQC</label>
+</ListView>

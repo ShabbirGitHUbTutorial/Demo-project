@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Type --></label>
+    <name>SPEN_CustomerType__c</name>
+    <picklistValues>
+        <masterLabel>Customer Connection</masterLabel>
+        <translation><!-- Customer Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land North</masterLabel>
+        <translation><!-- Land North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land South</masterLabel>
+        <translation><!-- Land South --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network</masterLabel>
+        <translation><!-- Network --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,64 @@
+<template>
+    <lightning-card>
+        <P class="slds-hidden"> common wizard::::: {isStepOne}</P>
+        <!--<template if:true={isStepOne}>
+            <lightning-layout class={infoStyle}>
+                <lightning-formatted-rich-text title="Question" value="Confirm with the customer their preferred method of contact.">
+                </lightning-formatted-rich-text>
+            </lightning-layout>
+
+            <lightning-layout class={infoStyle}>
+                <lightning-formatted-rich-text title="Question"
+                    value="Do you want to keep this as your preferred contact method or would you like to change it?">
+                </lightning-formatted-rich-text>
+            </lightning-layout>
+            <div>                
+                <lightning-layout class="slds-var-m-around_medium slds-var-p-left_large slds-var-p-bottom_large">
+                    <template if:true={preferredMethodValues.data}>
+                        <lightning-combobox name="preferredmethod" label="Do you want to keep this as your preferred contact method or would you like to change it?"
+                            value={prefContactMethod} options={preferredMethodValues.data.values}
+                            onchange={handleSelectedVal} variant="label-hidden">
+                        </lightning-combobox>
+                    </template>
+                </lightning-layout>
+            </div>
+        </template>-->
+       
+        <template if:true={isStepTwo}>
+
+            <lightning-layout class={infoStyle}>
+                <lightning-formatted-rich-text title="Question"
+                    value="Please provide your preferred contact method">
+                </lightning-formatted-rich-text>
+            </lightning-layout>
+            <div>
+                <lightning-layout class="slds-var-m-around_medium slds-var-p-left_large slds-var-p-bottom_large">
+                    <template if:true={preferredMethodValues.data}>
+                        <lightning-combobox name="preferredmethod" label="Please provide your preferred contact method"
+                            value={prefContactMethod} options={preferredMethodValues.data.values}
+                            onchange={handleSelectedVal} variant="label-hidden"></lightning-combobox>
+                    </template>
+                </lightning-layout>
+            </div> 
+        </template>
+
+        <span slot="footer" class="buttonAllignment">
+
+            <template if:true={isEnableNext}>
+                <lightning-button class="slds-card__footer-action slds-var-m-right_medium" label="Next" variant="brand"
+                    onclick={handleNext}></lightning-button>
+            </template>
+            <template if:true={isEnableFinish}>
+                <lightning-button class="slds-card__footer-action" label="Finish" variant="brand"
+                    onclick={handleFinish}></lightning-button>
+            </template>
+        </span>
+        <template if:true={isStepTwo}>
+        <lightning-progress-indicator current-step={currentStep} type="base" variant="base" class="slds-var-m-around_x-large">
+            <lightning-progress-step label="Step 1" value="1" onclick={handleOnStepClick}></lightning-progress-step>
+            <lightning-progress-step label="Step 2" value="2" onclick={handleOnStepClick}></lightning-progress-step>
+        </lightning-progress-indicator>
+    </template>
+
+    </lightning-card>
+</template>

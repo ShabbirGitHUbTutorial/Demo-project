@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_WorkCategory__c</fullName>
+    <description>It stores work category detail as parent to work category milestone</description>
+    <label>Work Category</label>
+    <referenceTo>SPEN_WorkCategory__c</referenceTo>
+    <relationshipLabel>Work Category Milestones</relationshipLabel>
+    <relationshipName>Work_Category_Milestones</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

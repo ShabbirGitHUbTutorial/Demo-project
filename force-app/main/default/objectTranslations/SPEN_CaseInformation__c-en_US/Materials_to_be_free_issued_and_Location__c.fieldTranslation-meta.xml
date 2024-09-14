@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Free Issued Material &amp; Collect Location --></label>
+    <name>Materials_to_be_free_issued_and_Location__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_AreYouHappyForEnquiryToBeClosed__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to capture if the customer is happy or not for the enquiry closure. 
+Used in Customer Handshake form</description>
+    <label>Are you happy for enquiry to be closed?</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SPEN_YesOrNo</valueSetName>
+    </valueSet>
+</CustomField>

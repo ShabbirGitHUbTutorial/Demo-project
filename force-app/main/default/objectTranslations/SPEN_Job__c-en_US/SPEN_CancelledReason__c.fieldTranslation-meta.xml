@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cancelled Reason --></label>
+    <name>SPEN_CancelledReason__c</name>
+    <picklistValues>
+        <masterLabel>Business Re-Design</masterLabel>
+        <translation><!-- Business Re-Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Withdrawn</masterLabel>
+        <translation><!-- Business Withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Withdrawn</masterLabel>
+        <translation><!-- Customer Withdrawn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy Consents refused</masterLabel>
+        <translation><!-- Energy Consents refused --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Consent Issue</masterLabel>
+        <translation><!-- Land Consent Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No PO received</masterLabel>
+        <translation><!-- No PO received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other External Stakeholder</masterLabel>
+        <translation><!-- Other External Stakeholder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning Refused</masterLabel>
+        <translation><!-- Planning Refused --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Program Change</masterLabel>
+        <translation><!-- Program Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Programme Refresh</masterLabel>
+        <translation><!-- Programme Refresh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raised in error</masterLabel>
+        <translation><!-- Raised in error --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

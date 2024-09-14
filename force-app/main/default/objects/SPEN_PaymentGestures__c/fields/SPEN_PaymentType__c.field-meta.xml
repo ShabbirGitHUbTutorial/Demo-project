@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PaymentType__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Hold the mode of payment. CRMD-5327</description>
+    <label>Payment/Gesture Type</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>false</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPEN_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer Service Payment</fullName>
+                <default>false</default>
+                <label>Customer Service Payment</label>
+            </value>
+            <value>
+                <fullName>Simply Thank You Vouchers/Gifts</fullName>
+                <default>false</default>
+                <label>Simply Thank You Vouchers/Gifts</label>
+            </value>
+            <value>
+                <fullName>Hot Food Payment</fullName>
+                <default>false</default>
+                <label>Hot Food Payment</label>
+            </value>
+            <value>
+                <fullName>Just Eat Payment</fullName>
+                <default>false</default>
+                <label>Just Eat Payment</label>
+            </value>
+            <value>
+                <fullName>Hotel Payment</fullName>
+                <default>false</default>
+                <label>Hotel Payment</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Insurance Land Damage</fullName>
+                <default>false</default>
+                <label>Insurance Land Damage</label>
+            </value>
+            <value>
+                <fullName>Voucher</fullName>
+                <default>false</default>
+                <label>Voucher</label>
+            </value>
+            <value>
+                <fullName>Flowers</fullName>
+                <default>false</default>
+                <label>Flowers</label>
+            </value>
+            <value>
+                <fullName>Cards</fullName>
+                <default>false</default>
+                <label>Cards</label>
+            </value>
+            <value>
+                <fullName>Bank Transfer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bank Transfer</label>
+            </value>
+            <value>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cheque</label>
+            </value>
+            <value>
+                <fullName>Online</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Online</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Customer Service Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Simply Thank You Vouchers/Gifts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Hot Food Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Just Eat Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Hotel Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payment</controllingFieldValue>
+            <valueName>Insurance Land Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gesture</controllingFieldValue>
+            <valueName>Voucher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gesture</controllingFieldValue>
+            <valueName>Flowers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gesture</controllingFieldValue>
+            <valueName>Cards</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

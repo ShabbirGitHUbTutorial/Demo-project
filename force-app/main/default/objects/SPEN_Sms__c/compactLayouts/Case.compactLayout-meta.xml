@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case</fullName>
+    <fields>SPEN_Status__c</fields>
+    <fields>SPEN_Mobile__c</fields>
+    <fields>SPEN_CaseId__c</fields>
+    <fields>SPEN_IvrMessageId__c</fields>
+    <label>Case</label>
+</CompactLayout>

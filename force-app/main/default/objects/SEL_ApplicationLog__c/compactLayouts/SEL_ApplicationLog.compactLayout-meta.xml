@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEL_ApplicationLog</fullName>
+    <fields>Name</fields>
+    <fields>RecordTypeId</fields>
+    <fields>SEL_Category__c</fields>
+    <label>Application Log</label>
+</CompactLayout>

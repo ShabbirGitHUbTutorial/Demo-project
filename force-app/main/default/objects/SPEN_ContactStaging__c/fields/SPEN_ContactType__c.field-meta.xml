@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ContactType__c</fullName>
+    <label>Contact Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>PSR Contact (Primary)</fullName>
+                <default>false</default>
+                <label>PSR Contact (Primary)</label>
+            </value>
+            <value>
+                <fullName>Alternative Contact</fullName>
+                <default>false</default>
+                <label>Alternative Contact</label>
+            </value>
+            <value>
+                <fullName>Site Contact</fullName>
+                <default>false</default>
+                <label>Site Contact</label>
+            </value>
+            <value>
+                <fullName>Premise Owner</fullName>
+                <default>false</default>
+                <label>Premise Owner</label>
+            </value>
+            <value>
+                <fullName>PSR Contact (Alternative)</fullName>
+                <default>false</default>
+                <label>PSR Contact (Alternative)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

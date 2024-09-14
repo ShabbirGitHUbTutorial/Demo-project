@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_AssociatedWith__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Associated With</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <errorMessage>Association can only be done with Owner or Occupier.</errorMessage>
+        <filterItems>
+            <field>SPEN_LandAssociation__c.SPEN_AssociationType__c</field>
+            <operation>equals</operation>
+            <value>Occupier</value>
+        </filterItems>
+        <filterItems>
+            <field>SPEN_LandAssociation__c.SPEN_AssociationType__c</field>
+            <operation>equals</operation>
+            <value>Owner</value>
+        </filterItems>
+        <filterItems>
+            <field>SPEN_LandAssociation__c.SPEN_AssociationType__c</field>
+            <operation>equals</operation>
+            <value>Owner-Occupier</value>
+        </filterItems>
+        <filterItems>
+            <field>SPEN_LandAssociation__c.SPEN_Land__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.SPEN_Land__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>SPEN_LandAssociation__c</referenceTo>
+    <relationshipLabel>Land Contacts</relationshipLabel>
+    <relationshipName>Land_Associations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

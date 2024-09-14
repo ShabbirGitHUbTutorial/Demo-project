@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RAACConcreteSurvey</fullName>
+    <active>true</active>
+    <description>Record type used to identify the RAAC Concrete Survey forms</description>
+    <label>RAAC Concrete Survey</label>
+    <picklistValues>
+        <picklist>SPEN_AreYouAbleToPenetrateTheConcrete__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_BuildingType__c</picklist>
+        <values>
+            <fullName>Attached</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embedded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freestanding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_CanTheRoofBeAccessedExternally__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_District__c</picklist>
+        <values>
+            <fullName>SPD - Ayrshire %26 Clyde South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Central %26 Fife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Dumfries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Edinburgh %26 Borders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Glasgow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPD - Lanarkshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Dee Valley%2FMid Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Merseyside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Mid Cheshire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - North Wales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPM - Wirral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Ayrshire %26 Clyde South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Central %26 Fife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Dumfries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Edinburgh %26 Borders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Glasgow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPT - Lanarkshire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_HasTheAsbestosReportBeenConsulted__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_IsItSafeToInspectTheRoof__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_IsRAACSuspected__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RiskOfAsbestosInCeilingAreas__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_RoofInternallyAccessible__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SelectInternalRoofConstruction__c</picklist>
+        <values>
+            <fullName>Bare Concrete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plasterboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended ceiling</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_SelectWhatYouCanSeeEvidenceOf__c</picklist>
+        <values>
+            <fullName>Bubbles on edge or face of roof panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracking at the supporting locations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracking or spalling of the internal surface</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deflection of roof panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moisture ingress and degradation of the internal roof finish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rust staining or corrosion of reinforcements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water ponding on the surface of roof</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

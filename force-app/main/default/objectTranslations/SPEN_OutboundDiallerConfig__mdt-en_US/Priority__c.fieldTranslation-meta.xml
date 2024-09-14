@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Priority --></label>
+    <name>Priority__c</name>
+    <picklistValues>
+        <masterLabel>A1</masterLabel>
+        <translation><!-- A1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A10</masterLabel>
+        <translation><!-- A10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A11</masterLabel>
+        <translation><!-- A11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2</masterLabel>
+        <translation><!-- A2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A21</masterLabel>
+        <translation><!-- A21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3</masterLabel>
+        <translation><!-- A3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A31</masterLabel>
+        <translation><!-- A31 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A4</masterLabel>
+        <translation><!-- A4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A41</masterLabel>
+        <translation><!-- A41 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5</masterLabel>
+        <translation><!-- A5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A6</masterLabel>
+        <translation><!-- A6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A7</masterLabel>
+        <translation><!-- A7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A8</masterLabel>
+        <translation><!-- A8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A9</masterLabel>
+        <translation><!-- A9 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B1</masterLabel>
+        <translation><!-- B1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B11</masterLabel>
+        <translation><!-- B11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B2</masterLabel>
+        <translation><!-- B2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B21</masterLabel>
+        <translation><!-- B21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B3</masterLabel>
+        <translation><!-- B3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B31</masterLabel>
+        <translation><!-- B31 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B4</masterLabel>
+        <translation><!-- B4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B41</masterLabel>
+        <translation><!-- B41 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C1</masterLabel>
+        <translation><!-- C1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C2</masterLabel>
+        <translation><!-- C2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C3</masterLabel>
+        <translation><!-- C3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C4</masterLabel>
+        <translation><!-- C4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D1</masterLabel>
+        <translation><!-- D1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D10</masterLabel>
+        <translation><!-- D10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D2</masterLabel>
+        <translation><!-- D2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D3</masterLabel>
+        <translation><!-- D3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D4</masterLabel>
+        <translation><!-- D4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D5</masterLabel>
+        <translation><!-- D5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D6</masterLabel>
+        <translation><!-- D6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D7</masterLabel>
+        <translation><!-- D7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D8</masterLabel>
+        <translation><!-- D8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D9</masterLabel>
+        <translation><!-- D9 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E1</masterLabel>
+        <translation><!-- E1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E11</masterLabel>
+        <translation><!-- E11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E2</masterLabel>
+        <translation><!-- E2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E21</masterLabel>
+        <translation><!-- E21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E3</masterLabel>
+        <translation><!-- E3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E31</masterLabel>
+        <translation><!-- E31 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E4</masterLabel>
+        <translation><!-- E4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E41</masterLabel>
+        <translation><!-- E41 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F1</masterLabel>
+        <translation><!-- F1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F11</masterLabel>
+        <translation><!-- F11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F2</masterLabel>
+        <translation><!-- F2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F21</masterLabel>
+        <translation><!-- F21 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F3</masterLabel>
+        <translation><!-- F3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F31</masterLabel>
+        <translation><!-- F31 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F4</masterLabel>
+        <translation><!-- F4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F41</masterLabel>
+        <translation><!-- F41 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>G1</masterLabel>
+        <translation><!-- G1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>G2</masterLabel>
+        <translation><!-- G2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>G3</masterLabel>
+        <translation><!-- G3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>G4</masterLabel>
+        <translation><!-- G4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H1</masterLabel>
+        <translation><!-- H1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H2</masterLabel>
+        <translation><!-- H2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H3</masterLabel>
+        <translation><!-- H3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H4</masterLabel>
+        <translation><!-- H4 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

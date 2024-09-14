@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Retained cut out location --></label>
+    <name>SPEN_RetainedCutOutLocation__c</name>
+    <picklistValues>
+        <masterLabel>Bonnybridge</masterLabel>
+        <translation><!-- Bonnybridge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cambuslang</masterLabel>
+        <translation><!-- Cambuslang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dumfries</masterLabel>
+        <translation><!-- Dumfries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edinburgh</masterLabel>
+        <translation><!-- Edinburgh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Galashiels</masterLabel>
+        <translation><!-- Galashiels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glasgow</masterLabel>
+        <translation><!-- Glasgow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glenrothes</masterLabel>
+        <translation><!-- Glenrothes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kilmarnock</masterLabel>
+        <translation><!-- Kilmarnock --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

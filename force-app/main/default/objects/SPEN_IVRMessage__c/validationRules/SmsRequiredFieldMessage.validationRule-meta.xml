@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SmsRequiredFieldMessage</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;SMS&quot; &amp;&amp;
+ISBLANK(SPEN_IVRMessage__c)</errorConditionFormula>
+    <errorDisplayField>SPEN_IVRMessage__c</errorDisplayField>
+    <errorMessage>The Message field is required.</errorMessage>
+</ValidationRule>

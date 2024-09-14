@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For the SAQL Query row and Salesforce record that share the same record Id, compare the value of the mapped SAQL output columns and Salesforce fields, skip updating those Salesforce records that are unchanged. --></help>
+    <label><!-- Skip Unchanged --></label>
+    <name>DSWB__Skip_Unchanged__c</name>
+</CustomFieldTranslation>

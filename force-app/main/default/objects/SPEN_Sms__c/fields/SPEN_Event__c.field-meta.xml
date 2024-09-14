@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Event__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Indicates the event that triggered the SMS record to be created. In IVR scenarios, this is used to look up the message template.</description>
+    <label>Event</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MPAS Inquiry</fullName>
+                <default>false</default>
+                <label>MPAS Inquiry</label>
+            </value>
+            <value>
+                <fullName>Supplier Inquiry</fullName>
+                <default>false</default>
+                <label>Supplier Inquiry</label>
+            </value>
+            <value>
+                <fullName>Case Creation</fullName>
+                <default>false</default>
+                <label>Case Creation</label>
+            </value>
+            <value>
+                <fullName>Merged from SP to Network</fullName>
+                <default>false</default>
+                <label>Merged from SP to Network</label>
+            </value>
+            <value>
+                <fullName>3-Hour Comfort Call</fullName>
+                <default>false</default>
+                <label>3-Hour Comfort Call</label>
+            </value>
+            <value>
+                <fullName>3rd Call Received</fullName>
+                <default>false</default>
+                <label>3rd Call Received</label>
+            </value>
+            <value>
+                <fullName>Dropped Supply with Notice</fullName>
+                <default>false</default>
+                <label>Dropped Supply with Notice</label>
+            </value>
+            <value>
+                <fullName>Dropped Supply without Notice</fullName>
+                <default>false</default>
+                <label>Dropped Supply without Notice</label>
+            </value>
+            <value>
+                <fullName>Estimated Restoration Time Extended</fullName>
+                <default>false</default>
+                <label>Estimated Restoration Time Extended</label>
+            </value>
+            <value>
+                <fullName>Incident Created</fullName>
+                <default>false</default>
+                <label>Incident Created</label>
+            </value>
+            <value>
+                <fullName>Incident Restored</fullName>
+                <default>false</default>
+                <label>Incident Restored</label>
+            </value>
+            <value>
+                <fullName>Resource Arrival On Site</fullName>
+                <default>false</default>
+                <label>Resource Arrival On Site</label>
+            </value>
+            <value>
+                <fullName>Resource Dispatched</fullName>
+                <default>false</default>
+                <label>Resource Dispatched</label>
+            </value>
+            <value>
+                <fullName>MPAS Out-Of-Area Inquiry</fullName>
+                <default>false</default>
+                <label>MPAS Out-Of-Area Inquiry</label>
+            </value>
+            <value>
+                <fullName>Resource ETA Change</fullName>
+                <default>false</default>
+                <label>Resource ETA Change</label>
+            </value>
+            <value>
+                <fullName>Medically Dependent by District</fullName>
+                <default>false</default>
+                <label>Medically Dependent by District</label>
+            </value>
+            <value>
+                <fullName>Planned Outage Communication</fullName>
+                <default>false</default>
+                <label>Planned Outage Communication</label>
+            </value>
+            <value>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+                <label>On Demand</label>
+            </value>
+            <value>
+                <fullName>Connections</fullName>
+                <default>false</default>
+                <label>Connections</label>
+            </value>
+            <value>
+                <fullName>HV proactive contact</fullName>
+                <default>false</default>
+                <label>HV proactive contact</label>
+            </value>
+            <value>
+                <fullName>GE</fullName>
+                <default>false</default>
+                <label>GE</label>
+            </value>
+            <value>
+                <fullName>Complaint Case Creation</fullName>
+                <default>false</default>
+                <label>Complaint Case Creation</label>
+            </value>
+            <value>
+                <fullName>GE Closure Survey</fullName>
+                <default>false</default>
+                <label>GE Closure Survey</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

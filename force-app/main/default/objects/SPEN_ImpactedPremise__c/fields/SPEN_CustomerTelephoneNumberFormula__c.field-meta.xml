@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CustomerTelephoneNumberFormula__c</fullName>
+    <description>Related Contact&apos;s Telephone Number</description>
+    <externalId>false</externalId>
+    <formula>SPEN_ContactPremise__r.SPEN_RelatedContact__r.Phone</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer Telephone Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

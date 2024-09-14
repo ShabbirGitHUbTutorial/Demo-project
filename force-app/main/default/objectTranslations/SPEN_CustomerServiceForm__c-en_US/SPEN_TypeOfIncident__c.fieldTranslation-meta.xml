@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Incident --></label>
+    <name>SPEN_TypeOfIncident__c</name>
+    <picklistValues>
+        <masterLabel>Connections delivery</masterLabel>
+        <translation><!-- Connections delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earthing</masterLabel>
+        <translation><!-- Earthing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inaccurate information</masterLabel>
+        <translation><!-- Inaccurate information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal mains/Laterals</masterLabel>
+        <translation><!-- Internal mains/Laterals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCT</masterLabel>
+        <translation><!-- LCT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land damage</masterLabel>
+        <translation><!-- Land damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loss of supply</masterLabel>
+        <translation><!-- Loss of supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost neutral</masterLabel>
+        <translation><!-- Lost neutral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned interruptions</masterLabel>
+        <translation><!-- Planned interruptions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site excavation/Reinstatement</masterLabel>
+        <translation><!-- Site excavation/Reinstatement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unloop/Shared supplies</masterLabel>
+        <translation><!-- Unloop/Shared supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voltage issues</masterLabel>
+        <translation><!-- Voltage issues --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

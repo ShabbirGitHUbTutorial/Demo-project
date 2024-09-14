@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TTCTargetIncenticeFailedProjectSt__c</fullName>
+    <label>TTC Target Incentice Failed - Project St</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arranging a Refund</fullName>
+                <default>false</default>
+                <label>Arranging a Refund</label>
+            </value>
+            <value>
+                <fullName>Awaiting Road Opening Notices</fullName>
+                <default>false</default>
+                <label>Awaiting Road Opening Notices</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Customer Not Ready</fullName>
+                <default>false</default>
+                <label>Customer Not Ready</label>
+            </value>
+            <value>
+                <fullName>Embargo</fullName>
+                <default>false</default>
+                <label>Embargo</label>
+            </value>
+            <value>
+                <fullName>Network Issues</fullName>
+                <default>false</default>
+                <label>Network Issues</label>
+            </value>
+            <value>
+                <fullName>Other (Give Details)</fullName>
+                <default>false</default>
+                <label>Other (Give Details)</label>
+            </value>
+            <value>
+                <fullName>Redesign = Variation</fullName>
+                <default>false</default>
+                <label>Redesign = Variation</label>
+            </value>
+            <value>
+                <fullName>Shutdown</fullName>
+                <default>false</default>
+                <label>Shutdown</label>
+            </value>
+            <value>
+                <fullName>Waiting on a Schedule Date</fullName>
+                <default>false</default>
+                <label>Waiting on a Schedule Date</label>
+            </value>
+            <value>
+                <fullName>Wayleaves &amp; Planning</fullName>
+                <default>false</default>
+                <label>Wayleaves &amp; Planning</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

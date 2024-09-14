@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_HeatingTypeCheckForCustomerClass</fullName>
+    <active>true</active>
+    <description>CRMD-10509 Heating Types Combinations - Errors</description>
+    <errorConditionFormula>OR(
+AND(
+ISPICKVAL(SPEN_CaseRecord__r.SPEN_CustomerClass__c, &apos;CO&apos;),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;36&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;2&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;14&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;3&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;16&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;35&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;40&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;17&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;45&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;5&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;23&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;1&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;57&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;55&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;37&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;38&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;12&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;33&apos;))
+),
+AND(
+ISPICKVAL(SPEN_CaseRecord__r.SPEN_CustomerClass__c, &apos;DO&apos;),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;39&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;44&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;32&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;7&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;13&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;6&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;8&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;9&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;34&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;36&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;24&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;10&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;26&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;35&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;55&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;27&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;57&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;37&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;38&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;12&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;33&apos;))
+),
+AND(
+ISPICKVAL(SPEN_CaseRecord__r.SPEN_CustomerClass__c, &apos;MX&apos;),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;39&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;44&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;32&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;7&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;13&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;6&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;8&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;14&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;36&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;34&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;2&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;3&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;16&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;35&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;17&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;40&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;45&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;5&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;23&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;1&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;22&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;37&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;38&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;12&apos;)),
+NOT(ISPICKVAL(SPEN_HeatingTypeDescription__c, &apos;33&apos;))
+)
+)</errorConditionFormula>
+    <errorDisplayField>SPEN_HeatingTypeDescription__c</errorDisplayField>
+    <errorMessage>Please ensure the Heating Type matches the Customer Class</errorMessage>
+</ValidationRule>

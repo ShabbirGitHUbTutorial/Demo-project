@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ResponsibleDistrict__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Pick the responsible district</description>
+    <label>Responsible District</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ayrshire &amp; Clyde South</fullName>
+                <default>false</default>
+                <label>Ayrshire &amp; Clyde South</label>
+            </value>
+            <value>
+                <fullName>Central &amp; Fife</fullName>
+                <default>false</default>
+                <label>Central &amp; Fife</label>
+            </value>
+            <value>
+                <fullName>Dee Valley / Mid Wales Oswestry</fullName>
+                <default>false</default>
+                <label>Dee Valley / Mid Wales Oswestry</label>
+            </value>
+            <value>
+                <fullName>Dumfries</fullName>
+                <default>false</default>
+                <label>Dumfries</label>
+            </value>
+            <value>
+                <fullName>Edinburgh &amp; Borders</fullName>
+                <default>false</default>
+                <label>Edinburgh &amp; Borders</label>
+            </value>
+            <value>
+                <fullName>Glasgow &amp; Clyde North</fullName>
+                <default>false</default>
+                <label>Glasgow &amp; Clyde North</label>
+            </value>
+            <value>
+                <fullName>Lanarkshire</fullName>
+                <default>false</default>
+                <label>Lanarkshire</label>
+            </value>
+            <value>
+                <fullName>Merseyside</fullName>
+                <default>false</default>
+                <label>Merseyside</label>
+            </value>
+            <value>
+                <fullName>Mid Cheshire</fullName>
+                <default>false</default>
+                <label>Mid Cheshire</label>
+            </value>
+            <value>
+                <fullName>North Wales</fullName>
+                <default>false</default>
+                <label>North Wales</label>
+            </value>
+            <value>
+                <fullName>Wirral</fullName>
+                <default>false</default>
+                <label>Wirral</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

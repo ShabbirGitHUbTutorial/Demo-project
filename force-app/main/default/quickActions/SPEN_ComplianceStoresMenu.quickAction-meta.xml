@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Global Action to show the Complaince Store Menu Flow</description>
+    <height>600</height>
+    <label>Compliance Stores Menu</label>
+    <lightningComponent>globalComplianceStoresMenuComponent</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

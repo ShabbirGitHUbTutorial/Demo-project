@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_IsWeekdayFormula__c</fullName>
+    <description>Select the holiday from the the Weekdays checkbox</description>
+    <formula>If(CASE(WEEKDAY(TODAY()), 1,&apos;Sunday&apos;,2,&apos;Monday&apos;,3,&apos;Tuesday&apos;,4,&apos;Wednesday&apos;,5,&apos;Thursday&apos;,6,&apos;Friday&apos;,&apos;Saturday&apos;)=Text(SPEN_DayofWeek__c),true,false)</formula>
+    <label>Is Weekday</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

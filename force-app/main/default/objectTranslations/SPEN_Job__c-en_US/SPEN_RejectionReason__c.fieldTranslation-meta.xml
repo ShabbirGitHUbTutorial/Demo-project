@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rejection Reason --></label>
+    <name>SPEN_RejectionReason__c</name>
+    <picklistValues>
+        <masterLabel>Incorrect Selection</masterLabel>
+        <translation><!-- Incorrect Selection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insufficient Detail</masterLabel>
+        <translation><!-- Insufficient Detail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Data</masterLabel>
+        <translation><!-- Missing Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other and comment</masterLabel>
+        <translation><!-- Other and comment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_CurrentProjectStatus__c</fullName>
+    <label>Current Project Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accepted Not Paid</fullName>
+                <default>false</default>
+                <label>Accepted Not Paid</label>
+            </value>
+            <value>
+                <fullName>Awaiting Road Opening Notice</fullName>
+                <default>false</default>
+                <label>Awaiting Road Opening Notice</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Customer not Ready</fullName>
+                <default>false</default>
+                <label>Customer not Ready</label>
+            </value>
+            <value>
+                <fullName>Embargo</fullName>
+                <default>false</default>
+                <label>Embargo</label>
+            </value>
+            <value>
+                <fullName>Network Issues</fullName>
+                <default>false</default>
+                <label>Network Issues</label>
+            </value>
+            <value>
+                <fullName>Now Scheduled</fullName>
+                <default>false</default>
+                <label>Now Scheduled</label>
+            </value>
+            <value>
+                <fullName>Other (Give Details)</fullName>
+                <default>false</default>
+                <label>Other (Give Details)</label>
+            </value>
+            <value>
+                <fullName>Pre-Vet</fullName>
+                <default>false</default>
+                <label>Pre-Vet</label>
+            </value>
+            <value>
+                <fullName>Redesign/Variation</fullName>
+                <default>false</default>
+                <label>Redesign/Variation</label>
+            </value>
+            <value>
+                <fullName>Shut Down</fullName>
+                <default>false</default>
+                <label>Shut Down</label>
+            </value>
+            <value>
+                <fullName>Waiting on Scheduled Date</fullName>
+                <default>false</default>
+                <label>Waiting on Scheduled Date</label>
+            </value>
+            <value>
+                <fullName>Wayleaves &amp; Planning</fullName>
+                <default>false</default>
+                <label>Wayleaves &amp; Planning</label>
+            </value>
+            <value>
+                <fullName>Not Included Cancelled</fullName>
+                <default>false</default>
+                <label>Not Included Cancelled</label>
+            </value>
+            <value>
+                <fullName>Not Included LV</fullName>
+                <default>false</default>
+                <label>Not Included LV</label>
+            </value>
+            <value>
+                <fullName>Not Included APOS</fullName>
+                <default>false</default>
+                <label>Not Included APOS</label>
+            </value>
+            <value>
+                <fullName>Not Included PCP</fullName>
+                <default>false</default>
+                <label>Not Included PCP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

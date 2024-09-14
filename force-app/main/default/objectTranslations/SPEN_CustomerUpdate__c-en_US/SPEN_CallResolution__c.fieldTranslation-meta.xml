@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Resolution --></label>
+    <name>SPEN_CallResolution__c</name>
+    <picklistValues>
+        <masterLabel>Case created</masterLabel>
+        <translation><!-- Case created --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Case updated</masterLabel>
+        <translation><!-- Case updated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outbound-not reachable</masterLabel>
+        <translation><!-- Outbound-not reachable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Successful call</masterLabel>
+        <translation><!-- Successful call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Voicemail left</masterLabel>
+        <translation><!-- Voicemail left --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

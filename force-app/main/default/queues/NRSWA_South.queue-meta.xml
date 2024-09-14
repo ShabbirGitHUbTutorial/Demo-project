@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>NRSWA-South</name>
+    <queueMembers>
+        <users>
+            <user>amolloy@spenergynetworks.co.uk.spencrm</user>
+            <user>amackinnon@spenergynetworks.co.uk</user>
+            <user>castle@spenergynetworks.co.uk.spencrm</user>
+            <user>dhartley@spenergynetworks.co.uk.spencrm</user>
+            <user>elegall@spenergynetworks.co.uk.spencrm</user>
+            <user>jevans@spenergynetworks.co.uk.spencrm</user>
+            <user>k.wintersgill@spenergynetworks.co.uk.spencrm</user>
+            <user>n.brown@spenergynetworks.co.uk.spencrm</user>
+            <user>nikki.wilde@spenergynetworks.co.uk.spencrm</user>
+            <user>ssadler@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

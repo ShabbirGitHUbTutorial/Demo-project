@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>GE Voice SPD GE - Glasgow</name>
+    <queueMembers>
+        <users>
+            <user>asantandreu@spenergynetworks.co.uk.spencrm</user>
+            <user>george.brodie@spenergynetworks.co.uk.spencrm</user>
+            <user>jthomson@spenergynetworks.co.uk.spencrm</user>
+            <user>mgallacher@spenergynetworks.co.uk.spencrm</user>
+            <user>mconvery@spenergynetworks.co.uk.spencrm</user>
+            <user>nmumby@spenergynetworks.co.uk.spencrm</user>
+            <user>ricky.knight@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>OmniflowRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>VoiceCall</sobjectType>
+    </queueSobject>
+</Queue>

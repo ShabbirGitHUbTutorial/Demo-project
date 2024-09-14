@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Project Type --></label>
+    <name>SPEN_Project_Type__c</name>
+    <picklistValues>
+        <masterLabel>DCO</masterLabel>
+        <translation><!-- DCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IC 132</masterLabel>
+        <translation><!-- IC 132 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IC &lt;132</masterLabel>
+        <translation><!-- IC &lt;132 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S37 132 &lt;2KM</masterLabel>
+        <translation><!-- S37 132 &lt;2KM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S37 &lt;132</masterLabel>
+        <translation><!-- S37 &lt;132 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S37 EIA</masterLabel>
+        <translation><!-- S37 EIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S37 Non-EIA</masterLabel>
+        <translation><!-- S37 Non-EIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPD Substation</masterLabel>
+        <translation><!-- SPD Substation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM 132 Substation</masterLabel>
+        <translation><!-- SPM 132 Substation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM Cable</masterLabel>
+        <translation><!-- SPM Cable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPM Substation</masterLabel>
+        <translation><!-- SPM Substation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPT Cable</masterLabel>
+        <translation><!-- SPT Cable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPT Substation</masterLabel>
+        <translation><!-- SPT Substation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

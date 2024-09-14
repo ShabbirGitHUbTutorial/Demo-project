@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SelectInternalRoofConstruction__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to capture the &quot;Select internal roof construction&quot;. Used in the RAAC Concrete Survey</description>
+    <label>Select internal roof construction</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bare Concrete</fullName>
+                <default>false</default>
+                <label>Bare Concrete</label>
+            </value>
+            <value>
+                <fullName>Plasterboard</fullName>
+                <default>false</default>
+                <label>Plasterboard</label>
+            </value>
+            <value>
+                <fullName>Suspended ceiling</fullName>
+                <default>false</default>
+                <label>Suspended ceiling</label>
+            </value>
+            <value>
+                <fullName>Other (specify)</fullName>
+                <default>false</default>
+                <label>Other (specify)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

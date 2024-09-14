@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cable or conductor type --></label>
+    <name>SPEN_CableOrConductorType__c</name>
+    <picklistValues>
+        <masterLabel>ABC</masterLabel>
+        <translation><!-- ABC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bubsar riser</masterLabel>
+        <translation><!-- Bubsar riser --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concentric</masterLabel>
+        <translation><!-- Concentric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concentric - CNE</masterLabel>
+        <translation><!-- Concentric - CNE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concentric - LSOH</masterLabel>
+        <translation><!-- Concentric - LSOH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concentric - old</masterLabel>
+        <translation><!-- Concentric - old --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSOS</masterLabel>
+        <translation><!-- HSOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hybrid concentric</masterLabel>
+        <translation><!-- Hybrid concentric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead covered</masterLabel>
+        <translation><!-- Lead covered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Looped service</masterLabel>
+        <translation><!-- Looped service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PILC</masterLabel>
+        <translation><!-- PILC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PVC looped neutral</masterLabel>
+        <translation><!-- PVC looped neutral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pyro cable</masterLabel>
+        <translation><!-- Pyro cable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Split concentric</masterLabel>
+        <translation><!-- Split concentric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tape armoured</masterLabel>
+        <translation><!-- Tape armoured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under eaves</masterLabel>
+        <translation><!-- Under eaves --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undersized PVC</masterLabel>
+        <translation><!-- Undersized PVC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIR cabling</masterLabel>
+        <translation><!-- VIR cabling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIR/mackenite</masterLabel>
+        <translation><!-- VIR/mackenite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wire armour</masterLabel>
+        <translation><!-- Wire armour --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

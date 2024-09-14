@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Field API Name of a Lookup(Dataset Writeback) field in the Destination Object. This field stores the Id of the latest Dataset Writeback to the Destination record. --></help>
+    <label><!-- Last Modified By Field API Name --></label>
+    <name>DSWB__Last_Modified_By_Field_API_Name__c</name>
+</CustomFieldTranslation>

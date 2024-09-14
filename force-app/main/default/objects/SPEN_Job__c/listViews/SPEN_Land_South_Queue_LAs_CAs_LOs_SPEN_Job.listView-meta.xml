@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Land_South_Queue_LAs_CAs_LOs_SPEN_Job</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SPEN_JobStatus__c</columns>
+    <columns>SPEN_JobTitle__c</columns>
+    <columns>SPEN_BusinessArea__c</columns>
+    <columns>SPEN_District__c</columns>
+    <columns>SPEN_WorkCategory__c</columns>
+    <columns>SPEN_LocationPostCode__c</columns>
+    <columns>SPEN_ControlNumber__c</columns>
+    <columns>SPEN_Project_CustomerReference__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>SPEN_ProjectManager__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Queue</filterScope>
+    <label>Land South Queue (LAs/CAs/LOs)</label>
+    <queue>SPEN_Land_South_Queue_LAs_CAs_LOs</queue>
+</ListView>

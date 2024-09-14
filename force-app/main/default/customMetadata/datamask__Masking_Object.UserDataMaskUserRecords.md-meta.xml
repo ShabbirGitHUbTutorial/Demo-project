@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>User</label>
+    <protected>false</protected>
+    <values>
+        <field>datamask__API_Name__c</field>
+        <value xsi:type="xsd:string">User</value>
+    </values>
+    <values>
+        <field>datamask__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Batch_Data__c</field>
+        <value xsi:type="xsd:string">{}</value>
+    </values>
+    <values>
+        <field>datamask__Custom__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__DataMask_Configuration__c</field>
+        <value xsi:type="xsd:string">DataMaskUserRecords</value>
+    </values>
+    <values>
+        <field>datamask__Filter_Enabled__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>datamask__Last_Prepped_Date__c</field>
+        <value xsi:type="xsd:date">2023-05-02</value>
+    </values>
+    <values>
+        <field>datamask__Master_Object__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>datamask__Number_of_Fields__c</field>
+        <value xsi:type="xsd:double">18.0</value>
+    </values>
+    <values>
+        <field>datamask__Raw_Filter_Data__c</field>
+        <value xsi:type="xsd:string">{&quot;applyconditions&quot;:&quot;custom&quot;,&quot;conditionList&quot;:[{&quot;field&quot;:{&quot;name&quot;:&quot;ProfileId&quot;,&quot;type&quot;:&quot;ID&quot;},&quot;operator&quot;:&quot;not in&quot;,&quot;criteria&quot;:&quot;00e8d000001uxPi,00e8d000000dFVe,00e8d000000dB4C,00e8d000000dFVg,00e8d000000dFVh&quot;,&quot;index&quot;:0},{&quot;field&quot;:{&quot;name&quot;:&quot;FederationIdentifier&quot;,&quot;type&quot;:&quot;STRING&quot;},&quot;operator&quot;:&quot;not in&quot;,&quot;criteria&quot;:&quot;gyoung@spenergynetworks.co.uk,pauline.johnson@spenergynetworks.co.uk,antony.emans@spenergynetworks.co.uk,james.doyle@spenergynetworks.co.uk,steven.dunsmore@spenergynetworks.co.uk,lfriel@spenergynetworks.co.uk,tess.brown@spenergynetworks.co.uk,barbara.griffiths@spenergynetworks.co.uk,clare.jones@spenergynetworks.co.uk,uzafar@spenergynetworks.co.uk,paul.green@spenergynetworks.co.uk&quot;,&quot;index&quot;:1}],&quot;customvalue&quot;:&quot;1 AND 2 &quot;}</value>
+    </values>
+    <values>
+        <field>datamask__Record_Count__c</field>
+        <value xsi:type="xsd:double">384.0</value>
+    </values>
+    <values>
+        <field>datamask__Run_In_Poly__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__Run_In_Serial__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>datamask__Where_Criteria_LT__c</field>
+        <value xsi:type="xsd:string">ProfileId NOT IN ( &apos;00e8d000001uxPi&apos;, &apos;00e8d000000dFVe&apos;, &apos;00e8d000000dB4C&apos;, &apos;00e8d000000dFVg&apos;, &apos;00e8d000000dFVh&apos;) AND FederationIdentifier NOT IN ( &apos;gyoung@spenergynetworks.co.uk&apos;, &apos;pauline.johnson@spenergynetworks.co.uk&apos;, &apos;antony.emans@spenergynetworks.co.uk&apos;, &apos;james.doyle@spenergynetworks.co.uk&apos;, &apos;steven.dunsmore@spenergynetworks.co.uk&apos;, &apos;lfriel@spenergynetworks.co.uk&apos;, &apos;tess.brown@spenergynetworks.co.uk&apos;, &apos;barbara.griffiths@spenergynetworks.co.uk&apos;, &apos;clare.jones@spenergynetworks.co.uk&apos;, &apos;uzafar@spenergynetworks.co.uk&apos;, &apos;paul.green@spenergynetworks.co.uk&apos;)</value>
+    </values>
+    <values>
+        <field>datamask__Where_Criteria__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

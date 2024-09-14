@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Acknowledgement_Letters</fullName>
+    <availability>online</availability>
+    <description>Created by Conga Solution Manager. Record link: https://spenergynetworkscrm--apxtconga4.vf.force.com/a1iSr000002bWpZIAU.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Acknowledgement Letters</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_520}
+&amp;Id={!SPEN_Job__c.Id}
+
+&amp;QueryId=[Land]0Q_005EAE498722
+
+&amp;TemplateId=0T_013EAE535788,0T_014EAE791976,0T_015EAE781661
+
+&amp;SC0=1
+&amp;SC1=attachments</url>
+    <width>900</width>
+</WebLink>

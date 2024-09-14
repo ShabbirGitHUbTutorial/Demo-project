@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_OnDemandCompactLayout</fullName>
+    <fields>RecordTypeId</fields>
+    <fields>SPEN_Category__c</fields>
+    <fields>SPEN_Status__c</fields>
+    <fields>SPEN_IncidentId__c</fields>
+    <fields>SPEN_OnDemandRef__c</fields>
+    <fields>OwnerId</fields>
+    <label>OnDemand Compact Layout</label>
+</CompactLayout>

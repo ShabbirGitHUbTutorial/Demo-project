@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- If Yes, Cause of Loss of Supply --></label>
+    <name>SPEN_IfYesCauseofLossofSupply__c</name>
+    <picklistValues>
+        <masterLabel>Damage</masterLabel>
+        <translation><!-- Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damage &amp; Shutdown</masterLabel>
+        <translation><!-- Damage &amp; Shutdown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shutdown</masterLabel>
+        <translation><!-- Shutdown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

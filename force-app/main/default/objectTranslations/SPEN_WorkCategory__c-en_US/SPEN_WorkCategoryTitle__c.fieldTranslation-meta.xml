@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Work Category Title --></label>
+    <name>SPEN_WorkCategoryTitle__c</name>
+    <picklistValues>
+        <masterLabel>CCT Customer Contact Enquiry</masterLabel>
+        <translation><!-- CCT Customer Contact Enquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRM Customer Complaint</masterLabel>
+        <translation><!-- CRM Customer Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation</masterLabel>
+        <translation><!-- Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change Of Vendor Details</masterLabel>
+        <translation><!-- Change Of Vendor Details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of Owner</masterLabel>
+        <translation><!-- Change of Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of Owner Estate</masterLabel>
+        <translation><!-- Change of Owner Estate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of Owner Farm</masterLabel>
+        <translation><!-- Change of Owner Farm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change of Owner Garden</masterLabel>
+        <translation><!-- Change of Owner Garden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed Necessary Wayleave</masterLabel>
+        <translation><!-- Completed Necessary Wayleave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damage Claim</masterLabel>
+        <translation><!-- Damage Claim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decomissioning</masterLabel>
+        <translation><!-- Decomissioning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>District Day to Day</masterLabel>
+        <translation><!-- District Day to Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Land Search Request</masterLabel>
+        <translation><!-- External Land Search Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fibre Optic Cable</masterLabel>
+        <translation><!-- Fibre Optic Cable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation><!-- Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorporated Rights - All</masterLabel>
+        <translation><!-- Incorporated Rights - All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Injurious Affection</masterLabel>
+        <translation><!-- Injurious Affection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LVSSA</masterLabel>
+        <translation><!-- LVSSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LVSSB</masterLabel>
+        <translation><!-- LVSSB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Enquiry</masterLabel>
+        <translation><!-- Land Enquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Rights Enquiry</masterLabel>
+        <translation><!-- Land Rights Enquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance Works - Non Outage</masterLabel>
+        <translation><!-- Maintenance Works - Non Outage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance Works - Outage</masterLabel>
+        <translation><!-- Maintenance Works - Outage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major Refurb No planning</masterLabel>
+        <translation><!-- Major Refurb No planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major Refurb Planning</masterLabel>
+        <translation><!-- Major Refurb Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major Refurb S37</masterLabel>
+        <translation><!-- Major Refurb S37 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Marine Cable with Planning</masterLabel>
+        <translation><!-- New Marine Cable with Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New OHL - DCO</masterLabel>
+        <translation><!-- New OHL - DCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New OHL - EIA</masterLabel>
+        <translation><!-- New OHL - EIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New OHL - NO EIA</masterLabel>
+        <translation><!-- New OHL - NO EIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New UG Cable - No Planning</masterLabel>
+        <translation><!-- New UG Cable - No Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New UG Cable - With Planning</masterLabel>
+        <translation><!-- New UG Cable - With Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Project work</masterLabel>
+        <translation><!-- Non-Project work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHL Customer Conn/Diversion</masterLabel>
+        <translation><!-- OHL Customer Conn/Diversion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OHL New Build / Re-build</masterLabel>
+        <translation><!-- OHL New Build / Re-build --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning - Prior Approval</masterLabel>
+        <translation><!-- Planning - Prior Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning Application</masterLabel>
+        <translation><!-- Planning Application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning Enquiries</masterLabel>
+        <translation><!-- Planning Enquiries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning Misc</masterLabel>
+        <translation><!-- Planning Misc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renunciation</masterLabel>
+        <translation><!-- Renunciation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S/STN Close Coupled Lease/ Developer</masterLabel>
+        <translation><!-- S/STN Close Coupled Lease/ Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S/STN Generation - Lease/Purchase</masterLabel>
+        <translation><!-- S/STN Generation - Lease/Purchase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S/STN Lease Renewal</masterLabel>
+        <translation><!-- S/STN Lease Renewal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S/STN Network - Lease/Purchase</masterLabel>
+        <translation><!-- S/STN Network - Lease/Purchase --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAR Request</masterLabel>
+        <translation><!-- SAR Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPD-T Diversion</masterLabel>
+        <translation><!-- SPD-T Diversion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Section 37 Searches</masterLabel>
+        <translation><!-- Section 37 Searches --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Serving Notices</masterLabel>
+        <translation><!-- Serving Notices --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solutions, Policy &amp; Performance</masterLabel>
+        <translation><!-- Solutions, Policy &amp; Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Substation</masterLabel>
+        <translation><!-- Substation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terminations / NTR / NTQ</masterLabel>
+        <translation><!-- Terminations / NTR / NTQ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trees</masterLabel>
+        <translation><!-- Trees --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U/G Cable Servitude/Easement</masterLabel>
+        <translation><!-- U/G Cable Servitude/Easement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unplanned</masterLabel>
+        <translation><!-- Unplanned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walking Patrols/CBA Inspections</masterLabel>
+        <translation><!-- Walking Patrols/CBA Inspections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wood Pole Claim</masterLabel>
+        <translation><!-- Wood Pole Claim --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Inspection__c</fullName>
+    <description>Master detail to link Inspection Item to Inspection record.</description>
+    <label>Inspection</label>
+    <referenceTo>SPEN_Inspection__c</referenceTo>
+    <relationshipLabel>Inspection Items</relationshipLabel>
+    <relationshipName>Inspection_Items</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Creation_SMS</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_CommunicationSchedulerId__c</columns>
+    <columns>SPEN_ContactId__c</columns>
+    <columns>SPEN_IncidentId__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SPEN_IvrMessageId__c</columns>
+    <columns>SPEN_Mobile__c</columns>
+    <columns>SPEN_Status__c</columns>
+    <columns>SPEN_Event__c</columns>
+    <columns>SPEN_Message__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_Event__c</field>
+        <operation>equals</operation>
+        <value>Case Creation</value>
+    </filters>
+    <label>Case Creation SMS</label>
+</ListView>

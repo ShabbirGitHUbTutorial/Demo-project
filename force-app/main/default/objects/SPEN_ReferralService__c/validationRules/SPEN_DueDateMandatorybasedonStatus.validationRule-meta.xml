@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_DueDateMandatorybasedonStatus</fullName>
+    <active>false</active>
+    <description>CRMD-5468</description>
+    <errorConditionFormula>IF( ISPICKVAL( SPEN_ServiceStatus__c , &apos;Partner Identified&apos;) || ISPICKVAL( SPEN_ServiceStatus__c , &apos;Awaiting Partner Feedback&apos;),  ISNULL( SPEN_DueDateforNextPartnerContact__c ) , Null)</errorConditionFormula>
+    <errorMessage>Please Fill Due Date for next Partner Contact.</errorMessage>
+</ValidationRule>

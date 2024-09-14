@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_StakeholderEngagementActivity__c</fullName>
+    <label>Stakeholder Engagement Activity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre Application Consultation Event</fullName>
+                <default>false</default>
+                <label>Pre Application Consultation Event</label>
+            </value>
+            <value>
+                <fullName>Statutory Consultee</fullName>
+                <default>false</default>
+                <label>Statutory Consultee</label>
+            </value>
+            <value>
+                <fullName>Non-Statutory Consultee</fullName>
+                <default>false</default>
+                <label>Non-Statutory Consultee</label>
+            </value>
+            <value>
+                <fullName>Community Council</fullName>
+                <default>false</default>
+                <label>Community Council</label>
+            </value>
+            <value>
+                <fullName>Parish Council</fullName>
+                <default>false</default>
+                <label>Parish Council</label>
+            </value>
+            <value>
+                <fullName>Land Owner</fullName>
+                <default>false</default>
+                <label>Land Owner</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Elected Members</fullName>
+                <default>false</default>
+                <label>Elected Members</label>
+            </value>
+            <value>
+                <fullName>Member of Parliament</fullName>
+                <default>false</default>
+                <label>Member of Parliament</label>
+            </value>
+            <value>
+                <fullName>Member of Scottish Parliament</fullName>
+                <default>false</default>
+                <label>Member of Scottish Parliament</label>
+            </value>
+            <value>
+                <fullName>Member of Senedd</fullName>
+                <default>false</default>
+                <label>Member of Senedd</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

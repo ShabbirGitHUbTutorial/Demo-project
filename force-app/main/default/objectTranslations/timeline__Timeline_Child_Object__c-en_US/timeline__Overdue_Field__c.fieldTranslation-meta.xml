@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Field that denotes if a child object record is overdue. This will be used to display the record in the &quot;Upcoming and overdue&quot; section. --></help>
+    <label><!-- Overdue Field --></label>
+    <name>timeline__Overdue_Field__c</name>
+</CustomFieldTranslation>

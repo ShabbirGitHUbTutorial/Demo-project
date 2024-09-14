@@ -1,0 +1,52 @@
+<template>
+    <lightning-quick-action-panel header="Update Contracting Customer">
+        <template if:true={showLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+        </template>
+        <div class="slds-modal__content slds-p-around_medium"> 
+            <lightning-record-edit-form
+            record-id={recordId} 
+            object-api-name={objectApiName}
+            onsuccess={handleSuccess}
+            onerror={handleError}
+            onsubmit={handleSubmit}>
+            <lightning-messages></lightning-messages>
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                        <div class="slds-p-around_x-small">
+                            <lightning-input-field field-name="SPEN_CPCustomerType__c" required="true" variant="label-stacked" onchange={handleCustomerTypeChange} disabled={isLocked}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CPCustomerClass__c" required="true" variant="label-stacked" onchange={handleCustomerClassChange} disabled={isLocked}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CPTitle__c" variant="label-stacked" onchange={handleTitleChange} disabled={isLocked}></lightning-input-field> 
+                            <lightning-input-field field-name="SPEN_CPCompanyPersonName__c" required="true" variant="label-stacked" onchange={handleCompanyNameChange} disabled={isLocked}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CPBuildingNameFlatNumber__c" variant="label-stacked" onchange={handleFlatChange} disabled={isLocked}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CPBuildingNumberStreet__c" required="true" variant="label-stacked" onchange={handleStreetChange} disabled={isLocked}></lightning-input-field> 
+                            <lightning-input-field field-name="SPEN_CPTownCity__c" required="true" variant="label-stacked" onchange={handleTownChange} disabled={isLocked}></lightning-input-field> 
+                        </div>
+                    </div>   
+                    <div class="slds-col slds-size_1-of-2">
+                        <div class="slds-p-around_x-small">
+                            <lightning-input-field field-name="SPEN_CPPostCode__c" required="true" variant="label-stacked" onchange={handlePostCodeChange} disabled={isLocked}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CPCountry__c" variant="label-stacked" onchange={handleCountryChange} disabled={isLocked}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CPPhoneNumber__c" variant="label-stacked" onchange={handlePhoneChange}></lightning-input-field> 
+                            <lightning-input-field field-name="SPEN_CPMobileNumber__c" variant="label-stacked" onchange={handleMobileChange}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CPEmailAddress__c" variant="label-stacked" onchange={handleEmailChange}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CPFaxNumber__c" variant="label-stacked" onchange={handleFaxChange} disabled={isLocked}></lightning-input-field>
+                            <lightning-input-field field-name="SPEN_CRN__c" variant="label-stacked" onchange={handleCRNChange} disabled={isLocked}></lightning-input-field> 
+                            <lightning-input-field field-name="SPEN_VAT__c" variant="label-stacked" onchange={handleVATChange} disabled={isLocked}></lightning-input-field> 
+                        </div>
+                    </div>  
+                </div>
+                <div class="slds-p-around_x-small">
+                    <div class="slds-float_right">
+                        <!-- <lightning-button label="Cancel"  onclick={handleReset} style = "margin-right:10px;background-color: #5d9732;"></lightning-button> -->
+                        <!--<button class="slds-button slds-button-neutral " style="margin-right:10px;" data-name="resetButton"
+                                onclick={handleReset}>Cancel</button>-->
+                        <button class="slds-button slds-button--neutral " type="submit" style="color:white;background-color: #5d9732;"
+                                >Update</button>
+                        <!-- <lightning-button label="UpdateS"   type="submit" variant="neutral" style="background-color: #5d9732;" ></lightning-button> -->
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-quick-action-panel>
+</template>

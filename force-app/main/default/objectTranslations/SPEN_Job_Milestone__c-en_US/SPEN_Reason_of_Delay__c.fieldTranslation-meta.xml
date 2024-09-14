@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason of Delay --></label>
+    <name>SPEN_Reason_of_Delay__c</name>
+    <picklistValues>
+        <masterLabel>3rd Party</masterLabel>
+        <translation><!-- 3rd Party --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Await Completion of the Legal Agreement</masterLabel>
+        <translation><!-- Await Completion of the Legal Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting a PO from the business or project</masterLabel>
+        <translation><!-- Awaiting a PO from the business or project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting a decision from the business or project</masterLabel>
+        <translation><!-- Awaiting a decision from the business or project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting design information from the business or project</masterLabel>
+        <translation><!-- Awaiting design information from the business or project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landowner or occupier</masterLabel>
+        <translation><!-- Landowner or occupier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Consents</masterLabel>
+        <translation><!-- Other Consents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-issue of Paperwork</masterLabel>
+        <translation><!-- Re-issue of Paperwork --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Statutory Body</masterLabel>
+        <translation><!-- Statutory Body --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

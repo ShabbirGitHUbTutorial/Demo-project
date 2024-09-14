@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_WhatIsRequiredToAccess__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to capture the &quot;What is required to access?&quot;. Used in the RAAC Concrete Survey</description>
+    <label>What is required to access</label>
+    <length>32768</length>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ContractArea__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is for Transmission process.</description>
+    <label>Contract Area</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Area</fullName>
+                <default>false</default>
+                <label>In Area</label>
+            </value>
+            <value>
+                <fullName>Affected</fullName>
+                <default>false</default>
+                <label>Affected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

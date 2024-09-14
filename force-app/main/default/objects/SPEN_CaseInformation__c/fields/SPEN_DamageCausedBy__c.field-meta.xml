@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_DamageCausedBy__c</fullName>
+    <description>CRMD-7691</description>
+    <label>Damage Caused By?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excavator</fullName>
+                <default>false</default>
+                <label>Excavator</label>
+            </value>
+            <value>
+                <fullName>Compressor Tool</fullName>
+                <default>false</default>
+                <label>Compressor Tool</label>
+            </value>
+            <value>
+                <fullName>Drilling Machine</fullName>
+                <default>false</default>
+                <label>Drilling Machine</label>
+            </value>
+            <value>
+                <fullName>Cutting Machine</fullName>
+                <default>false</default>
+                <label>Cutting Machine</label>
+            </value>
+            <value>
+                <fullName>Hand Tool</fullName>
+                <default>false</default>
+                <label>Hand Tool</label>
+            </value>
+            <value>
+                <fullName>Farm Vehicle</fullName>
+                <default>false</default>
+                <label>Farm Vehicle</label>
+            </value>
+            <value>
+                <fullName>Motor Vehicle</fullName>
+                <default>false</default>
+                <label>Motor Vehicle</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

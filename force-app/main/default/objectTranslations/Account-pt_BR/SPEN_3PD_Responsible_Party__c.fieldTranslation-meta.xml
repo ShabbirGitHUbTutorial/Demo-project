@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Let this checkbox be checked for all Third Party Damage Accounts. --></help>
+    <label><!-- 3PD Responsible Party --></label>
+    <name>SPEN_3PD_Responsible_Party__c</name>
+</CustomFieldTranslation>

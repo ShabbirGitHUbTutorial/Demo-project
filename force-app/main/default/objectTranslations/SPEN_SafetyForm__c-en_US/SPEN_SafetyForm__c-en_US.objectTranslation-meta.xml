@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Safety Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Safety Form</value>
+    </caseValues>
+    <layouts>
+        <layout>Cable head retention form layout</layout>
+        <sections>
+            <label><!-- Additional visit details --></label>
+            <section>Additional visit details</section>
+        </sections>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Cut out details --></label>
+            <section>Cut out details</section>
+        </sections>
+        <sections>
+            <label><!-- Cut out retention --></label>
+            <section>Cut out retention</section>
+        </sections>
+        <sections>
+            <label><!-- Low carbon technology --></label>
+            <section>Low carbon technology</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fatigue Management Risk Assessment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- Summary --></label>
+            <section>Summary</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>GS6 Form Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Location Details --></label>
+            <section>Location Details</section>
+        </sections>
+        <sections>
+            <label><!-- Signatures --></label>
+            <section>Signatures</section>
+        </sections>
+        <sections>
+            <label><!-- Voltage Information --></label>
+            <section>Voltage Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Record type used to identify the Retention of damaged cut out form --></description>
+        <label><!-- Retention of damaged cut out --></label>
+        <name>SPEN_CableHeadRetentionForm</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type used to identify the Fatigue Management Risk Assessment --></description>
+        <label><!-- Fatigue Management Risk Assessment --></label>
+        <name>SPEN_FatigueManagementRiskAssessment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type used to identify the GS6 forms --></description>
+        <label><!-- GS6 Form --></label>
+        <name>SPEN_GS6Form</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Conga_Composer_Send_GS6_Email --></label>
+        <name>Conga_Composer_Send_GS6_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_IsDailyChecked</fullName>
+    <active>true</active>
+    <errorConditionFormula>(If(RecordType.Name = &apos;Outbound Contact Hours&apos;, true, false) &amp;&amp; if(SPEN_isDaily__c, true, false) &amp;&amp; ( !ISBLANK(SPEN_RestrictStartDate__c) &amp;&amp; !ISBLANK(SPEN_RestrictEndDate__c)))</errorConditionFormula>
+    <errorMessage>Restricted Start Date and Restricted End Date can only be populated only if the daily checkbox is not checked.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- SOQL WHERE clause applied when updating the existing records in the &quot;Object API Name&quot; Object. e.g. CreatedDate &gt; 2021-01-01T00:00:00Z --></help>
+    <label><!-- SOQL WHERE Clause --></label>
+    <name>DSWB__SOQL_WHERE_Clause__c</name>
+</CustomFieldTranslation>

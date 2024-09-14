@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_MessageFormula__c</fullName>
+    <description>It holds message from IVR Message object.</description>
+    <externalId>false</externalId>
+    <formula>If(SPEN_NotOutsideHoursFormula__c,&apos;&apos;,SPEN_IVRMessage__r.SPEN_Message__c)</formula>
+    <label>Message</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

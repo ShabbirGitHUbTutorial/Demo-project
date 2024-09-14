@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_HoursOfSleepLast48h__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to capture the number of hours the field operative slept in the last 48 hours</description>
+    <label>How many hours of sleep in the last 48h?</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>14 or more</fullName>
+                <default>false</default>
+                <label>More than 14 hours</label>
+            </value>
+            <value>
+                <fullName>12-14</fullName>
+                <default>false</default>
+                <label>Between 12 - 14 hours</label>
+            </value>
+            <value>
+                <fullName>Less than 12</fullName>
+                <default>false</default>
+                <label>Less than 12 hours</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

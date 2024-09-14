@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Open__c</fullName>
+    <description>Formula field to find out an invoice in open status or not to be shown on Validation rule on CASE closure.</description>
+    <formula>IF(ISPICKVAL(SPEN_InvoicedOutcome__c, &apos;Issued&apos;), True, False)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Open</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

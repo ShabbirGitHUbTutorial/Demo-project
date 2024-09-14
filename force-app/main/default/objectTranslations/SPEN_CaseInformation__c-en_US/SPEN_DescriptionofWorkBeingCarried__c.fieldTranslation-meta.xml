@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Description of Work Being Carried Out When Damage Occurred --></help>
+    <label><!-- Work Carried Out When Damage Occurred --></label>
+    <name>SPEN_DescriptionofWorkBeingCarried__c</name>
+</CustomFieldTranslation>

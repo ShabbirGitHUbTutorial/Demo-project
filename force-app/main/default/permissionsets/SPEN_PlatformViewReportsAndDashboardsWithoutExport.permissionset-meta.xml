@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grant any user permission to access, view, and subscribe to Salesforce Reports and Dashboards without export permission. Visibility will still be managed by the Reporting and Dashboard teams from folders.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PLATFORM: View Reports and Dashboards - Without Export</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunReports</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>SubscribeToLightningDashboards</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>SubscribeToLightningReports</name>
+    </userPermissions>
+</PermissionSet>

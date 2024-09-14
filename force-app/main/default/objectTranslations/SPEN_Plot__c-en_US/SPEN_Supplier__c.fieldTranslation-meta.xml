@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Supplier --></label>
+    <name>SPEN_Supplier__c</name>
+    <picklistValues>
+        <masterLabel>British Gas</masterLabel>
+        <translation><!-- British Gas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Midland Electricity</masterLabel>
+        <translation><!-- East Midland Electricity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eastern Electricity</masterLabel>
+        <translation><!-- Eastern Electricity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hydro</masterLabel>
+        <translation><!-- Hydro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>London Electricity</masterLabel>
+        <translation><!-- London Electricity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MANWEB</masterLabel>
+        <translation><!-- MANWEB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midlands Electricity</masterLabel>
+        <translation><!-- Midlands Electricity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORWEB</masterLabel>
+        <translation><!-- NORWEB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northern</masterLabel>
+        <translation><!-- Northern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEEBOARD</masterLabel>
+        <translation><!-- SEEBOARD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SWALEC</masterLabel>
+        <translation><!-- SWALEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SWEB</masterLabel>
+        <translation><!-- SWEB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scottish Power PLC</masterLabel>
+        <translation><!-- Scottish Power PLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southern</masterLabel>
+        <translation><!-- Southern --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yorkshire Electricity</masterLabel>
+        <translation><!-- Yorkshire Electricity --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

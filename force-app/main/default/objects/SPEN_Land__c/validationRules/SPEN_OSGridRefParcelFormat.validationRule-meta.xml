@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_OSGridRefParcelFormat</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( SPEN_OSGridReferenceParcel__c )),
+NOT(REGEX( SPEN_OSGridReferenceParcel__c  ,&quot;[0-9]{6},[0-9]{6}&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>SPEN_OSGridReferenceParcel__c</errorDisplayField>
+    <errorMessage>Ensure Format of OS Grid Reference of Parcel is &apos;NNNNNN,NNNNNN&apos;</errorMessage>
+</ValidationRule>

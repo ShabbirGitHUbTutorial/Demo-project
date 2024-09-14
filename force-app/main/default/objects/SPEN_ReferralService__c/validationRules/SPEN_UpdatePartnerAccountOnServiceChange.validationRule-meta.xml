@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_UpdatePartnerAccountOnServiceChange</fullName>
+    <active>true</active>
+    <description>CRMD - 5522 Error to be thrown for amending/clearing the partner account name when the Service associated with the referral service record is updated</description>
+    <errorConditionFormula>AND(
+NOT( ISNEW()),
+IF(ISCHANGED( SPEN_Service__c ), 
+ IF(ISBLANK( SPEN_PartnerName__c ) , FALSE, TRUE), 
+ FALSE))</errorConditionFormula>
+    <errorMessage>You have updated the &apos;Service&apos; field - Please clear the &apos;Partner Name&apos; field and update it using the &apos;Select Partner&apos; widget.</errorMessage>
+</ValidationRule>

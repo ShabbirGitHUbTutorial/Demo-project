@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_NoticePer__c</fullName>
+    <label>Notice Per</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Notice Possible</fullName>
+                <default>false</default>
+                <label>No Notice Possible</label>
+            </value>
+            <value>
+                <fullName>No Restrictions</fullName>
+                <default>false</default>
+                <label>No Restrictions</label>
+            </value>
+            <value>
+                <fullName>End of the Month</fullName>
+                <default>false</default>
+                <label>End of the Month</label>
+            </value>
+            <value>
+                <fullName>End of the Quarter</fullName>
+                <default>false</default>
+                <label>End of the Quarter</label>
+            </value>
+            <value>
+                <fullName>End of Half Year</fullName>
+                <default>false</default>
+                <label>End of Half Year</label>
+            </value>
+            <value>
+                <fullName>Year End</fullName>
+                <default>false</default>
+                <label>Year End</label>
+            </value>
+            <value>
+                <fullName>Contract End of Quarter</fullName>
+                <default>false</default>
+                <label>Contract End of Quarter</label>
+            </value>
+            <value>
+                <fullName>Contract End of Half Year</fullName>
+                <default>false</default>
+                <label>Contract End of Half Year</label>
+            </value>
+            <value>
+                <fullName>Contract Year End</fullName>
+                <default>false</default>
+                <label>Contract Year End</label>
+            </value>
+            <value>
+                <fullName>Contract End of Month</fullName>
+                <default>false</default>
+                <label>Contract End of Month</label>
+            </value>
+            <value>
+                <fullName>Contract End (Renewal)</fullName>
+                <default>false</default>
+                <label>Contract End (Renewal)</label>
+            </value>
+            <value>
+                <fullName>One-Time Period of Notice</fullName>
+                <default>false</default>
+                <label>One-Time Period of Notice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

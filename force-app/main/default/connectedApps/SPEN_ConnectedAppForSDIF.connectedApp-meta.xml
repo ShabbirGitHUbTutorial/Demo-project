@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>macjules.l.r.sevilla@accenture.com</contactEmail>
+    <description>SDIF Integration</description>
+    <label>Connected App for SDIF</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>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</certificate>
+        <consumerKey>3MVG9395hRoMgFO2shyYvKpShhpgHr0A5pfQVGoV6GY1OKMLHYZRBby9dWlbjAV7Bs.hIXlyfgakgXG.JCzPj</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>SPEN AWS Integration</profileName>
+</ConnectedApp>

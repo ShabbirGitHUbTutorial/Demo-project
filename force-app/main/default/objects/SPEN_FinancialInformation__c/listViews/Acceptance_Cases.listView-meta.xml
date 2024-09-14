@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acceptance_Cases</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_AcceptanceDate__c</columns>
+    <columns>SPEN_PaymentDate__c</columns>
+    <columns>SPEN_AcceptanceDescription__c</columns>
+    <columns>SPEN_AcceptanceStatus__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Acceptance Cases</label>
+</ListView>

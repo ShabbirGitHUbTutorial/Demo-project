@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_NotOutsideHoursFormula__c</fullName>
+    <description>This formula field check SPEN_Starttime__c is less than Current_Time__c and Current_Time__c is less than SPEN_Endtime__c</description>
+    <formula>(SPEN_StartTime__c &lt; SPEN_CurrentTimeFormula__c) &amp;&amp; (SPEN_CurrentTimeFormula__c &lt; SPEN_EndTime__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NotOutside Hours</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

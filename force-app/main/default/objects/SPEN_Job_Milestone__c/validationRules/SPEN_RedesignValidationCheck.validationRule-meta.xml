@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_RedesignValidationCheck</fullName>
+    <active>true</active>
+    <description>Created as part of ESC-192.</description>
+    <errorConditionFormula>OR(
+(ISNEW()  &amp;&amp;  TEXT(SPEN_ReasonforCreation__c) = &apos;Redesign&apos; &amp;&amp;  
+ TEXT(SPEN_Job__r.SPEN_DesignStatus__c)  &lt;&gt; &apos;Redesign&apos; ),
+
+(NOT(ISNEW()) &amp;&amp;  TEXT( SPEN_ReasonforModification__c ) = &apos;Redesign&apos; &amp;&amp;  
+ TEXT(SPEN_Job__r.SPEN_DesignStatus__c)  &lt;&gt; &apos;Redesign&apos; )
+)</errorConditionFormula>
+    <errorMessage>Job design status should be redesign if you want to update milestone with &apos;Redesign&apos; reason.</errorMessage>
+</ValidationRule>

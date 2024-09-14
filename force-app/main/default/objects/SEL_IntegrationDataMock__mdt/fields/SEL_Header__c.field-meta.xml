@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEL_Header__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>This field is to store the response header</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The header must be a serialized version of a map of a string of strings. Example: {&quot;Key2&quot;:&quot;value2&quot;,&quot;Key1&quot;:&quot;value1&quot;}</inlineHelpText>
+    <label>Header</label>
+    <length>32768</length>
+    <securityClassification>Internal</securityClassification>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

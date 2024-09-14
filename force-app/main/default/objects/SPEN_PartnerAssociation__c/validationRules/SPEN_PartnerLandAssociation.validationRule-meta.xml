@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_PartnerLandAssociation</fullName>
+    <active>true</active>
+    <errorConditionFormula>SPEN_Partner__r.SPEN_Land__c   &lt;&gt;    SPEN_LandInterest__r.SPEN_Land__c</errorConditionFormula>
+    <errorMessage>Selected partner does not belong to the same land as of land Right. Please select the appropriate partner.</errorMessage>
+</ValidationRule>

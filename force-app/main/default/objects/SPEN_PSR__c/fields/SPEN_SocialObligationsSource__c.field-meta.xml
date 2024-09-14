@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SocialObligationsSource__c</fullName>
+    <description>Use to track Social Obligations Source</description>
+    <label>Social Obligations Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SPEN_SourceofPSRUpdate__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Leaflet</fullName>
+                <default>false</default>
+                <label>Leaflet</label>
+            </value>
+            <value>
+                <fullName>Network Natter</fullName>
+                <default>false</default>
+                <label>Network Natter</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>WWU</fullName>
+                <default>false</default>
+                <label>WWU</label>
+            </value>
+            <value>
+                <fullName>SGN</fullName>
+                <default>false</default>
+                <label>SGN</label>
+            </value>
+            <value>
+                <fullName>HES</fullName>
+                <default>false</default>
+                <label>HES</label>
+            </value>
+            <value>
+                <fullName>Other Partner</fullName>
+                <default>false</default>
+                <label>Other Partner</label>
+            </value>
+            <value>
+                <fullName>Email/online form/tweet</fullName>
+                <default>false</default>
+                <label>Email/online form/tweet</label>
+            </value>
+            <value>
+                <fullName>Other leaflet/correspondence</fullName>
+                <default>false</default>
+                <label>Other leaflet/correspondence</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>Leaflet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>Network Natter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>WWU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>SGN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>HES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>Other Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>Email/online form/tweet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Obligations</controllingFieldValue>
+            <valueName>Other leaflet/correspondence</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

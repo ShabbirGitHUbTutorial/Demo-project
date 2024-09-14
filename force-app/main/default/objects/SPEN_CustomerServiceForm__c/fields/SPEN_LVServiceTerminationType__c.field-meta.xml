@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_LVServiceTerminationType__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used to store the LV Service Termination Type
+Used in LV Service Termination Survey forms</description>
+    <inlineHelpText>LVST - LV Service Termination</inlineHelpText>
+    <label>What type of LVST is being replaced?</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Grey plastic</fullName>
+                <default>false</default>
+                <label>Grey plastic</label>
+            </value>
+            <value>
+                <fullName>Metal clad</fullName>
+                <default>false</default>
+                <label>Metal clad</label>
+            </value>
+            <value>
+                <fullName>Black plastic</fullName>
+                <default>false</default>
+                <label>Black plastic</label>
+            </value>
+            <value>
+                <fullName>Fused neutral</fullName>
+                <default>false</default>
+                <label>Fused neutral</label>
+            </value>
+            <value>
+                <fullName>Rewireable</fullName>
+                <default>false</default>
+                <label>Rewireable</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

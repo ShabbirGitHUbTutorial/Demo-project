@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Further SPEN works Required --></label>
+    <name>SPEN_FurtherSPENworksRequired__c</name>
+    <picklistValues>
+        <masterLabel>Looped Supply</masterLabel>
+        <translation><!-- Looped Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obstructed Equipment</masterLabel>
+        <translation><!-- Obstructed Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permits</masterLabel>
+        <translation><!-- Permits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RLM</masterLabel>
+        <translation><!-- RLM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shutdown Required</masterLabel>
+        <translation><!-- Shutdown Required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_ConsentTypeUpdate</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(SPEN_ConsentType__c ) &amp;&amp; NOT (ISCHANGED( RecordTypeId ) )</errorConditionFormula>
+    <errorMessage>If you need to change the Consent Type within the same category, please close the current Land Right and create a new Land Right with the correct Consent Type.</errorMessage>
+</ValidationRule>

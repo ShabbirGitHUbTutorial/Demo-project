@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_startEndTimeNotBlankForSMSVA</fullName>
+    <active>true</active>
+    <description>This validation rule ensures that Start Time and End Time field is not blank.</description>
+    <errorConditionFormula>IF( AND(OR( RecordType.Name =&quot;SMS Blackout Window&quot;,RecordType.Name=&quot;VA Blackout Window&quot;), OR(AND(ISBLANK(SPEN_StartTime__c ),NOT(ISBLANK(SPEN_EndTime__c))), AND(NOT(ISBLANK(SPEN_StartTime__c)),ISBLANK(SPEN_EndTime__c ))))  , true, false)</errorConditionFormula>
+    <errorMessage>Please check the Start time and End time.</errorMessage>
+</ValidationRule>

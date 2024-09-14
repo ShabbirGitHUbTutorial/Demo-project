@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_SPM_132_Payment_Rates</fullName>
+    <columns>NAME</columns>
+    <columns>SPEN_Contracting_Reference__c</columns>
+    <columns>SPEN_Owner_Cost_Per_Annum__c</columns>
+    <columns>SPEN_Owner_SAP_Code__c</columns>
+    <columns>SPEN_Occupier_Cost_Per_Annum__c</columns>
+    <columns>SPEN_Occupier_SAP_Code__c</columns>
+    <columns>SPEN_Licence_Area__c</columns>
+    <columns>SPEN_Land_Planning_Apparatus__c</columns>
+    <columns>SPEN_Is_Pole__c</columns>
+    <columns>SPEN_Is_Tower__c</columns>
+    <columns>SPEN_Land_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SPEN_Licence_Area__c</field>
+        <operation>equals</operation>
+        <value>SPM 132</value>
+    </filters>
+    <label>All SPM 132 Payment Rates</label>
+</ListView>

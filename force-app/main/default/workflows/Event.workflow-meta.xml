@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Annual_Meeting_Reminder_MTM6</fullName>
+        <description>Annual Meeting Reminder - MTM6 Case</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>sptpace@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_AnnualMeetingReminderMTM6Case</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_AnnualMeetingReminderMTM6Account</fullName>
+        <description>Annual Meeting Reminder - MTM6 Account</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>sptpace@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_AnnualMeetingReminderMTM6Account</template>
+    </alerts>
+    <alerts>
+        <fullName>SPEN_BiAnnualMeetingReminderMTM5</fullName>
+        <description>BiAnnual Meeting Reminder - MTM5</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderAddress>sptpace@spenergynetworkscrm.co.uk</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/SPEN_BiAnnualMeetingReminderMTM6</template>
+    </alerts>
+</Workflow>

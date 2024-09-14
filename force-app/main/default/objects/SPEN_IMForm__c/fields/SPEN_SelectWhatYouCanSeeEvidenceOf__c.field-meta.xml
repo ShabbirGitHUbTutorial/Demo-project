@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_SelectWhatYouCanSeeEvidenceOf__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <description>Field used in RAAC form to display the evidences values</description>
+    <label>Select what you can see evidence of</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bubbles on edge or face of roof panel</fullName>
+                <default>false</default>
+                <label>Bubbles on edge or face of roof panel</label>
+            </value>
+            <value>
+                <fullName>Cracking at the supporting locations</fullName>
+                <default>false</default>
+                <label>Cracking at the supporting locations</label>
+            </value>
+            <value>
+                <fullName>Deflection of roof panels</fullName>
+                <default>false</default>
+                <label>Deflection of roof panels</label>
+            </value>
+            <value>
+                <fullName>Rust staining or corrosion of reinforcements</fullName>
+                <default>false</default>
+                <label>Rust staining or corrosion of reinforcements</label>
+            </value>
+            <value>
+                <fullName>Cracking or spalling of the internal surface</fullName>
+                <default>false</default>
+                <label>Cracking or spalling of the internal surface</label>
+            </value>
+            <value>
+                <fullName>Moisture ingress and degradation of the internal roof finish</fullName>
+                <default>false</default>
+                <label>Moisture ingress and degradation of the internal roof finish</label>
+            </value>
+            <value>
+                <fullName>Water ponding on the surface of roof</fullName>
+                <default>false</default>
+                <label>Water ponding on the surface of roof</label>
+            </value>
+            <value>
+                <fullName>Deflation of roof panels</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deflation of roof panels</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

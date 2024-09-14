@@ -1,0 +1,36 @@
+<template>
+    <template if:true={showLoading}>
+        <lightning-spinner alternative-text="Loading" size="medium" class="spinnerClass"></lightning-spinner>
+    </template>
+    <template if:true={showResultScreen}>
+        <lightning-card>
+            <h3 slot="title">
+                Search Results: {searchResult.length}  Records found
+            </h3>
+            
+            <div class="resultClass">
+                <template if:true={searchResult}>
+                    <lightning-datatable
+                        key-field="id"
+                        data={searchResult}
+                        columns={searchResultColumns}
+                        onrowselection={getSelectedName}
+                        >
+                    </lightning-datatable>
+                </template>
+                <template if:true={error}>
+                    {error}
+                </template>
+            </div>
+            <div slot="footer">
+                <button class="slds-button slds-button--brand slds-float_left" style="background-color: #5d9732;"
+                onclick={handleCancel}>CANCEL</button>
+                <button class="slds-button slds-button--brand slds-float_right addNewButtonStyle"
+                onclick={handleAddNew} data-name="addNew" disabled={addNewButton}>ADD NEW</button>
+                <button class="slds-button slds-button--brand slds-float_right submitButtonStyle" style="margin-right: 10px;"
+                onclick={handleSubmit} data-name="submit" disabled={submitButton}>SUBMIT</button>
+            </div>
+            <div class="slds-p-around_x-small"></div>
+        </lightning-card>
+    </template>
+</template>

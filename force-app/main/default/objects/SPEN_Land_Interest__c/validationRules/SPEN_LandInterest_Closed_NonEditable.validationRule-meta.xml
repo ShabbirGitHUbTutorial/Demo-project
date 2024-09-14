@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_LandInterest_Closed_NonEditable</fullName>
+    <active>true</active>
+    <description>Closed Land Interest can not be edit</description>
+    <errorConditionFormula>AND(NOT(ISCHANGED(SPEN_LIStatus__c)),
+	OR(SPEN_LIStatus__c == &quot;Closed&quot;,
+		SPEN_LIStatus__c == &quot;Consent Secured&quot;,
+		SPEN_LIStatus__c == &quot;Legal Milestones Complete&quot;,
+		SPEN_LIStatus__c == &quot;Statutory Consent Decision&quot;))</errorConditionFormula>
+    <errorMessage>You can not update Land Right record as this is already Closed/Completed.</errorMessage>
+</ValidationRule>

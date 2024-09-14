@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_TotalPaidtoDate__c</fullName>
+    <externalId>false</externalId>
+    <formula>SPEN_Stage1Paid__c + SPEN_Stage2Paid__c + SPEN_InterimPaid__c + SPEN_LandownerLegalPaid__c + SPEN_LandownerLegalPaid__c + SPEN_PostConstructionPaid__c + SPEN_ServitudeValuePaid__c + SPEN_SigningIncentivePaid__c + SPEN_SPENLegalPaid__c + SPEN_TCCPaid__c + SPEN_ResourcePaid__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Paid to Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

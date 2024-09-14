@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_WorkOrder__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field used to store the work order related to the form</description>
+    <label>Work Order</label>
+    <referenceTo>WorkOrder</referenceTo>
+    <relationshipLabel>Customer Service Forms</relationshipLabel>
+    <relationshipName>Customer_Service_Forms</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

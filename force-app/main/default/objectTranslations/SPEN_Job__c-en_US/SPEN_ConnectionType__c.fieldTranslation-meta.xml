@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Connection Type - Workflow: --></label>
+    <name>SPEN_ConnectionType__c</name>
+    <picklistValues>
+        <masterLabel>LP Connection Type</masterLabel>
+        <translation><!-- LP Connection Type --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

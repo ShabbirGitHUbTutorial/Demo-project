@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>SEL_Type__c</name>
+    <picklistValues>
+        <masterLabel>Endpoint</masterLabel>
+        <translation><!-- Endpoint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Header</masterLabel>
+        <translation><!-- Header --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

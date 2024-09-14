@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPM Design - Merseyside</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>SPEN_SPMDesignMerseyside</publicGroup>
+        </publicGroups>
+        <users>
+            <user>jimmy.heritage@spenergynetworks.co.uk.spencrm</user>
+            <user>paul.thomas@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

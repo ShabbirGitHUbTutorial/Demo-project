@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Year1FormatRule</fullName>
+    <active>true</active>
+    <errorConditionFormula>(LEN( SPEN_Year1__c )&gt;=1 &amp;&amp; LEN(SPEN_Year1__c)&lt;4) || (NOT(REGEX(SPEN_Year1__c , &quot;[0-9]*&quot;)))</errorConditionFormula>
+    <errorDisplayField>SPEN_Year1__c</errorDisplayField>
+    <errorMessage>Please fill Year 1 in YYYY format</errorMessage>
+</ValidationRule>

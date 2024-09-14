@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPEN_Existing</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SPEN_LandInterest_CompactLayout</compactLayoutAssignment>
+    <label>Existing/Refurb</label>
+    <picklistValues>
+        <picklist>SPEN_CompulsoryStatus__c</picklist>
+        <values>
+            <fullName>Awaiting Design</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Compulsory_Consent_Action__c</picklist>
+        <values>
+            <fullName>Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Written Rep</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ConsentType__c</picklist>
+        <values>
+            <fullName>CPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freehold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NWL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servitude</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wayleave</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Existing_Refurb_Status__c</picklist>
+        <values>
+            <fullName>Awaiting Design</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Right Confirmed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_GrantorRAGStatus__c</picklist>
+        <values>
+            <fullName>Amber</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Land_Interest_Type__c</picklist>
+        <values>
+            <fullName>Occupier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner-Occupier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown Owner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ModificationReason__c</picklist>
+        <values>
+            <fullName>Change of consent type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ReasonForConsentType__c</picklist>
+        <values>
+            <fullName>Business request %28PM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landowner has requested a permanent land right</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landowner unwilling to grant DoS %2F Easement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landowner unwilling to grant WL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landowner unwilling to grant voluntary land right</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project has requested a permanent land right</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reduction in Rights compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Servitude%2FEasement not completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Statutory Land Rights not compliant with programme</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voluntary permanent land right secured</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ReasonforLIClosure__c</picklist>
+        <values>
+            <fullName>Business Re-Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled - Signed with Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Withdrawn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Consent Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Owner Refused - Historical Instance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landowner Refused - General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programmed Refresh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raised in Error</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_ServitudeStatus__c</picklist>
+        <values>
+            <fullName>Awaiting Design</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Status__c</picklist>
+        <values>
+            <fullName>Awaiting Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft Documents Agreed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft Documents Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Legal Instruction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Right Acquired</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Right Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Right Secured</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Milestones Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Consent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_Valid_Consent__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SPEN_WayleaveStatus__c</picklist>
+        <values>
+            <fullName>Awaiting Design</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

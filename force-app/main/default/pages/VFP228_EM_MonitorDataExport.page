@@ -1,0 +1,22 @@
+<!--
+    Author        : Robin Bhatt
+    Date Created  : 19-Apr-2019
+    Description   : To generate PDF file for event recorded if Dat is exported by User.
+-->
+<apex:page controller="AP230_MonitoringEventsTypes" renderAs="PDF" readOnly="true">
+    <apex:pageBlock >
+        <apex:pageBlockSection title="{! $Label.DataExpLabel}">
+            <apex:pageBlockTable value="{!DataExport}" var="la" border="1" cellpadding="1" cellspacing="1">
+                <apex:column headerValue="{!$Label.ActionDate}" value="{!la.CreatedDate}">
+                </apex:column>
+                <apex:column headerValue="{!$Label.ActionUser}" value="{! la.CreatedBy.username  }  ">
+                    
+                </apex:column>
+                <apex:column headerValue="{!$Label.Action}" value="{!la.Display}">
+                    
+                </apex:column>
+            </apex:pageBlockTable>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

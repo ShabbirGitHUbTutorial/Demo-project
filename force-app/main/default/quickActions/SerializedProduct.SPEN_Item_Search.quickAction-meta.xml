@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Button to launch search flow from a record page.</description>
+    <flowDefinition>SPEN_Compliance_Stores_Search</flowDefinition>
+    <label>Item Search</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

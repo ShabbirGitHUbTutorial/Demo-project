@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>SPD Design - Major</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>SPEN_SPDDesignMajor</publicGroup>
+        </publicGroups>
+        <users>
+            <user>angie.sneddon@spenergynetworks.co.uk.spencrm</user>
+            <user>audrey.mitchell@spenergynetworks.co.uk.spencrm</user>
+            <user>laura.lammie@spenergynetworks.co.uk.spencrm</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>SPEN_ConnectionsCaseRouting</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>
