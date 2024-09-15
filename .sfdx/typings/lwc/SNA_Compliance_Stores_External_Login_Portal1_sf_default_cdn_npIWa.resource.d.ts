@@ -1,0 +1,4 @@
+declare module "@salesforce/resourceUrl/SNA_Compliance_Stores_External_Login_Portal1_sf_default_cdn_npIWa" {
+    var SNA_Compliance_Stores_External_Login_Portal1_sf_default_cdn_npIWa: string;
+    export default SNA_Compliance_Stores_External_Login_Portal1_sf_default_cdn_npIWa;
+}
