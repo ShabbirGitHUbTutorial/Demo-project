@@ -16,9 +16,9 @@ public with sharing class Cases
     Public static Boolean firstAFInsCall=false;//SOQL 101 Fix 
     Public static Id recordTypeIdReferral = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get(CasesConstants.Case_Referral).getRecordTypeId();
     Public static Id complaintsRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_Complaints').getRecordTypeId();
-    Public static Id GSRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_GSCS').getRecordTypeId();
-    Public static Id NFRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_NeutralFaults').getRecordTypeId();
-    Public static Id CNTRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_CNT').getRecordTypeId();//430 for CNT case type    
+    Public static Id gsRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_GSCS').getRecordTypeId();
+    Public static Id nfRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_NeutralFaults').getRecordTypeId();
+    Public static Id cntRecordTypeId = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_CNT').getRecordTypeId();//430 for CNT case type    
     Public static Id recordTypeId3PD = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_ThirdPartyDamage').getRecordTypeId();
     Public static Id recordTypeIdQuery = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_Query').getRecordTypeId();
     Public static Id recordTypeIdSW = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_Streetworks').getRecordTypeId();
@@ -28,7 +28,7 @@ public with sharing class Cases
     public static Id recordTypeIdSPDBouncedEmail = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_SPDBouncedEmail').getRecordTypeId();
     public static Id recordTypeIdTransmission = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_CaseTransmission').getRecordTypeId();
     public static Id recordTypeIdPreApplication = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_CasePreApplication').getRecordTypeId();
-	 Public static Id CaseUnplannedBypassRecordId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Unplanned – Bypass').getRecordTypeId();// formula limit
+	Public static Id caseUnplannedBypassRecordId = Schema.SObjectType.Case.getRecordTypeInfosByName().get('Unplanned – Bypass').getRecordTypeId();// formula limit
     Public static Id recordTypeIdGE = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_GeneralEnquiries').getRecordTypeId();
     Public static Id recordTypeIdFault = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_UnplannedFault').getRecordTypeId();
     Public static Id recordTypeIdSI = Schema.SObjectType.Case.getRecordTypeInfosByDeveloperName().get('SPEN_SmartInterventions').getRecordTypeId();//CRMD-10627
