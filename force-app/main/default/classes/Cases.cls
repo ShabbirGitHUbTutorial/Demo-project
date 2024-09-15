@@ -50,11 +50,11 @@ public with sharing class Cases
     Public static Set<String> entitlementAccount = new Set<String>{'Default Entitlement Account','GS Entitlement Account','Neutral Fault Entitlement Account','CNT Entitlement Account','NRSWA Case Entitlement Account','GE Entitlement Account'};//check - soql 201
         Public static List<Entitlement> lstEnt =  SPEN_EntitlementSelector.getEntitlementRecordsFromAccount(entitlementAccount);//check- soql 201
     
-    Public static String OperatingHrsByRecordTypeName = 'SMS Blackout Window';
+    Public static String operatingHrsByRecordTypeName = 'SMS Blackout Window';
     Public static list<SPEN_IVROperatingHours__c> ivrlist = SPEN_IvrOperatingHoursSelector.getIVROperatingHours(OperatingHrsByRecordTypeName);
     
-    Public static String UnidentifiedContactName = System.Label.SPEN_SMSUnidentifiedContact;
-    Public static list<Contact> UndifinedContactRecords = [Select ID from Contact where name =:UnidentifiedContactName Limit 1];
+    Public static String unidentifiedContactName = System.Label.SPEN_SMSUnidentifiedContact;
+    Public static list<Contact> undifinedContactRecords = [Select ID from Contact where name =:UnidentifiedContactName Limit 1];
     
     Public static map<string,SPEN_ConfigurableSettings__c> confmap = SEL_ConfigurationSettingSelector.getSMSConfig('SMS Config'); 
     
