@@ -8,7 +8,7 @@ HISTORY     :
 Date            Author              Comment
 SEP-30-2022     Dhara Desai         Initial version 
 -----------------------------------------------------------------------------*/ 
-public with sharing class Cases      
+public with sharing class Cases
 { 
     public static Boolean isRecursiveFlag = true;
     public static Boolean isIncidetSyncFlag = false; // creating new Boolean flag to avoid the Duplicate case execution Methods INC3001686(ApexCpuTime Limit)
